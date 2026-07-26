@@ -50,9 +50,9 @@ splash = Splash(
     "splash.png",
     binaries=a.binaries,
     datas=a.datas,
-    text_pos=(24, 195),
-    text_size=10,
-    text_color="#F0F0F5",
+    text_pos=(250, 232),
+    text_size=9,
+    text_color="#C6A058",
     text_default="Starting...",
     always_on_top=True,
 )

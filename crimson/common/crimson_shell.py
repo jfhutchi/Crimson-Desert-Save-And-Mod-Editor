@@ -353,7 +353,11 @@ class CrimsonApplicationShell(QWidget):
         self._route_layout.setSpacing(2)
         context_layout.addWidget(self._route_container)
         context_layout.addStretch(1)
-        library_note = QLabel("ARCHIVE / 1.14", context_nav)
+        try:
+            from crimson import TESTED_GAME_VERSION as _tested
+        except Exception:
+            _tested = "1.14"
+        library_note = QLabel(f"ARCHIVE / {_tested}", context_nav)
         library_note.setObjectName("contextFootnote")
         context_layout.addWidget(library_note)
         body_layout.addWidget(context_nav, 0)

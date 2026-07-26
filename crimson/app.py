@@ -307,6 +307,15 @@ def main() -> int:
 
         app.setWindowIcon(QIcon(str(icon_file)))
 
+    # Adopt any icon set left beside an older build before the workspaces ask
+    # for icons, so a reinstall never re-downloads what is already on disk.
+    try:
+        from crimson.common.icon_cache import IconCache
+
+        IconCache().migrate_legacy_icons()
+    except Exception:
+        log.debug("icon migration skipped", exc_info=True)
+
     window = CrimsonWindow()
     window.show()
     _splash_close()
