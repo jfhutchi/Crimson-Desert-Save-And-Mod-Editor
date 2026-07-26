@@ -78,9 +78,13 @@ def settle(app, editor, timeout: float = 240.0, after_generation: int | None = N
             editor._inv_subtabs.tabText(i)
             for i in range(editor._inv_subtabs.count())
         ]
-        if editor._save_data is not None and not any(
-            "loading" in label.lower() for label in labels
+        if (
+            editor._save_data is not None
+            and getattr(editor, "_load_handle", None) is None
+            and not any("loading" in label.lower() for label in labels)
         ):
+            # A background enrichment pass can still swap the blob in after
+            # the tabs settle; _load_handle clearing is the real done signal.
             for _ in range(20):
                 app.processEvents()
                 time.sleep(0.02)
