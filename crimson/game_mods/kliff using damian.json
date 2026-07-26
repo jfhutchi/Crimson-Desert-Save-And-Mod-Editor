@@ -1,0 +1,111 @@
+{
+  "kind": "crimson_runtime_package_preset",
+  "version": 1,
+  "characters": [
+    {
+      "name": "Kliff",
+      "fields": {
+        "_upperActionChartPackageGroupName": {
+          "value": 1767116530,
+          "vanilla": 2343703689,
+          "modified": true
+        },
+        "_lowerActionChartPackageGroupName": {
+          "value": 3755051597,
+          "vanilla": 3935643252,
+          "modified": true
+        },
+        "_characterGamePlayDataName": {
+          "value": 524737691,
+          "vanilla": 62001665,
+          "modified": true
+        },
+        "_appearanceName": {
+          "value": 2950377037,
+          "vanilla": 2950377037,
+          "modified": false
+        },
+        "_skeletonName": {
+          "value": 2929107834,
+          "vanilla": 2929107834,
+          "modified": false
+        },
+        "_skeletonVariationName": {
+          "value": 493752488,
+          "vanilla": 493752488,
+          "modified": false
+        }
+      }
+    },
+    {
+      "name": "Damian",
+      "fields": {
+        "_upperActionChartPackageGroupName": {
+          "value": 1767116530,
+          "vanilla": 1767116530,
+          "modified": false
+        },
+        "_lowerActionChartPackageGroupName": {
+          "value": 3755051597,
+          "vanilla": 3755051597,
+          "modified": false
+        },
+        "_characterGamePlayDataName": {
+          "value": 3000129643,
+          "vanilla": 3000129643,
+          "modified": false
+        },
+        "_appearanceName": {
+          "value": 4231271467,
+          "vanilla": 4231271467,
+          "modified": false
+        },
+        "_skeletonName": {
+          "value": 2831867940,
+          "vanilla": 2831867940,
+          "modified": false
+        },
+        "_skeletonVariationName": {
+          "value": 3511542393,
+          "vanilla": 3511542393,
+          "modified": false
+        }
+      }
+    },
+    {
+      "name": "Oongka",
+      "fields": {
+        "_upperActionChartPackageGroupName": {
+          "value": 3375068739,
+          "vanilla": 3375068739,
+          "modified": false
+        },
+        "_lowerActionChartPackageGroupName": {
+          "value": 3935643252,
+          "vanilla": 3935643252,
+          "modified": false
+        },
+        "_characterGamePlayDataName": {
+          "value": 524737691,
+          "vanilla": 524737691,
+          "modified": false
+        },
+        "_appearanceName": {
+          "value": 3206229374,
+          "vanilla": 3206229374,
+          "modified": false
+        },
+        "_skeletonName": {
+          "value": 2929107834,
+          "vanilla": 2929107834,
+          "modified": false
+        },
+        "_skeletonVariationName": {
+          "value": 2618664363,
+          "vanilla": 2618664363,
+          "modified": false
+        }
+      }
+    }
+  ]
+}

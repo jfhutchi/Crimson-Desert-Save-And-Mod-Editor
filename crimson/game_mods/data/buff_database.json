@@ -1,0 +1,1983 @@
+{
+  "1000062": {
+    "key": 1000062,
+    "name": "BuffLevel_Comma_Symptom",
+    "entry_size": 558,
+    "level_count": 3,
+    "payload_hex": "01000000001100000000f983df17000200000000000000000000000000000000000000000000000018000000ec8898eba9b420eca084eca1b020ebb284ed9484"
+  },
+  "1000078": {
+    "key": 1000078,
+    "name": "BuffLevel_CombatHigh",
+    "entry_size": 1212,
+    "level_count": 9,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eca69deab080000000000056fe"
+  },
+  "1000042": {
+    "key": 1000042,
+    "name": "BuffLevel_Drunken",
+    "entry_size": 187,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000c4100daa000200000000000000000000000000000000000000000000000017000000ec9d8ceca3bc20ecb9b4eba994eb9dbc20ed9aa8"
+  },
+  "1000019": {
+    "key": 1000019,
+    "name": "BuffLevel_FireArrow",
+    "entry_size": 183,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000010a31e4a000200000000000000000000000000000000000000000000000009000000ebb688ed9994ec82b4000000000056feffff4c42"
+  },
+  "1000030": {
+    "key": 1000030,
+    "name": "BuffLevel_DOT",
+    "entry_size": 4924,
+    "level_count": 20,
+    "payload_hex": "0100000000000000000000000000000200000000000000000000000000000000e80300000000000014000000eca780ec868d20eb8db0ebafb8eca780204c7631"
+  },
+  "1000017": {
+    "key": 1000017,
+    "name": "BuffLevel_IceShield",
+    "entry_size": 421,
+    "level_count": 3,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000006000000ec97b0ecb69c000000000056feffffec490f0000"
+  },
+  "1000085": {
+    "key": 1000085,
+    "name": "BuffLevel_FireFist",
+    "entry_size": 329,
+    "level_count": 2,
+    "payload_hex": "01000000003f000000000000000000020000000000000000000000000000000000000000000000000d000000ed9994ec97bc20ed8380eab2a9000000000056fe"
+  },
+  "1000044": {
+    "key": 1000044,
+    "name": "BuffLevel_IceTerrain",
+    "entry_size": 193,
+    "level_count": 1,
+    "payload_hex": "01000000004600000000b7ceedb0000200000000000000000000000000000000000000000000000012000000ebb999ed8c90202d20ecb2b4ed81acec9aa90000"
+  },
+  "1000060": {
+    "key": 1000060,
+    "name": "BuffLevel_Lava",
+    "entry_size": 568,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000025000000ec98a8eb8f8420eba088ebb2a820ec84b8ed8c85"
+  },
+  "1000063": {
+    "key": 1000063,
+    "name": "BuffLevel_SulphurGas",
+    "entry_size": 425,
+    "level_count": 2,
+    "payload_hex": "010000000011000000006ae768cd00020000000000000000000000000000000000000000000000000c000000ecbd9ceba19decbd9ceba19d000000000056feff"
+  },
+  "1000031": {
+    "key": 1000031,
+    "name": "BuffLevel_LavaGas",
+    "entry_size": 421,
+    "level_count": 2,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000000c000000ecbd9ceba19decbd9ceba19d000000000056feff"
+  },
+  "1000033": {
+    "key": 1000033,
+    "name": "BuffLevel_SwarmBee",
+    "entry_size": 310,
+    "level_count": 2,
+    "payload_hex": "01000000005f0000000000000000000200000000000000000000000000000000e8030000000000000e000000ecb69ced98882032eb8ba8eab384000000000056"
+  },
+  "1000034": {
+    "key": 1000034,
+    "name": "BuffLevel_SwarmSpider",
+    "entry_size": 429,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000040322190000200000000000000000000000000000000000000000000000010000000eab1b0ebafb8eb96bc20ec97b0ecb69c00000000"
+  },
+  "1000035": {
+    "key": 1000035,
+    "name": "BuffLevel_SwarmRat",
+    "entry_size": 420,
+    "level_count": 2,
+    "payload_hex": "010000000011000000004032219000020000000000000000000000000000000000000000000000000d000000eca590eb96bc20ec97b0ecb69c000000000056fe"
+  },
+  "1000036": {
+    "key": 1000036,
+    "name": "BuffLevel_SwarmLocust",
+    "entry_size": 435,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000040322190000200000000000000000000000000000000000000000000000013000000eba994eb9a9ceab8b0eb96bc20ec97b0ecb69c00"
+  },
+  "1000054": {
+    "key": 1000054,
+    "name": "BuffLevel_MachineOverload",
+    "entry_size": 583,
+    "level_count": 4,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eca69deab080000000000156fe"
+  },
+  "1000121": {
+    "key": 1000121,
+    "name": "BuffLevel_GearhornRenwOverload",
+    "entry_size": 531,
+    "level_count": 3,
+    "payload_hex": "0100000000070000000000000000000200000000000000000000000000000000000000000000000028000000eab8b0eab38420ed9598ec9680ebbf9420eab491"
+  },
+  "1000274": {
+    "key": 1000274,
+    "name": "BuffLevel_GoldenStarOverload",
+    "entry_size": 448,
+    "level_count": 3,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eca69deab080000000000156fe"
+  },
+  "1000207": {
+    "key": 1000207,
+    "name": "BuffLevel_CircusMachine_Weak",
+    "entry_size": 221,
+    "level_count": 1,
+    "payload_hex": "010000000052000000000000000000020000000000000000000000000000000000000000000000001e000000ec849cecbba4ec8aa420ebb3b4ec8aa420ec95bd"
+  },
+  "1000168": {
+    "key": 1000168,
+    "name": "BuffLevel_Umbra_GroggyStop",
+    "entry_size": 350,
+    "level_count": 2,
+    "payload_hex": "0100000000070000000075f87e41000200000000000000000000000000000000000000000000000017000000ec9b80ebb88ceb9dbc20eb82a0eab09c20ed9980"
+  },
+  "1000070": {
+    "key": 1000070,
+    "name": "BuffLevel_Blizzard",
+    "entry_size": 1608,
+    "level_count": 8,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000010000000eb8888ebb3b4eb9dbc20ec97b0ecb69c00000000"
+  },
+  "1000075": {
+    "key": 1000075,
+    "name": "BuffLevel_Blizzard_NonepalayZone",
+    "entry_size": 1028,
+    "level_count": 6,
+    "payload_hex": "0100000000110000000021504215000200000000000000000000000000000000000000000000000010000000eb8888ebb3b4eb9dbc20ec97b0ecb69c00000000"
+  },
+  "1000043": {
+    "key": 1000043,
+    "name": "BuffLevel_Desert_NonepalayZone",
+    "entry_size": 202,
+    "level_count": 1,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eab090ec868c000000000156fe"
+  },
+  "1000077": {
+    "key": 1000077,
+    "name": "BuffLevel_Water_NonepalayZone",
+    "entry_size": 201,
+    "level_count": 1,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eab090ec868c000000000156fe"
+  },
+  "1000079": {
+    "key": 1000079,
+    "name": "BuffLevel_Normal_NonepalayZone",
+    "entry_size": 202,
+    "level_count": 1,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eab090ec868c000000000156fe"
+  },
+  "1000061": {
+    "key": 1000061,
+    "name": "BuffLevel_SpiderWeb",
+    "entry_size": 436,
+    "level_count": 3,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000006000000ec97b0ecb69c000000000056feffff0000000000"
+  },
+  "1000104": {
+    "key": 1000104,
+    "name": "BuffLevel_Trap_MoveSpeedRate",
+    "entry_size": 200,
+    "level_count": 1,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000ec9db4ec868d20eab090ec868c000000000156fe"
+  },
+  "1000083": {
+    "key": 1000083,
+    "name": "BuffLevel_Waterfall",
+    "entry_size": 191,
+    "level_count": 1,
+    "payload_hex": "010000000007000000000000000000020000000000000000000000000000000000000000000000000d000000ec9db4ec868d20eab090ec868c000000000156fe"
+  },
+  "1000065": {
+    "key": 1000065,
+    "name": "BuffLevel_SpiderWeb_Player",
+    "entry_size": 179,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000006000000ec97b0ecb69c000000000056feffff0000000000"
+  },
+  "1000037": {
+    "key": 1000037,
+    "name": "BuffLevel_DetectDistance",
+    "entry_size": 931,
+    "level_count": 6,
+    "payload_hex": "fdffffff004e000000000000000000020000000000000000000000000000000000000000000000001800000044657465637420ebb294ec9c8420eab090ec868c"
+  },
+  "1000057": {
+    "key": 1000057,
+    "name": "BuffLevel_DetectBrightness",
+    "entry_size": 352,
+    "level_count": 2,
+    "payload_hex": "feffffff005a000000000000000000020000000000000000000000000000000000000000000000001800000044657465637420ebb09deab8b020eab090ec868c"
+  },
+  "1000045": {
+    "key": 1000045,
+    "name": "BuffLevel_Guard",
+    "entry_size": 291,
+    "level_count": 2,
+    "payload_hex": "01000000001e0000000000000000000200000000000000000000000000000000000000000000000006000000eab080eb939c000000000056feffff0000000000"
+  },
+  "1000038": {
+    "key": 1000038,
+    "name": "BuffLevel_SuperArmor",
+    "entry_size": 324,
+    "level_count": 2,
+    "payload_hex": "01000000001e0000000000000000000200000000000000000000000000000000000000000000000014000000ec8a88ed8dbcec9584eba8b82031eb8ba8eab384"
+  },
+  "1000039": {
+    "key": 1000039,
+    "name": "BuffLevel_Avoid",
+    "entry_size": 409,
+    "level_count": 3,
+    "payload_hex": "01000000001e0000000000000000000200000000000000000000000000000000000000000000000006000000ebacb4eca081000000000056feffff0000000000"
+  },
+  "1000040": {
+    "key": 1000040,
+    "name": "BuffLevel_FireWeapon",
+    "entry_size": 613,
+    "level_count": 4,
+    "payload_hex": "01000000003f000000004c0c186800020000000000000000000000000000000000000000000000000d000000ed9994ec97bc20ed9a83ebb688000000000056fe"
+  },
+  "1000058": {
+    "key": 1000058,
+    "name": "BuffLevel_NatureMpRegen",
+    "entry_size": 720,
+    "level_count": 4,
+    "payload_hex": "ffffffff0050000000003eb452de00020000000000000000000000000000000000000000000000001d000000ec9aa9eab8b020ec868cebaaa8202d20eb8f8520"
+  },
+  "1000059": {
+    "key": 1000059,
+    "name": "BuffLevel_NatureHpRegen",
+    "entry_size": 191,
+    "level_count": 1,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000000d000000ec839debaa8520ed9a8cebb3b5000000000056fe"
+  },
+  "1000084": {
+    "key": 1000084,
+    "name": "BuffLevel_BlockDamage_Situation",
+    "entry_size": 460,
+    "level_count": 3,
+    "payload_hex": "01000000001e0000000000000000000200000000000000000000000000000000000000000000000011000000eb8db0ebafb8eca7802032eb8ba8eab384000000"
+  },
+  "1000041": {
+    "key": 1000041,
+    "name": "BuffLevel_NatureProtect",
+    "entry_size": 618,
+    "level_count": 4,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000015000000ebb0a9ec96b4eba0a520eca69deab08020313030"
+  },
+  "1000095": {
+    "key": 1000095,
+    "name": "BuffLevel_ChangeElementalStatSpeed",
+    "entry_size": 758,
+    "level_count": 4,
+    "payload_hex": "0100000000180000000000000000000200000000000000000000000000000000000000000000000033000000456c656d656e74616c53746174537065656420eb"
+  },
+  "1000094": {
+    "key": 1000094,
+    "name": "BuffLevel_SmithStone_DDD",
+    "entry_size": 199,
+    "level_count": 1,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000010000000eab3b5eab2a9eba0a520eca69deab0803fc77f37"
+  },
+  "1000056": {
+    "key": 1000056,
+    "name": "BuffLevel_AIDifficulty",
+    "entry_size": 903,
+    "level_count": 6,
+    "payload_hex": "feffffff00620000000000000000000200000000000000000000000000000000000000000000000014000000ecb59ceb8c8020ec839debaa8520ebb984ec9ca8"
+  },
+  "1000171": {
+    "key": 1000171,
+    "name": "BuffLevel_BlockLearn",
+    "entry_size": 196,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000064d0bf0500020000000000000000000000000000000000000000000000001d000000496e74726f20ebb3b4eab3a020ebb0b0ec9ab0ea"
+  },
+  "1000167": {
+    "key": 1000167,
+    "name": "BuffLevel_DecreaseHP_IncreaseMP_Dot",
+    "entry_size": 2345,
+    "level_count": 15,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000033000000ec839debaa8520eab090ec868c202d20ec9aa9ea"
+  },
+  "1000050": {
+    "key": 1000050,
+    "name": "BuffLevel_Food_MaxHP",
+    "entry_size": 3435,
+    "level_count": 25,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000014000000ecb59ceb8c8020ec839debaa8520eca69deab080"
+  },
+  "1000177": {
+    "key": 1000177,
+    "name": "BuffLevel_Food_MpUseDecreaseRate",
+    "entry_size": 2247,
+    "level_count": 15,
+    "payload_hex": "fbffffff0050000000000000000000020000000000000000000000000000000000000000000000001e000000ec9aa9eab8b020ec868cebaaa820eab090ec868c"
+  },
+  "1000055": {
+    "key": 1000055,
+    "name": "BuffLevel_Food_StaminaUseDecreaseRate",
+    "entry_size": 2252,
+    "level_count": 15,
+    "payload_hex": "fbffffff0050000000000000000000020000000000000000000000000000000000000000000000001e000000eab8b0eba0a520ec868cebaaa820eab090ec868c"
+  },
+  "1000178": {
+    "key": 1000178,
+    "name": "BuffLevel_Food_HP_Dot",
+    "entry_size": 9576,
+    "level_count": 85,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000014000000ec839debaa8520ecb488eb8bb920ed9a8cebb3b5"
+  },
+  "1000179": {
+    "key": 1000179,
+    "name": "BuffLevel_Food_MP_Dot",
+    "entry_size": 6811,
+    "level_count": 50,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000014000000ec9aa9eab8b020ecb488eb8bb920ed9a8cebb3b5"
+  },
+  "1000180": {
+    "key": 1000180,
+    "name": "BuffLevel_Food_DDD",
+    "entry_size": 2023,
+    "level_count": 15,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000010000000eab3b5eab2a9eba0a520eca69deab08000000000"
+  },
+  "1000181": {
+    "key": 1000181,
+    "name": "BuffLevel_Food_DPV",
+    "entry_size": 2023,
+    "level_count": 15,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000010000000ebb0a9ec96b4eba0a520eca69deab08000000000"
+  },
+  "1000182": {
+    "key": 1000182,
+    "name": "BuffLevel_Food_FireResistance",
+    "entry_size": 2094,
+    "level_count": 15,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000014000000ed9994ec97bc20eca080ed95ad20eca69deab080"
+  },
+  "1000183": {
+    "key": 1000183,
+    "name": "BuffLevel_Food_IceResistance",
+    "entry_size": 2093,
+    "level_count": 15,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000014000000eb8389eab8b020eca080ed95ad20eca69deab080"
+  },
+  "1000184": {
+    "key": 1000184,
+    "name": "BuffLevel_Food_ElectricityResistance",
+    "entry_size": 2101,
+    "level_count": 15,
+    "payload_hex": "fbffffff00500000000000000000000200000000000000000000000000000000000000000000000014000000eca084eab8b020eca080ed95ad20eca69deab080"
+  },
+  "1000272": {
+    "key": 1000272,
+    "name": "BuffLevel_WetNess",
+    "entry_size": 1050,
+    "level_count": 7,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000001f0000005765744e65737353746174652deca084eab8b0ec"
+  },
+  "1000185": {
+    "key": 1000185,
+    "name": "BuffLevel_Food_FallDamageReduce",
+    "entry_size": 1451,
+    "level_count": 10,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000017000000eb8299ed959820eb8db0ebafb8eca78020eab090"
+  },
+  "1000186": {
+    "key": 1000186,
+    "name": "BuffLevel_Food_AttackSpeedRate",
+    "entry_size": 1990,
+    "level_count": 15,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000000d000000eab3b5ec868d20eca69deab080000000000056fe"
+  },
+  "1000101": {
+    "key": 1000101,
+    "name": "BuffLevel_Food_Poison",
+    "entry_size": 1431,
+    "level_count": 10,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000016000000eb8f85202d20eca780ec868d20eb8db0ebafb8ec"
+  },
+  "1000219": {
+    "key": 1000219,
+    "name": "BuffLevel_Alchemy_DDD",
+    "entry_size": 1681,
+    "level_count": 12,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000010000000eab3b5eab2a9eba0a520eca69deab080a3c73a6a"
+  },
+  "1000220": {
+    "key": 1000220,
+    "name": "BuffLevel_Alchemy_DPV",
+    "entry_size": 1411,
+    "level_count": 10,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000010000000ebb0a9ec96b4eba0a520eca69deab080bc6f33d0"
+  },
+  "1000221": {
+    "key": 1000221,
+    "name": "BuffLevel_Alchemy_HP",
+    "entry_size": 1550,
+    "level_count": 10,
+    "payload_hex": "010000000006000000000000000000020000000000000000000000000000000000000000000000000d000000ec839debaa8520eca69deab080d9be352e0056fe"
+  },
+  "1000076": {
+    "key": 1000076,
+    "name": "BuffLevel_Potion_DDD",
+    "entry_size": 715,
+    "level_count": 5,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000010000000eab3b5eab2a9eba0a520eca69deab08000000000"
+  },
+  "1000204": {
+    "key": 1000204,
+    "name": "BuffLevel_Potion_DPV",
+    "entry_size": 715,
+    "level_count": 5,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000010000000ebb0a9ec96b4eba0a520eca69deab08000000000"
+  },
+  "1000205": {
+    "key": 1000205,
+    "name": "BuffLevel_Potion_HP",
+    "entry_size": 734,
+    "level_count": 5,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000014000000ecb59ceb8c8020ec839debaa8520eca69deab080"
+  },
+  "1000018": {
+    "key": 1000018,
+    "name": "BuffLevel_MinHP",
+    "entry_size": 2791,
+    "level_count": 19,
+    "payload_hex": "01000000003b00000000f5ee265c000200000000000000000000000000000000000000000000000014000000ecb59cec868c20ec839debaa8520ec84b8ed8c85"
+  },
+  "1000001": {
+    "key": 1000001,
+    "name": "BuffLevel_HP",
+    "entry_size": 3479,
+    "level_count": 23,
+    "payload_hex": "fbffffff0006000000000000000000020000000000000000000000000000000000000000000000000d000000ec839debaa8520eca69deab080d9be352e0056fe"
+  },
+  "1000016": {
+    "key": 1000016,
+    "name": "BuffLevel_MaxHPPercent",
+    "entry_size": 3032,
+    "level_count": 20,
+    "payload_hex": "f6ffffff00620000000000000000000200000000000000000000000000000000000000000000000020000000ecb59ceb8c8020ec839debaa8520ebb984ec9ca8"
+  },
+  "1000051": {
+    "key": 1000051,
+    "name": "BuffLevel_HP_Dot_Damage",
+    "entry_size": 11213,
+    "level_count": 50,
+    "payload_hex": "0100000000000000000000000000000200000000000000000000000000000000e803000000000000000000003672bfb60056feffff0000000000000000000000"
+  },
+  "1000008": {
+    "key": 1000008,
+    "name": "BuffLevel_HPRegen",
+    "entry_size": 8007,
+    "level_count": 50,
+    "payload_hex": "0100000000050000000000000000000200000000000000000000000000000000e80300000000000014000000ec839debaa8520ecb488eb8bb920ed9a8cebb3b5"
+  },
+  "1000052": {
+    "key": 1000052,
+    "name": "BuffLevel_Mp_Dot_Damage",
+    "entry_size": 7013,
+    "level_count": 50,
+    "payload_hex": "01000000000e0000000000000000000200000000000000000000000000000000e80300000000000014000000ec9aa9eab8b020ecb488eb8bb920ec868cebaaa8"
+  },
+  "1000009": {
+    "key": 1000009,
+    "name": "BuffLevel_MpRegen",
+    "entry_size": 8007,
+    "level_count": 50,
+    "payload_hex": "0100000000050000000000000000000200000000000000000000000000000000e80300000000000014000000ec9aa9eab8b020ecb488eb8bb920ed9a8cebb3b5"
+  },
+  "1000053": {
+    "key": 1000053,
+    "name": "BuffLevel_Sp_Dot_Damage",
+    "entry_size": 7013,
+    "level_count": 50,
+    "payload_hex": "01000000000e0000000000000000000200000000000000000000000000000000e80300000000000014000000eab8b0eba0a520ecb488eb8bb920ec868cebaaa8"
+  },
+  "1000046": {
+    "key": 1000046,
+    "name": "BuffLevel_StaminaRegen",
+    "entry_size": 7012,
+    "level_count": 50,
+    "payload_hex": "01000000000e0000000000000000000200000000000000000000000000000000e80300000000000014000000eab8b0eba0a520ecb488eb8bb920ed9a8cebb3b5"
+  },
+  "1000002": {
+    "key": 1000002,
+    "name": "BuffLevel_MP",
+    "entry_size": 2560,
+    "level_count": 19,
+    "payload_hex": "fbffffff0013000000000000000000020000000000000000000000000000000000000000000000000d000000ec9aa9eab8b020eca69deab080a7b95d930056fe"
+  },
+  "1000003": {
+    "key": 1000003,
+    "name": "BuffLevel_SP",
+    "entry_size": 2824,
+    "level_count": 21,
+    "payload_hex": "fbffffff0013000000000000000000020000000000000000000000000000000000000000000000000d000000eab8b0eba0a520eca69deab080345b68d60056fe"
+  },
+  "1000004": {
+    "key": 1000004,
+    "name": "BuffLevel_DDD",
+    "entry_size": 2753,
+    "level_count": 20,
+    "payload_hex": "f6ffffff00030000000000000000000200000000000000000000000000000000000000000000000010000000eab3b5eab2a9eba0a520eca69deab080a3c73a6a"
+  },
+  "1000005": {
+    "key": 1000005,
+    "name": "BuffLevel_DPV",
+    "entry_size": 2078,
+    "level_count": 15,
+    "payload_hex": "fbffffff00030000000000000000000200000000000000000000000000000000000000000000000010000000ebb0a9ec96b4eba0a520eca69deab080bc6f33d0"
+  },
+  "1000006": {
+    "key": 1000006,
+    "name": "BuffLevel_AttackSpeedRate",
+    "entry_size": 2126,
+    "level_count": 15,
+    "payload_hex": "0100000000040000000000000000000200000000000000000000000000000000000000000000000011000000eab3b5ec868d20eca69deab080204c7631c9ef5c"
+  },
+  "1000007": {
+    "key": 1000007,
+    "name": "BuffLevel_MoveSpeedRate",
+    "entry_size": 2124,
+    "level_count": 15,
+    "payload_hex": "0100000000040000000000000000000200000000000000000000000000000000000000000000000011000000ec9db4ec868d20eca69deab080204c7631000000"
+  },
+  "1000074": {
+    "key": 1000074,
+    "name": "BuffLevel_CriticalRate",
+    "entry_size": 2168,
+    "level_count": 15,
+    "payload_hex": "0100000000040000000000000000000200000000000000000000000000000000000000000000000014000000ecb998ebaa85ed838020ed9995eba5a0204c7631"
+  },
+  "1000082": {
+    "key": 1000082,
+    "name": "BuffLevel_DHIT",
+    "entry_size": 2010,
+    "level_count": 15,
+    "payload_hex": "010000000004000000000000000000020000000000000000000000000000000000000000000000000a000000eca081eca491204c7631000000000056feffff00"
+  },
+  "1000010": {
+    "key": 1000010,
+    "name": "BuffLevel_Pressure",
+    "entry_size": 1568,
+    "level_count": 10,
+    "payload_hex": "01000000000c0000000000000000000200000000000000000000000000000000000000000000000010000000ec9c84ec9595eab09020eca69deab08000000000"
+  },
+  "1000011": {
+    "key": 1000011,
+    "name": "BuffLevel_AttackedDamageReduction",
+    "entry_size": 1463,
+    "level_count": 10,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000014000000ed94bced95b420eab090ec868c20eca69deab080"
+  },
+  "1000012": {
+    "key": 1000012,
+    "name": "BuffLevel_FireResistance",
+    "entry_size": 13719,
+    "level_count": 89,
+    "payload_hex": "f1ffffff000c0000000000000000000200000000000000000000000000000000000000000000000021000000ed9994ec97bc20ed94bceab2a920eb8db0ebafb8"
+  },
+  "1000013": {
+    "key": 1000013,
+    "name": "BuffLevel_IceResistance",
+    "entry_size": 13750,
+    "level_count": 89,
+    "payload_hex": "f1ffffff000c0000000000000000000200000000000000000000000000000000000000000000000021000000ec96bcec9d8c20ed94bceab2a920eb8db0ebafb8"
+  },
+  "1000014": {
+    "key": 1000014,
+    "name": "BuffLevel_ElectricityResistance",
+    "entry_size": 11507,
+    "level_count": 73,
+    "payload_hex": "f1ffffff000c0000000000000000000200000000000000000000000000000000000000000000000021000000eca084eab8b020ed94bceab2a920eb8db0ebafb8"
+  },
+  "1000141": {
+    "key": 1000141,
+    "name": "BuffLevel_StaminaUseIncreaseRate",
+    "entry_size": 4172,
+    "level_count": 25,
+    "payload_hex": "f6ffffff000c000000000000000000020000000000000000000000000000000000000000000000001d000000eab8b0eba0a520ec9e90ec97b0ed9a8cebb3b5eb"
+  },
+  "1000015": {
+    "key": 1000015,
+    "name": "BuffLevel_StaminaUseDecreaseRate",
+    "entry_size": 3232,
+    "level_count": 20,
+    "payload_hex": "f6ffffff000c0000000000000000000200000000000000000000000000000000000000000000000017000000eab8b0eba0a520ec868cebaaa8eb9f8920eca69d"
+  },
+  "1000189": {
+    "key": 1000189,
+    "name": "BuffLevel_MpUseDecreaseRate",
+    "entry_size": 2437,
+    "level_count": 15,
+    "payload_hex": "fbffffff000c0000000000000000000200000000000000000000000000000000000000000000000017000000ec9aa9eab8b020ec868cebaaa8eb9f8920eca69d"
+  },
+  "1000026": {
+    "key": 1000026,
+    "name": "BuffLevel_Bleeding",
+    "entry_size": 436,
+    "level_count": 3,
+    "payload_hex": "01000000005f0000000000000000000200000000000000000000000000000000e8030000000000000e000000ecb69ced98882031eb8ba8eab384000000000056"
+  },
+  "1000029": {
+    "key": 1000029,
+    "name": "BuffLevel_BossWeaken",
+    "entry_size": 465,
+    "level_count": 3,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000010000000ebb3b4ec8aa420ebb0a9ec96b4eba0a50ab99b45"
+  },
+  "1000092": {
+    "key": 1000092,
+    "name": "BuffLevel_JijeongtaWeaken",
+    "entry_size": 449,
+    "level_count": 3,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000009000000ebb0a9ec96b4eba0a50ab99b450056feffff0000"
+  },
+  "1000098": {
+    "key": 1000098,
+    "name": "BuffLevel_JijeongtaWeakenBreakable",
+    "entry_size": 2574,
+    "level_count": 20,
+    "payload_hex": "f6ffffff006b0000000000000000000200000000000000000000000000000000000000000000000010000000ebb0a9ec96b4eba0a520eab090ec868c00000000"
+  },
+  "1000025": {
+    "key": 1000025,
+    "name": "BuffLevel_NonSlip",
+    "entry_size": 2657,
+    "level_count": 20,
+    "payload_hex": "f6ffffff00590000000000000000000200000000000000000000000000000000000000000000000013000000ebafb8eb8184eb9faceca79020eab090ec868c00"
+  },
+  "1000047": {
+    "key": 1000047,
+    "name": "BuffLevel_Abyss_HP",
+    "entry_size": 2596,
+    "level_count": 18,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000001a0000004162797373204c6576656ceca69deab080202d20"
+  },
+  "1000048": {
+    "key": 1000048,
+    "name": "BuffLevel_Abyss_MP",
+    "entry_size": 1750,
+    "level_count": 12,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000001a0000004162797373204c6576656ceca69deab080202d20"
+  },
+  "1000049": {
+    "key": 1000049,
+    "name": "BuffLevel_Abyss_SP",
+    "entry_size": 2032,
+    "level_count": 14,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000001a0000004162797373204c6576656ceca69deab080202d20"
+  },
+  "1000106": {
+    "key": 1000106,
+    "name": "BuffLevel_ReduceFishingTime",
+    "entry_size": 1427,
+    "level_count": 10,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000014000000eb829aec8b9c20ec8b9ceab08420eab090ec868c"
+  },
+  "1000190": {
+    "key": 1000190,
+    "name": "BuffLevel_FallDamageReduce",
+    "entry_size": 1456,
+    "level_count": 10,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000017000000eb8299ed959820eb8db0ebafb8eca78020eab090"
+  },
+  "1000068": {
+    "key": 1000068,
+    "name": "BuffLevel_DetectReaction",
+    "entry_size": 1594,
+    "level_count": 10,
+    "payload_hex": "01000000004700000000e612601600020000000000000000000000000000000000000000000000001f0000004465746563745265616374696f6e20ebb380eab2"
+  },
+  "1000086": {
+    "key": 1000086,
+    "name": "BuffLevel_BattleOrder",
+    "entry_size": 610,
+    "level_count": 4,
+    "payload_hex": "010000000048000000000000000000020000000000000000000000000000000000000000000000001a000000426174746c654f7264657220ebb380eab2bd202d"
+  },
+  "1000166": {
+    "key": 1000166,
+    "name": "BuffLevel_PlayerSensible",
+    "entry_size": 1767,
+    "level_count": 13,
+    "payload_hex": "01000000004a0000000000000000000200000000000000000000000000000000000000000000000018000000506c6179657253656e7369626c6520ed999cec84"
+  },
+  "1000024": {
+    "key": 1000024,
+    "name": "BuffLevel_AIType_Tier1",
+    "entry_size": 1362,
+    "level_count": 10,
+    "payload_hex": "010000000011000000007f3edd4f000200000000000000000000000000000000000000000000000017000000ec8381ed839c20ecb2b4ed81acec9aa920eab8b0"
+  },
+  "1000064": {
+    "key": 1000064,
+    "name": "BuffLevel_AIType_Tier2",
+    "entry_size": 463,
+    "level_count": 3,
+    "payload_hex": "0100000000110000000044166e29000200000000000000000000000000000000000000000000000017000000ec8381ed839c20ecb2b4ed81acec9aa920ecb7a8"
+  },
+  "1000200": {
+    "key": 1000200,
+    "name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_Battle_Wolf",
+    "entry_size": 223,
+    "level_count": 1,
+    "payload_hex": "010000000041000000000000000000020000000000000000000000000000000000000000000000000d000000eb8a91eb8c8020ec9c84ec9ea5b86c71050056fe"
+  },
+  "1000201": {
+    "key": 1000201,
+    "name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_Battle_Bear",
+    "entry_size": 220,
+    "level_count": 1,
+    "payload_hex": "010000000041000000000000000000020000000000000000000000000000000000000000000000000a000000eab3b020ec9c84ec9ea53b102f0b0056feffff00"
+  },
+  "1000202": {
+    "key": 1000202,
+    "name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_NonBattle_Deer",
+    "entry_size": 226,
+    "level_count": 1,
+    "payload_hex": "010000000041000000000000000000020000000000000000000000000000000000000000000000000d000000ec82acec8ab420ec9c84ec9ea5241fa3210056fe"
+  },
+  "1000203": {
+    "key": 1000203,
+    "name": "BuffLevel_Equip_Set_Stealth_Animal_Ent",
+    "entry_size": 1225,
+    "level_count": 7,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000040000000ec95bcec839deb8f99ebacbc20ec9c84ec9ea520"
+  },
+  "1000087": {
+    "key": 1000087,
+    "name": "BuffLevel_Equip_Set_Stealth_Human",
+    "entry_size": 3438,
+    "level_count": 24,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000003d000000ec9db8eab084ed989520ec9c84ec9ea520506174"
+  },
+  "1000128": {
+    "key": 1000128,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_DemenissMP",
+    "entry_size": 741,
+    "level_count": 4,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000047000000eb8c80ec9d98ec9d9820ec8baced8c90eab48020"
+  },
+  "1000227": {
+    "key": 1000227,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Thorel_Demeniss",
+    "entry_size": 766,
+    "level_count": 4,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000040000000eb8db0eba994eb8b88ec8aa420ec9c84ec9ea520"
+  },
+  "1000126": {
+    "key": 1000126,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_LonelyJackal",
+    "entry_size": 792,
+    "level_count": 4,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000005c000000ec99b8eba19cec9ab420ec8ab9eb83a5ec9db42c"
+  },
+  "1000127": {
+    "key": 1000127,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_DrunkenBlackBears",
+    "entry_size": 797,
+    "level_count": 4,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000005c000000ec99b8eba19cec9ab420ec8ab9eb83a5ec9db42c"
+  },
+  "1000165": {
+    "key": 1000165,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Desert_Harrier",
+    "entry_size": 401,
+    "level_count": 2,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000003d000000ed88aceab5aceca1b120ec9c84ec9ea520506174"
+  },
+  "1000196": {
+    "key": 1000196,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_DawnMoon",
+    "entry_size": 421,
+    "level_count": 2,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000004a000000ec8388ebb2bdeb8bacec9d9820eca084eba0b9eb"
+  },
+  "1000197": {
+    "key": 1000197,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Faceless",
+    "entry_size": 407,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000043000000ec96bceab5b4ec9786eb8a94ec9e9020ec9c84ec"
+  },
+  "1000198": {
+    "key": 1000198,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_ThiefDusksong",
+    "entry_size": 420,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000047000000eb85b8eb9e98ed9598eb8a9420ed99a9ed98bc20"
+  },
+  "1000215": {
+    "key": 1000215,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_WyvernTamers",
+    "entry_size": 411,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000043000000ed9994ec97bcebb984eba3a1eb8ba820ec9c84ec"
+  },
+  "1000216": {
+    "key": 1000216,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_MistOwls",
+    "entry_size": 417,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000048000000ec9588eab09c20ec868d20ec98acebb9bcebafb8"
+  },
+  "1000199": {
+    "key": 1000199,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_PirateI",
+    "entry_size": 394,
+    "level_count": 2,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000003d000000ed95b4eca081eb8ba820ec9c84ec9ea520506174"
+  },
+  "1000228": {
+    "key": 1000228,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_BleedBlade",
+    "entry_size": 397,
+    "level_count": 2,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000003d000000ebb894eba6aceb939c20ec9c84ec9ea520506174"
+  },
+  "1000229": {
+    "key": 1000229,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Bandit",
+    "entry_size": 393,
+    "level_count": 2,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000003d000000eb8f84eca081eb8ba820ec9c84ec9ea520506174"
+  },
+  "1000230": {
+    "key": 1000230,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Antumbra",
+    "entry_size": 401,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000040000000ec9588ed88bcebb88ceb9dbc20ec9c84ec9ea520"
+  },
+  "1000231": {
+    "key": 1000231,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_DeerKingSaigord",
+    "entry_size": 608,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000047000000ec82acec8ab4ec999520ecb694eca285ec9e9020"
+  },
+  "1000232": {
+    "key": 1000232,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Dewhaven",
+    "entry_size": 580,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000040000000eb9380ed97a4ec9db4ebb89020ec9c84ec9ea520"
+  },
+  "1000233": {
+    "key": 1000233,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_SteelArrows",
+    "entry_size": 604,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000047000000ebb99beb8298eb8a9420ed9994ec82b4ecb48920"
+  },
+  "1000234": {
+    "key": 1000234,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_WolfPursuer",
+    "entry_size": 595,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000044000000eb8a91eb8c8020ecb694eca081ec9e9020ec9c84"
+  },
+  "1000245": {
+    "key": 1000245,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Halsius",
+    "entry_size": 746,
+    "level_count": 4,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000040000000ed95a0ec8b9cec9ab0ec8aa420ec9c84ec9ea520"
+  },
+  "1000069": {
+    "key": 1000069,
+    "name": "BuffLevel_Useless_Faction_Hide",
+    "entry_size": 686,
+    "level_count": 4,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000002f000000ec9c84ec9ea5ebb3b5205061747465726e446573"
+  },
+  "1000249": {
+    "key": 1000249,
+    "name": "BuffLevel_Check_NonSlip",
+    "entry_size": 325,
+    "level_count": 2,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000010000000eca091eca780eba0a520eca69deab08017bc7492"
+  },
+  "1000081": {
+    "key": 1000081,
+    "name": "BuffLevel_Boss_Immune",
+    "entry_size": 1803,
+    "level_count": 13,
+    "payload_hex": "0100000000250000000000000000000200000000000000000000000000000000000000000000000014000000ecb6a9eb8f8c20ed94bced95b420ec9db4ebaea8"
+  },
+  "1000191": {
+    "key": 1000191,
+    "name": "BuffLevel_Item_Active_Food_ComaImmune",
+    "entry_size": 212,
+    "level_count": 1,
+    "payload_hex": "010000000025000000000000000000020000000000000000000000000000000000000000000000000d000000ec8898eba9b420eba9b4ec97ad1bce3b260056fe"
+  },
+  "1000192": {
+    "key": 1000192,
+    "name": "BuffLevel_Item_Active_Food_SOUNDATTACK",
+    "entry_size": 213,
+    "level_count": 1,
+    "payload_hex": "010000000025000000000000000000020000000000000000000000000000000000000000000000000d000000ec9db4ebaa8520eba9b4ec97ad91feb25e0056fe"
+  },
+  "1000096": {
+    "key": 1000096,
+    "name": "BuffLevel_Socket_AttackDamageReduction",
+    "entry_size": 2163,
+    "level_count": 15,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000014000000ed94bced95b420eab090ec868c20eca69deab080"
+  },
+  "1000097": {
+    "key": 1000097,
+    "name": "BuffLevel_Socket_GuardPVRate",
+    "entry_size": 1618,
+    "level_count": 10,
+    "payload_hex": "01000000000c0000000000000000000200000000000000000000000000000000000000000000000014000000ebb0a9ec96b420ed9aa8ec9ca820eca69deab080"
+  },
+  "1000100": {
+    "key": 1000100,
+    "name": "BuffLevel_Socket_ClimbSpeedRate",
+    "entry_size": 1461,
+    "level_count": 10,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000014000000eb93b1ebb09820ec868deb8f8420eca69deab080"
+  },
+  "1000122": {
+    "key": 1000122,
+    "name": "BuffLevel_Socket_StaminaRegen",
+    "entry_size": 2969,
+    "level_count": 20,
+    "payload_hex": "01000000000e000000000000000000020000000000000000000000000000000000000000000000001a000000eab8b0eba0a520ec9e90ec97b0ed9a8cebb3b520"
+  },
+  "1000107": {
+    "key": 1000107,
+    "name": "BuffLevel_Socket_SwimSpeedRate",
+    "entry_size": 1460,
+    "level_count": 10,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000014000000ec8898ec988120ec868deb8f8420eca69deab080"
+  },
+  "1000090": {
+    "key": 1000090,
+    "name": "BuffLevel_Machine_AddDamageRate",
+    "entry_size": 1621,
+    "level_count": 10,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000024000000eab8b0eab384ed989520ebaaacec8aa4ed84b020"
+  },
+  "1000108": {
+    "key": 1000108,
+    "name": "BuffLevel_CommonHexe_AddDamageRate",
+    "entry_size": 1624,
+    "level_count": 10,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000024000000ed97a5ec84b8ed989520ebaaacec8aa4ed84b020"
+  },
+  "1000109": {
+    "key": 1000109,
+    "name": "BuffLevel_CommonHumanoid_AddDamageRate",
+    "entry_size": 1628,
+    "level_count": 10,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000024000000ec9db8eab084ed989520ebaaacec8aa4ed84b020"
+  },
+  "1000110": {
+    "key": 1000110,
+    "name": "BuffLevel_CommonGolem_AddDamageRate",
+    "entry_size": 1625,
+    "level_count": 10,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000024000000ec9b8cecbba4ed989520ebaaacec8aa4ed84b020"
+  },
+  "1000111": {
+    "key": 1000111,
+    "name": "BuffLevel_Boss_AddDamageRate",
+    "entry_size": 3108,
+    "level_count": 20,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000021000000ec9db8eab084ed989520ebb3b4ec8aa420eb8db0"
+  },
+  "1000112": {
+    "key": 1000112,
+    "name": "BuffLevel_CommonAnimal_AddDamageRate",
+    "entry_size": 1626,
+    "level_count": 10,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000024000000eb8f99ebacbced989520ebaaacec8aa4ed84b020"
+  },
+  "1000113": {
+    "key": 1000113,
+    "name": "BuffLevel_Creature_AddDamageRate",
+    "entry_size": 4882,
+    "level_count": 30,
+    "payload_hex": "01000000006a0000000000000000000200000000000000000000000000000000000000000000000027000000eca780eba081ec9db4ed989520ebaaacec8aa4ed"
+  },
+  "1000114": {
+    "key": 1000114,
+    "name": "BuffLevel_Socket_ContributionExp",
+    "entry_size": 1492,
+    "level_count": 10,
+    "payload_hex": "010000000068000000000000000000020000000000000000000000000000000000000000000000001a000000eab3b5ed978ceb8f8420eab2bded9798ecb99820"
+  },
+  "1000115": {
+    "key": 1000115,
+    "name": "BuffLevel_Socket_SkillPointExp",
+    "entry_size": 1460,
+    "level_count": 10,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000017000000ec8aa4ed82ac20eab2bded9798ecb99820eca69d"
+  },
+  "1000089": {
+    "key": 1000089,
+    "name": "BuffLevel_FoodSkillLevelUp",
+    "entry_size": 771,
+    "level_count": 5,
+    "payload_hex": "010000000069000000000000000000020000000000000000000000000000000000000000000000001d000000ec9d8cec8b9dec9cbceba19c20ed9a8cebb3b520"
+  },
+  "1000091": {
+    "key": 1000091,
+    "name": "BuffLevel_ReduceCraftMaterial",
+    "entry_size": 819,
+    "level_count": 5,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000022000000eca09cec9e9120ec9eaceba38c20eab090ec868c"
+  },
+  "1000116": {
+    "key": 1000116,
+    "name": "BuffLevel_Socket_BlockAmmoConsume",
+    "entry_size": 853,
+    "level_count": 5,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000028000000ed9994ec82b420ec868cebaaa8ed9598eca78020"
+  },
+  "1000117": {
+    "key": 1000117,
+    "name": "BuffLevel_Socket_AddMoneyDropRate",
+    "entry_size": 1533,
+    "level_count": 10,
+    "payload_hex": "010000000003000000000000000000020000000000000000000000000000000000000000000000001b000000ec9d80ed999420eb939ceb9e8d20ed9995eba5a0"
+  },
+  "1000119": {
+    "key": 1000119,
+    "name": "BuffLevel_Socket_AdditionalThief",
+    "entry_size": 1572,
+    "level_count": 10,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000022000000ed9b94ecb998eab8b020ec8b9c20ed959cebb288"
+  },
+  "1000099": {
+    "key": 1000099,
+    "name": "BuffLevel_AdditionalFriendly",
+    "entry_size": 1448,
+    "level_count": 10,
+    "payload_hex": "010000000069000000000000000000020000000000000000000000000000000000000000000000001a000000ecb99cebb080eb8f8420eca780eab889eb9f8920"
+  },
+  "1000123": {
+    "key": 1000123,
+    "name": "BuffLevel_AdditionalVehicleExp",
+    "entry_size": 1490,
+    "level_count": 10,
+    "payload_hex": "010000000069000000000000000000020000000000000000000000000000000000000000000000001e000000eba79020eab2bded9798ecb99820ed9a8deb939d"
+  },
+  "1000124": {
+    "key": 1000124,
+    "name": "BuffLevel_AdditionalPetFriendly",
+    "entry_size": 1491,
+    "level_count": 10,
+    "payload_hex": "010000000069000000000000000000020000000000000000000000000000000000000000000000001e000000ed8eab20ecb99cebb080eb8f8420eca780eab889"
+  },
+  "1000071": {
+    "key": 1000071,
+    "name": "BuffLevel_CollectDrop_Ore",
+    "entry_size": 1485,
+    "level_count": 10,
+    "payload_hex": "0100000000020000000000000000000200000000000000000000000000000000000000000000000017000000eab491ebacbc20eb939ceb9e8deba5a020eca69d"
+  },
+  "1000072": {
+    "key": 1000072,
+    "name": "BuffLevel_CollectDrop_Plant",
+    "entry_size": 1487,
+    "level_count": 10,
+    "payload_hex": "0100000000020000000000000000000200000000000000000000000000000000000000000000000017000000ec8b9debacbc20eb939ceb9e8deba5a020eca69d"
+  },
+  "1000073": {
+    "key": 1000073,
+    "name": "BuffLevel_CollectDrop_Animal",
+    "entry_size": 1588,
+    "level_count": 10,
+    "payload_hex": "0100000000020000000000000000000200000000000000000000000000000000000000000000000021000000eb8f99ebacbc20ebb680ec82b0ebacbc20eb939c"
+  },
+  "1000105": {
+    "key": 1000105,
+    "name": "BuffLevel_Drop_Log",
+    "entry_size": 380,
+    "level_count": 2,
+    "payload_hex": "01000000000200000000ddea6445000200000000000000000000000000000000000000000000000025000000ebb28cebaaa9ec9aa920eb8f84eb81bc20ecb2b4"
+  },
+  "1000176": {
+    "key": 1000176,
+    "name": "BuffLevel_Drop_Mining",
+    "entry_size": 369,
+    "level_count": 2,
+    "payload_hex": "01000000000200000000d94344e000020000000000000000000000000000000000000000000000001e000000eab3a1eab4adec9db420ecb2b4ed81ac20ecb0a9"
+  },
+  "1000093": {
+    "key": 1000093,
+    "name": "BuffLevel_CollectDrop_Log",
+    "entry_size": 1485,
+    "level_count": 10,
+    "payload_hex": "0100000000020000000000000000000200000000000000000000000000000000000000000000000017000000ebaaa9ec9eac20eb939ceb9e8deba5a020eca69d"
+  },
+  "1000226": {
+    "key": 1000226,
+    "name": "BuffLevel_CollectDrop_Machine",
+    "entry_size": 1489,
+    "level_count": 10,
+    "payload_hex": "0100000000020000000000000000000200000000000000000000000000000000000000000000000017000000eab8b0eab38420eb939ceb9e8deba5a020eca69d"
+  },
+  "1000066": {
+    "key": 1000066,
+    "name": "BuffLevel_EquipDropRate",
+    "entry_size": 1494,
+    "level_count": 10,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000018000000457175697044726f705261746520eca69deab080"
+  },
+  "1000149": {
+    "key": 1000149,
+    "name": "BuffLevel_AbyssGrass_Immune",
+    "entry_size": 205,
+    "level_count": 1,
+    "payload_hex": "0100000000250000000000000000000200000000000000000000000000000000000000000000000014000000ec96b4ebb984ec8aa420ed928020eba9b4ec97ad"
+  },
+  "1000150": {
+    "key": 1000150,
+    "name": "BuffLevel_Passive_Hyena_PoisonImmune",
+    "entry_size": 339,
+    "level_count": 2,
+    "payload_hex": "0100000000250000000000000000000200000000000000000000000000000000000000000000000011000000eb8f8520ed94bced95b420eba9b4ec97ad7a3712"
+  },
+  "1000225": {
+    "key": 1000225,
+    "name": "BuffLevel_Passive_CCImumune",
+    "entry_size": 1401,
+    "level_count": 10,
+    "payload_hex": "010000000025000000000000000000020000000000000000000000000000000000000000000000000d000000ec8898eba9b420eba9b4ec97ad000000000056fe"
+  },
+  "1000151": {
+    "key": 1000151,
+    "name": "BuffLevel_Passive_Immune_Bismuth",
+    "entry_size": 209,
+    "level_count": 1,
+    "payload_hex": "0100000000250000000000000000000200000000000000000000000000000000000000000000000013000000ebb984ec8aa4ebacb4ed8ab820eba9b4ec97ade7"
+  },
+  "1000152": {
+    "key": 1000152,
+    "name": "BuffLevel_Passive_DeerKingHelm",
+    "entry_size": 232,
+    "level_count": 1,
+    "payload_hex": "0100000000360000000000000000000200000000000000000000000000000000000000000000000029000000ec8aa4ed82ac20eab3b5eab2a9eba0a520eca69d"
+  },
+  "1000153": {
+    "key": 1000153,
+    "name": "BuffLevel_Socket_AddKillSkillLevel",
+    "entry_size": 548,
+    "level_count": 3,
+    "payload_hex": "010000000069000000000000000000020000000000000000000000000000000000000000000000002e000000eca08120ecb298ecb99820ec8b9c20ec9e90ec9b"
+  },
+  "1000270": {
+    "key": 1000270,
+    "name": "BuffLevel_Socket_DecreaseHP_IncreaseMP_Dot_Desc",
+    "entry_size": 2457,
+    "level_count": 15,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000033000000ec839debaa8520eab090ec868c202d20ec9aa9ea"
+  },
+  "1000130": {
+    "key": 1000130,
+    "name": "BuffLevel_Passive_Myurdin_Sword",
+    "entry_size": 430,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000a25de7ee000200000000000000000000000000000000000000000000000022000000ebac98eba5b4eb949820ed959cec869020eab280"
+  },
+  "1000131": {
+    "key": 1000131,
+    "name": "BuffLevel_Passive_SplitHornSword",
+    "entry_size": 195,
+    "level_count": 1,
+    "payload_hex": "010000000011000000008ef14cad000200000000000000000000000000000000000000000000000010000000ecaabceab09ceca784ebbf9420eab280cc5b03ff"
+  },
+  "1000132": {
+    "key": 1000132,
+    "name": "BuffLevel_Passive_SizlekSword",
+    "entry_size": 391,
+    "level_count": 2,
+    "payload_hex": "010000000011000000001fe32f8f00020000000000000000000000000000000000000000000000000d000000ec8b9ceca690eba08920eab280f83d3d1e0056fe"
+  },
+  "1000253": {
+    "key": 1000253,
+    "name": "BuffLevel_Passive_HexeMarie",
+    "entry_size": 372,
+    "level_count": 2,
+    "payload_hex": "010000000011000000003ec1f960000200000000000000000000000000000000000000000000000013000000eba788eb8580ec9d9820eca780ed8ca1ec9db44d"
+  },
+  "1000134": {
+    "key": 1000134,
+    "name": "BuffLevel_Passive_CrowmanSword",
+    "entry_size": 400,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000eb5df85e000200000000000000000000000000000000000000000000000010000000ed81aceba19cec9ab0eba7a820eab28073edabad"
+  },
+  "1000135": {
+    "key": 1000135,
+    "name": "BuffLevel_Passive_CaliburnRapier",
+    "entry_size": 201,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000d55d95cf000200000000000000000000000000000000000000000000000016000000ecb9bceba6acebb28820eba088ec9db4ed94bcec"
+  },
+  "1000136": {
+    "key": 1000136,
+    "name": "BuffLevel_Passive_ReedDevilSword",
+    "entry_size": 399,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000013a95337000200000000000000000000000000000000000000000000000025000000eba6aceb939ceb8db0ebb98c20ed959cec869020"
+  },
+  "1000133": {
+    "key": 1000133,
+    "name": "BuffLevel_Passive_MasterDoo",
+    "entry_size": 369,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000a042df0f000200000000000000000000000000000000000000000000000014000000eb919020ec84a0ec82ac20ec9691ec8690eab280"
+  },
+  "1000138": {
+    "key": 1000138,
+    "name": "BuffLevel_Passive_HamondBindel_LongSword",
+    "entry_size": 422,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000874fb1b4000200000000000000000000000000000000000000000000000028000000ed97a4ebaaacebb094ec9db8eb8db820ec9691ec"
+  },
+  "1000139": {
+    "key": 1000139,
+    "name": "BuffLevel_Passive_RedsentinelBow",
+    "entry_size": 213,
+    "level_count": 1,
+    "payload_hex": "010000000011000000002a91caa3000200000000000000000000000000000000000000000000000022000000ebb689ec9d8020ed8c8cec8898eabebc20ed999c"
+  },
+  "1000256": {
+    "key": 1000256,
+    "name": "BuffLevel_Passive_Trukan",
+    "entry_size": 383,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000b2f9124b000200000000000000000000000000000000000000000000000025000000ed88aceba5b4ecb9b820eab8b0ec96b420ecb2b4"
+  },
+  "1000259": {
+    "key": 1000259,
+    "name": "BuffLevel_Passive_Catfish",
+    "entry_size": 392,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000098cc2384000200000000000000000000000000000000000000000000000025000000eba994eab8b0eab2bd20ed88aceab5ac20ecb2b4"
+  },
+  "1000142": {
+    "key": 1000142,
+    "name": "BuffLevel_Passive_Antumbra_TwoHandSword",
+    "entry_size": 444,
+    "level_count": 2,
+    "payload_hex": "010000000011000000008377ab5d000200000000000000000000000000000000000000000000000028000000ec96b4eb91a0ec9db8eb8f84ec9e9020ec9691ec"
+  },
+  "1000159": {
+    "key": 1000159,
+    "name": "BuffLevel_Passive_Moonhead_GiantSpear_Fire",
+    "entry_size": 233,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000b053379400020000000000000000000000000000000000000000000000002c000000ebacb8ed97a4eb939c20eab1b0eb8c80ecb0bd20"
+  },
+  "1000163": {
+    "key": 1000163,
+    "name": "BuffLevel_Passive_Moonhead_GiantSpear_Ice",
+    "entry_size": 229,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000f1c463ae000200000000000000000000000000000000000000000000000029000000ebacb8ed97a4eb939c20eab1b0eb8c80ecb0bd20"
+  },
+  "1000164": {
+    "key": 1000164,
+    "name": "BuffLevel_Passive_Moonhead_GiantSpear_Lightning",
+    "entry_size": 238,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000095e2ec7200020000000000000000000000000000000000000000000000002c000000ebacb8ed97a4eb939c20eab1b0eb8c80ecb0bd20"
+  },
+  "1000144": {
+    "key": 1000144,
+    "name": "BuffLevel_Passive_Ator_Sword",
+    "entry_size": 409,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000d3c0f61e00020000000000000000000000000000000000000000000000001b000000ec9584ed86a0eba5b420eab28020ecb0a9ec9aa9"
+  },
+  "1000251": {
+    "key": 1000251,
+    "name": "BuffLevel_Passive_SilverArmor",
+    "entry_size": 395,
+    "level_count": 2,
+    "payload_hex": "010000000011000000003a8dc346000200000000000000000000000000000000000000000000000028000000ec9d80eab091ec98b720ec96b4ebb984ec8aa420"
+  },
+  "1000137": {
+    "key": 1000137,
+    "name": "BuffLevel_Passive_Merrick",
+    "entry_size": 215,
+    "level_count": 1,
+    "payload_hex": "010000000011000000004d980d0200020000000000000000000000000000000000000000000000002b000000ed99a9eab888eab8b0ec82ac20ec96b4ebb984ec"
+  },
+  "1000263": {
+    "key": 1000263,
+    "name": "BuffLevel_Passive_Muscan",
+    "entry_size": 386,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000097ae58c7000200000000000000000000000000000000000000000000000028000000eba8b8ec8aa4ecb9b820ec96b4ebb984ec8aa420"
+  },
+  "1000148": {
+    "key": 1000148,
+    "name": "BuffLevel_Passive_SoulKnight_OneHandSword",
+    "entry_size": 413,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000e29ddcb4000200000000000000000000000000000000000000000000000026000000ec9881ed98bc20eab8b0ec82ac20ed959cec8690"
+  },
+  "1000161": {
+    "key": 1000161,
+    "name": "BuffLevel_Passive_WhiteHorn",
+    "entry_size": 406,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000734c266500020000000000000000000000000000000000000000000000001e000000ed9598ec9680ebbf9420eab8b0ec96b420ecb0a9"
+  },
+  "1000156": {
+    "key": 1000156,
+    "name": "BuffLevel_Passive_FlameKnightSword",
+    "entry_size": 430,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000890a214400020000000000000000000000000000000000000000000000002f000000ed9994ec97bcec9d9820eab8b0ec82ac20ed8ab8"
+  },
+  "1000140": {
+    "key": 1000140,
+    "name": "BuffLevel_Passive_Ludvig",
+    "entry_size": 392,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000919a4235000200000000000000000000000000000000000000000000000013000000eba3a8eb939cebb98520ed959cec8690eab280c7"
+  },
+  "1000254": {
+    "key": 1000254,
+    "name": "BuffLevel_Passive_TarandusWarrior",
+    "entry_size": 223,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000057f20e4e00020000000000000000000000000000000000000000000000002b000000ed8380eb9e80eb9190ec8aa420ec9b8ceba6acec"
+  },
+  "1000250": {
+    "key": 1000250,
+    "name": "BuffLevel_Passive_Ogre",
+    "entry_size": 395,
+    "level_count": 2,
+    "payload_hex": "010000000011000000005f200488000200000000000000000000000000000000000000000000000028000000ec98a4ec9ab0eab1b020ec96b4ebb984ec8aa420"
+  },
+  "1000175": {
+    "key": 1000175,
+    "name": "BuffLevel_Passive_Karanda",
+    "entry_size": 414,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000aacc8ac9000200000000000000000000000000000000000000000000000028000000ecb9b4eb9e80eb8ba420ec96b4ebb984ec8aa420"
+  },
+  "1000266": {
+    "key": 1000266,
+    "name": "BuffLevel_Passive_Primus",
+    "entry_size": 416,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000204b268800020000000000000000000000000000000000000000000000002b000000ed9484eba6acebacb4ec8aa420ec96b4ebb984ec"
+  },
+  "1000129": {
+    "key": 1000129,
+    "name": "BuffLevel_Passive_Titan",
+    "entry_size": 210,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000ebe920be000200000000000000000000000000000000000000000000000028000000ed8380ec9db4ed838420ec96b4ebb984ec8aa420"
+  },
+  "1000258": {
+    "key": 1000258,
+    "name": "BuffLevel_Passive_Priscus",
+    "entry_size": 413,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000080e5233300020000000000000000000000000000000000000000000000002e000000ed9484eba6acec8aa4ecbba4ec8aa420ec96b4eb"
+  },
+  "1000261": {
+    "key": 1000261,
+    "name": "BuffLevel_Passive_Praevus",
+    "entry_size": 405,
+    "level_count": 2,
+    "payload_hex": "010000000011000000006297dcc100020000000000000000000000000000000000000000000000002e000000ed9484eba088ec9db4ebb284ec8aa420ec96b4eb"
+  },
+  "1000257": {
+    "key": 1000257,
+    "name": "BuffLevel_Passive_Leebur",
+    "entry_size": 418,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000896ee6e0000200000000000000000000000000000000000000000000000028000000eba6acebb88ceba5b420ec96b4ebb984ec8aa420"
+  },
+  "1000160": {
+    "key": 1000160,
+    "name": "BuffLevel_Passive_LanFord",
+    "entry_size": 402,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000926b388000020000000000000000000000000000000000000000000000002f000000ec9b94ed84b020eb9e9ced8faceb939c20ec96b4"
+  },
+  "1000125": {
+    "key": 1000125,
+    "name": "BuffLevel_Passive_Forgotten_General",
+    "entry_size": 416,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000fc4fb4bc00020000000000000000000000000000000000000000000000002f000000ec9e8aed9880eca78420ec9ea5eab5b020ec96b4"
+  },
+  "1000155": {
+    "key": 1000155,
+    "name": "BuffLevel_Passive_QueenSpider",
+    "entry_size": 399,
+    "level_count": 2,
+    "payload_hex": "010000000011000000004943a67f00020000000000000000000000000000000000000000000000002c000000ec97acec999520eab1b0ebafb820ec96b4ebb984"
+  },
+  "1000260": {
+    "key": 1000260,
+    "name": "BuffLevel_Passive_ImpBoss",
+    "entry_size": 215,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000211d5de100020000000000000000000000000000000000000000000000002b000000ecbc80ec9584eba3a8ec8aa420ec96b4ebb984ec"
+  },
+  "1000255": {
+    "key": 1000255,
+    "name": "BuffLevel_Passive_Skevald",
+    "entry_size": 401,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000b11fd6d400020000000000000000000000000000000000000000000000002b000000ec8aa4ecbc80ebb09ceb939c20ec96b4ebb984ec"
+  },
+  "1000265": {
+    "key": 1000265,
+    "name": "BuffLevel_Passive_Antumbra_Spear",
+    "entry_size": 232,
+    "level_count": 1,
+    "payload_hex": "010000000011000000003bfd53a2000200000000000000000000000000000000000000000000000035000000ec9588ed88bcebb88ceb9dbc20ec8aa4ed94bcec"
+  },
+  "1000162": {
+    "key": 1000162,
+    "name": "BuffLevel_Passive_GottiSword",
+    "entry_size": 427,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000006cc0bb6000200000000000000000000000000000000000000000000000022000000eab3a0ec988cec9d9820ed959cec869020eab280"
+  },
+  "1000088": {
+    "key": 1000088,
+    "name": "BuffLevel_Passive_DarknessKingHalberd",
+    "entry_size": 435,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000d2dc50d4000200000000000000000000000000000000000000000000000021000000ec96b4eb91a0ec999520ed95a0ebb284eb939c20"
+  },
+  "1000169": {
+    "key": 1000169,
+    "name": "BuffLevel_Passive_Antumbra_TwoHandRod",
+    "entry_size": 435,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000cf87a0c2000200000000000000000000000000000000000000000000000038000000ec96b4eb91a0ec9db8eb8f84ec9e9020ec9b8ced"
+  },
+  "1000170": {
+    "key": 1000170,
+    "name": "BuffLevel_Passive_SolidBringer_WarHammer",
+    "entry_size": 413,
+    "level_count": 2,
+    "payload_hex": "01000000001100000000da71b11d000200000000000000000000000000000000000000000000000028000000eb8ba8eb8ba8ed959c20eb8da9ecb99820ec9b8c"
+  },
+  "1000264": {
+    "key": 1000264,
+    "name": "BuffLevel_Passive_Gwen",
+    "entry_size": 411,
+    "level_count": 2,
+    "payload_hex": "010000000011000000006c1a0c2c000200000000000000000000000000000000000000000000000028000000eab7b8ec9bac20ed81aceba088ec9db4ebb284ec"
+  },
+  "1000120": {
+    "key": 1000120,
+    "name": "BuffLevel_Passive_Bastier_Gear",
+    "entry_size": 412,
+    "level_count": 2,
+    "payload_hex": "010000000011000000007564413a000200000000000000000000000000000000000000000000000021000000ebb094ec8aa4ed8bb0ec96b420eab8b0ec96b420"
+  },
+  "1000195": {
+    "key": 1000195,
+    "name": "BuffLevel_Fishing_Autoreel",
+    "entry_size": 189,
+    "level_count": 1,
+    "payload_hex": "010000000011000000009fc93172000200000000000000000000000000000000000000000000000010000000ec9e90eb8f9920eca484eab090eab8b031804f32"
+  },
+  "1000223": {
+    "key": 1000223,
+    "name": "BuffLevel_Hit_HPRecover",
+    "entry_size": 4728,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed94bceab2a920ec8b9c20ec839debaa8520ed9a"
+  },
+  "1000224": {
+    "key": 1000224,
+    "name": "BuffLevel_Hit_MPRecover",
+    "entry_size": 4728,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed94bceab2a920ec8b9c20ec9aa9eab8b020ed9a"
+  },
+  "1000248": {
+    "key": 1000248,
+    "name": "BuffLevel_Hit_SPRecover",
+    "entry_size": 4728,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed94bceab2a920ec8b9c20eab8b0eba0a520ed9a"
+  },
+  "1000208": {
+    "key": 1000208,
+    "name": "BuffLevel_Passive_Attack_HPRecover",
+    "entry_size": 491,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20ec839debaa8520ed9a"
+  },
+  "1000209": {
+    "key": 1000209,
+    "name": "BuffLevel_Passive_Attack_MPRecover",
+    "entry_size": 491,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20ec9aa9eab8b020ed9a"
+  },
+  "1000210": {
+    "key": 1000210,
+    "name": "BuffLevel_Passive_Attack_SPRecover",
+    "entry_size": 491,
+    "level_count": 3,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20eab8b0eba0a520ed9a"
+  },
+  "1000252": {
+    "key": 1000252,
+    "name": "BuffLevel_Attack_HPRecover",
+    "entry_size": 4731,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20ec839debaa8520ed9a"
+  },
+  "1000262": {
+    "key": 1000262,
+    "name": "BuffLevel_Attack_MPRecover",
+    "entry_size": 4731,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20ec9aa9eab8b020ed9a"
+  },
+  "1000273": {
+    "key": 1000273,
+    "name": "BuffLevel_Attack_SPRecover",
+    "entry_size": 4731,
+    "level_count": 30,
+    "payload_hex": "01000000003f0000000000000000000200000000000000000000000000000000000000000000000018000000ed8380eab2a920ec8b9c20eab8b0eba0a520ed9a"
+  },
+  "1000211": {
+    "key": 1000211,
+    "name": "BuffLevel_TradeShopSellPricePercent",
+    "entry_size": 825,
+    "level_count": 5,
+    "payload_hex": "0100000000680000000000000000000200000000000000000000000000000000000000000000000022000000ebacb4ec97aded928820ed8c90eba7a420ec8b9c"
+  },
+  "1000212": {
+    "key": 1000212,
+    "name": "BuffLevel_Passive_Combo",
+    "entry_size": 444,
+    "level_count": 3,
+    "payload_hex": "01000000006d00000000ca616c3e000200000000000000000000000000000000000000000000000010000000ecbda4ebb3b420eab8b0ec96b4ec9aa9d1b80c9c"
+  },
+  "1000213": {
+    "key": 1000213,
+    "name": "BuffLevel_HorseArmor_Shoe_StaminaRegen",
+    "entry_size": 803,
+    "level_count": 5,
+    "payload_hex": "01000000000e000000000000000000020000000000000000000000000000000000000000000000001a000000eab8b0eba0a520ec9e90ec97b0ed9a8cebb3b520"
+  },
+  "1000147": {
+    "key": 1000147,
+    "name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_PlateArmor",
+    "entry_size": 3496,
+    "level_count": 20,
+    "payload_hex": "0100000000740000000000000000000200000000000000000000000000000000000000000000000033000000ed8c90eab88820eab091ec98b720ed8380eab2a9"
+  },
+  "1000154": {
+    "key": 1000154,
+    "name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_LeatherArmor",
+    "entry_size": 1798,
+    "level_count": 10,
+    "payload_hex": "0100000000740000000000000000000200000000000000000000000000000000000000000000000033000000eab080eca3bd20eab091ec98b720ed8380eab2a9"
+  },
+  "1000157": {
+    "key": 1000157,
+    "name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_FabricArmor",
+    "entry_size": 1767,
+    "level_count": 10,
+    "payload_hex": "0100000000740000000000000000000200000000000000000000000000000000000000000000000030000000ecb29c20eab091ec98b720ed8380eab2a920ec8b"
+  },
+  "1000214": {
+    "key": 1000214,
+    "name": "BuffLevel_HorseArmor_Stirrup_HPRegen",
+    "entry_size": 886,
+    "level_count": 5,
+    "payload_hex": "010000000001000000000000000000020000000000000000000000000000000000000000000000001a000000ec839debaa8520ec9e90ec97b0ed9a8cebb3b520"
+  },
+  "1000267": {
+    "key": 1000267,
+    "name": "BuffLevel_Boss_PauseCount",
+    "entry_size": 416,
+    "level_count": 3,
+    "payload_hex": "010000000011000000005a44aa9300020000000000000000000000000000000000000000000000000a00000050617573652031ebb288000000000056feffff00"
+  },
+  "1000268": {
+    "key": 1000268,
+    "name": "BuffLevel_Boss_ThreatCount",
+    "entry_size": 656,
+    "level_count": 5,
+    "payload_hex": "0100000000110000000057d8cb9f00020000000000000000000000000000000000000000000000000b0000005468726561742031ebb288000000000056feffff"
+  },
+  "1000269": {
+    "key": 1000269,
+    "name": "BuffLevel_BumpCountStart",
+    "entry_size": 185,
+    "level_count": 1,
+    "payload_hex": "01000000001100000000083433f200020000000000000000000000000000000000000000000000000e00000042756d7020ed9688eb8a94eca780000000000056"
+  },
+  "1000102": {
+    "key": 1000102,
+    "name": "BuffLevel_MountedHit",
+    "entry_size": 670,
+    "level_count": 5,
+    "payload_hex": "0100000000110000000064e970e700020000000000000000000000000000000000000000000000000f0000004d6f756e7465644869742031ebb2880000000000"
+  },
+  "1000103": {
+    "key": 1000103,
+    "name": "BuffLevel_Legendary_Wolf_Effect",
+    "entry_size": 211,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000021000000eca084ec84a4ec9d9820eb8a91eb8c8020ec9594"
+  },
+  "1000118": {
+    "key": 1000118,
+    "name": "BuffLevel_Ludvig_Effect",
+    "entry_size": 203,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000021000000eba3a8eb939cebb98520ec8381ec8b9c20ebb288"
+  },
+  "1000193": {
+    "key": 1000193,
+    "name": "BuffLevel_Ludvig_Awakened_Effect",
+    "entry_size": 808,
+    "level_count": 5,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000002d000000eab081ec84b120eba3a8eb939cebb98520ec8381"
+  },
+  "1000194": {
+    "key": 1000194,
+    "name": "BuffLevel_DeadBlood_Effect",
+    "entry_size": 192,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000013000000ed94bceb8db0ecb9bc20ec9db4ed8e99ed8ab800"
+  },
+  "1000217": {
+    "key": 1000217,
+    "name": "BuffLevel_ReedDevil_EyeLights_Effect",
+    "entry_size": 212,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001d000000eba6aceb939ceb8db0ebb98c20ec9588eab49120"
+  },
+  "1000218": {
+    "key": 1000218,
+    "name": "BuffLevel_DarkMyordin_EyeLights_Effect",
+    "entry_size": 344,
+    "level_count": 2,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001a000000ebac98eba5b4eb949820ec9588eab49120ec9db4"
+  },
+  "1000246": {
+    "key": 1000246,
+    "name": "BuffLevel_FlameMyurdin_Effect",
+    "entry_size": 436,
+    "level_count": 2,
+    "payload_hex": "010000000014000000000000000000020000000000000000000000000000000000000000000000001b000000ec9aa9ec959420ebac98eba5b4eb949820ebb688"
+  },
+  "1000235": {
+    "key": 1000235,
+    "name": "BuffLevel_Boss_EyeLights_Effect",
+    "entry_size": 337,
+    "level_count": 2,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001a000000ebb3b4ec8aa420ec9588eab49120ec9db4ed8e99"
+  },
+  "1000236": {
+    "key": 1000236,
+    "name": "BuffLevel_WhiteHorn_EyeLights_Effect",
+    "entry_size": 348,
+    "level_count": 2,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001d000000ed9598ec9680ebbf9420ec9588eab49120ec9db4"
+  },
+  "1000237": {
+    "key": 1000237,
+    "name": "BuffLevel_Nuclear_Fusion_Effect",
+    "entry_size": 349,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000020000000ed95b5ec9cb5ed95a9ecb2b420ec9588eab49120"
+  },
+  "1000238": {
+    "key": 1000238,
+    "name": "BuffLevel_ReedDevil_Shadow_Effect",
+    "entry_size": 209,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001d000000eba6aceb939ceb8db0ebb98c20ec9e94ec838120"
+  },
+  "1000239": {
+    "key": 1000239,
+    "name": "BuffLevel_ReedDevil_Clone_Shadow_Effect",
+    "entry_size": 215,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001d000000eba6aceb939ceb8db0ebb98c20ec9e94ec838120"
+  },
+  "1000240": {
+    "key": 1000240,
+    "name": "BuffLevel_Hexe_Marie_Effect",
+    "entry_size": 204,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001e000000ed97a5ec84b820eba788eba6ac20ec8381ec8b9c"
+  },
+  "1000241": {
+    "key": 1000241,
+    "name": "BuffLevel_WizardBracelet_Effect",
+    "entry_size": 349,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000020000000eca780ec8381eba788ebb295ec82ac20ed8c94ec"
+  },
+  "1000242": {
+    "key": 1000242,
+    "name": "BuffLevel_Wizard_Halo_Effect",
+    "entry_size": 204,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001d000000eba788ebb295ec82ac20ed97a4ec9dbceba19c20"
+  },
+  "1000243": {
+    "key": 1000243,
+    "name": "BuffLevel_Giant_Titan_Effect",
+    "entry_size": 201,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001a000000eab1b0eb8c8020ed8380ec9db4ed838420ec9db4"
+  },
+  "1000222": {
+    "key": 1000222,
+    "name": "BuffLevel_Abyss_Kutum_Effect",
+    "entry_size": 201,
+    "level_count": 1,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001a000000ec96b4ebb984ec8aa420ecbfa0ed88bc20ec9db4"
+  },
+  "1000247": {
+    "key": 1000247,
+    "name": "BuffLevel_Oongka_SuperArmorEffect",
+    "entry_size": 216,
+    "level_count": 1,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000024000000ec9b85ecb9b420ed8faced9aa820ec8a88ed8dbc"
+  },
+  "1000172": {
+    "key": 1000172,
+    "name": "BuffLevel_Armor_Plate_Mastery",
+    "entry_size": 6710,
+    "level_count": 50,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000011000000ed8c90eab88820ec8899eba0a8204c76313c6bda"
+  },
+  "1000173": {
+    "key": 1000173,
+    "name": "BuffLevel_Armor_Leather_Mastery",
+    "entry_size": 6712,
+    "level_count": 50,
+    "payload_hex": "0100000000500000000000000000000200000000000000000000000000000000000000000000000011000000eab080eca3bd20ec8899eba0a8204c7631de0c83"
+  },
+  "1000174": {
+    "key": 1000174,
+    "name": "BuffLevel_Armor_Fabric_Mastery",
+    "entry_size": 6561,
+    "level_count": 50,
+    "payload_hex": "010000000050000000000000000000020000000000000000000000000000000000000000000000000e000000ecb29c20ec8899eba0a8204c7631d18db4630056"
+  },
+  "1000187": {
+    "key": 1000187,
+    "name": "BuffLevel_Armor_Plate_Mastery_Stat",
+    "entry_size": 8106,
+    "level_count": 50,
+    "payload_hex": "0100000000030000000000000000000200000000000000000000000000000000000000000000000029000000ed8c90eab88820ec8899eba0a8202d20ed94bced"
+  },
+  "1000188": {
+    "key": 1000188,
+    "name": "BuffLevel_Armor_Leather_Mastery_Stat",
+    "entry_size": 29584,
+    "level_count": 200,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000002f000000eab080eca3bd20ec8899eba0a8204c7631202d20"
+  },
+  "1000206": {
+    "key": 1000206,
+    "name": "BuffLevel_Armor_Fabric_Mastery_Stat",
+    "entry_size": 23887,
+    "level_count": 150,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000029000000ecb29c20ec8899eba0a8204c7631202d20ec9db4"
+  },
+  "1000000": {
+    "key": 1000000,
+    "name": "BuffLevel_Temperature",
+    "entry_size": 5568,
+    "level_count": 35,
+    "payload_hex": "fcffffff00220000000000000000000200000000000000000000000000000000000000000000000035000000ec8b9ced8080ec849c20ec97b0ecb69cec9aa920"
+  },
+  "1000145": {
+    "key": 1000145,
+    "name": "BuffLevel_Temperature_Debuff_Cold",
+    "entry_size": 961,
+    "level_count": 6,
+    "payload_hex": "000000000011000000000000000000020000000000000000000000000000000000000000000000001500000032eb8ba8eab38420ecb694ec9c8420eba789ed9e"
+  },
+  "1000146": {
+    "key": 1000146,
+    "name": "BuffLevel_Temperature_Debuff_Hot",
+    "entry_size": 960,
+    "level_count": 6,
+    "payload_hex": "000000000011000000000000000000020000000000000000000000000000000000000000000000001500000032eb8ba8eab38420eb8d94ec9c8420eba789ed9e"
+  },
+  "1000067": {
+    "key": 1000067,
+    "name": "BuffLevel_Electricity",
+    "entry_size": 1060,
+    "level_count": 7,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000010000000ec8aa4ed8c8ced81ac20ed9aa8eab3bc00000000"
+  },
+  "1000143": {
+    "key": 1000143,
+    "name": "BuffLevel_Temperature_Wagon",
+    "entry_size": 1136,
+    "level_count": 7,
+    "payload_hex": "01000000005f00000000d557b4a1000200000000000000000000000000000000e80300000000000021000000ed9994ec83812031eb8ba8eab384202d20eca780"
+  },
+  "1000080": {
+    "key": 1000080,
+    "name": "BuffLevel_Temperature_Boss",
+    "entry_size": 566,
+    "level_count": 3,
+    "payload_hex": "01000000005f00000000d557b4a1000200000000000000000000000000000000e80300000000000021000000ed9994ec83812032eb8ba8eab384202d20eca780"
+  },
+  "1000158": {
+    "key": 1000158,
+    "name": "BuffLevel_Temperature_Insect",
+    "entry_size": 977,
+    "level_count": 6,
+    "payload_hex": "ffffffff00340000000000000000000200000000000000000000000000000000000000000000000022000000ebb999eab2b02032eb8ba8eab384202d20446561"
+  },
+  "1000244": {
+    "key": 1000244,
+    "name": "BuffLevel_Electricity_Boss",
+    "entry_size": 327,
+    "level_count": 2,
+    "payload_hex": "01000000005f000000007063d104000200000000000000000000000000000000e8030000000000001d000000eab090eca084202d20eca780ec868d20eb8db0eb"
+  },
+  "1000271": {
+    "key": 1000271,
+    "name": "BuffLevel_Electricity_Machine",
+    "entry_size": 315,
+    "level_count": 2,
+    "payload_hex": "0100000000110000000000000000000200000000000000000000000000000000000000000000000010000000eab090eca08420ec9db4ed8e99ed8ab800000000"
+  },
+  "1000027": {
+    "key": 1000027,
+    "name": "BuffLevel_RedLightning",
+    "entry_size": 755,
+    "level_count": 4,
+    "payload_hex": "0100000000000000000000000000000200000000000000000000000000000000e80300000000000014000000ebb9a8eab08420eab090eca08420ed94bced95b4"
+  },
+  "1000028": {
+    "key": 1000028,
+    "name": "BuffLevel_Bismuth",
+    "entry_size": 624,
+    "level_count": 3,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001c000000ebb984ec8aa4ebacb4ed8ab820ec849ded999420"
+  },
+  "1000021": {
+    "key": 1000021,
+    "name": "BuffLevel_Confusion",
+    "entry_size": 775,
+    "level_count": 5,
+    "payload_hex": "01000000001100000000a3b4f400000200000000000000000000000000000000000000000000000011000000ed98bceb9e8020ebb284ed9484204c7631000000"
+  },
+  "1000020": {
+    "key": 1000020,
+    "name": "BuffLevel_Poison",
+    "entry_size": 2547,
+    "level_count": 10,
+    "payload_hex": "01000000000000000000f64752a4000200000000000000000000000000000000e8030000000000001a000000eb8f85202d20eca780ec868d20eb8db0ebafb8ec"
+  },
+  "1000032": {
+    "key": 1000032,
+    "name": "BuffLevel_AbyssPoison",
+    "entry_size": 778,
+    "level_count": 5,
+    "payload_hex": "010000000011000000005796b2ac000200000000000000000000000000000000000000000000000006000000ec97b0ecb69c000000000056feffff9e440f0000"
+  },
+  "1000023": {
+    "key": 1000023,
+    "name": "BuffLevel_WhitePoison",
+    "entry_size": 879,
+    "level_count": 6,
+    "payload_hex": "01000000005f0000000000000000000200000000000000000000000000000000e80300000000000011000000eb8f8520ed94bced95b428576869746529000000"
+  },
+  "1000022": {
+    "key": 1000022,
+    "name": "BuffLevel_PuplePoison",
+    "entry_size": 589,
+    "level_count": 4,
+    "payload_hex": "010000000011000000000000000000020000000000000000000000000000000000000000000000001c000000eb8f8520ebb3b4eb9dbcec8389202d20ec9db4ed"
+  },
+  "1000276": {
+    "key": 1000276,
+    "name": "BuffLevel_Difficulty",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000277": {
+    "key": 1000277,
+    "name": "BuffLevel_Difficulty_Boss",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000278": {
+    "key": 1000278,
+    "name": "BuffLevel_Difficulty_PC",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000280": {
+    "key": 1000280,
+    "name": "BuffLevel_Equipment_FireResistance",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000281": {
+    "key": 1000281,
+    "name": "BuffLevel_Equipment_IceResistance",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000282": {
+    "key": 1000282,
+    "name": "BuffLevel_Equipment_ElectricityResistance",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000275": {
+    "key": 1000275,
+    "name": "BuffLevel_Equip_Set_Stealth_Faction_Flame_Knights",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  },
+  "1000279": {
+    "key": 1000279,
+    "name": "BuffLevel_WildSpirit_Boar_Angry",
+    "entry_size": 0,
+    "level_count": 0,
+    "payload_hex": ""
+  }
+}

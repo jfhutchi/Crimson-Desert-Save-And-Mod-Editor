@@ -1,0 +1,4240 @@
+{
+  "key": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      2200,
+      50001,
+      1002557
+    ]
+  },
+  "string_key": {
+    "types": {
+      "str": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      "Pyeonjeon_Arrow",
+      "Arrow",
+      "Quiver"
+    ]
+  },
+  "is_blocked": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "max_stack_count": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 10,
+    "examples": [
+      100,
+      100,
+      100
+    ]
+  },
+  "item_name": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "category": 7,
+        "index": 9448928051312,
+        "default": "9448928051312"
+      },
+      {
+        "category": 7,
+        "index": 214752659767408,
+        "default": "214752659767408"
+      },
+      {
+        "category": 7,
+        "index": 4305949527375984,
+        "default": "4305949527375984"
+      }
+    ]
+  },
+  "broken_item_prefix_string": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 1,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      3092008010
+    ]
+  },
+  "inventory_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 6,
+    "examples": [
+      2,
+      2,
+      5
+    ]
+  },
+  "equip_type_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 3038,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      1963713749,
+      1963713749,
+      1963713749
+    ]
+  },
+  "occupied_equip_slot_data_list": {
+    "types": {
+      "list[]": 5993,
+      "list[dict]": 31
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 31,
+    "max_list_len": 1,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "equip_slot_name_key": 1833778307,
+          "equip_slot_name_index_list": [
+            0
+          ]
+        }
+      ],
+      [
+        {
+          "equip_slot_name_key": 1833778307,
+          "equip_slot_name_index_list": [
+            0
+          ]
+        }
+      ],
+      [
+        {
+          "equip_slot_name_key": 1833778307,
+          "equip_slot_name_index_list": [
+            0
+          ]
+        }
+      ]
+    ]
+  },
+  "item_tag_list": {
+    "types": {
+      "list[]": 5993,
+      "list[int]": 31
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 31,
+    "max_list_len": 1,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        3584290493
+      ],
+      [
+        3584290493
+      ],
+      [
+        3584290493
+      ]
+    ]
+  },
+  "equipable_hash": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 189,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 11,
+    "examples": [
+      3142848953,
+      3142848953,
+      3142848953
+    ]
+  },
+  "consumable_type_list": {
+    "types": {
+      "list[]": 5559,
+      "list[int]": 465
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 465,
+    "max_list_len": 1,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        3798541819
+      ],
+      [
+        3798541819
+      ],
+      [
+        3798541819
+      ]
+    ]
+  },
+  "item_use_info_list": {
+    "types": {
+      "list[int]": 2213,
+      "list[]": 3811
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 2213,
+    "max_list_len": 7,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        2147483646,
+        2147483645,
+        2147483644
+      ],
+      [
+        2147483643,
+        2147483642,
+        2147483641
+      ],
+      [
+        2147483640,
+        2147483639,
+        2147483638
+      ]
+    ]
+  },
+  "item_icon_list": {
+    "types": {
+      "list[dict]": 6018,
+      "list[]": 6
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6018,
+    "max_list_len": 3,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "icon_path": 1815957208,
+          "check_exist_sealed_data": 0,
+          "gimmick_state_list": []
+        }
+      ],
+      [
+        {
+          "icon_path": 3457403533,
+          "check_exist_sealed_data": 0,
+          "gimmick_state_list": []
+        }
+      ],
+      [
+        {
+          "icon_path": 36413121,
+          "check_exist_sealed_data": 0,
+          "gimmick_state_list": []
+        }
+      ]
+    ]
+  },
+  "map_icon_path": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 20,
+    "examples": [
+      3938836851,
+      3938836851,
+      3938836851
+    ]
+  },
+  "money_icon_path": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 16,
+    "examples": [
+      3938836851,
+      3938836851,
+      3938836851
+    ]
+  },
+  "use_map_icon_alert": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 834,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "item_type": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5982,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      35,
+      35,
+      35
+    ]
+  },
+  "material_key": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5092,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 31,
+    "examples": [
+      2854549177,
+      2854549177,
+      2854549177
+    ]
+  },
+  "material_match_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5092,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 31,
+    "examples": [
+      2854549177,
+      2854549177,
+      2854549177
+    ]
+  },
+  "item_desc": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "category": 7,
+        "index": 9448928051313,
+        "default": "9448928051313"
+      },
+      {
+        "category": 7,
+        "index": 214752659767409,
+        "default": "214752659767409"
+      },
+      {
+        "category": 7,
+        "index": 4305949527375985,
+        "default": "4305949527375985"
+      }
+    ]
+  },
+  "item_desc2": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "category": 0,
+        "index": 0,
+        "default": ""
+      },
+      {
+        "category": 0,
+        "index": 0,
+        "default": ""
+      },
+      {
+        "category": 0,
+        "index": 0,
+        "default": ""
+      }
+    ]
+  },
+  "equipable_level": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "category_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      2402,
+      2402,
+      2402
+    ]
+  },
+  "knowledge_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 937,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      1000212,
+      1000239,
+      1000335
+    ]
+  },
+  "knowledge_obtain_type": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 937,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      3,
+      3,
+      3
+    ]
+  },
+  "destroy_effec_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 623,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 8,
+    "examples": [
+      1000881,
+      1000881,
+      1000881
+    ]
+  },
+  "equip_passive_skill_list": {
+    "types": {
+      "list[]": 5555,
+      "list[dict]": 469
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 469,
+    "max_list_len": 5,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "skill": 70048,
+          "level": 1
+        },
+        {
+          "skill": 91000,
+          "level": 1
+        }
+      ],
+      [
+        {
+          "skill": 70048,
+          "level": 1
+        },
+        {
+          "skill": 91000,
+          "level": 1
+        }
+      ],
+      [
+        {
+          "skill": 70048,
+          "level": 1
+        },
+        {
+          "skill": 91000,
+          "level": 1
+        }
+      ]
+    ]
+  },
+  "use_immediately": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 76,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "apply_max_stack_cap": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 457,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "extract_multi_change_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "item_memo": {
+    "types": {
+      "str": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 4822,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      "탄약류 아이템그룹",
+      "탄약류 아이템그룹",
+      "탄약류 아이템그룹"
+    ]
+  },
+  "filter_type": {
+    "types": {
+      "str": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "gimmick_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5957,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      1001367,
+      1001367,
+      1001367
+    ]
+  },
+  "gimmick_tag_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "max_drop_result_sub_item_count": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      6,
+      6,
+      6
+    ]
+  },
+  "use_drop_set_target": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "is_all_gimmick_sealable": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "sealable_item_info_list": {
+    "types": {
+      "list[]": 6018,
+      "list[dict]": 6
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6,
+    "max_list_len": 124,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002782
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002783
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002784
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002819
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002820
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002821
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002825
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002826
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002827
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002828
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002829
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002830
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002831
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002832
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002833
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002834
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002835
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002836
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003547
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003548
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003549
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003550
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003551
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003552
+        }
+      ],
+      [
+        {
+          "type_tag": 0,
+          "item_key": 1000547,
+          "unknown0": 1,
+          "value": 1000547
+        },
+        {
+          "type_tag": 0,
+          "item_key": 1002198,
+          "unknown0": 1,
+          "value": 1002198
+        },
+        {
+          "type_tag": 0,
+          "item_key": 30022,
+          "unknown0": 1,
+          "value": 30022
+        },
+        {
+          "type_tag": 0,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1000485
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002063
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003827
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002782
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002783
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002784
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002819
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002820
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002821
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002825
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002826
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003650
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003651
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002827
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002828
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002829
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002830
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002831
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002832
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002833
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002834
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002835
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002836
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003547
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003548
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003549
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003550
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003551
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003552
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003553
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003554
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003555
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003556
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003557
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003558
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003559
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003560
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003561
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003562
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003563
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003564
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003565
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003566
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003567
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003568
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003569
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003570
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003571
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003572
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003573
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003574
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003575
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003576
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003577
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003578
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003579
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003580
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003581
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003582
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003583
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003584
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003585
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003586
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003587
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003588
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003589
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003590
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003591
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003592
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003593
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003594
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003595
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003596
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003597
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003598
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003599
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003600
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003601
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003602
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003603
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003604
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003605
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003606
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003607
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003608
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003609
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003610
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003611
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003612
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003613
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003614
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003615
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003616
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003617
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003618
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003619
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003620
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003621
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003622
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003623
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003624
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003625
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003626
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003627
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003628
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003629
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003630
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003631
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003632
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003633
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003634
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003635
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003636
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003637
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003638
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003639
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003640
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003641
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003642
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002252
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1001769
+        }
+      ],
+      [
+        {
+          "type_tag": 0,
+          "item_key": 1000547,
+          "unknown0": 1,
+          "value": 1000547
+        },
+        {
+          "type_tag": 0,
+          "item_key": 1002198,
+          "unknown0": 1,
+          "value": 1002198
+        },
+        {
+          "type_tag": 0,
+          "item_key": 30022,
+          "unknown0": 1,
+          "value": 30022
+        },
+        {
+          "type_tag": 0,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1000485
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002063
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003827
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002782
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002783
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002784
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002819
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002820
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002821
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002825
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002826
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003650
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003651
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002827
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002828
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002829
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002830
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002831
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002832
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002833
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002834
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002835
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002836
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003547
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003548
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003549
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003550
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003551
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003552
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003553
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003554
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003555
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003556
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003557
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003558
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003559
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003560
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003561
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003562
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003563
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003564
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003565
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003566
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003567
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003568
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003569
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003570
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003571
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003572
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003573
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003574
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003575
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003576
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003577
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003578
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003579
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003580
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003581
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003582
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003583
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003584
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003585
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003586
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003587
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003588
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003589
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003590
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003591
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003592
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003593
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003594
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003595
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003596
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003597
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003598
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003599
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003600
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003601
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003602
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003603
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003604
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003605
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003606
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003607
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003608
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003609
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003610
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003611
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003612
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003613
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003614
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003615
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003616
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003617
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003618
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003619
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003620
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003621
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003622
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003623
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003624
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003625
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003626
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003627
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003628
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003629
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003630
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003631
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003632
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003633
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003634
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003635
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003636
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003637
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003638
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003639
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003640
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003641
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1003642
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1002252
+        },
+        {
+          "type_tag": 0,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1001769
+        }
+      ]
+    ]
+  },
+  "sealable_character_info_list": {
+    "types": {
+      "list[]": 6019,
+      "list[dict]": 5
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 5,
+    "max_list_len": 7,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002634
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002934
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1000479
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002633
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1003125
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1002635
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1000562
+        }
+      ],
+      [
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002634
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002934
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1000479
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002633
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1003125
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1002635
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1000562
+        }
+      ],
+      [
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002634
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002934
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1000479
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1002633
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 1,
+          "value": 1003125
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1002635
+        },
+        {
+          "type_tag": 3,
+          "item_key": 1000485,
+          "unknown0": 3,
+          "value": 1000562
+        }
+      ]
+    ]
+  },
+  "sealable_gimmick_info_list": {
+    "types": {
+      "list[]": 6023,
+      "list[dict]": 1
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 1,
+    "max_list_len": 1,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "type_tag": 1,
+          "item_key": 0,
+          "unknown0": 0,
+          "value": 1000548
+        }
+      ]
+    ]
+  },
+  "sealable_gimmick_tag_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "sealable_tribe_info_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "sealable_money_info_list": {
+    "types": {
+      "list[]": 6019,
+      "list[int]": 5
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 5,
+    "max_list_len": 4,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        1000547,
+        1002198,
+        30022,
+        1000485
+      ],
+      [
+        1000547,
+        1002198,
+        30022,
+        1000485
+      ],
+      [
+        1000547,
+        1002198,
+        30022,
+        1000485
+      ]
+    ]
+  },
+  "delete_by_gimmick_unlock": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6013,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "gimmick_unlock_message_local_string_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": [
+      2642152912,
+      2642152912,
+      2642152912
+    ]
+  },
+  "can_disassemble": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "transmutation_material_gimmick_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "transmutation_material_item_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "transmutation_material_item_group_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  },
+  "is_register_trade_market": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": []
+  },
+  "multi_change_info_list": {
+    "types": {
+      "list[]": 4916,
+      "list[int]": 1108
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 1108,
+    "max_list_len": 24,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        1000000
+      ],
+      [
+        1000001
+      ],
+      [
+        1000002
+      ]
+    ]
+  },
+  "is_editor_usable": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5910,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "discardable": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5787,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_dyeable": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 530,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_editable_grime": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 527,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_destroy_when_broken": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 109,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "quick_slot_index": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 488,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 5,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "reserve_slot_target_data_list": {
+    "types": {
+      "list[dict]": 972,
+      "list[]": 5052
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 972,
+    "max_list_len": 2,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        },
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        }
+      ],
+      [
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        },
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        }
+      ],
+      [
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        },
+        {
+          "reserve_slot_info": 1000000,
+          "condition_info": 0
+        }
+      ]
+    ]
+  },
+  "item_tier": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 3269,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 6,
+    "examples": [
+      1,
+      1,
+      2
+    ]
+  },
+  "is_important_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 548,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "apply_drop_stat_type": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6023,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "drop_default_data": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "drop_enchant_level": 0,
+        "socket_item_list": [],
+        "add_socket_material_item_list": [],
+        "default_sub_item": {
+          "type_id": 14,
+          "value": null
+        },
+        "socket_valid_count": 0,
+        "use_socket": 0
+      },
+      {
+        "drop_enchant_level": 0,
+        "socket_item_list": [],
+        "add_socket_material_item_list": [],
+        "default_sub_item": {
+          "type_id": 14,
+          "value": null
+        },
+        "socket_valid_count": 0,
+        "use_socket": 0
+      },
+      {
+        "drop_enchant_level": 0,
+        "socket_item_list": [],
+        "add_socket_material_item_list": [],
+        "default_sub_item": {
+          "type_id": 14,
+          "value": null
+        },
+        "socket_valid_count": 0,
+        "use_socket": 0
+      }
+    ]
+  },
+  "prefab_data_list": {
+    "types": {
+      "list[dict]": 5293,
+      "list[]": 731
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 5293,
+    "max_list_len": 10,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "prefab_names": [
+            2206749818
+          ],
+          "equip_slot_list": [],
+          "tribe_gender_list": [],
+          "is_craft_material": 0
+        }
+      ],
+      [
+        {
+          "prefab_names": [
+            2451478824
+          ],
+          "equip_slot_list": [],
+          "tribe_gender_list": [],
+          "is_craft_material": 0
+        }
+      ],
+      [
+        {
+          "prefab_names": [
+            2451478824
+          ],
+          "equip_slot_list": [],
+          "tribe_gender_list": [],
+          "is_craft_material": 0
+        }
+      ]
+    ]
+  },
+  "enchant_data_list": {
+    "types": {
+      "list[]": 2797,
+      "list[dict]": 3227
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 3227,
+    "max_list_len": 11,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 1,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": []
+        }
+      ],
+      [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 15000,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            },
+            {
+              "key": 15,
+              "price": {
+                "price": 300,
+                "sym_no": 0,
+                "item_info_wrapper": 15
+              }
+            }
+          ],
+          "equip_buffs": []
+        }
+      ],
+      [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 25000,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            },
+            {
+              "key": 15,
+              "price": {
+                "price": 500,
+                "sym_no": 0,
+                "item_info_wrapper": 15
+              }
+            }
+          ],
+          "equip_buffs": []
+        }
+      ]
+    ]
+  },
+  "gimmick_visual_prefab_data_list": {
+    "types": {
+      "list[dict]": 5349,
+      "list[]": 675
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 5349,
+    "max_list_len": 2,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "tag_name_hash": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefab_names": [
+            675919462
+          ],
+          "animation_path_list": [],
+          "use_gimmick_prefab": 0
+        }
+      ],
+      [
+        {
+          "tag_name_hash": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefab_names": [
+            2451478824
+          ],
+          "animation_path_list": [],
+          "use_gimmick_prefab": 0
+        }
+      ],
+      [
+        {
+          "tag_name_hash": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefab_names": [
+            2451478824
+          ],
+          "animation_path_list": [],
+          "use_gimmick_prefab": 0
+        }
+      ]
+    ]
+  },
+  "price_list": {
+    "types": {
+      "list[dict]": 5984,
+      "list[]": 40
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 5984,
+    "max_list_len": 3,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "key": 1,
+          "price": {
+            "price": 5,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": 1,
+          "price": {
+            "price": 2,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": 1,
+          "price": {
+            "price": 1,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        }
+      ]
+    ]
+  },
+  "docking_child_data": {
+    "types": {
+      "None": 5763,
+      "dict": 261
+    },
+    "present": 6024,
+    "non_null": 261,
+    "non_zero": 0,
+    "non_empty": 261,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "gimmick_info_key": 1002056,
+        "character_key": 0,
+        "item_key": 0,
+        "attach_parent_socket_name": "Bip01 T Head",
+        "attach_child_socket_name": "",
+        "docking_tag_name_hash": [
+          3941306321,
+          0,
+          0,
+          0
+        ],
+        "docking_equip_slot_no": 65535,
+        "spawn_distance_level": 4294967295,
+        "is_item_equip_docking_gimmick": 0,
+        "send_damage_to_parent": 0,
+        "is_body_part": 0,
+        "docking_type": 0,
+        "is_summoner_team": 0,
+        "is_player_only": 1,
+        "is_npc_only": 0,
+        "is_sync_break_parent": 0,
+        "hit_part": 0,
+        "detected_by_npc": 0,
+        "is_bag_docking": 0,
+        "enable_collision": 0,
+        "disable_collision_with_other_gimmick": 1,
+        "docking_slot_key": ""
+      },
+      {
+        "gimmick_info_key": 1002056,
+        "character_key": 0,
+        "item_key": 0,
+        "attach_parent_socket_name": "Bip01 T Head",
+        "attach_child_socket_name": "",
+        "docking_tag_name_hash": [
+          3941306321,
+          0,
+          0,
+          0
+        ],
+        "docking_equip_slot_no": 65535,
+        "spawn_distance_level": 4294967295,
+        "is_item_equip_docking_gimmick": 0,
+        "send_damage_to_parent": 0,
+        "is_body_part": 0,
+        "docking_type": 0,
+        "is_summoner_team": 0,
+        "is_player_only": 1,
+        "is_npc_only": 0,
+        "is_sync_break_parent": 0,
+        "hit_part": 0,
+        "detected_by_npc": 0,
+        "is_bag_docking": 0,
+        "enable_collision": 0,
+        "disable_collision_with_other_gimmick": 1,
+        "docking_slot_key": ""
+      },
+      {
+        "gimmick_info_key": 1002056,
+        "character_key": 0,
+        "item_key": 0,
+        "attach_parent_socket_name": "Bip01 T Head",
+        "attach_child_socket_name": "",
+        "docking_tag_name_hash": [
+          3941306321,
+          0,
+          0,
+          0
+        ],
+        "docking_equip_slot_no": 65535,
+        "spawn_distance_level": 4294967295,
+        "is_item_equip_docking_gimmick": 0,
+        "send_damage_to_parent": 0,
+        "is_body_part": 0,
+        "docking_type": 0,
+        "is_summoner_team": 0,
+        "is_player_only": 1,
+        "is_npc_only": 0,
+        "is_sync_break_parent": 0,
+        "hit_part": 0,
+        "detected_by_npc": 0,
+        "is_bag_docking": 0,
+        "enable_collision": 0,
+        "disable_collision_with_other_gimmick": 1,
+        "docking_slot_key": ""
+      }
+    ]
+  },
+  "inventory_change_data": {
+    "types": {
+      "None": 5713,
+      "dict": 311
+    },
+    "present": 6024,
+    "non_null": 311,
+    "non_zero": 0,
+    "non_empty": 311,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "game_event_execute_data": {
+          "game_event_type": 15,
+          "player_condition": 0,
+          "target_condition": 0,
+          "event_condition": 4294967253
+        },
+        "to_inventory_info": 2
+      },
+      {
+        "game_event_execute_data": {
+          "game_event_type": 15,
+          "player_condition": 0,
+          "target_condition": 0,
+          "event_condition": 4294967253
+        },
+        "to_inventory_info": 2
+      },
+      {
+        "game_event_execute_data": {
+          "game_event_type": 15,
+          "player_condition": 0,
+          "target_condition": 0,
+          "event_condition": 4294967253
+        },
+        "to_inventory_info": 2
+      }
+    ]
+  },
+  "unk_texture_path": {
+    "types": {
+      "str": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      "/character/texture/cd_t0000_bookpaper_0178.dds",
+      "/character/texture/cd_t0000_bookpaper_0178.dds",
+      "/character/texture/cd_t0000_bookpaper_0178.dds"
+    ]
+  },
+  "fixed_page_data_list": {
+    "types": {
+      "list[]": 5912,
+      "list[dict]": 112
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 112,
+    "max_list_len": 11,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0009.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0010.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0045.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0086.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        }
+      ],
+      [
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0009.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0010.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0045.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        }
+      ],
+      [
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0009.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0010.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0045.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 0,
+          "right_page_related_knowledge_info": 0
+        }
+      ]
+    ]
+  },
+  "dynamic_page_data_list": {
+    "types": {
+      "list[]": 6023,
+      "list[dict]": 1
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 1,
+    "max_list_len": 13,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0016.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0050.dds",
+          "left_page_related_knowledge_info": 1001307,
+          "right_page_related_knowledge_info": 1001307
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0012.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 1001308,
+          "right_page_related_knowledge_info": 1001308
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0013.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0041.dds",
+          "left_page_related_knowledge_info": 1001309,
+          "right_page_related_knowledge_info": 1001309
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0017.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 1001310,
+          "right_page_related_knowledge_info": 1001310
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0015.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0041.dds",
+          "left_page_related_knowledge_info": 1001311,
+          "right_page_related_knowledge_info": 1001311
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0018.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0050.dds",
+          "left_page_related_knowledge_info": 1001312,
+          "right_page_related_knowledge_info": 1001312
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0019.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0041.dds",
+          "left_page_related_knowledge_info": 1001313,
+          "right_page_related_knowledge_info": 1001313
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0020.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 1001314,
+          "right_page_related_knowledge_info": 1001314
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0021.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0041.dds",
+          "left_page_related_knowledge_info": 1001315,
+          "right_page_related_knowledge_info": 1001315
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0022.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 1001316,
+          "right_page_related_knowledge_info": 1001316
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0023.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0050.dds",
+          "left_page_related_knowledge_info": 1001317,
+          "right_page_related_knowledge_info": 1001317
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0024.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0041.dds",
+          "left_page_related_knowledge_info": 1001402,
+          "right_page_related_knowledge_info": 1001402
+        },
+        {
+          "left_page_texture_path": "/character/texture/cd_t0000_bookpaper_0014.dds",
+          "right_page_texture_path": "/character/texture/cd_t0000_bookpaper_0046.dds",
+          "left_page_related_knowledge_info": 1001403,
+          "right_page_related_knowledge_info": 1001403
+        }
+      ]
+    ]
+  },
+  "inspect_data_list": {
+    "types": {
+      "list[]": 5202,
+      "list[dict]": 822
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 822,
+    "max_list_len": 40,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "item_info": 1002141,
+          "gimmick_info": 0,
+          "character_info": 0,
+          "spawn_reason_hash": 4294967295,
+          "socket_name": "InspectSocket_0",
+          "speak_character_info": 0,
+          "inspect_target_tag": 0,
+          "reward_own_knowledge": 0,
+          "reward_knowledge_info": 1003534,
+          "item_desc": {
+            "category": 12,
+            "index": 4304162820980929,
+            "default": "4304162820980929"
+          },
+          "board_key": 10,
+          "inspect_action_type": 2,
+          "gimmick_state_name_hash": 0,
+          "target_page_index": 4294967295,
+          "is_left_page": 0,
+          "target_page_related_knowledge_info": 0,
+          "enable_read_after_reward": 0,
+          "refer_to_left_page_inspect_data": 0,
+          "inspect_effect_info_key": 0,
+          "inspect_complete_effect_info_key": 0
+        }
+      ],
+      [
+        {
+          "item_info": 1002147,
+          "gimmick_info": 0,
+          "character_info": 0,
+          "spawn_reason_hash": 4294967295,
+          "socket_name": "InspectSocket_0",
+          "speak_character_info": 0,
+          "inspect_target_tag": 0,
+          "reward_own_knowledge": 0,
+          "reward_knowledge_info": 1003535,
+          "item_desc": {
+            "category": 12,
+            "index": 4304188590784705,
+            "default": "4304188590784705"
+          },
+          "board_key": 10,
+          "inspect_action_type": 2,
+          "gimmick_state_name_hash": 0,
+          "target_page_index": 4294967295,
+          "is_left_page": 0,
+          "target_page_related_knowledge_info": 0,
+          "enable_read_after_reward": 0,
+          "refer_to_left_page_inspect_data": 0,
+          "inspect_effect_info_key": 0,
+          "inspect_complete_effect_info_key": 0
+        }
+      ],
+      [
+        {
+          "item_info": 1002148,
+          "gimmick_info": 0,
+          "character_info": 0,
+          "spawn_reason_hash": 4294967295,
+          "socket_name": "InspectSocket_0",
+          "speak_character_info": 0,
+          "inspect_target_tag": 0,
+          "reward_own_knowledge": 0,
+          "reward_knowledge_info": 1003536,
+          "item_desc": {
+            "category": 12,
+            "index": 4304192885752001,
+            "default": "4304192885752001"
+          },
+          "board_key": 4294967295,
+          "inspect_action_type": 2,
+          "gimmick_state_name_hash": 0,
+          "target_page_index": 4294967295,
+          "is_left_page": 0,
+          "target_page_related_knowledge_info": 0,
+          "enable_read_after_reward": 0,
+          "refer_to_left_page_inspect_data": 0,
+          "inspect_effect_info_key": 0,
+          "inspect_complete_effect_info_key": 0
+        }
+      ]
+    ]
+  },
+  "inspect_action": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "action_name_hash": 0,
+        "catch_tag_name_hash": 0,
+        "catcher_socket_name": "",
+        "catch_target_socket_name": ""
+      },
+      {
+        "action_name_hash": 0,
+        "catch_tag_name_hash": 0,
+        "catcher_socket_name": "",
+        "catch_target_socket_name": ""
+      },
+      {
+        "action_name_hash": 0,
+        "catch_tag_name_hash": 0,
+        "catcher_socket_name": "",
+        "catch_target_socket_name": ""
+      }
+    ]
+  },
+  "default_sub_item": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "type_id": 14,
+        "value": null
+      },
+      {
+        "type_id": 14,
+        "value": null
+      },
+      {
+        "type_id": 14,
+        "value": null
+      }
+    ]
+  },
+  "cooltime": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 661,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 19,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "item_charge_type": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 5363,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 3,
+    "examples": [
+      2,
+      2,
+      2
+    ]
+  },
+  "sharpness_data": {
+    "types": {
+      "dict": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6024,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "max_sharpness": 0,
+        "craft_tool_info": 0,
+        "stat_data": {
+          "max_stat_list": [],
+          "regen_stat_list": [],
+          "stat_list_static": [],
+          "stat_list_static_level": []
+        }
+      },
+      {
+        "max_sharpness": 0,
+        "craft_tool_info": 0,
+        "stat_data": {
+          "max_stat_list": [],
+          "regen_stat_list": [],
+          "stat_list_static": [],
+          "stat_list_static_level": []
+        }
+      },
+      {
+        "max_sharpness": 0,
+        "craft_tool_info": 0,
+        "stat_data": {
+          "max_stat_list": [],
+          "regen_stat_list": [],
+          "stat_list_static": [],
+          "stat_list_static_level": []
+        }
+      }
+    ]
+  },
+  "max_charged_useable_count": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 6,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "hackable_character_group_info_list": {
+    "types": {
+      "list[]": 6023,
+      "list[int]": 1
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 1,
+    "max_list_len": 1,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        16995
+      ]
+    ]
+  },
+  "item_group_info_list": {
+    "types": {
+      "list[int]": 6023,
+      "list[]": 1
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 6023,
+    "max_list_len": 10,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        17159,
+        17151,
+        17157,
+        16960
+      ],
+      [
+        17159,
+        17151,
+        17157,
+        16960
+      ],
+      [
+        17159,
+        17151,
+        17157,
+        16960
+      ]
+    ]
+  },
+  "discard_offset_y": {
+    "types": {
+      "float": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 169,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 4,
+    "examples": [
+      0.15000000596046448,
+      0.15000000596046448,
+      0.15000000596046448
+    ]
+  },
+  "hide_from_inventory_on_pop_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 27,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_shield_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 77,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_tower_shield_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 22,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_wild": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 1212,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "packed_item_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 31,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 32,
+    "examples": [
+      1001725,
+      1001736,
+      1001737
+    ]
+  },
+  "unpacked_item_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 31,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 32,
+    "examples": [
+      1000667,
+      1000646,
+      1000648
+    ]
+  },
+  "convert_item_info_by_drop_npc": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 415,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 26,
+    "examples": [
+      2114004,
+      2114004,
+      2114004
+    ]
+  },
+  "look_detail_game_advice_info_wrapper": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 150,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      1850408411,
+      1523875076,
+      3760249920
+    ]
+  },
+  "look_detail_mission_info": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 141,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 50,
+    "examples": [
+      1000594,
+      1000642,
+      1000739
+    ]
+  },
+  "enable_alert_system_to_ui": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6008,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "usable_alert": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 189,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_save_game_data_at_use_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 1,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1
+    ]
+  },
+  "is_logout_at_use_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 1,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1
+    ]
+  },
+  "shared_cool_time_group_name_hash": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 591,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 10,
+    "examples": [
+      1101322721,
+      1101322721,
+      1101322721
+    ]
+  },
+  "item_bundle_data_list": {
+    "types": {
+      "list[dict]": 444,
+      "list[]": 5580
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 444,
+    "max_list_len": 2,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      [
+        {
+          "count_mb": 50,
+          "key": 1004514
+        },
+        {
+          "count_mb": 10,
+          "key": 1004513
+        }
+      ],
+      [
+        {
+          "count_mb": 50,
+          "key": 1004514
+        },
+        {
+          "count_mb": 10,
+          "key": 1004513
+        }
+      ],
+      [
+        {
+          "count_mb": 50,
+          "key": 1004514
+        },
+        {
+          "count_mb": 10,
+          "key": 1004513
+        }
+      ]
+    ]
+  },
+  "money_type_define": {
+    "types": {
+      "None": 6023,
+      "dict": 1
+    },
+    "present": 6024,
+    "non_null": 1,
+    "non_zero": 0,
+    "non_empty": 1,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": [
+      {
+        "price_floor_value": 1,
+        "unit_data_list_map": [
+          {
+            "key": 1,
+            "value": {
+              "ui_component": "Copper",
+              "minimum": 1,
+              "icon_path": 3938836851,
+              "item_name": {
+                "category": 0,
+                "index": 0,
+                "default": ""
+              },
+              "item_desc": {
+                "category": 0,
+                "index": 0,
+                "default": ""
+              }
+            }
+          },
+          {
+            "key": 100,
+            "value": {
+              "ui_component": "Silver",
+              "minimum": 100,
+              "icon_path": 1752333043,
+              "item_name": {
+                "category": 7,
+                "index": 4294967410,
+                "default": "4294967410"
+              },
+              "item_desc": {
+                "category": 7,
+                "index": 4294967412,
+                "default": "4294967412"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "emoji_texture_id": {
+    "types": {
+      "str": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 2399,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 12,
+    "examples": [
+      "cd_icon_common_camp_donation_00",
+      "cd_icon_common_camp_donation_00",
+      "cd_icon_common_camp_donation_00"
+    ]
+  },
+  "enable_equip_in_clone_actor": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 1,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_blocked_store_sell": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 1201,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "is_preorder_item": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 46,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      1,
+      1,
+      1
+    ]
+  },
+  "respawn_time_seconds": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 357,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 2,
+    "examples": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "max_endurance": {
+    "types": {
+      "int": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 6024,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 7,
+    "examples": [
+      65535,
+      65535,
+      65535
+    ]
+  },
+  "repair_data_list": {
+    "types": {
+      "list[]": 6024
+    },
+    "present": 6024,
+    "non_null": 6024,
+    "non_zero": 0,
+    "non_empty": 0,
+    "max_list_len": 0,
+    "distinct_scalar_values_capped_at_50": 0,
+    "examples": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Rare Crafting Materials",
+  "author": "CrimsonSaveEditor",
+  "description": "Batteries, lubricant, cogwheels, gunpowder, explosive arrows at 100%",
+  "items": [
+    {"item_key": 1003735, "name": "Small Battery", "rate_pct": 100, "qty": 10},
+    {"item_key": 1003756, "name": "Lubricant", "rate_pct": 100, "qty": 10},
+    {"item_key": 1002971, "name": "Cogwheel", "rate_pct": 100, "qty": 10},
+    {"item_key": 30010, "name": "Gunpowder", "rate_pct": 100, "qty": 10},
+    {"item_key": 1001321, "name": "Explosive Arrow", "rate_pct": 100, "qty": 10}
+  ]
+}

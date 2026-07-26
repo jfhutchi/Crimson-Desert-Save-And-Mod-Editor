@@ -1,0 +1,23 @@
+# Field JSON v3.1 build dependencies
+#
+# Install on top of CrimsonSaveEditor/requirements.txt:
+#     pip install -r requirements_v3_1.txt
+#
+# These are the OPTIONAL extras that enable Field JSON v3.1 multi-target
+# field-level catchall in the Stacker. Without dmm_parser the Stacker
+# silently falls back to blob-level diffs for non-iteminfo tables (the
+# v1.1.4 baseline behavior — no regression).
+#
+# See FIELD_JSON_V3_1_SPEC.md for the format spec.
+
+# dmm-parser exposes parse_table / serialize_table for 122 typed game-data
+# tables (gimmick_info, condition_info, drop_set_info, character_info,
+# buff_info, etc.). Built from Rust via maturin.
+#
+# For local dev install (recommended for testers):
+#     git clone https://github.com/exodiaprivate-eng/dmm-parser
+#     cd dmm-parser && maturin develop --release
+#
+# When a tagged release lands on PyPI, this can be replaced with a pinned
+# version: dmm-parser>=0.X.0
+dmm-parser

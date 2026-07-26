@@ -1,0 +1,1374 @@
+{
+  "total_items_analyzed": 6024,
+  "types_with_gimmick_data": 25,
+  "type_to_canonical": {
+    "3": {
+      "item_type": 3,
+      "category": "armor",
+      "canonical_hash": 2875817978,
+      "canonical_socket": "Bip01 T Head",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "2875817978": 11,
+        "4209864874": 3,
+        "3941306321": 1,
+        "110496455": 3,
+        "569360451": 3
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 12,
+        "Bip01 Spine2": 6,
+        "Bip01 L HandTwist": 3
+      },
+      "all_gimmick_info_values": [
+        1002223,
+        1010181,
+        1002222,
+        1002236,
+        1001110,
+        1002266,
+        1004744
+      ],
+      "all_category_infos": {
+        "413": 4,
+        "423": 8,
+        "446": 2,
+        "416": 3,
+        "443": 4
+      },
+      "sample_items": [
+        {
+          "key": 1000275,
+          "string_key": "Tarif_Fabric_Cloak",
+          "gimmick_info": 1002223,
+          "has_passive": true,
+          "category_info": 413
+        },
+        {
+          "key": 1000335,
+          "string_key": "Scarecrow_Camouflage_Cloak",
+          "gimmick_info": 1002223,
+          "has_passive": true,
+          "category_info": 413
+        },
+        {
+          "key": 1000293,
+          "string_key": "Hemon_Vindel_Leather_Cloak",
+          "gimmick_info": 1002223,
+          "has_passive": true,
+          "category_info": 423
+        },
+        {
+          "key": 113742,
+          "string_key": "Reeddevil_Leather_Armor",
+          "gimmick_info": 1010181,
+          "has_passive": true,
+          "category_info": 423
+        }
+      ],
+      "sample_count_total": 21
+    },
+    "6": {
+      "item_type": 6,
+      "category": "bag_weapon_attach",
+      "canonical_hash": 3097161937,
+      "canonical_socket": "Bip_Weapon_Attach_In_02",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3097161937": 20
+      },
+      "all_sockets_observed": {
+        "Gimmick_Bag_00_Socket": 7,
+        "Bip_Weapon_Attach_In_02": 13
+      },
+      "all_gimmick_info_values": [
+        1002214,
+        1001839,
+        1003838,
+        1002078,
+        1005782,
+        1001583,
+        1001585,
+        1001586,
+        1001588,
+        1001589,
+        1001590,
+        1001592,
+        1002215,
+        1002010,
+        1008603,
+        1002203,
+        1000983,
+        1000610,
+        1002218,
+        1002217
+      ],
+      "all_category_infos": {
+        "633": 20
+      },
+      "sample_items": [
+        {
+          "key": 1001750,
+          "string_key": "Aggro_Backpack",
+          "gimmick_info": 1002214,
+          "has_passive": true,
+          "category_info": 633
+        },
+        {
+          "key": 1000443,
+          "string_key": "Bleed_Bomb_BackPack",
+          "gimmick_info": 1001839,
+          "has_passive": true,
+          "category_info": 633
+        },
+        {
+          "key": 1000716,
+          "string_key": "WaterPower_BackPack",
+          "gimmick_info": 1003838,
+          "has_passive": true,
+          "category_info": 633
+        },
+        {
+          "key": 1000708,
+          "string_key": "Chocolate_Factory_BackPack",
+          "gimmick_info": 1002078,
+          "has_passive": true,
+          "category_info": 633
+        }
+      ],
+      "sample_count_total": 20
+    },
+    "9": {
+      "item_type": 9,
+      "category": "boots",
+      "canonical_hash": 247236102,
+      "canonical_socket": "Bip01 Footsteps",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "247236102": 6
+      },
+      "all_sockets_observed": {
+        "Bip01 Footsteps": 6
+      },
+      "all_gimmick_info_values": [
+        1003085,
+        1002057,
+        1004840,
+        1002202,
+        1004431,
+        1004059
+      ],
+      "all_category_infos": {
+        "445": 1,
+        "425": 5
+      },
+      "sample_items": [
+        {
+          "key": 1000259,
+          "string_key": "WaterSliding_Plate_Boots",
+          "gimmick_info": 1003085,
+          "has_passive": true,
+          "category_info": 445
+        },
+        {
+          "key": 1001199,
+          "string_key": "Colossus_Boots",
+          "gimmick_info": 1002057,
+          "has_passive": true,
+          "category_info": 425
+        },
+        {
+          "key": 2131006,
+          "string_key": "IncreaseSwimmingSpeed_Plate_Boots",
+          "gimmick_info": 1004840,
+          "has_passive": true,
+          "category_info": 425
+        },
+        {
+          "key": 1001191,
+          "string_key": "Fire_Boots",
+          "gimmick_info": 1002202,
+          "has_passive": true,
+          "category_info": 425
+        }
+      ],
+      "sample_count_total": 6
+    },
+    "10": {
+      "item_type": 10,
+      "category": "onehand_bow",
+      "canonical_hash": 670734787,
+      "canonical_socket": "GimmickSummon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 1,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "670734787": 20
+      },
+      "all_sockets_observed": {
+        "GimmickSummon_00_Socket": 20
+      },
+      "all_gimmick_info_values": [
+        1010102
+      ],
+      "all_category_infos": {
+        "304": 20
+      },
+      "sample_items": [
+        {
+          "key": 300023,
+          "string_key": "Light_Arrowhead_Leader_OneHandBow",
+          "gimmick_info": 1010102,
+          "has_passive": false,
+          "category_info": 304
+        },
+        {
+          "key": 301001,
+          "string_key": "Robinhood_OneHandBow",
+          "gimmick_info": 1010102,
+          "has_passive": false,
+          "category_info": 304
+        },
+        {
+          "key": 12702,
+          "string_key": "Legendary_Korea_OneHandBow",
+          "gimmick_info": 1010102,
+          "has_passive": false,
+          "category_info": 304
+        },
+        {
+          "key": 12701,
+          "string_key": "AbyssReward_HolyEcho_OneHandBow",
+          "gimmick_info": 1010102,
+          "has_passive": false,
+          "category_info": 304
+        }
+      ],
+      "sample_count_total": 20
+    },
+    "15": {
+      "item_type": 15,
+      "category": "earring",
+      "canonical_hash": 1219521497,
+      "canonical_socket": "Bip01 T Head",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "1219521497": 2
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 2
+      },
+      "all_gimmick_info_values": [
+        1002003,
+        1006132
+      ],
+      "all_category_infos": {
+        "511": 2
+      },
+      "sample_items": [
+        {
+          "key": 8509,
+          "string_key": "Folorin_Earring",
+          "gimmick_info": 1002003,
+          "has_passive": true,
+          "category_info": 511
+        },
+        {
+          "key": 8504,
+          "string_key": "Legendary_HexeMarie_Earring",
+          "gimmick_info": 1006132,
+          "has_passive": true,
+          "category_info": 511
+        }
+      ],
+      "sample_count_total": 2
+    },
+    "17": {
+      "item_type": 17,
+      "category": "fishing_rod",
+      "canonical_hash": 712130226,
+      "canonical_socket": "Dock_Fish_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "712130226": 4
+      },
+      "all_sockets_observed": {
+        "Dock_Fish_Socket": 4
+      },
+      "all_gimmick_info_values": [
+        1006289
+      ],
+      "all_category_infos": {
+        "606": 4
+      },
+      "sample_items": [
+        {
+          "key": 11001,
+          "string_key": "FishingRod",
+          "gimmick_info": 1006289,
+          "has_passive": false,
+          "category_info": 606
+        },
+        {
+          "key": 1000639,
+          "string_key": "FishingRod_II",
+          "gimmick_info": 1006289,
+          "has_passive": true,
+          "category_info": 606
+        },
+        {
+          "key": 1000640,
+          "string_key": "FishingRod_III",
+          "gimmick_info": 1006289,
+          "has_passive": true,
+          "category_info": 606
+        },
+        {
+          "key": 1000088,
+          "string_key": "ItemCatch_FishingRod",
+          "gimmick_info": 1006289,
+          "has_passive": false,
+          "category_info": 606
+        }
+      ],
+      "sample_count_total": 4
+    },
+    "18": {
+      "item_type": 18,
+      "category": "type_18",
+      "canonical_hash": 4275997994,
+      "canonical_socket": "Bip01 R Forearm",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "4275997994": 1,
+        "3107112822": 1,
+        "4116002549": 1
+      },
+      "all_sockets_observed": {
+        "Bip01 R Forearm": 2,
+        "Bip_Weapon_R": 1
+      },
+      "all_gimmick_info_values": [
+        1010296,
+        1010297,
+        1003070
+      ],
+      "all_category_infos": {
+        "113": 2,
+        "227": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001294,
+          "string_key": "Mining_Drill",
+          "gimmick_info": 1010296,
+          "has_passive": true,
+          "category_info": 113
+        },
+        {
+          "key": 1000171,
+          "string_key": "Demeniss_Chainsaw",
+          "gimmick_info": 1010297,
+          "has_passive": true,
+          "category_info": 113
+        },
+        {
+          "key": 1000156,
+          "string_key": "Witch_WingFan",
+          "gimmick_info": 1003070,
+          "has_passive": false,
+          "category_info": 227
+        }
+      ],
+      "sample_count_total": 3
+    },
+    "21": {
+      "item_type": 21,
+      "category": "misc",
+      "canonical_hash": 2868904968,
+      "canonical_socket": "Bip01 T Head",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "2868904968": 1
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 1
+      },
+      "all_gimmick_info_values": [
+        1005653
+      ],
+      "all_category_infos": {
+        "561": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000479,
+          "string_key": "Kliff_Glasses",
+          "gimmick_info": 1005653,
+          "has_passive": true,
+          "category_info": 561
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "22": {
+      "item_type": 22,
+      "category": "gloves",
+      "canonical_hash": 0,
+      "canonical_socket": "Gimmick_Hand_L_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "1604433892": 2,
+        "0": 3,
+        "3953228078": 1
+      },
+      "all_sockets_observed": {
+        "Gimmick_Hand_R_00_Socket": 2,
+        "Gimmick_Hand_L_00_Socket": 4
+      },
+      "all_gimmick_info_values": [
+        1008427,
+        1002231,
+        1002041,
+        1002261,
+        1002113,
+        1002230
+      ],
+      "all_category_infos": {
+        "444": 2,
+        "424": 4
+      },
+      "sample_items": [
+        {
+          "key": 1001949,
+          "string_key": "Muscan_PlateArmor_Gloves",
+          "gimmick_info": 1008427,
+          "has_passive": true,
+          "category_info": 444
+        },
+        {
+          "key": 1001009,
+          "string_key": "Gadget_Gloves",
+          "gimmick_info": 1002231,
+          "has_passive": true,
+          "category_info": 444
+        },
+        {
+          "key": 1001250,
+          "string_key": "ThiefGloves",
+          "gimmick_info": 1002041,
+          "has_passive": true,
+          "category_info": 424
+        },
+        {
+          "key": 1001300,
+          "string_key": "PowerDraw_Gloves",
+          "gimmick_info": 1002261,
+          "has_passive": true,
+          "category_info": 424
+        }
+      ],
+      "sample_count_total": 6
+    },
+    "24": {
+      "item_type": 24,
+      "category": "helm",
+      "canonical_hash": 3941306321,
+      "canonical_socket": "Bip01 T Head",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3941306321": 35,
+        "4053599023": 1
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 36
+      },
+      "all_gimmick_info_values": [
+        1002056,
+        1002222,
+        1001504,
+        1000829,
+        1001887,
+        1000431,
+        1001076,
+        1002232,
+        1002224,
+        1004060,
+        1001072,
+        1002233,
+        1002228,
+        1001988,
+        1002229,
+        1001977,
+        1010089
+      ],
+      "all_category_infos": {
+        "442": 29,
+        "422": 6,
+        "412": 1
+      },
+      "sample_items": [
+        {
+          "key": 14510,
+          "string_key": "Marni_Devotee_PlateArmor_Helm",
+          "gimmick_info": 1002056,
+          "has_passive": true,
+          "category_info": 442
+        },
+        {
+          "key": 14511,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_I",
+          "gimmick_info": 1002056,
+          "has_passive": true,
+          "category_info": 442
+        },
+        {
+          "key": 1000231,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_II",
+          "gimmick_info": 1002056,
+          "has_passive": true,
+          "category_info": 442
+        },
+        {
+          "key": 1000232,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_III",
+          "gimmick_info": 1002056,
+          "has_passive": true,
+          "category_info": 442
+        }
+      ],
+      "sample_count_total": 36
+    },
+    "34": {
+      "item_type": 34,
+      "category": "necklace",
+      "canonical_hash": 942605073,
+      "canonical_socket": "Bip01 T Head",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "942605073": 5
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 5
+      },
+      "all_gimmick_info_values": [
+        1001763,
+        1001836,
+        1001257,
+        1001838,
+        1008871
+      ],
+      "all_category_infos": {
+        "521": 5
+      },
+      "sample_items": [
+        {
+          "key": 1001100,
+          "string_key": "Tarif_Necklace",
+          "gimmick_info": 1001763,
+          "has_passive": true,
+          "category_info": 521
+        },
+        {
+          "key": 1001101,
+          "string_key": "Ludvic_Necklace",
+          "gimmick_info": 1001836,
+          "has_passive": true,
+          "category_info": 521
+        },
+        {
+          "key": 1001182,
+          "string_key": "WeatherWeaver_Necklace",
+          "gimmick_info": 1001257,
+          "has_passive": true,
+          "category_info": 521
+        },
+        {
+          "key": 1000972,
+          "string_key": "Optionary_Monk_Necklace",
+          "gimmick_info": 1001838,
+          "has_passive": true,
+          "category_info": 521
+        }
+      ],
+      "sample_count_total": 5
+    },
+    "49": {
+      "item_type": 49,
+      "category": "type_49",
+      "canonical_hash": 3378497788,
+      "canonical_socket": "Bip01 L Hand",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3378497788": 1
+      },
+      "all_sockets_observed": {
+        "Bip01 L Hand": 1
+      },
+      "all_gimmick_info_values": [
+        1001787
+      ],
+      "all_category_infos": {
+        "531": 1
+      },
+      "sample_items": [
+        {
+          "key": 8502,
+          "string_key": "Legendary_Titan_Ring",
+          "gimmick_info": 1001787,
+          "has_passive": true,
+          "category_info": 531
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "50": {
+      "item_type": 50,
+      "category": "misc50",
+      "canonical_hash": 4052041933,
+      "canonical_socket": "Bip_Weapon_R",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "4052041933": 1
+      },
+      "all_sockets_observed": {
+        "Bip_Weapon_R": 1
+      },
+      "all_gimmick_info_values": [
+        1002219
+      ],
+      "all_category_infos": {
+        "1117": 1
+      },
+      "sample_items": [
+        {
+          "key": 1002501,
+          "string_key": "WarRobot_FlameThrower_01",
+          "gimmick_info": 1002219,
+          "has_passive": false,
+          "category_info": 1117
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "52": {
+      "item_type": 52,
+      "category": "shield",
+      "canonical_hash": 0,
+      "canonical_socket": "Spine2_B_Shield_ChildSocket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "0": 44,
+        "3332282737": 10
+      },
+      "all_sockets_observed": {
+        "Spine2_B_Shield_ChildSocket": 49,
+        "Gimmick_Weapon_00_Socket": 2,
+        "Shield_Socket": 3
+      },
+      "all_gimmick_info_values": [
+        1003717,
+        1004731,
+        1001995,
+        1002226,
+        1004025,
+        1002225
+      ],
+      "all_category_infos": {
+        "107": 54
+      },
+      "sample_items": [
+        {
+          "key": 1001422,
+          "string_key": "Gregor_OneHandShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 107
+        },
+        {
+          "key": 13604,
+          "string_key": "Legendary_SkullKnight_OneHandShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 107
+        },
+        {
+          "key": 1003194,
+          "string_key": "Twich_OneHandShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 107
+        },
+        {
+          "key": 1003205,
+          "string_key": "Bilibili_OneHandShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 107
+        }
+      ],
+      "sample_count_total": 54
+    },
+    "55": {
+      "item_type": 55,
+      "category": "bag",
+      "canonical_hash": 3097161937,
+      "canonical_socket": "Gimmick_Bag_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3097161937": 3
+      },
+      "all_sockets_observed": {
+        "Gimmick_Bag_00_Socket": 3
+      },
+      "all_gimmick_info_values": [
+        1008570
+      ],
+      "all_category_infos": {
+        "634": 3
+      },
+      "sample_items": [
+        {
+          "key": 1000198,
+          "string_key": "Sprayer_BackPack",
+          "gimmick_info": 1008570,
+          "has_passive": false,
+          "category_info": 634
+        },
+        {
+          "key": 1003750,
+          "string_key": "Fertilizer_Sprayer_BackPack",
+          "gimmick_info": 1008570,
+          "has_passive": true,
+          "category_info": 634
+        },
+        {
+          "key": 1003751,
+          "string_key": "Oil_Sprayer_BackPack",
+          "gimmick_info": 1008570,
+          "has_passive": true,
+          "category_info": 634
+        }
+      ],
+      "sample_count_total": 3
+    },
+    "56": {
+      "item_type": 56,
+      "category": "onehand_sword",
+      "canonical_hash": 514541431,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "514541431": 5,
+        "2949988023": 1
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 6
+      },
+      "all_gimmick_info_values": [
+        1008873,
+        1001786
+      ],
+      "all_category_infos": {
+        "103": 6
+      },
+      "sample_items": [
+        {
+          "key": 1000578,
+          "string_key": "Old_Kliff_OneHandSword",
+          "gimmick_info": 1008873,
+          "has_passive": false,
+          "category_info": 103
+        },
+        {
+          "key": 200917,
+          "string_key": "Spada_OneHandSword",
+          "gimmick_info": 1008873,
+          "has_passive": false,
+          "category_info": 103
+        },
+        {
+          "key": 1001524,
+          "string_key": "Golden_OneHandSword",
+          "gimmick_info": 1008873,
+          "has_passive": false,
+          "category_info": 103
+        },
+        {
+          "key": 200914,
+          "string_key": "AbyssReward_Mysterm_OneHandSword",
+          "gimmick_info": 1001786,
+          "has_passive": false,
+          "category_info": 103
+        }
+      ],
+      "sample_count_total": 6
+    },
+    "57": {
+      "item_type": 57,
+      "category": "lantern",
+      "canonical_hash": 3926445710,
+      "canonical_socket": "Hand_L_ChildSocket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 1,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3926445710": 10
+      },
+      "all_sockets_observed": {
+        "Hand_L_ChildSocket": 10
+      },
+      "all_gimmick_info_values": [
+        1000455,
+        1004078
+      ],
+      "all_category_infos": {
+        "2702": 10
+      },
+      "sample_items": [
+        {
+          "key": 10044,
+          "string_key": "Gold_Plating_Lantern",
+          "gimmick_info": 1000455,
+          "has_passive": false,
+          "category_info": 2702
+        },
+        {
+          "key": 1003190,
+          "string_key": "Twich_Lantern",
+          "gimmick_info": 1000455,
+          "has_passive": false,
+          "category_info": 2702
+        },
+        {
+          "key": 1003201,
+          "string_key": "Bilibili_Lantern",
+          "gimmick_info": 1000455,
+          "has_passive": false,
+          "category_info": 2702
+        },
+        {
+          "key": 10026,
+          "string_key": "Lantern",
+          "gimmick_info": 1000455,
+          "has_passive": false,
+          "category_info": 2702
+        }
+      ],
+      "sample_count_total": 10
+    },
+    "58": {
+      "item_type": 58,
+      "category": "type_58",
+      "canonical_hash": 843204999,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "843204999": 1
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "all_gimmick_info_values": [
+        1001936
+      ],
+      "all_category_infos": {
+        "601": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001196,
+          "string_key": "Equip_Magic_Scythe",
+          "gimmick_info": 1001936,
+          "has_passive": false,
+          "category_info": 601
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "60": {
+      "item_type": 60,
+      "category": "misc60",
+      "canonical_hash": 0,
+      "canonical_socket": "Spine2_B_Shield_ChildSocket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "0": 22
+      },
+      "all_sockets_observed": {
+        "Spine2_B_Shield_ChildSocket": 22
+      },
+      "all_gimmick_info_values": [
+        1003717
+      ],
+      "all_category_infos": {
+        "109": 22
+      },
+      "sample_items": [
+        {
+          "key": 1000761,
+          "string_key": "Silver_Armor_OneHandTowerShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 109
+        },
+        {
+          "key": 1001427,
+          "string_key": "Legendary_Soulknight_OneHandTowerShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 109
+        },
+        {
+          "key": 1000182,
+          "string_key": "AbyssReward_Kutum_TowerShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 109
+        },
+        {
+          "key": 290503,
+          "string_key": "Lipsort_OneHandTowerShield",
+          "gimmick_info": 1003717,
+          "has_passive": false,
+          "category_info": 109
+        }
+      ],
+      "sample_count_total": 22
+    },
+    "68": {
+      "item_type": 68,
+      "category": "twohand_sword_giant",
+      "canonical_hash": 3365725887,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3365725887": 6
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 6
+      },
+      "all_gimmick_info_values": [
+        1001472
+      ],
+      "all_category_infos": {
+        "218": 6
+      },
+      "sample_items": [
+        {
+          "key": 1002102,
+          "string_key": "Serdin_Giant_TwoHandGiantBastard",
+          "gimmick_info": 1001472,
+          "has_passive": false,
+          "category_info": 218
+        },
+        {
+          "key": 1002106,
+          "string_key": "Verak_Giant_TwoHandGiantBastard",
+          "gimmick_info": 1001472,
+          "has_passive": false,
+          "category_info": 218
+        },
+        {
+          "key": 1002103,
+          "string_key": "Parvel_Giant_TwoHandGiantBastard",
+          "gimmick_info": 1001472,
+          "has_passive": false,
+          "category_info": 218
+        },
+        {
+          "key": 1002104,
+          "string_key": "Arven_Giant_TwoHandGiantBastard",
+          "gimmick_info": 1001472,
+          "has_passive": false,
+          "category_info": 218
+        }
+      ],
+      "sample_count_total": 6
+    },
+    "69": {
+      "item_type": 69,
+      "category": "type_69",
+      "canonical_hash": 3497458597,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3497458597": 1
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "all_gimmick_info_values": [
+        1003524
+      ],
+      "all_category_infos": {
+        "212": 1
+      },
+      "sample_items": [
+        {
+          "key": 1002741,
+          "string_key": "Ligtning_TwoHandHammer_I",
+          "gimmick_info": 1003524,
+          "has_passive": true,
+          "category_info": 212
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "70": {
+      "item_type": 70,
+      "category": "twohand_spear",
+      "canonical_hash": 666382090,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "666382090": 16
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 15,
+        "Fx_lightning_spark_b_00_Socket": 1
+      },
+      "all_gimmick_info_values": [
+        1008624,
+        1001876,
+        1001492,
+        1002073,
+        1001924,
+        1002072,
+        1001885,
+        1001961,
+        1001916,
+        1008872
+      ],
+      "all_category_infos": {
+        "205": 16
+      },
+      "sample_items": [
+        {
+          "key": 1000374,
+          "string_key": "KuKu_Pot_TwoHandSpear",
+          "gimmick_info": 1008624,
+          "has_passive": false,
+          "category_info": 205
+        },
+        {
+          "key": 1002175,
+          "string_key": "KuKu_Lightning_TwoHandSpear",
+          "gimmick_info": 1001876,
+          "has_passive": true,
+          "category_info": 205
+        },
+        {
+          "key": 1002176,
+          "string_key": "KuKu_Fire_staff_spear_TwoHandSpear",
+          "gimmick_info": 1001492,
+          "has_passive": true,
+          "category_info": 205
+        },
+        {
+          "key": 1001953,
+          "string_key": "KuKu_Bismuth_TwoHandSpear",
+          "gimmick_info": 1002073,
+          "has_passive": true,
+          "category_info": 205
+        }
+      ],
+      "sample_count_total": 16
+    },
+    "71": {
+      "item_type": 71,
+      "category": "flamethrower",
+      "canonical_hash": 4052041933,
+      "canonical_socket": "Bip_Weapon_R",
+      "canonical_is_item_equip_docking_gimmick": 0,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "4052041933": 6
+      },
+      "all_sockets_observed": {
+        "Bip_Weapon_R": 6
+      },
+      "all_gimmick_info_values": [
+        1002219,
+        1002220,
+        1004194
+      ],
+      "all_category_infos": {
+        "312": 6
+      },
+      "sample_items": [
+        {
+          "key": 1002180,
+          "string_key": "Kuku_FlameThrower",
+          "gimmick_info": 1002219,
+          "has_passive": true,
+          "category_info": 312
+        },
+        {
+          "key": 1002181,
+          "string_key": "Kuku_IceThrower",
+          "gimmick_info": 1002220,
+          "has_passive": true,
+          "category_info": 312
+        },
+        {
+          "key": 1003259,
+          "string_key": "Kuku_LightningThrower",
+          "gimmick_info": 1004194,
+          "has_passive": true,
+          "category_info": 312
+        },
+        {
+          "key": 330002,
+          "string_key": "FlameThrower",
+          "gimmick_info": 1002219,
+          "has_passive": true,
+          "category_info": 312
+        }
+      ],
+      "sample_count_total": 6
+    },
+    "72": {
+      "item_type": 72,
+      "category": "twohand_sword_machine",
+      "canonical_hash": 3365725887,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3365725887": 1
+      },
+      "all_sockets_observed": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "all_gimmick_info_values": [
+        1001961
+      ],
+      "all_category_infos": {
+        "202": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001062,
+          "string_key": "Marni_MachineKnight_TwoHandSword",
+          "gimmick_info": 1001961,
+          "has_passive": true,
+          "category_info": 202
+        }
+      ],
+      "sample_count_total": 1
+    },
+    "103": {
+      "item_type": 103,
+      "category": "mixed_gear",
+      "canonical_hash": 666382090,
+      "canonical_socket": "Gimmick_Weapon_00_Socket",
+      "canonical_is_item_equip_docking_gimmick": 1,
+      "canonical_is_player_only": 0,
+      "canonical_disable_collision_with_other_gimmick": 1,
+      "canonical_docking_equip_slot_no": 65535,
+      "canonical_spawn_distance_level": 4294967295,
+      "canonical_is_body_part": 0,
+      "canonical_docking_type": 0,
+      "all_hashes_observed": {
+        "3941306321": 1,
+        "247236102": 1,
+        "3097161937": 1,
+        "666382090": 6
+      },
+      "all_sockets_observed": {
+        "Bip01 T Head": 1,
+        "Bip01 Footsteps": 1,
+        "Gimmick_Bag_00_Socket": 1,
+        "Fx_lightning_spark_b_00_Socket": 1,
+        "Gimmick_Weapon_00_Socket": 5
+      },
+      "all_gimmick_info_values": [
+        1001977,
+        1004059,
+        1002203,
+        1001876,
+        1002073,
+        1001492,
+        1001924,
+        1002072,
+        1001885
+      ],
+      "all_category_infos": {
+        "442": 1,
+        "425": 1,
+        "633": 1,
+        "205": 6
+      },
+      "sample_items": [
+        {
+          "key": 1001400,
+          "string_key": "Marni_Laser_Helm",
+          "gimmick_info": 1001977,
+          "has_passive": true,
+          "category_info": 442
+        },
+        {
+          "key": 1000074,
+          "string_key": "Riesi_Boots",
+          "gimmick_info": 1004059,
+          "has_passive": true,
+          "category_info": 425
+        },
+        {
+          "key": 1000970,
+          "string_key": "EMP_BackPack",
+          "gimmick_info": 1002203,
+          "has_passive": true,
+          "category_info": 633
+        },
+        {
+          "key": 1001163,
+          "string_key": "Lightning_TwoHandSpear",
+          "gimmick_info": 1001876,
+          "has_passive": true,
+          "category_info": 205
+        }
+      ],
+      "sample_count_total": 9
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Silver Pouches",
+  "author": "CrimsonSaveEditor",
+  "description": "All money pouches guaranteed drop",
+  "items": [
+    {"item_key": 103, "name": "Light Copper Pouch", "rate_pct": 100, "qty": 5},
+    {"item_key": 102, "name": "Full Copper Pouch", "rate_pct": 100, "qty": 5},
+    {"item_key": 1000629, "name": "Modest Silver Pouch", "rate_pct": 100, "qty": 5},
+    {"item_key": 105, "name": "Overflowing Silver Pouch", "rate_pct": 100, "qty": 3}
+  ]
+}

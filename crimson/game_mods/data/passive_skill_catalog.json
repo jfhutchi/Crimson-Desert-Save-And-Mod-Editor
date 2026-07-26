@@ -1,0 +1,4045 @@
+{
+  "meta": {
+    "source_paz": "0008",
+    "source_file": "gamedata/binary__/client/bin/skill.pabgb",
+    "pabgb_size": 1136981,
+    "pabgh_size": 15394,
+    "total_skills": 1924,
+    "total_named": 1924,
+    "unnamed_skill_ids": [],
+    "name_conflicts_with_cache": [],
+    "known_imbue_skills_ref": {
+      "91101": [
+        "Lightning",
+        "Equip_Passive_LightningWeapon"
+      ],
+      "91104": [
+        "Ice",
+        "Equip_Passive_IceWeapon"
+      ],
+      "91105": [
+        "Fire",
+        "Equip_Passive_FireWeapon"
+      ],
+      "91109": [
+        "Bismuth",
+        "Equip_Passive_Bismuth_Spear"
+      ]
+    },
+    "bismuth_patch_ref": {
+      "name": "Equip_Passive_Bismuth_Spear",
+      "name_offset": 985673,
+      "offset_from_name": 134,
+      "before": {
+        "count": 1,
+        "hashes": [
+          2914941932
+        ]
+      },
+      "after": {
+        "count": 2,
+        "hashes": [
+          2914941932,
+          249090674
+        ]
+      },
+      "added_hashes": [
+        249090674
+      ]
+    }
+  },
+  "all_equip_passives": [
+    {
+      "skill_id": 727,
+      "name": "Equip_Passive_ChangeFaction_Hernand",
+      "display": "ChangeFaction_Hernand"
+    },
+    {
+      "skill_id": 7055,
+      "name": "Equip_Passive_JumpUpBoots",
+      "display": "JumpUpBoots"
+    },
+    {
+      "skill_id": 7056,
+      "name": "Equip_Passive_EntHunter_Helm",
+      "display": "EntHunter_Helm"
+    },
+    {
+      "skill_id": 7057,
+      "name": "Equip_Passive_Mask_Liberator_Helm",
+      "display": "Mask_Liberator_Helm"
+    },
+    {
+      "skill_id": 7058,
+      "name": "Equip_Passive_Wolf_Pursuer_Helm",
+      "display": "Wolf_Pursuer_Helm"
+    },
+    {
+      "skill_id": 7201,
+      "name": "Equip_Passive_FlyingBoots",
+      "display": "FlyingBoots"
+    },
+    {
+      "skill_id": 7202,
+      "name": "Equip_Passive_SwimmingBoots",
+      "display": "SwimmingBoots"
+    },
+    {
+      "skill_id": 7203,
+      "name": "Equip_Passive_WaterSlidingBoots",
+      "display": "WaterSlidingBoots"
+    },
+    {
+      "skill_id": 7204,
+      "name": "Equip_Passive_EquipDropRate",
+      "display": "EquipDropRate"
+    },
+    {
+      "skill_id": 7205,
+      "name": "Equip_Passive_ColossusBoots",
+      "display": "ColossusBoots"
+    },
+    {
+      "skill_id": 7206,
+      "name": "Equip_Passive_FireBoots",
+      "display": "FireBoots"
+    },
+    {
+      "skill_id": 9000,
+      "name": "Equip_Passive_Fishing_TimeReduce",
+      "display": "Fishing_TimeReduce"
+    },
+    {
+      "skill_id": 9001,
+      "name": "Equip_Passive_Firefly_Lantern",
+      "display": "Firefly_Lantern"
+    },
+    {
+      "skill_id": 9100,
+      "name": "Equip_Passive_AnamorphicHelm",
+      "display": "AnamorphicHelm"
+    },
+    {
+      "skill_id": 9101,
+      "name": "Equip_Passive_HackingHelm",
+      "display": "HackingHelm"
+    },
+    {
+      "skill_id": 9102,
+      "name": "Equip_Passive_FlorinHelm",
+      "display": "FlorinHelm"
+    },
+    {
+      "skill_id": 9103,
+      "name": "Equip_Passive_MinerHelm",
+      "display": "MinerHelm"
+    },
+    {
+      "skill_id": 9104,
+      "name": "Equip_Passive_Catfish",
+      "display": "Catfish"
+    },
+    {
+      "skill_id": 9105,
+      "name": "Equip_Passive_HeatHelm",
+      "display": "HeatHelm"
+    },
+    {
+      "skill_id": 9106,
+      "name": "Equip_Passive_GadgetHlem",
+      "display": "GadgetHlem"
+    },
+    {
+      "skill_id": 9107,
+      "name": "Equip_Passive_GadgetGloves",
+      "display": "GadgetGloves"
+    },
+    {
+      "skill_id": 9108,
+      "name": "Equip_Passive_LudvicNecklace",
+      "display": "LudvicNecklace"
+    },
+    {
+      "skill_id": 9109,
+      "name": "Equip_Passive_WeatherWeaverNecklace",
+      "display": "WeatherWeaverNecklace"
+    },
+    {
+      "skill_id": 9110,
+      "name": "Equip_Passive_WeatherWeaverSunnyNeckleace",
+      "display": "WeatherWeaverSunnyNeckleace"
+    },
+    {
+      "skill_id": 9111,
+      "name": "Equip_Passive_MonkNecklace",
+      "display": "MonkNecklace"
+    },
+    {
+      "skill_id": 9112,
+      "name": "Equip_Passive_FolorinEarring",
+      "display": "FolorinEarring"
+    },
+    {
+      "skill_id": 9113,
+      "name": "Equip_Passive_EMPBackPack",
+      "display": "EMPBackPack"
+    },
+    {
+      "skill_id": 9114,
+      "name": "Equip_Passive_PlantCollectBackPack",
+      "display": "PlantCollectBackPack"
+    },
+    {
+      "skill_id": 9115,
+      "name": "Equip_Passive_InsectCollectBackPack",
+      "display": "InsectCollectBackPack"
+    },
+    {
+      "skill_id": 9116,
+      "name": "Equip_Passive_KukuPotBackPack",
+      "display": "KukuPotBackPack"
+    },
+    {
+      "skill_id": 9117,
+      "name": "Equip_Passive_KukuDroneBackpack",
+      "display": "KukuDroneBackpack"
+    },
+    {
+      "skill_id": 9118,
+      "name": "Equip_Passive_AggroBackpack",
+      "display": "AggroBackpack"
+    },
+    {
+      "skill_id": 9119,
+      "name": "Equip_Passive_WaterPowerBackPack",
+      "display": "WaterPowerBackPack"
+    },
+    {
+      "skill_id": 9120,
+      "name": "Equip_Passive_KuKu_Golden999K",
+      "display": "KuKu_Golden999K"
+    },
+    {
+      "skill_id": 9121,
+      "name": "Equip_Passive_Knowledge_PlateArmor_Helm",
+      "display": "Knowledge_PlateArmor_Helm"
+    },
+    {
+      "skill_id": 9122,
+      "name": "Equip_Passive_DrakeMetalOneHandShield",
+      "display": "DrakeMetalOneHandShield"
+    },
+    {
+      "skill_id": 9123,
+      "name": "Equip_Passive_LakeGolemOnehandShield",
+      "display": "LakeGolemOnehandShield"
+    },
+    {
+      "skill_id": 9124,
+      "name": "Equip_Passive_WindPowerOneHandShield",
+      "display": "WindPowerOneHandShield"
+    },
+    {
+      "skill_id": 9125,
+      "name": "Equip_Passive_GunOneHandShield",
+      "display": "GunOneHandShield"
+    },
+    {
+      "skill_id": 9126,
+      "name": "Equip_Passive_SoundOneHandShield",
+      "display": "SoundOneHandShield"
+    },
+    {
+      "skill_id": 9127,
+      "name": "Equip_Passive_Legendary_HexeMarie_Earring",
+      "display": "Legendary_HexeMarie_Earring"
+    },
+    {
+      "skill_id": 9128,
+      "name": "Equip_Passive_ThiefGloves",
+      "display": "ThiefGloves"
+    },
+    {
+      "skill_id": 9129,
+      "name": "Equip_Passive_Tarif_Necklace",
+      "display": "Tarif_Necklace"
+    },
+    {
+      "skill_id": 9130,
+      "name": "Equip_Passive_Chicken_Helm",
+      "display": "Chicken_Helm"
+    },
+    {
+      "skill_id": 9131,
+      "name": "Equip_Passive_Scouter_HP_PlateArmor_Helm",
+      "display": "Scouter_HP_PlateArmor_Helm"
+    },
+    {
+      "skill_id": 9132,
+      "name": "Equip_Passive_Bleed_Bomb_BackPack",
+      "display": "Bleed_Bomb_BackPack"
+    },
+    {
+      "skill_id": 9133,
+      "name": "Equip_Passive_Riding_Fabric_Armor_Whip",
+      "display": "Riding_Fabric_Armor_Whip"
+    },
+    {
+      "skill_id": 9134,
+      "name": "Equip_Passive_Pirate_King_Leather_Helm",
+      "display": "Pirate_King_Leather_Helm"
+    },
+    {
+      "skill_id": 18030,
+      "name": "Equip_Passive_FlameThrowerSupport",
+      "display": "FlameThrowerSupport"
+    },
+    {
+      "skill_id": 18031,
+      "name": "Equip_Passive_IceThrowerSupport",
+      "display": "IceThrowerSupport"
+    },
+    {
+      "skill_id": 18032,
+      "name": "Equip_Passive_LightningThrowerSupport",
+      "display": "LightningThrowerSupport"
+    },
+    {
+      "skill_id": 41106,
+      "name": "Equip_Passive_HelmToggle",
+      "display": "HelmToggle"
+    },
+    {
+      "skill_id": 51201,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Fire",
+      "display": "DaeilBandSocket_Weapon_Fire"
+    },
+    {
+      "skill_id": 51203,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Ice",
+      "display": "DaeilBandSocket_Weapon_Ice"
+    },
+    {
+      "skill_id": 51204,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Electricity",
+      "display": "DaeilBandSocket_Weapon_Electricity"
+    },
+    {
+      "skill_id": 51211,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Fire",
+      "display": "DaeilBandSocket_Armor_Fire"
+    },
+    {
+      "skill_id": 51213,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Ice",
+      "display": "DaeilBandSocket_Armor_Ice"
+    },
+    {
+      "skill_id": 51214,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Electricity",
+      "display": "DaeilBandSocket_Armor_Electricity"
+    },
+    {
+      "skill_id": 51221,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Fire",
+      "display": "DaeilBandSocket_Helm_Fire"
+    },
+    {
+      "skill_id": 51223,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Ice",
+      "display": "DaeilBandSocket_Helm_Ice"
+    },
+    {
+      "skill_id": 51224,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Electricity",
+      "display": "DaeilBandSocket_Helm_Electricity"
+    },
+    {
+      "skill_id": 51231,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Fire",
+      "display": "DaeilBandSocket_Glove_Fire"
+    },
+    {
+      "skill_id": 51233,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Ice",
+      "display": "DaeilBandSocket_Glove_Ice"
+    },
+    {
+      "skill_id": 51234,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Electricity",
+      "display": "DaeilBandSocket_Glove_Electricity"
+    },
+    {
+      "skill_id": 56120,
+      "name": "Equip_Passive_CheckScholar",
+      "display": "CheckScholar"
+    },
+    {
+      "skill_id": 56140,
+      "name": "Equip_Passive_CheckHideMoveCrow",
+      "display": "CheckHideMoveCrow"
+    },
+    {
+      "skill_id": 56141,
+      "name": "Equip_Passive_CheckHideMoveBoar",
+      "display": "CheckHideMoveBoar"
+    },
+    {
+      "skill_id": 56142,
+      "name": "Equip_Passive_CheckHidePumpkin",
+      "display": "CheckHidePumpkin"
+    },
+    {
+      "skill_id": 56143,
+      "name": "Equip_Passive_CheckHideScarecrow",
+      "display": "CheckHideScarecrow"
+    },
+    {
+      "skill_id": 56144,
+      "name": "Equip_Passive_CheckHideStraw",
+      "display": "CheckHideStraw"
+    },
+    {
+      "skill_id": 56145,
+      "name": "Equip_Passive_CheckHideDarkKingMonster",
+      "display": "CheckHideDarkKingMonster"
+    },
+    {
+      "skill_id": 56146,
+      "name": "Equip_Passive_CheckHideMoveCrocodile",
+      "display": "CheckHideMoveCrocodile"
+    },
+    {
+      "skill_id": 56147,
+      "name": "Equip_Passive_CheckHideEntHunter",
+      "display": "CheckHideEntHunter"
+    },
+    {
+      "skill_id": 56149,
+      "name": "Equip_Passive_FreezeResistance",
+      "display": "FreezeResistance"
+    },
+    {
+      "skill_id": 56150,
+      "name": "Equip_Passive_NonSlip",
+      "display": "NonSlip"
+    },
+    {
+      "skill_id": 56152,
+      "name": "Equip_Passive_CheckHideCrowBrotherHood",
+      "display": "CheckHideCrowBrotherHood"
+    },
+    {
+      "skill_id": 56155,
+      "name": "Equip_Passive_CheckHideMoveWolf",
+      "display": "CheckHideMoveWolf"
+    },
+    {
+      "skill_id": 56156,
+      "name": "Equip_Passive_CheckAirCannon",
+      "display": "CheckAirCannon"
+    },
+    {
+      "skill_id": 56157,
+      "name": "Equip_Passive_CheckDroneHelm",
+      "display": "CheckDroneHelm"
+    },
+    {
+      "skill_id": 56158,
+      "name": "Equip_Passive_CheckHideMoveReedDevil",
+      "display": "CheckHideMoveReedDevil"
+    },
+    {
+      "skill_id": 56160,
+      "name": "Equip_Passive_CheckDesertAbyssWraith",
+      "display": "CheckDesertAbyssWraith"
+    },
+    {
+      "skill_id": 70001,
+      "name": "Equip_Passive_Immune_SoundAttack",
+      "display": "Immune_SoundAttack"
+    },
+    {
+      "skill_id": 70002,
+      "name": "Equip_Passive_Immune_Gas",
+      "display": "Immune_Gas"
+    },
+    {
+      "skill_id": 70003,
+      "name": "Equip_Passive_Immune_BeeHit",
+      "display": "Immune_BeeHit"
+    },
+    {
+      "skill_id": 70004,
+      "name": "Equip_Passive_Immune_Confusion",
+      "display": "Immune_Confusion"
+    },
+    {
+      "skill_id": 70005,
+      "name": "Equip_Passive_Immune_SulphurGas",
+      "display": "Immune_SulphurGas"
+    },
+    {
+      "skill_id": 70010,
+      "name": "Equip_Passive_GoblinReeddevilFake",
+      "display": "GoblinReeddevilFake"
+    },
+    {
+      "skill_id": 70011,
+      "name": "Equip_Passive_Immune_Bismuth",
+      "display": "Immune_Bismuth"
+    },
+    {
+      "skill_id": 70012,
+      "name": "Equip_Passive_Immune_Fire",
+      "display": "Immune_Fire"
+    },
+    {
+      "skill_id": 70017,
+      "name": "Equip_Passive_FireImmuneSpray",
+      "display": "FireImmuneSpray"
+    },
+    {
+      "skill_id": 70019,
+      "name": "Equip_Passive_Immune_SoundAttack_OpenableHelm",
+      "display": "Immune_SoundAttack_OpenableHelm"
+    },
+    {
+      "skill_id": 70048,
+      "name": "Equip_Passive_MarniDevoteeHelm",
+      "display": "MarniDevoteeHelm"
+    },
+    {
+      "skill_id": 70050,
+      "name": "Equip_Passive_ChangeFaction_Halsius",
+      "display": "ChangeFaction_Halsius"
+    },
+    {
+      "skill_id": 70051,
+      "name": "Equip_Passive_WoodTowerShield",
+      "display": "WoodTowerShield"
+    },
+    {
+      "skill_id": 70052,
+      "name": "Equip_Passive_ThornTowerShield",
+      "display": "ThornTowerShield"
+    },
+    {
+      "skill_id": 70053,
+      "name": "Equip_Passive_PlateArmor",
+      "display": "PlateArmor"
+    },
+    {
+      "skill_id": 70055,
+      "name": "Equip_Passive_Active_Hacking",
+      "display": "Active_Hacking"
+    },
+    {
+      "skill_id": 70056,
+      "name": "Equip_Passive_PowerDrawGloves",
+      "display": "PowerDrawGloves"
+    },
+    {
+      "skill_id": 70057,
+      "name": "Equip_Passive_MarniLaserHelm",
+      "display": "MarniLaserHelm"
+    },
+    {
+      "skill_id": 70058,
+      "name": "Equip_Passive_DarknessKingHelm",
+      "display": "DarknessKingHelm"
+    },
+    {
+      "skill_id": 70059,
+      "name": "Equip_Passive_CommonCooldownHelm",
+      "display": "CommonCooldownHelm"
+    },
+    {
+      "skill_id": 70060,
+      "name": "Equip_Passive_CommonSwitchHelm",
+      "display": "CommonSwitchHelm"
+    },
+    {
+      "skill_id": 70100,
+      "name": "Equip_Passive_Glasses_Winter",
+      "display": "Glasses_Winter"
+    },
+    {
+      "skill_id": 70104,
+      "name": "Equip_Passive_ProtectElectricGloves",
+      "display": "ProtectElectricGloves"
+    },
+    {
+      "skill_id": 70106,
+      "name": "Equip_Passive_SplitHornSword",
+      "display": "SplitHornSword"
+    },
+    {
+      "skill_id": 70107,
+      "name": "Equip_Passive_SizlekSword",
+      "display": "SizlekSword"
+    },
+    {
+      "skill_id": 70109,
+      "name": "Equip_Passive_DeerKingHelm",
+      "display": "DeerKingHelm"
+    },
+    {
+      "skill_id": 70110,
+      "name": "Equip_Passive_CrowWarhammer",
+      "display": "CrowWarhammer"
+    },
+    {
+      "skill_id": 70111,
+      "name": "Equip_Passive_CrowLongsword",
+      "display": "CrowLongsword"
+    },
+    {
+      "skill_id": 70116,
+      "name": "Equip_Passive_WhiteHornOneHandSword",
+      "display": "WhiteHornOneHandSword"
+    },
+    {
+      "skill_id": 70118,
+      "name": "Equip_Passive_SilverArmorShield",
+      "display": "SilverArmorShield"
+    },
+    {
+      "skill_id": 70119,
+      "name": "Equip_Passive_LudvigSword",
+      "display": "LudvigSword"
+    },
+    {
+      "skill_id": 70120,
+      "name": "Equip_Passive_HexeMarieWarHammer",
+      "display": "HexeMarieWarHammer"
+    },
+    {
+      "skill_id": 70121,
+      "name": "Equip_Passive_Beoneck_Strength",
+      "display": "Beoneck_Strength"
+    },
+    {
+      "skill_id": 70122,
+      "name": "Equip_Passive_Beoneck_Defence",
+      "display": "Beoneck_Defence"
+    },
+    {
+      "skill_id": 70123,
+      "name": "Equip_Passive_Beoneck_AttackSpeed",
+      "display": "Beoneck_AttackSpeed"
+    },
+    {
+      "skill_id": 70124,
+      "name": "Equip_Passive_Beoneck_MoveSpeed",
+      "display": "Beoneck_MoveSpeed"
+    },
+    {
+      "skill_id": 70126,
+      "name": "Equip_Passive_CrowmanSword",
+      "display": "CrowmanSword"
+    },
+    {
+      "skill_id": 70128,
+      "name": "Equip_Passive_CaliburnRapier",
+      "display": "CaliburnRapier"
+    },
+    {
+      "skill_id": 70129,
+      "name": "Equip_Passive_CrowBrotherhood_SummonCrow",
+      "display": "CrowBrotherhood_SummonCrow"
+    },
+    {
+      "skill_id": 70130,
+      "name": "Equip_Passive_Hellhonds_SummonHellhounds",
+      "display": "Hellhonds_SummonHellhounds"
+    },
+    {
+      "skill_id": 70131,
+      "name": "Equip_Passive_BleedBandits_DrillDash",
+      "display": "BleedBandits_DrillDash"
+    },
+    {
+      "skill_id": 70132,
+      "name": "Equip_Passive_WhiteHorn_Roar",
+      "display": "WhiteHorn_Roar"
+    },
+    {
+      "skill_id": 70133,
+      "name": "Equip_Passive_Hyena_PoisonImmune",
+      "display": "Hyena_PoisonImmune"
+    },
+    {
+      "skill_id": 70134,
+      "name": "Equip_Passive_DeerkingFollower",
+      "display": "DeerkingFollower"
+    },
+    {
+      "skill_id": 70135,
+      "name": "Equip_Passive_Goblin_FightGloves",
+      "display": "Goblin_FightGloves"
+    },
+    {
+      "skill_id": 70136,
+      "name": "Equip_Passive_Abacus",
+      "display": "Abacus"
+    },
+    {
+      "skill_id": 70137,
+      "name": "Equip_Passive_Item_Scale",
+      "display": "Item_Scale"
+    },
+    {
+      "skill_id": 70138,
+      "name": "Equip_Passive_TitanRing",
+      "display": "TitanRing"
+    },
+    {
+      "skill_id": 70139,
+      "name": "Equip_Passive_MasterDooTwoHandSword",
+      "display": "MasterDooTwoHandSword"
+    },
+    {
+      "skill_id": 70140,
+      "name": "Equip_Passive_DeerKingOneHandShield",
+      "display": "DeerKingOneHandShield"
+    },
+    {
+      "skill_id": 70141,
+      "name": "Equip_Passive_AwakenCaliburn_LongSword",
+      "display": "AwakenCaliburn_LongSword"
+    },
+    {
+      "skill_id": 70142,
+      "name": "Equip_Passive_Douglas_Leather_Armor",
+      "display": "Douglas_Leather_Armor"
+    },
+    {
+      "skill_id": 70143,
+      "name": "Equip_Passive_HamondBindel_LongSword",
+      "display": "HamondBindel_LongSword"
+    },
+    {
+      "skill_id": 70144,
+      "name": "Equip_Passive_Chocolate_Factory_BackPack",
+      "display": "Chocolate_Factory_BackPack"
+    },
+    {
+      "skill_id": 70145,
+      "name": "Equip_Passive_WellsSolider",
+      "display": "WellsSolider"
+    },
+    {
+      "skill_id": 70147,
+      "name": "Equip_Passive_Antumbra_TwoHandSword",
+      "display": "Antumbra_TwoHandSword"
+    },
+    {
+      "skill_id": 70148,
+      "name": "Equip_Passive_TitanSpear",
+      "display": "TitanSpear"
+    },
+    {
+      "skill_id": 70149,
+      "name": "Equip_Passive_Moonhead_GiantSpear",
+      "display": "Moonhead_GiantSpear"
+    },
+    {
+      "skill_id": 70150,
+      "name": "Equip_Passive_Crimson_Winged_Duke_TwoHandAlebard",
+      "display": "Crimson_Winged_Duke_TwoHandAlebard"
+    },
+    {
+      "skill_id": 70151,
+      "name": "Equip_Passive_Antumbra_TwoHandGiantSpear",
+      "display": "Antumbra_TwoHandGiantSpear"
+    },
+    {
+      "skill_id": 70152,
+      "name": "Equip_Passive_Antumbra_TwoHandRod",
+      "display": "Antumbra_TwoHandRod"
+    },
+    {
+      "skill_id": 70154,
+      "name": "Equip_Passive_SilverArmorMace",
+      "display": "SilverArmorMace"
+    },
+    {
+      "skill_id": 70155,
+      "name": "Equip_Passive_TarandusWarrior_WarHammer",
+      "display": "TarandusWarrior_WarHammer"
+    },
+    {
+      "skill_id": 70156,
+      "name": "Equip_Passive_SolidBringer_WarHammer",
+      "display": "SolidBringer_WarHammer"
+    },
+    {
+      "skill_id": 70157,
+      "name": "Equip_Passive_Myurdin_Sword",
+      "display": "Myurdin_Sword"
+    },
+    {
+      "skill_id": 70158,
+      "name": "Equip_Passive_Antumbra_King_TwoHandSword",
+      "display": "Antumbra_King_TwoHandSword"
+    },
+    {
+      "skill_id": 70161,
+      "name": "Equip_Passive_OwenCraber",
+      "display": "OwenCraber"
+    },
+    {
+      "skill_id": 70162,
+      "name": "Equip_Passive_SoulKnight_OneHandSword",
+      "display": "SoulKnight_OneHandSword"
+    },
+    {
+      "skill_id": 70163,
+      "name": "Equip_Passive_Muscan_Gloves",
+      "display": "Muscan_Gloves"
+    },
+    {
+      "skill_id": 70165,
+      "name": "Equip_Passive_Ator_Sword",
+      "display": "Ator_Sword"
+    },
+    {
+      "skill_id": 70166,
+      "name": "Equip_Passive_RedsentinelBow",
+      "display": "RedsentinelBow"
+    },
+    {
+      "skill_id": 70167,
+      "name": "Equip_Passive_TrukanHelm",
+      "display": "TrukanHelm"
+    },
+    {
+      "skill_id": 70168,
+      "name": "Equip_Passive_Demeniss_Chainsaw",
+      "display": "Demeniss_Chainsaw"
+    },
+    {
+      "skill_id": 70169,
+      "name": "Equip_Passive_Abyss_OneHandCannon",
+      "display": "Abyss_OneHandCannon"
+    },
+    {
+      "skill_id": 70170,
+      "name": "Equip_Passive_Oil_Spray",
+      "display": "Oil_Spray"
+    },
+    {
+      "skill_id": 70171,
+      "name": "Equip_Passive_Fertilizer_Spray",
+      "display": "Fertilizer_Spray"
+    },
+    {
+      "skill_id": 70360,
+      "name": "Equip_Passive_BirdDockHelm",
+      "display": "BirdDockHelm"
+    },
+    {
+      "skill_id": 70992,
+      "name": "Equip_Passive_Immune_Ice",
+      "display": "Immune_Ice"
+    },
+    {
+      "skill_id": 70993,
+      "name": "Equip_Passive_ElectricityImmune",
+      "display": "ElectricityImmune"
+    },
+    {
+      "skill_id": 70994,
+      "name": "Equip_Passive_RestrictionImmune",
+      "display": "RestrictionImmune"
+    },
+    {
+      "skill_id": 91000,
+      "name": "Equip_Passive_PlateHelm_Audio",
+      "display": "PlateHelm_Audio"
+    },
+    {
+      "skill_id": 91001,
+      "name": "Equip_Passive_PlateHelm_Audio_OpenableHelm",
+      "display": "PlateHelm_Audio_OpenableHelm"
+    },
+    {
+      "skill_id": 91002,
+      "name": "Equip_Passive_ShowHPUI",
+      "display": "ShowHPUI"
+    },
+    {
+      "skill_id": 91009,
+      "name": "Equip_Passive_Riding_Fabric_Armor",
+      "display": "Riding_Fabric_Armor"
+    },
+    {
+      "skill_id": 91010,
+      "name": "Equip_Passive_Card_Vision_Armor",
+      "display": "Card_Vision_Armor"
+    },
+    {
+      "skill_id": 91011,
+      "name": "Equip_Passive_Vehicle_Expand",
+      "display": "Vehicle_Expand"
+    },
+    {
+      "skill_id": 91100,
+      "name": "Equip_Passive_Empty",
+      "display": "Empty"
+    },
+    {
+      "skill_id": 91101,
+      "name": "Equip_Passive_LightningWeapon",
+      "display": "LightningWeapon"
+    },
+    {
+      "skill_id": 91102,
+      "name": "Equip_Passive_LightningWeapon_Glove",
+      "display": "LightningWeapon_Glove"
+    },
+    {
+      "skill_id": 91104,
+      "name": "Equip_Passive_IceWeapon",
+      "display": "IceWeapon"
+    },
+    {
+      "skill_id": 91105,
+      "name": "Equip_Passive_FireWeapon",
+      "display": "FireWeapon"
+    },
+    {
+      "skill_id": 91107,
+      "name": "Equip_Passive_Poison_Sword",
+      "display": "Poison_Sword"
+    },
+    {
+      "skill_id": 91109,
+      "name": "Equip_Passive_Bismuth_Spear",
+      "display": "Bismuth_Spear"
+    },
+    {
+      "skill_id": 91151,
+      "name": "Equip_Passive_BeeMace",
+      "display": "BeeMace"
+    },
+    {
+      "skill_id": 561400,
+      "name": "Equip_Passive_CrowBattleEffect",
+      "display": "CrowBattleEffect"
+    }
+  ],
+  "imbue_candidates": [
+    {
+      "skill_id": 51201,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Fire",
+      "display": "DaeilBandSocket_Weapon_Fire",
+      "group": "fire",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 51203,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Ice",
+      "display": "DaeilBandSocket_Weapon_Ice",
+      "group": "ice",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 51204,
+      "name": "Equip_Passive_DaeilBandSocket_Weapon_Electricity",
+      "display": "DaeilBandSocket_Weapon_Electricity",
+      "group": "lightning",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 91101,
+      "name": "Equip_Passive_LightningWeapon",
+      "display": "LightningWeapon",
+      "group": "lightning",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 91102,
+      "name": "Equip_Passive_LightningWeapon_Glove",
+      "display": "LightningWeapon_Glove",
+      "group": "lightning",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 91104,
+      "name": "Equip_Passive_IceWeapon",
+      "display": "IceWeapon",
+      "group": "ice",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 91105,
+      "name": "Equip_Passive_FireWeapon",
+      "display": "FireWeapon",
+      "group": "fire",
+      "is_weapon_imbue": true
+    },
+    {
+      "skill_id": 7206,
+      "name": "Equip_Passive_FireBoots",
+      "display": "FireBoots",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 9001,
+      "name": "Equip_Passive_Firefly_Lantern",
+      "display": "Firefly_Lantern",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 18030,
+      "name": "Equip_Passive_FlameThrowerSupport",
+      "display": "FlameThrowerSupport",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 18031,
+      "name": "Equip_Passive_IceThrowerSupport",
+      "display": "IceThrowerSupport",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 18032,
+      "name": "Equip_Passive_LightningThrowerSupport",
+      "display": "LightningThrowerSupport",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51211,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Fire",
+      "display": "DaeilBandSocket_Armor_Fire",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51213,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Ice",
+      "display": "DaeilBandSocket_Armor_Ice",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51214,
+      "name": "Equip_Passive_DaeilBandSocket_Armor_Electricity",
+      "display": "DaeilBandSocket_Armor_Electricity",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51221,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Fire",
+      "display": "DaeilBandSocket_Helm_Fire",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51223,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Ice",
+      "display": "DaeilBandSocket_Helm_Ice",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51224,
+      "name": "Equip_Passive_DaeilBandSocket_Helm_Electricity",
+      "display": "DaeilBandSocket_Helm_Electricity",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51231,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Fire",
+      "display": "DaeilBandSocket_Glove_Fire",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51233,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Ice",
+      "display": "DaeilBandSocket_Glove_Ice",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 51234,
+      "name": "Equip_Passive_DaeilBandSocket_Glove_Electricity",
+      "display": "DaeilBandSocket_Glove_Electricity",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 56145,
+      "name": "Equip_Passive_CheckHideDarkKingMonster",
+      "display": "CheckHideDarkKingMonster",
+      "group": "shadow",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 56149,
+      "name": "Equip_Passive_FreezeResistance",
+      "display": "FreezeResistance",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 56160,
+      "name": "Equip_Passive_CheckDesertAbyssWraith",
+      "display": "CheckDesertAbyssWraith",
+      "group": "shadow",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70011,
+      "name": "Equip_Passive_Immune_Bismuth",
+      "display": "Immune_Bismuth",
+      "group": "bismuth",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70012,
+      "name": "Equip_Passive_Immune_Fire",
+      "display": "Immune_Fire",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70017,
+      "name": "Equip_Passive_FireImmuneSpray",
+      "display": "FireImmuneSpray",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70058,
+      "name": "Equip_Passive_DarknessKingHelm",
+      "display": "DarknessKingHelm",
+      "group": "shadow",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70104,
+      "name": "Equip_Passive_ProtectElectricGloves",
+      "display": "ProtectElectricGloves",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70128,
+      "name": "Equip_Passive_CaliburnRapier",
+      "display": "CaliburnRapier",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70133,
+      "name": "Equip_Passive_Hyena_PoisonImmune",
+      "display": "Hyena_PoisonImmune",
+      "group": "poison",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70141,
+      "name": "Equip_Passive_AwakenCaliburn_LongSword",
+      "display": "AwakenCaliburn_LongSword",
+      "group": "fire",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70169,
+      "name": "Equip_Passive_Abyss_OneHandCannon",
+      "display": "Abyss_OneHandCannon",
+      "group": "shadow",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70992,
+      "name": "Equip_Passive_Immune_Ice",
+      "display": "Immune_Ice",
+      "group": "ice",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 70993,
+      "name": "Equip_Passive_ElectricityImmune",
+      "display": "ElectricityImmune",
+      "group": "lightning",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 91107,
+      "name": "Equip_Passive_Poison_Sword",
+      "display": "Poison_Sword",
+      "group": "poison",
+      "is_weapon_imbue": false
+    },
+    {
+      "skill_id": 91109,
+      "name": "Equip_Passive_Bismuth_Spear",
+      "display": "Bismuth_Spear",
+      "group": "bismuth",
+      "is_weapon_imbue": false
+    }
+  ],
+  "other_passive_candidates": [],
+  "auto_groups": {
+    "bismuth": [
+      {
+        "skill_id": 70011,
+        "name": "Equip_Passive_Immune_Bismuth",
+        "display": "Immune_Bismuth"
+      },
+      {
+        "skill_id": 91109,
+        "name": "Equip_Passive_Bismuth_Spear",
+        "display": "Bismuth_Spear"
+      }
+    ],
+    "bleed": [
+      {
+        "skill_id": 9132,
+        "name": "Equip_Passive_Bleed_Bomb_BackPack",
+        "display": "Bleed_Bomb_BackPack"
+      },
+      {
+        "skill_id": 70131,
+        "name": "Equip_Passive_BleedBandits_DrillDash",
+        "display": "BleedBandits_DrillDash"
+      }
+    ],
+    "fire": [
+      {
+        "skill_id": 7206,
+        "name": "Equip_Passive_FireBoots",
+        "display": "FireBoots"
+      },
+      {
+        "skill_id": 9001,
+        "name": "Equip_Passive_Firefly_Lantern",
+        "display": "Firefly_Lantern"
+      },
+      {
+        "skill_id": 18030,
+        "name": "Equip_Passive_FlameThrowerSupport",
+        "display": "FlameThrowerSupport"
+      },
+      {
+        "skill_id": 51201,
+        "name": "Equip_Passive_DaeilBandSocket_Weapon_Fire",
+        "display": "DaeilBandSocket_Weapon_Fire"
+      },
+      {
+        "skill_id": 51211,
+        "name": "Equip_Passive_DaeilBandSocket_Armor_Fire",
+        "display": "DaeilBandSocket_Armor_Fire"
+      },
+      {
+        "skill_id": 51221,
+        "name": "Equip_Passive_DaeilBandSocket_Helm_Fire",
+        "display": "DaeilBandSocket_Helm_Fire"
+      },
+      {
+        "skill_id": 51231,
+        "name": "Equip_Passive_DaeilBandSocket_Glove_Fire",
+        "display": "DaeilBandSocket_Glove_Fire"
+      },
+      {
+        "skill_id": 70012,
+        "name": "Equip_Passive_Immune_Fire",
+        "display": "Immune_Fire"
+      },
+      {
+        "skill_id": 70017,
+        "name": "Equip_Passive_FireImmuneSpray",
+        "display": "FireImmuneSpray"
+      },
+      {
+        "skill_id": 70128,
+        "name": "Equip_Passive_CaliburnRapier",
+        "display": "CaliburnRapier"
+      },
+      {
+        "skill_id": 70141,
+        "name": "Equip_Passive_AwakenCaliburn_LongSword",
+        "display": "AwakenCaliburn_LongSword"
+      },
+      {
+        "skill_id": 91105,
+        "name": "Equip_Passive_FireWeapon",
+        "display": "FireWeapon"
+      }
+    ],
+    "gear_accessory": [
+      {
+        "skill_id": 9108,
+        "name": "Equip_Passive_LudvicNecklace",
+        "display": "LudvicNecklace"
+      },
+      {
+        "skill_id": 9109,
+        "name": "Equip_Passive_WeatherWeaverNecklace",
+        "display": "WeatherWeaverNecklace"
+      },
+      {
+        "skill_id": 9110,
+        "name": "Equip_Passive_WeatherWeaverSunnyNeckleace",
+        "display": "WeatherWeaverSunnyNeckleace"
+      },
+      {
+        "skill_id": 9111,
+        "name": "Equip_Passive_MonkNecklace",
+        "display": "MonkNecklace"
+      },
+      {
+        "skill_id": 9129,
+        "name": "Equip_Passive_Tarif_Necklace",
+        "display": "Tarif_Necklace"
+      },
+      {
+        "skill_id": 70121,
+        "name": "Equip_Passive_Beoneck_Strength",
+        "display": "Beoneck_Strength"
+      },
+      {
+        "skill_id": 70122,
+        "name": "Equip_Passive_Beoneck_Defence",
+        "display": "Beoneck_Defence"
+      },
+      {
+        "skill_id": 70123,
+        "name": "Equip_Passive_Beoneck_AttackSpeed",
+        "display": "Beoneck_AttackSpeed"
+      },
+      {
+        "skill_id": 70124,
+        "name": "Equip_Passive_Beoneck_MoveSpeed",
+        "display": "Beoneck_MoveSpeed"
+      }
+    ],
+    "gear_armor": [
+      {
+        "skill_id": 9133,
+        "name": "Equip_Passive_Riding_Fabric_Armor_Whip",
+        "display": "Riding_Fabric_Armor_Whip"
+      },
+      {
+        "skill_id": 70053,
+        "name": "Equip_Passive_PlateArmor",
+        "display": "PlateArmor"
+      },
+      {
+        "skill_id": 70142,
+        "name": "Equip_Passive_Douglas_Leather_Armor",
+        "display": "Douglas_Leather_Armor"
+      },
+      {
+        "skill_id": 70154,
+        "name": "Equip_Passive_SilverArmorMace",
+        "display": "SilverArmorMace"
+      },
+      {
+        "skill_id": 91009,
+        "name": "Equip_Passive_Riding_Fabric_Armor",
+        "display": "Riding_Fabric_Armor"
+      },
+      {
+        "skill_id": 91010,
+        "name": "Equip_Passive_Card_Vision_Armor",
+        "display": "Card_Vision_Armor"
+      }
+    ],
+    "gear_boot": [
+      {
+        "skill_id": 7055,
+        "name": "Equip_Passive_JumpUpBoots",
+        "display": "JumpUpBoots"
+      },
+      {
+        "skill_id": 7201,
+        "name": "Equip_Passive_FlyingBoots",
+        "display": "FlyingBoots"
+      },
+      {
+        "skill_id": 7202,
+        "name": "Equip_Passive_SwimmingBoots",
+        "display": "SwimmingBoots"
+      },
+      {
+        "skill_id": 7205,
+        "name": "Equip_Passive_ColossusBoots",
+        "display": "ColossusBoots"
+      }
+    ],
+    "gear_bow": [
+      {
+        "skill_id": 70166,
+        "name": "Equip_Passive_RedsentinelBow",
+        "display": "RedsentinelBow"
+      }
+    ],
+    "gear_glasses": [
+      {
+        "skill_id": 70100,
+        "name": "Equip_Passive_Glasses_Winter",
+        "display": "Glasses_Winter"
+      }
+    ],
+    "gear_glove": [
+      {
+        "skill_id": 9107,
+        "name": "Equip_Passive_GadgetGloves",
+        "display": "GadgetGloves"
+      },
+      {
+        "skill_id": 9128,
+        "name": "Equip_Passive_ThiefGloves",
+        "display": "ThiefGloves"
+      },
+      {
+        "skill_id": 70056,
+        "name": "Equip_Passive_PowerDrawGloves",
+        "display": "PowerDrawGloves"
+      },
+      {
+        "skill_id": 70135,
+        "name": "Equip_Passive_Goblin_FightGloves",
+        "display": "Goblin_FightGloves"
+      },
+      {
+        "skill_id": 70163,
+        "name": "Equip_Passive_Muscan_Gloves",
+        "display": "Muscan_Gloves"
+      }
+    ],
+    "gear_helm": [
+      {
+        "skill_id": 7056,
+        "name": "Equip_Passive_EntHunter_Helm",
+        "display": "EntHunter_Helm"
+      },
+      {
+        "skill_id": 7057,
+        "name": "Equip_Passive_Mask_Liberator_Helm",
+        "display": "Mask_Liberator_Helm"
+      },
+      {
+        "skill_id": 7058,
+        "name": "Equip_Passive_Wolf_Pursuer_Helm",
+        "display": "Wolf_Pursuer_Helm"
+      },
+      {
+        "skill_id": 9100,
+        "name": "Equip_Passive_AnamorphicHelm",
+        "display": "AnamorphicHelm"
+      },
+      {
+        "skill_id": 9101,
+        "name": "Equip_Passive_HackingHelm",
+        "display": "HackingHelm"
+      },
+      {
+        "skill_id": 9102,
+        "name": "Equip_Passive_FlorinHelm",
+        "display": "FlorinHelm"
+      },
+      {
+        "skill_id": 9103,
+        "name": "Equip_Passive_MinerHelm",
+        "display": "MinerHelm"
+      },
+      {
+        "skill_id": 9105,
+        "name": "Equip_Passive_HeatHelm",
+        "display": "HeatHelm"
+      },
+      {
+        "skill_id": 9121,
+        "name": "Equip_Passive_Knowledge_PlateArmor_Helm",
+        "display": "Knowledge_PlateArmor_Helm"
+      },
+      {
+        "skill_id": 9130,
+        "name": "Equip_Passive_Chicken_Helm",
+        "display": "Chicken_Helm"
+      },
+      {
+        "skill_id": 9131,
+        "name": "Equip_Passive_Scouter_HP_PlateArmor_Helm",
+        "display": "Scouter_HP_PlateArmor_Helm"
+      },
+      {
+        "skill_id": 9134,
+        "name": "Equip_Passive_Pirate_King_Leather_Helm",
+        "display": "Pirate_King_Leather_Helm"
+      },
+      {
+        "skill_id": 41106,
+        "name": "Equip_Passive_HelmToggle",
+        "display": "HelmToggle"
+      },
+      {
+        "skill_id": 56157,
+        "name": "Equip_Passive_CheckDroneHelm",
+        "display": "CheckDroneHelm"
+      },
+      {
+        "skill_id": 70019,
+        "name": "Equip_Passive_Immune_SoundAttack_OpenableHelm",
+        "display": "Immune_SoundAttack_OpenableHelm"
+      },
+      {
+        "skill_id": 70048,
+        "name": "Equip_Passive_MarniDevoteeHelm",
+        "display": "MarniDevoteeHelm"
+      },
+      {
+        "skill_id": 70057,
+        "name": "Equip_Passive_MarniLaserHelm",
+        "display": "MarniLaserHelm"
+      },
+      {
+        "skill_id": 70059,
+        "name": "Equip_Passive_CommonCooldownHelm",
+        "display": "CommonCooldownHelm"
+      },
+      {
+        "skill_id": 70060,
+        "name": "Equip_Passive_CommonSwitchHelm",
+        "display": "CommonSwitchHelm"
+      },
+      {
+        "skill_id": 70109,
+        "name": "Equip_Passive_DeerKingHelm",
+        "display": "DeerKingHelm"
+      },
+      {
+        "skill_id": 70167,
+        "name": "Equip_Passive_TrukanHelm",
+        "display": "TrukanHelm"
+      },
+      {
+        "skill_id": 70360,
+        "name": "Equip_Passive_BirdDockHelm",
+        "display": "BirdDockHelm"
+      },
+      {
+        "skill_id": 91000,
+        "name": "Equip_Passive_PlateHelm_Audio",
+        "display": "PlateHelm_Audio"
+      },
+      {
+        "skill_id": 91001,
+        "name": "Equip_Passive_PlateHelm_Audio_OpenableHelm",
+        "display": "PlateHelm_Audio_OpenableHelm"
+      }
+    ],
+    "gear_ring": [
+      {
+        "skill_id": 9112,
+        "name": "Equip_Passive_FolorinEarring",
+        "display": "FolorinEarring"
+      },
+      {
+        "skill_id": 9127,
+        "name": "Equip_Passive_Legendary_HexeMarie_Earring",
+        "display": "Legendary_HexeMarie_Earring"
+      },
+      {
+        "skill_id": 70138,
+        "name": "Equip_Passive_TitanRing",
+        "display": "TitanRing"
+      },
+      {
+        "skill_id": 70156,
+        "name": "Equip_Passive_SolidBringer_WarHammer",
+        "display": "SolidBringer_WarHammer"
+      }
+    ],
+    "gear_shield": [
+      {
+        "skill_id": 9122,
+        "name": "Equip_Passive_DrakeMetalOneHandShield",
+        "display": "DrakeMetalOneHandShield"
+      },
+      {
+        "skill_id": 9123,
+        "name": "Equip_Passive_LakeGolemOnehandShield",
+        "display": "LakeGolemOnehandShield"
+      },
+      {
+        "skill_id": 9125,
+        "name": "Equip_Passive_GunOneHandShield",
+        "display": "GunOneHandShield"
+      },
+      {
+        "skill_id": 9126,
+        "name": "Equip_Passive_SoundOneHandShield",
+        "display": "SoundOneHandShield"
+      },
+      {
+        "skill_id": 70051,
+        "name": "Equip_Passive_WoodTowerShield",
+        "display": "WoodTowerShield"
+      },
+      {
+        "skill_id": 70052,
+        "name": "Equip_Passive_ThornTowerShield",
+        "display": "ThornTowerShield"
+      },
+      {
+        "skill_id": 70118,
+        "name": "Equip_Passive_SilverArmorShield",
+        "display": "SilverArmorShield"
+      },
+      {
+        "skill_id": 70140,
+        "name": "Equip_Passive_DeerKingOneHandShield",
+        "display": "DeerKingOneHandShield"
+      }
+    ],
+    "gear_spear": [
+      {
+        "skill_id": 70148,
+        "name": "Equip_Passive_TitanSpear",
+        "display": "TitanSpear"
+      },
+      {
+        "skill_id": 70149,
+        "name": "Equip_Passive_Moonhead_GiantSpear",
+        "display": "Moonhead_GiantSpear"
+      },
+      {
+        "skill_id": 70151,
+        "name": "Equip_Passive_Antumbra_TwoHandGiantSpear",
+        "display": "Antumbra_TwoHandGiantSpear"
+      }
+    ],
+    "gear_sword": [
+      {
+        "skill_id": 70106,
+        "name": "Equip_Passive_SplitHornSword",
+        "display": "SplitHornSword"
+      },
+      {
+        "skill_id": 70107,
+        "name": "Equip_Passive_SizlekSword",
+        "display": "SizlekSword"
+      },
+      {
+        "skill_id": 70111,
+        "name": "Equip_Passive_CrowLongsword",
+        "display": "CrowLongsword"
+      },
+      {
+        "skill_id": 70116,
+        "name": "Equip_Passive_WhiteHornOneHandSword",
+        "display": "WhiteHornOneHandSword"
+      },
+      {
+        "skill_id": 70119,
+        "name": "Equip_Passive_LudvigSword",
+        "display": "LudvigSword"
+      },
+      {
+        "skill_id": 70126,
+        "name": "Equip_Passive_CrowmanSword",
+        "display": "CrowmanSword"
+      },
+      {
+        "skill_id": 70139,
+        "name": "Equip_Passive_MasterDooTwoHandSword",
+        "display": "MasterDooTwoHandSword"
+      },
+      {
+        "skill_id": 70143,
+        "name": "Equip_Passive_HamondBindel_LongSword",
+        "display": "HamondBindel_LongSword"
+      },
+      {
+        "skill_id": 70147,
+        "name": "Equip_Passive_Antumbra_TwoHandSword",
+        "display": "Antumbra_TwoHandSword"
+      },
+      {
+        "skill_id": 70157,
+        "name": "Equip_Passive_Myurdin_Sword",
+        "display": "Myurdin_Sword"
+      },
+      {
+        "skill_id": 70158,
+        "name": "Equip_Passive_Antumbra_King_TwoHandSword",
+        "display": "Antumbra_King_TwoHandSword"
+      },
+      {
+        "skill_id": 70162,
+        "name": "Equip_Passive_SoulKnight_OneHandSword",
+        "display": "SoulKnight_OneHandSword"
+      },
+      {
+        "skill_id": 70165,
+        "name": "Equip_Passive_Ator_Sword",
+        "display": "Ator_Sword"
+      }
+    ],
+    "ice": [
+      {
+        "skill_id": 18031,
+        "name": "Equip_Passive_IceThrowerSupport",
+        "display": "IceThrowerSupport"
+      },
+      {
+        "skill_id": 51203,
+        "name": "Equip_Passive_DaeilBandSocket_Weapon_Ice",
+        "display": "DaeilBandSocket_Weapon_Ice"
+      },
+      {
+        "skill_id": 51213,
+        "name": "Equip_Passive_DaeilBandSocket_Armor_Ice",
+        "display": "DaeilBandSocket_Armor_Ice"
+      },
+      {
+        "skill_id": 51223,
+        "name": "Equip_Passive_DaeilBandSocket_Helm_Ice",
+        "display": "DaeilBandSocket_Helm_Ice"
+      },
+      {
+        "skill_id": 51233,
+        "name": "Equip_Passive_DaeilBandSocket_Glove_Ice",
+        "display": "DaeilBandSocket_Glove_Ice"
+      },
+      {
+        "skill_id": 56149,
+        "name": "Equip_Passive_FreezeResistance",
+        "display": "FreezeResistance"
+      },
+      {
+        "skill_id": 70992,
+        "name": "Equip_Passive_Immune_Ice",
+        "display": "Immune_Ice"
+      },
+      {
+        "skill_id": 91104,
+        "name": "Equip_Passive_IceWeapon",
+        "display": "IceWeapon"
+      }
+    ],
+    "lightning": [
+      {
+        "skill_id": 18032,
+        "name": "Equip_Passive_LightningThrowerSupport",
+        "display": "LightningThrowerSupport"
+      },
+      {
+        "skill_id": 51204,
+        "name": "Equip_Passive_DaeilBandSocket_Weapon_Electricity",
+        "display": "DaeilBandSocket_Weapon_Electricity"
+      },
+      {
+        "skill_id": 51214,
+        "name": "Equip_Passive_DaeilBandSocket_Armor_Electricity",
+        "display": "DaeilBandSocket_Armor_Electricity"
+      },
+      {
+        "skill_id": 51224,
+        "name": "Equip_Passive_DaeilBandSocket_Helm_Electricity",
+        "display": "DaeilBandSocket_Helm_Electricity"
+      },
+      {
+        "skill_id": 51234,
+        "name": "Equip_Passive_DaeilBandSocket_Glove_Electricity",
+        "display": "DaeilBandSocket_Glove_Electricity"
+      },
+      {
+        "skill_id": 70104,
+        "name": "Equip_Passive_ProtectElectricGloves",
+        "display": "ProtectElectricGloves"
+      },
+      {
+        "skill_id": 70993,
+        "name": "Equip_Passive_ElectricityImmune",
+        "display": "ElectricityImmune"
+      },
+      {
+        "skill_id": 91101,
+        "name": "Equip_Passive_LightningWeapon",
+        "display": "LightningWeapon"
+      },
+      {
+        "skill_id": 91102,
+        "name": "Equip_Passive_LightningWeapon_Glove",
+        "display": "LightningWeapon_Glove"
+      }
+    ],
+    "other": [
+      {
+        "skill_id": 727,
+        "name": "Equip_Passive_ChangeFaction_Hernand",
+        "display": "ChangeFaction_Hernand"
+      },
+      {
+        "skill_id": 7204,
+        "name": "Equip_Passive_EquipDropRate",
+        "display": "EquipDropRate"
+      },
+      {
+        "skill_id": 9000,
+        "name": "Equip_Passive_Fishing_TimeReduce",
+        "display": "Fishing_TimeReduce"
+      },
+      {
+        "skill_id": 9104,
+        "name": "Equip_Passive_Catfish",
+        "display": "Catfish"
+      },
+      {
+        "skill_id": 9106,
+        "name": "Equip_Passive_GadgetHlem",
+        "display": "GadgetHlem"
+      },
+      {
+        "skill_id": 9113,
+        "name": "Equip_Passive_EMPBackPack",
+        "display": "EMPBackPack"
+      },
+      {
+        "skill_id": 9114,
+        "name": "Equip_Passive_PlantCollectBackPack",
+        "display": "PlantCollectBackPack"
+      },
+      {
+        "skill_id": 9115,
+        "name": "Equip_Passive_InsectCollectBackPack",
+        "display": "InsectCollectBackPack"
+      },
+      {
+        "skill_id": 9116,
+        "name": "Equip_Passive_KukuPotBackPack",
+        "display": "KukuPotBackPack"
+      },
+      {
+        "skill_id": 9117,
+        "name": "Equip_Passive_KukuDroneBackpack",
+        "display": "KukuDroneBackpack"
+      },
+      {
+        "skill_id": 9118,
+        "name": "Equip_Passive_AggroBackpack",
+        "display": "AggroBackpack"
+      },
+      {
+        "skill_id": 9120,
+        "name": "Equip_Passive_KuKu_Golden999K",
+        "display": "KuKu_Golden999K"
+      },
+      {
+        "skill_id": 56120,
+        "name": "Equip_Passive_CheckScholar",
+        "display": "CheckScholar"
+      },
+      {
+        "skill_id": 56140,
+        "name": "Equip_Passive_CheckHideMoveCrow",
+        "display": "CheckHideMoveCrow"
+      },
+      {
+        "skill_id": 56141,
+        "name": "Equip_Passive_CheckHideMoveBoar",
+        "display": "CheckHideMoveBoar"
+      },
+      {
+        "skill_id": 56142,
+        "name": "Equip_Passive_CheckHidePumpkin",
+        "display": "CheckHidePumpkin"
+      },
+      {
+        "skill_id": 56143,
+        "name": "Equip_Passive_CheckHideScarecrow",
+        "display": "CheckHideScarecrow"
+      },
+      {
+        "skill_id": 56144,
+        "name": "Equip_Passive_CheckHideStraw",
+        "display": "CheckHideStraw"
+      },
+      {
+        "skill_id": 56146,
+        "name": "Equip_Passive_CheckHideMoveCrocodile",
+        "display": "CheckHideMoveCrocodile"
+      },
+      {
+        "skill_id": 56147,
+        "name": "Equip_Passive_CheckHideEntHunter",
+        "display": "CheckHideEntHunter"
+      },
+      {
+        "skill_id": 56150,
+        "name": "Equip_Passive_NonSlip",
+        "display": "NonSlip"
+      },
+      {
+        "skill_id": 56152,
+        "name": "Equip_Passive_CheckHideCrowBrotherHood",
+        "display": "CheckHideCrowBrotherHood"
+      },
+      {
+        "skill_id": 56155,
+        "name": "Equip_Passive_CheckHideMoveWolf",
+        "display": "CheckHideMoveWolf"
+      },
+      {
+        "skill_id": 56158,
+        "name": "Equip_Passive_CheckHideMoveReedDevil",
+        "display": "CheckHideMoveReedDevil"
+      },
+      {
+        "skill_id": 70001,
+        "name": "Equip_Passive_Immune_SoundAttack",
+        "display": "Immune_SoundAttack"
+      },
+      {
+        "skill_id": 70002,
+        "name": "Equip_Passive_Immune_Gas",
+        "display": "Immune_Gas"
+      },
+      {
+        "skill_id": 70003,
+        "name": "Equip_Passive_Immune_BeeHit",
+        "display": "Immune_BeeHit"
+      },
+      {
+        "skill_id": 70004,
+        "name": "Equip_Passive_Immune_Confusion",
+        "display": "Immune_Confusion"
+      },
+      {
+        "skill_id": 70005,
+        "name": "Equip_Passive_Immune_SulphurGas",
+        "display": "Immune_SulphurGas"
+      },
+      {
+        "skill_id": 70010,
+        "name": "Equip_Passive_GoblinReeddevilFake",
+        "display": "GoblinReeddevilFake"
+      },
+      {
+        "skill_id": 70050,
+        "name": "Equip_Passive_ChangeFaction_Halsius",
+        "display": "ChangeFaction_Halsius"
+      },
+      {
+        "skill_id": 70055,
+        "name": "Equip_Passive_Active_Hacking",
+        "display": "Active_Hacking"
+      },
+      {
+        "skill_id": 70110,
+        "name": "Equip_Passive_CrowWarhammer",
+        "display": "CrowWarhammer"
+      },
+      {
+        "skill_id": 70120,
+        "name": "Equip_Passive_HexeMarieWarHammer",
+        "display": "HexeMarieWarHammer"
+      },
+      {
+        "skill_id": 70129,
+        "name": "Equip_Passive_CrowBrotherhood_SummonCrow",
+        "display": "CrowBrotherhood_SummonCrow"
+      },
+      {
+        "skill_id": 70130,
+        "name": "Equip_Passive_Hellhonds_SummonHellhounds",
+        "display": "Hellhonds_SummonHellhounds"
+      },
+      {
+        "skill_id": 70132,
+        "name": "Equip_Passive_WhiteHorn_Roar",
+        "display": "WhiteHorn_Roar"
+      },
+      {
+        "skill_id": 70134,
+        "name": "Equip_Passive_DeerkingFollower",
+        "display": "DeerkingFollower"
+      },
+      {
+        "skill_id": 70136,
+        "name": "Equip_Passive_Abacus",
+        "display": "Abacus"
+      },
+      {
+        "skill_id": 70137,
+        "name": "Equip_Passive_Item_Scale",
+        "display": "Item_Scale"
+      },
+      {
+        "skill_id": 70144,
+        "name": "Equip_Passive_Chocolate_Factory_BackPack",
+        "display": "Chocolate_Factory_BackPack"
+      },
+      {
+        "skill_id": 70145,
+        "name": "Equip_Passive_WellsSolider",
+        "display": "WellsSolider"
+      },
+      {
+        "skill_id": 70150,
+        "name": "Equip_Passive_Crimson_Winged_Duke_TwoHandAlebard",
+        "display": "Crimson_Winged_Duke_TwoHandAlebard"
+      },
+      {
+        "skill_id": 70152,
+        "name": "Equip_Passive_Antumbra_TwoHandRod",
+        "display": "Antumbra_TwoHandRod"
+      },
+      {
+        "skill_id": 70155,
+        "name": "Equip_Passive_TarandusWarrior_WarHammer",
+        "display": "TarandusWarrior_WarHammer"
+      },
+      {
+        "skill_id": 70161,
+        "name": "Equip_Passive_OwenCraber",
+        "display": "OwenCraber"
+      },
+      {
+        "skill_id": 70168,
+        "name": "Equip_Passive_Demeniss_Chainsaw",
+        "display": "Demeniss_Chainsaw"
+      },
+      {
+        "skill_id": 70170,
+        "name": "Equip_Passive_Oil_Spray",
+        "display": "Oil_Spray"
+      },
+      {
+        "skill_id": 70171,
+        "name": "Equip_Passive_Fertilizer_Spray",
+        "display": "Fertilizer_Spray"
+      },
+      {
+        "skill_id": 70994,
+        "name": "Equip_Passive_RestrictionImmune",
+        "display": "RestrictionImmune"
+      },
+      {
+        "skill_id": 91002,
+        "name": "Equip_Passive_ShowHPUI",
+        "display": "ShowHPUI"
+      },
+      {
+        "skill_id": 91011,
+        "name": "Equip_Passive_Vehicle_Expand",
+        "display": "Vehicle_Expand"
+      },
+      {
+        "skill_id": 91100,
+        "name": "Equip_Passive_Empty",
+        "display": "Empty"
+      },
+      {
+        "skill_id": 91151,
+        "name": "Equip_Passive_BeeMace",
+        "display": "BeeMace"
+      },
+      {
+        "skill_id": 561400,
+        "name": "Equip_Passive_CrowBattleEffect",
+        "display": "CrowBattleEffect"
+      }
+    ],
+    "poison": [
+      {
+        "skill_id": 70133,
+        "name": "Equip_Passive_Hyena_PoisonImmune",
+        "display": "Hyena_PoisonImmune"
+      },
+      {
+        "skill_id": 91107,
+        "name": "Equip_Passive_Poison_Sword",
+        "display": "Poison_Sword"
+      }
+    ],
+    "shadow": [
+      {
+        "skill_id": 56145,
+        "name": "Equip_Passive_CheckHideDarkKingMonster",
+        "display": "CheckHideDarkKingMonster"
+      },
+      {
+        "skill_id": 56160,
+        "name": "Equip_Passive_CheckDesertAbyssWraith",
+        "display": "CheckDesertAbyssWraith"
+      },
+      {
+        "skill_id": 70058,
+        "name": "Equip_Passive_DarknessKingHelm",
+        "display": "DarknessKingHelm"
+      },
+      {
+        "skill_id": 70169,
+        "name": "Equip_Passive_Abyss_OneHandCannon",
+        "display": "Abyss_OneHandCannon"
+      }
+    ],
+    "water": [
+      {
+        "skill_id": 7203,
+        "name": "Equip_Passive_WaterSlidingBoots",
+        "display": "WaterSlidingBoots"
+      },
+      {
+        "skill_id": 9119,
+        "name": "Equip_Passive_WaterPowerBackPack",
+        "display": "WaterPowerBackPack"
+      }
+    ],
+    "wind": [
+      {
+        "skill_id": 9124,
+        "name": "Equip_Passive_WindPowerOneHandShield",
+        "display": "WindPowerOneHandShield"
+      },
+      {
+        "skill_id": 56156,
+        "name": "Equip_Passive_CheckAirCannon",
+        "display": "CheckAirCannon"
+      }
+    ]
+  },
+  "full_skill_index": {
+    "999999": "Skill_NotExist",
+    "109": "BuffedAction_Active_BindBack",
+    "111": "BuffedAction_Active_BindBack_Release",
+    "113": "BuffedAction_Active_Panic",
+    "114": "BuffedAction_Active_Panic_Release",
+    "192": "BuffedAction_Active_Injured",
+    "193": "BuffedAction_Active_Injured_Release",
+    "272": "BuffedAction_Active_Coma",
+    "273": "BuffedAction_Active_Coma_Release",
+    "275": "BuffedAction_Active_Coma_RemainTime",
+    "277": "BuffedAction_Active_OnHitUnapplyComa",
+    "266": "Active_StageResetPenalty",
+    "1": "Attack_PushLight",
+    "2": "Attack_PushNormal",
+    "7": "Attack_PushHard",
+    "101": "Attack_DamageOnly",
+    "13": "Attack_DownAttack",
+    "14": "Attack_DownAttack_NoDead",
+    "22": "Attack_SmoothDown",
+    "3": "Attack_KnockDown",
+    "4": "Attack_KnockOut",
+    "40": "Skill_KnockOut_Reset",
+    "77": "Attack_Big_Stamina_Decrease",
+    "850": "Active_RemoveAggro_VisibleOnly",
+    "851": "Active_RemoveAggro_NotVisibleOnly",
+    "92011": "Repeat_Increase_Lightning",
+    "92012": "Repeat_Increase_Ice",
+    "92013": "Repeat_Increase_Fire",
+    "92001": "Repeat_LightningDamage",
+    "92002": "Repeat_IceDamage",
+    "92003": "Repeat_FireDamage",
+    "92004": "Repeat_EmpDamage",
+    "15047": "Active_StickyBomb",
+    "16000": "Active_DecreaseEndurance_MainWeapon",
+    "16001": "Active_DecreaseEndurance_SubWeapon",
+    "16002": "Active_DecreaseEndurance_WeaponBelt",
+    "51526": "Active_CheckHeadlock_Buff",
+    "34": "Attack_Void",
+    "52051": "Active_MercenaryTimer",
+    "19": "Skill_Looting",
+    "20": "Skill_Looting_WithNonDeadBody",
+    "988": "Skill_Taunt",
+    "992": "Passive_WolfCheck",
+    "10100": "Active_Groggy_RecoveryHp_10",
+    "52132": "Active_Recovery_HP",
+    "52133": "Active_Recovery_SP",
+    "52134": "Active_Recovery_MP",
+    "921": "Active_AllRecoveryStatrate",
+    "30001": "Active_CampRalax",
+    "40013": "Active_UseResource_Mp",
+    "75014": "Skill_HpAllRecover",
+    "75110": "Skill_Decrease_HpRate",
+    "75111": "Skill_Recover_HpRate",
+    "75113": "Skill_Recovery_SP",
+    "51001": "Active_IncreaseFire",
+    "51005": "Active_Poison",
+    "51401": "Active_RemoveElementalAttack",
+    "3101": "Skill_IceThrower",
+    "3105": "Skill_Freezing",
+    "71": "Active_RemoveFireArrow",
+    "41318": "Passive_Nature_Friendly",
+    "41319": "Passive_BarrierGuard",
+    "41320": "Passive_IceGuard",
+    "41297": "Passive_Immune_GimmickSuperJump",
+    "56101": "Skill_SoulKnightSummon_Dead",
+    "65209": "Active_Summon_Airballoon",
+    "980": "Passive_Immune_Damage",
+    "9910": "Passive_Immune_ElementalActionRestriction",
+    "9911": "Passive_Immune_HitburnActionRestriction",
+    "987": "Passive_Immune_InstantDeath",
+    "15103": "Passive_Immune_SpiderWeb",
+    "15104": "Passive_Immune_Bleeding",
+    "701": "Passive_Immune_Comma",
+    "56159": "Passive_Immune_SulphurGas",
+    "75013": "Passive_Immune_Bismuth",
+    "52126": "Passive_MetalBurnPassive",
+    "19117": "Passive_NoReactionWeaponBreak",
+    "65417": "Active_TempUp",
+    "65422": "Active_ConfusionReset",
+    "65427": "MaterialSkill_HumanShockPassiveLv2",
+    "65428": "MaterialSkill_WoodBurnPassive",
+    "65429": "MaterialSkill_LampBurnPassive",
+    "65430": "MaterialSkill_CircuitShockPassive_CheckPhysicsCollision",
+    "65431": "MaterialSkill_CircuitShockPassive_IgnorePhysicsCollision",
+    "65432": "MaterialSkill_SourceShockPassive_CheckPhysicsCollision",
+    "65433": "MaterialSkill_SourceShockPassive_IgnorePhysicsCollision",
+    "65434": "MaterialSkill_BatteryShockPassive",
+    "65435": "MaterialSkill_ShockApplyEvent",
+    "65437": "MaterialSkill_ShockUnApplyEvent",
+    "65541": "Passive_Aura_ElectricityArea",
+    "65542": "Passive_ElectricityArea",
+    "65543": "Passive_Aura_IceArea",
+    "65544": "Passive_IceArea",
+    "65545": "Passive_Aura_FireArea",
+    "65546": "Passive_FireArea",
+    "65436": "MaterialSkill_FireBurnPassive",
+    "65426": "MaterialSkill_GimmickAllBurnPassive",
+    "65438": "MaterialSkill_HumanFreezeActive",
+    "65439": "MaterialSkill_FreezeCheckRiderActive",
+    "65440": "MaterialSkill_RiderFreezeRelease",
+    "65441": "MaterialSkill_FreezeZonePassive",
+    "65447": "Active_Unfreeze",
+    "65466": "Skill_SandStorm_Effect",
+    "65467": "BuffLevel_Confusion",
+    "65468": "Active_NatureProtect",
+    "65469": "Active_NatureProtect_Unapply",
+    "65471": "Passive_AddMaterial_fireHeavy",
+    "65472": "Passive_AddMaterial_iceHeavy",
+    "65473": "Passive_AddMaterial_lightningHeavy",
+    "65474": "Passive_ChangeMaterial_AnimalSkin",
+    "65475": "Passive_PurplePoison",
+    "65476": "Passive_Immune_PurplePoison",
+    "65477": "Passive_ChangeMaterial_Leather",
+    "65478": "Passive_ChangeMaterial_PlateArmor",
+    "65479": "Passive_ChangeMaterial_Fabric",
+    "65480": "Passive_ChangeMaterial_Wood",
+    "60029": "Active_Fire",
+    "75005": "Skill_CheckCatchedCoolTime",
+    "53001": "Skill_DecreaseMorale",
+    "51495": "Skill_ClearCustomStat",
+    "51496": "Skill_ClearFire",
+    "51497": "Skill_ClearIce",
+    "51498": "Skill_ClearElectricity",
+    "51499": "Skill_ClearConfusion",
+    "51502": "Skill_WaterPot",
+    "54001": "Skill_ClearByThrow",
+    "75011": "Skill_ApplyNonBattleEnemyOnly",
+    "75046": "Skill_ChangeDetectLow",
+    "73501": "Active_IceShield",
+    "73502": "Active_FireFist",
+    "74001": "Passive_CriticalAttack",
+    "74002": "Skill_BurnEnd",
+    "74011": "Active_Resistance_Fire",
+    "74012": "Active_Resistance_Ice",
+    "74013": "Active_Resistance_Electricity",
+    "74021": "Passive_Resistance_Fire",
+    "74022": "Passive_Resistance_Ice",
+    "74023": "Passive_Resistance_Electricity",
+    "75047": "Passive_Item_MagnetMetal",
+    "75048": "Passive_Aerodynamic",
+    "75050": "Passive_Abyss_StaminaDecreaseRate",
+    "75049": "Passive_RideOff_Umbra",
+    "75055": "Passive_DetectReaction_None",
+    "75064": "Passive_SmokeArea",
+    "75098": "Passive_SmokeArea_NoEffect",
+    "75201": "Passive_HumanIceEternal",
+    "76002": "Active_Guard_ResetStamina",
+    "76003": "Active_JijeongtaWeaken",
+    "76013": "Active_Machine_Overload",
+    "76015": "Skill_GearhornRenw_Overload",
+    "76033": "Active_Machine_GearhornRenw_Overload",
+    "76016": "Skill_Umbra_GroggyStop",
+    "76017": "Active_Machine_GoldenStarOverload",
+    "76034": "Passive_Machine_GoldenStarOverload_Immune",
+    "76009": "Skill_PlayerBlockCrime",
+    "76012": "Skill_PlayerBlockCrime_Vandalism",
+    "76011": "Skill_PlayerBlockCrimeAll",
+    "70018": "Passive_GroggyCheck",
+    "75057": "Passive_DetectMode",
+    "30005": "Passive_BurningField",
+    "30006": "Passive_Lava",
+    "30007": "Passive_SulfurWater",
+    "30008": "Passive_Waterfall",
+    "52121": "Passive_Marsh",
+    "52122": "Passive_SirCatFishWater",
+    "52123": "Passive_Marsh_NPC",
+    "52124": "Passive_IceTerrain",
+    "52131": "Passive_ThornVine",
+    "32001": "Skill_Check_AbyssFalling",
+    "32002": "Skill_Faction_SubBlock",
+    "3106": "MaterialSkill_FuelEnd",
+    "3107": "Active_Keep_BurnPhase1",
+    "76006": "Skill_NightTime",
+    "76007": "Passive_DetectDistance_DayTime",
+    "20001": "Skill_Active_Killer",
+    "265": "Passive_PlayerParty",
+    "26266": "Skill_PlayerWeaponOutLimit",
+    "89997": "Passive_Wetness",
+    "89998": "Active_Wetness",
+    "90000": "Active_BloodSkinnedDecal_1",
+    "90001": "Active_SkinnedDecal_Animal",
+    "90002": "Active_BloodSkinnedDecal_Rapier_1",
+    "90003": "Active_Elemental_Hit_Decal",
+    "90004": "Active_BlockCrime_Thief",
+    "90005": "Active_SellPrice_Double",
+    "90006": "Active_SetCrimePriceRate_Thief",
+    "90007": "Active_SetFactionOperationReward_Dobule",
+    "90008": "Active_Knowledge_Learn_Speed",
+    "90010": "Active_BloodSkinnedDecal_60_min",
+    "90011": "Active_BloodSkinnedDecal_10_min",
+    "90012": "Active_BloodSkinnedDecal_1_min",
+    "90013": "Deactive_BloodSkinnedDecal",
+    "100000": "Passive_Dune",
+    "100001": "Skill_Defence",
+    "100002": "Passive_BlockDeadBodyGarbageCollection",
+    "65452": "MaterialSkill_FireSwingObject",
+    "1103": "CC_ElectronCC",
+    "1104": "CC_PushLight",
+    "1105": "CC_PushNormal",
+    "1106": "CC_PushHard",
+    "1107": "CC_KnockDown",
+    "1108": "CC_Paralyze",
+    "1109": "CC_DropKickGroundThrow",
+    "1110": "CC_JiJeongTaRagdoll",
+    "1111": "CC_SmoothDown",
+    "1112": "CC_DownAttack",
+    "1113": "CC_HitBolas",
+    "1114": "CC_StepTrap",
+    "1116": "CC_GimmickSuperJump",
+    "1117": "CC_AirTrap",
+    "1119": "CC_LegHold",
+    "1120": "CC_Pull",
+    "1122": "CC_StunLight",
+    "1123": "CC_Stun",
+    "1124": "CC_BeeHitStart",
+    "1125": "CC_SandAttack",
+    "1126": "CC_LowAttack",
+    "1127": "CC_FlashAttack",
+    "1128": "CC_JumpStep",
+    "1132": "CC_EarthQuake",
+    "1133": "CC_GuardCounter",
+    "1134": "CC_AvoidCounter",
+    "1139": "CC_HitGeyser",
+    "1140": "CC_WaterPrison",
+    "75019": "Skill_Summon_Dead_Crow",
+    "75058": "Active_Hurry",
+    "75059": "Skill_TorchOn",
+    "75060": "Passive_Hurry",
+    "75079": "Passive_ReturnRunaway",
+    "75099": "Skill_CheckRainyAction",
+    "76010": "Skill_WideDetect",
+    "76014": "Skill_CheckGuideShort",
+    "1500": "Skill_LanternOn",
+    "1501": "Skill_LanternOff",
+    "1502": "Active_EquipDropTool",
+    "1507": "Active_EquipDropMainWeapon",
+    "1508": "Active_EquipDropSubWeapon",
+    "1509": "Passive_DisableThrowEquip",
+    "1512": "Active_EquipDropBackPack",
+    "1514": "Passive_BindBackCantRelease",
+    "91017": "Active_Difficulty_Intro",
+    "810010": "Passive_AiTask_Escape",
+    "810011": "Passive_AiTask_Transport",
+    "810012": "Passive_AiTask_Chase",
+    "810013": "Passive_AiTask_Escort",
+    "810014": "Passive_AiTask_EscortBattle",
+    "810015": "Passive_AiTask_Defence",
+    "810016": "Passive_AiTask_BattleMeet",
+    "810020": "Passive_AiTask_BattleLoop",
+    "810021": "Passive_CheckObserverBattle",
+    "11000": "Passive_AIType_Happy",
+    "11001": "Active_AIType_Happy",
+    "11002": "Active_AIType_Happy_Infinite",
+    "11003": "Release_AIType_Happy",
+    "11010": "Passive_AIType_Sad",
+    "11011": "Active_AIType_Sad",
+    "11012": "Active_AIType_Sad_Infinite",
+    "11013": "Release_AIType_Sad",
+    "11020": "Passive_AIType_Fear",
+    "11027": "Passive_AIType_Mountable",
+    "11028": "Passive_AIType_ReportMountTarget",
+    "11021": "Active_AIType_Fear",
+    "11022": "Active_AIType_Fear_Infinite",
+    "11023": "Release_AIType_Fear",
+    "11024": "Active_AIType_FearShort",
+    "11025": "Active_ReturnPatrol_Fear",
+    "11026": "Release_ReturnPatrol_Fear",
+    "11030": "Passive_AIType_Nervous",
+    "11031": "Active_AIType_Nervous",
+    "11032": "Active_AIType_Nervous_Infinite",
+    "11033": "Release_AIType_Nervous",
+    "11040": "Passive_AIType_Sick",
+    "11041": "Active_AIType_Sick",
+    "11042": "Active_AIType_Sick_Infinite",
+    "11043": "Release_AIType_Sick",
+    "11050": "Passive_AIType_Surprise",
+    "11051": "Active_AIType_Surprise",
+    "11052": "Active_AIType_Surprise_Infinite",
+    "11053": "Release_AIType_Surprise",
+    "11060": "Passive_AIType_Angry",
+    "11061": "Active_AIType_Angry",
+    "11062": "Active_AIType_Angry_Infinite",
+    "11063": "Release_AIType_Angry",
+    "11070": "Passive_AIType_Hot",
+    "11071": "Active_AIType_Hot",
+    "11072": "Active_AIType_Hot_Infinite",
+    "11073": "Release_AIType_Hot",
+    "11080": "Passive_AIType_Cold",
+    "11081": "Active_AIType_Cold",
+    "11082": "Active_AIType_Cold_Infinite",
+    "11083": "Release_AIType_Cold",
+    "11090": "Passive_AIType_Warning",
+    "11091": "Active_AIType_Warning",
+    "11092": "Active_AIType_Warning_Infinite",
+    "11093": "Release_AIType_Warning",
+    "11100": "Passive_AIType_Stare",
+    "11101": "Active_AIType_Stare",
+    "11102": "Active_AIType_Stare_Infinite",
+    "11103": "Release_AIType_Stare",
+    "11110": "Passive_AIType_Amazing",
+    "11111": "Active_AIType_Amazing",
+    "11112": "Active_AIType_Amazing_Infinite",
+    "11113": "Release_AIType_Amazing",
+    "11131": "Passive_AIType_Drunken",
+    "11132": "Active_AIType_Drunken",
+    "11133": "Active_AIType_Drunken_Infinite",
+    "11134": "Release_AIType_Drunken",
+    "11141": "Passive_AIType_InjuryLeg",
+    "11142": "Active_AIType_InjuryLeg",
+    "11143": "Active_AIType_InjuryLeg_Infinite",
+    "11144": "Release_AIType_InjuryLeg",
+    "11151": "Passive_AIType_InjuryArm",
+    "11152": "Active_AIType_InjuryArm",
+    "11153": "Active_AIType_InjuryArm_Infinite",
+    "11154": "Release_AIType_InjuryArm",
+    "11161": "Passive_AIType_Cough",
+    "11162": "Active_AIType_Cough",
+    "11163": "Active_AIType_Cough_Infinite",
+    "11164": "Release_AIType_Cough",
+    "11171": "Passive_AIType_Drugged",
+    "11172": "Active_AIType_Drugged",
+    "11173": "Active_AIType_Drugged_Infinite",
+    "11174": "Release_AIType_Drugged",
+    "11181": "Passive_AIType_WarCaution",
+    "11182": "Active_AIType_WarCaution",
+    "11183": "Active_AIType_WarCaution_Infinite",
+    "11184": "Release_AIType_WarCaution",
+    "11191": "Passive_ScheduleRunFast",
+    "11192": "Passive_FollowPlayer",
+    "11201": "Passive_AIType_Rage",
+    "11202": "Active_AIType_Rage",
+    "11203": "Active_AIType_Rage_Short",
+    "11207": "Active_AIType_Rage_Long",
+    "11204": "Active_AIType_Rage_Infinite",
+    "11205": "Release_AIType_Rage",
+    "11206": "Passive_AIType_RageChase",
+    "11211": "Passive_AIType_Detect",
+    "11212": "Active_AIType_Detect",
+    "11213": "Active_AIType_Detect_Infinite",
+    "11214": "Release_AIType_Detect",
+    "11221": "Active_AIType_Concealment_Infinite",
+    "11222": "Active_AIType_Concealment_Short",
+    "11223": "Passive_AIType_Concealment",
+    "11224": "Realse_AIType_Concealment",
+    "11230": "Passive_AIType_Faction_Blockade",
+    "11231": "Passive_AIType_Faction_Conflict",
+    "11240": "Active_AIType_Sulk",
+    "11241": "Release_AIType_Sulk",
+    "51504": "Active_CheckDisease",
+    "51505": "Active_CheckBully",
+    "11501": "Passive_DetectBuff_FearTarget",
+    "11502": "Passive_DetectBuff_FearTarget_Strong",
+    "11511": "Passive_DetectBuff_Fire",
+    "11521": "Passive_DetectBuff_Welcome",
+    "11522": "Active_DetectBuff_Welcome_Short",
+    "11531": "Passive_DetectBuff_Faceaway",
+    "11541": "Passive_DetectBuff_Surprise",
+    "11551": "Passive_DetectBuff_Angry",
+    "11561": "Passive_DetectBuff_FactionLeader_Salute",
+    "11562": "Passive_DetectBuff_FactionLeader_Welcome",
+    "11563": "Passive_DetectBuff_Mount",
+    "11564": "Active_DetectBuff_Mount_Infinite",
+    "11571": "Passive_CriminalNPC",
+    "11572": "Passive_BlockCrimeNPC",
+    "11573": "Active_BlockCrimeNPC_Infinite",
+    "11581": "Passive_DetectBuff_Blame",
+    "11582": "Active_DetectBuff_Blame",
+    "11583": "Release_AIType_Blame",
+    "11591": "Passive_AIType_Madness",
+    "11592": "Active_AIType_Madness",
+    "11593": "Release_AIType_Madness",
+    "11594": "Active_AIType_LogoutRunaway",
+    "11595": "Active_CompleteTalk",
+    "11599": "Passive_MadAnimal",
+    "11601": "Passive_Blocker_Blame",
+    "11602": "Passive_Blocker_Disease",
+    "11603": "Passive_Blocker_Guard",
+    "11604": "Passive_Blocker_Poor",
+    "11605": "Passive_Blocker_Welcome",
+    "11606": "Passive_Blocker_Bully",
+    "11607": "Passive_Blocker_Mount",
+    "11608": "Passive_Blocker_NoEntry_Left_FromDoor",
+    "11609": "Passive_Blocker_NoEntry_Right_FromDoor",
+    "11621": "Active_Blocker_Blame",
+    "11622": "Active_Blocker_Blame_Infinite",
+    "11631": "Passive_DetectBuff_Stare",
+    "11632": "Active_DetectBuff_Stare",
+    "11633": "Release_DetectBuff_Stare",
+    "11634": "Active_RideDragon_Long",
+    "11635": "Active_RideATAG_Long",
+    "11650": "Passive_ReactPC_Stare",
+    "11651": "Passive_ReactPC_Faraway",
+    "11653": "Passive_ReactPC_Runaway",
+    "11702": "Skill_Detect_MustBattle_Half",
+    "11703": "Skill_DetectDistance_Reduce",
+    "11704": "Skill_DetectDistance_Expand",
+    "11705": "Passive_BlockDetected",
+    "51235": "Passive_NoReaction",
+    "51236": "Active_BattleEnemyOnly_Short",
+    "51237": "Active_NonBattleEnemyOnly_Short",
+    "51238": "Passive_BattleEnemyOnly",
+    "11801": "Passive_NoUse_CustomReaction",
+    "11802": "Passive_SaveAfter_FearCrouch",
+    "11803": "Passive_SaveAfter_Exhaustion",
+    "11804": "Passive_QuestDialog_InMiseenscene",
+    "11805": "Passive_NoUse_DetectInteraction",
+    "11806": "Passive_NoUse_Donate",
+    "75061": "Passive_Spectator_DetectReaction",
+    "75062": "Passive_Spectator_StoneThrow",
+    "75066": "Passive_Spectator_Ally_DetectReaction",
+    "45107": "Passive_GroggyState",
+    "45108": "Passive_CheckGroggy",
+    "45109": "Active_GuardBreak",
+    "45200": "Passive_BlockAiDialog_BindBack",
+    "45201": "Active_BlockAiDialog_BindBack",
+    "56119": "Passive_LookatTarget",
+    "65035": "Skill_SetSalute",
+    "65036": "Skill_ImmuneSalute",
+    "75083": "Passive_DisableDetect",
+    "75084": "Active_BossPauseCount_Add",
+    "75085": "Active_ThreatCount_Add",
+    "75086": "Passive_AllBlock",
+    "75087": "Active_BumpCountCheck",
+    "75088": "Active_MountedHitCountCheck",
+    "75089": "Release_MountedHitCountCheck",
+    "75090": "Release_BossPauseCount_Add",
+    "75091": "Release_ThreatCount_Add",
+    "75104": "Passive_BindInWater",
+    "75105": "Passive_CheckScheduleNoDetect",
+    "75106": "Passive_BattleLoopType_Siege",
+    "75097": "Skill_BlockDetectPlayer",
+    "55006": "Passive_CheckHideGimmick",
+    "75100": "Active_Ignore_EvadePath",
+    "75101": "Passive_TamedAnimal",
+    "75102": "Active_PartyWithPlayer",
+    "75103": "Passive_SetAssassinateTarget",
+    "91": "Damage_Collision",
+    "1001": "Damage_Min",
+    "1002": "Damage_UnArmed",
+    "1003": "Damage_UnArmed_NoDead",
+    "1011": "Damage_Fixed",
+    "1012": "Damage_Fixed_NoDead",
+    "1013": "Damage_Fixed_IgnoreFatal",
+    "1021": "Damage_Percent",
+    "1022": "Damage_Percent_NoDead",
+    "1023": "Damage_Percent_IgnoreFatal",
+    "1078": "Damage_Percent_MaxHp",
+    "1031": "Damage_Fire",
+    "1032": "Damage_Ice",
+    "1033": "Damage_Lightning",
+    "1091": "Damage_Fire_Percent",
+    "1092": "Damage_Ice_Percent",
+    "1093": "Damage_Lightning_Percent",
+    "1061": "Damage_FireOnly",
+    "1076": "Damage_FireOnly_Weak",
+    "1062": "Damage_IceOnly",
+    "1063": "Damage_LightningOnly",
+    "1055": "Damage_Fire_DamageOnly",
+    "1056": "Damage_Ice_DamageOnly",
+    "1039": "Damage_Lightning_DamageOnly",
+    "1064": "Damage_ConfusionOnly",
+    "1045": "Damage_Ice_NoLimit",
+    "1050": "Damage_Ice_Percent_NoLimit",
+    "1065": "Damage_MachineEmp",
+    "1070": "Damage_Gimmick_Lightning",
+    "1034": "Damage_RedLightning",
+    "1036": "Damage_Poison",
+    "1037": "Damage_Poison_Purple",
+    "1038": "Damage_Bleeding",
+    "1010": "Damage_Drowning",
+    "290": "Damage_Bismuth",
+    "409": "Damage_Bee",
+    "410": "Skill_HpReduce_Percent",
+    "351": "Skill_InstantDeath_Ice",
+    "352": "Skill_InstantDeath_Swamp",
+    "353": "Skill_InstantDeath_Dune",
+    "354": "Skill_InstantDeath_Pressed",
+    "355": "Skill_InstantDeath_Lava",
+    "35": "Skill_InstantDeath",
+    "356": "Skill_InstantDeathSpawn",
+    "501": "Damage_FuryUp",
+    "502": "Damage_FuryDown",
+    "23": "BuffedAction_Active_Tinnitus",
+    "24": "Immune_Active_Tinnitus",
+    "25": "BuffedAction_Passive_HitBurn",
+    "116": "BuffedAction_Active_SmokeIn",
+    "321": "BuffedAction_Active_Drunk",
+    "322": "BuffedAction_Active_Drunk_Release",
+    "324": "BuffedAction_Passive_Drunk",
+    "325": "BuffedAction_Active_BindBackStart_Release",
+    "65160": "BuffedAction_Passive_SmokeIn",
+    "1201": "Passive_Player_BasicSkill",
+    "40011": "Active_HitRecover",
+    "72": "Active_AwayFromSwarm",
+    "65418": "Active_FuryUp",
+    "65499": "Passive_Player_Revive",
+    "65419": "Active_Cooltime_Hyosi",
+    "1035": "Skill_GuardSuccessRecovery",
+    "1080": "Passive_RecoverOnHit",
+    "1081": "Active_RecoverOnHit",
+    "10004": "Skill_10004",
+    "10006": "Skill_WeaponMoveLv2",
+    "10007": "Skill_WeaponMoveLv3",
+    "10008": "Skill_WeaponMoveLv4",
+    "10005": "Skill_WeaponMoveLv4_100",
+    "10009": "Skill_Wait",
+    "10018": "Skill_Fall",
+    "10010": "Skill_Roll",
+    "10031": "Skill_RollCancelRecovery",
+    "10012": "Skill_CrouchMoveLv2",
+    "10013": "Skill_CrouchMoveLv3",
+    "10014": "Skill_BasicMoveLv2",
+    "10015": "Skill_BasicMoveLv3",
+    "10016": "Skill_BasicMoveLv4",
+    "10017": "Skill_BasicMoveLv4_100",
+    "10123": "Skill_Damian_BasicMoveLv4_100",
+    "10124": "Skill_Oongka_BasicMoveLv4_100",
+    "10021": "Skill_GuardWait",
+    "10022": "Skill_GuardStride",
+    "10023": "Skill_MoveLv4Jump",
+    "10025": "Skill_ContinuousAttack_10",
+    "10026": "Skill_ContinuousAttack_20",
+    "10027": "Skill_ContinuousAttack_30",
+    "10028": "Skill_GuardCounterSuccessRecovery",
+    "10029": "Active_Increase_CombatHigh",
+    "10030": "Skill_RushAttackBuff",
+    "10032": "Skill_Mount_Ing",
+    "10033": "Skill_Mount_Attack_Lv1",
+    "10034": "Skill_Mount_Attack_Lv2",
+    "10035": "Skill_Mount_Attack_Lv3",
+    "10052": "Skill_PointClimbLv0",
+    "10053": "Skill_PointClimbLv1",
+    "10054": "Skill_PointClimbLv2",
+    "10056": "Skill_RoofClimbLv0",
+    "10057": "Skill_ClimbStruggle",
+    "10062": "Skill_ClimbBearStruggle",
+    "10063": "Skill_ClimbBearStruggleCounter",
+    "10064": "Skill_ClimbBearStruggleCounterSuccess",
+    "10099": "Skill_ClimbDragonStruggle",
+    "10071": "Skill_CharacterClimb",
+    "10136": "Skill_Damian_CharacterClimb",
+    "10137": "Skill_Oongka_CharacterClimb",
+    "10066": "Skill_BattleAxeDash_30",
+    "10080": "Skill_SwingLv0",
+    "10081": "Skill_SwingLv1",
+    "10082": "Skill_SwingLv2",
+    "10083": "Skill_SwingPull",
+    "10058": "Skill_PointClimbHold",
+    "10098": "Skill_DragonClimbHold",
+    "10061": "Skill_RoofClimbHold",
+    "10068": "Skill_ClimbSlide",
+    "13001": "Skill_SwordMastery",
+    "13101": "Skill_Damian_SwordMastery",
+    "13201": "Skill_Oongka_SwordMastery",
+    "13031": "Skill_SwordMastery_Attack_I",
+    "13032": "Skill_SwordMastery_Attack_II",
+    "13033": "Skill_SwordMastery_RunAttack_NoDead",
+    "13034": "Skill_SwordMastery_RunAttack_IgnoreFatal",
+    "13035": "Skill_SwordMastery_DownAttack_I",
+    "13036": "Skill_SwordMastery_DownAttack_II",
+    "13037": "Skill_SwordMastery_DownAttack_Pull_I",
+    "13038": "Skill_SwordMastery_DownAttack_Pull_II",
+    "13039": "Skill_SwordMastery_JumpAttack_I",
+    "13040": "Skill_SwordMastery_JumpAttack_II",
+    "13041": "Skill_SwordMastery_LowAttack",
+    "10273": "Skill_TurnBash_I",
+    "10079": "Skill_TurnBash_II",
+    "10090": "Skill_TurnBash_III",
+    "20002": "Skill_Oongka_TurnBash_I",
+    "20003": "Skill_Oongka_TurnBash_II",
+    "20004": "Skill_Oongka_TurnBash_III",
+    "20049": "Skill_Damian_TurnBash_I",
+    "20050": "Skill_Damian_TurnBash_II",
+    "20051": "Skill_Damian_TurnBash_III",
+    "10108": "Skill_ShieldAttack_I",
+    "20070": "Skill_Damian_ShieldThrow",
+    "20101": "Skill_Damian_ShieldThrow_I",
+    "20102": "Skill_Damian_ShieldThrow_II",
+    "10065": "Skill_ShieldDash",
+    "10110": "Skill_Damian_ShieldDash",
+    "10112": "Skill_Oongka_Dash",
+    "10067": "Skill_ShieldParryingDash",
+    "10069": "Skill_ShieldJustGuard",
+    "20086": "Skill_ShieldJustGuard_Attack",
+    "10231": "Skill_Oongka_ShieldJustGuard",
+    "10232": "Skill_Oongka_ShieldJustGuard_Attack",
+    "10262": "Skill_Oongka_ShieldJustGuard_Wrestle",
+    "10336": "Skill_Damian_ShieldJustGuard",
+    "10337": "Skill_Damian_ShieldJustGuard_Attack",
+    "10109": "Skill_JustGuard_Avoid",
+    "10073": "Skill_CloneAttack",
+    "10087": "Skill_CloneAttack_MoveCutting",
+    "10088": "Skill_CloneAttack_TurnBash",
+    "10089": "Skill_CloneAttack_Lunge",
+    "14001": "Skill_DualWeaponMastery",
+    "10078": "Skill_Wrestle_Hostage",
+    "10134": "Skill_Damian_Wrestle_Hostage",
+    "10135": "Skill_Oongka_Wrestle_Hostage",
+    "10074": "Skill_Kliff_MpFire",
+    "10075": "Skill_Kliff_MpIce",
+    "10076": "Skill_Kliff_MpLightning",
+    "10077": "Skill_Kliff_MpWind",
+    "10343": "Skill_Damian_MpFire",
+    "10344": "Skill_Damian_MpIce",
+    "10345": "Skill_Damian_MpLightning",
+    "10346": "Skill_Damian_MpWind",
+    "10237": "Skill_Oongka_MpFire",
+    "10238": "Skill_Oongka_MpIce",
+    "10239": "Skill_Oongka_MpLightning",
+    "10177": "Skill_Oongka_MpWind",
+    "10274": "Skill_MoveCutting_I",
+    "10283": "Skill_MoveCutting_II",
+    "10284": "Skill_MoveCutting_III",
+    "10290": "Skill_MoveCutting_Expert",
+    "10286": "Skill_MoveCutting_Hold",
+    "20009": "Skill_Oongka_GroundSmash_I",
+    "20010": "Skill_Oongka_GroundSmash_II",
+    "20011": "Skill_Oongka_GroundSmash_III",
+    "20078": "Skill_Oongka_GroundSmash_Expert",
+    "20052": "Skill_Damian_HeavenSpear",
+    "20053": "Skill_Damian_HeavenSpear_I",
+    "20054": "Skill_Damian_HeavenSpear_II",
+    "20085": "Skill_Damian_HeavenSpear_Expert",
+    "10278": "Skill_EvadeAttack",
+    "10378": "Skill_Damian_EvadeAttack",
+    "20025": "Skill_Oongka_JumpSmash",
+    "10156": "Skill_Lunge_I",
+    "10159": "Skill_Lunge_II",
+    "10167": "Skill_LungeAir",
+    "10267": "Skill_LungeAir_Combo",
+    "10268": "Skill_LungeAir_Combo_II",
+    "10166": "Skill_LungeCombination",
+    "20081": "Skill_Lunge_Expert",
+    "10163": "Skill_Lunge_Catch",
+    "10164": "Skill_Lunge_Charge",
+    "10169": "Skill_Counter",
+    "20005": "Skill_Oongka_Lunge",
+    "20006": "Skill_Oongka_LungeCombination",
+    "20007": "Skill_Oongka_LungeCatch",
+    "20008": "Skill_Oongka_LungeAir",
+    "20082": "Skill_Oongka_Lunge_Expert",
+    "20058": "Skill_Damian_Lunge",
+    "20059": "Skill_Damian_LungeCombination",
+    "20060": "Skill_Damian_LungeCatch",
+    "20061": "Skill_Damian_LungeAir",
+    "20083": "Skill_Damian_Lunge_Expert",
+    "10165": "Skill_Lunge_Catch_bleeding",
+    "10160": "Skill_Lunge_III",
+    "10101": "Skill_PushKick",
+    "10103": "Skill_DoubleKick_I",
+    "20030": "Skill_Oongka_BigBoot",
+    "13017": "Skill_Damian_ScissorsKick",
+    "10104": "Skill_DoubleKick_II",
+    "10293": "Skill_NoDelayDoubleKick",
+    "10117": "Skill_JumpDoubleKick_II",
+    "10111": "Skill_JumpDoubleKick_I",
+    "20032": "Skill_Oongka_JumpBigBoot",
+    "20072": "Skill_Damian_JumpDoubleKick",
+    "10118": "Skill_SkyKick",
+    "20035": "Skill_Oongka_SkyKick",
+    "20073": "Skill_Damian_SkyKick",
+    "10105": "Skill_DropKick",
+    "20033": "Skill_Oongka_DropKick",
+    "13029": "Skill_Damian_SpinningKick",
+    "10294": "Skill_NoDelayDropKick",
+    "10279": "Skill_EvadeAttack_Kick",
+    "10280": "Skill_UnArmedMastery",
+    "10380": "Skill_Damian_UnArmedMastery",
+    "10480": "Skill_Oongka_UnArmedMastery",
+    "10282": "Skill_UnArmedCombination",
+    "11282": "Skill_Damian_UnArmedCombination",
+    "12482": "Skill_Oongka_UnArmedCombination",
+    "10484": "Skill_UnArmedCombination_I",
+    "10485": "Skill_UnArmedCombination_II",
+    "10084": "Skill_UnArmedMastery_Expert",
+    "10085": "Skill_UnArmedMastery_Lunge",
+    "10180": "Skill_UnArmedMastery_LungeCombination",
+    "10086": "Skill_UnArmedMastery_EvadeAttack",
+    "10096": "Skill_UnArmedMastery_TurnAttack",
+    "11084": "Skill_Damian_UnArmedMastery_Expert",
+    "12084": "Skill_Oongka_UnArmedMastery_Expert",
+    "10287": "Skill_LowerKick",
+    "20036": "Skill_Oongka_LowerDropKick",
+    "13019": "Skill_Damian_LowKick",
+    "10288": "Skill_LegSwing",
+    "10106": "Skill_Damian_LegSwing",
+    "10107": "Skill_Oongka_LegSwing",
+    "10281": "Skill_Movement",
+    "10125": "Skill_Damian_Movement",
+    "10126": "Skill_Oongka_Movement",
+    "10277": "Skill_CatchKneeKick",
+    "10205": "Skill_CatchHostage",
+    "10276": "Skill_LightReflection",
+    "10119": "Skill_Damian_LightReflection",
+    "10120": "Skill_Oongka_LightReflection",
+    "10253": "Skill_RotationBash_I",
+    "10251": "Skill_NoDelayRotationBash",
+    "10250": "Skill_RotationBash_II",
+    "10254": "Skill_RotationBash_Expert",
+    "20026": "Skill_Oongka_RotationBash_I",
+    "20027": "Skill_Oongka_NoDelayRotationBash",
+    "20028": "Skill_Oongka_RotationBash_II",
+    "20079": "Skill_Oongka_RotationBash_Expert",
+    "20055": "Skill_Damian_RotationBash_I",
+    "20056": "Skill_Damian_NoDelayRotationBash",
+    "20057": "Skill_Damian_RotationBash_II",
+    "20080": "Skill_Damian_RotationBash_Expert",
+    "10249": "Skill_RotationBash_III",
+    "10252": "Skill_RotationBash_Berserk",
+    "10285": "Skill_RotationBash_Light",
+    "10256": "Skill_RotationBash_Fire",
+    "10257": "Skill_RotationBash_Ice",
+    "10258": "Skill_RotationBash_Lightning",
+    "10259": "Skill_RotationBash_Wind",
+    "10260": "Skill_RotationBash_Fury",
+    "10072": "Skill_FastAvoid",
+    "10121": "Skill_Damian_FastAvoid",
+    "10122": "Skill_Oongka_FastAvoid",
+    "10011": "Skill_RollCancel",
+    "10339": "Skill_Damian_RollCancel",
+    "10234": "Skill_Oongka_RollCancel",
+    "1047": "Skill_JustEvade",
+    "10338": "Skill_Damian_JustEvade",
+    "10233": "Skill_Oongka_JustEvade",
+    "10070": "Skill_DoubleJump",
+    "10340": "Skill_Damian_DoubleJump",
+    "10235": "Skill_Oongka_DoubleJump",
+    "10161": "Skill_JumpStep",
+    "10115": "Skill_Damian_JumpStep",
+    "10116": "Skill_Oongka_JumpStep",
+    "10162": "Skill_DoubleJumpStep",
+    "10270": "Skill_SwordRush",
+    "10271": "Skill_SwordRush_Finish",
+    "15033": "Skill_JiJeongTa_I",
+    "15155": "Skill_JiJeongTa_II",
+    "15158": "Skill_JiJeongTa_II_Finish",
+    "1515": "Skill_JiJeongTa_Deep",
+    "15159": "Skill_JiJeongTa_Far",
+    "20094": "Skill_Tathagata_mini",
+    "15035": "Skill_JiJeongTa_Air",
+    "15038": "Skill_JiJeongTa_Fire",
+    "15039": "Skill_JiJeongTa_Ice",
+    "15040": "Skill_JiJeongTa_Lightning",
+    "15041": "Skill_JiJeongTa_Wind",
+    "15050": "Skill_JiJeongTa_Cure",
+    "15051": "Skill_JiJeongTa_LightningStrike",
+    "10055": "Skill_BlackWolf_SpecialMove",
+    "15062": "Skill_Oongka_CloseShot",
+    "15063": "Skill_Oongka_Roar",
+    "15064": "Skill_Oongka_AimExplosionShot",
+    "20044": "Skill_Oongka_EvadeExplosionShot",
+    "15070": "Skill_Damian_Summon_Drone",
+    "15071": "Skill_Damian_Summon_DroneAssault",
+    "15052": "Skill_HaDongTa",
+    "15053": "Skill_HaDongTa_Charge",
+    "20076": "Skill_Oongka_HaDongTa",
+    "20088": "Skill_Damian_HaDongTa",
+    "15205": "Skill_SwordAttack",
+    "15207": "Skill_SwordRunAttack",
+    "15208": "Skill_SwordRunAttack_IgnoreFatal",
+    "17001": "Skill_OneHandSwordMastery",
+    "17003": "Skill_OneHandSwordAttack",
+    "17005": "Skill_OneHandSwordRunAttack",
+    "17006": "Skill_OneHandSwordRunAttack_IgnoreFatal",
+    "10320": "Skill_DeepThrust",
+    "10321": "Skill_DeepThrustCatch",
+    "10322": "Skill_ConsecutivelyDeepThrust",
+    "10168": "Skill_QuickDraw",
+    "10331": "Skill_RideOnSpear_I",
+    "10332": "Skill_RideOnSpear_II",
+    "17007": "Skill_DrawSword_I",
+    "17008": "Skill_DrawSword_II",
+    "17009": "Skill_DrawSword_III",
+    "15030": "Skill_Active_Damage_Threat",
+    "10059": "Skill_Climb_DaggerAttack",
+    "10060": "Skill_Climb_DaggerChargeAttack",
+    "10202": "Skill_Wrestle",
+    "10128": "Skill_Damian_Wrestle",
+    "10129": "Skill_Oongka_Wrestle",
+    "10094": "Skill_Wrestle_Takedown",
+    "10130": "Skill_Damian_Wrestle_Takedown",
+    "10131": "Skill_Oongka_Wrestle_Takedown",
+    "10292": "Skill_Wrestle_Throw",
+    "10132": "Skill_Damian_Wrestle_Throw",
+    "10133": "Skill_Oongka_Wrestle_Throw",
+    "10295": "Skill_Wrestle_Lariat_I",
+    "10296": "Skill_Wrestle_Lariat_II",
+    "10207": "Skill_Mount",
+    "10204": "Skill_Grab_Ing",
+    "10211": "Skill_Wrestle_Lariat",
+    "20038": "Skill_Oongka_Wrestle_Lariat",
+    "20062": "Skill_Wrestle_GrabSpinThrow",
+    "15004": "Skill_Wrestle_AirBodySlam",
+    "15006": "Skill_Oongka_Wrestle_AirBodySlam",
+    "20077": "Skill_Damian_AirGrab",
+    "10213": "Skill_Wrestle_GiantSwing",
+    "20063": "Skill_Damian_Wrestle_ScrewDrive",
+    "10127": "Skill_Oongka_Wrestle_GiantSwing",
+    "10206": "Skill_CatchAround",
+    "10201": "Skill_Wrestle_HeadLockKick",
+    "10203": "Skill_Wrestle_RKO",
+    "10210": "Skill_Wrestle_GrabRKO",
+    "10212": "Skill_Wrestle_KneeKick",
+    "10214": "Skill_Wrestle_OlympicSlam",
+    "10215": "Skill_Wrestle_BackDrop_1",
+    "10216": "Skill_Wrestle_BackDrop_2",
+    "10217": "Skill_Wrestle_ElbowPress",
+    "10219": "Skill_Wrestle_Hipe_1",
+    "10221": "Skill_Wrestle_Hipe_2",
+    "10222": "Skill_Wrestle_Lunge",
+    "10223": "Skill_Wrestle_Combo",
+    "10138": "Skill_Oongka_Wrestle_Combo",
+    "10154": "Skill_ShieldShortDash",
+    "10155": "Skill_ShieldMiddleDash",
+    "10289": "Skill_SubWeaponToggle",
+    "10389": "Skill_Damian_SubWeaponToggle",
+    "10489": "Skill_Oongka_SubWeaponToggle",
+    "15204": "Skill_TowerShieldAttack",
+    "15201": "Skill_TowerShieldChargeAttack",
+    "15202": "Skill_TowerShieldSwordBash",
+    "15203": "Skill_TowerShieldDownAttackSwordBash",
+    "15206": "Skill_SpinAttack",
+    "15209": "Skill_AuxWeapon_01",
+    "15210": "Skill_UseResourceSP_20",
+    "15211": "Skill_AuxWeapon_03",
+    "15212": "Skill_AuxWeapon_04",
+    "15213": "Skill_AuxWeapon_05",
+    "15216": "Skill_AuxWeapon_08",
+    "15214": "Skill_AuxWeapon_06",
+    "15215": "Skill_AuxWeapon_07",
+    "10114": "Skill_BasicBow",
+    "10139": "Skill_Damian_BasicBow",
+    "10140": "Skill_Oongka_BasicBow",
+    "10303": "Skill_ScrewShot",
+    "10304": "Skill_MultiShot",
+    "10350": "Skill_MultiShot_I",
+    "10351": "Skill_MultiShot_II",
+    "10341": "Skill_DeadEyeShot",
+    "10141": "Skill_Damian_DeadEyeShot",
+    "10142": "Skill_Oongka_DeadEyeShot",
+    "10342": "Skill_Bow_RollShot",
+    "10143": "Skill_Damian_Bow_RollShot",
+    "10144": "Skill_Oongka_Bow_RollShot",
+    "10352": "Skill_DeadEye_ChargeShot",
+    "20075": "Skill_Damian_DeadEye_ChargeShot",
+    "20095": "Skill_Oongka_DeadEye_ChargeShot",
+    "10306": "Skill_ChargeShot",
+    "10381": "Skill_Decrease_MpFireStat",
+    "10382": "Skill_Decrease_MpIceStat",
+    "10383": "Skill_Decrease_MpLightningStat",
+    "10384": "Skill_Decrease_MpWindStat",
+    "10385": "Skill_ElementalCharge",
+    "20045": "Skill_Oongka_ChargeShot",
+    "20067": "Skill_Damian_ChargeShot",
+    "10305": "Skill_EvadeShot",
+    "10310": "Skill_EvadeShot_I",
+    "10311": "Skill_EvadeShot_II",
+    "10312": "Skill_EvadeExplosionShot",
+    "20041": "Skill_Oongka_EvadeShot",
+    "20042": "Skill_Oongka_EvadeShot_I",
+    "20043": "Skill_Oongka_EvadeShot_II",
+    "20064": "Skill_Damian_EvadeShot",
+    "20065": "Skill_Damian_EvadeShot_I",
+    "20066": "Skill_Damian_EvadeShot_II",
+    "10313": "Skill_EvadeMultiShot",
+    "10314": "Skill_EvadeChargeShot",
+    "10302": "Skill_ComboShot",
+    "10318": "Skill_ComboShot_Fire",
+    "10315": "Skill_RailShot",
+    "10329": "Skill_PreciseAimShot",
+    "10334": "Skill_PreciseAimShot_OnBoundFinish",
+    "10330": "Passive_PostSniping",
+    "10333": "Passive_UsableSniping",
+    "10361": "Skill_Damian_QuickReload",
+    "10335": "Skill_Throw_Lightning",
+    "15032": "Skill_Swimming",
+    "15112": "Skill_Swimming_Dash",
+    "15034": "Skill_Swimming_Hp",
+    "15027": "Skill_CrowWing",
+    "15036": "Skill_CrowWing_Start",
+    "15028": "Skill_CrowWing_Move",
+    "15031": "Skill_CrowWing_MoveFast",
+    "10355": "Skill_Damian_ShieldGlider",
+    "15065": "Skill_Damian_ShieldGlider_Start",
+    "10356": "Skill_Damian_ShieldGlider_MoveFast",
+    "10244": "Skill_Oongka_RocketPack",
+    "15066": "Skill_Oongka_RocketPack_Start",
+    "10245": "Skill_Oongka_RocketPack_MoveFast",
+    "10246": "Skill_Oongka_RocketPack_VerticalBoost",
+    "15029": "Skill_CrowWing_Dash",
+    "15045": "Skill_CrowSuperDash",
+    "1025": "Skill_Greywolf_Detect",
+    "1073": "Skill_Damian_Detect",
+    "1074": "Skill_Oongka_Detect",
+    "1071": "Skill_Greywolf_Detect_Ing",
+    "20098": "Skill_Greywolf_Detect_Unleash",
+    "20099": "Skill_Greywolf_Detect_SuperFocus",
+    "1026": "Skill_BlackWolf",
+    "20105": "Skill_Damian_BlackWolf",
+    "20106": "Skill_Oongka_BlackWolf",
+    "1024": "Skill_BlackWolf_Air",
+    "1069": "Skill_BlackWolf_Pull",
+    "20107": "Skill_Damian_BlackWolf_Pull",
+    "20108": "Skill_Oongka_BlackWolf_Pull",
+    "1077": "Skill_BlackWolf_Teleport",
+    "1052": "Skill_BlackWolf_Swing",
+    "10323": "Skill_Damian_AirJump",
+    "1067": "Skill_RemoteCatch_Character",
+    "1027": "Skill_WhiteWolf",
+    "1029": "Skill_Summon_Magnet_Floor",
+    "1028": "Skill_Meditation",
+    "1030": "Skill_Item_Fishing",
+    "1040": "Skill_Item_LinkBand",
+    "1042": "Skill_Item_ElementalArrow",
+    "1043": "Skill_Taeguk",
+    "20097": "Skill_Taeguk_Trap_I",
+    "20113": "Skill_Damian_Taeguk_Trap_I",
+    "20114": "Skill_Oongka_Taeguk_Trap_I",
+    "1058": "Skill_Taeguk_Seal",
+    "20092": "Skill_Rope_AirPull",
+    "20109": "Skill_Damian_Rope_AirPull",
+    "20110": "Skill_Oongka_Rope_AirPull",
+    "20093": "Skill_Rope_AirSwing",
+    "1059": "Skill_Rope_Swing",
+    "1068": "Skill_EnemyTaunt",
+    "1168": "Skill_Damian_EnemyTaunt",
+    "1268": "Skill_Oongka_EnemyTaunt",
+    "1060": "Skill_ElementalReinforce",
+    "10091": "Skill_ElementalReinforce_JiJeongTa",
+    "10092": "Skill_ElementalReinforce_RotationBash",
+    "10093": "Skill_ElementalReinforce_ChargeShot",
+    "10095": "Skill_ElementalReinforce_SkyKick",
+    "10348": "Skill_Damian_ElementalReinforce",
+    "10349": "Skill_Damian_ElementalReinforce_ShieldThrow",
+    "10353": "Skill_Damian_ElementalReinforce_RotationBash",
+    "10354": "Skill_Damian_ElementalReinforce_ChargeShot",
+    "10357": "Skill_Damian_ElementalReinforce_SkyKick",
+    "10241": "Skill_Oongka_ElementalReinforce",
+    "10347": "Skill_Oongka_ElementalReinforce_CloseShot",
+    "10242": "Skill_Oongka_ElementalReinforce_RotationBash",
+    "10243": "Skill_Oongka_ElementalReinforce_ChargeShot",
+    "10247": "Skill_Oongka_ElementalReinforce_SkyKick",
+    "10300": "Skill_ElementalReinforce_UseMp",
+    "11301": "Skill_ElementalReinforce_Fire",
+    "11302": "Skill_ElementalReinforce_Fire_RotationBash",
+    "11303": "Skill_ElementalReinforce_Fire_ChargeShot",
+    "11304": "Skill_ElementalReinforce_Ice",
+    "11305": "Skill_ElementalReinforce_Ice_RotationBash",
+    "11306": "Skill_ElementalReinforce_Ice_ChargeShot",
+    "11307": "Skill_ElementalReinforce_Lightning",
+    "11308": "Skill_ElementalReinforce_Lightning_RotationBash",
+    "11309": "Skill_ElementalReinforce_Lightning_ChargeShot",
+    "11310": "Skill_ElementalReinforce_Wind",
+    "11311": "Skill_ElementalReinforce_Wind_RotationBash",
+    "11312": "Skill_ElementalReinforce_Wind_ChargeShot",
+    "1066": "Skill_Portal",
+    "1057": "Skill_Lift",
+    "10236": "Skill_Oongka_Lift",
+    "10041": "Skill_Damian_Lift",
+    "1072": "Skill_Lift_Ing",
+    "1075": "Skill_Lift_Smash",
+    "1041": "Skill_Mabongpa",
+    "20103": "Skill_Damian_Mabongpa",
+    "20104": "Skill_Oongka_Mabongpa",
+    "20096": "Skill_Taeguk_Unleash",
+    "20111": "Skill_Damian_Taeguk_Unleash",
+    "20112": "Skill_Oongka_Taeguk_Unleash",
+    "1044": "Skill_JiJeongTa_Long_Distance",
+    "1046": "Skill_Rush_Attack",
+    "1048": "Skill_Tathagata",
+    "1049": "Skill_Graymane",
+    "1051": "Skill_Abyss",
+    "1053": "Skill_Shai",
+    "1054": "Skill_SmokeBomb",
+    "1504": "Skill_Wind",
+    "1505": "Skill_CallVehicle",
+    "1506": "Skill_CallDragon",
+    "1511": "Skill_AbyssGauntlet_Portal",
+    "1145": "Skill_Nature",
+    "1146": "Skill_Oongka_Nature",
+    "1147": "Skill_Damian_Nature",
+    "13002": "Skill_Demian_RapierNormalAttack",
+    "13003": "Skill_Demian_RapierHardAttack",
+    "13009": "Skill_Demian_RapierRunAttack",
+    "13006": "Skill_Demian_Kick",
+    "13010": "Skill_Demian_RunKick",
+    "13022": "Skill_Demian_WallKick",
+    "13011": "Skill_Demian_Catch",
+    "13023": "Skill_Demian_RapierChargeAttack_Weak",
+    "13012": "Skill_Demian_RapierChargeAttack",
+    "13014": "Skill_Demian_RapierParry",
+    "13013": "Skill_Active_CC_AttackRaise",
+    "13016": "Skill_Demian_RapierFinish",
+    "13018": "Skill_Demian_RapierLowAttack",
+    "13020": "Skill_Demian_RapierDownThrust",
+    "13021": "Skill_Demian_RapierJumpAttack",
+    "13024": "Skill_Demian_RapierJumpStepAttack",
+    "13025": "Skill_Demian_JumpGrabSpin",
+    "13026": "Skill_Demian_RapierStrideThrust",
+    "18001": "Attack_BossWeapon_HamondBindel",
+    "18002": "Skill_BossWeapon_HamondBindel",
+    "18013": "Skill_BossWeapon_SkillCommon",
+    "18014": "Skill_BossWeapon_Common",
+    "18021": "Buff_BossWeapon_FlameKnight",
+    "18022": "Skill_BossWeapon_FlameKnight",
+    "18103": "Attack_BossWeapon_SplitHorn",
+    "18104": "Skill_BossWeapon_SplitHorn",
+    "18105": "Attack_BossWeapon_SoulKnight",
+    "18106": "Attack_BossWeapon_SoulKnight_Thrust",
+    "20039": "Skill_Oongka_Wrestle_Lariat_I",
+    "20040": "Skill_Oongka_Wrestle_Lariat_II",
+    "14002": "Skill_Oongka_BattleAxeNormalAttack",
+    "14016": "Skill_Oongka_BattleAxeDownAttack",
+    "14017": "Skill_Oongka_BattleAxeKnockDownAttack",
+    "14007": "Skill_Oongka_LowKick",
+    "14010": "Skill_Oongka_Catch",
+    "14012": "Skill_Oongka_BattleAxeChargeAttack",
+    "14020": "Skill_Oongka_BattleAxeOverRollAttack",
+    "20012": "Skill_NoLimit_Cutting_I",
+    "20013": "Skill_Oongka_DoubleKick_I",
+    "21001": "Skill_DualSwrodMastery",
+    "99996": "AllRecoveryFreshStat",
+    "99997": "MeditationKnowledge",
+    "99998": "Meditation_MpRegen",
+    "99999": "MeditationGroupKnowledge",
+    "74": "Passive_SuperArmor",
+    "45803": "Passive_Avoid",
+    "814": "Passive_DamageGuard_Lv2",
+    "815": "Passive_Guard",
+    "708": "Passive_ChangeFaction_Empty",
+    "45099": "Passive_DecreaseAttackSpeedRate",
+    "70": "Passive_DecreaseMoveSpeedRate",
+    "73": "Active_DecreaseMoveSpeedRate_Infinite",
+    "75": "Passive_GuardPVRateUp",
+    "78": "Active_Jamming",
+    "981": "Passive_Troll_Check",
+    "985": "Passive_Boss_Troll_Buff",
+    "982": "Passive_Boss_GiantCreature",
+    "983": "Passive_Boss_LargeHuman",
+    "984": "Passive_Machine_Buff",
+    "986": "Passive_Boss_Machine_Buff",
+    "991": "Passive_Wagon_Buff",
+    "996": "Passive_Elite",
+    "997": "Passive_StoneWorm_Buff",
+    "998": "Passive_WoodObserver_Buff",
+    "990": "Passive_BloodGolem",
+    "18019": "Passive_FireWeapon",
+    "989": "Passive_Boss_SmallHuman",
+    "9997": "Passive_AttackTestCharacter_Buff",
+    "994": "Passive_AbyssDear",
+    "9988": "Passive_AbyssAnimal_Immune",
+    "40009": "Passive_SelfDefUp",
+    "291": "Passive_Bismuth",
+    "60": "Passive_BismuthAura",
+    "44006": "Passive_PickPocket",
+    "51519": "Passive_LandSpider_Immune_PassiveBuff",
+    "51543": "BossSkill_Legendary_Wolf_PassiveBuff",
+    "75068": "Passive_BossWeaken",
+    "52127": "Passive_ElectronCC_DeBuff",
+    "52128": "Passive_DDV_Up",
+    "41305": "Passive_MpRegenAura_JijeongLeaf_Insect",
+    "41306": "Passive_MpRegenAura_LandSpiderQueen",
+    "41307": "Passive_MpRegen_Default",
+    "41317": "Passive_StaminaRegen_Default",
+    "75065": "Passive_MessGasImmune",
+    "75071": "Passive_ImmuneCrow",
+    "75072": "Passive_DotDamage",
+    "75077": "Skill_Passive_BatDotDamage_Immune",
+    "53": "Skill_SpiderHugeSwarm",
+    "57": "Skill_RatHugeSwarm",
+    "58": "Skill_GrasshopperHugeSwarm",
+    "59": "Passive_SpiderSwarmAura",
+    "61": "Passive_MushroomSwarm_HpRegenAura",
+    "286": "Attack_WhitePoison_Mushroom01",
+    "287": "Attack_AbyssGrass_Mushroom02",
+    "700": "Skill_MushroomSwarm_Attack_Comma",
+    "62": "Passive_MushroomSwarm_HpRegen",
+    "993": "Skill_ImmuneCC",
+    "33002": "NeutralCreature_HpRecover",
+    "51531": "Active_RageBuff",
+    "51538": "BossSkill_LeadDevil_APBuff",
+    "45100": "Skill_SlowDebuff",
+    "21005": "Active_MoreFriendshipHorse",
+    "7001": "Active_FriendshipHorse",
+    "65": "Passive_MushroomSwarm_CommaEffect",
+    "124": "Passive_Effect_Burn",
+    "126": "Passive_FirePillar_Boss",
+    "995": "Passive_Seraphim_Wyvern_Check",
+    "33001": "Passive_AwakenedLudvig",
+    "33004": "Passive_CaliburnClone",
+    "51511": "Passive_Effect_Ludvig",
+    "51512": "Passive_Effect_Ludvig_Off",
+    "51515": "Passive_Effect_Ludvig_Awakened",
+    "51514": "Passive_Effect_Ludvig_Awakened_Off",
+    "51601": "Passive_EffectGhost",
+    "51602": "Passive_EffectGhostBig",
+    "51603": "Passive_EffectGhost_Green",
+    "51604": "Passive_EffectGhost_White",
+    "51605": "Passive_EffectGhost_YellowBright",
+    "51606": "Passive_EffectGhost_RedDark",
+    "51607": "Passive_EffectGhost_RedBright",
+    "51608": "Passive_EffectGhostBig_PurpleDark",
+    "51064": "Passive_Effect_DeadBlood",
+    "51065": "Passive_Effect_DeadBlood_Off",
+    "52013": "Active_Effect_Freeze",
+    "52015": "Active_Effect_StrongFreeze",
+    "52026": "Passive_Effect_Burn001c",
+    "51516": "Ludvig_Awaken_LightningStrike",
+    "51517": "Passive_Effect_DarkAura",
+    "51523": "Skill_ReedDevil_EyeLights",
+    "51521": "Skill_ReedDevil_EyeLights_Off",
+    "51524": "Skill_SilverArmor_Soldier_EyeLights",
+    "51536": "Passive_DarkMyordin_EyeLights",
+    "51534": "Passive_DarkMyordin_EyeLights_Off",
+    "51537": "Boss_EyeLight_Effect_On",
+    "51532": "Boss_EyeLight_Effect_Off",
+    "51539": "Skill_WhiteHorn_EyeLights",
+    "51533": "Skill_WhiteHorn_EyeLights_Off",
+    "51540": "Passive_Effect_Nuclear_Fusion",
+    "51548": "Passive_Effect_Nuclear_Fusion_Off",
+    "51541": "Skill_ReedDevil_Shadow",
+    "51542": "Skill_ReedDevil_Clone_Shadow",
+    "52027": "Active_Effect_Burn",
+    "52029": "Active_Effect_Petrify",
+    "52032": "Passive_Effect_Rotten",
+    "52033": "Passive_Effect_SilverArmorSoldier",
+    "52038": "Passive_Crazy_Horse",
+    "52039": "Active_Effect_Hexe_Marie",
+    "52034": "Active_Effect_Hexe_Marie_Off",
+    "52042": "Passive_Effect_SoulKnight",
+    "52043": "Passive_Effect_SoulKnight_Summon",
+    "52045": "Passive_Effect_Gears_Clone",
+    "56003": "Skill_IceTornado",
+    "56005": "Skill_RemoveIceTornado",
+    "56004": "Skill_SkullKnight_Buff",
+    "56129": "Passive_Effect_FlameMyurdin",
+    "56130": "Passive_Effect_FlameMyurdin_Off",
+    "57023": "Skill_PotEnt_Effect",
+    "65470": "Skill_SandStorm_Monster_Effect",
+    "800014": "Skill_GoldenStar_EyeLights",
+    "800016": "Passive_Boss_AncientPeople_Effect",
+    "800018": "Passive_Boss_Desert_AncientPeople_Effect",
+    "800022": "Passive_Boss_ThreeBrotherCliff_AncientPeople_Effect",
+    "800023": "Passive_Boss_Karanda_Effect",
+    "65208": "Passive_GoblineLeader_WeaponLight_Effect",
+    "800024": "Passive_Boss_MachineMantis",
+    "99": "Skill_GhostCatchFront",
+    "125": "Passive_CheckRunaway",
+    "320": "Passive_Drug",
+    "39003": "Active_CheckBuffSpecialAttackGroggy",
+    "56127": "Passive_HexeBomb_Soldier_Check",
+    "51544": "Passive_Bleed_Bandit_Skill_Check",
+    "51545": "Passive_BlackBear_Skill_Check",
+    "51546": "Passive_DemenissPolice_Skill_Check",
+    "51547": "Passive_SkullKnightFollower_Skill_Check",
+    "51549": "Passive_RighteousArrows_Skill_Check",
+    "51551": "Passive_Wells_Rebel_Skill_Check",
+    "51554": "Passive_Judge_Skill_Check",
+    "51555": "Passive_BleedAlchemist_Skill_Check",
+    "51556": "Passive_ReedDevilMinion_Skill_Check",
+    "51557": "Passive_CaliburnSoldiers_Skill_Check",
+    "51558": "Passive_DesertHarrier_Skill_Check",
+    "51559": "Passive_Antumbra_Prist_Skill_Check",
+    "51560": "Passive_HymnsofDusk_Skill_Check",
+    "51561": "Passive_OwlsoftheMist_Skill_Check",
+    "51562": "Passive_Gadget_Helm_Skill_Check",
+    "51563": "Passive_DragonSlayer_Skill_Check",
+    "51564": "Passive_MarniMachineTank_Booster_Skill_Check",
+    "51565": "Passive_MarniMachineTank_Jump_Skill_Check",
+    "51566": "Passive_MarniMachineTank_Laser_Skill_Check",
+    "51567": "Passive_MarniMachineTank_Rocket_Skill_Check",
+    "51568": "Passive_MarniMachineTank_Drill_Skill_Check",
+    "51569": "Passive_MarniMachineTank_Chainsaw_Skill_Check",
+    "51570": "Passive_RoyalGuard_Check",
+    "52046": "Passive_GoldenGoblin_Check",
+    "52047": "Active_HexeBomb_Suicide_Buff",
+    "52048": "Active_AcidSpider_Suicide_Buff",
+    "52049": "Active_SuicideTimer_10Sec",
+    "52050": "Active_SuicideTimer_30Sec",
+    "52052": "Active_SuicideTimer_60Sec",
+    "52053": "Passive_WizardBracelet_Effect",
+    "52054": "Passive_Wizard_Halo_Effect",
+    "56154": "Passive_Pirate_Check",
+    "70047": "Passive_Marni_Devotee_NonBattleNPC",
+    "75063": "Passive_BurnElectricImmune",
+    "75073": "Passive_RodeoNoHire",
+    "76008": "Passive_Antumbra_Check",
+    "75009": "Passive_ScrapGolem_Effect",
+    "75010": "Passive_Desert_Abyss_Wraith_Effect",
+    "75012": "Passive_Kutum_Effect",
+    "75151": "Passive_StoneWorm_Effect",
+    "75152": "Passive_IronWorm_Effect",
+    "75153": "Passive_GrassWorm_Effect",
+    "75015": "Passive_Giant_Titan_Effect",
+    "75020": "Passive_Giant_Titan_Effect_Off",
+    "75016": "Passive_Elite_Desert_Abyss_Wraith_Effect",
+    "75017": "Passive_Snow_Golem_Effect",
+    "75018": "Active_RoarTimer",
+    "75021": "Passive_Abyss_Kutum_Effect",
+    "75030": "Passive_Umbra_ForceField_SkillCheck",
+    "75031": "Passive_FireResistance",
+    "75032": "Passive_IceResistance",
+    "75033": "Passive_LightningResistance",
+    "75034": "Passive_GiantTitan_Short_DeepJijeongta_SkillCheck",
+    "862": "Skill_SmokeShell_Passive",
+    "863": "Skill_SmokeShell_Active",
+    "1503": "Skill_Lantern_Bright",
+    "1510": "Skill_Lantern_Out",
+    "1513": "Skill_WaterSpray_Reaction",
+    "6650": "Gimmick_Add_Damage",
+    "60001": "Gimmick_Active_Thorn",
+    "60002": "Gimmick_Active_Bomb",
+    "60012": "Gimmick_Active_FireBomb",
+    "60003": "Gimmick_Active_Rock",
+    "60011": "Gimmick_Active_Rock_Weak",
+    "60004": "Gimmick_Active_Arrow",
+    "60006": "Gimmick_Active_Bomb_Weak",
+    "60054": "Gimmick_Active_OnFire",
+    "60055": "Gimmick_Active_Fire",
+    "60005": "Gimmick_Passive_SwingTrap",
+    "60007": "Gimmick_Active_SwingTrap",
+    "60008": "Gimmick_Active_Trap",
+    "60009": "Gimmick_Active_ChainSaw",
+    "60028": "Gimmick_Active_Electron",
+    "60033": "Gimmick_Active_Gate",
+    "60035": "Gimmick_Active_Barricade",
+    "60047": "Gimmick_Active_WaterPoison",
+    "60065": "Gimmick_Active_Caltrop",
+    "60090": "Gimmick_Passive_WaterPoison",
+    "60091": "Gimmick_Passive_Poison",
+    "60048": "Gimmick_Active_PoisonGas",
+    "60052": "Gimmick_Active_Coffin",
+    "60068": "Gimmick_Active_BatSwarm",
+    "60087": "Gimmick_Active_FallHeavy",
+    "60088": "Gimmick_Active_WoodSpear",
+    "60089": "Gimmick_Passive_HexeTower",
+    "60093": "Gimmick_Passive_GoblinTower",
+    "60095": "Gimmick_Passive_AbyssGrass",
+    "60096": "Passive_AbyssGrass_Immune",
+    "60213": "Gimmick_Passive_SpiderWeb",
+    "60214": "Gimmick_Passive_SpiderWeb_Player",
+    "61001": "Gimmick_Active_Damage",
+    "62001": "Gimmick_Passive_Tornado",
+    "65009": "Gimmick_Active_Summon_Dragon",
+    "65010": "Gimmick_Active_Summon_Assassin",
+    "65082": "Gimmick_Active_Torch",
+    "65214": "Gimmick_Active_PoisonPot",
+    "65215": "Gimmick_Active_BurnOff",
+    "65216": "Gimmick_Active_Laser",
+    "65217": "Gimmick_Active_BlueLaser",
+    "65218": "Gimmick_Active_Explosion",
+    "65219": "Gimmick_Passive_FireTornado",
+    "65224": "Gimmick_Active_LightLaser",
+    "65226": "Gimmick_Active_Faucet",
+    "65228": "Gimmick_Active_Sprinkler",
+    "65230": "Gimmick_Passive_LavaGas",
+    "65231": "Gimmick_Active_Wisp",
+    "65234": "Gimmick_Active_WindGround",
+    "65236": "Gimmick_Active_LavaGas",
+    "65450": "MaterialSkill_GoblinPotPassive",
+    "65451": "MaterialSkill_ConfusionObject",
+    "65453": "Active_FireSwingObjectHit",
+    "65454": "MaterialSkill_IceSwingObject",
+    "65455": "Active_IceSwingObjectHit",
+    "65456": "Active_CircuitHit",
+    "65457": "MaterialSkill_HugeIce",
+    "65458": "Passive_SkullKnight_Lamp_IceArea",
+    "65463": "Skill_Blizzard_NoneplayZone",
+    "65763": "Skill_Desert_NoneplayZone",
+    "65863": "Skill_Water_NoneplayZone",
+    "65963": "Skill_Normal_NoneplayZone",
+    "65464": "Skill_Blizzard",
+    "65465": "Skill_Blizzard_Immune",
+    "665236": "Gimmick_Active_Summon_Fire",
+    "665240": "Gimmick_Active_Summon_Ice",
+    "665241": "Gimmick_Active_Summon_IceGround",
+    "665243": "Gimmick_Active_Summon_Ice_2",
+    "665244": "Gimmick_Active_Summon_Ice_3",
+    "65145": "Gimmick_Active_BlackBearTower",
+    "65161": "Gimmick_Passive_SulphurGas",
+    "65162": "Gimmick_Passive_AddMaterial_fireHeavy",
+    "65163": "Gimmick_Passive_AddMaterial_iceHeavy",
+    "65165": "Gimmick_Passive_Smoke",
+    "65166": "Gimmick_Passive_Blizzard_Abyss",
+    "65167": "Gimmick_Passive_Blizzard_Abyss_Immune",
+    "65168": "Gimmick_Passive_Hexe_Poison",
+    "65302": "Gimmick_Active_Summon_Target",
+    "65251": "Gimmick_Active_Summon_StickyBomb",
+    "65252": "Gimmick_Active_Summon_CommonBomb",
+    "65253": "Gimmick_Active_Summon_CommonBomb_EnemyOnly",
+    "65254": "Gimmick_Active_Summon_BlueBomb",
+    "65255": "Gimmick_Active_Summon_PurpleBomb",
+    "65256": "Gimmick_Active_Summon_ElectricBomb",
+    "65257": "Gimmick_Active_Summon_IceBomb",
+    "65258": "Gimmick_Active_Summon_WaterBomb",
+    "65259": "Gimmick_Active_Summon_BrimstoneBomb",
+    "65261": "Gimmick_Active_Summon_PervinBomb",
+    "65262": "Gimmick_Active_Summon_Tank_ElectricBomb",
+    "65263": "Gimmick_Active_Summon_CaltropBomb",
+    "65264": "Gimmick_Active_Summon_CrowBomb",
+    "65265": "Gimmick_Active_Summon_TrapBomb",
+    "65304": "Passive_Push_Gate_Dot",
+    "65306": "Passive_Puzzle_Boundary",
+    "65305": "Passive_Abyss_Regen_MP",
+    "65404": "Skill_Passive_Buff_RegenPartyHp_50_Aura",
+    "41298": "Skill_Active_Gimmick_Damage_Geyser",
+    "41302": "Gimmick_Active_SuperJump",
+    "41327": "Gimmick_Active_GoldenStar_FlameTornado",
+    "41325": "Gimmick_Summon_FlameTornado",
+    "41326": "Gimmick_WaterSpray_Grow",
+    "41328": "Gimmick_TurnOff_Lantern",
+    "41329": "Gimmick_TurnOn_Lantern",
+    "41330": "Passive_SuperJump_Buff",
+    "41331": "Passive_Visione_Buff",
+    "41332": "Gimmick_TaegukEnd",
+    "41364": "Passive_UseArtifact",
+    "41340": "Passive_Berserker",
+    "41349": "Passive_Berserker_Immune",
+    "41341": "Skill_RepairMainWeapon_100",
+    "41342": "Skill_BreakSubWeapon",
+    "41355": "Summon_Flolin_Bomb",
+    "41356": "Skill_RepairSubWeapon_100",
+    "41357": "Summon_AirMine",
+    "41358": "Summon_Aircastle_Robot_Soldier",
+    "41359": "Gimmick_Umbra_AbyssStone",
+    "45105": "Passive_repelmesh_DOT",
+    "45900": "Passive_Visione_Play",
+    "45901": "Active_CircusMachine_Weak",
+    "45902": "Active_CircusMachine_Weak_End",
+    "11121": "Passive_PuzzleSolving",
+    "52136": "Passive_Climb_Shelter",
+    "65406": "Passive_Tornado",
+    "65410": "Passive_ReedDevilDefence",
+    "65500": "Passive_Meditationable",
+    "76021": "Skill_DetectByWatcher",
+    "76023": "Skill_DetectByDemWatchTower",
+    "76024": "Gimmick_Passive_DeactivateFuelUpdate",
+    "76025": "Gimmick_Passive_Abyss_ShortPortal_In",
+    "76026": "Gimmick_Passive_Abyss_ShortPortal_Out",
+    "6702": "Gimmick_SmithStone_Add_DDD",
+    "76027": "Gimmick_Boss_SelfAttack",
+    "76029": "Passive_EnableMabongpa",
+    "77000": "Gimmick_RideLimit",
+    "77001": "Active_GetBossArtifact",
+    "5001": "Item_Active_Food_HP_Ingredient",
+    "5002": "Item_Active_Food_HP",
+    "5004": "Item_Active_Food_HP_Max",
+    "5005": "Item_Active_Food_HP_1",
+    "5006": "Item_Active_Food_HP_2",
+    "5007": "Item_Active_Food_HP_3",
+    "5008": "Item_Active_Food_HP_4",
+    "5009": "Item_Active_Food_HP_5",
+    "5010": "Item_Active_Food_HP_Dot_Grade1",
+    "5011": "Item_Active_Food_HP_Dot_Grade2",
+    "5012": "Item_Active_Food_HP_Dot_Grade3",
+    "5013": "Item_Active_Food_HP_Dot_Grade4",
+    "5014": "Item_Active_Food_HP_Dot_Grade5",
+    "5015": "Item_Active_Food_HP_Dot_Grade6",
+    "5016": "Item_Active_Food_HP_Dot_Grade7",
+    "5017": "Item_Active_Food_HP_Dot_Grade8",
+    "5101": "Item_Active_Food_MP_Ingredient",
+    "5102": "Item_Active_Food_MP",
+    "5103": "Item_Active_Food_MP_Dot",
+    "5104": "Item_Active_Food_Stamina_Dot",
+    "5105": "Item_Active_MP_Ignore_Use",
+    "5107": "Item_Active_Food_MP_1",
+    "5108": "Item_Active_Food_MP_2",
+    "5109": "Item_Active_Food_MP_3",
+    "5110": "Item_Active_Food_MP_4",
+    "5111": "Item_Active_Food_MP_5",
+    "5209": "Item_Active_Food_MP_Decrease",
+    "5201": "Item_Active_Food_SP_Ingredient",
+    "5202": "Item_Active_Food_SP",
+    "5204": "Item_Active_Food_SP_Decrease",
+    "5106": "Item_Active_SP_Ignore_Use",
+    "5205": "Item_Active_Special_Food",
+    "5206": "Item_Active_Food_HP_Percent",
+    "5207": "Item_Active_Food_MP_Percent",
+    "5208": "Item_Active_Food_SP_Percent",
+    "5301": "Item_Active_Poison_Herb",
+    "5302": "Item_Active_Food_AttackSpeed",
+    "5401": "Item_Active_Material_Max_HP",
+    "5503": "Item_Active_Food_FireResistance",
+    "5502": "Item_Active_Food_IceResistance",
+    "5504": "Item_Active_Food_ElectricityResistance",
+    "5514": "Item_Active_ColdFood_FireResistance_1",
+    "5515": "Item_Active_ColdFood_FireResistance_2",
+    "5516": "Item_Active_HotFood_IceResistance_1",
+    "5517": "Item_Active_HotFood_IceResistance_2",
+    "5510": "Item_Active_Food_DDD",
+    "5505": "Item_Active_Food_DPV",
+    "5501": "Item_Active_Food_ComaImmune",
+    "5507": "Item_Active_Food_SOUNDATTACK",
+    "5508": "Item_Active_Food_ABYSSIMMUNE",
+    "5509": "Item_Active_Food_POISONIMMUNE",
+    "5506": "Item_Active_Food_FallingPostion",
+    "5519": "Item_Active_Food_HolyWater",
+    "5511": "Item_Active_Alchemy_DDD",
+    "5512": "Item_Active_Alchemy_DPV",
+    "5513": "Item_Active_Alchemy_HP",
+    "6700": "Item_Active_Potion_DDD",
+    "6701": "Item_Active_Potion_DPV",
+    "6703": "Item_Active_Potion_HP",
+    "6706": "Item_Active_Potion_HP_RECOV",
+    "6709": "Item_Active_Potion_AttackSpeed",
+    "6721": "Item_Active_UmbrellaMushroomDrug",
+    "6801": "Item_Active_HorseFeed_HP_Ingredient",
+    "6802": "Item_Active_HorseFeed_SP_Ingredient",
+    "6803": "Item_Active_HorseFeed_HP_Max",
+    "6805": "Item_Active_HorseFeed_HP_Full",
+    "43001": "Item_Active_TrapNormal",
+    "65310": "Item_Active_SpiderPerfume",
+    "274": "Skill_ApplySleep_Arrow",
+    "2744": "Item_Active_Comma_Helm",
+    "65351": "SealedItem_Active_BismuthAura",
+    "19115": "Item_Active_ParalyzeImmune",
+    "19116": "Item_Active_ComaImmune",
+    "30004": "Item_Active_CounteractingPoison",
+    "3201": "Active_HPUp",
+    "3211": "Active_CourageUp",
+    "3221": "Active_StaminaUp",
+    "3231": "Active_MaxHPUp",
+    "3232": "Active_MaxCourageUp",
+    "3233": "Active_MaxStaminaUp",
+    "3234": "Active_MaxCourageUp_2",
+    "3235": "Active_MaxStaminaUp_2",
+    "3236": "Active_AutoRecoveryHP",
+    "281": "Passive_MpRegen_Nature",
+    "283": "Passive_Trigger_Mushroom01",
+    "284": "Passive_Trigger_Mushroom05",
+    "57026": "Active_HoneyBuff",
+    "52036": "Active_AchievementComplete",
+    "40015": "Active_Poop",
+    "40016": "Passive_LogOutIncome",
+    "40017": "Passive_AvoidTime",
+    "40018": "Item_Active_BossReward_Crime",
+    "40022": "Item_Active_MerchantKing_TradeShopSellPricePercent",
+    "40023": "Active_Camp_Worker",
+    "40024": "Active_LiberationRefugee_100",
+    "40025": "Active_Camp_Money",
+    "40026": "Active_Camp_Wood",
+    "40027": "Active_Camp_Stone",
+    "40028": "Active_NorthMap",
+    "40029": "Active_DelesyiaMap",
+    "40030": "Active_Super_HorseFeed_Lump_Sugar",
+    "40031": "Active_GoldVeinMap",
+    "40032": "Active_FishMap",
+    "40033": "Active_TheFlyingCatFishMap",
+    "40034": "Active_Contribution_Pailunese",
+    "40035": "Active_MiraculousRecovery",
+    "40037": "Active_Knowledge_AllGatherable",
+    "40038": "Active_Knowledge_LegendaryAnimal",
+    "40039": "Active_Dungeon_Knowledge_Her_First",
+    "40040": "Active_Dungeon_Knowledge_Her_Second",
+    "40041": "Active_Dungeon_Knowledge_Kwe",
+    "40042": "Active_Dungeon_Knowledge_Dem_First",
+    "40043": "Active_Dungeon_Knowledge_Dem_Second",
+    "40044": "Active_Dungeon_Knowledge_Del",
+    "40045": "Active_StatsCrime",
+    "40049": "Active_ReturnCamp",
+    "40050": "Active_ReserveSlot",
+    "40019": "Item_Active_AbyssGear_Recovery_HP",
+    "40020": "Item_Active_AbyssGear_Recovery_MP",
+    "40021": "Item_Active_AbyssGear_Recovery_SP",
+    "40060": "Active_DecreaseMercenaryCooltime_Reset_ATAG",
+    "40061": "Active_DecreaseMercenaryCooltime_Reduce_ATAG",
+    "40062": "Active_DecreaseMercenaryCooltime_Reset_Dragon",
+    "40063": "Active_DecreaseMercenaryCooltime_Reduce_Dragon",
+    "40071": "Active_Hire_Riding_Bear_Amulet",
+    "40072": "Active_Hire_Riding_Wolf_Amulet",
+    "40073": "Active_Hire_Riding_Deer_Amulet",
+    "40074": "Active_Hire_Riding_Warthog_Amulet",
+    "40075": "Active_Hire_Riding_AlpineIbex_Amulet",
+    "70100": "Equip_Passive_Glasses_Winter",
+    "70104": "Equip_Passive_ProtectElectricGloves",
+    "70106": "Equip_Passive_SplitHornSword",
+    "70107": "Equip_Passive_SizlekSword",
+    "70109": "Equip_Passive_DeerKingHelm",
+    "70110": "Equip_Passive_CrowWarhammer",
+    "70111": "Equip_Passive_CrowLongsword",
+    "70118": "Equip_Passive_SilverArmorShield",
+    "70119": "Equip_Passive_LudvigSword",
+    "70120": "Equip_Passive_HexeMarieWarHammer",
+    "70121": "Equip_Passive_Beoneck_Strength",
+    "70122": "Equip_Passive_Beoneck_Defence",
+    "70123": "Equip_Passive_Beoneck_AttackSpeed",
+    "70124": "Equip_Passive_Beoneck_MoveSpeed",
+    "70125": "Active_Beoneck_Strength_Buff",
+    "70126": "Equip_Passive_CrowmanSword",
+    "70128": "Equip_Passive_CaliburnRapier",
+    "70129": "Equip_Passive_CrowBrotherhood_SummonCrow",
+    "70130": "Equip_Passive_Hellhonds_SummonHellhounds",
+    "70135": "Equip_Passive_Goblin_FightGloves",
+    "70132": "Equip_Passive_WhiteHorn_Roar",
+    "70134": "Equip_Passive_DeerkingFollower",
+    "70136": "Equip_Passive_Abacus",
+    "70137": "Equip_Passive_Item_Scale",
+    "70144": "Equip_Passive_Chocolate_Factory_BackPack",
+    "70133": "Equip_Passive_Hyena_PoisonImmune",
+    "70139": "Equip_Passive_MasterDooTwoHandSword",
+    "70116": "Equip_Passive_WhiteHornOneHandSword",
+    "70138": "Equip_Passive_TitanRing",
+    "70140": "Equip_Passive_DeerKingOneHandShield",
+    "70141": "Equip_Passive_AwakenCaliburn_LongSword",
+    "70142": "Equip_Passive_Douglas_Leather_Armor",
+    "70143": "Equip_Passive_HamondBindel_LongSword",
+    "70166": "Equip_Passive_RedsentinelBow",
+    "70167": "Equip_Passive_TrukanHelm",
+    "70145": "Equip_Passive_WellsSolider",
+    "70147": "Equip_Passive_Antumbra_TwoHandSword",
+    "70148": "Equip_Passive_TitanSpear",
+    "70131": "Equip_Passive_BleedBandits_DrillDash",
+    "70168": "Equip_Passive_Demeniss_Chainsaw",
+    "70170": "Equip_Passive_Oil_Spray",
+    "70171": "Equip_Passive_Fertilizer_Spray",
+    "70149": "Equip_Passive_Moonhead_GiantSpear",
+    "70150": "Equip_Passive_Crimson_Winged_Duke_TwoHandAlebard",
+    "70151": "Equip_Passive_Antumbra_TwoHandGiantSpear",
+    "70152": "Equip_Passive_Antumbra_TwoHandRod",
+    "70154": "Equip_Passive_SilverArmorMace",
+    "70155": "Equip_Passive_TarandusWarrior_WarHammer",
+    "70156": "Equip_Passive_SolidBringer_WarHammer",
+    "70157": "Equip_Passive_Myurdin_Sword",
+    "70158": "Equip_Passive_Antumbra_King_TwoHandSword",
+    "70161": "Equip_Passive_OwenCraber",
+    "70162": "Equip_Passive_SoulKnight_OneHandSword",
+    "70163": "Equip_Passive_Muscan_Gloves",
+    "70165": "Equip_Passive_Ator_Sword",
+    "70169": "Equip_Passive_Abyss_OneHandCannon",
+    "18030": "Equip_Passive_FlameThrowerSupport",
+    "18031": "Equip_Passive_IceThrowerSupport",
+    "18032": "Equip_Passive_LightningThrowerSupport",
+    "41106": "Equip_Passive_HelmToggle",
+    "70051": "Equip_Passive_WoodTowerShield",
+    "70052": "Equip_Passive_ThornTowerShield",
+    "70053": "Equip_Passive_PlateArmor",
+    "70042": "Equip_Set_Passive_Stealth_Animal_Wolf",
+    "70043": "Equip_Set_Passive_Stealth_Animal_Bear",
+    "70045": "Equip_Set_Passive_Stealth_Animal_Deer",
+    "70061": "Equip_Set_Passive_Stealth_Animal_Ent",
+    "729": "Equip_Set_Passive_Stealth_Human",
+    "730": "Equip_Set_Passive_Stealth_Faction_LonelyJackal",
+    "731": "Equip_Set_Passive_Stealth_Faction_BlackBear",
+    "732": "Equip_Set_Passive_Stealth_Faction_DemenissMP",
+    "733": "Equip_Set_Passive_Stealth_Faction_Desert_Harrier",
+    "734": "Equip_Set_Passive_Stealth_Faction_DawnMoon",
+    "735": "Equip_Set_Passive_Stealth_Faction_Faceless",
+    "736": "Equip_Set_Passive_Stealth_Faction_ThiefDusksong",
+    "737": "Equip_Set_Passive_Stealth_Faction_PirateI",
+    "70041": "Equip_Set_Passive_Stealth_Faction_Bandit",
+    "70044": "Equip_Set_Passive_Stealth_Faction_WyvernTamers",
+    "70033": "Equip_Set_Passive_Stealth_Faction_MistOwls",
+    "70022": "Equip_Set_Passive_Stealth_Faction_Demeniss",
+    "70046": "Equip_Set_Passive_Stealth_Faction_Bleed",
+    "70054": "Equip_Set_Passive_Stealth_Faction_Antumbra",
+    "70025": "Equip_Set_Passive_Stealth_Faction_DeerKingSaigord",
+    "70026": "Equip_Set_Passive_Stealth_Faction_Dewhaven",
+    "70040": "Equip_Set_Passive_Stealth_Faction_RighteousArrows",
+    "72051": "Equip_Set_Passive_Stealth_Faction_WolfPursuer",
+    "72052": "Equip_Set_Passive_Stealth_Faction_Halsius",
+    "727": "Equip_Passive_ChangeFaction_Hernand",
+    "70050": "Equip_Passive_ChangeFaction_Halsius",
+    "70055": "Equip_Passive_Active_Hacking",
+    "70048": "Equip_Passive_MarniDevoteeHelm",
+    "70056": "Equip_Passive_PowerDrawGloves",
+    "70057": "Equip_Passive_MarniLaserHelm",
+    "70058": "Equip_Passive_DarknessKingHelm",
+    "70010": "Equip_Passive_GoblinReeddevilFake",
+    "91002": "Equip_Passive_ShowHPUI",
+    "91000": "Equip_Passive_PlateHelm_Audio",
+    "91001": "Equip_Passive_PlateHelm_Audio_OpenableHelm",
+    "70059": "Equip_Passive_CommonCooldownHelm",
+    "70060": "Equip_Passive_CommonSwitchHelm",
+    "70360": "Equip_Passive_BirdDockHelm",
+    "70001": "Equip_Passive_Immune_SoundAttack",
+    "70019": "Equip_Passive_Immune_SoundAttack_OpenableHelm",
+    "70002": "Equip_Passive_Immune_Gas",
+    "70003": "Equip_Passive_Immune_BeeHit",
+    "70004": "Equip_Passive_Immune_Confusion",
+    "70005": "Equip_Passive_Immune_SulphurGas",
+    "70011": "Equip_Passive_Immune_Bismuth",
+    "70012": "Equip_Passive_Immune_Fire",
+    "70992": "Equip_Passive_Immune_Ice",
+    "70993": "Equip_Passive_ElectricityImmune",
+    "70994": "Equip_Passive_RestrictionImmune",
+    "70017": "Equip_Passive_FireImmuneSpray",
+    "56140": "Equip_Passive_CheckHideMoveCrow",
+    "561400": "Equip_Passive_CrowBattleEffect",
+    "56120": "Equip_Passive_CheckScholar",
+    "56141": "Equip_Passive_CheckHideMoveBoar",
+    "56142": "Equip_Passive_CheckHidePumpkin",
+    "56143": "Equip_Passive_CheckHideScarecrow",
+    "56144": "Equip_Passive_CheckHideStraw",
+    "56145": "Equip_Passive_CheckHideDarkKingMonster",
+    "56146": "Equip_Passive_CheckHideMoveCrocodile",
+    "56147": "Equip_Passive_CheckHideEntHunter",
+    "56149": "Equip_Passive_FreezeResistance",
+    "56150": "Equip_Passive_NonSlip",
+    "56152": "Equip_Passive_CheckHideCrowBrotherHood",
+    "56155": "Equip_Passive_CheckHideMoveWolf",
+    "56156": "Equip_Passive_CheckAirCannon",
+    "56157": "Equip_Passive_CheckDroneHelm",
+    "56158": "Equip_Passive_CheckHideMoveReedDevil",
+    "56160": "Equip_Passive_CheckDesertAbyssWraith",
+    "91100": "Equip_Passive_Empty",
+    "7201": "Equip_Passive_FlyingBoots",
+    "7202": "Equip_Passive_SwimmingBoots",
+    "7203": "Equip_Passive_WaterSlidingBoots",
+    "7205": "Equip_Passive_ColossusBoots",
+    "7206": "Equip_Passive_FireBoots",
+    "7204": "Equip_Passive_EquipDropRate",
+    "7055": "Equip_Passive_JumpUpBoots",
+    "91101": "Equip_Passive_LightningWeapon",
+    "91102": "Equip_Passive_LightningWeapon_Glove",
+    "91104": "Equip_Passive_IceWeapon",
+    "91105": "Equip_Passive_FireWeapon",
+    "91151": "Equip_Passive_BeeMace",
+    "91251": "Passive_Bee_Summon",
+    "91107": "Equip_Passive_Poison_Sword",
+    "91009": "Equip_Passive_Riding_Fabric_Armor",
+    "91010": "Equip_Passive_Card_Vision_Armor",
+    "91109": "Equip_Passive_Bismuth_Spear",
+    "91011": "Equip_Passive_Vehicle_Expand",
+    "51201": "Equip_Passive_DaeilBandSocket_Weapon_Fire",
+    "51203": "Equip_Passive_DaeilBandSocket_Weapon_Ice",
+    "51204": "Equip_Passive_DaeilBandSocket_Weapon_Electricity",
+    "51211": "Equip_Passive_DaeilBandSocket_Armor_Fire",
+    "51213": "Equip_Passive_DaeilBandSocket_Armor_Ice",
+    "51214": "Equip_Passive_DaeilBandSocket_Armor_Electricity",
+    "51221": "Equip_Passive_DaeilBandSocket_Helm_Fire",
+    "51223": "Equip_Passive_DaeilBandSocket_Helm_Ice",
+    "51224": "Equip_Passive_DaeilBandSocket_Helm_Electricity",
+    "51231": "Equip_Passive_DaeilBandSocket_Glove_Fire",
+    "51233": "Equip_Passive_DaeilBandSocket_Glove_Ice",
+    "51234": "Equip_Passive_DaeilBandSocket_Glove_Electricity",
+    "7056": "Equip_Passive_EntHunter_Helm",
+    "7057": "Equip_Passive_Mask_Liberator_Helm",
+    "7058": "Equip_Passive_Wolf_Pursuer_Helm",
+    "8000": "Equip_Socket_Passive_BlockAmmoConsume",
+    "8001": "Equip_Socket_Passive_FoodSkillLevelUp",
+    "8002": "Equip_Socket_Passive_AddMoneyDropRate",
+    "8004": "Equip_Socket_Machine_AdditionalDamage",
+    "8005": "Equip_Socket_CommonHexe_AdditionalDamage",
+    "8006": "Equip_Socket_CommonHumanoid_AdditionalDamage",
+    "8007": "Equip_Socket_CommonGolem_AdditionalDamage",
+    "8008": "Equip_Socket_Boss_AdditionalDamage",
+    "8009": "Equip_Socket_CommonAnimal_AdditionalDamage",
+    "8010": "Equip_Socket_Creature_AdditionalDamage",
+    "8011": "Equip_Socket_ReduceCraftMaterial",
+    "8012": "Equip_Socket_AdditionalThief",
+    "8013": "Equip_Socket_Passive_CollectDrop_Ore",
+    "8014": "Equip_Socket_Passive_CollectDrop_Plant",
+    "8015": "Equip_Socket_Passive_CollectDrop_Animal",
+    "8016": "Equip_Socket_Passive_ADR",
+    "8017": "Equip_Socket_GuardPVRate",
+    "8018": "Equip_Socket_Passive_ClimbSpeedRate",
+    "8019": "Equip_Socket_StaminaUseDecreaseRate",
+    "8020": "Equip_Socket_HpRegen",
+    "8021": "Equip_Socket_MpUseDecreaseRate",
+    "8022": "Equip_Socket_Passive_SwimSpeedRate",
+    "8023": "Equip_Socket_ContributionExp",
+    "8024": "Equip_Socket_SkillPointExp",
+    "8025": "Equip_Socket_AddKillSkillLevel",
+    "8037": "Equip_Socket_Passive_FireResistance",
+    "8038": "Equip_Socket_Passive_IceResistance",
+    "8039": "Equip_Socket_Passive_ElectricityResistance",
+    "8040": "Equip_Socket_AddFrendly",
+    "8041": "Equip_Socket_AddHorseExp",
+    "8042": "Equip_Socket_AddPetFriendly",
+    "9000": "Equip_Passive_Fishing_TimeReduce",
+    "9001": "Equip_Passive_Firefly_Lantern",
+    "9100": "Equip_Passive_AnamorphicHelm",
+    "9121": "Equip_Passive_Knowledge_PlateArmor_Helm",
+    "9101": "Equip_Passive_HackingHelm",
+    "9102": "Equip_Passive_FlorinHelm",
+    "9134": "Equip_Passive_Pirate_King_Leather_Helm",
+    "9103": "Equip_Passive_MinerHelm",
+    "9104": "Equip_Passive_Catfish",
+    "9105": "Equip_Passive_HeatHelm",
+    "9106": "Equip_Passive_GadgetHlem",
+    "9107": "Equip_Passive_GadgetGloves",
+    "9108": "Equip_Passive_LudvicNecklace",
+    "9109": "Equip_Passive_WeatherWeaverNecklace",
+    "9110": "Equip_Passive_WeatherWeaverSunnyNeckleace",
+    "9111": "Equip_Passive_MonkNecklace",
+    "9112": "Equip_Passive_FolorinEarring",
+    "9113": "Equip_Passive_EMPBackPack",
+    "9114": "Equip_Passive_PlantCollectBackPack",
+    "9115": "Equip_Passive_InsectCollectBackPack",
+    "9116": "Equip_Passive_KukuPotBackPack",
+    "9117": "Equip_Passive_KukuDroneBackpack",
+    "9118": "Equip_Passive_AggroBackpack",
+    "9132": "Equip_Passive_Bleed_Bomb_BackPack",
+    "9119": "Equip_Passive_WaterPowerBackPack",
+    "9120": "Equip_Passive_KuKu_Golden999K",
+    "9122": "Equip_Passive_DrakeMetalOneHandShield",
+    "9123": "Equip_Passive_LakeGolemOnehandShield",
+    "9124": "Equip_Passive_WindPowerOneHandShield",
+    "9125": "Equip_Passive_GunOneHandShield",
+    "9126": "Equip_Passive_SoundOneHandShield",
+    "9127": "Equip_Passive_Legendary_HexeMarie_Earring",
+    "9128": "Equip_Passive_ThiefGloves",
+    "9129": "Equip_Passive_Tarif_Necklace",
+    "9130": "Equip_Passive_Chicken_Helm",
+    "9131": "Equip_Passive_Scouter_HP_PlateArmor_Helm",
+    "9133": "Equip_Passive_Riding_Fabric_Armor_Whip",
+    "80002": "Passive_SetConfusionLevel",
+    "80003": "AddFireResistance",
+    "80004": "SubFireResistance",
+    "80005": "AddIceResistance",
+    "80006": "SubIceResistance",
+    "80007": "AddElectricityResistance",
+    "80008": "SubElectricityResistance",
+    "65461": "Active_Freezed",
+    "12001": "Skill_HorseWait",
+    "12002": "Skill_HorseMoveLv1",
+    "12003": "Skill_HorseMoveLv2",
+    "12004": "Skill_HorseMoveLv3",
+    "12005": "Skill_HorseMoveLv4",
+    "12341": "Skill_SpecialRidingMoveLv4",
+    "12006": "Skill_HorseMoveLv5",
+    "12007": "Skill_HorseDrift",
+    "12008": "Skill_HorseMoveLv5_100",
+    "12009": "Skill_HorseStamina",
+    "12010": "Skill_HorseRushAttack",
+    "12016": "SKill_HorseJump",
+    "12022": "SKill_HorseDoubleJump",
+    "12019": "SKill_HorsePowerJump",
+    "12020": "SKill_HorseLateralMove",
+    "12021": "SKill_HorseSit",
+    "12044": "Skill_HorseKick",
+    "12023": "SKill_HorseIntimidateLv2",
+    "12025": "SKill_HorseIntimidateLv4",
+    "12026": "Skill_HorseSwimWait",
+    "12027": "Skill_HorseSwimLv1",
+    "12028": "Skill_HorseSwimLv2",
+    "12029": "Skill_HorseWaterSprint",
+    "12030": "Skill_HorseInstantAcc",
+    "12051": "Skill_HorseInstantAcc_Combo",
+    "12052": "SKill_HorseFastStart",
+    "12031": "Skill_HorsePawStamp",
+    "12032": "Skill_CheckBuffNoStamina",
+    "12033": "Skill_WarMachineFuel",
+    "45104": "Passive_WarMachineFuel_NoUse",
+    "12056": "Skill_RidingNorAttack",
+    "12057": "Skill_RidingHardAttack",
+    "12342": "Skill_RidingDash",
+    "12043": "Skill_WarMachine_Dash",
+    "12045": "Skill_WarMachine_Gatling",
+    "12046": "Skill_WarMachine_Cannon",
+    "12047": "Skill_WarMachine_MultiShot",
+    "12048": "Skill_WarMachine_EMP",
+    "12049": "Skill_WarMachine_OverHeating",
+    "12050": "Skill_WarMachine_FlameThrower",
+    "12053": "Skill_WarMachine_Laser",
+    "12054": "Skill_WarMachine_Tongs",
+    "12055": "Skill_WarMachine_welding",
+    "12034": "Skill_TriStar_Attack",
+    "12061": "Skill_TriStar_Evade",
+    "12036": "Skill_TriStar_Breath",
+    "12035": "Skill_TriStar_StaminaRegen",
+    "12037": "Skill_TriStar_Attack_Fire",
+    "12038": "Skill_TriStar_Breath_Fire",
+    "12039": "Skill_TriStar_Attack_Ice",
+    "12040": "Skill_TriStar_Breath_Ice",
+    "12041": "Skill_TriStar_Attack_Lightning",
+    "12042": "Skill_TriStar_Breath_Lightning",
+    "12060": "Skill_TriStar_MultiAttack",
+    "12058": "Passive_MinHpActived_BlockAbility",
+    "12059": "Active_BlockAbility",
+    "40001": "Passive_Faction_Strengthen",
+    "41003": "Passive_Faction_Weaken",
+    "41018": "Passive_Faction_Weaken_DDD",
+    "41019": "Passive_Faction_Weaken_MaxHp",
+    "41017": "Passive_Faction_PlayerAlly",
+    "41001": "Passive_Faction_Fear",
+    "41013": "Passive_Faction_FearImmune",
+    "41015": "Passive_Faction_FearImmuneAura",
+    "41002": "Passive_Faction_Revenge",
+    "41004": "Passive_Faction_Cheer",
+    "41014": "Active_Faction_Fear_Infinite",
+    "41016": "Release_Faction_Fear",
+    "41005": "Passive_Faction_NoEntrance",
+    "41008": "Passive_Faction_Dead",
+    "41006": "Passive_NeedSaveActor",
+    "66004": "Skill_Farming_I",
+    "66005": "Skill_Farming_II",
+    "66045": "Skill_Farming_III",
+    "66006": "Skill_Ranching_I",
+    "66007": "Skill_Ranching_II",
+    "66046": "Skill_Ranching_III",
+    "66008": "Skill_Logging_I",
+    "66009": "Skill_Logging_II",
+    "66047": "Skill_Logging_III",
+    "66010": "Skill_Mining_I",
+    "66011": "Skill_Mining_II",
+    "66048": "Skill_Mining_III",
+    "66012": "Skill_Forging_I",
+    "66013": "Skill_Forging_II",
+    "66049": "Skill_Forging_III",
+    "66024": "Skill_Strengthening_I",
+    "66025": "Skill_Strengthening_II",
+    "66053": "Skill_Strengthening_III",
+    "66014": "Skill_Fishing_I",
+    "66015": "Skill_Fishing_II",
+    "66050": "Skill_Fishing_III",
+    "66020": "Skill_Foodprocessing_I",
+    "66021": "Skill_Foodprocessing_II",
+    "66051": "Skill_Foodprocessing_III",
+    "66038": "Skill_Drawing_I",
+    "66039": "Skill_Drawing_II",
+    "66059": "Skill_Drawing_III",
+    "66040": "Skill_Weaving_I",
+    "66041": "Skill_Weaving_II",
+    "66060": "Skill_Weaving_III",
+    "66034": "Skill_Building_I",
+    "66035": "Skill_Building_II",
+    "66057": "Skill_Building_III",
+    "66036": "Skill_Engineering_I",
+    "66037": "Skill_Engineering_II",
+    "66058": "Skill_Engineering_III",
+    "66026": "Skill_Refining_I",
+    "66022": "Skill_Crafting_I",
+    "66023": "Skill_Crafting_II",
+    "66052": "Skill_Crafting_III",
+    "66030": "Skill_Ornamenting_I",
+    "66031": "Skill_Ornamenting_II",
+    "66056": "Skill_Ornamenting_III",
+    "66028": "Skill_Gathering_I",
+    "66029": "Skill_Gathering_II",
+    "66055": "Skill_Gathering_III",
+    "66002": "Skill_Banking_I",
+    "66003": "Skill_Banking_II",
+    "66044": "Skill_Banking_III",
+    "66042": "Skill_SuperWorker",
+    "66043": "Skill_Worker_Fighting_I",
+    "40003": "Passive_Faction_ImmuneElectric",
+    "65448": "Active_Drunken",
+    "65449": "Active_Sober",
+    "76004": "Skill_StealthStage",
+    "76005": "Skill_PlayerStealthStage",
+    "70021": "Passive_AllyGroup_AllNeutral",
+    "70023": "Passive_AllyGroup_NPCAlly",
+    "70024": "Passive_AllyGroup_NPCEnemy",
+    "75044": "Skill_AllyGroupMissionFollow",
+    "75045": "Skill_ComeToPlayer",
+    "75051": "Skill_ApplyMinigameMatch",
+    "75052": "Passive_MiniGame_DPV",
+    "75053": "Passive_MiniGame_DDD",
+    "75054": "Passive_MiniGame_HP",
+    "75056": "Passive_MiniGame_Catch_DDD",
+    "75067": "Passive_MiniGame_pve_DPV",
+    "75069": "Passive_MiniGame_pve_DDD",
+    "75070": "Passive_MiniGame_DebuffHP",
+    "75074": "Passive_MiniGame_DebuffDD",
+    "75075": "Passive_MiniGame_Difficulty",
+    "75076": "Passive_MiniGame_HorseRace",
+    "709": "Passive_AllyGroup_Outlaw",
+    "723": "Passive_ChangeAllyGroup_Exclusive_A",
+    "724": "Passive_ChangeAllyGroup_Exclusive_B",
+    "725": "Passive_ChangeAllyGroup_Exclusive_A_Ally",
+    "726": "Passive_ChangeAllyGroup_Exclusive_B_Ally",
+    "728": "Passive_ChangeAllyGroup_NPC_Neutral",
+    "810100": "Passive_ChaserEnemy_Bleed",
+    "810101": "Passive_ChaserEnemy_Hellhounds",
+    "810102": "Passive_ChaserEnemy_Flame_Knights",
+    "810103": "Passive_ChaserEnemy_NamelessSages",
+    "810104": "Passive_ChaserEnemy_RighteousArrows",
+    "810105": "Passive_ChaserEnemy_RegleGoblin",
+    "810106": "Passive_ChaserEnemy_PirateI",
+    "810107": "Passive_ChaserEnemy_Demeniss_StrongHold",
+    "810110": "Passive_ChaserEnemy_The_Drunken_Black_Bears",
+    "810112": "Passive_ChaserEnemy_Ent_Hunter",
+    "810113": "Passive_ChaserEnemy_Wyvern_Tamers",
+    "810114": "Passive_ChaserEnemy_Goblin_Riders",
+    "810115": "Passive_ChaserEnemy_Troll_Riders",
+    "810116": "Passive_ChaserEnemy_Thief_Headquarters",
+    "810117": "Passive_ChaserEnemy_Sacked_Fortress",
+    "810118": "Passive_ChaserEnemy_Crimson_Mountains_Fortress",
+    "810119": "Passive_ChaserEnemy_Muiquun",
+    "810120": "Passive_ChaserEnemy_Desert_Harrier",
+    "810121": "Passive_ChaserEnemy_RufusVenmort",
+    "810122": "Passive_ChaserEnemy_Thief",
+    "55007": "Passive_WatcherDetectUpdate",
+    "56000": "Active_Sequencer_Increase_MinMorale",
+    "56002": "Passive_Sequencer_Increase_MinMorale",
+    "810200": "SequencerHitEffect_fx_blood_sphere_hit_c_blood5",
+    "810201": "SequencerHitEffect_fx_blood_side_hit_d_blood9",
+    "810202": "SequencerHitEffect_fx_blood_up_hit_d_blood9",
+    "810203": "SequencerHitEffect_fx_blood_side_hit_d_blood3",
+    "810204": "SequencerHitEffect_fx_blood_up_hit_a_blood1_var",
+    "51494": "Skill_BossCutScene",
+    "51501": "Passive_KeepAggroChangeTarget",
+    "45101": "Passive_SequencerCutscene",
+    "810306": "Passive_Prolog_KliffStrengthen",
+    "810302": "Active_SeqHPDecrease",
+    "810303": "Active_SeqHPTen",
+    "810304": "Active_Invincible",
+    "810305": "Active_NoMoreInvincible",
+    "51": "Passive_DamageUpSmall",
+    "52": "Passive_DamageUp",
+    "54": "Passive_DefenceUpSmall",
+    "55": "Passive_DefenceUp",
+    "250": "Passive_MainActor_MinHpPercent_10",
+    "251": "Passive_MinHpPercent_10_Bind",
+    "252": "Passive_MinHpPercent_5_RunawayGroggy",
+    "253": "Passive_MinHpPercent_5_DoNotUseGroggy",
+    "254": "Passive_MinHpPercent_5",
+    "255": "Passive_MinHpPercent_10",
+    "257": "Passive_MinHpPercent_50",
+    "258": "Active_MinHpPercent_50_DoNotUseGroggy",
+    "260": "Active_MinHpPercent_5_DoNotUseGroggy",
+    "259": "Release_Active_MinHpPercent",
+    "51525": "Active_DecreaseMaxHpRate_100",
+    "44005": "Passive_DieOnHit",
+    "10102": "Seq_CutScene_Groggy_RecoveryHp",
+    "70995": "Passive_Immune_ActionRestriction",
+    "70996": "Active_PlayerAlly",
+    "70999": "Passive_PlayerAlly",
+    "70997": "Passive_ConfusionImmune",
+    "71000": "Passive_FieldBoss",
+    "71001": "Passive_FieldBoss_Patrol",
+    "71002": "Passive_DisableObstacle",
+    "71003": "Passive_FieldBoss_Elite"
+  }
+}

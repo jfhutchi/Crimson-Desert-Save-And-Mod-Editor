@@ -1,0 +1,62 @@
+=== Session start 2026-07-15T17:07:29.666249 ===
+2026-07-15 17:07:29,771 [INFO] gui_i18n: gui_i18n: install(lang='en') called; current_lang='en'
+2026-07-15 17:07:29,773 [INFO] gui_i18n: gui_i18n: patched 93 Qt setter(s)
+2026-07-15 17:07:29,774 [INFO] gui_i18n: gui_i18n self-test: QPushButton('Set Stack')->'Set Stack'  QLabel.setText('Inventory')->'Inventory'
+2026-07-15 17:07:29,793 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-15 17:07:29,805 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-15 17:07:30,129 [INFO] gui.tabs.buffs_v319: Loaded 188 passive skills from skill_english_names.json
+2026-07-15 17:07:30,139 [INFO] gui.tabs.buffs_v319: Loaded 275 buffs from buff_database.json (total: 275)
+2026-07-15 17:07:30,139 [INFO] gui.tabs.buffs_v319: Applied 30 English buff names
+2026-07-15 17:07:50,125 [INFO] parc_inserter2: Parsing full save structure (6365771 bytes)...
+2026-07-15 17:07:54,780 [INFO] parc_inserter2: Parsed: 108 types, 1608 TOC entries, 1608 object blocks
+2026-07-15 17:07:55,077 [INFO] parc_inserter2: Offset positions: 145314 collected, 145314 verified, 0 bad; trailing sizes: 145315 collected
+2026-07-15 17:07:55,080 [INFO] gui.main_window: PARC parse cache warmed
+2026-07-15 17:08:10,833 [INFO] gui.tabs.field_edit: Loaded 656 gameplaytrigger entries
+2026-07-15 17:08:10,852 [INFO] gui.tabs.field_edit: Loaded 0 regioninfo entries
+2026-07-15 17:08:10,916 [INFO] gui.tabs.field_edit: Loaded 3 mount entries from characterinfo
+2026-07-15 17:08:10,930 [INFO] gui.tabs.field_edit: Loaded wantedinfo: 560 bytes
+2026-07-15 17:08:30,802 [INFO] gui.tabs.field_edit: === enable_mounts: starting ===
+2026-07-15 17:08:30,802 [WARNING] gui.tabs.field_edit: enable_mounts: _regioninfo_entries is EMPTY (parser failed or file missing)
+2026-07-15 17:08:30,806 [INFO] gui.tabs.field_edit: enable_mounts: vehicle=34 region=0 mount=0 edits applied (0/3 mount-entries had dur>0 or cool>0; patched: (none))
+=== Session start 2026-07-16T18:36:27.227981 ===
+2026-07-16 18:36:27,339 [INFO] gui_i18n: gui_i18n: install(lang='en') called; current_lang='en'
+2026-07-16 18:36:27,341 [INFO] gui_i18n: gui_i18n: patched 93 Qt setter(s)
+2026-07-16 18:36:27,342 [INFO] gui_i18n: gui_i18n self-test: QPushButton('Set Stack')->'Set Stack'  QLabel.setText('Inventory')->'Inventory'
+2026-07-16 18:36:27,357 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-16 18:36:27,368 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-16 18:36:28,864 [INFO] gui.tabs.buffs_v319: Loaded 188 passive skills from skill_english_names.json
+2026-07-16 18:36:28,873 [INFO] gui.tabs.buffs_v319: Loaded 275 buffs from buff_database.json (total: 275)
+2026-07-16 18:36:28,873 [INFO] gui.tabs.buffs_v319: Applied 30 English buff names
+2026-07-16 18:36:47,441 [INFO] parc_inserter2: Parsing full save structure (6366002 bytes)...
+2026-07-16 18:36:51,304 [INFO] gui.tabs.field_edit: Loaded 656 gameplaytrigger entries
+2026-07-16 18:36:51,373 [INFO] gui.tabs.field_edit: Loaded 0 regioninfo entries
+2026-07-16 18:36:51,519 [INFO] gui.tabs.field_edit: Loaded 4 mount entries from characterinfo
+2026-07-16 18:36:51,549 [INFO] gui.tabs.field_edit: Loaded wantedinfo: 560 bytes
+2026-07-16 18:36:52,211 [INFO] parc_inserter2: Parsed: 108 types, 1608 TOC entries, 1608 object blocks
+2026-07-16 18:36:52,526 [INFO] parc_inserter2: Offset positions: 145320 collected, 145320 verified, 0 bad; trailing sizes: 145321 collected
+2026-07-16 18:36:52,530 [INFO] gui.main_window: PARC parse cache warmed
+=== Session start 2026-07-16T18:38:19.951368 ===
+2026-07-16 18:38:20,051 [INFO] gui_i18n: gui_i18n: install(lang='en') called; current_lang='en'
+2026-07-16 18:38:20,053 [INFO] gui_i18n: gui_i18n: patched 93 Qt setter(s)
+2026-07-16 18:38:20,053 [INFO] gui_i18n: gui_i18n self-test: QPushButton('Set Stack')->'Set Stack'  QLabel.setText('Inventory')->'Inventory'
+2026-07-16 18:38:20,064 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-16 18:38:20,074 [INFO] item_db: Loaded 6341 items from SQLite
+2026-07-16 18:38:20,401 [INFO] gui.tabs.buffs_v319: Loaded 188 passive skills from skill_english_names.json
+2026-07-16 18:38:20,414 [INFO] gui.tabs.buffs_v319: Loaded 275 buffs from buff_database.json (total: 275)
+2026-07-16 18:38:20,414 [INFO] gui.tabs.buffs_v319: Applied 30 English buff names
+2026-07-16 18:38:49,986 [INFO] parc_inserter2: Parsing full save structure (6366002 bytes)...
+2026-07-16 18:38:54,572 [INFO] parc_inserter2: Parsed: 108 types, 1608 TOC entries, 1608 object blocks
+2026-07-16 18:38:54,861 [INFO] parc_inserter2: Offset positions: 145320 collected, 145320 verified, 0 bad; trailing sizes: 145321 collected
+2026-07-16 18:38:54,865 [INFO] gui.main_window: PARC parse cache warmed
+2026-07-16 18:39:04,187 [INFO] parc_inserter2: Parsing full save structure (6366002 bytes)...
+2026-07-16 18:39:08,646 [INFO] gui.tabs.field_edit: Loaded 656 gameplaytrigger entries
+2026-07-16 18:39:08,807 [INFO] gui.tabs.field_edit: Loaded 0 regioninfo entries
+2026-07-16 18:39:09,025 [INFO] gui.tabs.field_edit: Loaded 4 mount entries from characterinfo
+2026-07-16 18:39:09,050 [INFO] gui.tabs.field_edit: Loaded wantedinfo: 560 bytes
+2026-07-16 18:39:09,248 [INFO] gui.tabs.field_edit: Loaded 656 gameplaytrigger entries
+2026-07-16 18:39:09,300 [INFO] gui.tabs.field_edit: Loaded 0 regioninfo entries
+2026-07-16 18:39:09,436 [INFO] gui.tabs.field_edit: Loaded 4 mount entries from characterinfo
+2026-07-16 18:39:09,455 [INFO] gui.tabs.field_edit: Loaded wantedinfo: 560 bytes
+2026-07-16 18:39:10,327 [INFO] parc_inserter2: Parsed: 108 types, 1608 TOC entries, 1608 object blocks
+2026-07-16 18:39:10,649 [INFO] parc_inserter2: Offset positions: 145320 collected, 145320 verified, 0 bad; trailing sizes: 145321 collected
+2026-07-16 18:39:10,653 [INFO] gui.main_window: PARC parse cache warmed

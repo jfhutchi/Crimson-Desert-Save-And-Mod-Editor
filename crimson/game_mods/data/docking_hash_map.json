@@ -1,0 +1,1508 @@
+{
+  "total_items": 6024,
+  "items_with_docking": 261,
+  "distinct_hashes": 29,
+  "hashes": {
+    "0xEAEB8FD1": {
+      "hash": 3941306321,
+      "hash_hex": "0xEAEB8FD1",
+      "sockets": {
+        "Bip01 T Head": 37
+      },
+      "gimmicks": {
+        "1002056": 5,
+        "1002222": 17,
+        "1001977": 2,
+        "1001504": 1,
+        "1000829": 1,
+        "1001887": 1,
+        "1000431": 1,
+        "1001076": 1,
+        "1002232": 1,
+        "1002224": 1,
+        "1004060": 1,
+        "1001072": 1,
+        "1002233": 1,
+        "1002228": 1,
+        "1001988": 1,
+        "1002229": 1
+      },
+      "sample_items": [
+        {
+          "key": 14510,
+          "string_key": "Marni_Devotee_PlateArmor_Helm",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 14511,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_I",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 1000231,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_II",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 1000232,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_III",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 1000233,
+          "string_key": "Marni_Devotee_PlateArmor_Helm_IV",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 101003,
+          "string_key": "Dragon_Slayer_Ohyoon_PlateArmor_Helm",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        },
+        {
+          "key": 1000311,
+          "string_key": "Corvo_PlateArmor_Cloak",
+          "item_type": 3,
+          "category_info": 446,
+          "has_passive": true
+        },
+        {
+          "key": 103029,
+          "string_key": "Duratti_PlateArmor_Helm",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": true
+        }
+      ],
+      "item_count": 37,
+      "item_types": {
+        "24": 35,
+        "3": 1,
+        "103": 1
+      },
+      "category_infos": {
+        "442": 29,
+        "446": 1,
+        "422": 6,
+        "412": 1
+      }
+    },
+    "0x382F0311": {
+      "hash": 942605073,
+      "hash_hex": "0x382F0311",
+      "sockets": {
+        "Bip01 T Head": 5
+      },
+      "gimmicks": {
+        "1001763": 1,
+        "1001836": 1,
+        "1001257": 1,
+        "1001838": 1,
+        "1008871": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001100,
+          "string_key": "Tarif_Necklace",
+          "item_type": 34,
+          "category_info": 521,
+          "has_passive": true
+        },
+        {
+          "key": 1001101,
+          "string_key": "Ludvic_Necklace",
+          "item_type": 34,
+          "category_info": 521,
+          "has_passive": true
+        },
+        {
+          "key": 1001182,
+          "string_key": "WeatherWeaver_Necklace",
+          "item_type": 34,
+          "category_info": 521,
+          "has_passive": true
+        },
+        {
+          "key": 1000972,
+          "string_key": "Optionary_Monk_Necklace",
+          "item_type": 34,
+          "category_info": 521,
+          "has_passive": true
+        },
+        {
+          "key": 1002253,
+          "string_key": "WeatherWeaver_Sunny_Necklace",
+          "item_type": 34,
+          "category_info": 521,
+          "has_passive": true
+        }
+      ],
+      "item_count": 5,
+      "item_types": {
+        "34": 5
+      },
+      "category_infos": {
+        "521": 5
+      }
+    },
+    "0x48B06BD9": {
+      "hash": 1219521497,
+      "hash_hex": "0x48B06BD9",
+      "sockets": {
+        "Bip01 T Head": 2
+      },
+      "gimmicks": {
+        "1002003": 1,
+        "1006132": 1
+      },
+      "sample_items": [
+        {
+          "key": 8509,
+          "string_key": "Folorin_Earring",
+          "item_type": 15,
+          "category_info": 511,
+          "has_passive": true
+        },
+        {
+          "key": 8504,
+          "string_key": "Legendary_HexeMarie_Earring",
+          "item_type": 15,
+          "category_info": 511,
+          "has_passive": true
+        }
+      ],
+      "item_count": 2,
+      "item_types": {
+        "15": 2
+      },
+      "category_infos": {
+        "511": 2
+      }
+    },
+    "0xC95FC8FC": {
+      "hash": 3378497788,
+      "hash_hex": "0xC95FC8FC",
+      "sockets": {
+        "Bip01 L Hand": 1
+      },
+      "gimmicks": {
+        "1001787": 1
+      },
+      "sample_items": [
+        {
+          "key": 8502,
+          "string_key": "Legendary_Titan_Ring",
+          "item_type": 49,
+          "category_info": 531,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "49": 1
+      },
+      "category_infos": {
+        "531": 1
+      }
+    },
+    "0xAB000408": {
+      "hash": 2868904968,
+      "hash_hex": "0xAB000408",
+      "sockets": {
+        "Bip01 T Head": 1
+      },
+      "gimmicks": {
+        "1005653": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000479,
+          "string_key": "Kliff_Glasses",
+          "item_type": 21,
+          "category_info": 561,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "21": 1
+      },
+      "category_infos": {
+        "561": 1
+      }
+    },
+    "0xAB697FFA": {
+      "hash": 2875817978,
+      "hash_hex": "0xAB697FFA",
+      "sockets": {
+        "Bip01 T Head": 11
+      },
+      "gimmicks": {
+        "1002223": 11
+      },
+      "sample_items": [
+        {
+          "key": 1000275,
+          "string_key": "Tarif_Fabric_Cloak",
+          "item_type": 3,
+          "category_info": 413,
+          "has_passive": true
+        },
+        {
+          "key": 1000335,
+          "string_key": "Scarecrow_Camouflage_Cloak",
+          "item_type": 3,
+          "category_info": 413,
+          "has_passive": true
+        },
+        {
+          "key": 1000293,
+          "string_key": "Hemon_Vindel_Leather_Cloak",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 1000292,
+          "string_key": "Reeddevil_Leather_Cloak",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 1000310,
+          "string_key": "Samuel_PlateArmor_Cloak",
+          "item_type": 3,
+          "category_info": 446,
+          "has_passive": true
+        },
+        {
+          "key": 1000343,
+          "string_key": "Camouflage_Boar_Cloak",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 1000971,
+          "string_key": "Camouflage_Bull_Cloak",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 1000321,
+          "string_key": "Optionary_Beekeeping_Cloak",
+          "item_type": 3,
+          "category_info": 413,
+          "has_passive": true
+        }
+      ],
+      "item_count": 11,
+      "item_types": {
+        "3": 11
+      },
+      "category_infos": {
+        "413": 4,
+        "423": 6,
+        "446": 1
+      }
+    },
+    "0xFAED70AA": {
+      "hash": 4209864874,
+      "hash_hex": "0xFAED70AA",
+      "sockets": {
+        "Bip01 Spine2": 3
+      },
+      "gimmicks": {
+        "1010181": 3
+      },
+      "sample_items": [
+        {
+          "key": 113742,
+          "string_key": "Reeddevil_Leather_Armor",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 1164002,
+          "string_key": "Optionary_Beekeeping_Cloth",
+          "item_type": 3,
+          "category_info": 423,
+          "has_passive": true
+        },
+        {
+          "key": 111255,
+          "string_key": "Sazahan_PlateArmor_Armor",
+          "item_type": 3,
+          "category_info": 443,
+          "has_passive": false
+        }
+      ],
+      "item_count": 3,
+      "item_types": {
+        "3": 3
+      },
+      "category_infos": {
+        "423": 2,
+        "443": 1
+      }
+    },
+    "0x5FA1B7E4": {
+      "hash": 1604433892,
+      "hash_hex": "0x5FA1B7E4",
+      "sockets": {
+        "Gimmick_Hand_R_00_Socket": 2
+      },
+      "gimmicks": {
+        "1008427": 1,
+        "1002231": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001949,
+          "string_key": "Muscan_PlateArmor_Gloves",
+          "item_type": 22,
+          "category_info": 444,
+          "has_passive": true
+        },
+        {
+          "key": 1001009,
+          "string_key": "Gadget_Gloves",
+          "item_type": 22,
+          "category_info": 444,
+          "has_passive": true
+        }
+      ],
+      "item_count": 2,
+      "item_types": {
+        "22": 2
+      },
+      "category_infos": {
+        "444": 2
+      }
+    },
+    "0x00000000": {
+      "hash": 0,
+      "hash_hex": "0x00000000",
+      "sockets": {
+        "Gimmick_Hand_L_00_Socket": 3,
+        "Spine2_B_Shield_ChildSocket": 66
+      },
+      "gimmicks": {
+        "1002041": 1,
+        "1003717": 66,
+        "1002113": 1,
+        "1002230": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001250,
+          "string_key": "ThiefGloves",
+          "item_type": 22,
+          "category_info": 424,
+          "has_passive": true
+        },
+        {
+          "key": 1001422,
+          "string_key": "Gregor_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 13604,
+          "string_key": "Legendary_SkullKnight_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1003194,
+          "string_key": "Twich_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1003205,
+          "string_key": "Bilibili_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1001301,
+          "string_key": "MastKey_Gloves",
+          "item_type": 22,
+          "category_info": 424,
+          "has_passive": false
+        },
+        {
+          "key": 1001257,
+          "string_key": "Socket_Test_Gloves",
+          "item_type": 22,
+          "category_info": 424,
+          "has_passive": false
+        },
+        {
+          "key": 13605,
+          "string_key": "Legendary_MarniTank_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        }
+      ],
+      "item_count": 69,
+      "item_types": {
+        "22": 3,
+        "52": 44,
+        "60": 22
+      },
+      "category_infos": {
+        "424": 3,
+        "107": 44,
+        "109": 22
+      }
+    },
+    "0xEBA1792E": {
+      "hash": 3953228078,
+      "hash_hex": "0xEBA1792E",
+      "sockets": {
+        "Gimmick_Hand_L_00_Socket": 1
+      },
+      "gimmicks": {
+        "1002261": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001300,
+          "string_key": "PowerDraw_Gloves",
+          "item_type": 22,
+          "category_info": 424,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "22": 1
+      },
+      "category_infos": {
+        "424": 1
+      }
+    },
+    "0x0EBC8606": {
+      "hash": 247236102,
+      "hash_hex": "0x0EBC8606",
+      "sockets": {
+        "Bip01 Footsteps": 7
+      },
+      "gimmicks": {
+        "1003085": 1,
+        "1002057": 1,
+        "1004840": 1,
+        "1002202": 1,
+        "1004059": 2,
+        "1004431": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000259,
+          "string_key": "WaterSliding_Plate_Boots",
+          "item_type": 9,
+          "category_info": 445,
+          "has_passive": true
+        },
+        {
+          "key": 1001199,
+          "string_key": "Colossus_Boots",
+          "item_type": 9,
+          "category_info": 425,
+          "has_passive": true
+        },
+        {
+          "key": 2131006,
+          "string_key": "IncreaseSwimmingSpeed_Plate_Boots",
+          "item_type": 9,
+          "category_info": 425,
+          "has_passive": true
+        },
+        {
+          "key": 1001191,
+          "string_key": "Fire_Boots",
+          "item_type": 9,
+          "category_info": 425,
+          "has_passive": true
+        },
+        {
+          "key": 1000074,
+          "string_key": "Riesi_Boots",
+          "item_type": 103,
+          "category_info": 425,
+          "has_passive": true
+        },
+        {
+          "key": 1001299,
+          "string_key": "JumpUp_Boots",
+          "item_type": 9,
+          "category_info": 425,
+          "has_passive": true
+        },
+        {
+          "key": 1000316,
+          "string_key": "Riesi_Boots_Upgrade",
+          "item_type": 9,
+          "category_info": 425,
+          "has_passive": true
+        }
+      ],
+      "item_count": 7,
+      "item_types": {
+        "9": 6,
+        "103": 1
+      },
+      "category_infos": {
+        "445": 1,
+        "425": 6
+      }
+    },
+    "0xB89AF0D1": {
+      "hash": 3097161937,
+      "hash_hex": "0xB89AF0D1",
+      "sockets": {
+        "Gimmick_Bag_00_Socket": 11,
+        "Bip_Weapon_Attach_In_02": 13
+      },
+      "gimmicks": {
+        "1008570": 3,
+        "1002214": 1,
+        "1001839": 1,
+        "1003838": 1,
+        "1002203": 2,
+        "1002078": 1,
+        "1005782": 1,
+        "1001583": 1,
+        "1001585": 1,
+        "1001586": 1,
+        "1001588": 1,
+        "1001589": 1,
+        "1001590": 1,
+        "1001592": 1,
+        "1002215": 1,
+        "1002010": 1,
+        "1008603": 1,
+        "1000983": 1,
+        "1000610": 1,
+        "1002218": 1,
+        "1002217": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000198,
+          "string_key": "Sprayer_BackPack",
+          "item_type": 55,
+          "category_info": 634,
+          "has_passive": false
+        },
+        {
+          "key": 1001750,
+          "string_key": "Aggro_Backpack",
+          "item_type": 6,
+          "category_info": 633,
+          "has_passive": true
+        },
+        {
+          "key": 1000443,
+          "string_key": "Bleed_Bomb_BackPack",
+          "item_type": 6,
+          "category_info": 633,
+          "has_passive": true
+        },
+        {
+          "key": 1000716,
+          "string_key": "WaterPower_BackPack",
+          "item_type": 6,
+          "category_info": 633,
+          "has_passive": true
+        },
+        {
+          "key": 1000970,
+          "string_key": "EMP_BackPack",
+          "item_type": 103,
+          "category_info": 633,
+          "has_passive": true
+        },
+        {
+          "key": 1000708,
+          "string_key": "Chocolate_Factory_BackPack",
+          "item_type": 6,
+          "category_info": 633,
+          "has_passive": true
+        },
+        {
+          "key": 1003750,
+          "string_key": "Fertilizer_Sprayer_BackPack",
+          "item_type": 55,
+          "category_info": 634,
+          "has_passive": true
+        },
+        {
+          "key": 1003751,
+          "string_key": "Oil_Sprayer_BackPack",
+          "item_type": 55,
+          "category_info": 634,
+          "has_passive": true
+        }
+      ],
+      "item_count": 24,
+      "item_types": {
+        "55": 3,
+        "6": 20,
+        "103": 1
+      },
+      "category_infos": {
+        "634": 3,
+        "633": 21
+      }
+    },
+    "0x06960AC7": {
+      "hash": 110496455,
+      "hash_hex": "0x06960AC7",
+      "sockets": {
+        "Bip01 L HandTwist": 3
+      },
+      "gimmicks": {
+        "1002236": 3
+      },
+      "sample_items": [
+        {
+          "key": 1001129,
+          "string_key": "Daeil_Band",
+          "item_type": 3,
+          "category_info": 416,
+          "has_passive": true
+        },
+        {
+          "key": 1002864,
+          "string_key": "OOngka_Daeil_Band",
+          "item_type": 3,
+          "category_info": 416,
+          "has_passive": true
+        },
+        {
+          "key": 1003248,
+          "string_key": "Damian_Daeil_Band",
+          "item_type": 3,
+          "category_info": 416,
+          "has_passive": true
+        }
+      ],
+      "item_count": 3,
+      "item_types": {
+        "3": 3
+      },
+      "category_infos": {
+        "416": 3
+      }
+    },
+    "0x27FA99C3": {
+      "hash": 670734787,
+      "hash_hex": "0x27FA99C3",
+      "sockets": {
+        "GimmickSummon_00_Socket": 20
+      },
+      "gimmicks": {
+        "1010102": 20
+      },
+      "sample_items": [
+        {
+          "key": 300023,
+          "string_key": "Light_Arrowhead_Leader_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 301001,
+          "string_key": "Robinhood_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 12702,
+          "string_key": "Legendary_Korea_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 12701,
+          "string_key": "AbyssReward_HolyEcho_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 301000,
+          "string_key": "Dragon_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 300001,
+          "string_key": "Tardik_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 300018,
+          "string_key": "Baredin_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        },
+        {
+          "key": 1000766,
+          "string_key": "EntHunter_OneHandBow",
+          "item_type": 10,
+          "category_info": 304,
+          "has_passive": false
+        }
+      ],
+      "item_count": 20,
+      "item_types": {
+        "10": 20
+      },
+      "category_infos": {
+        "304": 20
+      }
+    },
+    "0xEA08CE8E": {
+      "hash": 3926445710,
+      "hash_hex": "0xEA08CE8E",
+      "sockets": {
+        "Hand_L_ChildSocket": 10
+      },
+      "gimmicks": {
+        "1000455": 9,
+        "1004078": 1
+      },
+      "sample_items": [
+        {
+          "key": 10044,
+          "string_key": "Gold_Plating_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 1003190,
+          "string_key": "Twich_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 1003201,
+          "string_key": "Bilibili_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 10026,
+          "string_key": "Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 10043,
+          "string_key": "Light_Of_Giant_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 10045,
+          "string_key": "DeerKing_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 10046,
+          "string_key": "RedNose_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        },
+        {
+          "key": 10047,
+          "string_key": "Mjordin_Lantern",
+          "item_type": 57,
+          "category_info": 2702,
+          "has_passive": false
+        }
+      ],
+      "item_count": 10,
+      "item_types": {
+        "57": 10
+      },
+      "category_infos": {
+        "2702": 10
+      }
+    },
+    "0xF18540CD": {
+      "hash": 4052041933,
+      "hash_hex": "0xF18540CD",
+      "sockets": {
+        "Bip_Weapon_R": 7
+      },
+      "gimmicks": {
+        "1002219": 3,
+        "1002220": 2,
+        "1004194": 2
+      },
+      "sample_items": [
+        {
+          "key": 1002501,
+          "string_key": "WarRobot_FlameThrower_01",
+          "item_type": 50,
+          "category_info": 1117,
+          "has_passive": false
+        },
+        {
+          "key": 1002180,
+          "string_key": "Kuku_FlameThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        },
+        {
+          "key": 1002181,
+          "string_key": "Kuku_IceThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        },
+        {
+          "key": 1003259,
+          "string_key": "Kuku_LightningThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        },
+        {
+          "key": 330002,
+          "string_key": "FlameThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        },
+        {
+          "key": 330003,
+          "string_key": "IceThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        },
+        {
+          "key": 1000553,
+          "string_key": "LightningThrower",
+          "item_type": 71,
+          "category_info": 312,
+          "has_passive": true
+        }
+      ],
+      "item_count": 7,
+      "item_types": {
+        "50": 1,
+        "71": 6
+      },
+      "category_infos": {
+        "1117": 1,
+        "312": 6
+      }
+    },
+    "0x27B82F0A": {
+      "hash": 666382090,
+      "hash_hex": "0x27B82F0A",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 20,
+        "Fx_lightning_spark_b_00_Socket": 2
+      },
+      "gimmicks": {
+        "1008624": 1,
+        "1001876": 2,
+        "1001492": 3,
+        "1002073": 2,
+        "1001924": 2,
+        "1002072": 2,
+        "1001885": 2,
+        "1001961": 1,
+        "1001916": 1,
+        "1008872": 6
+      },
+      "sample_items": [
+        {
+          "key": 1000374,
+          "string_key": "KuKu_Pot_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": false
+        },
+        {
+          "key": 1002175,
+          "string_key": "KuKu_Lightning_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": true
+        },
+        {
+          "key": 1002176,
+          "string_key": "KuKu_Fire_staff_spear_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": true
+        },
+        {
+          "key": 1001953,
+          "string_key": "KuKu_Bismuth_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": true
+        },
+        {
+          "key": 1002177,
+          "string_key": "KuKu_Wind_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": false
+        },
+        {
+          "key": 1002178,
+          "string_key": "KuKu_EMP_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": false
+        },
+        {
+          "key": 1002179,
+          "string_key": "Kuku_YamatoCannon_TwoHandSpear",
+          "item_type": 70,
+          "category_info": 205,
+          "has_passive": false
+        },
+        {
+          "key": 1001163,
+          "string_key": "Lightning_TwoHandSpear",
+          "item_type": 103,
+          "category_info": 205,
+          "has_passive": true
+        }
+      ],
+      "item_count": 22,
+      "item_types": {
+        "70": 16,
+        "103": 6
+      },
+      "category_infos": {
+        "205": 22
+      }
+    },
+    "0x21EFC043": {
+      "hash": 569360451,
+      "hash_hex": "0x21EFC043",
+      "sockets": {
+        "Bip01 Spine2": 3
+      },
+      "gimmicks": {
+        "1001110": 1,
+        "1002266": 1,
+        "1004744": 1
+      },
+      "sample_items": [
+        {
+          "key": 1002285,
+          "string_key": "Titan_PlateArmor_Armor_Upgrade",
+          "item_type": 3,
+          "category_info": 443,
+          "has_passive": true
+        },
+        {
+          "key": 1002286,
+          "string_key": "Paphneil_PlateArmor_Armor_Upgrade",
+          "item_type": 3,
+          "category_info": 443,
+          "has_passive": true
+        },
+        {
+          "key": 1002287,
+          "string_key": "king_LostPeople_PlateArmor_Armor_Upgrade",
+          "item_type": 3,
+          "category_info": 443,
+          "has_passive": true
+        }
+      ],
+      "item_count": 3,
+      "item_types": {
+        "3": 3
+      },
+      "category_infos": {
+        "443": 3
+      }
+    },
+    "0xF19D032F": {
+      "hash": 4053599023,
+      "hash_hex": "0xF19D032F",
+      "sockets": {
+        "Bip01 T Head": 1
+      },
+      "gimmicks": {
+        "1010089": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000975,
+          "string_key": "Oongka_Rocket_Helm",
+          "item_type": 24,
+          "category_info": 442,
+          "has_passive": false
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "24": 1
+      },
+      "category_infos": {
+        "442": 1
+      }
+    },
+    "0x2A723EB2": {
+      "hash": 712130226,
+      "hash_hex": "0x2A723EB2",
+      "sockets": {
+        "Dock_Fish_Socket": 4
+      },
+      "gimmicks": {
+        "1006289": 4
+      },
+      "sample_items": [
+        {
+          "key": 11001,
+          "string_key": "FishingRod",
+          "item_type": 17,
+          "category_info": 606,
+          "has_passive": false
+        },
+        {
+          "key": 1000639,
+          "string_key": "FishingRod_II",
+          "item_type": 17,
+          "category_info": 606,
+          "has_passive": true
+        },
+        {
+          "key": 1000640,
+          "string_key": "FishingRod_III",
+          "item_type": 17,
+          "category_info": 606,
+          "has_passive": true
+        },
+        {
+          "key": 1000088,
+          "string_key": "ItemCatch_FishingRod",
+          "item_type": 17,
+          "category_info": 606,
+          "has_passive": false
+        }
+      ],
+      "item_count": 4,
+      "item_types": {
+        "17": 4
+      },
+      "category_infos": {
+        "606": 4
+      }
+    },
+    "0xFEDE8D2A": {
+      "hash": 4275997994,
+      "hash_hex": "0xFEDE8D2A",
+      "sockets": {
+        "Bip01 R Forearm": 1
+      },
+      "gimmicks": {
+        "1010296": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001294,
+          "string_key": "Mining_Drill",
+          "item_type": 18,
+          "category_info": 113,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "18": 1
+      },
+      "category_infos": {
+        "113": 1
+      }
+    },
+    "0xB932C776": {
+      "hash": 3107112822,
+      "hash_hex": "0xB932C776",
+      "sockets": {
+        "Bip01 R Forearm": 1
+      },
+      "gimmicks": {
+        "1010297": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000171,
+          "string_key": "Demeniss_Chainsaw",
+          "item_type": 18,
+          "category_info": 113,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "18": 1
+      },
+      "category_infos": {
+        "113": 1
+      }
+    },
+    "0xC69E9971": {
+      "hash": 3332282737,
+      "hash_hex": "0xC69E9971",
+      "sockets": {
+        "Spine2_B_Shield_ChildSocket": 5,
+        "Gimmick_Weapon_00_Socket": 2,
+        "Shield_Socket": 3
+      },
+      "gimmicks": {
+        "1003717": 5,
+        "1004731": 1,
+        "1001995": 1,
+        "1002226": 1,
+        "1004025": 1,
+        "1002225": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001064,
+          "string_key": "Damian_OneHandShield_VII",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1001027,
+          "string_key": "Damian_OneHandShield_VIII",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1000657,
+          "string_key": "Damian_OneHandShield_VI",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1000395,
+          "string_key": "Damian_OneHandShield_IV",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 1000683,
+          "string_key": "Damian_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": false
+        },
+        {
+          "key": 290021,
+          "string_key": "AbyssReward_Drake_Metal_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": true
+        },
+        {
+          "key": 1000201,
+          "string_key": "LakeGolem_OnehandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": true
+        },
+        {
+          "key": 1001192,
+          "string_key": "Wind_Power_OneHandShield",
+          "item_type": 52,
+          "category_info": 107,
+          "has_passive": true
+        }
+      ],
+      "item_count": 10,
+      "item_types": {
+        "52": 10
+      },
+      "category_infos": {
+        "107": 10
+      }
+    },
+    "0x1EAB4777": {
+      "hash": 514541431,
+      "hash_hex": "0x1EAB4777",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 5
+      },
+      "gimmicks": {
+        "1008873": 5
+      },
+      "sample_items": [
+        {
+          "key": 1000578,
+          "string_key": "Old_Kliff_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        },
+        {
+          "key": 200917,
+          "string_key": "Spada_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        },
+        {
+          "key": 1001524,
+          "string_key": "Golden_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        },
+        {
+          "key": 200052,
+          "string_key": "Knight_King_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        },
+        {
+          "key": 200919,
+          "string_key": "Archria_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        }
+      ],
+      "item_count": 5,
+      "item_types": {
+        "56": 5
+      },
+      "category_infos": {
+        "103": 5
+      }
+    },
+    "0xAFD53EB7": {
+      "hash": 2949988023,
+      "hash_hex": "0xAFD53EB7",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "gimmicks": {
+        "1001786": 1
+      },
+      "sample_items": [
+        {
+          "key": 200914,
+          "string_key": "AbyssReward_Mysterm_OneHandSword",
+          "item_type": 56,
+          "category_info": 103,
+          "has_passive": false
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "56": 1
+      },
+      "category_infos": {
+        "103": 1
+      }
+    },
+    "0xC89CE6BF": {
+      "hash": 3365725887,
+      "hash_hex": "0xC89CE6BF",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 7
+      },
+      "gimmicks": {
+        "1001961": 1,
+        "1001472": 6
+      },
+      "sample_items": [
+        {
+          "key": 1001062,
+          "string_key": "Marni_MachineKnight_TwoHandSword",
+          "item_type": 72,
+          "category_info": 202,
+          "has_passive": true
+        },
+        {
+          "key": 1002102,
+          "string_key": "Serdin_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        },
+        {
+          "key": 1002106,
+          "string_key": "Verak_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        },
+        {
+          "key": 1002103,
+          "string_key": "Parvel_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        },
+        {
+          "key": 1002104,
+          "string_key": "Arven_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        },
+        {
+          "key": 1002105,
+          "string_key": "Lusek_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        },
+        {
+          "key": 240031,
+          "string_key": "Tynion_Giant_TwoHandGiantBastard",
+          "item_type": 68,
+          "category_info": 218,
+          "has_passive": false
+        }
+      ],
+      "item_count": 7,
+      "item_types": {
+        "72": 1,
+        "68": 6
+      },
+      "category_infos": {
+        "202": 1,
+        "218": 6
+      }
+    },
+    "0xD076FBA5": {
+      "hash": 3497458597,
+      "hash_hex": "0xD076FBA5",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "gimmicks": {
+        "1003524": 1
+      },
+      "sample_items": [
+        {
+          "key": 1002741,
+          "string_key": "Ligtning_TwoHandHammer_I",
+          "item_type": 69,
+          "category_info": 212,
+          "has_passive": true
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "69": 1
+      },
+      "category_infos": {
+        "212": 1
+      }
+    },
+    "0xF55536F5": {
+      "hash": 4116002549,
+      "hash_hex": "0xF55536F5",
+      "sockets": {
+        "Bip_Weapon_R": 1
+      },
+      "gimmicks": {
+        "1003070": 1
+      },
+      "sample_items": [
+        {
+          "key": 1000156,
+          "string_key": "Witch_WingFan",
+          "item_type": 18,
+          "category_info": 227,
+          "has_passive": false
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "18": 1
+      },
+      "category_infos": {
+        "227": 1
+      }
+    },
+    "0x32424987": {
+      "hash": 843204999,
+      "hash_hex": "0x32424987",
+      "sockets": {
+        "Gimmick_Weapon_00_Socket": 1
+      },
+      "gimmicks": {
+        "1001936": 1
+      },
+      "sample_items": [
+        {
+          "key": 1001196,
+          "string_key": "Equip_Magic_Scythe",
+          "item_type": 58,
+          "category_info": 601,
+          "has_passive": false
+        }
+      ],
+      "item_count": 1,
+      "item_types": {
+        "58": 1
+      },
+      "category_infos": {
+        "601": 1
+      }
+    }
+  }
+}

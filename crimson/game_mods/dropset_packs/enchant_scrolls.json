@@ -1,0 +1,23 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Enchant Scrolls",
+  "author": "CrimsonSaveEditor",
+  "description": "All 14 tier-1 enchantment scrolls at 50% drop rate",
+  "items": [
+    {"item_key": 1002896, "name": "Steelbane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002899, "name": "Hexebane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002902, "name": "Bloodbane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002905, "name": "Primalbane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002908, "name": "Malicebane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002911, "name": "Beastbane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002914, "name": "Abyssbane I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1003759, "name": "Shatter I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1003762, "name": "Rend I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1003765, "name": "Shred I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002953, "name": "Energy Drain I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1003229, "name": "Disarm I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002920, "name": "Fortune I", "rate_pct": 50, "qty": 2},
+    {"item_key": 1002923, "name": "Infinite Arrows I", "rate_pct": 50, "qty": 2}
+  ]
+}

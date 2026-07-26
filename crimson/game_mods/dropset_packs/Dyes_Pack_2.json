@@ -1,0 +1,129 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Dyes Pack 2",
+  "author": "CrimsonSaveEditor",
+  "description": "Blue, Sky Blue, Teal, Green dyes (20) at 100% drop rate",
+  "items": [
+    {
+      "item_key": 1001629,
+      "name": "Deep Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001630,
+      "name": "Bright Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001631,
+      "name": "Rich Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001632,
+      "name": "Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001633,
+      "name": "Dark Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001634,
+      "name": "Deep Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001635,
+      "name": "Bright Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001636,
+      "name": "Rich Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001637,
+      "name": "Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001638,
+      "name": "Dark Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001639,
+      "name": "Deep Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001640,
+      "name": "Bright Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001641,
+      "name": "Rich Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001642,
+      "name": "Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001643,
+      "name": "Dark Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001644,
+      "name": "Deep Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001645,
+      "name": "Bright Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001646,
+      "name": "Rich Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001647,
+      "name": "Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001648,
+      "name": "Dark Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    }
+  ]
+}

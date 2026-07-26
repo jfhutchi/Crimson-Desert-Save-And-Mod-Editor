@@ -1,0 +1,4911 @@
+{
+  "0xce13ca8d": {
+    "name": "cd_phm_04_arw_0001",
+    "base": "cd_phm_04_arw_0001",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0x1896a938": {
+    "name": "cd_phm_00_hel_00_0354_c",
+    "base": "cd_phm_00_hel_00_0354",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x166d58ab": {
+    "name": "cd_phm_00_hel_00_0354_01_c",
+    "base": "cd_phm_00_hel_00_0354",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x82ec2b7c": {
+    "name": "cd_phm_00_hel_00_0465_c",
+    "base": "cd_phm_00_hel_00_0465",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x2c473dd": {
+    "name": "cd_phm_00_hel_00_0466_c",
+    "base": "cd_phm_00_hel_00_0466",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xd1391bdc": {
+    "name": "cd_phm_00_hel_00_0467_c",
+    "base": "cd_phm_00_hel_00_0467",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xd19d6492": {
+    "name": "cd_phm_00_cloak_00_0376_op_index01_t",
+    "base": "cd_phm_00_cloak_00_0376",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x344c1d56": {
+    "name": "cd_phm_00_cloak_00_0376_index01_y",
+    "base": "cd_phm_00_cloak_00_0376",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb52eb24b": {
+    "name": "cd_phm_00_hand_0009",
+    "base": "cd_phm_00_hand_0009",
+    "slot_count": 1,
+    "slots": [
+      4
+    ]
+  },
+  "0x5ff3a4e1": {
+    "name": "cd_phm_00_hand_0009_index01",
+    "base": "cd_phm_00_hand_0009",
+    "slot_count": 1,
+    "slots": [
+      4
+    ]
+  },
+  "0x616fb52e": {
+    "name": "cd_phm_00_hel_0130_03",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0xe73d7f6d": {
+    "name": "cd_phm_00_hel_0128_01_index04",
+    "base": "cd_phm_00_hel_0128",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      7
+    ]
+  },
+  "0x20947f25": {
+    "name": "cd_phm_00_hel_0130_03_index06",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0x731cb5d6": {
+    "name": "cd_phm_00_hel_0128_01_index03",
+    "base": "cd_phm_00_hel_0128",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      7
+    ]
+  },
+  "0x5d001134": {
+    "name": "cd_phm_00_foot_0003_index09",
+    "base": "cd_phm_00_foot_0003",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf7a40c3": {
+    "name": "cd_phm_00_hel_0083_d",
+    "base": "cd_phm_00_hel_0083",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x6f57022c": {
+    "name": "cd_phm_00_hel_0083_index03_d",
+    "base": "cd_phm_00_hel_0083",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xfc1c4447": {
+    "name": "cd_phm_00_hel_0122_index05",
+    "base": "cd_phm_00_hel_0122",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x10cb1b06": {
+    "name": "cd_phm_00_hel_0130_03_index05",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0x8613b4d3": {
+    "name": "cd_phm_00_foot_belt_0018_02",
+    "base": "cd_phm_00_foot_belt_0018",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xe02d2758": {
+    "name": "cd_phm_00_hel_0014",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x15dbbc89": {
+    "name": "cd_phm_00_hel_0122",
+    "base": "cd_phm_00_hel_0122",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5a28ebde": {
+    "name": "cd_phm_00_hel_0014_index02",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xffaf13c2": {
+    "name": "cd_phm_00_hel_0014_index01",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x50a6da1d": {
+    "name": "cd_phm_00_hel_0014_index04",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3de37438": {
+    "name": "cd_phm_00_hel_0050_01_index15",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x222f2c5a": {
+    "name": "cd_phm_00_hel_0122_index04",
+    "base": "cd_phm_00_hel_0122",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9c80a32e": {
+    "name": "cd_phm_00_hel_0050_01_index01_d",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x6e17a60c": {
+    "name": "cd_phm_00_hel_0050_01_index06",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x3f0061d4": {
+    "name": "cd_phm_00_hel_0130_03_index03",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0x8755cc73": {
+    "name": "cd_phm_00_hel_0050",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x27655d21": {
+    "name": "cd_phm_00_hel_0122_index06",
+    "base": "cd_phm_00_hel_0122",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe999d72d": {
+    "name": "cd_phm_00_hel_0226",
+    "base": "cd_phm_00_hel_0226",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x71a05ca": {
+    "name": "cd_phm_00_hel_0120_index12_d",
+    "base": "cd_phm_00_hel_0120",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x290d27af": {
+    "name": "cd_phm_00_hel_0050_01_index05",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x67b5d68e": {
+    "name": "cd_phm_00_ub_00_0375_dm01",
+    "base": "cd_phm_00_ub_00_0375",
+    "slot_count": 2,
+    "slots": [
+      3,
+      9
+    ]
+  },
+  "0xe90bf7f6": {
+    "name": "cd_phm_00_foot_0090_index10",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xe0da3754": {
+    "name": "cd_phm_00_foot_0099_01",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xfc0f1736": {
+    "name": "cd_phm_00_foot_0090",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x228352c7": {
+    "name": "cd_phm_00_foot_0110_index06",
+    "base": "cd_phm_00_foot_0110",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x19ee45da": {
+    "name": "cd_phm_00_foot_0110_index03",
+    "base": "cd_phm_00_foot_0110",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x4d9fcb4e": {
+    "name": "cd_phm_00_foot_0054_index04",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x6be6cd24": {
+    "name": "cd_phm_00_foot_0090_index06",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x19bc898d": {
+    "name": "cd_phm_00_foot_0099_01_index09",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x6ab3c08d": {
+    "name": "cd_phm_00_foot_0099_01_index11",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x9d0b842f": {
+    "name": "cd_phm_00_foot_0099_01_index18",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x50d0680d": {
+    "name": "cd_phm_00_foot_0099_01_index10",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x3164d576": {
+    "name": "cd_phm_00_foot_0052_index08",
+    "base": "cd_phm_00_foot_0052",
+    "slot_count": 2,
+    "slots": [
+      2,
+      255
+    ]
+  },
+  "0x6fed7411": {
+    "name": "cd_phw_00_foot_00_0160_index01",
+    "base": "cd_phw_00_foot_00_0160",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x49b30303": {
+    "name": "cd_phm_00_hand_0090_index01",
+    "base": "cd_phm_00_hand_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xad731570": {
+    "name": "cd_phm_00_hand_0054_index02",
+    "base": "cd_phm_00_hand_0054",
+    "slot_count": 3,
+    "slots": [
+      2,
+      8,
+      255
+    ]
+  },
+  "0x88209d15": {
+    "name": "cd_phm_00_hand_0090",
+    "base": "cd_phm_00_hand_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x7ab39582": {
+    "name": "cd_phw_00_hand_0137",
+    "base": "cd_phw_00_hand_0137",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd243ea38": {
+    "name": "cd_phm_00_hand_0049_index01",
+    "base": "cd_phm_00_hand_0049",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x352182bb": {
+    "name": "cd_phm_00_hel_0032_02_d",
+    "base": "cd_phm_00_hel_0032",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xf39e8c5d": {
+    "name": "cd_phm_00_hel_0128_01",
+    "base": "cd_phm_00_hel_0128",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      7
+    ]
+  },
+  "0xd5402240": {
+    "name": "cd_phm_00_cloak_00_0375_t_dm01",
+    "base": "cd_phm_00_cloak_00_0375",
+    "slot_count": 2,
+    "slots": [
+      1,
+      255
+    ]
+  },
+  "0x99a21a2d": {
+    "name": "cd_phm_00_foot_0054_01_index02",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0xb7512db0": {
+    "name": "cd_phm_00_foot_0002_index08",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xcfe39d68": {
+    "name": "cd_phm_00_foot_0001_index12",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf3b217e4": {
+    "name": "cd_phm_00_foot_0090_index07",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xaee3023c": {
+    "name": "cd_phm_00_foot_0090_index08",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xfc373fbe": {
+    "name": "cd_phm_00_foot_0054_01",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0xea6ad6a6": {
+    "name": "cd_phm_00_foot_0001_index10",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x926fd95e": {
+    "name": "cd_phm_00_foot_0105_index09",
+    "base": "cd_phm_00_foot_0105",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x508589f4": {
+    "name": "cd_phm_00_foot_0080",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x49580c2c": {
+    "name": "cd_phm_00_foot_0105_index06",
+    "base": "cd_phm_00_foot_0105",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5b0d0891": {
+    "name": "cd_phm_00_foot_0055_index01",
+    "base": "cd_phm_00_foot_0055",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x8dbff5e6": {
+    "name": "cd_phm_02_foot_0040_01_index03",
+    "base": "cd_phm_02_foot_0040",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3a7efe03": {
+    "name": "cd_phm_00_foot_0002_index05",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x61c1e22f": {
+    "name": "cd_phm_00_foot_0056_index10",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0xa87627f0": {
+    "name": "cd_phm_00_foot_0051_index15",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x726811bd": {
+    "name": "cd_phm_00_foot_0051_index11",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe5bd49f4": {
+    "name": "cd_phm_00_foot_0002_index12",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x62ecf62a": {
+    "name": "cd_phw_00_foot_0043_index03",
+    "base": "cd_phw_00_foot_0043",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x26c78ded": {
+    "name": "cd_phm_00_foot_0002",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x673e08b9": {
+    "name": "cd_phm_00_foot_0055_index02",
+    "base": "cd_phm_00_foot_0055",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x55bfeba0": {
+    "name": "cd_phm_00_foot_0002_index01",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x3ff6ad6a": {
+    "name": "cd_phm_00_foot_0054_01_index01",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0xec093ba0": {
+    "name": "cd_phm_00_foot_0056_index01",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0x9ed936df": {
+    "name": "cd_phm_00_foot_0080_index05",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x1239e048": {
+    "name": "cd_phw_00_foot_0043",
+    "base": "cd_phw_00_foot_0043",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0xde5a8021": {
+    "name": "cd_phm_00_foot_0105_index07",
+    "base": "cd_phm_00_foot_0105",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3accfe92": {
+    "name": "cd_phm_00_foot_0001_index03",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xa2919bc5": {
+    "name": "cd_phm_00_foot_0051_index01",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x4b0e1020": {
+    "name": "cd_phm_00_foot_0051_index07",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xbc0cc373": {
+    "name": "cd_phm_00_foot_0001_index02",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xce7ca2c7": {
+    "name": "cd_phm_00_foot_0001_index09",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xfe00fae4": {
+    "name": "cd_phm_00_foot_0055_index04",
+    "base": "cd_phm_00_foot_0055",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x99805dec": {
+    "name": "cd_phm_00_foot_0056_index07",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0x912de796": {
+    "name": "cd_phm_00_foot_0056_index04",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0xc2624b08": {
+    "name": "cd_phm_00_foot_0002_index11",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x7aa564fc": {
+    "name": "cd_phm_00_foot_0165_index02",
+    "base": "cd_phm_00_foot_0165",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xa1d3b336": {
+    "name": "cd_phm_00_hand_0031",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0xbb2e8545": {
+    "name": "cd_phm_00_hand_0031_index05",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0xc6a146d8": {
+    "name": "cd_phm_00_hand_0052_index01",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb274d2ec": {
+    "name": "cd_phm_00_hand_0052_index06",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x424f2bac": {
+    "name": "cd_phm_00_hand_belt_0083_index04",
+    "base": "cd_phm_00_hand_belt_0083",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xcd43eb5": {
+    "name": "cd_phm_00_hand_0090_index02",
+    "base": "cd_phm_00_hand_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xeceb6c6c": {
+    "name": "cd_phw_01_hand_0009_index01",
+    "base": "cd_phw_01_hand_0009",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xffd306ce": {
+    "name": "cd_phm_00_hand_0031_index03",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0xc6f76bcf": {
+    "name": "cd_phm_00_hand_0031_index02",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0x239a51a2": {
+    "name": "cd_phm_00_hand_0052_index08",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xbebae9cc": {
+    "name": "cd_phm_00_hand_0052_index12",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3b0a1839": {
+    "name": "cd_phm_00_hand_0057",
+    "base": "cd_phm_00_hand_0057",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x39d44230": {
+    "name": "cd_phm_00_hand_0052_index04",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb4e6bf3a": {
+    "name": "cd_phm_00_hand_0052_index02",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x415bbc51": {
+    "name": "cd_phm_00_hand_0031_index01",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0xefd71c72": {
+    "name": "cd_phm_00_hand_0052_index07",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x10c1ff1f": {
+    "name": "cd_phm_00_hand_0057_index03",
+    "base": "cd_phm_00_hand_0057",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x59a21366": {
+    "name": "cd_phm_00_hand_0057_index08",
+    "base": "cd_phm_00_hand_0057",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xcb7eae16": {
+    "name": "cd_phm_00_hand_0031_index10",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0x6de0032c": {
+    "name": "cd_phm_00_hand_0046_index03",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd7479899": {
+    "name": "cd_phm_00_hel_0099_02",
+    "base": "cd_phm_00_hel_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xa843de31": {
+    "name": "cd_phm_00_hel_0107_index02",
+    "base": "cd_phm_00_hel_0107",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      4,
+      255
+    ]
+  },
+  "0x36151e38": {
+    "name": "cd_phm_00_foot_0051_index09",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb13eef23": {
+    "name": "cd_phm_00_foot_0080_index12",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x63404e52": {
+    "name": "cd_phm_00_foot_0032_index10",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0xe7aa752a": {
+    "name": "cd_phm_02_foot_0003_index03",
+    "base": "cd_phm_02_foot_0003",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0x5f43d5": {
+    "name": "cd_phm_00_foot_0032_index05",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0xda3aa31a": {
+    "name": "cd_phm_00_foot_0051",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x66b6b56d": {
+    "name": "cd_phm_00_foot_0032",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0x1c103863": {
+    "name": "cd_phm_00_foot_0032_index02",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0xafb8fe0e": {
+    "name": "cd_phm_00_foot_belt_0018_02_index02",
+    "base": "cd_phm_00_foot_belt_0018",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xf63edbe5": {
+    "name": "cd_phm_00_foot_0054_06",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x786cbd7e": {
+    "name": "cd_phm_00_foot_0067_02",
+    "base": "cd_phm_00_foot_0067",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x23c088d1": {
+    "name": "cd_phm_00_foot_0067_02_index03",
+    "base": "cd_phm_00_foot_0067",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x24ee085e": {
+    "name": "cd_phw_00_foot_0137",
+    "base": "cd_phw_00_foot_0137",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd044db1e": {
+    "name": "cd_phm_00_foot_0032_index14",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0x89fcc01c": {
+    "name": "cd_phm_00_foot_0032_index04",
+    "base": "cd_phm_00_foot_0032",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0xb24ef5a0": {
+    "name": "cd_phm_00_foot_0054_06_index05",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x677d97df": {
+    "name": "cd_phm_00_foot_0056_index02",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0x59101f39": {
+    "name": "cd_phm_00_foot_0105",
+    "base": "cd_phm_00_foot_0105",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5897c9a7": {
+    "name": "cd_phm_00_foot_0054_01_index13",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x9521a58": {
+    "name": "cd_phm_00_foot_0054_01_index08",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0xd19d7fe9": {
+    "name": "cd_phm_00_foot_0051_index17",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd97b4362": {
+    "name": "cd_phm_00_foot_0080_index07",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x1a149456": {
+    "name": "cd_phm_00_foot_0099_01_index20",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xfa818430": {
+    "name": "cd_phm_00_hand_0061_index01",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x6d4f3c": {
+    "name": "cd_phm_00_hand_0007",
+    "base": "cd_phm_00_hand_0007",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xb9ef2434": {
+    "name": "cd_phm_00_hand_0046_index02",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x94671181": {
+    "name": "cd_phm_00_hand_0082_index05",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x4a3bb8a4": {
+    "name": "cd_phm_00_hand_0061_index02",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x7c5ddfd": {
+    "name": "cd_phm_00_hand_0082_index01",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x293d6dc1": {
+    "name": "cd_phm_00_hand_belt_0083",
+    "base": "cd_phm_00_hand_belt_0083",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc0743bac": {
+    "name": "cd_phm_00_hand_0082",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xbabd956b": {
+    "name": "cd_phm_00_hand_0061",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x209ac0af": {
+    "name": "cd_phm_00_hand_0082_index04",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x9e569d06": {
+    "name": "cd_phm_00_hand_0082_index03",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xaeaebe94": {
+    "name": "cd_phm_00_hand_0007_index02",
+    "base": "cd_phm_00_hand_0007",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xb6ae1181": {
+    "name": "cd_phm_00_hand_0046_index05",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9a516bbc": {
+    "name": "cd_phm_00_hand_0046_index08",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xadca29da": {
+    "name": "cd_phm_00_hand_0082_index02",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xecd62696": {
+    "name": "cd_phm_00_hand_0082_index07",
+    "base": "cd_phm_00_hand_0082",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xb4cb8115": {
+    "name": "cd_phm_00_hand_0046_index06",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc856df38": {
+    "name": "cd_phm_00_hand_0046_index10",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xec421a8a": {
+    "name": "cd_phm_00_hand_0061_index09",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1f89a0ae": {
+    "name": "cd_phm_00_hand_0046_index01",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xdf2e6adf": {
+    "name": "cd_phm_00_hand_0061_index17",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x36a917e2": {
+    "name": "cd_phm_00_hand_0007_index01",
+    "base": "cd_phm_00_hand_0007",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xf6392915": {
+    "name": "cd_phm_00_hand_belt_0083_index03",
+    "base": "cd_phm_00_hand_belt_0083",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1814a823": {
+    "name": "cd_phm_00_hand_0105",
+    "base": "cd_phm_00_hand_0105",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      2
+    ]
+  },
+  "0x7e95ae81": {
+    "name": "cd_phm_00_hand_0061_index03",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x243fa31b": {
+    "name": "cd_phm_00_hand_0052_index11",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xba3bda67": {
+    "name": "cd_phm_00_hand_0052_index03",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x42165300": {
+    "name": "cd_phm_00_hand_0061_index05",
+    "base": "cd_phm_00_hand_0061",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x670f5827": {
+    "name": "cd_phm_00_hand_0052_index05",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xce653e87": {
+    "name": "cd_phm_00_hand_0105_index12",
+    "base": "cd_phm_00_hand_0105",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      2
+    ]
+  },
+  "0xacaaa57e": {
+    "name": "cd_phm_00_hand_0105_index07",
+    "base": "cd_phm_00_hand_0105",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      2
+    ]
+  },
+  "0xeda4fbec": {
+    "name": "cd_phm_00_hand_0105_index11",
+    "base": "cd_phm_00_hand_0105",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      2
+    ]
+  },
+  "0xc53b2ccb": {
+    "name": "cd_phm_00_hel_0050_01_index02_d",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xed015de3": {
+    "name": "cd_phm_00_hel_0050_01_index07",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xc7164249": {
+    "name": "cd_phm_00_ub_00_0409",
+    "base": "cd_phm_00_ub_00_0409",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x9049dafe": {
+    "name": "cd_phm_00_foot_00_0379",
+    "base": "cd_phm_00_foot_00_0379",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x260c7dee": {
+    "name": "cd_phm_00_foot_0008_index02",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0xcd232df6": {
+    "name": "cd_phm_00_foot_0008_index05",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x504eb19": {
+    "name": "cd_phm_00_foot_0008_03_index02",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0xbc198dd5": {
+    "name": "cd_phm_00_foot_0008_03_index04",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x922ec8fa": {
+    "name": "cd_phm_00_foot_0008_03",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x16100720": {
+    "name": "cd_phm_00_hand_0054_09",
+    "base": "cd_phm_00_hand_0054",
+    "slot_count": 3,
+    "slots": [
+      2,
+      8,
+      255
+    ]
+  },
+  "0xbb8eff07": {
+    "name": "cd_phm_00_hel_00_0377_c",
+    "base": "cd_phm_00_hel_00_0377",
+    "slot_count": 5,
+    "slots": [
+      1,
+      2,
+      5,
+      6,
+      255
+    ]
+  },
+  "0x4d0045c": {
+    "name": "cd_phm_00_hel_0187_02_index01_d",
+    "base": "cd_phm_00_hel_0187",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf4757f1d": {
+    "name": "cd_phm_00_hel_0264_01_c",
+    "base": "cd_phm_00_hel_0264",
+    "slot_count": 2,
+    "slots": [
+      2,
+      255
+    ]
+  },
+  "0x12f496e7": {
+    "name": "cd_phm_00_foot_0005_index01",
+    "base": "cd_phm_00_foot_0005",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x38c0b437": {
+    "name": "cd_phm_00_foot_0005_index02",
+    "base": "cd_phm_00_foot_0005",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xbd7afcb2": {
+    "name": "cd_phm_00_hand_0011_index05",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xd2376499": {
+    "name": "cd_phm_00_hand_0011_index08",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x4c0f6141": {
+    "name": "cd_phm_00_hand_0011_index03",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x4efd59ad": {
+    "name": "cd_phm_00_hel_set_0102_index01_d",
+    "base": "cd_phm_00_hel_set_0102",
+    "slot_count": 5,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      255
+    ]
+  },
+  "0x14c82fdc": {
+    "name": "cd_phm_00_hel_0057_03_index07_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x49c4eafb": {
+    "name": "cd_phm_00_hel_0130_01_index01_d",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0xf69485eb": {
+    "name": "cd_phm_00_hel_0008_c",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x9282931e": {
+    "name": "cd_phm_00_hel_0010_c",
+    "base": "cd_phm_00_hel_0010",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x8073a5c3": {
+    "name": "cd_phm_00_foot_set_0023",
+    "base": "cd_phm_00_foot_set_0023",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x79c4babf": {
+    "name": "cd_phm_00_hand_0201",
+    "base": "cd_phm_00_hand_0201",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe9f144e0": {
+    "name": "cd_phm_00_hel_0057_02_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0xf3fd624b": {
+    "name": "cd_phm_00_hel_0057_04_index01_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x32efd511": {
+    "name": "cd_phm_00_hel_0130_01_index02_d",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0x31bc4150": {
+    "name": "cd_phm_00_hel_0130_01_index04_d",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0xf4ff3a4f": {
+    "name": "cd_phm_00_hel_0130_01_index06_d",
+    "base": "cd_phm_00_hel_0130",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0x1a3aeaf7": {
+    "name": "cd_phm_00_hel_0057_02_index03_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x1c8417f8": {
+    "name": "cd_phm_00_hel_0049",
+    "base": "cd_phm_00_hel_0049",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0x1dd8bbd7": {
+    "name": "cd_phm_00_hel_0057_05",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x1856f538": {
+    "name": "cd_phm_00_hel_0057_05_index01",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x54422f48": {
+    "name": "cd_phm_00_hel_0057_03",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x2fa21b22": {
+    "name": "cd_phm_00_hel_0057_04",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x3749d701": {
+    "name": "cd_phm_00_hel_0047_06",
+    "base": "cd_phm_00_hel_0047",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xa82424b0": {
+    "name": "cd_phm_00_hel_0014_01_d",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x852e87d7": {
+    "name": "cd_phm_00_hel_0014_01_index01_d",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9f504aa8": {
+    "name": "cd_phm_00_hel_0057_02_index02",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0xd7c26c0f": {
+    "name": "cd_phm_00_hel_0057_03_index01",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x3d70bce6": {
+    "name": "cd_phm_00_hel_0057_04_index04",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x806a9e65": {
+    "name": "cd_phm_00_hel_0057_04_index05",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0xc6bd942f": {
+    "name": "cd_phm_00_hel_0014_05_index01",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x75e9521d": {
+    "name": "cd_phm_00_hel_0014_05_index02",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd42a4e16": {
+    "name": "cd_phm_00_hel_0008_01_index04_d",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xc6ef0c03": {
+    "name": "cd_phm_00_hel_0008_01_index05_d",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x70f7f8f9": {
+    "name": "cd_phm_00_hel_0047_index03_c",
+    "base": "cd_phm_00_hel_0047",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xaf09ea89": {
+    "name": "cd_phm_00_hel_0047_index05_c",
+    "base": "cd_phm_00_hel_0047",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x9247131": {
+    "name": "cd_phm_00_hel_0057_03_index03",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x76c6fa50": {
+    "name": "cd_phm_00_hel_0057_03_index02",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x391dc945": {
+    "name": "cd_phm_00_hel_0008_01_d",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x3a9756b1": {
+    "name": "cd_phm_00_hel_0101_01",
+    "base": "cd_phm_00_hel_0101",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x7d14011a": {
+    "name": "cd_phm_00_ub_00_0376",
+    "base": "cd_phm_00_ub_00_0376",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xa2b5bc7d": {
+    "name": "cd_phm_00_cloak_00_0376_y",
+    "base": "cd_phm_00_cloak_00_0376",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x25fbe36a": {
+    "name": "cd_phm_00_foot_0051_index21",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9d9792ff": {
+    "name": "cd_phm_00_hand_00_0376",
+    "base": "cd_phm_00_hand_00_0376",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x8598983e": {
+    "name": "cd_phm_00_hel_0128_02_d",
+    "base": "cd_phm_00_hel_0128",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      7
+    ]
+  },
+  "0x734ff393": {
+    "name": "cd_phm_00_cloak_00_0310_t",
+    "base": "cd_phm_00_cloak_00_0310",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb9150399": {
+    "name": "cd_phm_00_foot_0204",
+    "base": "cd_phm_00_foot_0204",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x8d4ceb3e": {
+    "name": "cd_phm_00_hel_00_0337_c",
+    "base": "cd_phm_00_hel_00_0337",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xa937deaa": {
+    "name": "cd_phm_00_hel_00_0017",
+    "base": "cd_phm_00_hel_00_0017",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x7a8c64b4": {
+    "name": "cd_phm_00_hel_0050_01_i",
+    "base": "cd_phm_00_hel_0050",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xdc858374": {
+    "name": "cd_phm_00_hel_0120",
+    "base": "cd_phm_00_hel_0120",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0xee3d2e45": {
+    "name": "cd_phm_00_hel_0122_01_index01",
+    "base": "cd_phm_00_hel_0122",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x2cb2c623": {
+    "name": "cd_phw_00_cloak_00_0151_s",
+    "base": "cd_phw_00_cloak_00_0151",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      255
+    ]
+  },
+  "0x3d58ed": {
+    "name": "cd_phw_00_cloak_00_0160_s",
+    "base": "cd_phw_00_cloak_00_0160",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0xb378084d": {
+    "name": "cd_phw_00_cloak_00_0161_s",
+    "base": "cd_phw_00_cloak_00_0161",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x22167b6a": {
+    "name": "cd_phw_00_cloak_00_0162_s",
+    "base": "cd_phw_00_cloak_00_0162",
+    "slot_count": 2,
+    "slots": [
+      3,
+      255
+    ]
+  },
+  "0xa06ffb92": {
+    "name": "cd_phw_01_hand_0009",
+    "base": "cd_phw_01_hand_0009",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xbf73f2b": {
+    "name": "cd_phm_00_ub_00_0375",
+    "base": "cd_phm_00_ub_00_0375",
+    "slot_count": 2,
+    "slots": [
+      3,
+      9
+    ]
+  },
+  "0x72d2e9f1": {
+    "name": "cd_phm_00_cloak_00_0375_t",
+    "base": "cd_phm_00_cloak_00_0375",
+    "slot_count": 2,
+    "slots": [
+      1,
+      255
+    ]
+  },
+  "0xb88203d8": {
+    "name": "cd_phm_00_hand_00_0375",
+    "base": "cd_phm_00_hand_00_0375",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      4
+    ]
+  },
+  "0x629e7e5d": {
+    "name": "cd_phm_00_hand_0007_index08",
+    "base": "cd_phm_00_hand_0007",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xee3c3b5b": {
+    "name": "cd_phm_00_hand_0128_02",
+    "base": "cd_phm_00_hand_0128",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xfc44f294": {
+    "name": "cd_phm_00_hand_0054",
+    "base": "cd_phm_00_hand_0054",
+    "slot_count": 3,
+    "slots": [
+      2,
+      8,
+      255
+    ]
+  },
+  "0xd3821c8b": {
+    "name": "cd_phm_00_ub_00_0054",
+    "base": "cd_phm_00_ub_00_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x57a58d47": {
+    "name": "cd_phm_00_cloak_00_0054_s",
+    "base": "cd_phm_00_cloak_00_0054",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      255
+    ]
+  },
+  "0xa1d763be": {
+    "name": "cd_phm_00_foot_0046",
+    "base": "cd_phm_00_foot_0046",
+    "slot_count": 4,
+    "slots": [
+      0,
+      2,
+      3,
+      255
+    ]
+  },
+  "0x3a6e2308": {
+    "name": "cd_phm_00_foot_0090_index02",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x68cf3f8e": {
+    "name": "cd_phm_00_foot_0054_01_index07",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0xce35a4be": {
+    "name": "cd_phm_00_foot_0099_01_index05",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x1c85c780": {
+    "name": "cd_phm_00_foot_0052_index10",
+    "base": "cd_phm_00_foot_0052",
+    "slot_count": 2,
+    "slots": [
+      2,
+      255
+    ]
+  },
+  "0xafce6060": {
+    "name": "cd_phm_00_foot_0110",
+    "base": "cd_phm_00_foot_0110",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x912629e7": {
+    "name": "cd_phm_00_foot_0052_index06",
+    "base": "cd_phm_00_foot_0052",
+    "slot_count": 2,
+    "slots": [
+      2,
+      255
+    ]
+  },
+  "0xee81e7ad": {
+    "name": "cd_phm_00_hand_0052_index13",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1e50c0c2": {
+    "name": "cd_phm_00_hel_0054_08",
+    "base": "cd_phm_00_hel_0054",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xfb13d1d2": {
+    "name": "cd_phm_00_foot_0054",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x70d2336a": {
+    "name": "cd_phm_00_foot_0099_01_index04",
+    "base": "cd_phm_00_foot_0099",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xd2634567": {
+    "name": "cd_phm_00_foot_0001_index04",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1406d99": {
+    "name": "cd_phm_00_foot_0054_01_index06",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x47114af0": {
+    "name": "cd_phm_00_foot_0105_index02",
+    "base": "cd_phm_00_foot_0105",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd9013ffd": {
+    "name": "cd_phm_00_foot_0001_index11",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x863fc119": {
+    "name": "cd_phm_00_foot_0055_index05",
+    "base": "cd_phm_00_foot_0055",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x54ee4b3b": {
+    "name": "cd_phm_00_foot_0002_index04",
+    "base": "cd_phm_00_foot_0002",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x75f98c": {
+    "name": "cd_phm_00_foot_0001",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe16c44dc": {
+    "name": "cd_phm_00_foot_0090_index09",
+    "base": "cd_phm_00_foot_0090",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xa2c656a2": {
+    "name": "cd_phm_00_foot_0080_index15",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xadce0fcc": {
+    "name": "cd_phm_00_hand_0049",
+    "base": "cd_phm_00_hand_0049",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf35314c2": {
+    "name": "cd_phm_00_hand_0031_index07",
+    "base": "cd_phm_00_hand_0031",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "0x77b7917": {
+    "name": "cd_phm_00_hand_0052_index10",
+    "base": "cd_phm_00_hand_0052",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3d7bbe2f": {
+    "name": "cd_phm_00_hel_set_0138_i",
+    "base": "cd_phm_00_hel_set_0138",
+    "slot_count": 1,
+    "slots": [
+      3
+    ]
+  },
+  "0x3b350c53": {
+    "name": "cd_phm_00_ub_0054_15",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x2fd0ba50": {
+    "name": "cd_phm_00_cloak_0054_15_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x7556d61a": {
+    "name": "cd_phm_00_foot_0054_01_index12",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x321c7d93": {
+    "name": "cd_phm_00_foot_0001_index17",
+    "base": "cd_phm_00_foot_0001",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x14e637c7": {
+    "name": "cd_phm_00_foot_0051_index03",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x7c5d73d0": {
+    "name": "cd_phm_00_hand_0105_index02",
+    "base": "cd_phm_00_hand_0105",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      2
+    ]
+  },
+  "0x471d6d6f": {
+    "name": "cd_phm_00_hand_0046",
+    "base": "cd_phm_00_hand_0046",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1a0a93f0": {
+    "name": "cd_phm_00_hel_00_0204_c",
+    "base": "cd_phm_00_hel_00_0204",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x58fe0167": {
+    "name": "cd_phm_00_hel_0114",
+    "base": "cd_phm_00_hel_0114",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xaee44f0f": {
+    "name": "cd_phm_00_foot_0056",
+    "base": "cd_phm_00_foot_0056",
+    "slot_count": 2,
+    "slots": [
+      2,
+      3
+    ]
+  },
+  "0xeb2c0d59": {
+    "name": "cd_phw_00_ub_00_0160",
+    "base": "cd_phw_00_ub_00_0160",
+    "slot_count": 8,
+    "slots": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      8,
+      10,
+      255
+    ]
+  },
+  "0x5f7bcc1b": {
+    "name": "cd_phw_00_ub_00_0170_u",
+    "base": "cd_phw_00_ub_00_0170",
+    "slot_count": 2,
+    "slots": [
+      4,
+      7
+    ]
+  },
+  "0x7b44db85": {
+    "name": "cd_phw_00_ub_00_0166",
+    "base": "cd_phw_00_ub_00_0166",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xfb1ef55": {
+    "name": "cd_phw_00_cloak_00_0170_s",
+    "base": "cd_phw_00_cloak_00_0170",
+    "slot_count": 1,
+    "slots": [
+      3
+    ]
+  },
+  "0x8e8879be": {
+    "name": "cd_phw_00_cloak_00_0166_s",
+    "base": "cd_phw_00_cloak_00_0166",
+    "slot_count": 2,
+    "slots": [
+      1,
+      255
+    ]
+  },
+  "0x542733ce": {
+    "name": "cd_phw_00_foot_00_0160",
+    "base": "cd_phw_00_foot_00_0160",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x1a43ae71": {
+    "name": "cd_phw_00_foot_00_0161_index01",
+    "base": "cd_phw_00_foot_00_0161",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf4b8584a": {
+    "name": "cd_phw_00_foot_00_0166",
+    "base": "cd_phw_00_foot_00_0166",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xef8dc2ad": {
+    "name": "cd_phw_00_hand_00_0161_index01",
+    "base": "cd_phw_00_hand_00_0161",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xe635aa6d": {
+    "name": "cd_phw_00_hand_00_0166",
+    "base": "cd_phw_00_hand_00_0166",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x69e4b424": {
+    "name": "cd_phw_00_ub_00_0161",
+    "base": "cd_phw_00_ub_00_0161",
+    "slot_count": 4,
+    "slots": [
+      0,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xfd694a07": {
+    "name": "cd_phw_00_foot_00_0161",
+    "base": "cd_phw_00_foot_00_0161",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x8973d20e": {
+    "name": "cd_phw_00_hand_00_0161",
+    "base": "cd_phw_00_hand_00_0161",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xcf3d450b": {
+    "name": "cd_phw_00_ub_00_0163_index02",
+    "base": "cd_phw_00_ub_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xee13986c": {
+    "name": "cd_phw_00_foot_00_0163_index02",
+    "base": "cd_phw_00_foot_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xd9f7ee83": {
+    "name": "cd_phw_00_ub_00_0163",
+    "base": "cd_phw_00_ub_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0x5ddd6018": {
+    "name": "cd_phw_00_ub_00_0163_index01",
+    "base": "cd_phw_00_ub_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0x6d81fd43": {
+    "name": "cd_phw_00_cloak_00_0163_t",
+    "base": "cd_phw_00_cloak_00_0163",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x76ce309a": {
+    "name": "cd_phw_00_cloak_00_0163_index01_t",
+    "base": "cd_phw_00_cloak_00_0163",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xc11abb60": {
+    "name": "cd_phw_00_foot_00_0163",
+    "base": "cd_phw_00_foot_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xd06b6306": {
+    "name": "cd_phw_00_foot_0043_index02",
+    "base": "cd_phw_00_foot_0043",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0xf3eb0182": {
+    "name": "cd_phw_00_foot_00_0163_index01",
+    "base": "cd_phw_00_foot_00_0163",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xba6d5503": {
+    "name": "cd_phm_00_foot_0055",
+    "base": "cd_phm_00_foot_0055",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xbf44015f": {
+    "name": "cd_phm_00_hand_0055",
+    "base": "cd_phm_00_hand_0055",
+    "slot_count": 5,
+    "slots": [
+      0,
+      1,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xb35b8c07": {
+    "name": "cd_phm_00_foot_0008_index04",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x69c83c57": {
+    "name": "cd_phm_00_hand_0362",
+    "base": "cd_phm_00_hand_0362",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0x3b31bb78": {
+    "name": "cd_phm_00_hel_0202",
+    "base": "cd_phm_00_hel_0202",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xef33f3c0": {
+    "name": "cd_phm_00_hel_00_0005_c",
+    "base": "cd_phm_00_hel_00_0005",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xe9e8a5ac": {
+    "name": "cd_phm_00_foot_0008_03_index01",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x2cfadff3": {
+    "name": "cd_phm_00_foot_0008",
+    "base": "cd_phm_00_foot_0008",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x52d0e17b": {
+    "name": "cd_phm_00_hel_0009_i",
+    "base": "cd_phm_00_hel_0009",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x221f3122": {
+    "name": "cd_phm_00_hel_0197_i",
+    "base": "cd_phm_00_hel_0197",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x4d165238": {
+    "name": "cd_phm_00_hel_0008_03_i",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xeb5f5a7a": {
+    "name": "cd_phm_00_hel_0187_01_d",
+    "base": "cd_phm_00_hel_0187",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf4a1323c": {
+    "name": "cd_phm_00_foot_0005",
+    "base": "cd_phm_00_foot_0005",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x7e47a264": {
+    "name": "cd_phm_00_hand_0011",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x36577820": {
+    "name": "cd_phm_00_hand_0011_index04",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x6bb58e31": {
+    "name": "cd_phm_00_hel_0047_05_index01_i",
+    "base": "cd_phm_00_hel_0047",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xd95f511b": {
+    "name": "cd_phm_00_hel_0013_05_c",
+    "base": "cd_phm_00_hel_0013",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xa66d1a33": {
+    "name": "cd_phm_00_hel_0057_03_index06_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x74af32bf": {
+    "name": "cd_phm_00_hel_0008_01_index02_i",
+    "base": "cd_phm_00_hel_0008",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x8ae22547": {
+    "name": "cd_phm_14_hel_0049_01",
+    "base": "cd_phm_14_hel_0049",
+    "slot_count": 1,
+    "slots": [
+      4
+    ]
+  },
+  "0x3a8b7075": {
+    "name": "cd_phm_00_hand_0011_index06",
+    "base": "cd_phm_00_hand_0011",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x6d01a1fb": {
+    "name": "cd_phm_00_hel_0057_04_index03_d",
+    "base": "cd_phm_00_hel_0057",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0x9765352a": {
+    "name": "cd_phm_00_hel_0047_06_index01",
+    "base": "cd_phm_00_hel_0047",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x8573cbe": {
+    "name": "cd_phm_00_hel_0014_05_i",
+    "base": "cd_phm_00_hel_0014",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x2cc23add": {
+    "name": "cd_phm_00_ub_00_0439",
+    "base": "cd_phm_00_ub_00_0439",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      5
+    ]
+  },
+  "0x4bc800b1": {
+    "name": "cd_phm_00_cloak_00_0439_s",
+    "base": "cd_phm_00_cloak_00_0439",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x72b6683f": {
+    "name": "cd_phm_00_foot_00_0369",
+    "base": "cd_phm_00_foot_00_0369",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xf5f978d1": {
+    "name": "cd_phm_00_foot_00_0342",
+    "base": "cd_phm_00_foot_00_0342",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xa1959de3": {
+    "name": "cd_phm_00_foot_00_0439",
+    "base": "cd_phm_00_foot_00_0439",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x39703eca": {
+    "name": "cd_phm_00_hand_00_0439",
+    "base": "cd_phm_00_hand_00_0439",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd892f942": {
+    "name": "cd_phm_00_hel_00_0439_c",
+    "base": "cd_phm_00_hel_00_0439",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x10c6eb13": {
+    "name": "cd_phm_00_ub_00_0342",
+    "base": "cd_phm_00_ub_00_0342",
+    "slot_count": 3,
+    "slots": [
+      0,
+      6,
+      255
+    ]
+  },
+  "0xb4c07c3b": {
+    "name": "cd_phm_00_ub_00_0440",
+    "base": "cd_phm_00_ub_00_0440",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xea5b17c6": {
+    "name": "cd_phm_00_cloak_00_0369_s",
+    "base": "cd_phm_00_cloak_00_0369",
+    "slot_count": 4,
+    "slots": [
+      0,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xee68e91a": {
+    "name": "cd_phm_00_cloak_00_0342_s",
+    "base": "cd_phm_00_cloak_00_0342",
+    "slot_count": 6,
+    "slots": [
+      0,
+      2,
+      8,
+      9,
+      11,
+      255
+    ]
+  },
+  "0x8f2aef8d": {
+    "name": "cd_phm_00_cloak_00_0440_s",
+    "base": "cd_phm_00_cloak_00_0440",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0xd15ea935": {
+    "name": "cd_phm_00_hand_00_0369",
+    "base": "cd_phm_00_hand_00_0369",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x7f2b96be": {
+    "name": "cd_phm_00_hand_00_0342",
+    "base": "cd_phm_00_hand_00_0342",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xc0551703": {
+    "name": "cd_phm_00_hand_00_0342_index01",
+    "base": "cd_phm_00_hand_00_0342",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x3bcb1d1": {
+    "name": "cd_phm_00_hand_00_0440",
+    "base": "cd_phm_00_hand_00_0440",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5fa5577f": {
+    "name": "cd_phm_00_foot_00_0440",
+    "base": "cd_phm_00_foot_00_0440",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xbbe3b4cf": {
+    "name": "cd_phm_00_hel_00_0369_c",
+    "base": "cd_phm_00_hel_00_0369",
+    "slot_count": 5,
+    "slots": [
+      0,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0x82bf29a": {
+    "name": "cd_phm_00_hel_00_0342_c",
+    "base": "cd_phm_00_hel_00_0342",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xab2574c7": {
+    "name": "cd_phm_00_hel_00_0440_c",
+    "base": "cd_phm_00_hel_00_0440",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x8d3dd3a3": {
+    "name": "cd_phw_00_ub_00_0151_u",
+    "base": "cd_phw_00_ub_00_0151",
+    "slot_count": 1,
+    "slots": [
+      10
+    ]
+  },
+  "0x401750b6": {
+    "name": "cd_phw_00_cloak_00_0146_s",
+    "base": "cd_phw_00_cloak_00_0146",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0x9050380e": {
+    "name": "cd_phw_00_hand_00_0151",
+    "base": "cd_phw_00_hand_00_0151",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xd66d2db2": {
+    "name": "cd_phw_00_hand_00_0146",
+    "base": "cd_phw_00_hand_00_0146",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf97328e6": {
+    "name": "cd_phw_00_hand_00_0160",
+    "base": "cd_phw_00_hand_00_0160",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xcb7e5103": {
+    "name": "cd_phw_00_hand_00_0170",
+    "base": "cd_phw_00_hand_00_0170",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      3
+    ]
+  },
+  "0x37401810": {
+    "name": "cd_phw_00_hel_00_0151",
+    "base": "cd_phw_00_hel_00_0151",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x6515059a": {
+    "name": "cd_phw_00_hel_00_0146_d",
+    "base": "cd_phw_00_hel_00_0146",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x76dc5198": {
+    "name": "cd_phw_00_hel_00_0161",
+    "base": "cd_phw_00_hel_00_0161",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x79c248b0": {
+    "name": "cd_phw_00_foot_00_0151",
+    "base": "cd_phw_00_foot_00_0151",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0xcaac0751": {
+    "name": "cd_phw_00_foot_00_0020_index01",
+    "base": "cd_phw_00_foot_00_0020",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xcab75299": {
+    "name": "cd_phw_00_foot_00_0020_index02",
+    "base": "cd_phw_00_foot_00_0020",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x94e64ba2": {
+    "name": "cd_phw_00_foot_00_0170",
+    "base": "cd_phw_00_foot_00_0170",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xc8f448cd": {
+    "name": "cd_phw_00_ub_00_0162",
+    "base": "cd_phw_00_ub_00_0162",
+    "slot_count": 5,
+    "slots": [
+      0,
+      1,
+      2,
+      4,
+      255
+    ]
+  },
+  "0x4c154aa2": {
+    "name": "cd_phw_00_cloak_00_0145_s",
+    "base": "cd_phw_00_cloak_00_0145",
+    "slot_count": 2,
+    "slots": [
+      3,
+      255
+    ]
+  },
+  "0xb7c8a5d0": {
+    "name": "cd_phw_00_hand_00_0145",
+    "base": "cd_phw_00_hand_00_0145",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x36d8ff4c": {
+    "name": "cd_phw_00_hel_00_0145",
+    "base": "cd_phw_00_hel_00_0145",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x28aa3948": {
+    "name": "cd_phw_00_hel_00_0141",
+    "base": "cd_phw_00_hel_00_0141",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3ba279f5": {
+    "name": "cd_phw_00_hel_00_0162",
+    "base": "cd_phw_00_hel_00_0162",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x74bd9b37": {
+    "name": "cd_phw_00_hel_00_0169",
+    "base": "cd_phw_00_hel_00_0169",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb6d83359": {
+    "name": "cd_phw_00_foot_00_0020",
+    "base": "cd_phw_00_foot_00_0020",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x7b305d2a": {
+    "name": "cd_phw_00_foot_00_0145",
+    "base": "cd_phw_00_foot_00_0145",
+    "slot_count": 2,
+    "slots": [
+      1,
+      255
+    ]
+  },
+  "0x131320ef": {
+    "name": "cd_phw_00_hand_00_0141",
+    "base": "cd_phw_00_hand_00_0141",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x64a8b654": {
+    "name": "cd_phm_00_ub_00_0401",
+    "base": "cd_phm_00_ub_00_0401",
+    "slot_count": 8,
+    "slots": [
+      0,
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      255
+    ]
+  },
+  "0xab38d868": {
+    "name": "cd_phm_00_ub_00_0393",
+    "base": "cd_phm_00_ub_00_0393",
+    "slot_count": 2,
+    "slots": [
+      0,
+      6
+    ]
+  },
+  "0xe8432390": {
+    "name": "cd_phm_00_ub_0054_01",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x379f3676": {
+    "name": "cd_phm_00_ub_0054_17",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x7d594d69": {
+    "name": "cd_phm_00_ub_0054_16",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x6ba33e3e": {
+    "name": "cd_phm_00_hel_00_0399_index01_c",
+    "base": "cd_phm_00_hel_00_0399",
+    "slot_count": 7,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      255
+    ]
+  },
+  "0x9f9f5471": {
+    "name": "cd_phm_00_hel_00_0411",
+    "base": "cd_phm_00_hel_00_0411",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x942317bc": {
+    "name": "cd_phm_00_hel_00_0397_c",
+    "base": "cd_phm_00_hel_00_0397",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0xc5e46ceb": {
+    "name": "cd_phm_00_hel_00_0451",
+    "base": "cd_phm_00_hel_00_0451",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xb1261108": {
+    "name": "cd_phm_00_hel_00_0400",
+    "base": "cd_phm_00_hel_00_0400",
+    "slot_count": 3,
+    "slots": [
+      0,
+      6,
+      255
+    ]
+  },
+  "0xd5b73a7a": {
+    "name": "cd_phm_00_hel_00_0401",
+    "base": "cd_phm_00_hel_00_0401",
+    "slot_count": 4,
+    "slots": [
+      0,
+      3,
+      5,
+      255
+    ]
+  },
+  "0xbd9f3282": {
+    "name": "cd_phm_00_hel_00_0166_i",
+    "base": "cd_phm_00_hel_00_0166",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x67ce07eb": {
+    "name": "cd_phm_00_hel_00_0373_index01_c",
+    "base": "cd_phm_00_hel_00_0373",
+    "slot_count": 8,
+    "slots": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      255
+    ]
+  },
+  "0x131a89d4": {
+    "name": "cd_phm_00_hel_0264_c",
+    "base": "cd_phm_00_hel_0264",
+    "slot_count": 2,
+    "slots": [
+      2,
+      255
+    ]
+  },
+  "0x71294ca8": {
+    "name": "cd_phm_00_hel_00_0393_c",
+    "base": "cd_phm_00_hel_00_0393",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x843e0e90": {
+    "name": "cd_phm_00_hel_0226_index01",
+    "base": "cd_phm_00_hel_0226",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x866d98ce": {
+    "name": "cd_phm_00_hand_00_0421",
+    "base": "cd_phm_00_hand_00_0421",
+    "slot_count": 4,
+    "slots": [
+      1,
+      4,
+      5,
+      255
+    ]
+  },
+  "0xc3d66d1b": {
+    "name": "cd_phm_00_hand_00_0433",
+    "base": "cd_phm_00_hand_00_0433",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x8d7db4e8": {
+    "name": "cd_phm_00_hand_00_0403_index01",
+    "base": "cd_phm_00_hand_00_0403",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xdc611ec5": {
+    "name": "cd_phm_00_hand_00_0037",
+    "base": "cd_phm_00_hand_00_0037",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xa881c469": {
+    "name": "cd_phm_00_hand_00_0403",
+    "base": "cd_phm_00_hand_00_0403",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xab0379c1": {
+    "name": "cd_phm_00_hand_0054_index04",
+    "base": "cd_phm_00_hand_0054",
+    "slot_count": 3,
+    "slots": [
+      2,
+      8,
+      255
+    ]
+  },
+  "0xd2ab6a68": {
+    "name": "cd_phm_00_hand_00_0393",
+    "base": "cd_phm_00_hand_00_0393",
+    "slot_count": 3,
+    "slots": [
+      1,
+      2,
+      3
+    ]
+  },
+  "0xc2bae88d": {
+    "name": "cd_phm_00_foot_00_0453",
+    "base": "cd_phm_00_foot_00_0453",
+    "slot_count": 1,
+    "slots": [
+      3
+    ]
+  },
+  "0x2f04d228": {
+    "name": "cd_phm_00_foot_00_0423",
+    "base": "cd_phm_00_foot_00_0423",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xecfb7af0": {
+    "name": "cd_phm_00_foot_00_0437_index01",
+    "base": "cd_phm_00_foot_00_0437",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xcce182a0": {
+    "name": "cd_phm_00_foot_0054_01_index14",
+    "base": "cd_phm_00_foot_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      3
+    ]
+  },
+  "0x964a2de4": {
+    "name": "cd_phm_00_foot_00_0424",
+    "base": "cd_phm_00_foot_00_0424",
+    "slot_count": 1,
+    "slots": [
+      8
+    ]
+  },
+  "0xfc7a46cc": {
+    "name": "cd_phm_00_foot_00_0402",
+    "base": "cd_phm_00_foot_00_0402",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0xd3ff577c": {
+    "name": "cd_phm_00_foot_00_0403",
+    "base": "cd_phm_00_foot_00_0403",
+    "slot_count": 3,
+    "slots": [
+      0,
+      1,
+      255
+    ]
+  },
+  "0x9f209917": {
+    "name": "cd_phm_00_foot_00_0401",
+    "base": "cd_phm_00_foot_00_0401",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xae28435b": {
+    "name": "cd_phm_00_foot_00_0432",
+    "base": "cd_phm_00_foot_00_0432",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xbeaecdb8": {
+    "name": "cd_phm_00_foot_00_0393",
+    "base": "cd_phm_00_foot_00_0393",
+    "slot_count": 2,
+    "slots": [
+      1,
+      3
+    ]
+  },
+  "0x24987282": {
+    "name": "cd_phm_00_foot_0051_index10",
+    "base": "cd_phm_00_foot_0051",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5cf3e082": {
+    "name": "cd_phm_00_cloak_00_0401_t",
+    "base": "cd_phm_00_cloak_00_0401",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      255
+    ]
+  },
+  "0xcd6f0f1b": {
+    "name": "cd_phm_00_cloak_0054_16_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xd99aa2a7": {
+    "name": "cd_phm_00_cloak_00_0393_s",
+    "base": "cd_phm_00_cloak_00_0393",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0xb88c7a00": {
+    "name": "cd_phm_00_cloak_00_0340_y",
+    "base": "cd_phm_00_cloak_00_0340",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x6701465d": {
+    "name": "cd_phm_00_cloak_0054_01_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xf04f4acf": {
+    "name": "cd_phm_00_bag_0053",
+    "base": "cd_phm_00_bag_0053",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0x8b626b3c": {
+    "name": "cd_phm_00_hel_00_0389_c",
+    "base": "cd_phm_00_hel_00_0389",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xec268b03": {
+    "name": "cd_phm_00_hel_00_0391_f",
+    "base": "cd_phm_00_hel_00_0391",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      255
+    ]
+  },
+  "0x18db73d1": {
+    "name": "cd_phm_00_hel_00_0391_slim_f",
+    "base": "cd_phm_00_hel_00_0391",
+    "slot_count": 6,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      255
+    ]
+  },
+  "0xab3a2cc2": {
+    "name": "cd_phm_00_hel_00_0399_c",
+    "base": "cd_phm_00_hel_00_0399",
+    "slot_count": 7,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      255
+    ]
+  },
+  "0xcf8a34b9": {
+    "name": "cd_phm_03_shield_0114",
+    "base": "cd_phm_03_shield_0114",
+    "slot_count": 2,
+    "slots": [
+      1,
+      3
+    ]
+  },
+  "0x101b4bf": {
+    "name": "cd_phm_00_hel_00_0435_d",
+    "base": "cd_phm_00_hel_00_0435",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x8f6376c7": {
+    "name": "cd_phm_00_ub_00_0435",
+    "base": "cd_phm_00_ub_00_0435",
+    "slot_count": 2,
+    "slots": [
+      0,
+      5
+    ]
+  },
+  "0xfd5b5b71": {
+    "name": "cd_phm_00_cloak_00_0435_s",
+    "base": "cd_phm_00_cloak_00_0435",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x94a38430": {
+    "name": "cd_phm_00_hand_00_0435",
+    "base": "cd_phm_00_hand_00_0435",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x14a331e5": {
+    "name": "cd_phm_00_foot_00_0435",
+    "base": "cd_phm_00_foot_00_0435",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb37ffd12": {
+    "name": "cd_phm_03_shield_0118",
+    "base": "cd_phm_03_shield_0118",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x439e52b6": {
+    "name": "cd_phm_04_bow_0016",
+    "base": "cd_phm_04_bow_0016",
+    "slot_count": 2,
+    "slots": [
+      0,
+      4
+    ]
+  },
+  "0x7c0bab83": {
+    "name": "cd_phm_04_quiver_0005",
+    "base": "cd_phm_04_quiver_0005",
+    "slot_count": 2,
+    "slots": [
+      8,
+      10
+    ]
+  },
+  "0x62d5b2c9": {
+    "name": "cd_phm_04_quiver_0005_atype",
+    "base": "cd_phm_04_quiver_0005",
+    "slot_count": 2,
+    "slots": [
+      8,
+      10
+    ]
+  },
+  "0xb6e16f75": {
+    "name": "cd_phm_00_ub_00_0374",
+    "base": "cd_phm_00_ub_00_0374",
+    "slot_count": 3,
+    "slots": [
+      0,
+      2,
+      255
+    ]
+  },
+  "0xe277b9e1": {
+    "name": "cd_phm_00_hand_00_0374",
+    "base": "cd_phm_00_hand_00_0374",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x12132cb5": {
+    "name": "cd_phm_00_foot_00_0374",
+    "base": "cd_phm_00_foot_00_0374",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x218a0c5d": {
+    "name": "cd_phm_00_cloak_00_0374_s",
+    "base": "cd_phm_00_cloak_00_0374",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xc394027f": {
+    "name": "cd_phm_00_cloak_0054_17_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x32ae9ea6": {
+    "name": "cd_phm_00_hel_0019_index04_d",
+    "base": "cd_phm_00_hel_0019",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x156021bd": {
+    "name": "cd_phm_00_foot_0080_index08",
+    "base": "cd_phm_00_foot_0080",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xd6782247": {
+    "name": "cd_phm_00_hel_0054_13_d",
+    "base": "cd_phm_00_hel_0054",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x76fe687f": {
+    "name": "cd_phm_00_ub_0054_13",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x5412edfc": {
+    "name": "cd_phm_00_cloak_0054_13_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x4d23a9d0": {
+    "name": "cd_phm_00_hand_0054_13",
+    "base": "cd_phm_00_hand_0054",
+    "slot_count": 3,
+    "slots": [
+      2,
+      8,
+      255
+    ]
+  },
+  "0xdfc7a64f": {
+    "name": "cd_phm_00_foot_0067_02_index01",
+    "base": "cd_phm_00_foot_0067",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc5b87149": {
+    "name": "cd_phm_00_hel_set_0102_c",
+    "base": "cd_phm_00_hel_set_0102",
+    "slot_count": 5,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      255
+    ]
+  },
+  "0xaa0e3d02": {
+    "name": "cd_phm_00_ub_0054_09",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x86aaeff8": {
+    "name": "cd_phm_00_cloak_0054_09_s",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0xc9b3d0a6": {
+    "name": "cd_phm_00_hel_01_0332_d",
+    "base": "cd_phm_00_hel_01_0332",
+    "slot_count": 5,
+    "slots": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ]
+  },
+  "0x7e13652a": {
+    "name": "cd_phm_00_hel_0054_06_d",
+    "base": "cd_phm_00_hel_0054",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xa32d2cfc": {
+    "name": "cd_phm_00_ub_0054_06",
+    "base": "cd_phm_00_ub_0054",
+    "slot_count": 5,
+    "slots": [
+      0,
+      3,
+      4,
+      8,
+      255
+    ]
+  },
+  "0x5013f222": {
+    "name": "cd_phm_00_cloak_0054_06_t",
+    "base": "cd_phm_00_cloak_0054",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      255
+    ]
+  },
+  "0x5dd4d769": {
+    "name": "cd_phm_01_sword_0054_04_r",
+    "base": "cd_phm_01_sword_0054",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x68ba069f": {
+    "name": "cd_phm_01_sword_0054_04_l",
+    "base": "cd_phm_01_sword_0054",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x3f0d5802": {
+    "name": "cd_phm_00_foot_00_0437",
+    "base": "cd_phm_00_foot_00_0437",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xcfec56d3": {
+    "name": "cd_phm_01_dagger_0079_r",
+    "base": "cd_phm_01_dagger_0079",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xeeb50706": {
+    "name": "cd_phm_01_dagger_0079_l",
+    "base": "cd_phm_01_dagger_0079",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x77dbe5f9": {
+    "name": "cd_phm_01_dagger_0032_r",
+    "base": "cd_phm_01_dagger_0032",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf1dfa770": {
+    "name": "cd_phm_01_dagger_0032_l",
+    "base": "cd_phm_01_dagger_0032",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x1911b429": {
+    "name": "cd_phm_01_dagger_0082_r",
+    "base": "cd_phm_01_dagger_0082",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xdae73c04": {
+    "name": "cd_phm_01_dagger_0082_l",
+    "base": "cd_phm_01_dagger_0082",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc577e8a6": {
+    "name": "cd_phm_01_mace_0034_r",
+    "base": "cd_phm_01_mace_0034",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xfb9e36a2": {
+    "name": "cd_phm_01_mace_0034_l",
+    "base": "cd_phm_01_mace_0034",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x5e70e877": {
+    "name": "cd_phm_01_mace_0027_index01_r",
+    "base": "cd_phm_01_mace_0027",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9f38bb64": {
+    "name": "cd_phm_01_mace_0027_index01_l",
+    "base": "cd_phm_01_mace_0027",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc3e34719": {
+    "name": "cd_phm_01_mace_0029_r",
+    "base": "cd_phm_01_mace_0029",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x9e94f12": {
+    "name": "cd_phm_01_mace_0029_l",
+    "base": "cd_phm_01_mace_0029",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xa7b3571e": {
+    "name": "cd_phm_01_mace_0030_r",
+    "base": "cd_phm_01_mace_0030",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xd1c514c0": {
+    "name": "cd_phm_01_mace_0030_l",
+    "base": "cd_phm_01_mace_0030",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0x15fde6da": {
+    "name": "cd_phm_01_mace_0036_r",
+    "base": "cd_phm_01_mace_0036",
+    "slot_count": 2,
+    "slots": [
+      0,
+      4
+    ]
+  },
+  "0x6184ca1b": {
+    "name": "cd_phm_01_mace_0036_l",
+    "base": "cd_phm_01_mace_0036",
+    "slot_count": 2,
+    "slots": [
+      0,
+      4
+    ]
+  },
+  "0x823fb5a": {
+    "name": "cd_phm_01_mace_0212_r",
+    "base": "cd_phm_01_mace_0212",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe4f24700": {
+    "name": "cd_phm_01_mace_0212_l",
+    "base": "cd_phm_01_mace_0212",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x55510521": {
+    "name": "cd_phm_01_mace_0008_r",
+    "base": "cd_phm_01_mace_0008",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x83640d06": {
+    "name": "cd_phm_01_mace_0008_l",
+    "base": "cd_phm_01_mace_0008",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x4aef9615": {
+    "name": "cd_phw_01_sword_0026_l",
+    "base": "cd_phw_01_sword_0026",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x6c6d25b8": {
+    "name": "cd_phw_01_sword_0026_r",
+    "base": "cd_phw_01_sword_0026",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x6f73442b": {
+    "name": "cd_phm_03_shield_0120",
+    "base": "cd_phm_03_shield_0120",
+    "slot_count": 2,
+    "slots": [
+      0,
+      2
+    ]
+  },
+  "0xb841213e": {
+    "name": "cd_phm_03_shield_0121",
+    "base": "cd_phm_03_shield_0121",
+    "slot_count": 3,
+    "slots": [
+      2,
+      4,
+      255
+    ]
+  },
+  "0xa5d1c425": {
+    "name": "cd_phm_03_shield_0131",
+    "base": "cd_phm_03_shield_0131",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0x4f4832ef": {
+    "name": "cd_phm_03_shield_0123",
+    "base": "cd_phm_03_shield_0123",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xd528d8a": {
+    "name": "cd_phm_03_kiteshield_0126",
+    "base": "cd_phm_03_kiteshield_0126",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xe102459a": {
+    "name": "cd_phw_03_shield_0138",
+    "base": "cd_phw_03_shield_0138",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x2d29c2fd": {
+    "name": "cd_phm_03_shield_0113_index01",
+    "base": "cd_phm_03_shield_0113",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xf122bd04": {
+    "name": "cd_phm_03_shield_0136",
+    "base": "cd_phm_03_shield_0136",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0xbb591e3b": {
+    "name": "cd_phm_01_sword_0107_r",
+    "base": "cd_phm_01_sword_0107",
+    "slot_count": 2,
+    "slots": [
+      1,
+      2
+    ]
+  },
+  "0x43a67a4a": {
+    "name": "cd_phm_01_sword_0107_l",
+    "base": "cd_phm_01_sword_0107",
+    "slot_count": 2,
+    "slots": [
+      1,
+      2
+    ]
+  },
+  "0x6252ebf0": {
+    "name": "cd_phm_01_sword_0039_r",
+    "base": "cd_phm_01_sword_0039",
+    "slot_count": 2,
+    "slots": [
+      1,
+      6
+    ]
+  },
+  "0x1213118f": {
+    "name": "cd_phm_01_sword_0039_l",
+    "base": "cd_phm_01_sword_0039",
+    "slot_count": 2,
+    "slots": [
+      1,
+      6
+    ]
+  },
+  "0x1b6feb08": {
+    "name": "cd_phm_01_sword_0105_r",
+    "base": "cd_phm_01_sword_0105",
+    "slot_count": 2,
+    "slots": [
+      1,
+      5
+    ]
+  },
+  "0xc2965af9": {
+    "name": "cd_phm_01_sword_0105_l",
+    "base": "cd_phm_01_sword_0105",
+    "slot_count": 2,
+    "slots": [
+      1,
+      5
+    ]
+  },
+  "0x281e891c": {
+    "name": "cd_phm_01_sword_0016_r",
+    "base": "cd_phm_01_sword_0016",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x3dd3e8c7": {
+    "name": "cd_phm_01_sword_0016_r_in",
+    "base": "cd_phm_01_sword_0016",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xef95f2c8": {
+    "name": "cd_phm_01_sword_0016_l",
+    "base": "cd_phm_01_sword_0016",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x66129614": {
+    "name": "cd_phm_01_sword_0225_r",
+    "base": "cd_phm_01_sword_0225",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x18c16fae": {
+    "name": "cd_phm_01_sword_0225_l",
+    "base": "cd_phm_01_sword_0225",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x47b75248": {
+    "name": "cd_phm_01_sword_0070_r",
+    "base": "cd_phm_01_sword_0070",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xc158e742": {
+    "name": "cd_phm_01_sword_0070_l",
+    "base": "cd_phm_01_sword_0070",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x6e97be49": {
+    "name": "cd_phm_01_sword_0072_r",
+    "base": "cd_phm_01_sword_0072",
+    "slot_count": 1,
+    "slots": [
+      4
+    ]
+  },
+  "0xa68ca059": {
+    "name": "cd_phm_01_sword_0072_l",
+    "base": "cd_phm_01_sword_0072",
+    "slot_count": 1,
+    "slots": [
+      4
+    ]
+  },
+  "0x29a20e6e": {
+    "name": "cd_phm_01_sword_0074_r",
+    "base": "cd_phm_01_sword_0074",
+    "slot_count": 2,
+    "slots": [
+      4,
+      255
+    ]
+  },
+  "0x392bb6a4": {
+    "name": "cd_phm_01_sword_0074_l",
+    "base": "cd_phm_01_sword_0074",
+    "slot_count": 2,
+    "slots": [
+      4,
+      255
+    ]
+  },
+  "0x8d1a452": {
+    "name": "cd_phm_01_sword_0023_r",
+    "base": "cd_phm_01_sword_0023",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xfe3359e8": {
+    "name": "cd_phm_01_sword_0023_l",
+    "base": "cd_phm_01_sword_0023",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x50c036d7": {
+    "name": "cd_phm_01_sword_0038_r",
+    "base": "cd_phm_01_sword_0038",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xe1389b77": {
+    "name": "cd_phm_01_sword_0038_l",
+    "base": "cd_phm_01_sword_0038",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x34159e4": {
+    "name": "cd_phm_01_sword_0076_r",
+    "base": "cd_phm_01_sword_0076",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xebfcfc4a": {
+    "name": "cd_phm_01_sword_0076_l",
+    "base": "cd_phm_01_sword_0076",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb9aebf81": {
+    "name": "cd_phm_03_towershield_0119",
+    "base": "cd_phm_03_towershield_0119",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xb42442d4": {
+    "name": "cd_phm_03_towershield_0119_index01",
+    "base": "cd_phm_03_towershield_0119",
+    "slot_count": 2,
+    "slots": [
+      0,
+      3
+    ]
+  },
+  "0xf9e4c9d6": {
+    "name": "cd_phm_03_towershield_0121",
+    "base": "cd_phm_03_towershield_0121",
+    "slot_count": 3,
+    "slots": [
+      0,
+      3,
+      5
+    ]
+  },
+  "0x7787c99f": {
+    "name": "cd_phm_03_towershield_0106",
+    "base": "cd_phm_03_towershield_0106",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x455e22bd": {
+    "name": "cd_phm_03_towershield_0099",
+    "base": "cd_phm_03_towershield_0099",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xc97c8239": {
+    "name": "cd_phm_04_bow_0014",
+    "base": "cd_phm_04_bow_0014",
+    "slot_count": 5,
+    "slots": [
+      1,
+      2,
+      5,
+      7,
+      255
+    ]
+  },
+  "0xa482d43c": {
+    "name": "cd_phm_04_quiver_0012",
+    "base": "cd_phm_04_quiver_0012",
+    "slot_count": 1,
+    "slots": [
+      9
+    ]
+  },
+  "0x77f997f7": {
+    "name": "cd_phm_04_quiver_0012_atype",
+    "base": "cd_phm_04_quiver_0012",
+    "slot_count": 1,
+    "slots": [
+      9
+    ]
+  },
+  "0x477ba5ea": {
+    "name": "cd_phm_04_bow_0020",
+    "base": "cd_phm_04_bow_0020",
+    "slot_count": 1,
+    "slots": [
+      2
+    ]
+  },
+  "0x5bbb33b1": {
+    "name": "cd_phm_04_quiver_0020",
+    "base": "cd_phm_04_quiver_0020",
+    "slot_count": 1,
+    "slots": [
+      9
+    ]
+  },
+  "0x6dc7cf8c": {
+    "name": "cd_phm_04_bow_0015",
+    "base": "cd_phm_04_bow_0015",
+    "slot_count": 6,
+    "slots": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      255
+    ]
+  },
+  "0x29758e04": {
+    "name": "cd_phm_04_quiver_0010",
+    "base": "cd_phm_04_quiver_0010",
+    "slot_count": 1,
+    "slots": [
+      10
+    ]
+  },
+  "0xac17090a": {
+    "name": "cd_phm_04_quiver_0010_atype",
+    "base": "cd_phm_04_quiver_0010",
+    "slot_count": 1,
+    "slots": [
+      10
+    ]
+  },
+  "0x4ff9168c": {
+    "name": "cd_phm_04_bow_0005",
+    "base": "cd_phm_04_bow_0005",
+    "slot_count": 5,
+    "slots": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "0x3fa8bf0b": {
+    "name": "cd_phm_04_quiver_0023_index01",
+    "base": "cd_phm_04_quiver_0023",
+    "slot_count": 2,
+    "slots": [
+      8,
+      11
+    ]
+  },
+  "0x10a6c260": {
+    "name": "cd_phm_04_quiver_0023_atype_index01",
+    "base": "cd_phm_04_quiver_0023",
+    "slot_count": 2,
+    "slots": [
+      8,
+      11
+    ]
+  },
+  "0xed4c080a": {
+    "name": "cd_phm_04_bow_0007",
+    "base": "cd_phm_04_bow_0007",
+    "slot_count": 4,
+    "slots": [
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "0xc35a2cee": {
+    "name": "cd_phm_04_quiver_0007",
+    "base": "cd_phm_04_quiver_0007",
+    "slot_count": 1,
+    "slots": [
+      9
+    ]
+  },
+  "0x799351a3": {
+    "name": "cd_phm_04_quiver_0007_atype",
+    "base": "cd_phm_04_quiver_0007",
+    "slot_count": 1,
+    "slots": [
+      9
+    ]
+  },
+  "0xf5accc3e": {
+    "name": "cd_phm_04_bow_0022",
+    "base": "cd_phm_04_bow_0022",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0x2262debb": {
+    "name": "cd_phm_04_quiver_0006",
+    "base": "cd_phm_04_quiver_0006",
+    "slot_count": 2,
+    "slots": [
+      9,
+      11
+    ]
+  },
+  "0x2c5a6646": {
+    "name": "cd_phm_04_quiver_0006_atype",
+    "base": "cd_phm_04_quiver_0006",
+    "slot_count": 2,
+    "slots": [
+      9,
+      11
+    ]
+  },
+  "0xfb7b79c5": {
+    "name": "cd_phm_04_quiver_0023",
+    "base": "cd_phm_04_quiver_0023",
+    "slot_count": 2,
+    "slots": [
+      8,
+      11
+    ]
+  },
+  "0xfe726d9f": {
+    "name": "cd_phm_04_quiver_0023_atype",
+    "base": "cd_phm_04_quiver_0023",
+    "slot_count": 2,
+    "slots": [
+      8,
+      11
+    ]
+  },
+  "0xab1f3c4c": {
+    "name": "cd_phm_08_musket_0011",
+    "base": "cd_phm_08_musket_0011",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xf681af3a": {
+    "name": "cd_phm_08_musket_0008",
+    "base": "cd_phm_08_musket_0008",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0xf2a79f44": {
+    "name": "cd_phm_08_musket_0004",
+    "base": "cd_phm_08_musket_0004",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x40c98ed4": {
+    "name": "cd_phm_07_shotgun_0003",
+    "base": "cd_phm_07_shotgun_0003",
+    "slot_count": 3,
+    "slots": [
+      0,
+      4,
+      255
+    ]
+  },
+  "0x7b185135": {
+    "name": "cd_phm_02_spear_0029",
+    "base": "cd_phm_02_spear_0029",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0x379ae23b": {
+    "name": "cd_phm_03_shield_0101",
+    "base": "cd_phm_03_shield_0101",
+    "slot_count": 5,
+    "slots": [
+      0,
+      4,
+      5,
+      7,
+      9
+    ]
+  },
+  "0xa8a61cb2": {
+    "name": "cd_phm_02_greekfire_0001",
+    "base": "cd_phm_02_greekfire_0001",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  },
+  "0x9a69dd17": {
+    "name": "cd_phm_00_bag_0020",
+    "base": "cd_phm_00_bag_0020",
+    "slot_count": 2,
+    "slots": [
+      7,
+      255
+    ]
+  },
+  "0xc543c15e": {
+    "name": "cd_phm_00_bag_0020_index01",
+    "base": "cd_phm_00_bag_0020",
+    "slot_count": 2,
+    "slots": [
+      7,
+      255
+    ]
+  },
+  "0x894673a0": {
+    "name": "cd_phm_00_bag_0020_index02",
+    "base": "cd_phm_00_bag_0020",
+    "slot_count": 2,
+    "slots": [
+      7,
+      255
+    ]
+  },
+  "0x65460552": {
+    "name": "cd_phm_02_axe_0022",
+    "base": "cd_phm_02_axe_0022",
+    "slot_count": 2,
+    "slots": [
+      0,
+      1
+    ]
+  },
+  "0xa261ff50": {
+    "name": "cd_phm_02_axe_0018",
+    "base": "cd_phm_02_axe_0018",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0xb0d8b69a": {
+    "name": "cd_phm_02_axe_0017",
+    "base": "cd_phm_02_axe_0017",
+    "slot_count": 2,
+    "slots": [
+      0,
+      255
+    ]
+  },
+  "0x60fe6772": {
+    "name": "cd_phm_02_axe_0024",
+    "base": "cd_phm_02_axe_0024",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xc7e098f7": {
+    "name": "cd_phm_02_axe_0016",
+    "base": "cd_phm_02_axe_0016",
+    "slot_count": 1,
+    "slots": [
+      1
+    ]
+  },
+  "0xe495305d": {
+    "name": "cd_phm_02_warhammer_0022",
+    "base": "cd_phm_02_warhammer_0022",
+    "slot_count": 1,
+    "slots": [
+      0
+    ]
+  },
+  "0x11942406": {
+    "name": "cd_phm_02_spear_0010",
+    "base": "cd_phm_02_spear_0010",
+    "slot_count": 1,
+    "slots": [
+      255
+    ]
+  }
+}

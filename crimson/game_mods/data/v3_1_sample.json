@@ -1,0 +1,231 @@
+{
+    "_applyDropStatType": 1,
+    "_applyMaxStackCap": 0,
+    "_brokenItemPrefixString": 0,
+    "_canDisassemble": 0,
+    "_categoryInfo": 2402,
+    "_consumableTypeList": [],
+    "_convertItemInfoByDropNpc": 0,
+    "_cooltime": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+    },
+    "_defaultSubItem": {
+        "type_id": 15,
+        "value": null
+    },
+    "_deleteByGimmickUnlock": 1,
+    "_destroyEffecInfo": 0,
+    "_discardAttachTerrain": 0,
+    "_discardOffsetY": 0.0,
+    "_discardable": 1,
+    "_dockingChildData": null,
+    "_dropDefaultData": {
+        "add_socket_material_item_list": [],
+        "default_sub_item": {
+            "type_id": 15,
+            "value": null
+        },
+        "drop_enchant_level": 0,
+        "socket_item_list": [],
+        "socket_valid_count": 0,
+        "use_socket": 0
+    },
+    "_dynamicPageDataList": [],
+    "_emojiTextureId": "",
+    "_enableAlertSystemToUi": 1,
+    "_enableEquipInCloneActor": 1,
+    "_enchantDataList": [],
+    "_equipPassiveSkillList": [],
+    "_equipTypeInfo": 0,
+    "_equipableHash": 0,
+    "_equipableLevel": 0,
+    "_extractAdditionalDropSetInfo": 0,
+    "_extractMultiChangeInfo": 0,
+    "_filterType": "",
+    "_fixedPageDataList": [],
+    "_gimmickInfo": 1001367,
+    "_gimmickTagList": [],
+    "_gimmickUnlockMessageLocalStringInfo": 2642152912,
+    "_gimmickVisualPrefabDataList": [
+        {
+            "animation_path_list": [],
+            "prefab_names": [
+                675919462
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "tag_name_hash": 0,
+            "use_gimmick_prefab": 0
+        }
+    ],
+    "_hackableCharacterGroupInfoList": [],
+    "_hideFromInventoryOnPopItem": 0,
+    "_inspectAction": {
+        "action_name_hash": 0,
+        "catch_tag_name_hash": 0,
+        "catch_target_socket_name": "",
+        "catcher_socket_name": ""
+    },
+    "_inspectDataList": [],
+    "_inventoryChangeData": null,
+    "_inventoryInfo": 2,
+    "_isAllGimmickSealable": 0,
+    "_isBlocked": 0,
+    "_isBlockedStoreSell": 0,
+    "_isDestroyWhenBroken": 0,
+    "_isDyeable": 0,
+    "_isEditableGrime": 0,
+    "_isEditorUsable": 1,
+    "_isHasItemUseDataInventoryBuff": 0,
+    "_isHousingOnly": 0,
+    "_isImportantItem": 0,
+    "_isLogoutAtUseItem": 0,
+    "_isPreorderItem": 0,
+    "_isPreservedOnExtract": 0,
+    "_isRegisterTradeMarket": 0,
+    "_isSaveGameDataAtUseItem": 0,
+    "_isShieldItem": 0,
+    "_isTowerShieldItem": 0,
+    "_isWild": 0,
+    "_itemBundleDataList": [
+        {
+            "count_mb": 50,
+            "key": 1004514
+        },
+        {
+            "count_mb": 10,
+            "key": 1004513
+        }
+    ],
+    "_itemChargeType": 2,
+    "_itemDesc": {
+        "category": 7,
+        "default": "9448928051313",
+        "index": 9448928051313
+    },
+    "_itemDesc2": {
+        "category": 0,
+        "default": "",
+        "index": 0
+    },
+    "_itemGroupInfoList": [
+        18177,
+        18320,
+        16960,
+        17159,
+        17151,
+        17157
+    ],
+    "_itemIconList": [
+        {
+            "check_exist_sealed_data": 0,
+            "check_usable": 0,
+            "gimmick_state_list": [],
+            "highlight_icon_path": 3938836851,
+            "icon_path": 1815957208
+        }
+    ],
+    "_itemMemo": "\ud0c4\uc57d\ub958 \uc544\uc774\ud15c\uadf8\ub8f9",
+    "_itemName": {
+        "category": 7,
+        "default": "9448928051312",
+        "index": 9448928051312
+    },
+    "_itemTagList": [],
+    "_itemTier": 0,
+    "_itemType": 0,
+    "_itemUseInfoList": [
+        2147483646,
+        2147483645,
+        2147483644
+    ],
+    "_key": 2200,
+    "_knowledgeInfo": 0,
+    "_knowledgeObtainType": 0,
+    "_lookDetailGameAdviceInfoWrapper": 0,
+    "_lookDetailMissionInfo": 0,
+    "_mapIconPath": 3938836851,
+    "_materialKey": 2854549177,
+    "_materialMatchInfo": 2854549177,
+    "_maxChargedUseableCount": {
+        "a": 1,
+        "b": 1,
+        "c": 1
+    },
+    "_maxDropResultSubItemCount": 6,
+    "_maxEndurance": 65535,
+    "_maxStackCount": 100,
+    "_minimumExtractEnchantLevel": 65535,
+    "_moneyIconPath": 3938836851,
+    "_moneyTypeDefine": null,
+    "_multiChangeInfoList": [],
+    "_occupiedEquipSlotDataList": [],
+    "_packedItemInfo": 0,
+    "_patternDescriptionDataList": [],
+    "_prefabDataList": [
+        {
+            "equip_slot_list": [],
+            "is_craft_material": 0,
+            "prefab_names": [
+                2206749818
+            ],
+            "tribe_gender_list": []
+        }
+    ],
+    "_priceList": [
+        {
+            "key": 1,
+            "price": {
+                "item_info_wrapper": 1,
+                "price": 5,
+                "sym_no": 0
+            }
+        }
+    ],
+    "_quickSlotIndex": 1,
+    "_repairDataList": [],
+    "_reserveSlotTargetDataList": [
+        {
+            "condition_info": 0,
+            "reserve_slot_info": 1000000
+        },
+        {
+            "condition_info": 0,
+            "reserve_slot_info": 1000000
+        }
+    ],
+    "_respawnTimeSeconds": 0,
+    "_sealableCharacterInfoList": [],
+    "_sealableGimmickInfoList": [],
+    "_sealableGimmickTagList": [],
+    "_sealableItemInfoList": [],
+    "_sealableMoneyInfoList": [],
+    "_sealableTribeInfoList": [],
+    "_sharedCoolTimeGroupNameHash": 0,
+    "_sharpnessData": {
+        "craft_tool_info": 0,
+        "max_sharpness": 0,
+        "stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [],
+            "stat_list_static_level": []
+        }
+    },
+    "_stageInfo": 0,
+    "_stringKey": "Pyeonjeon_Arrow",
+    "_transmutationMaterialGimmickList": [],
+    "_transmutationMaterialItemGroupList": [],
+    "_transmutationMaterialItemList": [],
+    "_unkTexturePath": "",
+    "_unpackedItemInfo": 0,
+    "_usableAlertType": 0,
+    "_useDropSetTarget": 0,
+    "_useImmediately": 1,
+    "_useMapIconAlert": 0
+}

@@ -1,0 +1,1523 @@
+{
+  "name": "Mount Everywhere",
+  "version": "1.0.0",
+  "author": "CrimsonSaveEditor",
+  "description": "Mount Everywhere — 250 changes across 3 game files.",
+  "patches": [
+    {
+      "game_file": "gamedata/vehicleinfo.pabgb",
+      "changes": [
+        {
+          "offset": 203,
+          "label": "BearWarMachine: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 422,
+          "label": "CarmabirdSaurusWarMachine: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 626,
+          "label": "WarMachine: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 826,
+          "label": "Dragon: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 1230,
+          "label": "GolemHorse: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 1429,
+          "label": "Camel: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 1633,
+          "label": "AlpineIbex: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 1840,
+          "label": "1Horse4Wheels: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 2047,
+          "label": "1Horse2Wheels: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 2254,
+          "label": "2Horse4Wheels: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 2459,
+          "label": "PlayerWagon: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 2665,
+          "label": "Airballoon_I: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 2872,
+          "label": "Airballoon_II: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 3080,
+          "label": "Airballoon_III: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 3280,
+          "label": "Cannon: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 3478,
+          "label": "Boar: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 3680,
+          "label": "Ballista: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 3882,
+          "label": "Crossbow: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 4081,
+          "label": "Canoe: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 4279,
+          "label": "Boat: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 4477,
+          "label": "Wolf: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 4680,
+          "label": "Singijeon: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 4880,
+          "label": "Wyvern: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 5078,
+          "label": "Bear: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 5280,
+          "label": "ReinDeer: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 5482,
+          "label": "CuCubird: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 5684,
+          "label": "Elephant: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 5884,
+          "label": "Iguana: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 6093,
+          "label": "CarmabirdSaurus: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 6291,
+          "label": "Bull: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        },
+        {
+          "offset": 6491,
+          "label": "Train2: _canCallSafeZone (1)",
+          "original": "00",
+          "patched": "01"
+        }
+      ]
+    },
+    {
+      "game_file": "gamedata/regioninfo.pabgb",
+      "changes": [
+        {
+          "offset": 1085,
+          "label": "Region_Pailune_Town: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 1200,
+          "label": "Region_Node_Kwe_Pailune: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 1790,
+          "label": "Region_Node_Kwe_SvinholtRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 1916,
+          "label": "Region_Node_Kwe_HorpbothHarpoonery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 2042,
+          "label": "Region_Node_Kwe_WolfsnareTrapsmith: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 2166,
+          "label": "Region_Node_Kwe_SkallcoveVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 2290,
+          "label": "Region_Node_Kwe_TotemfeltVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 2636,
+          "label": "Region_Node_Kwe_PailuneCampsite: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 3365,
+          "label": "Region_Node_Kwe_OdeckVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 4296,
+          "label": "Region_Node_Kwe_SkoghornVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 4537,
+          "label": "region_Node_Kwe_SkoghornWharf: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 4658,
+          "label": "region_Node_Kwe_SkoghornRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 4778,
+          "label": "Region_Node_Kwe_SkoghornFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5008,
+          "label": "Region_Node_Kwe_BeighenVillage: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 5132,
+          "label": "Region_Node_Kwe_BeighenCandlery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5258,
+          "label": "Region_Node_Kwe_BeighenBasketMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5501,
+          "label": "Region_Node_Kwe_LongleafTreeVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5626,
+          "label": "Region_Node_Kwe_LongbranchVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5750,
+          "label": "Region_Node_Kwe_LongrootsVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 5881,
+          "label": "Region_Node_Kwe_RidgehunterLeatherMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 8787,
+          "label": "Region_Tashkalp: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 8893,
+          "label": "Node_Crim_Tashkalp: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 9016,
+          "label": "Region_Node_Crim_WatermelonFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 9136,
+          "label": "Region_Node_Crim_RedRockFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 9604,
+          "label": "Node_Crim_BoneArena: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 9971,
+          "label": "Region_Node_Crim_CaledoraVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10228,
+          "label": "Region_Varnia: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10344,
+          "label": "Node_Crim_TheAlabasterBridge: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10461,
+          "label": "Node_Crim_VarniaTradePost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10577,
+          "label": "Region_Node_Crim_Yakchal: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10697,
+          "label": "Node_Crim_VarniaSaltroadCamp: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 10824,
+          "label": "Region_Node_Crim_WhitesandPrayHouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 11060,
+          "label": "Region_Node_Crim_Urdavah: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 11186,
+          "label": "Region_Node_Crim_SaltroadTradePost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 11307,
+          "label": "Region_Node_Crim_SaltroadCamp: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 11792,
+          "label": "Region_Node_Crim_MuiquunVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 14066,
+          "label": "Region_Node_Crim_BurhumVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 14197,
+          "label": "Region_Node_Crim_DesertOasis_Reflection: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 14323,
+          "label": "Region_Node_Crim_DesertOasis_Agony: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 14452,
+          "label": "Region_Node_Crim_DesertOasis_Patience: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 17068,
+          "label": "Region_Node_Crim_DuzharVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 17189,
+          "label": "Region_Node_Crim_NahabVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 17312,
+          "label": "Region_Node_Crim_BatiharVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 19284,
+          "label": "Region_Node_Crim_FlowingSandVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 20177,
+          "label": "Region_Node_Crim_RockVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 20300,
+          "label": "Region_Node_Crim_HelmaraVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 21189,
+          "label": "Region_Hernand_Town: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 22142,
+          "label": "Region_Node_Her_GoldenFistsArena: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 22521,
+          "label": "Region_Node_Her_BoomveldBombFactorys: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 22652,
+          "label": "Region_Node_Her_OakenshieldManor_Serkis: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 22766,
+          "label": "Region_Her_village: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 22890,
+          "label": "Region_Node_Her_CapraPasture: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 23021,
+          "label": "Region_Node_Her_SpringtideWatermill: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 23633,
+          "label": "Region_Node_Her_IvyVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 24122,
+          "label": "Region_Node_Her_BluemontWineHouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 24247,
+          "label": "Region_Node_Her_MuckrootRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 24491,
+          "label": "Region_Node_Her_StoneTowerVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 24615,
+          "label": "Region_Node_Her_HernandChurch: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 24855,
+          "label": "Region_Node_Her_ArboriaCraftshop: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 25111,
+          "label": "Region_Node_Her_SaddlewindRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 25237,
+          "label": "Region_Node_Her_BridlefernFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 25358,
+          "label": "Region_Node_Her_Saddlecap: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 25848,
+          "label": "Region_Node_Her_LioncrestManor_Alfonso: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 25976,
+          "label": "Region_Node_Her_TimberhamSawmill: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26226,
+          "label": "Region_Node_Her_WycliffeMappery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26355,
+          "label": "Region_Node_Her_RodbelFishingDock: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26471,
+          "label": "Region_Node_Her_Slum: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26593,
+          "label": "Region_Node_Her_BeggarsEnd: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26717,
+          "label": "Region_Node_Her_TheScrapfold: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 26974,
+          "label": "Region_Node_Her_KilndenKukuWorkshop: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 29891,
+          "label": "Region_Node_Her_PhonielRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 30499,
+          "label": "Region_Node_Her_InksworthPrinter: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 30737,
+          "label": "Region_Node_Her_MeshleyTrapMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 30988,
+          "label": "Region_Node_Her_ScholastoneInstitute: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 31114,
+          "label": "Region_Node_Her_ScholastoneArchive: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 31245,
+          "label": "Region_Node_Her_KharonsoVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 31370,
+          "label": "Region_Node_Her_NectarwoodBeeFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 31490,
+          "label": "Region_Node_Her_KharonsoLake: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 32605,
+          "label": "Region_Node_Her_GlenbrightManor_Grace: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 32734,
+          "label": "Region_Node_Her_FlowerDustBeeFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 32861,
+          "label": "Region_Node_Her_WindHillFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 33120,
+          "label": "Region_Node_Her_TotesmithLeatherMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 33363,
+          "label": "Region_Node_Her_SeniaVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 33604,
+          "label": "Region_Node_Her_PororinVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 33847,
+          "label": "Region_Node_Her_FlorindaleVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 33971,
+          "label": "Region_Node_Her_PetaltonWorkshop: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 34092,
+          "label": "Region_Node_Her_VelluaVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 34338,
+          "label": "Region_Node_Her_ForentinHut: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 34462,
+          "label": "Region_Node_Her_RuinedChapel: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 35535,
+          "label": "Region_Node_Her_SunsetVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 35770,
+          "label": "Region_Node_VelluaChurche: _limitVehicleRun",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 36168,
+          "label": "Region_Node_Her_HalsiusHospital: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 36296,
+          "label": "Region_Node_Her_HalsiusTradePost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 36424,
+          "label": "Region_Node_Her_HalsiusDrugstore: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 36548,
+          "label": "Region_Node_Her_HalsiusRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 36793,
+          "label": "Region_Node_GrayMane: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37150,
+          "label": "Region_Node_Her_GoldleafGuildhouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37278,
+          "label": "Region_Node_Her_CoalvaleWorkshop: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37407,
+          "label": "Region_Node_Her_EquinsherSaddlery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37536,
+          "label": "Region_Node_Her_GoldleafTradepost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37794,
+          "label": "Region_Node_GoldleafGuildhouse_Ranch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 37929,
+          "label": "Region_Node_GoldleafGuildhouse_Child_04: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 38055,
+          "label": "Region_Node_Her_TimberWagonFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 38348,
+          "label": "Region_Calphade_Town: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 38468,
+          "label": "Node_Cal_CalphadeCastle: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 39200,
+          "label": "Region_Node_Cal_CalphadeRefinery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 39336,
+          "label": "Region_Node_Cal_CalphadeGunpowderFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 40079,
+          "label": "Region_Node_Cal_ThalwyndVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42017,
+          "label": "Region_Demeniss_Town: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42245,
+          "label": "Region_Demeniss_Port: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42387,
+          "label": "Region_Node_Dem_DemenissCastle: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42508,
+          "label": "Region_Node_Dem_RoyalTomb: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42641,
+          "label": "Region_Node_Dem_TheLaughingMarionette: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 42890,
+          "label": "Region_Node_Dem_SouthWagonFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 43012,
+          "label": "Region_Node_Dem_PecusRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 43139,
+          "label": "Region_Node_Dem_GrassfieldRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 43500,
+          "label": "Region_Node_Dem_DemenissCathedral: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 44088,
+          "label": "Region_Node_Dem_AzerianManor: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 44219,
+          "label": "Region_Node_Dem_ReventineMonastery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 44346,
+          "label": "Region_Node_Dem_ReventineWinery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 44941,
+          "label": "Region_Node_Dem_GoldenTradePost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 45065,
+          "label": "Region_Node_Dem_TarivVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 46347,
+          "label": "Region_Node_Dem_SilvermoonHQ: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 46471,
+          "label": "Region_Node_Dem_HuntersCabin: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 46718,
+          "label": "Region_Node_Dem_OakBarrelWineMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 48596,
+          "label": "Region_Node_Dem_BrookfieldManor_Elemorel: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 49110,
+          "label": "Region_Node_Dem_ThornRoseFort: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 50987,
+          "label": "Region_Node_Dem_TombstoneWorkshop: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 51110,
+          "label": "Region_Node_Dem_IronwoodPottery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 51235,
+          "label": "Region_Node_Dem_IronwoodFarmhouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 51355,
+          "label": "Region_Node_Dem_IronwoodFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 51474,
+          "label": "Region_Node_Dem_ForestAltar: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 52069,
+          "label": "Region_Node_Dem_WestCourt: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 52198,
+          "label": "Region_Node_Dem_SungroveManor_Marcella: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 52323,
+          "label": "Region_Node_Dem_BlueGoldDyehouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 52804,
+          "label": "Region_Node_Dem_StonewellFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 52924,
+          "label": "Region_Node_Dem_CowbellRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 53046,
+          "label": "Region_Node_Dem_GreenfieldFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 54397,
+          "label": "Region_Node_Dem_HiddenGroveRanch: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 54523,
+          "label": "Region_Node_Dem_WindmereManor_Byron: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 54648,
+          "label": "Region_Node_Dem_HoneywoodBeeFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 54893,
+          "label": "Region_Node_Dem_GoldenHoofHorseRace: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 55013,
+          "label": "Region_Node_Dem_SwiftStables: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 55251,
+          "label": "Region_Node_Dem_RockedgeMill: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 55371,
+          "label": "Region_Node_Dem_HiddenEstate: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 55498,
+          "label": "Region_Node_Dem_DemenissHorseMarket: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 55739,
+          "label": "Region_Node_Dem_WestDemenissChurch: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 55990,
+          "label": "Region_Node_Dem_DemenissOrphanage: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 56971,
+          "label": "Region_Node_Dem_SunsetDyehouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 57103,
+          "label": "Region_Node_Dem_StronghoofHorseGearMaker: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 57462,
+          "label": "Region_Node_Dem_JoyfairMarketplace: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 57701,
+          "label": "Region_Node_Dem_VinewoodWinery: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 57829,
+          "label": "Region_Node_Dem_BulwarkWeaponFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 57954,
+          "label": "Region_Node_Dem_StronghelmFactory: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 58079,
+          "label": "Region_Node_Dem_EastDemenissChurch: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 59508,
+          "label": "Region_Delesyia_Town: _limitVehicleRun",
+          "original": "0101",
+          "patched": "0000"
+        },
+        {
+          "offset": 59744,
+          "label": "Region_Node_Del_DelesyiaCastle: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 59864,
+          "label": "Region_Node_Del_PortDelesyia: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 60225,
+          "label": "Region_Node_Del_StarVillage: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 60351,
+          "label": "Region_Node_Del_StarVillageDigSite: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 60474,
+          "label": "Region_Node_Del_FullharvestFarm: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 61773,
+          "label": "Region_Node_Del_Timberton: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 61897,
+          "label": "Region_Node_Del_DelesyiaDyehouse: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 62021,
+          "label": "Region_Node_Del_FinholdNetmakers: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 62148,
+          "label": "Region_Node_Del_ElderglenPlantation: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 62276,
+          "label": "Region_Node_Del_SweetbloomPlantation: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 62399,
+          "label": "Region_Node_Del_RedfoxTradePost: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 62867,
+          "label": "Region_Node_Del_FishersRest: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 66196,
+          "label": "Region_Node_Del_DelesyiaChurch: _limitVehicleRun",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 67659,
+          "label": "Region_Node_Del_DewhavenCastle: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 67780,
+          "label": "Region_Node_Del_WindroseFarme: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 67901,
+          "label": "Region_Node_Del_StonewardPort: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 68274,
+          "label": "Region_Node_Del_RustfieldScrapyard: _isTown",
+          "original": "01",
+          "patched": "00"
+        },
+        {
+          "offset": 68401,
+          "label": "Region_Node_Del_DewhavenLoggingCamp: _isTown",
+          "original": "01",
+          "patched": "00"
+        }
+      ]
+    },
+    {
+      "game_file": "gamedata/characterinfo.pabgb",
+      "changes": [
+        {
+          "offset": 12870102,
+          "label": "characterinfo offset 12870102",
+          "original": "03A4B889",
+          "patched": "B6F5823F"
+        },
+        {
+          "offset": 12884575,
+          "label": "characterinfo offset 12884575",
+          "original": "B8E471A1",
+          "patched": "BF3C54CC"
+        },
+        {
+          "offset": 12908479,
+          "label": "characterinfo offset 12908479",
+          "original": "11250243",
+          "patched": "B2484FCE"
+        },
+        {
+          "offset": 20681925,
+          "label": "Riding_Balloon_Summoner_1: _callMercenaryCoolTime",
+          "original": "05",
+          "patched": "00"
+        },
+        {
+          "offset": 20683843,
+          "label": "Riding_Balloon_Summoner_2: _callMercenaryCoolTime",
+          "original": "05",
+          "patched": "00"
+        },
+        {
+          "offset": 20685761,
+          "label": "Riding_Balloon_Summoner_3: _callMercenaryCoolTime",
+          "original": "05",
+          "patched": "00"
+        },
+        {
+          "offset": 20933545,
+          "label": "Riding_Bear_1000: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20933590,
+          "label": "characterinfo offset 20933590",
+          "original": "2A0ACB6C",
+          "patched": "A3954DDA"
+        },
+        {
+          "offset": 20936522,
+          "label": "Riding_Bear_1001: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20936567,
+          "label": "characterinfo offset 20936567",
+          "original": "1015AA8A",
+          "patched": "A3954DDA"
+        },
+        {
+          "offset": 20939508,
+          "label": "Riding_Warthog_1000: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20942488,
+          "label": "Riding_Wolf_1000: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20945472,
+          "label": "Riding_Wolf_1001: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20948456,
+          "label": "Riding_Deer_1000: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20951448,
+          "label": "Riding_Deer_1001: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20954449,
+          "label": "Riding_AlpineIbex_1000: _callMercenaryCoolTime",
+          "original": "2C01",
+          "patched": "0000"
+        },
+        {
+          "offset": 20969202,
+          "label": "characterinfo offset 20969202",
+          "original": "2A0ACB6C",
+          "patched": "A3954DDA"
+        },
+        {
+          "offset": 20997041,
+          "label": "Riding_Machine_Bear_1: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 20997049,
+          "label": "Riding_Machine_Bear_1: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21000041,
+          "label": "Riding_Machine_CarmaBirdsaurus_1: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21000049,
+          "label": "Riding_Machine_CarmaBirdsaurus_1: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21003037,
+          "label": "Riding_WarMachine_Unique_1: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21003045,
+          "label": "Riding_WarMachine_Unique_1: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21006537,
+          "label": "Riding_ATAG_1: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21006545,
+          "label": "Riding_ATAG_1: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21010025,
+          "label": "Riding_ATAG_2: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21010033,
+          "label": "Riding_ATAG_2: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21013513,
+          "label": "Riding_ATAG_3: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21013521,
+          "label": "Riding_ATAG_3: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21017001,
+          "label": "Riding_ATAG_5: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21017009,
+          "label": "Riding_ATAG_5: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21020489,
+          "label": "Riding_ATAG_6: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21020497,
+          "label": "Riding_ATAG_6: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21023977,
+          "label": "Riding_ATAG_7: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21023985,
+          "label": "Riding_ATAG_7: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21027459,
+          "label": "Riding_ATAG_4: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21027467,
+          "label": "Riding_ATAG_4: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21860554,
+          "label": "Riding_Dragon_1: _callMercenaryCoolTime",
+          "original": "100E",
+          "patched": "0000"
+        },
+        {
+          "offset": 21860562,
+          "label": "Riding_Dragon_1: _callMercenarySpawnDuration",
+          "original": "58020000",
+          "patched": "FFFFFF7F"
+        },
+        {
+          "offset": 21860599,
+          "label": "characterinfo offset 21860599",
+          "original": "24648673",
+          "patched": "A31E5F3E"
+        },
+        {
+          "offset": 21863563,
+          "label": "characterinfo offset 21863563",
+          "original": "1D",
+          "patched": "A3"
+        },
+        {
+          "offset": 21863565,
+          "label": "characterinfo offset 21863565",
+          "original": "5858",
+          "patched": "5F3E"
+        },
+        {
+          "offset": 21865986,
+          "label": "characterinfo offset 21865986",
+          "original": "26A7C5C0",
+          "patched": "A31E5F3E"
+        },
+        {
+          "offset": 21868882,
+          "label": "characterinfo offset 21868882",
+          "original": "68F10629",
+          "patched": "A31E5F3E"
+        },
+        {
+          "offset": 21906468,
+          "label": "characterinfo offset 21906468",
+          "original": "68F10629",
+          "patched": "A31E5F3E"
+        }
+      ]
+    }
+  ]
+}

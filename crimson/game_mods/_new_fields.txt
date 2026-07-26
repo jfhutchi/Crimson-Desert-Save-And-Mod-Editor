@@ -1,0 +1,49 @@
+NEW FIELDS in game update (from Mac binary analysis):
+
+1. extractAdditionalDropSetInfo — u32 key, after extractMultiChangeInfo
+2. minimumExtractEnchantLevel — u16, after extractAdditionalDropSetInfo
+3. isHousingOnly — u8, between isDestroyWhenBroken and quickSlotIndex
+4. usableAlertType — u8, between itemChargeType and sharpnessData
+   (Note: old 16-byte gap was actually: cooltime→usableAlertType→sharpnessData,
+    but usableAlertType might be larger or the gap includes more)
+5. patternDescriptionDataList — CArray, between convertItemInfoByDropNPC and lookDetailGameAdviceInfoWrapper
+6. isHasItemUseDataInventoryBuff — u8, after isPreorderItem
+7. isPreservedOnExtract — u8, after isHasItemUseDataInventoryBuff
+
+Also: usableAlert removed from old position, defaultTexturePath renamed from unk_texture_path
+
+Complete field order (127 fields):
+key, stringKey, isBlocked, maxStackCount, itemName, brokenItemPrefixString,
+inventoryInfo, equipTypeInfo, occupiedEquipSlotDataList, itemTagList,
+equipAbleHash, consumableTypeList, itemUseInfoList, itemIconList,
+mapIconPath, moneyIconPath, useMapIconAlert, itemType, materialKey,
+materialMatchInfo, itemDesc, itemDesc2, equipableLevel, categoryInfo,
+knowledgeInfo, knowledgeObtainType, destroyEffecInfo, equipPassiveSkillList,
+useImmediately, applyMaxStackCap, extractMultiChangeInfo,
+>>> extractAdditionalDropSetInfo, minimumExtractEnchantLevel <<<,
+itemMemo, filterType, gimmickInfo, gimmickTagList,
+maxDropResultSubItemCount, useDropSetTarget, isAllGimmickSealable,
+sealableItemInfoList, sealableCharacterInfoList, sealableGimmickInfoList,
+sealableGimmickTagList, sealableTribeInfoList, sealableMoneyInfoList,
+deleteByGimmickUnlock, gimmickUnlockMessageLocalStringInfo, canDisassemble,
+transmutationMaterialGimmickList, transmutationMaterialItemList,
+transmutationMaterialItemGroupList, isRegisterTradeMarket, multiChangeInfoList,
+isEditorUsable, discardable, isDyeable, isEditableGrime, isDestoryWhenBroken,
+>>> isHousingOnly <<<,
+quickSlotIndex, reserveSlotTargetDataList, itemTier, isImportantItem,
+applyDropStatType, dropDefaultData, prefabDataList, enchantDataList,
+gimmickVisualPrefabDataList, priceList, dockingChildData, inventoryChangeData,
+defaultTexturePath, fixedPageDataList, dynamicPageDataList, inspectDataList,
+inspectAction, defaultSubItem, cooltime, itemChargeType,
+>>> usableAlertType <<<,
+sharpnessData, maxChargedUseableCount, hackableCharacterGroupInfoList,
+itemGroupInfoList, discardOffsetY, hideFromInventoryOnPopItem, isShieldItem,
+isTowerShieldItem, isWild, packedItemInfo, unpackedItemInfo,
+convertItemInfoByDropNPC,
+>>> patternDescriptionDataList <<<,
+lookDetailGameAdviceInfoWrapper, lookDetailMissionInfo,
+enableAlertSystemToUI, isSaveGameDataAtUseItem, isLogoutAtUseItem,
+sharedCoolTimeGroupNameHash, itemBundleDataList, moneyTypeDefine,
+emojiTextureID, enableEquipInCloneActor, isBlockedStoreSell, isPreorderItem,
+>>> isHasItemUseDataInventoryBuff, isPreservedOnExtract <<<,
+respawnTimeSeconds, maxEndurance, repairDataList

@@ -1,0 +1,1759 @@
+{
+  "1000062": {
+    "buff_key": 1000062,
+    "internal_name": "BuffLevel_Comma_Symptom",
+    "suffix": "Comma_Symptom",
+    "size": 558
+  },
+  "1000078": {
+    "buff_key": 1000078,
+    "internal_name": "BuffLevel_CombatHigh",
+    "suffix": "CombatHigh",
+    "size": 1212
+  },
+  "1000042": {
+    "buff_key": 1000042,
+    "internal_name": "BuffLevel_Drunken",
+    "suffix": "Drunken",
+    "size": 187
+  },
+  "1000019": {
+    "buff_key": 1000019,
+    "internal_name": "BuffLevel_FireArrow",
+    "suffix": "FireArrow",
+    "size": 183
+  },
+  "1000030": {
+    "buff_key": 1000030,
+    "internal_name": "BuffLevel_DOT",
+    "suffix": "DOT",
+    "size": 4924
+  },
+  "1000017": {
+    "buff_key": 1000017,
+    "internal_name": "BuffLevel_IceShield",
+    "suffix": "IceShield",
+    "size": 421
+  },
+  "1000085": {
+    "buff_key": 1000085,
+    "internal_name": "BuffLevel_FireFist",
+    "suffix": "FireFist",
+    "size": 329
+  },
+  "1000044": {
+    "buff_key": 1000044,
+    "internal_name": "BuffLevel_IceTerrain",
+    "suffix": "IceTerrain",
+    "size": 193
+  },
+  "1000060": {
+    "buff_key": 1000060,
+    "internal_name": "BuffLevel_Lava",
+    "suffix": "Lava",
+    "size": 568
+  },
+  "1000063": {
+    "buff_key": 1000063,
+    "internal_name": "BuffLevel_SulphurGas",
+    "suffix": "SulphurGas",
+    "size": 425
+  },
+  "1000031": {
+    "buff_key": 1000031,
+    "internal_name": "BuffLevel_LavaGas",
+    "suffix": "LavaGas",
+    "size": 421
+  },
+  "1000033": {
+    "buff_key": 1000033,
+    "internal_name": "BuffLevel_SwarmBee",
+    "suffix": "SwarmBee",
+    "size": 310
+  },
+  "1000034": {
+    "buff_key": 1000034,
+    "internal_name": "BuffLevel_SwarmSpider",
+    "suffix": "SwarmSpider",
+    "size": 429
+  },
+  "1000035": {
+    "buff_key": 1000035,
+    "internal_name": "BuffLevel_SwarmRat",
+    "suffix": "SwarmRat",
+    "size": 420
+  },
+  "1000036": {
+    "buff_key": 1000036,
+    "internal_name": "BuffLevel_SwarmLocust",
+    "suffix": "SwarmLocust",
+    "size": 435
+  },
+  "1000054": {
+    "buff_key": 1000054,
+    "internal_name": "BuffLevel_MachineOverload",
+    "suffix": "MachineOverload",
+    "size": 583
+  },
+  "1000121": {
+    "buff_key": 1000121,
+    "internal_name": "BuffLevel_GearhornRenwOverload",
+    "suffix": "GearhornRenwOverload",
+    "size": 531
+  },
+  "1000274": {
+    "buff_key": 1000274,
+    "internal_name": "BuffLevel_GoldenStarOverload",
+    "suffix": "GoldenStarOverload",
+    "size": 448
+  },
+  "1000207": {
+    "buff_key": 1000207,
+    "internal_name": "BuffLevel_CircusMachine_Weak",
+    "suffix": "CircusMachine_Weak",
+    "size": 221
+  },
+  "1000168": {
+    "buff_key": 1000168,
+    "internal_name": "BuffLevel_Umbra_GroggyStop",
+    "suffix": "Umbra_GroggyStop",
+    "size": 350
+  },
+  "1000070": {
+    "buff_key": 1000070,
+    "internal_name": "BuffLevel_Blizzard",
+    "suffix": "Blizzard",
+    "size": 1608
+  },
+  "1000075": {
+    "buff_key": 1000075,
+    "internal_name": "BuffLevel_Blizzard_NonepalayZone",
+    "suffix": "Blizzard_NonepalayZone",
+    "size": 1028
+  },
+  "1000043": {
+    "buff_key": 1000043,
+    "internal_name": "BuffLevel_Desert_NonepalayZone",
+    "suffix": "Desert_NonepalayZone",
+    "size": 202
+  },
+  "1000077": {
+    "buff_key": 1000077,
+    "internal_name": "BuffLevel_Water_NonepalayZone",
+    "suffix": "Water_NonepalayZone",
+    "size": 201
+  },
+  "1000079": {
+    "buff_key": 1000079,
+    "internal_name": "BuffLevel_Normal_NonepalayZone",
+    "suffix": "Normal_NonepalayZone",
+    "size": 202
+  },
+  "1000061": {
+    "buff_key": 1000061,
+    "internal_name": "BuffLevel_SpiderWeb",
+    "suffix": "SpiderWeb",
+    "size": 436
+  },
+  "1000104": {
+    "buff_key": 1000104,
+    "internal_name": "BuffLevel_Trap_MoveSpeedRate",
+    "suffix": "Trap_MoveSpeedRate",
+    "size": 200
+  },
+  "1000083": {
+    "buff_key": 1000083,
+    "internal_name": "BuffLevel_Waterfall",
+    "suffix": "Waterfall",
+    "size": 191
+  },
+  "1000065": {
+    "buff_key": 1000065,
+    "internal_name": "BuffLevel_SpiderWeb_Player",
+    "suffix": "SpiderWeb_Player",
+    "size": 179
+  },
+  "1000037": {
+    "buff_key": 1000037,
+    "internal_name": "BuffLevel_DetectDistance",
+    "suffix": "DetectDistance",
+    "size": 931
+  },
+  "1000057": {
+    "buff_key": 1000057,
+    "internal_name": "BuffLevel_DetectBrightness",
+    "suffix": "DetectBrightness",
+    "size": 352
+  },
+  "1000045": {
+    "buff_key": 1000045,
+    "internal_name": "BuffLevel_Guard",
+    "suffix": "Guard",
+    "size": 291
+  },
+  "1000038": {
+    "buff_key": 1000038,
+    "internal_name": "BuffLevel_SuperArmor",
+    "suffix": "SuperArmor",
+    "size": 324
+  },
+  "1000039": {
+    "buff_key": 1000039,
+    "internal_name": "BuffLevel_Avoid",
+    "suffix": "Avoid",
+    "size": 409
+  },
+  "1000040": {
+    "buff_key": 1000040,
+    "internal_name": "BuffLevel_FireWeapon",
+    "suffix": "FireWeapon",
+    "size": 613
+  },
+  "1000058": {
+    "buff_key": 1000058,
+    "internal_name": "BuffLevel_NatureMpRegen",
+    "suffix": "NatureMpRegen",
+    "size": 720
+  },
+  "1000059": {
+    "buff_key": 1000059,
+    "internal_name": "BuffLevel_NatureHpRegen",
+    "suffix": "NatureHpRegen",
+    "size": 191
+  },
+  "1000084": {
+    "buff_key": 1000084,
+    "internal_name": "BuffLevel_BlockDamage_Situation",
+    "suffix": "BlockDamage_Situation",
+    "size": 460
+  },
+  "1000041": {
+    "buff_key": 1000041,
+    "internal_name": "BuffLevel_NatureProtect",
+    "suffix": "NatureProtect",
+    "size": 618
+  },
+  "1000095": {
+    "buff_key": 1000095,
+    "internal_name": "BuffLevel_ChangeElementalStatSpeed",
+    "suffix": "ChangeElementalStatSpeed",
+    "size": 758
+  },
+  "1000094": {
+    "buff_key": 1000094,
+    "internal_name": "BuffLevel_SmithStone_DDD",
+    "suffix": "SmithStone_DDD",
+    "size": 199
+  },
+  "1000056": {
+    "buff_key": 1000056,
+    "internal_name": "BuffLevel_AIDifficulty",
+    "suffix": "AIDifficulty",
+    "size": 903
+  },
+  "1000171": {
+    "buff_key": 1000171,
+    "internal_name": "BuffLevel_BlockLearn",
+    "suffix": "BlockLearn",
+    "size": 196
+  },
+  "1000167": {
+    "buff_key": 1000167,
+    "internal_name": "BuffLevel_DecreaseHP_IncreaseMP_Dot",
+    "suffix": "DecreaseHP_IncreaseMP_Dot",
+    "size": 2345
+  },
+  "1000050": {
+    "buff_key": 1000050,
+    "internal_name": "BuffLevel_Food_MaxHP",
+    "suffix": "Food_MaxHP",
+    "size": 3435
+  },
+  "1000177": {
+    "buff_key": 1000177,
+    "internal_name": "BuffLevel_Food_MpUseDecreaseRate",
+    "suffix": "Food_MpUseDecreaseRate",
+    "size": 2247
+  },
+  "1000055": {
+    "buff_key": 1000055,
+    "internal_name": "BuffLevel_Food_StaminaUseDecreaseRate",
+    "suffix": "Food_StaminaUseDecreaseRate",
+    "size": 2252
+  },
+  "1000178": {
+    "buff_key": 1000178,
+    "internal_name": "BuffLevel_Food_HP_Dot",
+    "suffix": "Food_HP_Dot",
+    "size": 9576
+  },
+  "1000179": {
+    "buff_key": 1000179,
+    "internal_name": "BuffLevel_Food_MP_Dot",
+    "suffix": "Food_MP_Dot",
+    "size": 6811
+  },
+  "1000180": {
+    "buff_key": 1000180,
+    "internal_name": "BuffLevel_Food_DDD",
+    "suffix": "Food_DDD",
+    "size": 2023
+  },
+  "1000181": {
+    "buff_key": 1000181,
+    "internal_name": "BuffLevel_Food_DPV",
+    "suffix": "Food_DPV",
+    "size": 2023
+  },
+  "1000182": {
+    "buff_key": 1000182,
+    "internal_name": "BuffLevel_Food_FireResistance",
+    "suffix": "Food_FireResistance",
+    "size": 2094
+  },
+  "1000183": {
+    "buff_key": 1000183,
+    "internal_name": "BuffLevel_Food_IceResistance",
+    "suffix": "Food_IceResistance",
+    "size": 2093
+  },
+  "1000184": {
+    "buff_key": 1000184,
+    "internal_name": "BuffLevel_Food_ElectricityResistance",
+    "suffix": "Food_ElectricityResistance",
+    "size": 2101
+  },
+  "1000272": {
+    "buff_key": 1000272,
+    "internal_name": "BuffLevel_WetNess",
+    "suffix": "WetNess",
+    "size": 1050
+  },
+  "1000185": {
+    "buff_key": 1000185,
+    "internal_name": "BuffLevel_Food_FallDamageReduce",
+    "suffix": "Food_FallDamageReduce",
+    "size": 1451
+  },
+  "1000186": {
+    "buff_key": 1000186,
+    "internal_name": "BuffLevel_Food_AttackSpeedRate",
+    "suffix": "Food_AttackSpeedRate",
+    "size": 1990
+  },
+  "1000101": {
+    "buff_key": 1000101,
+    "internal_name": "BuffLevel_Food_Poison",
+    "suffix": "Food_Poison",
+    "size": 1431
+  },
+  "1000219": {
+    "buff_key": 1000219,
+    "internal_name": "BuffLevel_Alchemy_DDD",
+    "suffix": "Alchemy_DDD",
+    "size": 1681
+  },
+  "1000220": {
+    "buff_key": 1000220,
+    "internal_name": "BuffLevel_Alchemy_DPV",
+    "suffix": "Alchemy_DPV",
+    "size": 1411
+  },
+  "1000221": {
+    "buff_key": 1000221,
+    "internal_name": "BuffLevel_Alchemy_HP",
+    "suffix": "Alchemy_HP",
+    "size": 1550
+  },
+  "1000076": {
+    "buff_key": 1000076,
+    "internal_name": "BuffLevel_Potion_DDD",
+    "suffix": "Potion_DDD",
+    "size": 715
+  },
+  "1000204": {
+    "buff_key": 1000204,
+    "internal_name": "BuffLevel_Potion_DPV",
+    "suffix": "Potion_DPV",
+    "size": 715
+  },
+  "1000205": {
+    "buff_key": 1000205,
+    "internal_name": "BuffLevel_Potion_HP",
+    "suffix": "Potion_HP",
+    "size": 734
+  },
+  "1000018": {
+    "buff_key": 1000018,
+    "internal_name": "BuffLevel_MinHP",
+    "suffix": "MinHP",
+    "size": 2791
+  },
+  "1000001": {
+    "buff_key": 1000001,
+    "internal_name": "BuffLevel_HP",
+    "suffix": "HP",
+    "size": 3479,
+    "english_name": "Health",
+    "english_desc": "Endure damage taken during combat."
+  },
+  "1000016": {
+    "buff_key": 1000016,
+    "internal_name": "BuffLevel_MaxHPPercent",
+    "suffix": "MaxHPPercent",
+    "size": 3032
+  },
+  "1000051": {
+    "buff_key": 1000051,
+    "internal_name": "BuffLevel_HP_Dot_Damage",
+    "suffix": "HP_Dot_Damage",
+    "size": 11213
+  },
+  "1000008": {
+    "buff_key": 1000008,
+    "internal_name": "BuffLevel_HPRegen",
+    "suffix": "HPRegen",
+    "size": 8007
+  },
+  "1000052": {
+    "buff_key": 1000052,
+    "internal_name": "BuffLevel_Mp_Dot_Damage",
+    "suffix": "Mp_Dot_Damage",
+    "size": 7013
+  },
+  "1000009": {
+    "buff_key": 1000009,
+    "internal_name": "BuffLevel_MpRegen",
+    "suffix": "MpRegen",
+    "size": 8007
+  },
+  "1000053": {
+    "buff_key": 1000053,
+    "internal_name": "BuffLevel_Sp_Dot_Damage",
+    "suffix": "Sp_Dot_Damage",
+    "size": 7013
+  },
+  "1000046": {
+    "buff_key": 1000046,
+    "internal_name": "BuffLevel_StaminaRegen",
+    "suffix": "StaminaRegen",
+    "size": 7012
+  },
+  "1000002": {
+    "buff_key": 1000002,
+    "internal_name": "BuffLevel_MP",
+    "suffix": "MP",
+    "size": 2560,
+    "english_name": "Spirit",
+    "english_desc": "Power consumed to execute skills and special actions."
+  },
+  "1000003": {
+    "buff_key": 1000003,
+    "internal_name": "BuffLevel_SP",
+    "suffix": "SP",
+    "size": 2824,
+    "english_name": "Stamina",
+    "english_desc": "Energy consumed when performing actions such as dodging or moving."
+  },
+  "1000004": {
+    "buff_key": 1000004,
+    "internal_name": "BuffLevel_DDD",
+    "suffix": "DDD",
+    "size": 2753,
+    "english_name": "Attack",
+    "english_desc": "Temp description"
+  },
+  "1000005": {
+    "buff_key": 1000005,
+    "internal_name": "BuffLevel_DPV",
+    "suffix": "DPV",
+    "size": 2078,
+    "english_name": "Defense",
+    "english_desc": "Temp description"
+  },
+  "1000006": {
+    "buff_key": 1000006,
+    "internal_name": "BuffLevel_AttackSpeedRate",
+    "suffix": "AttackSpeedRate",
+    "size": 2126,
+    "english_name": "Attack Speed",
+    "english_desc": "Temp description"
+  },
+  "1000007": {
+    "buff_key": 1000007,
+    "internal_name": "BuffLevel_MoveSpeedRate",
+    "suffix": "MoveSpeedRate",
+    "size": 2124,
+    "english_name": "Movement Speed",
+    "english_desc": "Temp description"
+  },
+  "1000074": {
+    "buff_key": 1000074,
+    "internal_name": "BuffLevel_CriticalRate",
+    "suffix": "CriticalRate",
+    "size": 2168,
+    "english_name": "Critical Rate",
+    "english_desc": "Temp description"
+  },
+  "1000082": {
+    "buff_key": 1000082,
+    "internal_name": "BuffLevel_DHIT",
+    "suffix": "DHIT",
+    "size": 2010,
+    "english_name": "Accuracy",
+    "english_desc": "Temp description"
+  },
+  "1000010": {
+    "buff_key": 1000010,
+    "internal_name": "BuffLevel_Pressure",
+    "suffix": "Pressure",
+    "size": 1568,
+    "english_name": "Intimidation"
+  },
+  "1000011": {
+    "buff_key": 1000011,
+    "internal_name": "BuffLevel_AttackedDamageReduction",
+    "suffix": "AttackedDamageReduction",
+    "size": 1463,
+    "english_name": "Damage Reduction",
+    "english_desc": "Temp description"
+  },
+  "1000012": {
+    "buff_key": 1000012,
+    "internal_name": "BuffLevel_FireResistance",
+    "suffix": "FireResistance",
+    "size": 13719,
+    "english_name": "Fire Resistance",
+    "english_desc": "Reduces Fire damage taken."
+  },
+  "1000013": {
+    "buff_key": 1000013,
+    "internal_name": "BuffLevel_IceResistance",
+    "suffix": "IceResistance",
+    "size": 13750,
+    "english_name": "Ice Resistance",
+    "english_desc": "Reduces ice damage."
+  },
+  "1000014": {
+    "buff_key": 1000014,
+    "internal_name": "BuffLevel_ElectricityResistance",
+    "suffix": "ElectricityResistance",
+    "size": 11507,
+    "english_name": "Lightning Resistance",
+    "english_desc": "Reduces Lightning damage taken."
+  },
+  "1000141": {
+    "buff_key": 1000141,
+    "internal_name": "BuffLevel_StaminaUseIncreaseRate",
+    "suffix": "StaminaUseIncreaseRate",
+    "size": 4172
+  },
+  "1000015": {
+    "buff_key": 1000015,
+    "internal_name": "BuffLevel_StaminaUseDecreaseRate",
+    "suffix": "StaminaUseDecreaseRate",
+    "size": 3232
+  },
+  "1000189": {
+    "buff_key": 1000189,
+    "internal_name": "BuffLevel_MpUseDecreaseRate",
+    "suffix": "MpUseDecreaseRate",
+    "size": 2437
+  },
+  "1000026": {
+    "buff_key": 1000026,
+    "internal_name": "BuffLevel_Bleeding",
+    "suffix": "Bleeding",
+    "size": 436
+  },
+  "1000029": {
+    "buff_key": 1000029,
+    "internal_name": "BuffLevel_BossWeaken",
+    "suffix": "BossWeaken",
+    "size": 465
+  },
+  "1000092": {
+    "buff_key": 1000092,
+    "internal_name": "BuffLevel_JijeongtaWeaken",
+    "suffix": "JijeongtaWeaken",
+    "size": 449
+  },
+  "1000098": {
+    "buff_key": 1000098,
+    "internal_name": "BuffLevel_JijeongtaWeakenBreakable",
+    "suffix": "JijeongtaWeakenBreakable",
+    "size": 2574
+  },
+  "1000025": {
+    "buff_key": 1000025,
+    "internal_name": "BuffLevel_NonSlip",
+    "suffix": "NonSlip",
+    "size": 2657
+  },
+  "1000047": {
+    "buff_key": 1000047,
+    "internal_name": "BuffLevel_Abyss_HP",
+    "suffix": "Abyss_HP",
+    "size": 2596
+  },
+  "1000048": {
+    "buff_key": 1000048,
+    "internal_name": "BuffLevel_Abyss_MP",
+    "suffix": "Abyss_MP",
+    "size": 1750
+  },
+  "1000049": {
+    "buff_key": 1000049,
+    "internal_name": "BuffLevel_Abyss_SP",
+    "suffix": "Abyss_SP",
+    "size": 2032
+  },
+  "1000106": {
+    "buff_key": 1000106,
+    "internal_name": "BuffLevel_ReduceFishingTime",
+    "suffix": "ReduceFishingTime",
+    "size": 1427
+  },
+  "1000190": {
+    "buff_key": 1000190,
+    "internal_name": "BuffLevel_FallDamageReduce",
+    "suffix": "FallDamageReduce",
+    "size": 1456
+  },
+  "1000068": {
+    "buff_key": 1000068,
+    "internal_name": "BuffLevel_DetectReaction",
+    "suffix": "DetectReaction",
+    "size": 1594
+  },
+  "1000086": {
+    "buff_key": 1000086,
+    "internal_name": "BuffLevel_BattleOrder",
+    "suffix": "BattleOrder",
+    "size": 610
+  },
+  "1000166": {
+    "buff_key": 1000166,
+    "internal_name": "BuffLevel_PlayerSensible",
+    "suffix": "PlayerSensible",
+    "size": 1767
+  },
+  "1000024": {
+    "buff_key": 1000024,
+    "internal_name": "BuffLevel_AIType_Tier1",
+    "suffix": "AIType_Tier1",
+    "size": 1362
+  },
+  "1000064": {
+    "buff_key": 1000064,
+    "internal_name": "BuffLevel_AIType_Tier2",
+    "suffix": "AIType_Tier2",
+    "size": 463
+  },
+  "1000200": {
+    "buff_key": 1000200,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_Battle_Wolf",
+    "suffix": "Equip_Set_Stealth_Animal_Wild_Battle_Wolf",
+    "size": 223
+  },
+  "1000201": {
+    "buff_key": 1000201,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_Battle_Bear",
+    "suffix": "Equip_Set_Stealth_Animal_Wild_Battle_Bear",
+    "size": 220
+  },
+  "1000202": {
+    "buff_key": 1000202,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Animal_Wild_NonBattle_Deer",
+    "suffix": "Equip_Set_Stealth_Animal_Wild_NonBattle_Deer",
+    "size": 226
+  },
+  "1000203": {
+    "buff_key": 1000203,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Animal_Ent",
+    "suffix": "Equip_Set_Stealth_Animal_Ent",
+    "size": 1225
+  },
+  "1000087": {
+    "buff_key": 1000087,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Human",
+    "suffix": "Equip_Set_Stealth_Human",
+    "size": 3438
+  },
+  "1000128": {
+    "buff_key": 1000128,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_DemenissMP",
+    "suffix": "Equip_Set_Stealth_Faction_DemenissMP",
+    "size": 741
+  },
+  "1000227": {
+    "buff_key": 1000227,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Thorel_Demeniss",
+    "suffix": "Equip_Set_Stealth_Faction_Thorel_Demeniss",
+    "size": 766
+  },
+  "1000126": {
+    "buff_key": 1000126,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_LonelyJackal",
+    "suffix": "Equip_Set_Stealth_Faction_LonelyJackal",
+    "size": 792
+  },
+  "1000127": {
+    "buff_key": 1000127,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_DrunkenBlackBears",
+    "suffix": "Equip_Set_Stealth_Faction_DrunkenBlackBears",
+    "size": 797
+  },
+  "1000165": {
+    "buff_key": 1000165,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Desert_Harrier",
+    "suffix": "Equip_Set_Stealth_Faction_Desert_Harrier",
+    "size": 401
+  },
+  "1000196": {
+    "buff_key": 1000196,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_DawnMoon",
+    "suffix": "Equip_Set_Stealth_Faction_DawnMoon",
+    "size": 421
+  },
+  "1000197": {
+    "buff_key": 1000197,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Faceless",
+    "suffix": "Equip_Set_Stealth_Faction_Faceless",
+    "size": 407
+  },
+  "1000198": {
+    "buff_key": 1000198,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_ThiefDusksong",
+    "suffix": "Equip_Set_Stealth_Faction_ThiefDusksong",
+    "size": 420
+  },
+  "1000215": {
+    "buff_key": 1000215,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_WyvernTamers",
+    "suffix": "Equip_Set_Stealth_Faction_WyvernTamers",
+    "size": 411
+  },
+  "1000216": {
+    "buff_key": 1000216,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_MistOwls",
+    "suffix": "Equip_Set_Stealth_Faction_MistOwls",
+    "size": 417
+  },
+  "1000199": {
+    "buff_key": 1000199,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_PirateI",
+    "suffix": "Equip_Set_Stealth_Faction_PirateI",
+    "size": 394
+  },
+  "1000228": {
+    "buff_key": 1000228,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_BleedBlade",
+    "suffix": "Equip_Set_Stealth_Faction_BleedBlade",
+    "size": 397
+  },
+  "1000229": {
+    "buff_key": 1000229,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Bandit",
+    "suffix": "Equip_Set_Stealth_Faction_Bandit",
+    "size": 393
+  },
+  "1000230": {
+    "buff_key": 1000230,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Antumbra",
+    "suffix": "Equip_Set_Stealth_Faction_Antumbra",
+    "size": 401
+  },
+  "1000231": {
+    "buff_key": 1000231,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_DeerKingSaigord",
+    "suffix": "Equip_Set_Stealth_Faction_DeerKingSaigord",
+    "size": 608
+  },
+  "1000232": {
+    "buff_key": 1000232,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Dewhaven",
+    "suffix": "Equip_Set_Stealth_Faction_Dewhaven",
+    "size": 580
+  },
+  "1000233": {
+    "buff_key": 1000233,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_SteelArrows",
+    "suffix": "Equip_Set_Stealth_Faction_SteelArrows",
+    "size": 604
+  },
+  "1000234": {
+    "buff_key": 1000234,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_WolfPursuer",
+    "suffix": "Equip_Set_Stealth_Faction_WolfPursuer",
+    "size": 595
+  },
+  "1000245": {
+    "buff_key": 1000245,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Halsius",
+    "suffix": "Equip_Set_Stealth_Faction_Halsius",
+    "size": 746
+  },
+  "1000069": {
+    "buff_key": 1000069,
+    "internal_name": "BuffLevel_Useless_Faction_Hide",
+    "suffix": "Useless_Faction_Hide",
+    "size": 686
+  },
+  "1000249": {
+    "buff_key": 1000249,
+    "internal_name": "BuffLevel_Check_NonSlip",
+    "suffix": "Check_NonSlip",
+    "size": 325
+  },
+  "1000081": {
+    "buff_key": 1000081,
+    "internal_name": "BuffLevel_Boss_Immune",
+    "suffix": "Boss_Immune",
+    "size": 1803
+  },
+  "1000191": {
+    "buff_key": 1000191,
+    "internal_name": "BuffLevel_Item_Active_Food_ComaImmune",
+    "suffix": "Item_Active_Food_ComaImmune",
+    "size": 212
+  },
+  "1000192": {
+    "buff_key": 1000192,
+    "internal_name": "BuffLevel_Item_Active_Food_SOUNDATTACK",
+    "suffix": "Item_Active_Food_SOUNDATTACK",
+    "size": 213
+  },
+  "1000096": {
+    "buff_key": 1000096,
+    "internal_name": "BuffLevel_Socket_AttackDamageReduction",
+    "suffix": "AttackDamageReduction",
+    "size": 2163
+  },
+  "1000097": {
+    "buff_key": 1000097,
+    "internal_name": "BuffLevel_Socket_GuardPVRate",
+    "suffix": "GuardPVRate",
+    "size": 1618,
+    "english_name": "Defense Efficiency",
+    "english_desc": "Reduces damage taken upon a successful guard."
+  },
+  "1000100": {
+    "buff_key": 1000100,
+    "internal_name": "BuffLevel_Socket_ClimbSpeedRate",
+    "suffix": "ClimbSpeedRate",
+    "size": 1461,
+    "english_name": "Climb Speed Multiplier",
+    "english_desc": "Temp description"
+  },
+  "1000122": {
+    "buff_key": 1000122,
+    "internal_name": "BuffLevel_Socket_StaminaRegen",
+    "suffix": "StaminaRegen",
+    "size": 2969
+  },
+  "1000107": {
+    "buff_key": 1000107,
+    "internal_name": "BuffLevel_Socket_SwimSpeedRate",
+    "suffix": "SwimSpeedRate",
+    "size": 1460,
+    "english_name": "Swim Speed Multiplier",
+    "english_desc": "Temp description"
+  },
+  "1000090": {
+    "buff_key": 1000090,
+    "internal_name": "BuffLevel_Machine_AddDamageRate",
+    "suffix": "Machine_AddDamageRate",
+    "size": 1621
+  },
+  "1000108": {
+    "buff_key": 1000108,
+    "internal_name": "BuffLevel_CommonHexe_AddDamageRate",
+    "suffix": "CommonHexe_AddDamageRate",
+    "size": 1624
+  },
+  "1000109": {
+    "buff_key": 1000109,
+    "internal_name": "BuffLevel_CommonHumanoid_AddDamageRate",
+    "suffix": "CommonHumanoid_AddDamageRate",
+    "size": 1628
+  },
+  "1000110": {
+    "buff_key": 1000110,
+    "internal_name": "BuffLevel_CommonGolem_AddDamageRate",
+    "suffix": "CommonGolem_AddDamageRate",
+    "size": 1625
+  },
+  "1000111": {
+    "buff_key": 1000111,
+    "internal_name": "BuffLevel_Boss_AddDamageRate",
+    "suffix": "Boss_AddDamageRate",
+    "size": 3108
+  },
+  "1000112": {
+    "buff_key": 1000112,
+    "internal_name": "BuffLevel_CommonAnimal_AddDamageRate",
+    "suffix": "CommonAnimal_AddDamageRate",
+    "size": 1626
+  },
+  "1000113": {
+    "buff_key": 1000113,
+    "internal_name": "BuffLevel_Creature_AddDamageRate",
+    "suffix": "Creature_AddDamageRate",
+    "size": 4882
+  },
+  "1000114": {
+    "buff_key": 1000114,
+    "internal_name": "BuffLevel_Socket_ContributionExp",
+    "suffix": "ContributionExp",
+    "size": 1492
+  },
+  "1000115": {
+    "buff_key": 1000115,
+    "internal_name": "BuffLevel_Socket_SkillPointExp",
+    "suffix": "SkillPointExp",
+    "size": 1460
+  },
+  "1000089": {
+    "buff_key": 1000089,
+    "internal_name": "BuffLevel_FoodSkillLevelUp",
+    "suffix": "FoodSkillLevelUp",
+    "size": 771
+  },
+  "1000091": {
+    "buff_key": 1000091,
+    "internal_name": "BuffLevel_ReduceCraftMaterial",
+    "suffix": "ReduceCraftMaterial",
+    "size": 819
+  },
+  "1000116": {
+    "buff_key": 1000116,
+    "internal_name": "BuffLevel_Socket_BlockAmmoConsume",
+    "suffix": "BlockAmmoConsume",
+    "size": 853
+  },
+  "1000117": {
+    "buff_key": 1000117,
+    "internal_name": "BuffLevel_Socket_AddMoneyDropRate",
+    "suffix": "AddMoneyDropRate",
+    "size": 1533,
+    "english_name": "Increased Silver Drop Rate",
+    "english_desc": "Increases the Silver gain from loot."
+  },
+  "1000119": {
+    "buff_key": 1000119,
+    "internal_name": "BuffLevel_Socket_AdditionalThief",
+    "suffix": "AdditionalThief",
+    "size": 1572
+  },
+  "1000099": {
+    "buff_key": 1000099,
+    "internal_name": "BuffLevel_AdditionalFriendly",
+    "suffix": "AdditionalFriendly",
+    "size": 1448
+  },
+  "1000123": {
+    "buff_key": 1000123,
+    "internal_name": "BuffLevel_AdditionalVehicleExp",
+    "suffix": "AdditionalVehicleExp",
+    "size": 1490
+  },
+  "1000124": {
+    "buff_key": 1000124,
+    "internal_name": "BuffLevel_AdditionalPetFriendly",
+    "suffix": "AdditionalPetFriendly",
+    "size": 1491
+  },
+  "1000071": {
+    "buff_key": 1000071,
+    "internal_name": "BuffLevel_CollectDrop_Ore",
+    "suffix": "CollectDrop_Ore",
+    "size": 1485
+  },
+  "1000072": {
+    "buff_key": 1000072,
+    "internal_name": "BuffLevel_CollectDrop_Plant",
+    "suffix": "CollectDrop_Plant",
+    "size": 1487
+  },
+  "1000073": {
+    "buff_key": 1000073,
+    "internal_name": "BuffLevel_CollectDrop_Animal",
+    "suffix": "CollectDrop_Animal",
+    "size": 1588
+  },
+  "1000105": {
+    "buff_key": 1000105,
+    "internal_name": "BuffLevel_Drop_Log",
+    "suffix": "Drop_Log",
+    "size": 380
+  },
+  "1000176": {
+    "buff_key": 1000176,
+    "internal_name": "BuffLevel_Drop_Mining",
+    "suffix": "Drop_Mining",
+    "size": 369
+  },
+  "1000093": {
+    "buff_key": 1000093,
+    "internal_name": "BuffLevel_CollectDrop_Log",
+    "suffix": "CollectDrop_Log",
+    "size": 1485
+  },
+  "1000226": {
+    "buff_key": 1000226,
+    "internal_name": "BuffLevel_CollectDrop_Machine",
+    "suffix": "CollectDrop_Machine",
+    "size": 1489
+  },
+  "1000066": {
+    "buff_key": 1000066,
+    "internal_name": "BuffLevel_EquipDropRate",
+    "suffix": "EquipDropRate",
+    "size": 1494,
+    "english_name": "Equipment Drop Rate",
+    "english_desc": "Temp description"
+  },
+  "1000149": {
+    "buff_key": 1000149,
+    "internal_name": "BuffLevel_AbyssGrass_Immune",
+    "suffix": "AbyssGrass_Immune",
+    "size": 205
+  },
+  "1000150": {
+    "buff_key": 1000150,
+    "internal_name": "BuffLevel_Passive_Hyena_PoisonImmune",
+    "suffix": "Hyena_PoisonImmune",
+    "size": 339
+  },
+  "1000225": {
+    "buff_key": 1000225,
+    "internal_name": "BuffLevel_Passive_CCImumune",
+    "suffix": "CCImumune",
+    "size": 1401
+  },
+  "1000151": {
+    "buff_key": 1000151,
+    "internal_name": "BuffLevel_Passive_Immune_Bismuth",
+    "suffix": "Immune_Bismuth",
+    "size": 209
+  },
+  "1000152": {
+    "buff_key": 1000152,
+    "internal_name": "BuffLevel_Passive_DeerKingHelm",
+    "suffix": "DeerKingHelm",
+    "size": 232
+  },
+  "1000153": {
+    "buff_key": 1000153,
+    "internal_name": "BuffLevel_Socket_AddKillSkillLevel",
+    "suffix": "AddKillSkillLevel",
+    "size": 548
+  },
+  "1000270": {
+    "buff_key": 1000270,
+    "internal_name": "BuffLevel_Socket_DecreaseHP_IncreaseMP_Dot_Desc",
+    "suffix": "DecreaseHP_IncreaseMP_Dot_Desc",
+    "size": 2457
+  },
+  "1000130": {
+    "buff_key": 1000130,
+    "internal_name": "BuffLevel_Passive_Myurdin_Sword",
+    "suffix": "Myurdin_Sword",
+    "size": 430
+  },
+  "1000131": {
+    "buff_key": 1000131,
+    "internal_name": "BuffLevel_Passive_SplitHornSword",
+    "suffix": "SplitHornSword",
+    "size": 195
+  },
+  "1000132": {
+    "buff_key": 1000132,
+    "internal_name": "BuffLevel_Passive_SizlekSword",
+    "suffix": "SizlekSword",
+    "size": 391
+  },
+  "1000253": {
+    "buff_key": 1000253,
+    "internal_name": "BuffLevel_Passive_HexeMarie",
+    "suffix": "HexeMarie",
+    "size": 372
+  },
+  "1000134": {
+    "buff_key": 1000134,
+    "internal_name": "BuffLevel_Passive_CrowmanSword",
+    "suffix": "CrowmanSword",
+    "size": 400
+  },
+  "1000135": {
+    "buff_key": 1000135,
+    "internal_name": "BuffLevel_Passive_CaliburnRapier",
+    "suffix": "CaliburnRapier",
+    "size": 201
+  },
+  "1000136": {
+    "buff_key": 1000136,
+    "internal_name": "BuffLevel_Passive_ReedDevilSword",
+    "suffix": "ReedDevilSword",
+    "size": 399
+  },
+  "1000133": {
+    "buff_key": 1000133,
+    "internal_name": "BuffLevel_Passive_MasterDoo",
+    "suffix": "MasterDoo",
+    "size": 369
+  },
+  "1000138": {
+    "buff_key": 1000138,
+    "internal_name": "BuffLevel_Passive_HamondBindel_LongSword",
+    "suffix": "HamondBindel_LongSword",
+    "size": 422
+  },
+  "1000139": {
+    "buff_key": 1000139,
+    "internal_name": "BuffLevel_Passive_RedsentinelBow",
+    "suffix": "RedsentinelBow",
+    "size": 213
+  },
+  "1000256": {
+    "buff_key": 1000256,
+    "internal_name": "BuffLevel_Passive_Trukan",
+    "suffix": "Trukan",
+    "size": 383
+  },
+  "1000259": {
+    "buff_key": 1000259,
+    "internal_name": "BuffLevel_Passive_Catfish",
+    "suffix": "Catfish",
+    "size": 392,
+    "english_name": "Catfish",
+    "english_desc": "A fish that isn't easily caught. It uses unique whiskers similar to a cat's to detect prey in murky water. It adapts to various water conditions and is known for its voracious appetite, reportedly stowing anything that moves into its mouth."
+  },
+  "1000142": {
+    "buff_key": 1000142,
+    "internal_name": "BuffLevel_Passive_Antumbra_TwoHandSword",
+    "suffix": "Antumbra_TwoHandSword",
+    "size": 444
+  },
+  "1000159": {
+    "buff_key": 1000159,
+    "internal_name": "BuffLevel_Passive_Moonhead_GiantSpear_Fire",
+    "suffix": "Moonhead_GiantSpear_Fire",
+    "size": 233
+  },
+  "1000163": {
+    "buff_key": 1000163,
+    "internal_name": "BuffLevel_Passive_Moonhead_GiantSpear_Ice",
+    "suffix": "Moonhead_GiantSpear_Ice",
+    "size": 229
+  },
+  "1000164": {
+    "buff_key": 1000164,
+    "internal_name": "BuffLevel_Passive_Moonhead_GiantSpear_Lightning",
+    "suffix": "Moonhead_GiantSpear_Lightning",
+    "size": 238
+  },
+  "1000144": {
+    "buff_key": 1000144,
+    "internal_name": "BuffLevel_Passive_Ator_Sword",
+    "suffix": "Ator_Sword",
+    "size": 409
+  },
+  "1000251": {
+    "buff_key": 1000251,
+    "internal_name": "BuffLevel_Passive_SilverArmor",
+    "suffix": "SilverArmor",
+    "size": 395
+  },
+  "1000137": {
+    "buff_key": 1000137,
+    "internal_name": "BuffLevel_Passive_Merrick",
+    "suffix": "Merrick",
+    "size": 215
+  },
+  "1000263": {
+    "buff_key": 1000263,
+    "internal_name": "BuffLevel_Passive_Muscan",
+    "suffix": "Muscan",
+    "size": 386
+  },
+  "1000148": {
+    "buff_key": 1000148,
+    "internal_name": "BuffLevel_Passive_SoulKnight_OneHandSword",
+    "suffix": "SoulKnight_OneHandSword",
+    "size": 413,
+    "english_name": "Shackle of Might",
+    "english_desc": "Fortain, the Cursed Knight's sword. Through a contract with Hexe Marie, he gained the power to command his clone. But the moment he lost a fight, he was beheaded by that very clone."
+  },
+  "1000161": {
+    "buff_key": 1000161,
+    "internal_name": "BuffLevel_Passive_WhiteHorn",
+    "suffix": "WhiteHorn",
+    "size": 406
+  },
+  "1000156": {
+    "buff_key": 1000156,
+    "internal_name": "BuffLevel_Passive_FlameKnightSword",
+    "suffix": "FlameKnightSword",
+    "size": 430
+  },
+  "1000140": {
+    "buff_key": 1000140,
+    "internal_name": "BuffLevel_Passive_Ludvig",
+    "suffix": "Ludvig",
+    "size": 392,
+    "english_name": "Ludvig",
+    "english_desc": "Leader of the Lonely Jackals. He already had a bad reputation as an opportunist, but none expected him to change so drastically after Jian fell. Clinging to the strong while harboring ugly ambitions, he dreams of one day trampling over those he stabbed in the back and standing at the top."
+  },
+  "1000254": {
+    "buff_key": 1000254,
+    "internal_name": "BuffLevel_Passive_TarandusWarrior",
+    "suffix": "TarandusWarrior",
+    "size": 223
+  },
+  "1000250": {
+    "buff_key": 1000250,
+    "internal_name": "BuffLevel_Passive_Ogre",
+    "suffix": "Ogre",
+    "size": 395
+  },
+  "1000175": {
+    "buff_key": 1000175,
+    "internal_name": "BuffLevel_Passive_Karanda",
+    "suffix": "Karanda",
+    "size": 414,
+    "english_name": "Karanda",
+    "english_desc": "The queen of the Harpies. She resides in Silver Wolf Mountain. Harpies are fiercely territorial and would sometimes threaten humans who wander near, but the queen never took much interest in humans. However, she has recently gained infamy for rading and plundering travelers in a fit of fury as an effort to seek out the human who stole her egg."
+  },
+  "1000266": {
+    "buff_key": 1000266,
+    "internal_name": "BuffLevel_Passive_Primus",
+    "suffix": "Primus",
+    "size": 416,
+    "english_name": "Primus the Ancient",
+    "english_desc": "An Ancient returned to the world through the power of an Artifact.<br/>At the Three Brothers' Cliff dwells a legendary being said to hurl resisting foes into raging whirlwinds. Legend foretells that when it reunites with its comrades, it will conquer the entire continent."
+  },
+  "1000129": {
+    "buff_key": 1000129,
+    "internal_name": "BuffLevel_Passive_Titan",
+    "suffix": "Titan",
+    "size": 210
+  },
+  "1000258": {
+    "buff_key": 1000258,
+    "internal_name": "BuffLevel_Passive_Priscus",
+    "suffix": "Priscus",
+    "size": 413,
+    "english_name": "Priscus the Ancient",
+    "english_desc": "An ancient being returned to the world through the power of an Artifact.<br/>Legends tell that in Five-Finger Mountain dwells an Ancient capable of freely commanding massive stones. When reunited with their comrades, it is said they will conquer the entire continent of Pywel."
+  },
+  "1000261": {
+    "buff_key": 1000261,
+    "internal_name": "BuffLevel_Passive_Praevus",
+    "suffix": "Praevus",
+    "size": 405,
+    "english_name": "Praevus the Ancient",
+    "english_desc": "An ancient being returned to the world through the power of an Artifact. In the Crimson Desert lives an Ancient of legend who burns anyone who stands in their path to ash. Legend foretells that when it reunites with its comrades, it will conquer the entire continent."
+  },
+  "1000257": {
+    "buff_key": 1000257,
+    "internal_name": "BuffLevel_Passive_Leebur",
+    "suffix": "Leebur",
+    "size": 418
+  },
+  "1000160": {
+    "buff_key": 1000160,
+    "internal_name": "BuffLevel_Passive_LanFord",
+    "suffix": "LanFord",
+    "size": 402
+  },
+  "1000125": {
+    "buff_key": 1000125,
+    "internal_name": "BuffLevel_Passive_Forgotten_General",
+    "suffix": "Forgotten_General",
+    "size": 416
+  },
+  "1000155": {
+    "buff_key": 1000155,
+    "internal_name": "BuffLevel_Passive_QueenSpider",
+    "suffix": "QueenSpider",
+    "size": 399,
+    "english_name": "Queen Spider",
+    "english_desc": "The queen of the spiders that have seized Arboria Castle.<br/>The Fundamentalist Goblins received a commission from the Bleed Bandits to produce a new drug called Dreamer's Bliss. They required spider venom as a key ingredient and bred larger, more potent spiders. In doing so, they created a being they could no longer control."
+  },
+  "1000260": {
+    "buff_key": 1000260,
+    "internal_name": "BuffLevel_Passive_ImpBoss",
+    "suffix": "ImpBoss",
+    "size": 215
+  },
+  "1000255": {
+    "buff_key": 1000255,
+    "internal_name": "BuffLevel_Passive_Skevald",
+    "suffix": "Skevald",
+    "size": 401
+  },
+  "1000265": {
+    "buff_key": 1000265,
+    "internal_name": "BuffLevel_Passive_Antumbra_Spear",
+    "suffix": "Antumbra_Spear",
+    "size": 232
+  },
+  "1000162": {
+    "buff_key": 1000162,
+    "internal_name": "BuffLevel_Passive_GottiSword",
+    "suffix": "GottiSword",
+    "size": 427
+  },
+  "1000088": {
+    "buff_key": 1000088,
+    "internal_name": "BuffLevel_Passive_DarknessKingHalberd",
+    "suffix": "DarknessKingHalberd",
+    "size": 435
+  },
+  "1000169": {
+    "buff_key": 1000169,
+    "internal_name": "BuffLevel_Passive_Antumbra_TwoHandRod",
+    "suffix": "Antumbra_TwoHandRod",
+    "size": 435
+  },
+  "1000170": {
+    "buff_key": 1000170,
+    "internal_name": "BuffLevel_Passive_SolidBringer_WarHammer",
+    "suffix": "SolidBringer_WarHammer",
+    "size": 413
+  },
+  "1000264": {
+    "buff_key": 1000264,
+    "internal_name": "BuffLevel_Passive_Gwen",
+    "suffix": "Gwen",
+    "size": 411
+  },
+  "1000120": {
+    "buff_key": 1000120,
+    "internal_name": "BuffLevel_Passive_Bastier_Gear",
+    "suffix": "Bastier_Gear",
+    "size": 412
+  },
+  "1000195": {
+    "buff_key": 1000195,
+    "internal_name": "BuffLevel_Fishing_Autoreel",
+    "suffix": "Fishing_Autoreel",
+    "size": 189
+  },
+  "1000223": {
+    "buff_key": 1000223,
+    "internal_name": "BuffLevel_Hit_HPRecover",
+    "suffix": "Hit_HPRecover",
+    "size": 4728
+  },
+  "1000224": {
+    "buff_key": 1000224,
+    "internal_name": "BuffLevel_Hit_MPRecover",
+    "suffix": "Hit_MPRecover",
+    "size": 4728
+  },
+  "1000248": {
+    "buff_key": 1000248,
+    "internal_name": "BuffLevel_Hit_SPRecover",
+    "suffix": "Hit_SPRecover",
+    "size": 4728
+  },
+  "1000208": {
+    "buff_key": 1000208,
+    "internal_name": "BuffLevel_Passive_Attack_HPRecover",
+    "suffix": "Attack_HPRecover",
+    "size": 491
+  },
+  "1000209": {
+    "buff_key": 1000209,
+    "internal_name": "BuffLevel_Passive_Attack_MPRecover",
+    "suffix": "Attack_MPRecover",
+    "size": 491
+  },
+  "1000210": {
+    "buff_key": 1000210,
+    "internal_name": "BuffLevel_Passive_Attack_SPRecover",
+    "suffix": "Attack_SPRecover",
+    "size": 491
+  },
+  "1000252": {
+    "buff_key": 1000252,
+    "internal_name": "BuffLevel_Attack_HPRecover",
+    "suffix": "Attack_HPRecover",
+    "size": 4731
+  },
+  "1000262": {
+    "buff_key": 1000262,
+    "internal_name": "BuffLevel_Attack_MPRecover",
+    "suffix": "Attack_MPRecover",
+    "size": 4731
+  },
+  "1000273": {
+    "buff_key": 1000273,
+    "internal_name": "BuffLevel_Attack_SPRecover",
+    "suffix": "Attack_SPRecover",
+    "size": 4731
+  },
+  "1000211": {
+    "buff_key": 1000211,
+    "internal_name": "BuffLevel_TradeShopSellPricePercent",
+    "suffix": "TradeShopSellPricePercent",
+    "size": 825
+  },
+  "1000212": {
+    "buff_key": 1000212,
+    "internal_name": "BuffLevel_Passive_Combo",
+    "suffix": "Combo",
+    "size": 444
+  },
+  "1000213": {
+    "buff_key": 1000213,
+    "internal_name": "BuffLevel_HorseArmor_Shoe_StaminaRegen",
+    "suffix": "HorseArmor_Shoe_StaminaRegen",
+    "size": 803
+  },
+  "1000147": {
+    "buff_key": 1000147,
+    "internal_name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_PlateArmor",
+    "suffix": "AddCriticalRateByMaterialKey_PlateArmor",
+    "size": 3496
+  },
+  "1000154": {
+    "buff_key": 1000154,
+    "internal_name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_LeatherArmor",
+    "suffix": "AddCriticalRateByMaterialKey_LeatherArmor",
+    "size": 1798
+  },
+  "1000157": {
+    "buff_key": 1000157,
+    "internal_name": "BuffLevel_Socket_AddCriticalRateByMaterialKey_FabricArmor",
+    "suffix": "AddCriticalRateByMaterialKey_FabricArmor",
+    "size": 1767
+  },
+  "1000214": {
+    "buff_key": 1000214,
+    "internal_name": "BuffLevel_HorseArmor_Stirrup_HPRegen",
+    "suffix": "HorseArmor_Stirrup_HPRegen",
+    "size": 886
+  },
+  "1000267": {
+    "buff_key": 1000267,
+    "internal_name": "BuffLevel_Boss_PauseCount",
+    "suffix": "Boss_PauseCount",
+    "size": 416
+  },
+  "1000268": {
+    "buff_key": 1000268,
+    "internal_name": "BuffLevel_Boss_ThreatCount",
+    "suffix": "Boss_ThreatCount",
+    "size": 656
+  },
+  "1000269": {
+    "buff_key": 1000269,
+    "internal_name": "BuffLevel_BumpCountStart",
+    "suffix": "BumpCountStart",
+    "size": 185
+  },
+  "1000102": {
+    "buff_key": 1000102,
+    "internal_name": "BuffLevel_MountedHit",
+    "suffix": "MountedHit",
+    "size": 670
+  },
+  "1000103": {
+    "buff_key": 1000103,
+    "internal_name": "BuffLevel_Legendary_Wolf_Effect",
+    "suffix": "Legendary_Wolf_Effect",
+    "size": 211
+  },
+  "1000118": {
+    "buff_key": 1000118,
+    "internal_name": "BuffLevel_Ludvig_Effect",
+    "suffix": "Ludvig_Effect",
+    "size": 203
+  },
+  "1000193": {
+    "buff_key": 1000193,
+    "internal_name": "BuffLevel_Ludvig_Awakened_Effect",
+    "suffix": "Ludvig_Awakened_Effect",
+    "size": 808
+  },
+  "1000194": {
+    "buff_key": 1000194,
+    "internal_name": "BuffLevel_DeadBlood_Effect",
+    "suffix": "DeadBlood_Effect",
+    "size": 192
+  },
+  "1000217": {
+    "buff_key": 1000217,
+    "internal_name": "BuffLevel_ReedDevil_EyeLights_Effect",
+    "suffix": "ReedDevil_EyeLights_Effect",
+    "size": 212
+  },
+  "1000218": {
+    "buff_key": 1000218,
+    "internal_name": "BuffLevel_DarkMyordin_EyeLights_Effect",
+    "suffix": "DarkMyordin_EyeLights_Effect",
+    "size": 344
+  },
+  "1000246": {
+    "buff_key": 1000246,
+    "internal_name": "BuffLevel_FlameMyurdin_Effect",
+    "suffix": "FlameMyurdin_Effect",
+    "size": 436
+  },
+  "1000235": {
+    "buff_key": 1000235,
+    "internal_name": "BuffLevel_Boss_EyeLights_Effect",
+    "suffix": "Boss_EyeLights_Effect",
+    "size": 337
+  },
+  "1000236": {
+    "buff_key": 1000236,
+    "internal_name": "BuffLevel_WhiteHorn_EyeLights_Effect",
+    "suffix": "WhiteHorn_EyeLights_Effect",
+    "size": 348
+  },
+  "1000237": {
+    "buff_key": 1000237,
+    "internal_name": "BuffLevel_Nuclear_Fusion_Effect",
+    "suffix": "Nuclear_Fusion_Effect",
+    "size": 349
+  },
+  "1000238": {
+    "buff_key": 1000238,
+    "internal_name": "BuffLevel_ReedDevil_Shadow_Effect",
+    "suffix": "ReedDevil_Shadow_Effect",
+    "size": 209
+  },
+  "1000239": {
+    "buff_key": 1000239,
+    "internal_name": "BuffLevel_ReedDevil_Clone_Shadow_Effect",
+    "suffix": "ReedDevil_Clone_Shadow_Effect",
+    "size": 215
+  },
+  "1000240": {
+    "buff_key": 1000240,
+    "internal_name": "BuffLevel_Hexe_Marie_Effect",
+    "suffix": "Hexe_Marie_Effect",
+    "size": 204
+  },
+  "1000241": {
+    "buff_key": 1000241,
+    "internal_name": "BuffLevel_WizardBracelet_Effect",
+    "suffix": "WizardBracelet_Effect",
+    "size": 349
+  },
+  "1000242": {
+    "buff_key": 1000242,
+    "internal_name": "BuffLevel_Wizard_Halo_Effect",
+    "suffix": "Wizard_Halo_Effect",
+    "size": 204
+  },
+  "1000243": {
+    "buff_key": 1000243,
+    "internal_name": "BuffLevel_Giant_Titan_Effect",
+    "suffix": "Giant_Titan_Effect",
+    "size": 201
+  },
+  "1000222": {
+    "buff_key": 1000222,
+    "internal_name": "BuffLevel_Abyss_Kutum_Effect",
+    "suffix": "Abyss_Kutum_Effect",
+    "size": 201
+  },
+  "1000247": {
+    "buff_key": 1000247,
+    "internal_name": "BuffLevel_Oongka_SuperArmorEffect",
+    "suffix": "Oongka_SuperArmorEffect",
+    "size": 216
+  },
+  "1000172": {
+    "buff_key": 1000172,
+    "internal_name": "BuffLevel_Armor_Plate_Mastery",
+    "suffix": "Armor_Plate_Mastery",
+    "size": 6710
+  },
+  "1000173": {
+    "buff_key": 1000173,
+    "internal_name": "BuffLevel_Armor_Leather_Mastery",
+    "suffix": "Armor_Leather_Mastery",
+    "size": 6712
+  },
+  "1000174": {
+    "buff_key": 1000174,
+    "internal_name": "BuffLevel_Armor_Fabric_Mastery",
+    "suffix": "Armor_Fabric_Mastery",
+    "size": 6561
+  },
+  "1000187": {
+    "buff_key": 1000187,
+    "internal_name": "BuffLevel_Armor_Plate_Mastery_Stat",
+    "suffix": "Armor_Plate_Mastery_Stat",
+    "size": 8106
+  },
+  "1000188": {
+    "buff_key": 1000188,
+    "internal_name": "BuffLevel_Armor_Leather_Mastery_Stat",
+    "suffix": "Armor_Leather_Mastery_Stat",
+    "size": 29584
+  },
+  "1000206": {
+    "buff_key": 1000206,
+    "internal_name": "BuffLevel_Armor_Fabric_Mastery_Stat",
+    "suffix": "Armor_Fabric_Mastery_Stat",
+    "size": 23887
+  },
+  "1000000": {
+    "buff_key": 1000000,
+    "internal_name": "BuffLevel_Temperature",
+    "suffix": "Temperature",
+    "size": 5568,
+    "english_name": "Temperature",
+    "english_desc": "May restrict actions if the surrounding temperature is too high or too low."
+  },
+  "1000145": {
+    "buff_key": 1000145,
+    "internal_name": "BuffLevel_Temperature_Debuff_Cold",
+    "suffix": "Temperature_Debuff_Cold",
+    "size": 961
+  },
+  "1000146": {
+    "buff_key": 1000146,
+    "internal_name": "BuffLevel_Temperature_Debuff_Hot",
+    "suffix": "Temperature_Debuff_Hot",
+    "size": 960
+  },
+  "1000067": {
+    "buff_key": 1000067,
+    "internal_name": "BuffLevel_Electricity",
+    "suffix": "Electricity",
+    "size": 1060,
+    "english_name": "Lightning",
+    "english_desc": "May deal damage with lightning."
+  },
+  "1000143": {
+    "buff_key": 1000143,
+    "internal_name": "BuffLevel_Temperature_Wagon",
+    "suffix": "Temperature_Wagon",
+    "size": 1136
+  },
+  "1000080": {
+    "buff_key": 1000080,
+    "internal_name": "BuffLevel_Temperature_Boss",
+    "suffix": "Temperature_Boss",
+    "size": 566
+  },
+  "1000158": {
+    "buff_key": 1000158,
+    "internal_name": "BuffLevel_Temperature_Insect",
+    "suffix": "Temperature_Insect",
+    "size": 977
+  },
+  "1000244": {
+    "buff_key": 1000244,
+    "internal_name": "BuffLevel_Electricity_Boss",
+    "suffix": "Electricity_Boss",
+    "size": 327
+  },
+  "1000271": {
+    "buff_key": 1000271,
+    "internal_name": "BuffLevel_Electricity_Machine",
+    "suffix": "Electricity_Machine",
+    "size": 315
+  },
+  "1000027": {
+    "buff_key": 1000027,
+    "internal_name": "BuffLevel_RedLightning",
+    "suffix": "RedLightning",
+    "size": 755
+  },
+  "1000028": {
+    "buff_key": 1000028,
+    "internal_name": "BuffLevel_Bismuth",
+    "suffix": "Bismuth",
+    "size": 624
+  },
+  "1000021": {
+    "buff_key": 1000021,
+    "internal_name": "BuffLevel_Confusion",
+    "suffix": "Confusion",
+    "size": 775,
+    "english_name": "Debuff Resistance",
+    "english_desc": "Resistance to status effects caused by external forces such as enemies or the environment."
+  },
+  "1000020": {
+    "buff_key": 1000020,
+    "internal_name": "BuffLevel_Poison",
+    "suffix": "Poison",
+    "size": 2547
+  },
+  "1000032": {
+    "buff_key": 1000032,
+    "internal_name": "BuffLevel_AbyssPoison",
+    "suffix": "AbyssPoison",
+    "size": 778
+  },
+  "1000023": {
+    "buff_key": 1000023,
+    "internal_name": "BuffLevel_WhitePoison",
+    "suffix": "WhitePoison",
+    "size": 879
+  },
+  "1000022": {
+    "buff_key": 1000022,
+    "internal_name": "BuffLevel_PuplePoison",
+    "suffix": "PuplePoison",
+    "size": 589
+  },
+  "1000275": {
+    "buff_key": 1000275,
+    "internal_name": "BuffLevel_Equip_Set_Stealth_Faction_Flame_Knights",
+    "suffix": "Equip_Set_Stealth_Faction_Flame_Knights",
+    "size": 0
+  },
+  "1000276": {
+    "buff_key": 1000276,
+    "internal_name": "BuffLevel_Difficulty",
+    "suffix": "Difficulty",
+    "size": 0
+  },
+  "1000277": {
+    "buff_key": 1000277,
+    "internal_name": "BuffLevel_Difficulty_Boss",
+    "suffix": "Difficulty_Boss",
+    "size": 0
+  },
+  "1000278": {
+    "buff_key": 1000278,
+    "internal_name": "BuffLevel_Difficulty_PC",
+    "suffix": "Difficulty_PC",
+    "size": 0
+  },
+  "1000279": {
+    "buff_key": 1000279,
+    "internal_name": "BuffLevel_WildSpirit_Boar_Angry",
+    "suffix": "WildSpirit_Boar_Angry",
+    "size": 0
+  },
+  "1000280": {
+    "buff_key": 1000280,
+    "internal_name": "BuffLevel_Equipment_FireResistance",
+    "suffix": "Equipment_FireResistance",
+    "size": 0
+  },
+  "1000281": {
+    "buff_key": 1000281,
+    "internal_name": "BuffLevel_Equipment_IceResistance",
+    "suffix": "Equipment_IceResistance",
+    "size": 0
+  },
+  "1000282": {
+    "buff_key": 1000282,
+    "internal_name": "BuffLevel_Equipment_ElectricityResistance",
+    "suffix": "Equipment_ElectricityResistance",
+    "size": 0
+  }
+}

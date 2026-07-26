@@ -1,0 +1,16 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Valuable Gems & Ores",
+  "author": "CrimsonSaveEditor",
+  "description": "Diamond, Gold Ore, Scolecite, Bismuth at 80% drop rate",
+  "items": [
+    {"item_key": 721504, "name": "Diamond", "rate_pct": 80, "qty": 5},
+    {"item_key": 720003, "name": "Gold Ore", "rate_pct": 80, "qty": 5},
+    {"item_key": 721506, "name": "Scolecite Ore", "rate_pct": 80, "qty": 5},
+    {"item_key": 720010, "name": "Bismuth Ore", "rate_pct": 80, "qty": 5},
+    {"item_key": 721501, "name": "Garnet", "rate_pct": 80, "qty": 5},
+    {"item_key": 721503, "name": "Azurite", "rate_pct": 80, "qty": 5},
+    {"item_key": 721502, "name": "Epidote", "rate_pct": 80, "qty": 5}
+  ]
+}

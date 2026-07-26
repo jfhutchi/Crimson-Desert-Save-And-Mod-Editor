@@ -1,0 +1,129 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Dyes Pack 1",
+  "author": "CrimsonSaveEditor",
+  "description": "White, Grey, Red, Violet, Purple dyes (20) at 100% drop rate",
+  "items": [
+    {
+      "item_key": 1001175,
+      "name": "Pure White Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001260,
+      "name": "Bright Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001308,
+      "name": "Silver Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001324,
+      "name": "Medium Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001336,
+      "name": "Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001433,
+      "name": "Shadow Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001615,
+      "name": "Bright Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001616,
+      "name": "Rich Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001617,
+      "name": "Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001618,
+      "name": "Dark Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001619,
+      "name": "Deep Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001620,
+      "name": "Bright Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001621,
+      "name": "Rich Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001622,
+      "name": "Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001623,
+      "name": "Dark Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001624,
+      "name": "Deep Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001625,
+      "name": "Bright Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001626,
+      "name": "Rich Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001627,
+      "name": "Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001628,
+      "name": "Dark Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    }
+  ]
+}

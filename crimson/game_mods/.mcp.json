@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ida-pro-mcp": {
+      "type": "http",
+      "url": "http://127.0.0.1:13337/mcp"
+    },
+    "cheatengine": {
+      "command": "python",
+      "args": ["C:/Users/Coding/CrimsonDesertModding/cheatengine-mcp-bridge/MCP_Server/mcp_cheatengine.py"]
+    },
+    "crimson-game": {
+      "command": "python",
+      "args": ["C:/Users/Coding/CrimsonDesertModding/CrimsonLua/mcp_server.py"]
+    }
+  }
+}

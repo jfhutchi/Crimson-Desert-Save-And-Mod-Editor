@@ -1,0 +1,4578 @@
+{
+  "70048": {
+    "skill_id": 70048,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002056,
+        "all_gimmicks_observed": {
+          "1002056": 10
+        }
+      }
+    },
+    "total_items_with_this_passive": 10,
+    "items_sample": [
+      {
+        "key": 14510,
+        "string_key": "Marni_Devotee_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14511,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000231,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000232,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_III",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000233,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_IV",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 4334,
+        "string_key": "Quest_BrokenVisionPro_Bremer",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "91000": {
+    "skill_id": 91000,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "1002056": 10,
+          "18020014": 87,
+          "1002222": 2,
+          "1001504": 1,
+          "1000431": 1,
+          "1001076": 1,
+          "1004060": 1,
+          "1001072": 1,
+          "1002228": 1,
+          "1001988": 1,
+          "1001977": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 1001977,
+        "all_gimmicks_observed": {
+          "1001977": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 108,
+    "items_sample": [
+      {
+        "key": 14510,
+        "string_key": "Marni_Devotee_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14511,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000231,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000232,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_III",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000233,
+        "string_key": "Marni_Devotee_PlateArmor_Helm_IV",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 4334,
+        "string_key": "Quest_BrokenVisionPro_Bremer",
+        "item_type": 24,
+        "gimmick_info": 1002056,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24,
+      103
+    ]
+  },
+  "70137": {
+    "skill_id": 70137,
+    "per_item_type": {
+      "58": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1003363,
+        "string_key": "Item_Scale",
+        "item_type": 58,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      58
+    ]
+  },
+  "70136": {
+    "skill_id": 70136,
+    "per_item_type": {
+      "58": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000329,
+        "string_key": "Abacus",
+        "item_type": 58,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      58
+    ]
+  },
+  "8037": {
+    "skill_id": 8037,
+    "per_item_type": {
+      "74": {
+        "canonical_gimmick_info": 18010001,
+        "all_gimmicks_observed": {
+          "18010001": 4
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 21,
+          "1002223": 1,
+          "1002222": 1,
+          "1002266": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 29,
+    "items_sample": [
+      {
+        "key": 1001424,
+        "string_key": "Item_Stat_AbyssGear_FireResistance_LV1",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001425,
+        "string_key": "Item_Stat_AbyssGear_FireResistance_LV2",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001426,
+        "string_key": "Item_Stat_AbyssGear_FireResistance_LV3",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002972,
+        "string_key": "Item_Stat_AbyssGear_FireResistance_Special",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000299,
+        "string_key": "Legendary_MarniGolem_Plate_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020007,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000310,
+        "string_key": "Samuel_PlateArmor_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      74,
+      103
+    ]
+  },
+  "8038": {
+    "skill_id": 8038,
+    "per_item_type": {
+      "74": {
+        "canonical_gimmick_info": 18010001,
+        "all_gimmicks_observed": {
+          "18010001": 4
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 36,
+          "1002223": 8,
+          "18020004": 3,
+          "18020007": 1,
+          "1004744": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 54,
+    "items_sample": [
+      {
+        "key": 1002167,
+        "string_key": "Item_Stat_AbyssGear_IceResistance_LV1",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002389,
+        "string_key": "Item_Stat_AbyssGear_IceResistance_LV2",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002467,
+        "string_key": "Item_Stat_AbyssGear_IceResistance_LV3",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002973,
+        "string_key": "Item_Stat_AbyssGear_IceResistance_Special",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000276,
+        "string_key": "Scalaphynion_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000273,
+        "string_key": "Tychaon_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      74,
+      103
+    ]
+  },
+  "8039": {
+    "skill_id": 8039,
+    "per_item_type": {
+      "74": {
+        "canonical_gimmick_info": 18010001,
+        "all_gimmicks_observed": {
+          "18010001": 4
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 48,
+          "1002223": 2,
+          "1010181": 2,
+          "1001110": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 42,
+          "1004431": 1,
+          "1004059": 1
+        }
+      },
+      "22": {
+        "canonical_gimmick_info": 18020006,
+        "all_gimmicks_observed": {
+          "18020006": 31
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 12
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 145,
+    "items_sample": [
+      {
+        "key": 1002497,
+        "string_key": "Item_Stat_AbyssGear_ElectricityResistance_LV1",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002498,
+        "string_key": "Item_Stat_AbyssGear_ElectricityResistance_LV2",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002499,
+        "string_key": "Item_Stat_AbyssGear_ElectricityResistance_LV3",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002974,
+        "string_key": "Item_Stat_AbyssGear_ElectricityResistance_Special",
+        "item_type": 74,
+        "gimmick_info": 18010001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 12217,
+        "string_key": "Ludvic_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000289,
+        "string_key": "Ludvic_Leather_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      9,
+      22,
+      24,
+      74,
+      103
+    ]
+  },
+  "9129": {
+    "skill_id": 9129,
+    "per_item_type": {
+      "34": {
+        "canonical_gimmick_info": 1001763,
+        "all_gimmicks_observed": {
+          "1001763": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001100,
+        "string_key": "Tarif_Necklace",
+        "item_type": 34,
+        "gimmick_info": 1001763,
+        "cooltime": 1800,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      34
+    ]
+  },
+  "9108": {
+    "skill_id": 9108,
+    "per_item_type": {
+      "34": {
+        "canonical_gimmick_info": 1001836,
+        "all_gimmicks_observed": {
+          "1001836": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001101,
+        "string_key": "Ludvic_Necklace",
+        "item_type": 34,
+        "gimmick_info": 1001836,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      34
+    ]
+  },
+  "9109": {
+    "skill_id": 9109,
+    "per_item_type": {
+      "34": {
+        "canonical_gimmick_info": 1001257,
+        "all_gimmicks_observed": {
+          "1001257": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001182,
+        "string_key": "WeatherWeaver_Necklace",
+        "item_type": 34,
+        "gimmick_info": 1001257,
+        "cooltime": 10800,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      34
+    ]
+  },
+  "9111": {
+    "skill_id": 9111,
+    "per_item_type": {
+      "34": {
+        "canonical_gimmick_info": 1001838,
+        "all_gimmicks_observed": {
+          "1001838": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000972,
+        "string_key": "Optionary_Monk_Necklace",
+        "item_type": 34,
+        "gimmick_info": 1001838,
+        "cooltime": 1800,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      34
+    ]
+  },
+  "9110": {
+    "skill_id": 9110,
+    "per_item_type": {
+      "34": {
+        "canonical_gimmick_info": 1008871,
+        "all_gimmicks_observed": {
+          "1008871": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1002253,
+        "string_key": "WeatherWeaver_Sunny_Necklace",
+        "item_type": 34,
+        "gimmick_info": 1008871,
+        "cooltime": 10800,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      34
+    ]
+  },
+  "9112": {
+    "skill_id": 9112,
+    "per_item_type": {
+      "15": {
+        "canonical_gimmick_info": 1002003,
+        "all_gimmicks_observed": {
+          "1002003": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 8509,
+        "string_key": "Folorin_Earring",
+        "item_type": 15,
+        "gimmick_info": 1002003,
+        "cooltime": 180,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      15
+    ]
+  },
+  "70138": {
+    "skill_id": 70138,
+    "per_item_type": {
+      "49": {
+        "canonical_gimmick_info": 1001787,
+        "all_gimmicks_observed": {
+          "1001787": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 8502,
+        "string_key": "Legendary_Titan_Ring",
+        "item_type": 49,
+        "gimmick_info": 1001787,
+        "cooltime": 0,
+        "item_charge_type": 1
+      }
+    ],
+    "item_types_observed": [
+      49
+    ]
+  },
+  "9127": {
+    "skill_id": 9127,
+    "per_item_type": {
+      "15": {
+        "canonical_gimmick_info": 1006132,
+        "all_gimmicks_observed": {
+          "1006132": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 8504,
+        "string_key": "Legendary_HexeMarie_Earring",
+        "item_type": 15,
+        "gimmick_info": 1006132,
+        "cooltime": 1,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      15
+    ]
+  },
+  "70100": {
+    "skill_id": 70100,
+    "per_item_type": {
+      "21": {
+        "canonical_gimmick_info": 1005653,
+        "all_gimmicks_observed": {
+          "1005653": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000479,
+        "string_key": "Kliff_Glasses",
+        "item_type": 21,
+        "gimmick_info": 1005653,
+        "cooltime": 3,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      21
+    ]
+  },
+  "709": {
+    "skill_id": 709,
+    "per_item_type": {
+      "30": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000806,
+        "string_key": "Kliff_Mask",
+        "item_type": 30,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      30
+    ]
+  },
+  "56158": {
+    "skill_id": 56158,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 4
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 1002107,
+        "string_key": "Reeddevil_Troll_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000799,
+        "string_key": "Reeddevil_Fabric_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000800,
+        "string_key": "Reeddevil_Fabric_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000801,
+        "string_key": "Reeddevil_Fabric_Helm_III",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70005": {
+    "skill_id": 70005,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 4
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 1000736,
+        "string_key": "Brimstone_Leather_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000073,
+        "string_key": "Gas_Mask_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1918672776,
+        "string_key": "Brimstone_Leather_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14507,
+        "string_key": "Brimstone_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70004": {
+    "skill_id": 70004,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 3,
+          "1004060": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 396540194,
+        "string_key": "Drug_Leather_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2053286856,
+        "string_key": "Drug_Leather_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2133193,
+        "string_key": "Crude_Devil_Mask",
+        "item_type": 24,
+        "gimmick_info": 1004060,
+        "cooltime": 20,
+        "item_charge_type": 0
+      },
+      {
+        "key": 333963940,
+        "string_key": "Drug_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70130": {
+    "skill_id": 70130,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000369,
+        "string_key": "Hellhonds_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70135": {
+    "skill_id": 70135,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 18020009,
+        "all_gimmicks_observed": {
+          "18020009": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001787,
+        "string_key": "Goblin_Fight_PlateArmor_Gloves",
+        "item_type": 22,
+        "gimmick_info": 18020009,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "70019": {
+    "skill_id": 70019,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002222,
+        "all_gimmicks_observed": {
+          "1002222": 12,
+          "1000829": 1,
+          "1001988": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 14,
+    "items_sample": [
+      {
+        "key": 101003,
+        "string_key": "Dragon_Slayer_Ohyoon_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 103029,
+        "string_key": "Duratti_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101138,
+        "string_key": "Tarchet_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101090,
+        "string_key": "Madacus_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101008,
+        "string_key": "Entura_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101011,
+        "string_key": "Pycian_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70001": {
+    "skill_id": 70001,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 70,
+          "1002222": 4,
+          "1001504": 1,
+          "1001076": 1,
+          "1001072": 1,
+          "1002233": 1,
+          "1002228": 1,
+          "1001977": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 1001977,
+        "all_gimmicks_observed": {
+          "1001977": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 81,
+    "items_sample": [
+      {
+        "key": 101148,
+        "string_key": "Kurua_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2101015,
+        "string_key": "Moonhead_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000696,
+        "string_key": "Moonhead_PlateArmor_Helm_Waning",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000697,
+        "string_key": "Moonhead_PlateArmor_Helm_Full",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2101010,
+        "string_key": "Luon_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2101014,
+        "string_key": "SilverArmor_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24,
+      103
+    ]
+  },
+  "7057": {
+    "skill_id": 7057,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 4
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 101114,
+        "string_key": "Dernat_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101113,
+        "string_key": "Volghan_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101115,
+        "string_key": "Dongdegobi_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101111,
+        "string_key": "Arghai_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "56143": {
+    "skill_id": 56143,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 1002223,
+        "all_gimmicks_observed": {
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000335,
+        "string_key": "Scarecrow_Camouflage_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "56144": {
+    "skill_id": 56144,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000263,
+        "string_key": "Straw_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70132": {
+    "skill_id": 70132,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000344,
+        "string_key": "WhiteHorn_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "56142": {
+    "skill_id": 56142,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000264,
+        "string_key": "Goblin_Pumpkin_Helm_I",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70022": {
+    "skill_id": 70022,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020004": 5,
+          "18020007": 6,
+          "18020001": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 3
+        }
+      },
+      "22": {
+        "canonical_gimmick_info": 18020006,
+        "all_gimmicks_observed": {
+          "18020006": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 2,
+          "1002222": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 20,
+    "items_sample": [
+      {
+        "key": 1001559,
+        "string_key": "Damian_Demeniss_Uniform_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001579,
+        "string_key": "Damian_Demeniss_Uniform_Leather_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000009,
+        "string_key": "Demian_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001532,
+        "string_key": "Damian_Demeniss_Elite_Uniform_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000679,
+        "string_key": "Demian_Leather_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001560,
+        "string_key": "Damian_Demeniss_Uniform_Leather_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      9,
+      22,
+      24
+    ]
+  },
+  "91001": {
+    "skill_id": 91001,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002222,
+        "all_gimmicks_observed": {
+          "1002222": 14,
+          "1000829": 1,
+          "1002233": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 16,
+    "items_sample": [
+      {
+        "key": 103029,
+        "string_key": "Duratti_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101138,
+        "string_key": "Tarchet_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101090,
+        "string_key": "Madacus_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101008,
+        "string_key": "Entura_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101011,
+        "string_key": "Pycian_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101101,
+        "string_key": "Ashad_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70003": {
+    "skill_id": 70003,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 1010181,
+        "all_gimmicks_observed": {
+          "1010181": 1,
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1164002,
+        "string_key": "Optionary_Beekeeping_Cloth",
+        "item_type": 3,
+        "gimmick_info": 1010181,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000321,
+        "string_key": "Optionary_Beekeeping_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "9133": {
+    "skill_id": 9133,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000246,
+        "string_key": "Riding_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "91009": {
+    "skill_id": 91009,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000246,
+        "string_key": "Riding_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "732": {
+    "skill_id": 732,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 2
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 2062522806,
+        "string_key": "Kurinan_PlateArmor_Armor_I",
+        "item_type": 3,
+        "gimmick_info": 18020007,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002768,
+        "string_key": "Braxen_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1003674,
+        "string_key": "Kurinan_PlateArmor_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020007,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "733": {
+    "skill_id": 733,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 2133055,
+        "string_key": "Desert_Harrier_PlateArmor_Armor_I",
+        "item_type": 3,
+        "gimmick_info": 18020007,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000007,
+        "string_key": "Optionary_Desert_Plunderer_Helmet",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000318,
+        "string_key": "Desert_Harrier_PlateArmor_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "734": {
+    "skill_id": 734,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020007,
+        "all_gimmicks_observed": {
+          "18020007": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1002761,
+        "string_key": "Twilight_Whistlers_PlateArmor_Armor_II",
+        "item_type": 3,
+        "gimmick_info": 18020007,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000624,
+        "string_key": "Twilight_Whistlers_PlateArmor_Helm_II",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70061": {
+    "skill_id": 70061,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      },
+      "22": {
+        "canonical_gimmick_info": 18020006,
+        "all_gimmicks_observed": {
+          "18020006": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 5,
+    "items_sample": [
+      {
+        "key": 2133205,
+        "string_key": "Optionary_Ent_Cloth",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2133206,
+        "string_key": "Optionary_Ent_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2133207,
+        "string_key": "Optionary_Ent_Gloves",
+        "item_type": 22,
+        "gimmick_info": 18020006,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2133208,
+        "string_key": "Optionary_Ent_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000331,
+        "string_key": "Optionary_Ent_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      9,
+      22,
+      24
+    ]
+  },
+  "729": {
+    "skill_id": 729,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1163809,
+        "string_key": "Optionary_Demeniss_Spy_Cloth",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000324,
+        "string_key": "Optionary_Demeniss_Spy_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "70033": {
+    "skill_id": 70033,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1002358,
+        "string_key": "Owls_of_the_Mist_Leahter_Armor_V",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001951,
+        "string_key": "Owls_of_the_Mist_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70026": {
+    "skill_id": 70026,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 1002222,
+        "all_gimmicks_observed": {
+          "1002222": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 113524,
+        "string_key": "Harald_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1003211,
+        "string_key": "Dewhaven_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001574,
+        "string_key": "Harald_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70046": {
+    "skill_id": 70046,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 114640,
+        "string_key": "Optionary_Bleed_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 333963940,
+        "string_key": "Drug_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70025": {
+    "skill_id": 70025,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 1002282,
+        "string_key": "Deer_King_Follower_Leather_Armor_VI",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000340,
+        "string_key": "Deer_King_Follower_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002742,
+        "string_key": "Deer_King_Follower_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "727": {
+    "skill_id": 727,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1163002,
+        "string_key": "Optionary_Hernand_Party_Cloth",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "731": {
+    "skill_id": 731,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 2113163,
+        "string_key": "Tibbletanus_Leather_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101053,
+        "string_key": "Beoneck_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14507,
+        "string_key": "Brimstone_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000846,
+        "string_key": "Tibbletanus_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "730": {
+    "skill_id": 730,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 2133173,
+        "string_key": "North_Mercenary_Leather_Armor_II",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000349,
+        "string_key": "Jackal_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000576,
+        "string_key": "North_Mercenary_Fabric_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70040": {
+    "skill_id": 70040,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 2133101,
+        "string_key": "Light_Arrowhead_Leather_Armor_V",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 2133151,
+        "string_key": "Natural_Enemy_Mask",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001061,
+        "string_key": "Light_Arrowhead_Fabric_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "735": {
+    "skill_id": 735,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 111151,
+        "string_key": "Bayur_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101111,
+        "string_key": "Arghai_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "736": {
+    "skill_id": 736,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1001177,
+        "string_key": "Hymns_of_Dusk_Fabric_Armor_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101048,
+        "string_key": "ReiGhis_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70054": {
+    "skill_id": 70054,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 1002222,
+        "all_gimmicks_observed": {
+          "1002222": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 114300,
+        "string_key": "Wintharden_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 101009,
+        "string_key": "Makutan_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002222,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "737": {
+    "skill_id": 737,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 1001072,
+        "all_gimmicks_observed": {
+          "1001072": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1000164,
+        "string_key": "Pirate_Fabric_Armor_II",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001258,
+        "string_key": "Catfish_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001072,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "72051": {
+    "skill_id": 72051,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 2
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 1000179,
+        "string_key": "Wolf_Pursuer_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000200,
+        "string_key": "Wolf_Pursuer_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1003286,
+        "string_key": "Wolf_Pursuer_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70044": {
+    "skill_id": 70044,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 114326,
+        "string_key": "Tokart_Fabric_Armor",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 104106,
+        "string_key": "Sirius_Barley_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70041": {
+    "skill_id": 70041,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1,
+          "18020001": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1002268,
+        "string_key": "Laviren_Fabric_Armor_1",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1003675,
+        "string_key": "Laviren_Fabric_Cloak_I",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "56120": {
+    "skill_id": 56120,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1165010,
+        "string_key": "Optionary_Scholar_Stone_Cloth",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "72052": {
+    "skill_id": 72052,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 2
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 1000021,
+        "string_key": "Optionary_Monk_Cloth",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 9402,
+        "string_key": "Volcker_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 133020,
+        "string_key": "Volcker_Leather_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000325,
+        "string_key": "Optionary_Monk_cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      9,
+      24
+    ]
+  },
+  "70057": {
+    "skill_id": 70057,
+    "per_item_type": {
+      "103": {
+        "canonical_gimmick_info": 1001977,
+        "all_gimmicks_observed": {
+          "1001977": 1
+        }
+      },
+      "24": {
+        "canonical_gimmick_info": 1001977,
+        "all_gimmicks_observed": {
+          "1001977": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1001400,
+        "string_key": "Marni_Laser_Helm",
+        "item_type": 103,
+        "gimmick_info": 1001977,
+        "cooltime": 60,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1002284,
+        "string_key": "Marni_Laser_Helm_Upgrade",
+        "item_type": 24,
+        "gimmick_info": 1001977,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24,
+      103
+    ]
+  },
+  "70058": {
+    "skill_id": 70058,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001504,
+        "all_gimmicks_observed": {
+          "1001504": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000380,
+        "string_key": "DarknessKing_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001504,
+        "cooltime": 60,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9131": {
+    "skill_id": 9131,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1000829,
+        "all_gimmicks_observed": {
+          "1000829": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001236,
+        "string_key": "Scouter_HP_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1000829,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9134": {
+    "skill_id": 9134,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001887,
+        "all_gimmicks_observed": {
+          "1001887": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000771,
+        "string_key": "Pirate_King_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001887,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9103": {
+    "skill_id": 9103,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1000431,
+        "all_gimmicks_observed": {
+          "1000431": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000143,
+        "string_key": "Miner_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1000431,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9105": {
+    "skill_id": 9105,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001076,
+        "all_gimmicks_observed": {
+          "1001076": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000236,
+        "string_key": "Heat_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001076,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70059": {
+    "skill_id": 70059,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001076,
+        "all_gimmicks_observed": {
+          "1001076": 1,
+          "1002232": 1,
+          "1001072": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 1000236,
+        "string_key": "Heat_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001076,
+        "cooltime": 20,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1000221,
+        "string_key": "Gadget_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002232,
+        "cooltime": 20,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1001258,
+        "string_key": "Catfish_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001072,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "91010": {
+    "skill_id": 91010,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1002122,
+        "string_key": "Card_Vision_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9106": {
+    "skill_id": 9106,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002232,
+        "all_gimmicks_observed": {
+          "1002232": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000221,
+        "string_key": "Gadget_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002232,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9130": {
+    "skill_id": 9130,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002224,
+        "all_gimmicks_observed": {
+          "1002224": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001184,
+        "string_key": "Chicken_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002224,
+        "cooltime": 60,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "8041": {
+    "skill_id": 8041,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      },
+      "22": {
+        "canonical_gimmick_info": 18020006,
+        "all_gimmicks_observed": {
+          "18020006": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 1
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 18020001,
+        "all_gimmicks_observed": {
+          "18020001": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 1000247,
+        "string_key": "riding_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000248,
+        "string_key": "riding_Leather_Gloves",
+        "item_type": 22,
+        "gimmick_info": 18020006,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000249,
+        "string_key": "riding_Leather_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000274,
+        "string_key": "Riding_Fabric_Cloak",
+        "item_type": 3,
+        "gimmick_info": 18020001,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      9,
+      22,
+      24
+    ]
+  },
+  "70010": {
+    "skill_id": 70010,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1004060,
+        "all_gimmicks_observed": {
+          "1004060": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 2133193,
+        "string_key": "Crude_Devil_Mask",
+        "item_type": 24,
+        "gimmick_info": 1004060,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9104": {
+    "skill_id": 9104,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001072,
+        "all_gimmicks_observed": {
+          "1001072": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001258,
+        "string_key": "Catfish_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001072,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70042": {
+    "skill_id": 70042,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 2
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 1002223,
+        "all_gimmicks_observed": {
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 12506,
+        "string_key": "Legendary_WhiteWolf_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14500,
+        "string_key": "Wolf_Chief_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000444,
+        "string_key": "Camouflage_Wolf_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70043": {
+    "skill_id": 70043,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 2
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 18020004,
+        "all_gimmicks_observed": {
+          "18020004": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 1002505,
+        "string_key": "White_Bear_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 14501,
+        "string_key": "Bear_Chief_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001531,
+        "string_key": "Bear_Leather_cloak",
+        "item_type": 3,
+        "gimmick_info": 18020004,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "70134": {
+    "skill_id": 70134,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000340,
+        "string_key": "Deer_King_Follower_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70045": {
+    "skill_id": 70045,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      },
+      "3": {
+        "canonical_gimmick_info": 1002223,
+        "all_gimmicks_observed": {
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1000340,
+        "string_key": "Deer_King_Follower_Leather_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000715,
+        "string_key": "Camouflage_Reindeer_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3,
+      24
+    ]
+  },
+  "7056": {
+    "skill_id": 7056,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 2133206,
+        "string_key": "Optionary_Ent_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "7058": {
+    "skill_id": 7058,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000200,
+        "string_key": "Wolf_Pursuer_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70163": {
+    "skill_id": 70163,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 1008427,
+        "all_gimmicks_observed": {
+          "1008427": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001949,
+        "string_key": "Muscan_PlateArmor_Gloves",
+        "item_type": 22,
+        "gimmick_info": 1008427,
+        "cooltime": 5,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "91102": {
+    "skill_id": 91102,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 1008427,
+        "all_gimmicks_observed": {
+          "1008427": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001949,
+        "string_key": "Muscan_PlateArmor_Gloves",
+        "item_type": 22,
+        "gimmick_info": 1008427,
+        "cooltime": 5,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "9107": {
+    "skill_id": 9107,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 1002231,
+        "all_gimmicks_observed": {
+          "1002231": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001009,
+        "string_key": "Gadget_Gloves",
+        "item_type": 22,
+        "gimmick_info": 1002231,
+        "cooltime": 600,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "9128": {
+    "skill_id": 9128,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 1002041,
+        "all_gimmicks_observed": {
+          "1002041": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001250,
+        "string_key": "ThiefGloves",
+        "item_type": 22,
+        "gimmick_info": 1002041,
+        "cooltime": 1800,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "70056": {
+    "skill_id": 70056,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 1002261,
+        "all_gimmicks_observed": {
+          "1002261": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001300,
+        "string_key": "PowerDraw_Gloves",
+        "item_type": 22,
+        "gimmick_info": 1002261,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      22
+    ]
+  },
+  "56150": {
+    "skill_id": 56150,
+    "per_item_type": {
+      "22": {
+        "canonical_gimmick_info": 18020006,
+        "all_gimmicks_observed": {
+          "18020006": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1001000,
+        "string_key": "Optionary_NonSlip_Gloves",
+        "item_type": 22,
+        "gimmick_info": 18020006,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1001145,
+        "string_key": "Optionary_NonSlip_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      9,
+      22
+    ]
+  },
+  "7203": {
+    "skill_id": 7203,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 1003085,
+        "all_gimmicks_observed": {
+          "1003085": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000259,
+        "string_key": "WaterSliding_Plate_Boots",
+        "item_type": 9,
+        "gimmick_info": 1003085,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "7205": {
+    "skill_id": 7205,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 1002057,
+        "all_gimmicks_observed": {
+          "1002057": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001199,
+        "string_key": "Colossus_Boots",
+        "item_type": 9,
+        "gimmick_info": 1002057,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "7202": {
+    "skill_id": 7202,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 1004840,
+        "all_gimmicks_observed": {
+          "1004840": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 2131006,
+        "string_key": "IncreaseSwimmingSpeed_Plate_Boots",
+        "item_type": 9,
+        "gimmick_info": 1004840,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "7206": {
+    "skill_id": 7206,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 1002202,
+        "all_gimmicks_observed": {
+          "1002202": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001191,
+        "string_key": "Fire_Boots",
+        "item_type": 9,
+        "gimmick_info": 1002202,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "7201": {
+    "skill_id": 7201,
+    "per_item_type": {
+      "103": {
+        "canonical_gimmick_info": 1004059,
+        "all_gimmicks_observed": {
+          "1004059": 1
+        }
+      },
+      "9": {
+        "canonical_gimmick_info": 1004059,
+        "all_gimmicks_observed": {
+          "1004059": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1000074,
+        "string_key": "Riesi_Boots",
+        "item_type": 103,
+        "gimmick_info": 1004059,
+        "cooltime": 30,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1000316,
+        "string_key": "Riesi_Boots_Upgrade",
+        "item_type": 9,
+        "gimmick_info": 1004059,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9,
+      103
+    ]
+  },
+  "7204": {
+    "skill_id": 7204,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 18020005,
+        "all_gimmicks_observed": {
+          "18020005": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001296,
+        "string_key": "Robbery_Boots",
+        "item_type": 9,
+        "gimmick_info": 18020005,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "56141": {
+    "skill_id": 56141,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 1002223,
+        "all_gimmicks_observed": {
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000343,
+        "string_key": "Camouflage_Boar_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "56155": {
+    "skill_id": 56155,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 1002223,
+        "all_gimmicks_observed": {
+          "1002223": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000444,
+        "string_key": "Camouflage_Wolf_Cloak",
+        "item_type": 3,
+        "gimmick_info": 1002223,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "9118": {
+    "skill_id": 9118,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1002214,
+        "all_gimmicks_observed": {
+          "1002214": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001750,
+        "string_key": "Aggro_Backpack",
+        "item_type": 6,
+        "gimmick_info": 1002214,
+        "cooltime": 30,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9132": {
+    "skill_id": 9132,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1001839,
+        "all_gimmicks_observed": {
+          "1001839": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000443,
+        "string_key": "Bleed_Bomb_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1001839,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9119": {
+    "skill_id": 9119,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1003838,
+        "all_gimmicks_observed": {
+          "1003838": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000716,
+        "string_key": "WaterPower_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1003838,
+        "cooltime": 1,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9113": {
+    "skill_id": 9113,
+    "per_item_type": {
+      "103": {
+        "canonical_gimmick_info": 1002203,
+        "all_gimmicks_observed": {
+          "1002203": 1
+        }
+      },
+      "6": {
+        "canonical_gimmick_info": 1002203,
+        "all_gimmicks_observed": {
+          "1002203": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1000970,
+        "string_key": "EMP_BackPack",
+        "item_type": 103,
+        "gimmick_info": 1002203,
+        "cooltime": 30,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1002136,
+        "string_key": "Kuku_EMP_Enhance_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1002203,
+        "cooltime": 15,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6,
+      103
+    ]
+  },
+  "70144": {
+    "skill_id": 70144,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1002078,
+        "all_gimmicks_observed": {
+          "1002078": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000708,
+        "string_key": "Chocolate_Factory_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1002078,
+        "cooltime": 600,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "70171": {
+    "skill_id": 70171,
+    "per_item_type": {
+      "55": {
+        "canonical_gimmick_info": 1008570,
+        "all_gimmicks_observed": {
+          "1008570": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1003750,
+        "string_key": "Fertilizer_Sprayer_BackPack",
+        "item_type": 55,
+        "gimmick_info": 1008570,
+        "cooltime": 30,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      55
+    ]
+  },
+  "70170": {
+    "skill_id": 70170,
+    "per_item_type": {
+      "55": {
+        "canonical_gimmick_info": 1008570,
+        "all_gimmicks_observed": {
+          "1008570": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1003751,
+        "string_key": "Oil_Sprayer_BackPack",
+        "item_type": 55,
+        "gimmick_info": 1008570,
+        "cooltime": 1,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      55
+    ]
+  },
+  "9100": {
+    "skill_id": 9100,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002233,
+        "all_gimmicks_observed": {
+          "1002233": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000102,
+        "string_key": "Anamorphic_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002233,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9121": {
+    "skill_id": 9121,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002228,
+        "all_gimmicks_observed": {
+          "1002228": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000037,
+        "string_key": "Knowledge_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002228,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9101": {
+    "skill_id": 9101,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1001988,
+        "all_gimmicks_observed": {
+          "1001988": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000202,
+        "string_key": "Hacking_PlateArmor_Helm",
+        "item_type": 24,
+        "gimmick_info": 1001988,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "9102": {
+    "skill_id": 9102,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002229,
+        "all_gimmicks_observed": {
+          "1002229": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 356742259,
+        "string_key": "Florin_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002229,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "70360": {
+    "skill_id": 70360,
+    "per_item_type": {
+      "24": {
+        "canonical_gimmick_info": 1002229,
+        "all_gimmicks_observed": {
+          "1002229": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 356742259,
+        "string_key": "Florin_Fabric_Helm",
+        "item_type": 24,
+        "gimmick_info": 1002229,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      24
+    ]
+  },
+  "75047": {
+    "skill_id": 75047,
+    "per_item_type": {
+      "3": {
+        "canonical_gimmick_info": 1002236,
+        "all_gimmicks_observed": {
+          "1002236": 3
+        }
+      }
+    },
+    "total_items_with_this_passive": 3,
+    "items_sample": [
+      {
+        "key": 1001129,
+        "string_key": "Daeil_Band",
+        "item_type": 3,
+        "gimmick_info": 1002236,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1002864,
+        "string_key": "OOngka_Daeil_Band",
+        "item_type": 3,
+        "gimmick_info": 1002236,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1003248,
+        "string_key": "Damian_Daeil_Band",
+        "item_type": 3,
+        "gimmick_info": 1002236,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      3
+    ]
+  },
+  "70994": {
+    "skill_id": 70994,
+    "per_item_type": {
+      "49": {
+        "canonical_gimmick_info": 18020011,
+        "all_gimmicks_observed": {
+          "18020011": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 621000,
+        "string_key": "Dev_Red_Dragon_Ring_Immune",
+        "item_type": 49,
+        "gimmick_info": 18020011,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      49
+    ]
+  },
+  "9116": {
+    "skill_id": 9116,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1008603,
+        "all_gimmicks_observed": {
+          "1008603": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1002130,
+        "string_key": "Kuku_Pot_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1008603,
+        "cooltime": 10,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "91101": {
+    "skill_id": 91101,
+    "per_item_type": {
+      "70": {
+        "canonical_gimmick_info": 1001876,
+        "all_gimmicks_observed": {
+          "1001876": 1,
+          "1001961": 1
+        }
+      },
+      "72": {
+        "canonical_gimmick_info": 1001961,
+        "all_gimmicks_observed": {
+          "1001961": 1
+        }
+      },
+      "69": {
+        "canonical_gimmick_info": 1003524,
+        "all_gimmicks_observed": {
+          "1003524": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 1001876,
+        "all_gimmicks_observed": {
+          "1001876": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 5,
+    "items_sample": [
+      {
+        "key": 1002175,
+        "string_key": "KuKu_Lightning_TwoHandSpear",
+        "item_type": 70,
+        "gimmick_info": 1001876,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1001062,
+        "string_key": "Marni_MachineKnight_TwoHandSword",
+        "item_type": 72,
+        "gimmick_info": 1001961,
+        "cooltime": 5,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1002741,
+        "string_key": "Ligtning_TwoHandHammer_I",
+        "item_type": 69,
+        "gimmick_info": 1003524,
+        "cooltime": 5,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1001163,
+        "string_key": "Lightning_TwoHandSpear",
+        "item_type": 103,
+        "gimmick_info": 1001876,
+        "cooltime": 5,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1000957,
+        "string_key": "Marni_MachineKnight_TwoHandSpear",
+        "item_type": 70,
+        "gimmick_info": 1001961,
+        "cooltime": 5,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      69,
+      70,
+      72,
+      103
+    ]
+  },
+  "91105": {
+    "skill_id": 91105,
+    "per_item_type": {
+      "70": {
+        "canonical_gimmick_info": 1001492,
+        "all_gimmicks_observed": {
+          "1001492": 2
+        }
+      },
+      "29": {
+        "canonical_gimmick_info": 1008474,
+        "all_gimmicks_observed": {
+          "1008474": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 1001492,
+        "all_gimmicks_observed": {
+          "1001492": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 4,
+    "items_sample": [
+      {
+        "key": 1002176,
+        "string_key": "KuKu_Fire_staff_spear_TwoHandSpear",
+        "item_type": 70,
+        "gimmick_info": 1001492,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1001136,
+        "string_key": "Bastion_OneHandMace",
+        "item_type": 29,
+        "gimmick_info": 1008474,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000451,
+        "string_key": "Fire_staff_spear_TwoHandSpear",
+        "item_type": 103,
+        "gimmick_info": 1001492,
+        "cooltime": 5,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1000176,
+        "string_key": "Flame_staff_spear_TwoHandSpear",
+        "item_type": 70,
+        "gimmick_info": 1001492,
+        "cooltime": 5,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      29,
+      70,
+      103
+    ]
+  },
+  "91109": {
+    "skill_id": 91109,
+    "per_item_type": {
+      "70": {
+        "canonical_gimmick_info": 1002073,
+        "all_gimmicks_observed": {
+          "1002073": 1
+        }
+      },
+      "103": {
+        "canonical_gimmick_info": 1002073,
+        "all_gimmicks_observed": {
+          "1002073": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1001953,
+        "string_key": "KuKu_Bismuth_TwoHandSpear",
+        "item_type": 70,
+        "gimmick_info": 1002073,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1001251,
+        "string_key": "Bismuth_TwoHandSpear",
+        "item_type": 103,
+        "gimmick_info": 1002073,
+        "cooltime": 5,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      70,
+      103
+    ]
+  },
+  "7055": {
+    "skill_id": 7055,
+    "per_item_type": {
+      "9": {
+        "canonical_gimmick_info": 1004431,
+        "all_gimmicks_observed": {
+          "1004431": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001299,
+        "string_key": "JumpUp_Boots",
+        "item_type": 9,
+        "gimmick_info": 1004431,
+        "cooltime": 20,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      9
+    ]
+  },
+  "9117": {
+    "skill_id": 9117,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1000983,
+        "all_gimmicks_observed": {
+          "1000983": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1002137,
+        "string_key": "Kuku_Drone_Backpack",
+        "item_type": 6,
+        "gimmick_info": 1000983,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9114": {
+    "skill_id": 9114,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1002218,
+        "all_gimmicks_observed": {
+          "1002218": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000528,
+        "string_key": "Plant_Collect_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1002218,
+        "cooltime": 15,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9115": {
+    "skill_id": 9115,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 1002217,
+        "all_gimmicks_observed": {
+          "1002217": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000845,
+        "string_key": "Insect_Collect_BackPack",
+        "item_type": 6,
+        "gimmick_info": 1002217,
+        "cooltime": 15,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "18030": {
+    "skill_id": 18030,
+    "per_item_type": {
+      "71": {
+        "canonical_gimmick_info": 1002219,
+        "all_gimmicks_observed": {
+          "1002219": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1002180,
+        "string_key": "Kuku_FlameThrower",
+        "item_type": 71,
+        "gimmick_info": 1002219,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 330002,
+        "string_key": "FlameThrower",
+        "item_type": 71,
+        "gimmick_info": 1002219,
+        "cooltime": 2,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      71
+    ]
+  },
+  "18031": {
+    "skill_id": 18031,
+    "per_item_type": {
+      "71": {
+        "canonical_gimmick_info": 1002220,
+        "all_gimmicks_observed": {
+          "1002220": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1002181,
+        "string_key": "Kuku_IceThrower",
+        "item_type": 71,
+        "gimmick_info": 1002220,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 330003,
+        "string_key": "IceThrower",
+        "item_type": 71,
+        "gimmick_info": 1002220,
+        "cooltime": 2,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      71
+    ]
+  },
+  "18032": {
+    "skill_id": 18032,
+    "per_item_type": {
+      "71": {
+        "canonical_gimmick_info": 1004194,
+        "all_gimmicks_observed": {
+          "1004194": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1003259,
+        "string_key": "Kuku_LightningThrower",
+        "item_type": 71,
+        "gimmick_info": 1004194,
+        "cooltime": 2,
+        "item_charge_type": 0
+      },
+      {
+        "key": 1000553,
+        "string_key": "LightningThrower",
+        "item_type": 71,
+        "gimmick_info": 1004194,
+        "cooltime": 2,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      71
+    ]
+  },
+  "9120": {
+    "skill_id": 9120,
+    "per_item_type": {
+      "6": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000424,
+        "string_key": "KuKu_Golden999K",
+        "item_type": 6,
+        "gimmick_info": 18020014,
+        "cooltime": 3000,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      6
+    ]
+  },
+  "9000": {
+    "skill_id": 9000,
+    "per_item_type": {
+      "17": {
+        "canonical_gimmick_info": 1006289,
+        "all_gimmicks_observed": {
+          "1006289": 2
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1000639,
+        "string_key": "FishingRod_II",
+        "item_type": 17,
+        "gimmick_info": 1006289,
+        "cooltime": 0,
+        "item_charge_type": 2
+      },
+      {
+        "key": 1000640,
+        "string_key": "FishingRod_III",
+        "item_type": 17,
+        "gimmick_info": 1006289,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      17
+    ]
+  },
+  "9001": {
+    "skill_id": 9001,
+    "per_item_type": {
+      "57": {
+        "canonical_gimmick_info": 1004078,
+        "all_gimmicks_observed": {
+          "1004078": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000858,
+        "string_key": "FireFly_Lantern",
+        "item_type": 57,
+        "gimmick_info": 1004078,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      57
+    ]
+  },
+  "70131": {
+    "skill_id": 70131,
+    "per_item_type": {
+      "18": {
+        "canonical_gimmick_info": 1010296,
+        "all_gimmicks_observed": {
+          "1010296": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001294,
+        "string_key": "Mining_Drill",
+        "item_type": 18,
+        "gimmick_info": 1010296,
+        "cooltime": 1,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      18
+    ]
+  },
+  "70168": {
+    "skill_id": 70168,
+    "per_item_type": {
+      "18": {
+        "canonical_gimmick_info": 1010297,
+        "all_gimmicks_observed": {
+          "1010297": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000171,
+        "string_key": "Demeniss_Chainsaw",
+        "item_type": 18,
+        "gimmick_info": 1010297,
+        "cooltime": 1,
+        "item_charge_type": 0
+      }
+    ],
+    "item_types_observed": [
+      18
+    ]
+  },
+  "70169": {
+    "skill_id": 70169,
+    "per_item_type": {
+      "18": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001039,
+        "string_key": "Legendary_Abyss_OneHandCannon",
+        "item_type": 18,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      18
+    ]
+  },
+  "70154": {
+    "skill_id": 70154,
+    "per_item_type": {
+      "29": {
+        "canonical_gimmick_info": 1008474,
+        "all_gimmicks_observed": {
+          "1008474": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000237,
+        "string_key": "Silver_Armor_OneHandMace",
+        "item_type": 29,
+        "gimmick_info": 1008474,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      29
+    ]
+  },
+  "91107": {
+    "skill_id": 91107,
+    "per_item_type": {
+      "56": {
+        "canonical_gimmick_info": 1008474,
+        "all_gimmicks_observed": {
+          "1008474": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1002261,
+        "string_key": "Paralyze_OneHandSword",
+        "item_type": 56,
+        "gimmick_info": 1008474,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      56
+    ]
+  },
+  "91151": {
+    "skill_id": 91151,
+    "per_item_type": {
+      "29": {
+        "canonical_gimmick_info": 1008474,
+        "all_gimmicks_observed": {
+          "1008474": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000103,
+        "string_key": "HoneyComb_OneHandMace",
+        "item_type": 29,
+        "gimmick_info": 1008474,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      29
+    ]
+  },
+  "9122": {
+    "skill_id": 9122,
+    "per_item_type": {
+      "52": {
+        "canonical_gimmick_info": 1004731,
+        "all_gimmicks_observed": {
+          "1004731": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 290021,
+        "string_key": "AbyssReward_Drake_Metal_OneHandShield",
+        "item_type": 52,
+        "gimmick_info": 1004731,
+        "cooltime": 0,
+        "item_charge_type": 1
+      }
+    ],
+    "item_types_observed": [
+      52
+    ]
+  },
+  "9123": {
+    "skill_id": 9123,
+    "per_item_type": {
+      "52": {
+        "canonical_gimmick_info": 1001995,
+        "all_gimmicks_observed": {
+          "1001995": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000201,
+        "string_key": "LakeGolem_OnehandShield",
+        "item_type": 52,
+        "gimmick_info": 1001995,
+        "cooltime": 0,
+        "item_charge_type": 1
+      }
+    ],
+    "item_types_observed": [
+      52
+    ]
+  },
+  "9124": {
+    "skill_id": 9124,
+    "per_item_type": {
+      "52": {
+        "canonical_gimmick_info": 1002226,
+        "all_gimmicks_observed": {
+          "1002226": 1,
+          "1004025": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 2,
+    "items_sample": [
+      {
+        "key": 1001192,
+        "string_key": "Wind_Power_OneHandShield",
+        "item_type": 52,
+        "gimmick_info": 1002226,
+        "cooltime": 0,
+        "item_charge_type": 1
+      },
+      {
+        "key": 1001305,
+        "string_key": "Gun_OneHandShield",
+        "item_type": 52,
+        "gimmick_info": 1004025,
+        "cooltime": 0,
+        "item_charge_type": 1
+      }
+    ],
+    "item_types_observed": [
+      52
+    ]
+  },
+  "9126": {
+    "skill_id": 9126,
+    "per_item_type": {
+      "52": {
+        "canonical_gimmick_info": 1002225,
+        "all_gimmicks_observed": {
+          "1002225": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1000125,
+        "string_key": "Sound_OneHandShield",
+        "item_type": 52,
+        "gimmick_info": 1002225,
+        "cooltime": 0,
+        "item_charge_type": 1
+      }
+    ],
+    "item_types_observed": [
+      52
+    ]
+  },
+  "56156": {
+    "skill_id": 56156,
+    "per_item_type": {
+      "18": {
+        "canonical_gimmick_info": 18020014,
+        "all_gimmicks_observed": {
+          "18020014": 1
+        }
+      }
+    },
+    "total_items_with_this_passive": 1,
+    "items_sample": [
+      {
+        "key": 1001152,
+        "string_key": "Air_OneHandCannon",
+        "item_type": 18,
+        "gimmick_info": 18020014,
+        "cooltime": 0,
+        "item_charge_type": 2
+      }
+    ],
+    "item_types_observed": [
+      18
+    ]
+  }
+}

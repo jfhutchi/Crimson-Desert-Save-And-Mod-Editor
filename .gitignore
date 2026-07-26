@@ -67,3 +67,18 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Downloaded on demand, not shipped
+crimson/*/icons_local/
+crimson/*/icons_mercenary/
+icons_local/
+icons_mercenary/
+
+# Editor state written next to the app
+crimson/*/editor_config.json

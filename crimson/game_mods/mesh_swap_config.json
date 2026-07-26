@@ -1,0 +1,114 @@
+{
+  "version": 2,
+  "kind": "character_mesh_swap",
+  "swaps": [
+    {
+      "target_key": 60003,
+      "target_name": "Blackstar (Boss_Dragon_60003)",
+      "source_key": 60007,
+      "source_name": "Golden Star (Boss_Marni_GolemDragon_60007)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 10.0
+    },
+    {
+      "target_key": 60004,
+      "target_name": "Whistling Arrow Blackstar (Boss_Dragon_60004)",
+      "source_key": 60007,
+      "source_name": "Golden Star (Boss_Marni_GolemDragon_60007)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 10.0
+    },
+    {
+      "target_key": 1000799,
+      "target_name": "Blackstar (Riding_Dragon_1)",
+      "source_key": 60007,
+      "source_name": "Golden Star (Boss_Marni_GolemDragon_60007)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 10.0
+    },
+    {
+      "target_key": 1000970,
+      "target_name": "Blackstar (Boss_Dragon_TriStar_Drone)",
+      "source_key": 60007,
+      "source_name": "Golden Star (Boss_Marni_GolemDragon_60007)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 10.0
+    },
+    {
+      "target_key": 1002241,
+      "target_name": "Blackstar (Boss_Dragon_TriStar_Armor_Stage)",
+      "source_key": 60007,
+      "source_name": "Golden Star (Boss_Marni_GolemDragon_60007)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 10.0
+    },
+    {
+      "target_key": 31378,
+      "target_name": "Rokade (Animal_Black_Horse_Wild_31378)",
+      "source_key": 55531,
+      "source_name": "Queen Spider (Boss_QueenSpider_55531)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 1003918,
+      "target_name": "Silver Fang (Riding_Wolf_1001)",
+      "source_key": 1003918,
+      "source_name": "Silver Fang (Riding_Wolf_1001)",
+      "scale": 5.0,
+      "rideable": false,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 1003917,
+      "target_name": "White Bear (Riding_Bear_1001)",
+      "source_key": 1002933,
+      "source_name": "Tommaso Camel Rider (NHM_Camelrider_1)",
+      "scale": 5.0,
+      "rideable": true,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 1003911,
+      "target_name": "Clawed Bear (Riding_Bear_1000)",
+      "source_key": 1002933,
+      "source_name": "Tommaso Camel Rider (NHM_Camelrider_1)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 1000270,
+      "target_name": "Clawed Bear (Riding_Bear_1)",
+      "source_key": 1002933,
+      "source_name": "Tommaso Camel Rider (NHM_Camelrider_1)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 39001,
+      "target_name": "Snowwhite Deer (Animal_Unique_PureWhite_Deer_39001)",
+      "source_key": 1002059,
+      "source_name": "Leaping Kuku Bird (Riding_Cucubird_2)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 8.0
+    },
+    {
+      "target_key": 30161,
+      "target_name": "White Bear (Animal_White_Bear_Wild_30161)",
+      "source_key": 1000523,
+      "source_name": "Elephant (Riding_Elephant_1)",
+      "scale": 0.0,
+      "rideable": true,
+      "rider_y": 8.0
+    }
+  ]
+}

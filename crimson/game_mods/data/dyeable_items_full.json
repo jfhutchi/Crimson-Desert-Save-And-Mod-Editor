@@ -1,0 +1,3182 @@
+{
+  "14510": {
+    "name": "Marni_Devotee_PlateArmor_Helm",
+    "gimmick_info": 1002056,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "14511": {
+    "name": "Marni_Devotee_PlateArmor_Helm_I",
+    "gimmick_info": 1002056,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000231": {
+    "name": "Marni_Devotee_PlateArmor_Helm_II",
+    "gimmick_info": 1002056,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000232": {
+    "name": "Marni_Devotee_PlateArmor_Helm_III",
+    "gimmick_info": 1002056,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000233": {
+    "name": "Marni_Devotee_PlateArmor_Helm_IV",
+    "gimmick_info": 1002056,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "113478": {
+    "name": "Taorant_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "114590": {
+    "name": "Scalaphynion_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000276": {
+    "name": "Scalaphynion_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "2113206": {
+    "name": "Tychaon_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "9103": {
+    "name": "Tarif_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000273": {
+    "name": "Tychaon_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000275": {
+    "name": "Tarif_Fabric_Cloak",
+    "gimmick_info": 1002223,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "9201": {
+    "name": "Tarif_Fabric_Boots",
+    "gimmick_info": 18020002,
+    "item_type": 9,
+    "category_info": 415
+  },
+  "9302": {
+    "name": "Tarif_Fabric_Gloves",
+    "gimmick_info": 18020003,
+    "item_type": 22,
+    "category_info": 414
+  },
+  "104132": {
+    "name": "Chartian_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1165011": {
+    "name": "Optionary_Florin_Cloth",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "2114095": {
+    "name": "Tartinan_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "114595": {
+    "name": "Heisellen_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "114354": {
+    "name": "Gael_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "111108": {
+    "name": "Schtump_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1002134": {
+    "name": "Taorant_Fabric_Armor_II",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000330": {
+    "name": "Tartinan_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000279": {
+    "name": "Heisellen_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000032": {
+    "name": "Florin_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001940": {
+    "name": "Schtump_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1002135": {
+    "name": "Taorant_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000203": {
+    "name": "Militia_Fabric_Cloak_I",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "114606": {
+    "name": "Varantine_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "2114004": {
+    "name": "Arkhan_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000187": {
+    "name": "Goblin_Merchant_Fabric_Armor_\u2163",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000278": {
+    "name": "Varantine_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "134057": {
+    "name": "Abyss_Surreal_Human_Fabric_Boots",
+    "gimmick_info": 18020002,
+    "item_type": 9,
+    "category_info": 415
+  },
+  "2133137": {
+    "name": "Ziggurat_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1003769": {
+    "name": "Lavrak_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "104139": {
+    "name": "Derish_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "104028": {
+    "name": "Luconek_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1003770": {
+    "name": "Rivelorn_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "104015": {
+    "name": "Lardein_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1000127": {
+    "name": "Demian_Fabric_Cloak_I",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001259": {
+    "name": "Demian_Fabric_Cloak_II",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001131": {
+    "name": "Demian_Fabric_Cloak_III",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001133": {
+    "name": "Demian_Fabric_Cloak_IV",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1002800": {
+    "name": "Demian_Greyfur_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "123320": {
+    "name": "Lacklean_Fabric_Gloves",
+    "gimmick_info": 18020003,
+    "item_type": 22,
+    "category_info": 414
+  },
+  "12217": {
+    "name": "Ludvic_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000289": {
+    "name": "Ludvic_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000270": {
+    "name": "Douglas_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "133348": {
+    "name": "Bainian_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12408": {
+    "name": "Ludvic_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "12407": {
+    "name": "Scalaphynion_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "103023": {
+    "name": "Deer_King_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "113561": {
+    "name": "Deerking_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "2113218": {
+    "name": "Hemon_Vindel_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "113023": {
+    "name": "Douglas_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000290": {
+    "name": "Deerking_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "12306": {
+    "name": "Ludvic_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133178": {
+    "name": "Londel_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12412": {
+    "name": "Carta_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "12406": {
+    "name": "Douglas_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123279": {
+    "name": "Tikan_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "121050": {
+    "name": "Mercenary_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000005": {
+    "name": "Legendary_Deer_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "114623": {
+    "name": "Abyss_Surreal_Human_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "12218": {
+    "name": "Hailbrin_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "113742": {
+    "name": "Reeddevil_Leather_Armor",
+    "gimmick_info": 1010181,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1163551": {
+    "name": "Paulus_Basic_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "111050": {
+    "name": "Mercenary_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "114624": {
+    "name": "Abyss_Surreal_Wolf_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "2113196": {
+    "name": "Ruschar_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000291": {
+    "name": "Hailbrin_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000342": {
+    "name": "Paulus_Basic_Leather_cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000294": {
+    "name": "Mercenary_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "133076": {
+    "name": "Paulus_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133192": {
+    "name": "Pavis_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "2133023": {
+    "name": "Diorness_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133172": {
+    "name": "Stugrub_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133011": {
+    "name": "Hailbrin_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "2131008": {
+    "name": "Nickna_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133097": {
+    "name": "Cardion_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133237": {
+    "name": "Isilon_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12410": {
+    "name": "Hailbrin_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123240": {
+    "name": "Volghan_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123329": {
+    "name": "Srasika_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "2133150": {
+    "name": "Lyfellen_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1002270": {
+    "name": "Delegation_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "12219": {
+    "name": "Weasel_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000882": {
+    "name": "Deshret_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000295": {
+    "name": "Weasel_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "131050": {
+    "name": "Mercenary_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12309": {
+    "name": "Weasel_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133044": {
+    "name": "Rhonda_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133121": {
+    "name": "Woodbrock_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133203": {
+    "name": "Lascaux_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133117": {
+    "name": "Nakmore_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133269": {
+    "name": "Tirtit_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133201": {
+    "name": "Dutrat_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133043": {
+    "name": "Tesslit_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "2133059": {
+    "name": "Desert_Harrier_Leather_Boots_I",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "2133045": {
+    "name": "Atanti_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "123041": {
+    "name": "Tesslit_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "12414": {
+    "name": "Volruin_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "12411": {
+    "name": "Weasel_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123137": {
+    "name": "Paulus_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "124071": {
+    "name": "Antumbra_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123370": {
+    "name": "Dallaban_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "103094": {
+    "name": "Ledcy_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "113672": {
+    "name": "Marthana_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1163044": {
+    "name": "Inytium_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000297": {
+    "name": "Abyss_Surreal_Wolf_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000296": {
+    "name": "Inytium_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "12311": {
+    "name": "Hernand_Party_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12312": {
+    "name": "Optionary_Beekeeping_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133346": {
+    "name": "Sein_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133009": {
+    "name": "Volruin_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1163046": {
+    "name": "Inytium_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "12413": {
+    "name": "Optionary_Beekeeping_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "124069": {
+    "name": "Abyss_Surreal_Wolf_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "123036": {
+    "name": "Melvin_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1163045": {
+    "name": "Inytium_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "104175": {
+    "name": "Abyss_Surreal_Wolf_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "104176": {
+    "name": "Abyss_Surreal_Human_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1003771": {
+    "name": "Vorren_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1163251": {
+    "name": "Oongka_Basic_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000678": {
+    "name": "Oongka_Basic_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1002101": {
+    "name": "Oongka_Basic_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "133072": {
+    "name": "Langust_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "113460": {
+    "name": "Demian_Leather_Armor_III",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000884": {
+    "name": "Demian_Leather_Armor_V",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000892": {
+    "name": "Demian_Leather_Armor_VI",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000885": {
+    "name": "Demian_Leather_Cloak_I",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000893": {
+    "name": "Demian_Leather_Cloak_II",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "2600036": {
+    "name": "DamianOnly_Leather_Boots_III",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000012": {
+    "name": "DamianOnly_Leather_Boots_V",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000895": {
+    "name": "DamianOnly_Leather_Boots_VI",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000010": {
+    "name": "Demian_Leather_Gloves_I",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000894": {
+    "name": "Demian_Leather_Gloves_IV",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000008": {
+    "name": "Demian_Leather_Armor_IV",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000011": {
+    "name": "DamianOnly_Leather_Boots_IV",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000107": {
+    "name": "Demian_Leather_Gloves_III",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1001559": {
+    "name": "Damian_Demeniss_Uniform_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1001579": {
+    "name": "Damian_Demeniss_Uniform_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000009": {
+    "name": "Demian_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1001532": {
+    "name": "Damian_Demeniss_Elite_Uniform_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000679": {
+    "name": "Demian_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1001560": {
+    "name": "Damian_Demeniss_Uniform_Leather_Cloak",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000031": {
+    "name": "DamianOnly_Leather_Boots_VII",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133128": {
+    "name": "Meadows_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000108": {
+    "name": "DamianOnly_Leather_Boots_II",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1001557": {
+    "name": "Damian_Demeniss_Elite_Uniform_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000043": {
+    "name": "Demian_Leather_Gloves_II",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1002297": {
+    "name": "Damian_Demeniss_Uniform_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1163051": {
+    "name": "Yann_Basic_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "133034": {
+    "name": "Gallophelt_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "123324": {
+    "name": "Triroan_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "14109": {
+    "name": "Legendary_MarniGolem_Plate_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000057": {
+    "name": "Samuel_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "111253": {
+    "name": "Golden_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000299": {
+    "name": "Legendary_MarniGolem_Plate_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000310": {
+    "name": "Samuel_PlateArmor_Cloak",
+    "gimmick_info": 1002223,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000301": {
+    "name": "Golden_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "131046": {
+    "name": "Deerking_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000059": {
+    "name": "Samuel_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131002": {
+    "name": "Gaeljude_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000900": {
+    "name": "Legendary_MarniGolem_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "14304": {
+    "name": "Legendary_Orc_Plate_Glove",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14305": {
+    "name": "Oongka_Plate_Glove",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000058": {
+    "name": "Samuel_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121071": {
+    "name": "Gaeljude_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14415": {
+    "name": "CrowMan_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000906": {
+    "name": "Golden_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "111214": {
+    "name": "Carta_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "111257": {
+    "name": "Corvo_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "14101": {
+    "name": "Redknight_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "114521": {
+    "name": "Vdure_ChainMail_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "8700": {
+    "name": "Redsentinel_ChainMail_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "2111099": {
+    "name": "Makan_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000225": {
+    "name": "DarknessKing_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000268": {
+    "name": "Vdure_ChainMail_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1000287": {
+    "name": "Redsentinel_ChainMail_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1000300": {
+    "name": "Paphneil_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000311": {
+    "name": "Corvo_PlateArmor_Cloak",
+    "gimmick_info": 1002222,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000315": {
+    "name": "Redknight_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000306": {
+    "name": "Makan_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000383": {
+    "name": "DarknessKing_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "131040": {
+    "name": "Dueblone_Plated_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "14202": {
+    "name": "Skull_Knight_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000382": {
+    "name": "DarknessKing_PlateArmor_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "121081": {
+    "name": "Deerking_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121026": {
+    "name": "Londel_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000381": {
+    "name": "DarknessKing_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14301": {
+    "name": "Redknight_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14302": {
+    "name": "Redsentinel_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121069": {
+    "name": "Corvo_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "124074": {
+    "name": "Commander_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14401": {
+    "name": "Redknight_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "14416": {
+    "name": "SkullKnight_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "14405": {
+    "name": "Redsentinel_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101078": {
+    "name": "Endour_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "103029": {
+    "name": "Duratti_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "2101011": {
+    "name": "Witters_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1164512": {
+    "name": "Lyfellen_ChainMail_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1000052": {
+    "name": "OrcuMer_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000305": {
+    "name": "king_LostPeople_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000285": {
+    "name": "Lyfellen_ChainMail_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1002283": {
+    "name": "OrcuMer_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "14201": {
+    "name": "Redknight_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131007": {
+    "name": "Ladete_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131001": {
+    "name": "Lekia_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "12307": {
+    "name": "Carta_Plated_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131041": {
+    "name": "Gamelot_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000054": {
+    "name": "OrcuMer_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "121017": {
+    "name": "Skull_Knight_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "2133058": {
+    "name": "Desert_Harrier_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000053": {
+    "name": "OrcuMer_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "101138": {
+    "name": "Tarchet_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101090": {
+    "name": "Madacus_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101056": {
+    "name": "Londel_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "14417": {
+    "name": "Carta_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101008": {
+    "name": "Entura_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101117": {
+    "name": "Tarbal_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000051": {
+    "name": "OrcuMer_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "113696": {
+    "name": "Pitspec_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "2111103": {
+    "name": "Canta_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000312": {
+    "name": "Pitspec_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000313": {
+    "name": "Canta_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "131022": {
+    "name": "Chelcia_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131042": {
+    "name": "Reinbaldt_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131013": {
+    "name": "Grace_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "121013": {
+    "name": "Keredig_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121042": {
+    "name": "Pyinca_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121043": {
+    "name": "Parmen_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "2101033": {
+    "name": "Lauqus_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101122": {
+    "name": "Luknian_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "2101021": {
+    "name": "Duemeniss_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101011": {
+    "name": "Pycian_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000732": {
+    "name": "Beltran_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "121070": {
+    "name": "Goloduan_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "2101016": {
+    "name": "Mortain_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1001810": {
+    "name": "Hartman_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101014": {
+    "name": "Grace_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000953": {
+    "name": "Oongka_PlateArmor_Armor_II",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000981": {
+    "name": "Oongka_PlateArmor_Cloak_II",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "131023": {
+    "name": "Ashad_PlateArmor_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "131024": {
+    "name": "Solas_PlateArmor_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000872": {
+    "name": "Oongka_PlateArmor_Boots_II",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000985": {
+    "name": "Oongka_PlateArmor_Gloves_II",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000992": {
+    "name": "Oongka_PlateArmor_Helm_II",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "111168": {
+    "name": "Ashad_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "111169": {
+    "name": "Solas_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000978": {
+    "name": "Oongka_PlateArmor_Armor_III",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000681": {
+    "name": "Ashad_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000682": {
+    "name": "Solas_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000982": {
+    "name": "Oongka_PlateArmor_Cloak_III",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "121033": {
+    "name": "Ashad_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "121034": {
+    "name": "Solas_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000840": {
+    "name": "Solas_PlateArmor_Gloves_I",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000987": {
+    "name": "Oongka_PlateArmor_Gloves_III",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000874": {
+    "name": "Oongka_PlateArmor_Boots_III",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "101101": {
+    "name": "Ashad_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "101102": {
+    "name": "Solas_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000993": {
+    "name": "Oongka_PlateArmor_Helm_III",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "2600012": {
+    "name": "Demian_PlateArmor_Armor_II",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000685": {
+    "name": "Demian_PlateArmor_Cloak_III",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "2600032": {
+    "name": "Demian_PlateArmor_Gloves_II",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "2600043": {
+    "name": "Demian_PlateArmor_Gloves_IV",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "2600030": {
+    "name": "Demian_PlateArmor_Gloves_III",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000886": {
+    "name": "Demian_PlateArmor_Gloves_VI",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000805": {
+    "name": "Demian_PlateArmor_Helm_VIII",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "2600045": {
+    "name": "Demian_PlateArmor_Helm_IV",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000769": {
+    "name": "Demian_PlateArmor_Helm_VI",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000891": {
+    "name": "Demian_PlateArmor_Helm_XIII",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000255": {
+    "name": "Demian_Plate_Boots_VI",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000111": {
+    "name": "Demian_Pure_White_Plate_Boots_II",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "2600046": {
+    "name": "Demian_Plate_Boots_III",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000887": {
+    "name": "Demian_Plate_Boots_IV",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1000013": {
+    "name": "Demian_PlateArmor_Armor_VI",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000686": {
+    "name": "Demian_PlateArmor_Cloak_V",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "14300": {
+    "name": "Demian_PlateArmor_Gloves_V",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "14400": {
+    "name": "Demian_PlateArmor_Helm_V",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "2600019": {
+    "name": "Demian_PlateArmor_Helm_I",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000802": {
+    "name": "Demian_PlateArmor_Helm_VII",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000842": {
+    "name": "Demian_PlateArmor_Helm_XI",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000110": {
+    "name": "Demian_Pure_White_Plate_Boots_I",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "14200": {
+    "name": "Demian_Plate_Boots_V",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "2600031": {
+    "name": "Demian_PlateArmor_Gloves_I",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "111249": {
+    "name": "Paphneil_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 103,
+    "category_info": 443
+  },
+  "111005": {
+    "name": "king_LostPeople_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 103,
+    "category_info": 443
+  },
+  "1164002": {
+    "name": "Optionary_Beekeeping_Cloth",
+    "gimmick_info": 1010181,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000246": {
+    "name": "Riding_Fabric_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1163002": {
+    "name": "Optionary_Hernand_Party_Cloth",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1165010": {
+    "name": "Optionary_Scholar_Stone_Cloth",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000021": {
+    "name": "Optionary_Monk_Cloth",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001400": {
+    "name": "Marni_Laser_Helm",
+    "gimmick_info": 1001977,
+    "item_type": 103,
+    "category_info": 442
+  },
+  "1000380": {
+    "name": "DarknessKing_PlateArmor_Helm",
+    "gimmick_info": 1001504,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1001236": {
+    "name": "Scouter_HP_PlateArmor_Helm",
+    "gimmick_info": 1000829,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000771": {
+    "name": "Pirate_King_Leather_Helm",
+    "gimmick_info": 1001887,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000143": {
+    "name": "Miner_PlateArmor_Helm",
+    "gimmick_info": 1000431,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000236": {
+    "name": "Heat_PlateArmor_Helm",
+    "gimmick_info": 1001076,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1002122": {
+    "name": "Card_Vision_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000221": {
+    "name": "Gadget_Fabric_Helm",
+    "gimmick_info": 1002232,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1001184": {
+    "name": "Chicken_Helm",
+    "gimmick_info": 1002224,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000073": {
+    "name": "Gas_Mask_Helm_I",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000247": {
+    "name": "riding_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "2133193": {
+    "name": "Crude_Devil_Mask",
+    "gimmick_info": 1004060,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "9402": {
+    "name": "Volcker_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1001949": {
+    "name": "Muscan_PlateArmor_Gloves",
+    "gimmick_info": 1008427,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1001009": {
+    "name": "Gadget_Gloves",
+    "gimmick_info": 1002231,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1001250": {
+    "name": "ThiefGloves",
+    "gimmick_info": 1002041,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1001300": {
+    "name": "PowerDraw_Gloves",
+    "gimmick_info": 1002261,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1001000": {
+    "name": "Optionary_NonSlip_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000248": {
+    "name": "riding_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000259": {
+    "name": "WaterSliding_Plate_Boots",
+    "gimmick_info": 1003085,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "2131006": {
+    "name": "IncreaseSwimmingSpeed_Plate_Boots",
+    "gimmick_info": 1004840,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000181": {
+    "name": "Wolf_Pursuer_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1001191": {
+    "name": "Fire_Boots",
+    "gimmick_info": 1002202,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000074": {
+    "name": "Riesi_Boots",
+    "gimmick_info": 1004059,
+    "item_type": 103,
+    "category_info": 425
+  },
+  "1001145": {
+    "name": "Optionary_NonSlip_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000249": {
+    "name": "riding_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1001296": {
+    "name": "Robbery_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "133020": {
+    "name": "Volcker_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000321": {
+    "name": "Optionary_Beekeeping_Cloak",
+    "gimmick_info": 1002223,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000274": {
+    "name": "Riding_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000325": {
+    "name": "Optionary_Monk_cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000326": {
+    "name": "Optionary_Hernand_Party_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000102": {
+    "name": "Anamorphic_PlateArmor_Helm",
+    "gimmick_info": 1002233,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000037": {
+    "name": "Knowledge_PlateArmor_Helm",
+    "gimmick_info": 1002228,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000202": {
+    "name": "Hacking_PlateArmor_Helm",
+    "gimmick_info": 1001988,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "356742259": {
+    "name": "Florin_Fabric_Helm",
+    "gimmick_info": 1002229,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1001422": {
+    "name": "Gregor_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1473348912": {
+    "name": "WellsKnight_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000303": {
+    "name": "WellsKnight_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "2094675372": {
+    "name": "WellsKnight_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "697368607": {
+    "name": "WellsKnight_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "1955057078": {
+    "name": "WellsKnight_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000521": {
+    "name": "Kliff_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "1000524": {
+    "name": "Kliff_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000546": {
+    "name": "Kliff_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1000560": {
+    "name": "Kliff_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "1000567": {
+    "name": "Kliff_Plate_Boots",
+    "gimmick_info": 18020008,
+    "item_type": 9,
+    "category_info": 445
+  },
+  "13604": {
+    "name": "Legendary_SkullKnight_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1512009": {
+    "name": "Kritha_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1562354751": {
+    "name": "Marni_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1513009": {
+    "name": "Kritha_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1000591": {
+    "name": "HorseShoe_HorseArmor_Stirrup_V",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "300023": {
+    "name": "Light_Arrowhead_Leader_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "1512001": {
+    "name": "Troopers_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1511001": {
+    "name": "Troopers_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1513001": {
+    "name": "Troopers_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1514001": {
+    "name": "Troopers_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "101002": {
+    "name": "Keredig_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "111165": {
+    "name": "Bolton_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000308": {
+    "name": "Bolton_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "9102": {
+    "name": "Hernand_GuardCaptain_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "12409": {
+    "name": "Hernand_GuardCaptain_Leather_Gloves",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "12308": {
+    "name": "Hernand_GuardCaptain_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000272": {
+    "name": "Hernand_GuardCaptain_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1511010": {
+    "name": "Hernand_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1000337": {
+    "name": "Optionary_Scholar_Stone_cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "103112": {
+    "name": "Huroi_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "12310": {
+    "name": "Huroi_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "104169": {
+    "name": "Abidon_Fabric_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "114600": {
+    "name": "Lunosier_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000277": {
+    "name": "Lunosier_Fabric_Cloak",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "14306": {
+    "name": "Lutis_PlateArmor_Gloves",
+    "gimmick_info": 18020009,
+    "item_type": 22,
+    "category_info": 444
+  },
+  "134011": {
+    "name": "Lutis_Leather_Boots",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1511007": {
+    "name": "Berkei_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1511012": {
+    "name": "Demeniss_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "2114057": {
+    "name": "Kintun_ChainMail_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "111210": {
+    "name": "Delesian_Friend_PlateArmor_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000317": {
+    "name": "Delesian_Friend_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "103035": {
+    "name": "Tesslit_Leather_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1511008": {
+    "name": "Delesian_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "104184": {
+    "name": "Dragon_Knight_Commander_PlateArmor_Helm",
+    "gimmick_info": 1002222,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "112078": {
+    "name": "Dragon_Knight_Commander_ChainMail_Armor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1000286": {
+    "name": "Dragon_Knight_Commander_ChainMail_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 433
+  },
+  "1511006": {
+    "name": "Desert_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "2101037": {
+    "name": "Lacsha_PlateArmor_Helm",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 442
+  },
+  "111255": {
+    "name": "Sazahan_PlateArmor_Armor",
+    "gimmick_info": 1010181,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000314": {
+    "name": "Sazahan_PlateArmor_Cloak",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 446
+  },
+  "1001301": {
+    "name": "MastKey_Gloves",
+    "gimmick_info": 1002113,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1001072": {
+    "name": "Testarmor",
+    "gimmick_info": 18020007,
+    "item_type": 3,
+    "category_info": 443
+  },
+  "1000923": {
+    "name": "Douglas_Leather_Armor_T5_QA",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000924": {
+    "name": "Deerking_Leather_Armor_T4_QA",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1000909": {
+    "name": "Tychaon_Fabric_Armor_T5_QA",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000911": {
+    "name": "Scalaphynion_Fabric_Armor_T4_QA",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1002491": {
+    "name": "Demian_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1003747": {
+    "name": "Demian_Skirt_Fabric_Armor",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000910": {
+    "name": "Tychaon_Fabric_Cloak_T5_QA",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000912": {
+    "name": "Scalaphynion_Fabric_Cloak_T4_QA",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1000913": {
+    "name": "Heisellen_Fabric_Cloak_T1_QA",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "111999": {
+    "name": "Dev_Red_Dragon_Kliff_Leather_Armor",
+    "gimmick_info": 18020004,
+    "item_type": 3,
+    "category_info": 423
+  },
+  "1002492": {
+    "name": "Demian_Fabric_Cloak_V",
+    "gimmick_info": 18020001,
+    "item_type": 3,
+    "category_info": 413
+  },
+  "1001257": {
+    "name": "Socket_Test_Gloves",
+    "gimmick_info": 1002230,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000925": {
+    "name": "Douglas_Leather_Gloves_T5_QA",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000926": {
+    "name": "Legendary_Deer_Leather_Gloves_T4_QA",
+    "gimmick_info": 18020006,
+    "item_type": 22,
+    "category_info": 424
+  },
+  "1000915": {
+    "name": "Tarif_Fabric_Gloves_T4_QA",
+    "gimmick_info": 18020003,
+    "item_type": 22,
+    "category_info": 414
+  },
+  "1000916": {
+    "name": "Tarif_Fabric_Gloves_T3_QA",
+    "gimmick_info": 18020003,
+    "item_type": 22,
+    "category_info": 414
+  },
+  "1000917": {
+    "name": "Hanbok_Fabric_Gloves_T1_QA",
+    "gimmick_info": 18020003,
+    "item_type": 22,
+    "category_info": 414
+  },
+  "1000927": {
+    "name": "Bainian_Leather_Boots_T5_QA",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000928": {
+    "name": "Ludvic_Leather_Boots_T4_QA",
+    "gimmick_info": 18020005,
+    "item_type": 9,
+    "category_info": 425
+  },
+  "1000919": {
+    "name": "Tarif_Fabric_Boots_T4_QA",
+    "gimmick_info": 18020002,
+    "item_type": 9,
+    "category_info": 415
+  },
+  "1000920": {
+    "name": "Tarif_Fabric_Boots_T3_QA",
+    "gimmick_info": 18020002,
+    "item_type": 9,
+    "category_info": 415
+  },
+  "1000907": {
+    "name": "Abidon_Fabric_Helm_T5_QA",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 412
+  },
+  "1000921": {
+    "name": "Deer_King_Leather_Helm_T4_QA",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000922": {
+    "name": "Tesslit_Leather_Helm_T2_QA",
+    "gimmick_info": 18020014,
+    "item_type": 24,
+    "category_info": 422
+  },
+  "1000261": {
+    "name": "WarRobot_Body_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1112
+  },
+  "1001094": {
+    "name": "WarRobot_Body_02",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1112
+  },
+  "1000758": {
+    "name": "WarRobot_Body_03",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1112
+  },
+  "1000475": {
+    "name": "WarRobot_Backpack_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1113
+  },
+  "1001095": {
+    "name": "WarRobot_Backpack_02",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1113
+  },
+  "1001068": {
+    "name": "WarRobot_Backpack_03",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1113
+  },
+  "1001429": {
+    "name": "WarRobot_Foot_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1114
+  },
+  "1001096": {
+    "name": "WarRobot_Foot_02",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1114
+  },
+  "1000855": {
+    "name": "WarRobot_Foot_03",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1114
+  },
+  "1002744": {
+    "name": "WarRobot_Fist_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1110
+  },
+  "1002743": {
+    "name": "WarRobot_Cannon_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1111
+  },
+  "1002503": {
+    "name": "WarRobot_Laser_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1116
+  },
+  "1001923": {
+    "name": "WarRobot_RepairTool_01_L",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1119
+  },
+  "1002745": {
+    "name": "WarRobot_Gatling_01",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1115
+  },
+  "1002501": {
+    "name": "WarRobot_FlameThrower_01",
+    "gimmick_info": 1002219,
+    "item_type": 50,
+    "category_info": 1117
+  },
+  "1002099": {
+    "name": "WarRobot_RepairTool_01_R",
+    "gimmick_info": 18020014,
+    "item_type": 50,
+    "category_info": 1118
+  },
+  "1511009": {
+    "name": "Kritha_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1511011": {
+    "name": "Orjekel_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1002121": {
+    "name": "Wells_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1002078": {
+    "name": "Hagmundt_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1511015": {
+    "name": "Wagon_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1000773": {
+    "name": "Wagon_HorseArmor_Armor_II",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1511013": {
+    "name": "Demeniss_Soldier_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1511014": {
+    "name": "Hernand_Soldier_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1001938": {
+    "name": "Delesian_Soldier_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1002850": {
+    "name": "Grenvar_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1002851": {
+    "name": "Cernos_HorseArmor_Armor",
+    "gimmick_info": 18010009,
+    "item_type": 25,
+    "category_info": 1102
+  },
+  "1512006": {
+    "name": "Desert_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1512012": {
+    "name": "Demeniss_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1512011": {
+    "name": "Orjekel_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1002806": {
+    "name": "Varken_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1512010": {
+    "name": "Hernand_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1001419": {
+    "name": "Rosvar_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1000427": {
+    "name": "Bellac_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "64382088": {
+    "name": "Marni_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1512007": {
+    "name": "Berkei_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1512008": {
+    "name": "Delesian_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1002197": {
+    "name": "Hagmundt_HorseArmor_Helm",
+    "gimmick_info": 18010002,
+    "item_type": 25,
+    "category_info": 1103
+  },
+  "1513000": {
+    "name": "Old_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1001812": {
+    "name": "Troopers_HorseArmor_Saddle_I",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513011": {
+    "name": "Orjekel_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1001070": {
+    "name": "Delmar_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513006": {
+    "name": "Desert_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1001098": {
+    "name": "Servano_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513007": {
+    "name": "Berkei_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513010": {
+    "name": "Hernand_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1001761": {
+    "name": "Branik_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513008": {
+    "name": "Delesian_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1513012": {
+    "name": "Demeniss_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1002173": {
+    "name": "Hagmundt_HorseArmor_Saddle",
+    "gimmick_info": 18010011,
+    "item_type": 25,
+    "category_info": 1104
+  },
+  "1000586": {
+    "name": "HorseShoe_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1000590": {
+    "name": "HorseShoe_HorseArmor_Stirrup_IV",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514006": {
+    "name": "Desert_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514009": {
+    "name": "Kritha_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514011": {
+    "name": "Orjekel_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514012": {
+    "name": "Demeniss_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1000481": {
+    "name": "Marni_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1000587": {
+    "name": "HorseShoe_HorseArmor_Stirrup_I",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514010": {
+    "name": "Hernand_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1002770": {
+    "name": "HorseShoe_HorseArmor_marquel_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514008": {
+    "name": "Delesian_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1514007": {
+    "name": "Berkei_HorseArmor_Stirrup",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1000589": {
+    "name": "HorseShoe_HorseArmor_Stirrup_III",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "1000588": {
+    "name": "HorseShoe_HorseArmor_Stirrup_II",
+    "gimmick_info": 18010005,
+    "item_type": 25,
+    "category_info": 1105
+  },
+  "12600": {
+    "name": "Legendary_CaptainGoblin_OneHandAxe",
+    "gimmick_info": 1008474,
+    "item_type": 5,
+    "category_info": 104
+  },
+  "1578535467": {
+    "name": "Legendary_GoldStar_OneHandCannon",
+    "gimmick_info": 18020014,
+    "item_type": 18,
+    "category_info": 310
+  },
+  "9502": {
+    "name": "Legendary_MarniDragon_OneHandCannon",
+    "gimmick_info": 18020014,
+    "item_type": 18,
+    "category_info": 310
+  },
+  "9508": {
+    "name": "DragonSlayerLeader_OneHandCannon",
+    "gimmick_info": 18020014,
+    "item_type": 18,
+    "category_info": 310
+  },
+  "410002": {
+    "name": "Volcanic_OneHandCannon",
+    "gimmick_info": 18020014,
+    "item_type": 18,
+    "category_info": 310
+  },
+  "1001039": {
+    "name": "Legendary_Abyss_OneHandCannon",
+    "gimmick_info": 18020014,
+    "item_type": 18,
+    "category_info": 310
+  },
+  "1001136": {
+    "name": "Bastion_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "1000237": {
+    "name": "Silver_Armor_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "13201": {
+    "name": "Legendary_MarniRegion_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "13202": {
+    "name": "Legendary_StephenBleed_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "220002": {
+    "name": "Kadel_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "221000": {
+    "name": "Dragon_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "220021": {
+    "name": "Tyrendhal_OneHandMace",
+    "gimmick_info": 1008474,
+    "item_type": 29,
+    "category_info": 105
+  },
+  "13500": {
+    "name": "Legendary_Caliburn_OneHandRapier",
+    "gimmick_info": 1008474,
+    "item_type": 47,
+    "category_info": 114
+  },
+  "201009": {
+    "name": "Apenzel_OneHandRapier",
+    "gimmick_info": 1008474,
+    "item_type": 47,
+    "category_info": 114
+  },
+  "13605": {
+    "name": "Legendary_MarniTank_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "290026": {
+    "name": "Deer_King_Metal_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1001211": {
+    "name": "Bastion_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1000266": {
+    "name": "Ancient_Shield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1000394": {
+    "name": "Demeniss_Guard_Shield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1001064": {
+    "name": "Damian_OneHandShield_VII",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1001246": {
+    "name": "Gold_Armor_OneHandShield",
+    "gimmick_info": 1003717,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "1000578": {
+    "name": "Old_Kliff_OneHandSword",
+    "gimmick_info": 1008873,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "13810": {
+    "name": "Legendary_WhiteHorn_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1001055": {
+    "name": "Magnet_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200922": {
+    "name": "Deer_King_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200072": {
+    "name": "Mjordin_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1001210": {
+    "name": "GoldArmor_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200917": {
+    "name": "Spada_OneHandSword",
+    "gimmick_info": 1008873,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200924": {
+    "name": "SoulKnight_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1000738": {
+    "name": "Taoria_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200902": {
+    "name": "AbyssReward_Reeddevil_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1000742": {
+    "name": "Ludvig_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1001019": {
+    "name": "Gias_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200914": {
+    "name": "AbyssReward_Mysterm_OneHandSword",
+    "gimmick_info": 1001786,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1000747": {
+    "name": "Goblin_Boss_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "13811": {
+    "name": "Legendary_Dragon_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200052": {
+    "name": "Knight_King_OneHandSword",
+    "gimmick_info": 1008873,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200919": {
+    "name": "Archria_OneHandSword",
+    "gimmick_info": 1008873,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "200001": {
+    "name": "Cigar_OneHandSword",
+    "gimmick_info": 1008474,
+    "item_type": 56,
+    "category_info": 103
+  },
+  "1000761": {
+    "name": "Silver_Armor_OneHandTowerShield",
+    "gimmick_info": 1003717,
+    "item_type": 60,
+    "category_info": 109
+  },
+  "1001427": {
+    "name": "Legendary_Soulknight_OneHandTowerShield",
+    "gimmick_info": 1003717,
+    "item_type": 60,
+    "category_info": 109
+  },
+  "1000182": {
+    "name": "AbyssReward_Kutum_TowerShield",
+    "gimmick_info": 1003717,
+    "item_type": 60,
+    "category_info": 109
+  },
+  "1001417": {
+    "name": "North_Warrior_OneHandTowerShield",
+    "gimmick_info": 1003717,
+    "item_type": 60,
+    "category_info": 109
+  },
+  "301001": {
+    "name": "Robinhood_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "12702": {
+    "name": "Legendary_Korea_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "12701": {
+    "name": "AbyssReward_HolyEcho_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "301000": {
+    "name": "Dragon_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "300018": {
+    "name": "Baredin_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "1000766": {
+    "name": "EntHunter_OneHandBow",
+    "gimmick_info": 1010102,
+    "item_type": 10,
+    "category_info": 304
+  },
+  "13304": {
+    "name": "Legendary_DemenisMusket_OneHandMusket",
+    "gimmick_info": 1008474,
+    "item_type": 33,
+    "category_info": 303
+  },
+  "280019": {
+    "name": "Gustav_OneHandMusket",
+    "gimmick_info": 1008474,
+    "item_type": 33,
+    "category_info": 303
+  },
+  "280002": {
+    "name": "Lopelun_OneHandMusket",
+    "gimmick_info": 1008474,
+    "item_type": 33,
+    "category_info": 303
+  },
+  "270013": {
+    "name": "Caliburn_Tolerance_OneHandPistol",
+    "gimmick_info": 1008474,
+    "item_type": 40,
+    "category_info": 302
+  },
+  "370007": {
+    "name": "Dein_OneHandShotgun",
+    "gimmick_info": 1008474,
+    "item_type": 53,
+    "category_info": 306
+  },
+  "290021": {
+    "name": "AbyssReward_Drake_Metal_OneHandShield",
+    "gimmick_info": 1004731,
+    "item_type": 52,
+    "category_info": 107
+  },
+  "15100": {
+    "name": "Legendary_AncientGuardian_TwoHandAxe",
+    "gimmick_info": 1008474,
+    "item_type": 65,
+    "category_info": 203
+  },
+  "1001669": {
+    "name": "WhiteBear_TwoHandAxe",
+    "gimmick_info": 1008474,
+    "item_type": 65,
+    "category_info": 203
+  },
+  "14706": {
+    "name": "Legendary_BridieGu_TwoHandGiantAxe",
+    "gimmick_info": 1008474,
+    "item_type": 65,
+    "category_info": 203
+  },
+  "251000": {
+    "name": "Dragon_TwoHandAxe",
+    "gimmick_info": 1008474,
+    "item_type": 65,
+    "category_info": 203
+  },
+  "250028": {
+    "name": "Cigrymon_TwoHandAxe",
+    "gimmick_info": 1008474,
+    "item_type": 65,
+    "category_info": 203
+  }
+}

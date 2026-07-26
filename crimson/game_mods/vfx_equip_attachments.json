@@ -1,0 +1,1353 @@
+{
+  "count": 93,
+  "gimmicks": [
+    {
+      "gimmick_key": 1000431,
+      "gimmick_name": "gimmick_equip_minerhelm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_minerhelm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000143,
+          "internal_name": "Miner_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1000455,
+      "gimmick_name": "gimmick_equip_lantern_01",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_lantern_01.prefab",
+      "item_count": 9,
+      "sample_items": [
+        {
+          "key": 10044,
+          "internal_name": "Gold_Plating_Lantern"
+        },
+        {
+          "key": 1003190,
+          "internal_name": "Twich_Lantern"
+        },
+        {
+          "key": 1003201,
+          "internal_name": "Bilibili_Lantern"
+        },
+        {
+          "key": 10026,
+          "internal_name": "Lantern"
+        },
+        {
+          "key": 10043,
+          "internal_name": "Light_Of_Giant_Lantern"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1000610,
+      "gimmick_name": "gimmick_equip_rocket_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_rocket_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001435,
+          "internal_name": "Oongka_Rocket_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1000829,
+      "gimmick_name": "gimmick_equip_hpviewer",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_hpviewer.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001236,
+          "internal_name": "Scouter_HP_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1000983,
+      "gimmick_name": "gimmick_equip_Drone_Backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_drone_backpack.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1000109,
+          "internal_name": "Drone_Backpack"
+        },
+        {
+          "key": 1002137,
+          "internal_name": "Kuku_Drone_Backpack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001072,
+      "gimmick_name": "gimmick_equip_darkness_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_darknessgloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001258,
+          "internal_name": "Catfish_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001076,
+      "gimmick_name": "gimmick_equip_light_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_lightgloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000236,
+          "internal_name": "Heat_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001110,
+      "gimmick_name": "gimmick_equip_Thunder_charge_armor",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_electric_charge_armor.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002285,
+          "internal_name": "Titan_PlateArmor_Armor_Upgrade"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001257,
+      "gimmick_name": "Gimmick_Equip_Weather_Change_Rainy_Hard",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_weather_change_rainy_hard.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001182,
+          "internal_name": "WeatherWeaver_Necklace"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001472,
+      "gimmick_name": "gimmick_equip_giantsword",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_giantsword.prefab",
+      "item_count": 6,
+      "sample_items": [
+        {
+          "key": 1002102,
+          "internal_name": "Serdin_Giant_TwoHandGiantBastard"
+        },
+        {
+          "key": 1002106,
+          "internal_name": "Verak_Giant_TwoHandGiantBastard"
+        },
+        {
+          "key": 1002103,
+          "internal_name": "Parvel_Giant_TwoHandGiantBastard"
+        },
+        {
+          "key": 1002104,
+          "internal_name": "Arven_Giant_TwoHandGiantBastard"
+        },
+        {
+          "key": 1002105,
+          "internal_name": "Lusek_Giant_TwoHandGiantBastard"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001492,
+      "gimmick_name": "gimmick_equip_flame_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_flame_twohandspear.prefab",
+      "item_count": 3,
+      "sample_items": [
+        {
+          "key": 1002176,
+          "internal_name": "KuKu_Fire_staff_spear_TwoHandSpear"
+        },
+        {
+          "key": 1000451,
+          "internal_name": "Fire_staff_spear_TwoHandSpear"
+        },
+        {
+          "key": 1000176,
+          "internal_name": "Flame_staff_spear_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001504,
+      "gimmick_name": "gimmick_equip_summon_02_night",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_summon_02_night.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000380,
+          "internal_name": "DarknessKing_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001583,
+      "gimmick_name": "gimmick_equip_gimmick_orange_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_orange_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000710,
+          "internal_name": "orange_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001585,
+      "gimmick_name": "gimmick_equip_gimmick_grape_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_grape_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000711,
+          "internal_name": "grape_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001586,
+      "gimmick_name": "gimmick_equip_gimmick_cotton_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_cotton_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000712,
+          "internal_name": "cotton_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001588,
+      "gimmick_name": "gimmick_equip_gimmick_orchids_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_orchids_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000713,
+          "internal_name": "orchids_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001589,
+      "gimmick_name": "gimmick_equip_gimmick_Songyi_Mushroom_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_songyi_mushroom_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001069,
+          "internal_name": "Songyi_Mushroom_BackPacK"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001590,
+      "gimmick_name": "gimmick_equip_gimmick_Pyogo_Mushroom_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_pyogo_mushroom_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001085,
+          "internal_name": "Pyogo_Mushroom_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001592,
+      "gimmick_name": "gimmick_equip_gimmick_Ssari_Mushroom_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_ssari_mushroom_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001086,
+          "internal_name": "Ssari_Mushroom_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001763,
+      "gimmick_name": "gimmick_equip_check_player_01_hplower",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_check_player_01_hplower.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001100,
+          "internal_name": "Tarif_Necklace"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001786,
+      "gimmick_name": "gimmick_equip_common_weapon",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_common_weapon.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 200914,
+          "internal_name": "AbyssReward_Mysterm_OneHandSword"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001787,
+      "gimmick_name": "gimmick_equip_check_player_03_rain",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_check_player_03_rain.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 8502,
+          "internal_name": "Legendary_Titan_Ring"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001836,
+      "gimmick_name": "gimmick_equip_random_hp_recovery",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_random_hp_recovery.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001101,
+          "internal_name": "Ludvic_Necklace"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001838,
+      "gimmick_name": "gimmick_equip_sp_recovery",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_sp_recovery.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000972,
+          "internal_name": "Optionary_Monk_Necklace"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001839,
+      "gimmick_name": "gimmick_equip_check_player_02_autobomb",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_check_player_02_autobomb.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000443,
+          "internal_name": "Bleed_Bomb_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001876,
+      "gimmick_name": "gimmick_equip_lightning_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_lightning_twohandspear.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1002175,
+          "internal_name": "KuKu_Lightning_TwoHandSpear"
+        },
+        {
+          "key": 1001163,
+          "internal_name": "Lightning_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001885,
+      "gimmick_name": "gimmick_equip_YamatoCannon_Weapon_01",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_yamatocannon_weapon_01.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1002179,
+          "internal_name": "Kuku_YamatoCannon_TwoHandSpear"
+        },
+        {
+          "key": 1001183,
+          "internal_name": "YamatoCannon_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001916,
+      "gimmick_name": "gimmick_equip_Soul_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_soul_twohandspear.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001188,
+          "internal_name": "Soul_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001924,
+      "gimmick_name": "gimmick_equip_wind_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_wind_twohandspear.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1002177,
+          "internal_name": "KuKu_Wind_TwoHandSpear"
+        },
+        {
+          "key": 1001193,
+          "internal_name": "Wind_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001936,
+      "gimmick_name": "gimmick_equip_magic_scythe",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_magic_scythe.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001196,
+          "internal_name": "Equip_Magic_Scythe"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001961,
+      "gimmick_name": "gimmick_equip_lightning_OneHandSword",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_lightning_onehandsword.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1001062,
+          "internal_name": "Marni_MachineKnight_TwoHandSword"
+        },
+        {
+          "key": 1000957,
+          "internal_name": "Marni_MachineKnight_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001977,
+      "gimmick_name": "gimmick_equip_Equip_Laser_Helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_equip_laser_helm.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1001400,
+          "internal_name": "Marni_Laser_Helm"
+        },
+        {
+          "key": 1002284,
+          "internal_name": "Marni_Laser_Helm_Upgrade"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001988,
+      "gimmick_name": "gimmick_equip_hacking",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_hacking.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000202,
+          "internal_name": "Hacking_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1001995,
+      "gimmick_name": "gimmick_equip_Equip_LakeGolem_Laser_Shield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_equip_lakegolem_laser_shield.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000201,
+          "internal_name": "LakeGolem_OnehandShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002003,
+      "gimmick_name": "gimmick_equip_play_ingame_bgm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_play_ingamebgm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 8509,
+          "internal_name": "Folorin_Earring"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002010,
+      "gimmick_name": "gimmick_equip_Florin_Bomb_BackPack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_florin_bomb_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001234,
+          "internal_name": "Flolin_BackPack_FlowerDrone_I"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002041,
+      "gimmick_name": "gimmick_equip_thiefgloves",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_thiefgloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001250,
+          "internal_name": "ThiefGloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002056,
+      "gimmick_name": "gimmick_equip_visione",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_visione.prefab",
+      "item_count": 10,
+      "sample_items": [
+        {
+          "key": 14510,
+          "internal_name": "Marni_Devotee_PlateArmor_Helm"
+        },
+        {
+          "key": 14511,
+          "internal_name": "Marni_Devotee_PlateArmor_Helm_I"
+        },
+        {
+          "key": 1000231,
+          "internal_name": "Marni_Devotee_PlateArmor_Helm_II"
+        },
+        {
+          "key": 1000232,
+          "internal_name": "Marni_Devotee_PlateArmor_Helm_III"
+        },
+        {
+          "key": 1000233,
+          "internal_name": "Marni_Devotee_PlateArmor_Helm_IV"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002057,
+      "gimmick_name": "gimmick_equip_gimmick_destroyboots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_destroyboots.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001199,
+          "internal_name": "Colossus_Boots"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002072,
+      "gimmick_name": "gimmick_equip_EMP_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_emp_spear.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1002178,
+          "internal_name": "KuKu_EMP_TwoHandSpear"
+        },
+        {
+          "key": 1001212,
+          "internal_name": "EMP_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002073,
+      "gimmick_name": "gimmick_equip_Bismuth_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_bismuth_twohandspear.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1001953,
+          "internal_name": "KuKu_Bismuth_TwoHandSpear"
+        },
+        {
+          "key": 1001251,
+          "internal_name": "Bismuth_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002078,
+      "gimmick_name": "gimmick_equip_chocolate_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_chocolate_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000708,
+          "internal_name": "Chocolate_Factory_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002113,
+      "gimmick_name": "Gimmick_Equip_UnlockGimmick_Gloves",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_unlockgimmick_gloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001301,
+          "internal_name": "MastKey_Gloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002202,
+      "gimmick_name": "gimmick_equip_gimmick_fireboots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_fireboots.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001191,
+          "internal_name": "Fire_Boots"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002203,
+      "gimmick_name": "gimmick_equip_EMP_BackPack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_emp_backpack.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1000970,
+          "internal_name": "EMP_BackPack"
+        },
+        {
+          "key": 1002136,
+          "internal_name": "Kuku_EMP_Enhance_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002214,
+      "gimmick_name": "gimmick_equip_Aggro_Backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_aggro_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001750,
+          "internal_name": "Aggro_Backpack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002215,
+      "gimmick_name": "gimmick_equip_Detect_Enemy_BackPack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_detect_enemy_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001185,
+          "internal_name": "Watcher_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002217,
+      "gimmick_name": "gimmick_equip_insect_collector",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_insect_collector.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000845,
+          "internal_name": "Insect_Collect_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002218,
+      "gimmick_name": "gimmick_equip_plants_collector",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_plants_collector.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000528,
+          "internal_name": "Plant_Collect_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002219,
+      "gimmick_name": "gimmick_equip_temperaturearea_flamethrower",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_temperaturearea_flamethrower.prefab",
+      "item_count": 3,
+      "sample_items": [
+        {
+          "key": 1002501,
+          "internal_name": "WarRobot_FlameThrower_01"
+        },
+        {
+          "key": 1002180,
+          "internal_name": "Kuku_FlameThrower"
+        },
+        {
+          "key": 330002,
+          "internal_name": "FlameThrower"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002220,
+      "gimmick_name": "gimmick_equip_temperaturearea_icethrower",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_temperaturearea_icethrower.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1002181,
+          "internal_name": "Kuku_IceThrower"
+        },
+        {
+          "key": 330003,
+          "internal_name": "IceThrower"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002222,
+      "gimmick_name": "gimmick_equip_openclose_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_openclose_helm.prefab",
+      "item_count": 17,
+      "sample_items": [
+        {
+          "key": 101003,
+          "internal_name": "Dragon_Slayer_Ohyoon_PlateArmor_Helm"
+        },
+        {
+          "key": 1000311,
+          "internal_name": "Corvo_PlateArmor_Cloak"
+        },
+        {
+          "key": 103029,
+          "internal_name": "Duratti_PlateArmor_Helm"
+        },
+        {
+          "key": 101138,
+          "internal_name": "Tarchet_PlateArmor_Helm"
+        },
+        {
+          "key": 101090,
+          "internal_name": "Madacus_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002223,
+      "gimmick_name": "gimmick_equip_openclose_cloak",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_openclose_cloak.prefab",
+      "item_count": 11,
+      "sample_items": [
+        {
+          "key": 1000275,
+          "internal_name": "Tarif_Fabric_Cloak"
+        },
+        {
+          "key": 1000335,
+          "internal_name": "Scarecrow_Camouflage_Cloak"
+        },
+        {
+          "key": 1000293,
+          "internal_name": "Hemon_Vindel_Leather_Cloak"
+        },
+        {
+          "key": 1000292,
+          "internal_name": "Reeddevil_Leather_Cloak"
+        },
+        {
+          "key": 1000310,
+          "internal_name": "Samuel_PlateArmor_Cloak"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002224,
+      "gimmick_name": "gimmick_equip_gadget_Chicken_Helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gadget_chicken_helm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001184,
+          "internal_name": "Chicken_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002225,
+      "gimmick_name": "gimmick_equip_soundshield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_soundshield.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000125,
+          "internal_name": "Sound_OneHandShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002226,
+      "gimmick_name": "gimmick_equip_wind_shield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_wind_shield.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001192,
+          "internal_name": "Wind_Power_OneHandShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002228,
+      "gimmick_name": "gimmick_equip_knowledge_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_knowledge_helm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000037,
+          "internal_name": "Knowledge_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002229,
+      "gimmick_name": "gimmick_equip_Collect_Finder_Emmisive",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_collect_finder_emmisive.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 356742259,
+          "internal_name": "Florin_Fabric_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002230,
+      "gimmick_name": "gimmick_equip_hand",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_hand.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001257,
+          "internal_name": "Socket_Test_Gloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002231,
+      "gimmick_name": "gimmick_equip_gadget_hand",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gadget_hand.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001009,
+          "internal_name": "Gadget_Gloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002232,
+      "gimmick_name": "gimmick_equip_gadget_festival_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gadget_festival_helm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000221,
+          "internal_name": "Gadget_Fabric_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002233,
+      "gimmick_name": "gimmick_equip_part_orientation_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_part_orientation_helm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000102,
+          "internal_name": "Anamorphic_PlateArmor_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002236,
+      "gimmick_name": "gimmick_equip_daeilband",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_daeilband.prefab",
+      "item_count": 3,
+      "sample_items": [
+        {
+          "key": 1001129,
+          "internal_name": "Daeil_Band"
+        },
+        {
+          "key": 1002864,
+          "internal_name": "OOngka_Daeil_Band"
+        },
+        {
+          "key": 1003248,
+          "internal_name": "Damian_Daeil_Band"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002261,
+      "gimmick_name": "gimmick_equip_powerdraw_gloves",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_powerdraw_gloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001300,
+          "internal_name": "PowerDraw_Gloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1002266,
+      "gimmick_name": "gimmick_equip_flame_charge_armor",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_flame_charge_armor.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002286,
+          "internal_name": "Paphneil_PlateArmor_Armor_Upgrade"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1003070,
+      "gimmick_name": "gimmick_equip_handfan",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_handfan.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000156,
+          "internal_name": "Witch_WingFan"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1003085,
+      "gimmick_name": "gimmick_equip_gimmick_WaterSliding_Boots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_watersliding_boots.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000259,
+          "internal_name": "WaterSliding_Plate_Boots"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1003524,
+      "gimmick_name": "gimmick_equip_lightning_twohandhammer",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_lightning_twohandhammer.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002741,
+          "internal_name": "Ligtning_TwoHandHammer_I"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1003717,
+      "gimmick_name": "gimmick_equip_reflect_projectile_shield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_shield.prefab",
+      "item_count": 72,
+      "sample_items": [
+        {
+          "key": 1001422,
+          "internal_name": "Gregor_OneHandShield"
+        },
+        {
+          "key": 13604,
+          "internal_name": "Legendary_SkullKnight_OneHandShield"
+        },
+        {
+          "key": 1003194,
+          "internal_name": "Twich_OneHandShield"
+        },
+        {
+          "key": 1003205,
+          "internal_name": "Bilibili_OneHandShield"
+        },
+        {
+          "key": 1001071,
+          "internal_name": "TestShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1003838,
+      "gimmick_name": "gimmick_equip_check_player_04_rain",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_check_player_04_rain.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000716,
+          "internal_name": "WaterPower_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004025,
+      "gimmick_name": "gimmick_equip_gun_shield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gun_shield.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001305,
+          "internal_name": "Gun_OneHandShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004059,
+      "gimmick_name": "gimmick_equip_gimmick_Riesi_Boots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_riesi_boots.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1000074,
+          "internal_name": "Riesi_Boots"
+        },
+        {
+          "key": 1000316,
+          "internal_name": "Riesi_Boots_Upgrade"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004060,
+      "gimmick_name": "gimmick_equip_Devil_Poison_Mask",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_devil_poison_mask.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 2133193,
+          "internal_name": "Crude_Devil_Mask"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004078,
+      "gimmick_name": "gimmick_equip_FireFly_lantern",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_firefly_lantern.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000858,
+          "internal_name": "FireFly_Lantern"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004194,
+      "gimmick_name": "gimmick_equip_temperaturearea_lightningthrower",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_temperaturearea_lightningthrower.prefab",
+      "item_count": 2,
+      "sample_items": [
+        {
+          "key": 1003259,
+          "internal_name": "Kuku_LightningThrower"
+        },
+        {
+          "key": 1000553,
+          "internal_name": "LightningThrower"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004431,
+      "gimmick_name": "gimmick_equip_gimmick_JumpUp_Boots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_jumpup_boots.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001299,
+          "internal_name": "JumpUp_Boots"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004731,
+      "gimmick_name": "gimmick_equip_Flame_Shield",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_flame_shield.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 290021,
+          "internal_name": "AbyssReward_Drake_Metal_OneHandShield"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004744,
+      "gimmick_name": "gimmick_equip_Ice_charge_armor",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_ice_charge_armor.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002287,
+          "internal_name": "king_LostPeople_PlateArmor_Armor_Upgrade"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1004840,
+      "gimmick_name": "gimmick_equip_gimmick_Swimming_Boots",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_swimming_boots.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 2131006,
+          "internal_name": "IncreaseSwimmingSpeed_Plate_Boots"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1005653,
+      "gimmick_name": "gimmick_equip_glasses_winter",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_glasses_winter.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000479,
+          "internal_name": "Kliff_Glasses"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1005782,
+      "gimmick_name": "gimmick_equip_gimmick_apple_backpack",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_gimmick_apple_backpack.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002715,
+          "internal_name": "Apple_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1006132,
+      "gimmick_name": "gimmick_equip_hexe_marie_Earring",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_hexe_marie_earring.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 8504,
+          "internal_name": "Legendary_HexeMarie_Earring"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008427,
+      "gimmick_name": "gimmick_equip_muscan_gloves",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_muscan_gloves.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001949,
+          "internal_name": "Muscan_PlateArmor_Gloves"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008570,
+      "gimmick_name": "gimmick_equip_Fertilizer_spray",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_fertilizer_spray.prefab",
+      "item_count": 3,
+      "sample_items": [
+        {
+          "key": 1000198,
+          "internal_name": "Sprayer_BackPack"
+        },
+        {
+          "key": 1003750,
+          "internal_name": "Fertilizer_Sprayer_BackPack"
+        },
+        {
+          "key": 1003751,
+          "internal_name": "Oil_Sprayer_BackPack"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008624,
+      "gimmick_name": "gimmick_equip_kuku_pot_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_kuku_pot_twohandspear.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000374,
+          "internal_name": "KuKu_Pot_TwoHandSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008871,
+      "gimmick_name": "Gimmick_Equip_Weather_Change_Sunny",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_weather_change_sunny.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1002253,
+          "internal_name": "WeatherWeaver_Sunny_Necklace"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008872,
+      "gimmick_name": "gimmick_equip_docking_common_twohandspear",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_docking_common_twohandspear.prefab",
+      "item_count": 6,
+      "sample_items": [
+        {
+          "key": 310028,
+          "internal_name": "DarkLeader_TwoHandGiantSpear"
+        },
+        {
+          "key": 15703,
+          "internal_name": "Legendary_OwenCraber_TwoHandGiantSpear"
+        },
+        {
+          "key": 1002123,
+          "internal_name": "Wells_TwoHandGiantSpear"
+        },
+        {
+          "key": 15702,
+          "internal_name": "Legendary_Moonhead_TwoHandGiantSpear"
+        },
+        {
+          "key": 15706,
+          "internal_name": "Legendary_Moonhead_01_TwoHandGiantSpear"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1008873,
+      "gimmick_name": "gimmick_equip_docking_common_onehandsword",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_docking_common_onehandsword.prefab",
+      "item_count": 5,
+      "sample_items": [
+        {
+          "key": 1000578,
+          "internal_name": "Old_Kliff_OneHandSword"
+        },
+        {
+          "key": 200917,
+          "internal_name": "Spada_OneHandSword"
+        },
+        {
+          "key": 1001524,
+          "internal_name": "Golden_OneHandSword"
+        },
+        {
+          "key": 200052,
+          "internal_name": "Knight_King_OneHandSword"
+        },
+        {
+          "key": 200919,
+          "internal_name": "Archria_OneHandSword"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1010089,
+      "gimmick_name": "gimmick_equip_rocket_helm",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_rocket_helm.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000975,
+          "internal_name": "Oongka_Rocket_Helm"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1010102,
+      "gimmick_name": "gimmick_equip_rangeweapon_quiver",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_rangeweapon_quiver.prefab",
+      "item_count": 20,
+      "sample_items": [
+        {
+          "key": 300023,
+          "internal_name": "Light_Arrowhead_Leader_OneHandBow"
+        },
+        {
+          "key": 301001,
+          "internal_name": "Robinhood_OneHandBow"
+        },
+        {
+          "key": 12702,
+          "internal_name": "Legendary_Korea_OneHandBow"
+        },
+        {
+          "key": 12701,
+          "internal_name": "AbyssReward_HolyEcho_OneHandBow"
+        },
+        {
+          "key": 301000,
+          "internal_name": "Dragon_OneHandBow"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1010181,
+      "gimmick_name": "gimmick_equip_upper_glove_armor",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_upper_glove_armor.prefab",
+      "item_count": 3,
+      "sample_items": [
+        {
+          "key": 113742,
+          "internal_name": "Reeddevil_Leather_Armor"
+        },
+        {
+          "key": 1164002,
+          "internal_name": "Optionary_Beekeeping_Cloth"
+        },
+        {
+          "key": 111255,
+          "internal_name": "Sazahan_PlateArmor_Armor"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1010296,
+      "gimmick_name": "gimmick_equip_Mining_Drill",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_mining_drill.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1001294,
+          "internal_name": "Mining_Drill"
+        }
+      ]
+    },
+    {
+      "gimmick_key": 1010297,
+      "gimmick_name": "gimmick_equip_Chainsaw",
+      "prefab_path": "/object/cd_gimmick/00_common/equip/gimmick_equip_chainsaw.prefab",
+      "item_count": 1,
+      "sample_items": [
+        {
+          "key": 1000171,
+          "internal_name": "Demeniss_Chainsaw"
+        }
+      ]
+    }
+  ]
+}

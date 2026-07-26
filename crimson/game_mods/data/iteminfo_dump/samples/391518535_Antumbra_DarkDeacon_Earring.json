@@ -1,0 +1,655 @@
+{
+  "key": 391518535,
+  "string_key": "Antumbra_DarkDeacon_Earring",
+  "is_blocked": 0,
+  "max_stack_count": 1,
+  "item_name": {
+    "category": 7,
+    "index": 1681559303602831472,
+    "default": "1681559303602831472"
+  },
+  "broken_item_prefix_string": 0,
+  "inventory_info": 2,
+  "equip_type_info": 2168897676,
+  "occupied_equip_slot_data_list": [],
+  "item_tag_list": [],
+  "equipable_hash": 0,
+  "consumable_type_list": [],
+  "item_use_info_list": [],
+  "item_icon_list": [
+    {
+      "icon_path": 2861129546,
+      "check_exist_sealed_data": 0,
+      "gimmick_state_list": []
+    }
+  ],
+  "map_icon_path": 3938836851,
+  "money_icon_path": 3938836851,
+  "use_map_icon_alert": 0,
+  "item_type": 15,
+  "material_key": 2911883719,
+  "material_match_info": 2911883719,
+  "item_desc": {
+    "category": 7,
+    "index": 1681559303602831473,
+    "default": "1681559303602831473"
+  },
+  "item_desc2": {
+    "category": 0,
+    "index": 0,
+    "default": ""
+  },
+  "equipable_level": 0,
+  "category_info": 511,
+  "knowledge_info": 0,
+  "knowledge_obtain_type": 0,
+  "destroy_effec_info": 0,
+  "equip_passive_skill_list": [],
+  "use_immediately": 0,
+  "apply_max_stack_cap": 0,
+  "extract_multi_change_info": 0,
+  "item_memo": "플레이어_귀걸이 / 에르난드 블루몬트 저택 보물상자 보상",
+  "filter_type": "",
+  "gimmick_info": 18020012,
+  "gimmick_tag_list": [],
+  "max_drop_result_sub_item_count": 6,
+  "use_drop_set_target": 0,
+  "is_all_gimmick_sealable": 0,
+  "sealable_item_info_list": [],
+  "sealable_character_info_list": [],
+  "sealable_gimmick_info_list": [],
+  "sealable_gimmick_tag_list": [],
+  "sealable_tribe_info_list": [],
+  "sealable_money_info_list": [],
+  "delete_by_gimmick_unlock": 1,
+  "gimmick_unlock_message_local_string_info": 2642152912,
+  "can_disassemble": 0,
+  "transmutation_material_gimmick_list": [],
+  "transmutation_material_item_list": [],
+  "transmutation_material_item_group_list": [],
+  "is_register_trade_market": 0,
+  "multi_change_info_list": [
+    1001109,
+    1001110,
+    1001111,
+    1001112,
+    1001113,
+    1001114,
+    1001115,
+    1001116,
+    1001117,
+    1001118,
+    1001119,
+    1001120,
+    1001121,
+    1001122
+  ],
+  "is_editor_usable": 1,
+  "discardable": 1,
+  "is_dyeable": 0,
+  "is_editable_grime": 0,
+  "is_destroy_when_broken": 0,
+  "quick_slot_index": 0,
+  "reserve_slot_target_data_list": [],
+  "item_tier": 3,
+  "is_important_item": 1,
+  "apply_drop_stat_type": 1,
+  "drop_default_data": {
+    "drop_enchant_level": 2,
+    "socket_item_list": [],
+    "add_socket_material_item_list": [],
+    "default_sub_item": {
+      "type_id": 14,
+      "value": null
+    },
+    "socket_valid_count": 0,
+    "use_socket": 0
+  },
+  "prefab_data_list": [
+    {
+      "prefab_names": [
+        216642082
+      ],
+      "equip_slot_list": [
+        7
+      ],
+      "tribe_gender_list": [
+        4234598676,
+        650024735,
+        2278589063,
+        4268845538,
+        3215062603
+      ],
+      "is_craft_material": 0
+    },
+    {
+      "prefab_names": [
+        391128411
+      ],
+      "equip_slot_list": [
+        8
+      ],
+      "tribe_gender_list": [
+        4234598676,
+        650024735,
+        2278589063,
+        4268845538,
+        3215062603
+      ],
+      "is_craft_material": 0
+    }
+  ],
+  "enchant_data_list": [
+    {
+      "level": 0,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 0
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 1000,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 500,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 0
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 1000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 1048,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 524,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 0
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 2000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 1120,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 560,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 0
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 2000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 1716,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 858,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 3000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 2836,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 1418,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 3000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 7600,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 3800,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 5000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 13317,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 6658,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 5000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 19852,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 9926,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 3
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 7000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 29362,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 14681,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 3
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 7000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 43437,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 21718,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 4
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "enchant_stat_data": {
+        "max_stat_list": [],
+        "regen_stat_list": [],
+        "stat_list_static": [
+          {
+            "stat": 1000003,
+            "change_mb": 10000
+          }
+        ],
+        "stat_list_static_level": []
+      },
+      "buy_price_list": [
+        {
+          "key": 1,
+          "price": {
+            "price": 46288,
+            "sym_no": 0,
+            "item_info_wrapper": 1
+          }
+        },
+        {
+          "key": 11,
+          "price": {
+            "price": 23144,
+            "sym_no": 0,
+            "item_info_wrapper": 11
+          }
+        }
+      ],
+      "equip_buffs": [
+        {
+          "buff": 1000008,
+          "level": 4
+        }
+      ]
+    }
+  ],
+  "gimmick_visual_prefab_data_list": [
+    {
+      "tag_name_hash": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prefab_names": [
+        1837829577
+      ],
+      "animation_path_list": [],
+      "use_gimmick_prefab": 0
+    }
+  ],
+  "price_list": [
+    {
+      "key": 1,
+      "price": {
+        "price": 1000,
+        "sym_no": 0,
+        "item_info_wrapper": 1
+      }
+    },
+    {
+      "key": 11,
+      "price": {
+        "price": 500,
+        "sym_no": 0,
+        "item_info_wrapper": 11
+      }
+    }
+  ],
+  "docking_child_data": null,
+  "inventory_change_data": null,
+  "unk_texture_path": "",
+  "fixed_page_data_list": [],
+  "dynamic_page_data_list": [],
+  "inspect_data_list": [],
+  "inspect_action": {
+    "action_name_hash": 0,
+    "catch_tag_name_hash": 0,
+    "catcher_socket_name": "",
+    "catch_target_socket_name": ""
+  },
+  "default_sub_item": {
+    "type_id": 14,
+    "value": null
+  },
+  "cooltime": 0,
+  "item_charge_type": 2,
+  "sharpness_data": {
+    "max_sharpness": 0,
+    "craft_tool_info": 0,
+    "stat_data": {
+      "max_stat_list": [],
+      "regen_stat_list": [],
+      "stat_list_static": [],
+      "stat_list_static_level": []
+    }
+  },
+  "max_charged_useable_count": 1,
+  "hackable_character_group_info_list": [],
+  "item_group_info_list": [
+    17414,
+    17413,
+    17412,
+    17131
+  ],
+  "discard_offset_y": 0.0,
+  "hide_from_inventory_on_pop_item": 0,
+  "is_shield_item": 0,
+  "is_tower_shield_item": 0,
+  "is_wild": 0,
+  "packed_item_info": 0,
+  "unpacked_item_info": 0,
+  "convert_item_info_by_drop_npc": 0,
+  "look_detail_game_advice_info_wrapper": 0,
+  "look_detail_mission_info": 0,
+  "enable_alert_system_to_ui": 1,
+  "usable_alert": 0,
+  "is_save_game_data_at_use_item": 0,
+  "is_logout_at_use_item": 0,
+  "shared_cool_time_group_name_hash": 0,
+  "item_bundle_data_list": [],
+  "money_type_define": null,
+  "emoji_texture_id": "",
+  "enable_equip_in_clone_actor": 1,
+  "is_blocked_store_sell": 0,
+  "is_preorder_item": 0,
+  "respawn_time_seconds": -1,
+  "max_endurance": 65535,
+  "repair_data_list": []
+}

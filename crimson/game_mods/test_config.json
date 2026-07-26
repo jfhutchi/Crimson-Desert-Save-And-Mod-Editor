@@ -1,0 +1,47 @@
+{
+  "format": "crimson_itembuffs_config",
+  "version": 1,
+  "name": "test_config",
+  "description": "1 item(s) modified",
+  "items": {
+    "1000578": {
+      "drop_default_data": {
+        "drop_enchant_level": 6,
+        "socket_item_list": [
+          1002841,
+          1002785,
+          1002810
+        ],
+        "add_socket_material_item_list": [
+          {
+            "item": 1,
+            "value": 500
+          },
+          {
+            "item": 1,
+            "value": 1000
+          },
+          {
+            "item": 1,
+            "value": 2000
+          },
+          {
+            "item": 1,
+            "value": 3000
+          },
+          {
+            "item": 1,
+            "value": 4000
+          }
+        ],
+        "default_sub_item": {
+          "type_id": 14,
+          "value": null
+        },
+        "socket_valid_count": 5,
+        "use_socket": 1
+      },
+      "string_key": "Old_Kliff_OneHandSword"
+    }
+  }
+}

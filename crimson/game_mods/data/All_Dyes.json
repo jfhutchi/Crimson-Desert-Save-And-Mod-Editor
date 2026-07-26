@@ -1,0 +1,369 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "All Dyes",
+  "author": "CrimsonSaveEditor",
+  "description": "60 items selected from Item Database",
+  "items": [
+    {
+      "item_key": 1001175,
+      "name": "Pure White Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001260,
+      "name": "Bright Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001308,
+      "name": "Silver Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001324,
+      "name": "Medium Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001336,
+      "name": "Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001433,
+      "name": "Shadow Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001615,
+      "name": "Bright Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001616,
+      "name": "Rich Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001617,
+      "name": "Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001618,
+      "name": "Dark Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001619,
+      "name": "Deep Red Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001620,
+      "name": "Bright Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001621,
+      "name": "Rich Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001622,
+      "name": "Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001623,
+      "name": "Dark Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001624,
+      "name": "Deep Violet Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001625,
+      "name": "Bright Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001626,
+      "name": "Rich Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001627,
+      "name": "Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001628,
+      "name": "Dark Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001629,
+      "name": "Deep Purple Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001630,
+      "name": "Bright Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001631,
+      "name": "Rich Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001632,
+      "name": "Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001633,
+      "name": "Dark Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001634,
+      "name": "Deep Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001635,
+      "name": "Bright Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001636,
+      "name": "Rich Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001637,
+      "name": "Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001638,
+      "name": "Dark Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001639,
+      "name": "Deep Sky Blue Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001640,
+      "name": "Bright Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001641,
+      "name": "Rich Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001642,
+      "name": "Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001643,
+      "name": "Dark Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001644,
+      "name": "Deep Teal Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001645,
+      "name": "Bright Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001646,
+      "name": "Rich Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001647,
+      "name": "Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001648,
+      "name": "Dark Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001649,
+      "name": "Deep Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001650,
+      "name": "Bright Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001651,
+      "name": "Rich Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001652,
+      "name": "Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001653,
+      "name": "Dark Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001654,
+      "name": "Deep Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001655,
+      "name": "Bright Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001656,
+      "name": "Rich Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001657,
+      "name": "Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001658,
+      "name": "Dark Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001659,
+      "name": "Deep Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001660,
+      "name": "Bright Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001661,
+      "name": "Rich Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001662,
+      "name": "Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001663,
+      "name": "Dark Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001664,
+      "name": "Deep Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001712,
+      "name": "Cloud Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001749,
+      "name": "Deep Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001789,
+      "name": "Dark Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001858,
+      "name": "Black Dye",
+      "rate_pct": 100,
+      "qty": 1
+    }
+  ]
+}

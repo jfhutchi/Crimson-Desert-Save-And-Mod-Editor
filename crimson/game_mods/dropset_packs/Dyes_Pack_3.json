@@ -1,0 +1,129 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "Dyes Pack 3",
+  "author": "CrimsonSaveEditor",
+  "description": "Spring Green, Yellow, Orange, Grey, Black dyes (20) at 100% drop rate",
+  "items": [
+    {
+      "item_key": 1001649,
+      "name": "Deep Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001650,
+      "name": "Bright Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001651,
+      "name": "Rich Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001652,
+      "name": "Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001653,
+      "name": "Dark Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001654,
+      "name": "Deep Spring Green Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001655,
+      "name": "Bright Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001656,
+      "name": "Rich Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001657,
+      "name": "Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001658,
+      "name": "Dark Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001659,
+      "name": "Deep Yellow Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001660,
+      "name": "Bright Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001661,
+      "name": "Rich Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001662,
+      "name": "Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001663,
+      "name": "Dark Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001664,
+      "name": "Deep Orange Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001712,
+      "name": "Cloud Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001749,
+      "name": "Deep Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001789,
+      "name": "Dark Grey Dye",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001858,
+      "name": "Black Dye",
+      "rate_pct": 100,
+      "qty": 1
+    }
+  ]
+}

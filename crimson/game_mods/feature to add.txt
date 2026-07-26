@@ -1,0 +1,82 @@
+ Plan: Add skill.pabgb Support to Stacker Tool
+
+     Context
+
+     The Stacker tool currently merges only iteminfo.pabgb mods. We've built a full skill.pabgb parser (skillinfo_parser.py) and wired it into the SkillTree tab. Now we need the Stacker to handle skill mods the same way it handles iteminfo mods — load, merge, preview
+     conflicts, export Field JSON, and deploy.
+
+     The infrastructure partially exists: Stacker already extracts and bundles skill.pabgb from folder_paz mods as "sibling files" (Bucket D). But it doesn't parse, merge, or diff them at the field level.
+
+     Files to Modify
+
+     1. gui/tabs/stacker.py — main changes (classification, parse, merge, export)
+     2. skillinfo_parser.py — already exists, just needs to be imported
+
+     Implementation Steps
+
+     Step 1: Constants & Imports
+
+     - Add SKILL_PABGB = "skill.pabgb" and SKILL_PABGH = "skill.pabgh" constants
+     - Add import skillinfo_parser as sip where needed
+
+     Step 2: Classify skill-targeting mods
+
+     - In _classify() (line 375): extend the JSON detection to also accept "skill.pabgb" in game_file
+     - New kind: "legacy_json_skill" or reuse "legacy_json" with a target field on ModEntry
+     - For field_json: check doc.get("target") == "skill.pabgb" → new kind "field_json_skill"
+     - Simplest approach: Add a target field to ModEntry dataclass (default "iteminfo", or "skill")
+
+     Step 3: Extract & parse skill vanilla baseline
+
+     - In _run_inner(), after extracting vanilla iteminfo, also extract vanilla skill.pabgb + skill.pabgh
+     - Parse with sip.parse_all(skill_pabgh, skill_pabgb) → self._vanilla_skill_items
+     - Store self._vanilla_skill_bytes for diffing
+
+     Step 4: Per-source skill parsing
+
+     - folder_paz: Already extracts skill.pabgb into staged_skill_files. Parse with sip.parse_all() → m.parsed_skill_items
+     - legacy_json (targeting skill.pabgb): Apply byte patches to skill vanilla, reparse with sip.parse_all(), diff
+     - field_json (targeting skill.pabgb): Apply intents to skill item dicts via _apply_field_set()
+     - itembuffs_edits: May carry staged_skill_files from ItemBuffs tab — parse if present
+
+     Step 5: Separate skill merge
+
+     - After iteminfo merge at line 2101, add skill merge:
+     skill_mod_lists = [(m.name, m.parsed_skill_items) for m in enabled if m.parsed_skill_items]
+     if skill_mod_lists:
+         merged_skill, skill_conflicts = _merge_all(vanilla_skill_items, skill_mod_lists)
+     - Store as self._merged_skill_items
+
+     Step 6: Skill serialization
+
+     - After iteminfo serialization, serialize skills:
+     if self._merged_skill_items:
+         skill_pabgh, skill_pabgb = sip.serialize_all(self._merged_skill_items)
+     - Pass as sibling files to _pack_and_install_overlay()
+
+     Step 7: Export Field JSON for skills
+
+     - In _export_field_json(), diff _merged_skill_items vs _vanilla_skill_items
+     - Use same _deep_diff_to_intents() function
+     - Output with "target": "skill.pabgb" — either in the same file or a separate file
+     - Recommendation: Separate file per target, since mod loaders need to know which pabgb to patch
+
+     Step 8: Log & UI updates
+
+     - Preview log shows skill merge stats alongside iteminfo stats
+     - Conflict panel shows skill conflicts
+     - Status bar includes skill modification count
+
+     What NOT to Change
+
+     - The existing iteminfo flow stays untouched — no regressions
+     - The merge logic (_merge_all, _merge_entries) is generic dict-based — works for any item type
+     - _deep_diff_to_intents() is also generic — works for skill dicts too
+
+     Verification
+
+     1. Load a stamina preset JSON targeting skill.pabgb → Stacker classifies it correctly
+     2. Preview → shows skill changes in log
+     3. Export Field JSON → produces target: "skill.pabgb" file with named field intents
+     4. Apply Stack → deploys skill.pabgb + iteminfo.pabgb together in one overlay
+     5. Roundtrip: parse → merge → serialize → reparse → compare = identical

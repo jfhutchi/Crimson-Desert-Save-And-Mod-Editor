@@ -1,0 +1,56 @@
+{
+  "profiles": [
+    {
+      "identity": {
+        "container_version": 2,
+        "observed_encodings": {
+          "KnowledgeSaveData._list.element_mask": "03,07,0f",
+          "KnowledgeSaveData._list.list_prefix": "0",
+          "MercenaryClanSaveData._mercenaryDataList.element_mask": "0501002b0800,0501002e0a06,051900200800,051900200a00,0519002e0800,0519002e0806,0519002e0a00,0519002e0e0f,0519002e1a0f,0579002e0800,0599002a0a00,0599002e0a00,0599002e0a01,0d19002e0a06,0d1900300c00,0d19003e0806,0d19003f0800,1d19003e0806",
+          "MercenaryClanSaveData._mercenaryDataList.list_prefix": "1"
+        },
+        "required_type_signatures": {
+          "ExperienceLevelSaveData": "f582f2a269e3d5fa443b6c11b4648e52052a2495df1461d66cde28b9754c67d5",
+          "FriendlyDailyCountSaveData": "e901369cd8b8602e892c19be4a7832e7bbd5ef927690dbfab5af605c7150be50",
+          "KnowledgeSaveData": "124fdeffcc6583cb99cc82640364591e9d616d8bcca79ddaf77605606097029e",
+          "MercenaryClanSaveData": "dfd071099c52729b1a4a81d8227feae5e1369d7a78382e0b4c493e82b36f9118",
+          "MercenarySaveData": "9eb3b14c5c3bcfb28010eb0e6213a253a4813a13645f37ee37e2344c063b2972"
+        },
+        "root_entry_count": 15,
+        "schema_sha256": "97b086ba545981e2678a91ae7eb81237681c8842fbe04e6d75a5f2ee1513a004",
+        "type_count": 108
+      },
+      "knowledge_element_mask_hex": "03",
+      "knowledge_list_prefix": 0,
+      "mount_element_mask_hex": "1d19003e0806",
+      "mount_list_prefix": 1,
+      "profile_id": "fixture-current-20260714"
+    },
+    {
+      "identity": {
+        "container_version": 2,
+        "observed_encodings": {
+          "KnowledgeSaveData._list.element_mask": "03,07,0f",
+          "KnowledgeSaveData._list.list_prefix": "0",
+          "MercenaryClanSaveData._mercenaryDataList.element_mask": "0501002b0800,0501002e0a06,051900200800,051900200a00,0519002e0800,0519002e0806,0519002e0a00,0519002e0a06,0519002f0a0f,051d002f3a0f,0539002e0800,0579002e0800,0599002e0a00,0599002e0a01,0d19002e0a06,0d1900300c00,0d19003e0806,0d19003e0a00,0d19003e0a06,0d19003f0a00,0d19003f0a06,151900200c00,e579002e0800",
+          "MercenaryClanSaveData._mercenaryDataList.list_prefix": "1"
+        },
+        "required_type_signatures": {
+          "ExperienceLevelSaveData": "f582f2a269e3d5fa443b6c11b4648e52052a2495df1461d66cde28b9754c67d5",
+          "FriendlyDailyCountSaveData": "e901369cd8b8602e892c19be4a7832e7bbd5ef927690dbfab5af605c7150be50",
+          "KnowledgeSaveData": "124fdeffcc6583cb99cc82640364591e9d616d8bcca79ddaf77605606097029e",
+          "MercenaryClanSaveData": "dfd071099c52729b1a4a81d8227feae5e1369d7a78382e0b4c493e82b36f9118",
+          "MercenarySaveData": "9eb3b14c5c3bcfb28010eb0e6213a253a4813a13645f37ee37e2344c063b2972"
+        },
+        "root_entry_count": 15,
+        "schema_sha256": "02c89f27091648afbad90b6d3159d866229d6ce9370ac37640507ddea044f9ce",
+        "type_count": 112
+      },
+      "knowledge_element_mask_hex": "03",
+      "knowledge_list_prefix": 0,
+      "mount_element_mask_hex": "0d19003e0806",
+      "mount_list_prefix": 1,
+      "profile_id": "community-2026-07-patch"
+    }
+  ]
+}

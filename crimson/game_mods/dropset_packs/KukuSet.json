@@ -1,0 +1,51 @@
+{
+  "type": "dropset_pack",
+  "version": 1,
+  "name": "KukuSet",
+  "author": "CrimsonSaveEditor",
+  "description": "7 items selected from Item Database",
+  "items": [
+    {
+      "item_key": 1000316,
+      "name": "Kuku Rishi's Boots",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1000975,
+      "name": "KuKu Rocket Helmet - Equipped by Default",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1001299,
+      "name": "Kuku Breeze-Step Boots",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1002284,
+      "name": "Kuku Marni Laser Helm",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1002285,
+      "name": "Kuku Lightning-Resistant Armor",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1002286,
+      "name": "Kuku Flame-Resistant Armor",
+      "rate_pct": 100,
+      "qty": 1
+    },
+    {
+      "item_key": 1002287,
+      "name": "Kuku Ice-Resistant Armor",
+      "rate_pct": 100,
+      "qty": 1
+    }
+  ]
+}

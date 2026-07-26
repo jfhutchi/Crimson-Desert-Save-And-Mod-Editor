@@ -1,0 +1,1368 @@
+{
+  "modinfo": {
+    "title": "Ultimate Lantern Reborn v1.1",
+    "version": "1.0",
+    "author": "CrimsonGameMods Stacker",
+    "description": "33 field-level intent(s)",
+    "note": "Format 3 — uses field names, survives game updates"
+  },
+  "format": 3,
+  "target": "iteminfo.pabgb",
+  "intents": [
+    {
+      "entry": "Lantern",
+      "key": 10026,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "Lantern",
+      "key": 10026,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Lantern",
+      "key": 10026,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Lantern",
+      "key": 10026,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 10,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "Lantern",
+      "key": 10026,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "Light_Of_Giant_Lantern",
+      "key": 10043,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "Light_Of_Giant_Lantern",
+      "key": 10043,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Light_Of_Giant_Lantern",
+      "key": 10043,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Light_Of_Giant_Lantern",
+      "key": 10043,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "Light_Of_Giant_Lantern",
+      "key": 10043,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "DeerKing_Lantern",
+      "key": 10045,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "DeerKing_Lantern",
+      "key": 10045,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "DeerKing_Lantern",
+      "key": 10045,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "DeerKing_Lantern",
+      "key": 10045,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "DeerKing_Lantern",
+      "key": 10045,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "RedNose_Lantern",
+      "key": 10046,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "RedNose_Lantern",
+      "key": 10046,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "RedNose_Lantern",
+      "key": 10046,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "RedNose_Lantern",
+      "key": 10046,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "RedNose_Lantern",
+      "key": 10046,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "Mjordin_Lantern",
+      "key": 10047,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "Mjordin_Lantern",
+      "key": 10047,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Mjordin_Lantern",
+      "key": 10047,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Mjordin_Lantern",
+      "key": 10047,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "Mjordin_Lantern",
+      "key": 10047,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "Wood_Lantern",
+      "key": 1001849,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "Wood_Lantern",
+      "key": 1001849,
+      "field": "docking_child_data.is_item_equip_docking_gimmick",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Wood_Lantern",
+      "key": 1001849,
+      "field": "docking_child_data.is_player_only",
+      "op": "set",
+      "new": 0
+    },
+    {
+      "entry": "Wood_Lantern",
+      "key": 1001849,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "Wood_Lantern",
+      "key": 1001849,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "entry": "FireFly_Lantern",
+      "key": 1000858,
+      "field": "cooltime",
+      "op": "set",
+      "new": 1
+    },
+    {
+      "entry": "FireFly_Lantern",
+      "key": 1000858,
+      "field": "enchant_data_list",
+      "op": "set",
+      "new": [
+        {
+          "level": 0,
+          "enchant_stat_data": {
+            "max_stat_list": [],
+            "regen_stat_list": [],
+            "stat_list_static": [
+              {
+                "stat": 1000002,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000003,
+                "change_mb": 0
+              },
+              {
+                "stat": 1000005,
+                "change_mb": 0
+              }
+            ],
+            "stat_list_static_level": []
+          },
+          "buy_price_list": [
+            {
+              "key": 1,
+              "price": {
+                "price": 240,
+                "sym_no": 0,
+                "item_info_wrapper": 1
+              }
+            }
+          ],
+          "equip_buffs": [
+            {
+              "buff": 1000006,
+              "level": 15
+            },
+            {
+              "buff": 1000007,
+              "level": 15
+            },
+            {
+              "buff": 1000008,
+              "level": 50
+            },
+            {
+              "buff": 1000009,
+              "level": 25
+            },
+            {
+              "buff": 1000046,
+              "level": 25
+            },
+            {
+              "buff": 1000100,
+              "level": 15
+            },
+            {
+              "buff": 1000107,
+              "level": 15
+            },
+            {
+              "buff": 1000099,
+              "level": 10
+            },
+            {
+              "buff": 1000124,
+              "level": 10
+            },
+            {
+              "buff": 1000114,
+              "level": 10
+            },
+            {
+              "buff": 1000115,
+              "level": 10
+            },
+            {
+              "buff": 1000116,
+              "level": 15
+            },
+            {
+              "buff": 1000119,
+              "level": 15
+            },
+            {
+              "buff": 1000071,
+              "level": 15
+            },
+            {
+              "buff": 1000072,
+              "level": 15
+            },
+            {
+              "buff": 1000073,
+              "level": 15
+            },
+            {
+              "buff": 1000093,
+              "level": 15
+            },
+            {
+              "buff": 1000091,
+              "level": 15
+            },
+            {
+              "buff": 1000117,
+              "level": 15
+            },
+            {
+              "buff": 1000123,
+              "level": 15
+            },
+            {
+              "buff": 1000176,
+              "level": 15
+            },
+            {
+              "buff": 1000195,
+              "level": 15
+            },
+            {
+              "buff": 1000211,
+              "level": 15
+            },
+            {
+              "buff": 1000105,
+              "level": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "FireFly_Lantern",
+      "key": 1000858,
+      "field": "equip_passive_skill_list",
+      "op": "set",
+      "new": [
+        {
+          "skill": 9001,
+          "level": 1
+        },
+        {
+          "skill": 91011,
+          "level": 15
+        },
+        {
+          "skill": 91010,
+          "level": 1
+        },
+        {
+          "skill": 9128,
+          "level": 1
+        },
+        {
+          "skill": 76009,
+          "level": 1
+        },
+        {
+          "skill": 8037,
+          "level": 5
+        },
+        {
+          "skill": 8038,
+          "level": 5
+        },
+        {
+          "skill": 8039,
+          "level": 5
+        }
+      ]
+    }
+  ]
+}
