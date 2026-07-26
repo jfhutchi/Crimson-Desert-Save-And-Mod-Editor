@@ -92,9 +92,15 @@ def main() -> int:
     _tracked(painter, f"TESTED ON GAME BUILD {TESTED_GAME_VERSION}",
              QFont(serif, 9), 196, 3, QColor(126, 104, 66))
 
+    painter.setPen(QColor(122, 104, 72))
+    painter.setFont(QFont(serif, 9))
+    painter.drawText(QRectF(0, HEIGHT - 58, WIDTH, 16), Qt.AlignHCenter,
+                     "Based on the original work of NattKh")
     painter.setPen(QColor(96, 84, 66))
     painter.setFont(QFont(mono, 8))
-    painter.drawText(QRectF(0, HEIGHT - 40, WIDTH, 16), Qt.AlignHCenter,
+    painter.drawText(QRectF(0, HEIGHT - 42, WIDTH, 14), Qt.AlignHCenter,
+                     "github.com/NattKh")
+    painter.drawText(QRectF(0, HEIGHT - 26, WIDTH, 14), Qt.AlignHCenter,
                      "SOURCE-SAFE  /  BACKUP BEFORE WRITE")
     painter.end()
 

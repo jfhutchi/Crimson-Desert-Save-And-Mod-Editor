@@ -18,6 +18,7 @@ from PySide6.QtWidgets import (
     QSizePolicy,
     QStyle,
     QStyleOptionButton,
+    QSplitter,
     QStylePainter,
     QTabWidget,
     QToolButton,
@@ -157,6 +158,11 @@ class CrimsonRouteButton(QPushButton):
         title = QLabel(route.label, self)
         title.setObjectName("routeButtonTitle")
         title.setAttribute(Qt.WA_TransparentForMouseEvents)
+        title.setMinimumWidth(0)
+        title.setToolTip(route.label)
+        # Long names ("Mercenaries & Pets") need more width than a sane
+        # sidebar has; wrapping reads better than a clipped label.
+        title.setWordWrap(True)
         layout.addWidget(title, 1)
         if route.badge:
             badge = QLabel(route.badge.upper(), self)
@@ -335,8 +341,9 @@ class CrimsonApplicationShell(QWidget):
 
         context_nav = QFrame(body)
         context_nav.setObjectName("contextNavigation")
-        context_nav.setMinimumWidth(238)
-        context_nav.setMaximumWidth(270)
+        # Wide enough for the longest route plus its badge; drag to taste.
+        context_nav.setMinimumWidth(300)
+        context_nav.setMaximumWidth(520)
         context_layout = QVBoxLayout(context_nav)
         context_layout.setContentsMargins(28, 30, 20, 24)
         context_layout.setSpacing(0)
@@ -360,9 +367,13 @@ class CrimsonApplicationShell(QWidget):
         library_note = QLabel(f"ARCHIVE / {_tested}", context_nav)
         library_note.setObjectName("contextFootnote")
         context_layout.addWidget(library_note)
-        body_layout.addWidget(context_nav, 0)
+        splitter = QSplitter(Qt.Horizontal, body)
+        splitter.setObjectName("shellSplitter")
+        splitter.setChildrenCollapsible(False)
+        splitter.setHandleWidth(2)
+        splitter.addWidget(context_nav)
 
-        workspace = QFrame(body)
+        workspace = QFrame(splitter)
         workspace.setObjectName("editorialWorkspace")
         workspace_layout = QVBoxLayout(workspace)
         workspace_layout.setContentsMargins(0, 0, 0, 0)
@@ -396,7 +407,11 @@ class CrimsonApplicationShell(QWidget):
         self._router_tabs.setParent(workspace)
         self._router_tabs.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         workspace_layout.addWidget(self._router_tabs, 1)
-        body_layout.addWidget(workspace, 1)
+        splitter.addWidget(workspace)
+        splitter.setStretchFactor(0, 0)
+        splitter.setStretchFactor(1, 1)
+        splitter.setSizes([340, 1160])
+        body_layout.addWidget(splitter, 1)
         root.addWidget(body, 1)
 
         footer = QFrame(self)
