@@ -49,13 +49,27 @@ WORKSPACES = (
 )
 
 # Both editors name their sections the same way (SAVE, MOUNTS, INVENTORY,
-# WORLD). Editing your save and patching the installed game are different
-# operations with different risk, so the game-side sections say so.
-GAME_SECTION_NAMES = {
-    "SAVE": "GAME DATA",
-    "MOUNTS": "GAME MOUNTS",
-    "INVENTORY": "GAME ITEMS",
-    "WORLD": "GAME WORLD",
+# WORLD), so those merge into one section each. Editing a save and patching
+# the installed game are still different operations, so every game-side route
+# carries a GAME badge rather than getting its own near-duplicate section.
+GAME_ROUTE_BADGE = "game"
+
+# Two routes genuinely differ but share a name across the editors: one edits
+# the save, the other patches installed game data. Say which is which.
+# The mod editor grouped some pages oddly for a combined window: its item and
+# character editors sat under SAVE, and Field & Regions under MOUNTS. File
+# them where a reader would look.
+ROUTE_SECTIONS = {
+    "Item Buffs": "INVENTORY",
+    "Game Item Table": "INVENTORY",
+    "Mercenaries & Pets": "MOUNTS",
+    "Field & Regions": "WORLD",
+}
+
+ROUTE_RENAMES = {
+    ("save_editor", "Blackstar"): "Blackstar Unlock",
+    ("game_mods", "Blackstar"): "Blackstar Timers",
+    ("game_mods", "Item Database"): "Game Item Table",
 }
 
 
@@ -91,27 +105,40 @@ class CrimsonWindow(QMainWindow):
         self._docks: list[object] = []
         self._commands: list[ShellCommand] = []
 
-        destinations: list[ShellDestination] = []
-        seen: set[str] = set()
+        merged: dict[str, ShellDestination] = {}
         for module_attr, label, caption in WORKSPACES:
             _splash(f"Loading {label}...")
             window, groups = self._absorb(module_attr, label)
             if window is None:
                 continue
             self._sources.append(window)
+            is_game = module_attr == "game_mods"
             for group in groups:
-                name = group.label
-                if module_attr == "game_mods":
-                    name = GAME_SECTION_NAMES.get(name.upper(), name)
-                if name in seen:
-                    name = f"{name} ({label})"
-                seen.add(name)
-                destinations.append(
-                    replace(group, label=name, caption=group.caption or caption)
+                name = group.label.upper()
+                routes = tuple(
+                    replace(
+                        route,
+                        label=ROUTE_RENAMES.get((module_attr, route.label), route.label),
+                        badge=GAME_ROUTE_BADGE if is_game else route.badge,
+                    )
+                    for route in group.routes
                 )
+                for route in routes:
+                    section = ROUTE_SECTIONS.get(route.label, name)
+                    existing = merged.get(section)
+                    if existing is None:
+                        merged[section] = replace(
+                            group, label=section, routes=(route,),
+                            caption=group.caption or caption,
+                        )
+                    else:
+                        merged[section] = replace(
+                            existing, routes=existing.routes + (route,)
+                        )
 
-        if not destinations:
+        if not merged:
             raise RuntimeError("neither editor could be loaded")
+        destinations = self._deduplicate(merged.values())
 
         self._merge_menus()
 
@@ -124,6 +151,33 @@ class CrimsonWindow(QMainWindow):
             commands=self._commands,
             docks=self._docks,
         )
+
+    @staticmethod
+    def _deduplicate(groups) -> list[ShellDestination]:
+        """Drop routes that lead somewhere already listed.
+
+        Both editors alias the same page under several sections - the mod
+        editor reaches its patches page as both "Blackstar" and "Game
+        Patches", and the save editor lists Backup & Restore under two
+        sections. Identical entries are dropped outright; a page reachable
+        under a different name stays, because the second name is the point.
+        """
+        seen_named: set[tuple] = set()
+        result: list[ShellDestination] = []
+        for group in groups:
+            seen_here: set[tuple] = set()
+            routes = []
+            for route in group.routes:
+                target = (route.primary_index, route.section_index)
+                named = (route.label.casefold(),) + target
+                if target in seen_here or named in seen_named:
+                    continue
+                seen_here.add(target)
+                seen_named.add(named)
+                routes.append(route)
+            if routes:
+                result.append(replace(group, routes=tuple(routes)))
+        return result
 
     def _merge_menus(self) -> None:
         """Lift both editors' menus onto the shared window.

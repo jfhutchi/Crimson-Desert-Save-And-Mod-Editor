@@ -1082,7 +1082,18 @@ class QuestEditorWindow(QDialog):
             from crimson.save_editor import save_parser as sp
 
             raw = self._save_data.decompressed_blob
-            result = sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
+            # The main window already parsed this save when it loaded it;
+            # re-parsing here cost seconds of frozen window for nothing.
+            owner = self.parent()
+            reuse = getattr(owner, "_get_parse_result", None) if owner else None
+            result = None
+            if reuse is not None and getattr(owner, "_save_data", None) is self._save_data:
+                try:
+                    result = reuse()
+                except Exception:
+                    result = None
+            if result is None:
+                result = sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
 
             for obj in result['objects']:
                 if obj.class_name != 'QuestSaveData':
@@ -10645,8 +10656,17 @@ QCheckBox::indicator {{
             QMessageBox.warning(self, "Quest Editor", "Load a save file first.")
             return
 
-        self._qe_status.setText("Parsing quests...")
+        # Building 6,000+ quest rows takes over a second even with the parse
+        # reused, so show a busy dialog rather than a window that stops
+        # repainting and reads as a crash.
+        progress = QProgressDialog("Reading quests from the save...", "", 0, 0, self)
+        progress.setWindowTitle("Loading Quests")
+        progress.setWindowModality(Qt.WindowModal)
+        progress.setCancelButton(None)
+        progress.setMinimumDuration(0)
+        progress.show()
         QApplication.processEvents()
+        self._qe_status.setText("Parsing quests...")
 
         try:
             self._qe_window = QuestEditorWindow(
@@ -10741,6 +10761,8 @@ QCheckBox::indicator {{
         except Exception as e:
             import traceback; traceback.print_exc()
             self._qe_status.setText(f"Error: {e}")
+        finally:
+            progress.close()
 
     def _qe_filter(self, *_args) -> None:
         if not self._qe_entries:

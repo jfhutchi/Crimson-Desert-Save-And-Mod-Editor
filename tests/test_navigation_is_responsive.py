@@ -93,7 +93,7 @@ def test_no_section_or_route_stalls_the_gui(tmp_path) -> None:
     window.close()
     app.processEvents()
 
-    assert exercised >= 35, f"only {exercised} routes were reachable"
+    assert exercised >= 30, f"only {exercised} routes were reachable"
     assert not stalls, "sections froze the GUI: " + ", ".join(
         f"{name} {seconds * 1000:.0f}ms" for name, seconds in stalls
     )

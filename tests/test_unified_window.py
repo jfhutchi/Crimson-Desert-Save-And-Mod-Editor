@@ -68,18 +68,37 @@ def test_window_hosts_both_workspaces(window) -> None:
     labels = [d.label for d in window._shell._destinations]
     assert window._router.count() >= 6, "every page from both editors is hosted"
 
-    # Save-side sections keep their original names; game-side sections are
-    # renamed so the two domains are never confused for each other.
-    assert {"SAVE", "INVENTORY", "WORLD"} <= set(labels)
-    assert {"GAME ITEMS", "GAME WORLD", "MODS"} <= set(labels)
+    # Sections from both editors merge by name rather than sitting beside a
+    # near-duplicate, and every section name is unique.
+    assert {"SAVE", "MOUNTS", "INVENTORY", "WORLD", "MODS"} <= set(labels)
+    assert not any(label.startswith("GAME ") for label in labels), labels
     assert len(labels) == len(set(labels)), f"duplicate section names: {labels}"
 
     routes = {d.label: [r.label for r in d.routes] for d in window._shell._destinations}
     assert "Inventory" in routes["INVENTORY"]
-    assert "Blackstar" in routes["MOUNTS"]
     assert "Game Patches" in routes["MODS"]
-    total = sum(len(v) for v in routes.values())
-    assert total >= 35, f"navigation lost routes: only {total}"
+
+    # Same-named pages from different editors are renamed for what they do.
+    assert "Blackstar Unlock" in routes["MOUNTS"]
+    assert "Blackstar Timers" in routes["MOUNTS"]
+
+    # No route label repeats anywhere, and nothing leads to a page already
+    # listed under the same name.
+    everything = [label for names in routes.values() for label in names]
+    assert len(everything) == len(set(everything)), f"duplicate routes: {everything}"
+    assert len(everything) >= 30, f"navigation lost routes: only {len(everything)}"
+
+    targets = [
+        (r.primary_index, r.section_index)
+        for d in window._shell._destinations for r in d.routes
+    ]
+    for destination in window._shell._destinations:
+        section_targets = [
+            (r.primary_index, r.section_index) for r in destination.routes
+        ]
+        assert len(section_targets) == len(set(section_targets)), (
+            f"{destination.label} lists the same page twice"
+        )
 
 
 def test_each_workspace_keeps_its_own_settings_file(window) -> None:

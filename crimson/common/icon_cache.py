@@ -38,17 +38,31 @@ def _dir_has_icons(path: str) -> bool:
     return False
 
 
-def _get_local_icons_dir():
+def _user_icons_dir() -> str:
+    """Per-user icon store, so a reinstall never re-downloads 70MB."""
+    root = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
+    return os.path.join(root, "CrimsonDesertEditor", "icons_local")
+
+
+def _legacy_icon_dirs() -> list[str]:
+    """Places earlier builds kept icons, newest layout first."""
     base = _module_base()
-    primary = os.path.join(base, "icons_local")
-    if _dir_has_icons(primary):
-        return primary
-    # Running from source the icon set lives at the repository root, one
-    # level above CrimsonSaveEditor.
-    repo_level = os.path.join(os.path.dirname(base), "icons_local")
-    if _dir_has_icons(repo_level):
-        return repo_level
-    return primary
+    return [
+        os.path.join(base, "icons_local"),
+        os.path.join(os.path.dirname(base), "icons_local"),
+    ]
+
+
+def _get_local_icons_dir():
+    # Prefer the per-user store; fall back to an older next-to-the-exe set so
+    # an existing download keeps working until it is migrated.
+    preferred = _user_icons_dir()
+    if _dir_has_icons(preferred):
+        return preferred
+    for legacy in _legacy_icon_dirs():
+        if _dir_has_icons(legacy):
+            return legacy
+    return preferred
 
 
 def _bundled_icons_zip() -> Optional[str]:
@@ -313,6 +327,43 @@ class IconCache(QObject):
         except (OSError, zipfile.BadZipFile) as e:
             log.warning("Icon bundle extraction failed: %s", e)
         return count
+
+    def migrate_legacy_icons(self) -> int:
+        """Copy an older next-to-the-exe icon set into the per-user store.
+
+        Builds replace their own directory, so icons kept beside the
+        executable disappear on every reinstall. Anything already downloaded
+        is adopted once instead of being fetched again.
+        """
+        target = _user_icons_dir()
+        if self._local_dir != target:
+            return 0
+        have = len([f for f in os.listdir(target)]) if os.path.isdir(target) else 0
+        best, best_count = None, have
+        for legacy in _legacy_icon_dirs():
+            if not os.path.isdir(legacy) or os.path.abspath(legacy) == os.path.abspath(target):
+                continue
+            count = len([f for f in os.listdir(legacy) if f.endswith(".webp")])
+            if count > best_count:
+                best, best_count = legacy, count
+        if best is None:
+            return 0
+        os.makedirs(target, exist_ok=True)
+        copied = 0
+        for name in os.listdir(best):
+            if not name.endswith(".webp"):
+                continue
+            destination = os.path.join(target, name)
+            if os.path.isfile(destination):
+                continue
+            try:
+                shutil.copy2(os.path.join(best, name), destination)
+                copied += 1
+            except OSError:
+                continue
+        if copied:
+            log.info("Adopted %d icons from %s", copied, best)
+        return copied
 
     def ensure_seeded(self, completed: Optional[Callable[[int], None]] = None) -> bool:
         """Seed local icons from the bundled archive on a background thread.
