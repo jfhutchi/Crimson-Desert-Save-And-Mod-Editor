@@ -19,6 +19,7 @@ from PySide6.QtGui import (QColor, QFont, QGuiApplication, QImage,
 from crimson import TESTED_GAME_VERSION
 
 WIDTH, HEIGHT = 720, 300
+PROGRESS_TRACK_Y = 268
 # The title screen uses a wide-tracked serif; take the closest installed one.
 SERIF_CHOICES = ("Cambria", "Constantia", "Georgia", "Palatino Linotype",
                  "Book Antiqua", "Times New Roman")
@@ -87,21 +88,25 @@ def main() -> int:
     painter.setPen(QPen(GOLD, 1))
     painter.drawLine(int(WIDTH / 2 - 26), rule_y, int(WIDTH / 2 + 26), rule_y)
 
-    _tracked(painter, "SAVE  &  MOD  EDITOR", QFont(serif, 11), 168, 6,
+    _tracked(painter, "SAVE  &  MOD  EDITOR", QFont(serif, 11), 162, 6,
              QColor(176, 146, 96))
     _tracked(painter, f"TESTED ON GAME BUILD {TESTED_GAME_VERSION}",
-             QFont(serif, 9), 196, 3, QColor(126, 104, 66))
+             QFont(serif, 9), 188, 3, QColor(126, 104, 66))
 
     painter.setPen(QColor(122, 104, 72))
     painter.setFont(QFont(serif, 9))
-    painter.drawText(QRectF(0, HEIGHT - 58, WIDTH, 16), Qt.AlignHCenter,
+    painter.drawText(QRectF(0, 214, WIDTH, 16), Qt.AlignHCenter,
                      "Based on the original work of NattKh")
     painter.setPen(QColor(96, 84, 66))
     painter.setFont(QFont(mono, 8))
-    painter.drawText(QRectF(0, HEIGHT - 42, WIDTH, 14), Qt.AlignHCenter,
+    painter.drawText(QRectF(0, 232, WIDTH, 14), Qt.AlignHCenter,
                      "github.com/NattKh")
-    painter.drawText(QRectF(0, HEIGHT - 26, WIDTH, 14), Qt.AlignHCenter,
-                     "SOURCE-SAFE  /  BACKUP BEFORE WRITE")
+
+    # Empty band at the foot of the splash reserved for the progress line,
+    # with a faint track so the bar has something to sit in.
+    track_w, track_h = 420, 3
+    track_x, track_y = (WIDTH - track_w) / 2, PROGRESS_TRACK_Y
+    painter.fillRect(QRectF(track_x, track_y, track_w, track_h), QColor(38, 30, 20))
     painter.end()
 
     out = Path(__file__).resolve().parents[1] / "splash.png"

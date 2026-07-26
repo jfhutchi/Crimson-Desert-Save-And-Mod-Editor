@@ -74,11 +74,22 @@ ROUTE_RENAMES = {
 }
 
 
-def _splash(text: str) -> None:
+# The PyInstaller splash accepts a line of text and nothing else, so the bar
+# is drawn with characters every font has rather than block glyphs that risk
+# rendering as boxes.
+_BAR_CELLS = 34
+
+
+def _splash(text: str, done: float = 0.0) -> None:
     """Report startup progress on the PyInstaller splash, if there is one."""
     try:
         import pyi_splash  # only present in a frozen build
-        pyi_splash.update_text(text)
+    except Exception:
+        return
+    filled = max(0, min(_BAR_CELLS, round(done * _BAR_CELLS)))
+    bar = "=" * filled + "-" * (_BAR_CELLS - filled)
+    try:
+        pyi_splash.update_text(f"[{bar}]  {int(done * 100):>3}%   {text}")
     except Exception:
         pass
 
@@ -107,8 +118,8 @@ class CrimsonWindow(QMainWindow):
         self._commands: list[ShellCommand] = []
 
         merged: dict[str, ShellDestination] = {}
-        for module_attr, label, caption in WORKSPACES:
-            _splash(f"Loading {label}...")
+        for step, (module_attr, label, caption) in enumerate(WORKSPACES):
+            _splash(f"Loading {label}", 0.15 + step * 0.35)
             window, groups = self._absorb(module_attr, label)
             if window is None:
                 continue
@@ -143,7 +154,7 @@ class CrimsonWindow(QMainWindow):
 
         self._merge_menus()
 
-        _splash("Preparing the workspace...")
+        _splash("Preparing the workspace", 0.9)
         self._shell = install_crimson_application_shell(
             self,
             product="CRIMSON",
@@ -335,6 +346,7 @@ def main() -> int:
 
     # Adopt any icon set left beside an older build before the workspaces ask
     # for icons, so a reinstall never re-downloads what is already on disk.
+    _splash("Checking item icons", 0.05)
     try:
         from crimson.common.icon_cache import IconCache
 
@@ -343,6 +355,7 @@ def main() -> int:
         log.debug("icon migration skipped", exc_info=True)
 
     window = CrimsonWindow()
+    _splash("Ready", 1.0)
     window.show()
     _splash_close()
     return app.exec()
