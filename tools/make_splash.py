@@ -19,9 +19,30 @@ from PySide6.QtGui import (QColor, QFont, QGuiApplication, QImage,
 from crimson import TESTED_GAME_VERSION
 
 WIDTH, HEIGHT = 720, 300
+# The title screen uses a wide-tracked serif; take the closest installed one.
+SERIF_CHOICES = ("Cambria", "Constantia", "Georgia", "Palatino Linotype",
+                 "Book Antiqua", "Times New Roman")
+MONO_CHOICES = ("Consolas", "Courier New")
 GOLD_HI = QColor(238, 214, 154)
 GOLD = QColor(198, 160, 88)
 GOLD_LO = QColor(140, 104, 48)
+
+
+def _resolve(choices):
+    """Return the first family Qt can actually render, not a substitute.
+
+    The offscreen platform plugin exposes no fonts at all, which silently
+    renders every glyph as a box - so refuse to write a splash of tofu.
+    """
+    from PySide6.QtGui import QFontInfo
+
+    for family in choices:
+        if QFontInfo(QFont(family, 20)).family().casefold() == family.casefold():
+            return family
+    raise SystemExit(
+        "No usable font found. Run this without QT_QPA_PLATFORM=offscreen: "
+        "the offscreen plugin has an empty font database."
+    )
 
 
 def _tracked(painter, text, font, y, spacing, color):
@@ -41,6 +62,8 @@ def _tracked(painter, text, font, y, spacing, color):
 
 def main() -> int:
     QGuiApplication([])
+    serif = _resolve(SERIF_CHOICES)
+    mono = _resolve(MONO_CHOICES)
     image = QImage(WIDTH, HEIGHT, QImage.Format_ARGB32)
     image.fill(QColor(6, 5, 4))
 
@@ -54,7 +77,7 @@ def main() -> int:
     glow.setColorAt(1.0, QColor(6, 5, 4))
     painter.fillRect(0, 0, WIDTH, HEIGHT, glow)
 
-    title = QFont("Cambria", 34)
+    title = QFont(serif, 34)
     title.setWeight(QFont.Medium)
     width = _tracked(painter, "CRIMSON  DESERT", title, 88, 11, GOLD_HI)
 
@@ -64,13 +87,13 @@ def main() -> int:
     painter.setPen(QPen(GOLD, 1))
     painter.drawLine(int(WIDTH / 2 - 26), rule_y, int(WIDTH / 2 + 26), rule_y)
 
-    _tracked(painter, "SAVE  &  MOD  EDITOR", QFont("Cambria", 11), 168, 6,
+    _tracked(painter, "SAVE  &  MOD  EDITOR", QFont(serif, 11), 168, 6,
              QColor(176, 146, 96))
     _tracked(painter, f"TESTED ON GAME BUILD {TESTED_GAME_VERSION}",
-             QFont("Cambria", 9), 196, 3, QColor(126, 104, 66))
+             QFont(serif, 9), 196, 3, QColor(126, 104, 66))
 
     painter.setPen(QColor(96, 84, 66))
-    painter.setFont(QFont("Consolas", 8))
+    painter.setFont(QFont(mono, 8))
     painter.drawText(QRectF(0, HEIGHT - 40, WIDTH, 16), Qt.AlignHCenter,
                      "SOURCE-SAFE  /  BACKUP BEFORE WRITE")
     painter.end()
@@ -78,7 +101,7 @@ def main() -> int:
     out = Path(__file__).resolve().parents[1] / "splash.png"
     image.save(str(out))
     print(f"wrote {out} ({image.width()}x{image.height()}) "
-          f"tested={TESTED_GAME_VERSION}")
+          f"serif={serif} tested={TESTED_GAME_VERSION}")
     return 0
 
 
