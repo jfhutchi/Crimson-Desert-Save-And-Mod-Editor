@@ -85,3 +85,6 @@ crimson/*/editor_config.json
 
 # Build output
 dist/
+
+# Claude Code local state
+.claude/

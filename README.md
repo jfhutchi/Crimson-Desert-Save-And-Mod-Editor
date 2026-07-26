@@ -35,8 +35,13 @@ contributors. See `crimson/game_mods/CREDITS.md`.
 
 ## Build
 
+    python build.py
+
+Creates `.venv`, installs pinned dependencies, and builds the executable.
+Add `--test` to run the suite first. Equivalent manual steps:
+
     py -3.12 -m venv .venv
-    .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+    .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
     .\.venv\Scripts\python.exe -m PyInstaller CrimsonEditor.spec --noconfirm --clean
 
 The result is `dist/CrimsonEditor/` — ship the folder, or a zip of it. It is a
