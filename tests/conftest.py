@@ -103,6 +103,25 @@ def save_copy(tmp_path) -> Path:
     return destination
 
 
+def release_window(qt_app, win) -> None:
+    """Actually free a unified window between tests.
+
+    Each one holds two full editors; Qt frees closed windows lazily, so a
+    suite that builds dozens runs the process into multi-gigabyte territory
+    and late fixtures slow past their timeouts.
+    """
+    import gc
+
+    win.close()
+    for source in getattr(win, "_sources", []):
+        source.deleteLater()
+    win.deleteLater()
+    for _ in range(5):
+        qt_app.processEvents()
+    gc.collect()
+    qt_app.processEvents()
+
+
 @pytest.fixture
 def window(qt_app, tmp_path):
     from crimson.app import CrimsonWindow
@@ -116,8 +135,7 @@ def window(qt_app, tmp_path):
             lambda i=index: str(tmp_path / f"config_{i}.json")
         )
     yield win
-    win.close()
-    qt_app.processEvents()
+    release_window(qt_app, win)
 
 
 @pytest.fixture

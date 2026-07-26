@@ -37,8 +37,9 @@ def harness(qt_app, tmp_path_factory):
     editor._load_save(str(save_path))
     settle(qt_app, editor)
     yield window, editor, save_path
-    window.close()
-    qt_app.processEvents()
+    from conftest import release_window
+
+    release_window(qt_app, window)
 
 
 def reload_items(path: Path):
