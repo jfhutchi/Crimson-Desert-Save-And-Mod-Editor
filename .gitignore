@@ -82,3 +82,6 @@ icons_mercenary/
 
 # Editor state written next to the app
 crimson/*/editor_config.json
+
+# Build output
+dist/
