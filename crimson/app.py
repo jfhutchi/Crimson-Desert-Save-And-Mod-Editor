@@ -128,6 +128,10 @@ class CrimsonWindow(QMainWindow):
                 from crimson.save_editor.gui import MainWindow
             else:
                 from crimson.game_mods.gui.main_window import MainWindow
+            # Both editors defaulted to "editor_config.json" beside the
+            # executable. Sharing one process means sharing that directory, so
+            # each workspace gets its own file instead of clobbering the other.
+            MainWindow._CONFIG_FILE = f"config_{module_attr}.json"
             window = MainWindow()
         except Exception:
             log.exception("%s workspace failed to load", label)

@@ -82,6 +82,14 @@ def test_window_hosts_both_workspaces(window) -> None:
     assert total >= 35, f"navigation lost routes: only {total}"
 
 
+def test_each_workspace_keeps_its_own_settings_file(window) -> None:
+    # Both editors defaulted to editor_config.json beside the executable, so
+    # in one process they would overwrite each other's settings.
+    paths = {Path(source._get_config_path()).name for source in window._sources}
+    assert len(paths) == len(window._sources), f"settings files collide: {paths}"
+    assert all(name != "editor_config.json" for name in paths)
+
+
 def test_no_workspace_silently_failed_to_load(window) -> None:
     # _absorb logs and skips a workspace that raises; an empty destination list
     # would still build a window, so assert both actually produced pages.
