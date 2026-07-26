@@ -114,6 +114,7 @@ class CrimsonWindow(QMainWindow):
         self._router = QTabWidget()
         self._router.tabBar().hide()
         self._sources: list[QMainWindow] = []
+        self._page_owner: dict[int, int] = {}
         self._docks: list[object] = []
         self._commands: list[ShellCommand] = []
 
@@ -244,6 +245,55 @@ class CrimsonWindow(QMainWindow):
                 target.addActions(menu.actions())
         self.addActions(bar.actions())
 
+        # Both editors bind the same shortcuts (Ctrl+S, Ctrl+O, ...) on
+        # actions parented to their own - now hidden - windows, so at best
+        # the shortcut is ambiguous and at worst it fires the editor the
+        # user is not looking at ("No file loaded." with a save loaded).
+        # Every shared shortcut becomes one action on the visible window
+        # that triggers the claimant from the workspace owning the current
+        # page.
+        from PySide6.QtGui import QAction
+
+        claimants: dict[str, dict[int, object]] = {}
+
+        def collect(menu) -> None:
+            for action in menu.actions():
+                if action.menu() is not None:
+                    collect(action.menu())
+                    continue
+                # Merging moved actions between menus, so the menu being
+                # walked says nothing about ownership; the action's parent
+                # is the editor window that created it.
+                try:
+                    owner = self._sources.index(action.parent())
+                except ValueError:
+                    owner = 0
+                for sequence in action.shortcuts():
+                    text = sequence.toString()
+                    if text:
+                        claimants.setdefault(text, {}).setdefault(owner, action)
+                action.setShortcuts([])
+
+        for window in self._sources:
+            for top in window.menuBar().actions():
+                if top.menu() is not None:
+                    collect(top.menu())
+
+        def dispatch(by_owner: dict[int, object]) -> None:
+            owner = self._page_owner.get(self._router.currentIndex(), 0)
+            action = by_owner.get(owner) or next(iter(by_owner.values()))
+            action.trigger()
+
+        for text, by_owner in claimants.items():
+            router = QAction(self)
+            router.setShortcut(text)
+            # One window application: fire regardless of focus bookkeeping.
+            router.setShortcutContext(Qt.ApplicationShortcut)
+            router.triggered.connect(
+                lambda _checked=False, o=by_owner: dispatch(o)
+            )
+            self.addAction(router)
+
     @staticmethod
     def _label_section(menu, workspace: str, *, first: bool = False) -> None:
         heading = menu.addSection(workspace.upper()) if not first else None
@@ -292,6 +342,7 @@ class CrimsonWindow(QMainWindow):
         remap: dict[int, int] = {}
         for old_index, (page, name) in enumerate(pages):
             remap[old_index] = self._router.addTab(page, name)
+            self._page_owner[remap[old_index]] = len(self._sources)
         while tabs.count():
             tabs.removeTab(0)
 
