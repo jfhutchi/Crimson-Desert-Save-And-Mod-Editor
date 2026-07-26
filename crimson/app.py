@@ -11,6 +11,7 @@ from __future__ import annotations
 import logging
 import socket
 import sys
+from dataclasses import replace
 from pathlib import Path
 
 # urlretrieve takes no timeout argument, so a stalled server would hang the
@@ -44,6 +45,16 @@ WORKSPACES = (
     ("game_mods", "Game Files", "Patch installed game data"),
 )
 
+# Both editors name their sections the same way (SAVE, MOUNTS, INVENTORY,
+# WORLD). Editing your save and patching the installed game are different
+# operations with different risk, so the game-side sections say so.
+GAME_SECTION_NAMES = {
+    "SAVE": "GAME DATA",
+    "MOUNTS": "GAME MOUNTS",
+    "INVENTORY": "GAME ITEMS",
+    "WORLD": "GAME WORLD",
+}
+
 
 class CrimsonWindow(QMainWindow):
     """The unified application window."""
@@ -58,15 +69,23 @@ class CrimsonWindow(QMainWindow):
         self._router.tabBar().hide()
         self._sources: list[QMainWindow] = []
 
-        destinations = []
+        destinations: list[ShellDestination] = []
+        seen: set[str] = set()
         for module_attr, label, caption in WORKSPACES:
-            window, routes = self._absorb(module_attr, label)
+            window, groups = self._absorb(module_attr, label)
             if window is None:
                 continue
             self._sources.append(window)
-            destinations.append(
-                ShellDestination(label=label, routes=tuple(routes), caption=caption)
-            )
+            for group in groups:
+                name = group.label
+                if module_attr == "game_mods":
+                    name = GAME_SECTION_NAMES.get(name.upper(), name)
+                if name in seen:
+                    name = f"{name} ({label})"
+                seen.add(name)
+                destinations.append(
+                    replace(group, label=name, caption=group.caption or caption)
+                )
 
         if not destinations:
             raise RuntimeError("neither editor could be loaded")
@@ -79,7 +98,12 @@ class CrimsonWindow(QMainWindow):
         )
 
     def _absorb(self, module_attr: str, label: str):
-        """Build one editor hidden and move its pages into the shared router."""
+        """Build one editor hidden and move its pages into the shared router.
+
+        Each editor already describes its own navigation - labels, captions,
+        icons, game art and sub-tab targets - so that metadata is reused and
+        only the page indices are remapped onto the shared router.
+        """
         try:
             if module_attr == "save_editor":
                 from crimson.save_editor.gui import MainWindow
@@ -95,15 +119,41 @@ class CrimsonWindow(QMainWindow):
             log.error("%s workspace exposes no page router", label)
             return None, []
 
-        routes = []
+        try:
+            native = tuple(window._shell_destinations())
+        except Exception:
+            log.exception("%s workspace has no navigation metadata", label)
+            native = ()
+
+        # Capture page order before moving, so old indices can be remapped.
+        pages = [(tabs.widget(i), tabs.tabText(i)) for i in range(tabs.count())]
+        remap: dict[int, int] = {}
+        for old_index, (page, name) in enumerate(pages):
+            remap[old_index] = self._router.addTab(page, name)
         while tabs.count():
-            page = tabs.widget(0)
-            name = tabs.tabText(0)
             tabs.removeTab(0)
-            index = self._router.addTab(page, name)
-            routes.append(ShellRoute(label=name, primary_index=index))
+
+        groups: list[ShellDestination] = []
+        for destination in native:
+            routes = [
+                replace(route, primary_index=remap[route.primary_index])
+                for route in destination.routes
+                if route.primary_index in remap
+            ]
+            if routes:
+                groups.append(replace(destination, routes=tuple(routes)))
+        if not groups:
+            groups = [
+                ShellDestination(
+                    label=label,
+                    routes=tuple(
+                        ShellRoute(label=name, primary_index=remap[i])
+                        for i, (_page, name) in enumerate(pages)
+                    ),
+                )
+            ]
         window.hide()
-        return window, routes
+        return window, groups
 
 
 def main() -> int:

@@ -725,7 +725,9 @@ def apply_crimson_theme(
 ) -> str:
     tokens = CRIMSON_LIGHT_TOKENS if mode == "light" else CRIMSON_DARK_TOKENS
     stylesheet = scaled_stylesheet(tokens, scale=scale, compact=compact)
-    if app is not None:
+    if app is not None and app.styleSheet() != stylesheet:
+        # Both workspaces and the shell each ask for the theme; re-applying an
+        # identical application-wide stylesheet costs ~0.4s of restyling.
         from PySide6.QtGui import QFont
 
         font = QFont()
