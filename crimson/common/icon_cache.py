@@ -115,6 +115,11 @@ class IconCache(QObject):
 
     def _on_warm_done(self, count: int, callback) -> None:
         self._warming = False
+        queued = getattr(self, "_rewarm", None)
+        if queued is not None:
+            self._rewarm = None
+            keys, queued_completed = queued
+            self.warm_cache_async(keys, completed=queued_completed)
         if callback is not None:
             callback(count)
 
@@ -143,6 +148,10 @@ class IconCache(QObject):
         when a warm thread was started.
         """
         if self._warming:
+            # A warm during the bulk download walks the keys while files are
+            # still arriving and misses them; dropping this request would
+            # leave those icons blank until restart. Run it when done.
+            self._rewarm = (list(keys), completed)
             return False
         wanted = [k for k in keys if k not in self._pixmaps]
         if not wanted:
