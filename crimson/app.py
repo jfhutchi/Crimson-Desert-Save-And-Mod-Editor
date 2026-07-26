@@ -41,6 +41,7 @@ from crimson.common.crimson_shell import (  # noqa: E402
     ShellDestination,
     ShellRoute,
     install_crimson_application_shell,
+    normalize_legacy_button_styles,
 )
 
 WORKSPACES = (
@@ -151,6 +152,31 @@ class CrimsonWindow(QMainWindow):
             commands=self._commands,
             docks=self._docks,
         )
+
+        # Pages built lazily - the Stacker Tool and the rest of the mod
+        # editor's tabs - miss the one-shot restyle the shell does at install
+        # time, and keep their hardcoded green/blue/red buttons. Re-run it
+        # whenever a page is shown; it is a no-op once a page is normalized.
+        self._router.currentChanged.connect(self._normalize_page)
+        seen_sections = set()
+        for destination in destinations:
+            for route in destination.routes:
+                section = route.section_tabs
+                if section is None or id(section) in seen_sections:
+                    continue
+                seen_sections.add(id(section))
+                section.currentChanged.connect(
+                    lambda _i, tabs=section: self._normalize_widget(tabs.currentWidget())
+                )
+        self._normalize_page(self._router.currentIndex())
+
+    def _normalize_page(self, index: int) -> None:
+        self._normalize_widget(self._router.widget(index))
+
+    @staticmethod
+    def _normalize_widget(page) -> None:
+        if page is not None:
+            normalize_legacy_button_styles(page)
 
     @staticmethod
     def _deduplicate(groups) -> list[ShellDestination]:
