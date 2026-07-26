@@ -298,6 +298,15 @@ class CrimsonWindow(QMainWindow):
 def main() -> int:
     logging.basicConfig(level=logging.INFO)
     app = QApplication.instance() or QApplication(sys.argv)
+
+    # The taskbar shows the window icon, not the one compiled into the exe.
+    icon_path = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[1]))
+    icon_file = icon_path / "app_icon.ico"
+    if icon_file.is_file():
+        from PySide6.QtGui import QIcon
+
+        app.setWindowIcon(QIcon(str(icon_file)))
+
     window = CrimsonWindow()
     window.show()
     _splash_close()

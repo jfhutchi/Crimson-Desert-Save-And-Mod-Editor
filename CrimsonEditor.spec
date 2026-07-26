@@ -18,6 +18,8 @@ datas = [
 ]
 
 # Both editors import tab modules dynamically by name.
+datas.append((str(ROOT / "app_icon.ico"), "."))
+
 hiddenimports = (
     collect_submodules("crimson.save_editor")
     + collect_submodules("crimson.game_mods")
