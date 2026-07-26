@@ -11,6 +11,7 @@ from pathlib import Path
 
 import pytest
 
+import conftest
 from conftest import requires_fixture, settle
 
 pytestmark = requires_fixture
@@ -39,7 +40,9 @@ def test_stack_edit_round_trips_through_disk(qt_app, editor, save_copy) -> None:
 
     written = find_at(reload_items(save_copy), item.offset)
     assert written is not None, "the edited item vanished from the save"
-    assert written.stack_count == target
+    assert written.stack_count == target, (
+        f"edit did not reach disk; dialogs shown: {conftest.DIALOGS[-4:]}"
+    )
     assert written.item_key == item.item_key, "the edit moved onto another field"
 
 
@@ -61,7 +64,10 @@ def test_editing_one_item_leaves_every_other_item_untouched(
         i.offset for i in after
         if before.get(i.offset) != (i.item_key, i.stack_count)
     ]
-    assert changed == [item.offset], f"unexpected items changed: {changed[:5]}"
+    assert changed == [item.offset], (
+        f"unexpected items changed: {changed[:5]}; "
+        f"dialogs shown: {conftest.DIALOGS[-4:]}"
+    )
 
 
 def test_undo_restores_the_previous_bytes(qt_app, editor) -> None:

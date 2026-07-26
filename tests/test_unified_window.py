@@ -7,37 +7,10 @@ namespacing holds and that every page from both editors is reachable.
 """
 from __future__ import annotations
 
-import os
-import sys
 from pathlib import Path
 
-import pytest
+from conftest import ROOT
 
-os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
-
-ROOT = Path(__file__).resolve().parents[1]
-for _p in (ROOT, ROOT / "crimson" / "game_mods"):
-    if str(_p) not in sys.path:
-        sys.path.insert(0, str(_p))
-
-from PySide6.QtWidgets import QApplication, QDialog, QMessageBox  # noqa: E402
-
-
-@pytest.fixture(scope="module")
-def window():
-    app = QApplication.instance() or QApplication([])
-    for name in ("information", "question", "warning", "critical"):
-        setattr(QMessageBox, name, staticmethod(lambda *a, **k: 0))
-    QDialog.exec = lambda self: 0
-
-    from crimson.app import CrimsonWindow
-
-    win = CrimsonWindow()
-    win.show()
-    app.processEvents()
-    yield win
-    win.close()
-    app.processEvents()
 
 
 def test_both_editors_keep_their_own_core_modules() -> None:
@@ -144,6 +117,8 @@ def test_side_panels_and_menu_are_reachable(window) -> None:
     saves = next(
         b for b in window._shell.findChildren(QAbstractButton) if b.text() == "SAVES"
     )
+    from PySide6.QtWidgets import QApplication
+
     saves.click()
     QApplication.instance().processEvents()
     assert dock.isVisible(), "SAVES did not open the save browser"
