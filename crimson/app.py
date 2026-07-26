@@ -56,6 +56,23 @@ GAME_SECTION_NAMES = {
 }
 
 
+def _splash(text: str) -> None:
+    """Report startup progress on the PyInstaller splash, if there is one."""
+    try:
+        import pyi_splash  # only present in a frozen build
+        pyi_splash.update_text(text)
+    except Exception:
+        pass
+
+
+def _splash_close() -> None:
+    try:
+        import pyi_splash
+        pyi_splash.close()
+    except Exception:
+        pass
+
+
 class CrimsonWindow(QMainWindow):
     """The unified application window."""
 
@@ -72,6 +89,7 @@ class CrimsonWindow(QMainWindow):
         destinations: list[ShellDestination] = []
         seen: set[str] = set()
         for module_attr, label, caption in WORKSPACES:
+            _splash(f"Loading {label}...")
             window, groups = self._absorb(module_attr, label)
             if window is None:
                 continue
@@ -90,6 +108,7 @@ class CrimsonWindow(QMainWindow):
         if not destinations:
             raise RuntimeError("neither editor could be loaded")
 
+        _splash("Preparing the workspace...")
         self._shell = install_crimson_application_shell(
             self,
             product="CRIMSON",
@@ -161,6 +180,7 @@ def main() -> int:
     app = QApplication.instance() or QApplication(sys.argv)
     window = CrimsonWindow()
     window.show()
+    _splash_close()
     return app.exec()
 
 

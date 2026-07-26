@@ -44,12 +44,26 @@ a = Analysis(
 )
 pyz = PYZ(a.pure)
 
+splash = Splash(
+    "splash.png",
+    binaries=a.binaries,
+    datas=a.datas,
+    text_pos=(24, 195),
+    text_size=10,
+    text_color="#F0F0F5",
+    text_default="Starting...",
+    always_on_top=True,
+)
+
+# onedir, not onefile: a onefile build re-extracts ~80MB to a temp directory
+# on every launch, which is most of the startup wait. onedir starts straight
+# from disk; ship the folder (or a zip of it).
 exe = EXE(
     pyz,
     a.scripts,
-    a.binaries,
-    a.datas,
+    splash,
     [],
+    exclude_binaries=True,
     name="CrimsonEditor",
     debug=False,
     bootloader_ignore_signals=False,
@@ -61,6 +75,18 @@ exe = EXE(
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
+    icon="app_icon.ico",
     codesign_identity=None,
     entitlements_file=None,
+)
+
+coll = COLLECT(
+    exe,
+    splash.binaries,
+    a.binaries,
+    a.datas,
+    strip=False,
+    upx=False,
+    upx_exclude=[],
+    name="CrimsonEditor",
 )
