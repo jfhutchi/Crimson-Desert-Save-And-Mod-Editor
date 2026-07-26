@@ -34,7 +34,10 @@ _prepare_path()
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QTabWidget  # noqa: E402
 
+from PySide6.QtCore import Qt  # noqa: E402
+
 from crimson.common.crimson_shell import (  # noqa: E402
+    ShellCommand,
     ShellDestination,
     ShellRoute,
     install_crimson_application_shell,
@@ -85,6 +88,8 @@ class CrimsonWindow(QMainWindow):
         self._router = QTabWidget()
         self._router.tabBar().hide()
         self._sources: list[QMainWindow] = []
+        self._docks: list[object] = []
+        self._commands: list[ShellCommand] = []
 
         destinations: list[ShellDestination] = []
         seen: set[str] = set()
@@ -116,6 +121,8 @@ class CrimsonWindow(QMainWindow):
             product="CRIMSON",
             router_tabs=self._router,
             destinations=tuple(destinations),
+            commands=self._commands,
+            docks=self._docks,
         )
 
     def _merge_menus(self) -> None:
@@ -216,6 +223,20 @@ class CrimsonWindow(QMainWindow):
                     ),
                 )
             ]
+        for attr, command_label in (("_save_dock", "SAVES"), ("_pack_dock", "PACKS")):
+            dock = getattr(window, attr, None)
+            if dock is None:
+                continue
+            self.addDockWidget(Qt.LeftDockWidgetArea, dock)
+            dock.hide()
+            self._docks.append(dock)
+            toggle = getattr(window, f"_toggle{attr.replace('_dock', '')}_sidebar", None)
+            if toggle is None or any(c.label == command_label for c in self._commands):
+                continue
+            self._commands.append(
+                ShellCommand(command_label, toggle, f"Open the {command_label.lower()} browser")
+            )
+
         window.hide()
         return window, groups
 

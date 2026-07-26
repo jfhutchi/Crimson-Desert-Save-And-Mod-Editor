@@ -106,6 +106,32 @@ def test_menu_actions_survive_the_move(window) -> None:
     assert any("Undo" in a.text() for a in menus["Edit"].actions())
 
 
+def test_side_panels_and_menu_are_reachable(window) -> None:
+    # The shell hides the menu bar behind a MENU button and the browsers behind
+    # SAVES/PACKS. Those commands come from each editor, so without forwarding
+    # them the save browser - the main way to open a save - would be gone.
+    from PySide6.QtWidgets import QAbstractButton
+
+    buttons = {
+        b.text()
+        for b in window._shell.findChildren(QAbstractButton)
+        if b.objectName() == "shellUtilityButton"
+    }
+    assert {"MENU", "SAVES", "PACKS"} <= buttons, buttons
+
+    dock = window._sources[0]._save_dock
+    assert dock.parent() is window, "docks must belong to the visible window"
+
+    saves = next(
+        b for b in window._shell.findChildren(QAbstractButton) if b.text() == "SAVES"
+    )
+    saves.click()
+    QApplication.instance().processEvents()
+    assert dock.isVisible(), "SAVES did not open the save browser"
+    saves.click()
+    QApplication.instance().processEvents()
+
+
 def test_no_workspace_silently_failed_to_load(window) -> None:
     # _absorb logs and skips a workspace that raises; an empty destination list
     # would still build a window, so assert both actually produced pages.
