@@ -32360,7 +32360,10 @@ QCheckBox::indicator {{
             px = self._icon_cache.get_pixmap(item.item_key)
             if px:
                 icon_item.setIcon(QIcon(px))
-            elif self._icon_cache.has_icon(item.item_key):
+            else:
+                # Not in the bulk set (newer game items): fetch just this
+                # one from GitHub; a miss there fails silently and the row
+                # stays blank, which is correct.
                 self._icon_cache.request_icon(item.item_key, self._on_icon_loaded)
         table.setItem(row, 0, icon_item)
 
@@ -32429,6 +32432,8 @@ QCheckBox::indicator {{
             px = self._icon_cache.get_pixmap(item.item_key)
             if px:
                 icon_item.setIcon(QIcon(px))
+            else:
+                self._icon_cache.request_icon(item.item_key, self._on_icon_loaded)
         table.setItem(row, 0, icon_item)
 
         name_item = QTableWidgetItem(item.name)
