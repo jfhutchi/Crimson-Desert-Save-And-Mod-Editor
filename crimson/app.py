@@ -108,6 +108,8 @@ class CrimsonWindow(QMainWindow):
         if not destinations:
             raise RuntimeError("neither editor could be loaded")
 
+        self._merge_menus()
+
         _splash("Preparing the workspace...")
         self._shell = install_crimson_application_shell(
             self,
@@ -115,6 +117,45 @@ class CrimsonWindow(QMainWindow):
             router_tabs=self._router,
             destinations=tuple(destinations),
         )
+
+    def _merge_menus(self) -> None:
+        """Lift both editors' menus onto the shared window.
+
+        Each editor built its menus on its own window, which is now hidden, so
+        File > Open, Save, Undo and the rest would be unreachable. Menus with
+        the same name are merged into one, with each workspace's entries under
+        a heading, and their shortcuts start working again because the actions
+        now belong to the visible window.
+        """
+        bar = self.menuBar()
+        merged: dict[str, object] = {}
+        for window, (_attr, workspace, _caption) in zip(self._sources, WORKSPACES):
+            for action in list(window.menuBar().actions()):
+                menu = action.menu()
+                if menu is None:
+                    continue
+                name = action.text()
+                target = merged.get(name)
+                if target is None:
+                    bar.addMenu(menu)
+                    merged[name] = menu
+                    self._label_section(menu, workspace, first=True)
+                    continue
+                target.addSeparator()
+                self._label_section(target, workspace)
+                target.addActions(menu.actions())
+        self.addActions(bar.actions())
+
+    @staticmethod
+    def _label_section(menu, workspace: str, *, first: bool = False) -> None:
+        heading = menu.addSection(workspace.upper()) if not first else None
+        if heading is None and first:
+            # Put the first workspace's heading above its existing entries.
+            actions = menu.actions()
+            marker = menu.addSection(workspace.upper())
+            if actions:
+                menu.removeAction(marker)
+                menu.insertAction(actions[0], marker)
 
     def _absorb(self, module_attr: str, label: str):
         """Build one editor hidden and move its pages into the shared router.

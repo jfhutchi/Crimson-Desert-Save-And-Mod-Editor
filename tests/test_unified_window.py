@@ -90,6 +90,22 @@ def test_each_workspace_keeps_its_own_settings_file(window) -> None:
     assert all(name != "editor_config.json" for name in paths)
 
 
+def test_menu_actions_survive_the_move(window) -> None:
+    # Each editor built its menus on its own window, which is now hidden, so
+    # without merging them File > Open Save File would be unreachable.
+    menus = {a.text(): a.menu() for a in window.menuBar().actions() if a.menu()}
+    assert {"File", "Edit", "Help"} <= set(menus)
+
+    file_entries = [a.text() for a in menus["File"].actions() if a.text()]
+    assert any("Open Save File" in e for e in file_entries)
+    assert any(e == "Save" for e in file_entries)
+    assert any("Save As" in e for e in file_entries)
+    # Both workspaces contribute, each under its own heading.
+    assert "SAVE" in file_entries and "GAME FILES" in file_entries
+
+    assert any("Undo" in a.text() for a in menus["Edit"].actions())
+
+
 def test_no_workspace_silently_failed_to_load(window) -> None:
     # _absorb logs and skips a workspace that raises; an empty destination list
     # would still build a window, so assert both actually produced pages.
