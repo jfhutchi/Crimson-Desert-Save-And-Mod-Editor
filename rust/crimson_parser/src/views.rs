@@ -1,23 +1,34 @@
-//! Stage 3: lazy Python views over the native tree.
+//! Stage 3: lazy Python views over the native tree, with per-block lazy
+//! decode.
 //!
-//! The tree lives in Rust; Python receives featherweight view objects that
-//! materialize attributes on access - including every derived string, which
-//! the slim nodes no longer store. A view holds an Arc to the whole parse
-//! plus a pointer into it; the tree is immutable and the Arc outlives every
-//! view.
+//! parse() decodes nothing but the schema, TOC and per-block headers. A
+//! block's field tree materializes on the first touch of `.fields` and is
+//! cached; blocks the application never inspects never cost more than their
+//! header. Steady-state memory therefore tracks what the app actually uses.
 
+use std::cell::OnceCell;
+use std::rc::Rc;
 use std::sync::Arc;
 
 use pyo3::prelude::*;
 use pyo3::types::PyBytes;
 
-use crate::decode::{Block, Ctx, Node};
-use crate::Schema;
+use crate::decode::{decode_block_body, BlockHeader, Ctx, Node};
+use crate::{Schema, TocEntry};
+
+pub struct BlockBody {
+    pub fields: Vec<Node>,
+    pub undecoded: Vec<(usize, usize)>,
+}
 
 pub struct Parsed {
     pub raw: Vec<u8>,
     pub schema: Schema,
-    pub blocks: Vec<Block>,
+    pub entries: Vec<TocEntry>,
+    /// One per TOC entry; None where Python's decoder skips the entry.
+    pub headers: Vec<Option<BlockHeader>>,
+    /// Lazily decoded bodies, same indexing as `entries`.
+    pub cells: Vec<OnceCell<Rc<BlockBody>>>,
 }
 
 impl Parsed {
@@ -26,6 +37,19 @@ impl Parsed {
             raw: &self.raw,
             schema: &self.schema,
         }
+    }
+
+    fn body(&self, index: usize) -> Rc<BlockBody> {
+        self.cells[index]
+            .get_or_init(|| {
+                let header = self.headers[index]
+                    .as_ref()
+                    .expect("bodies are only requested for decodable entries");
+                let (fields, undecoded) =
+                    decode_block_body(&self.raw, &self.schema, &self.entries[index], header);
+                Rc::new(BlockBody { fields, undecoded })
+            })
+            .clone()
     }
 }
 
@@ -36,19 +60,35 @@ pub struct NativeParse {
 
 #[pymethods]
 impl NativeParse {
-    /// The block list, mirroring result["objects"].
+    /// The block list, mirroring result["objects"]. Bodies stay undecoded
+    /// until a block's fields are first touched.
     #[getter]
     fn objects(&self) -> Vec<BlockView> {
-        (0..self.inner.blocks.len())
-            .map(|index| BlockView {
-                inner: self.inner.clone(),
-                index,
+        self.inner
+            .headers
+            .iter()
+            .enumerate()
+            .filter_map(|(index, header)| {
+                header.as_ref().map(|_| BlockView {
+                    inner: self.inner.clone(),
+                    index,
+                })
             })
             .collect()
     }
 
+    /// How many block bodies have actually been decoded so far.
+    #[getter]
+    fn decoded_blocks(&self) -> usize {
+        self.inner
+            .cells
+            .iter()
+            .filter(|cell| cell.get().is_some())
+            .count()
+    }
+
     fn __len__(&self) -> usize {
-        self.inner.blocks.len()
+        self.inner.headers.iter().flatten().count()
     }
 }
 
@@ -59,8 +99,11 @@ pub struct BlockView {
 }
 
 impl BlockView {
-    fn block(&self) -> &Block {
-        &self.inner.blocks[self.index]
+    fn entry(&self) -> &TocEntry {
+        &self.inner.entries[self.index]
+    }
+    fn header(&self) -> &BlockHeader {
+        self.inner.headers[self.index].as_ref().unwrap()
     }
 }
 
@@ -68,15 +111,15 @@ impl BlockView {
 impl BlockView {
     #[getter]
     fn entry_index(&self) -> usize {
-        self.block().entry_index
+        self.entry().index
     }
     #[getter]
     fn class_index(&self) -> u32 {
-        self.block().class_index
+        self.entry().class_index
     }
     #[getter]
     fn class_name(&self) -> String {
-        let index = self.block().class_index as usize;
+        let index = self.entry().class_index as usize;
         self.inner
             .schema
             .types
@@ -86,50 +129,52 @@ impl BlockView {
     }
     #[getter]
     fn data_offset(&self) -> usize {
-        self.block().data_offset
+        self.entry().data_offset as usize
     }
     #[getter]
     fn data_size(&self) -> usize {
-        self.block().data_size
+        self.entry().data_size as usize
     }
     #[getter]
     fn mask_byte_count(&self) -> usize {
-        self.block().mask_byte_count
+        self.header().mask_byte_count
     }
     #[getter]
     fn header_mask_bytes<'py>(&self, py: Python<'py>) -> Bound<'py, PyBytes> {
-        PyBytes::new(py, self.inner.ctx().mask_bytes(self.block().mask_span))
+        PyBytes::new(py, self.inner.ctx().mask_bytes(self.header().mask_span))
     }
     #[getter]
     fn reserved_u32(&self) -> u32 {
-        self.block().reserved_u32
+        self.header().reserved_u32
     }
     #[getter]
     fn fields(&self) -> Vec<NodeView> {
-        self.block()
-            .fields
+        let body = self.inner.body(self.index);
+        body.fields
             .iter()
             .map(|node| NodeView {
                 inner: self.inner.clone(),
+                body: body.clone(),
                 node: node as *const Node,
             })
             .collect()
     }
     #[getter]
     fn undecoded_ranges(&self) -> Vec<(usize, usize)> {
-        self.block().undecoded.clone()
+        self.inner.body(self.index).undecoded.clone()
     }
 }
 
 #[pyclass(unsendable, name = "GenericFieldValue")]
 pub struct NodeView {
     inner: Arc<Parsed>,
+    body: Rc<BlockBody>,
     node: *const Node,
 }
 
 impl NodeView {
     fn get(&self) -> &Node {
-        // Safety: `inner` owns the tree the pointer targets, the tree is
+        // Safety: `body` owns the subtree the pointer targets, the tree is
         // never mutated after construction, and views are unsendable.
         unsafe { &*self.node }
     }
@@ -137,6 +182,7 @@ impl NodeView {
     fn wrap(&self, node: &Node) -> NodeView {
         NodeView {
             inner: self.inner.clone(),
+            body: self.body.clone(),
             node: node as *const Node,
         }
     }

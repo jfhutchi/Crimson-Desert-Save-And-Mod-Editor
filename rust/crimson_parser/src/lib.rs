@@ -339,16 +339,25 @@ fn decode_stats(py: Python<'_>, raw: &[u8]) -> PyResult<(usize, u64)> {
 /// Full native parse returning lazy views over the Rust-owned tree.
 #[pyfunction]
 fn parse(py: Python<'_>, raw: &[u8]) -> PyResult<views::NativeParse> {
-    let parsed = py.allow_threads(|| {
+    // OnceCell/Rc are single-thread types, so only the Send parts cross the
+    // allow_threads boundary; the lazy cells are assembled on the GIL side.
+    let (raw_vec, schema, entries, headers) = py.allow_threads(|| {
         let schema = parse_schema_impl(raw)?;
         let (_, _, _, entries) = parse_toc_impl(raw, &schema);
-        let blocks = decode::decode_blocks(raw, &schema, &entries);
-        Ok::<_, PyErr>(views::Parsed {
-            raw: raw.to_vec(),
-            schema,
-            blocks,
-        })
+        let headers: Vec<_> = entries
+            .iter()
+            .map(|entry| decode::block_header(raw, &schema, entry))
+            .collect();
+        Ok::<_, PyErr>((raw.to_vec(), schema, entries, headers))
     })?;
+    let cells = (0..entries.len()).map(|_| std::cell::OnceCell::new()).collect();
+    let parsed = views::Parsed {
+        raw: raw_vec,
+        schema,
+        entries,
+        headers,
+        cells,
+    };
     Ok(views::NativeParse {
         inner: std::sync::Arc::new(parsed),
     })

@@ -1159,8 +1159,18 @@ fn decode_fields_in_region(
     (fields, undecoded)
 }
 
-/// Decode one TOC entry into a Block; None mirrors Python's `continue`.
-pub fn decode_one_block(raw: &[u8], schema: &Schema, entry: &TocEntry) -> Option<Block> {
+/// The cheap part of decoding a TOC entry; None mirrors Python's `continue`.
+#[derive(Clone)]
+pub struct BlockHeader {
+    pub mask_byte_count: usize,
+    pub mask_span: (u32, u32),
+    pub reserved_u32: u32,
+    pub note: NoteKind,
+    pub header_end: usize,
+    pub block_end: usize,
+}
+
+pub fn block_header(raw: &[u8], schema: &Schema, entry: &TocEntry) -> Option<BlockHeader> {
     let type_def = schema.types.get(entry.class_index as usize)?;
     let block_start = entry.data_offset as usize;
     let block_end = raw.len().min(block_start + entry.data_size as usize);
@@ -1185,30 +1195,52 @@ pub fn decode_one_block(raw: &[u8], schema: &Schema, entry: &TocEntry) -> Option
     if header_end > block_end {
         return None;
     }
-    let mask_span = (
-        (block_start + 2) as u32,
-        (block_start + 2 + mask_count) as u32,
-    );
-    let mask = raw[mask_span.0 as usize..mask_span.1 as usize].to_vec();
-    let reserved_u32 = u32le(raw, block_start + 2 + mask_count);
-    let (fields, undecoded) = decode_fields_in_region(
+    Some(BlockHeader {
+        mask_byte_count: mask_count,
+        mask_span: (
+            (block_start + 2) as u32,
+            (block_start + 2 + mask_count) as u32,
+        ),
+        reserved_u32: u32le(raw, block_start + 2 + mask_count),
+        note,
+        header_end,
+        block_end,
+    })
+}
+
+/// The expensive part: the field walk for one block.
+pub fn decode_block_body(
+    raw: &[u8],
+    schema: &Schema,
+    entry: &TocEntry,
+    header: &BlockHeader,
+) -> (Vec<Node>, Vec<(usize, usize)>) {
+    let type_def = &schema.types[entry.class_index as usize];
+    let mask = raw[header.mask_span.0 as usize..header.mask_span.1 as usize].to_vec();
+    decode_fields_in_region(
         raw,
         schema,
         type_def,
         entry.class_index as usize,
         &mask,
-        header_end,
-        block_end,
-        note,
-    );
+        header.header_end,
+        header.block_end,
+        header.note.clone(),
+    )
+}
+
+/// Decode one TOC entry into a Block, eagerly (parity harness path).
+pub fn decode_one_block(raw: &[u8], schema: &Schema, entry: &TocEntry) -> Option<Block> {
+    let header = block_header(raw, schema, entry)?;
+    let (fields, undecoded) = decode_block_body(raw, schema, entry, &header);
     Some(Block {
         entry_index: entry.index,
         class_index: entry.class_index,
         data_offset: entry.data_offset as usize,
         data_size: entry.data_size as usize,
-        mask_byte_count: mask_count,
-        mask_span,
-        reserved_u32,
+        mask_byte_count: header.mask_byte_count,
+        mask_span: header.mask_span,
+        reserved_u32: header.reserved_u32,
         fields,
         undecoded,
     })
