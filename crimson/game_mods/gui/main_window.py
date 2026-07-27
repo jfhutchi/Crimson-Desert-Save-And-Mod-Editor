@@ -3340,7 +3340,7 @@ QCheckBox::indicator {{
             save_data = load_save_file(path)
             report("Parsing save structure...", 35)
             try:
-                from crimson.game_mods.save_parser import build_result_from_raw
+                from crimson.save_editor.native_parse import parse_any as build_result_from_raw
                 parse_result = build_result_from_raw(
                     bytes(save_data.decompressed_blob), {'input_kind': 'raw_blob'}
                 )
