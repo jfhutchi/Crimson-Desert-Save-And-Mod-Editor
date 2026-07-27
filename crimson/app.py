@@ -324,6 +324,10 @@ class CrimsonWindow(QMainWindow):
             # each workspace gets its own file instead of clobbering the other.
             MainWindow._CONFIG_FILE = f"config_{module_attr}.json"
             window = MainWindow()
+            # Both editors were standalone apps and re-show themselves from
+            # deferred startup timers, stealing focus over the shell. This
+            # makes any later show() from them render nothing.
+            window.setAttribute(Qt.WA_DontShowOnScreen, True)
         except Exception:
             log.exception("%s workspace failed to load", label)
             return None, []
