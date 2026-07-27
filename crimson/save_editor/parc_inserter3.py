@@ -2310,7 +2310,12 @@ def inject_community_knowledge(
     if not to_insert:
         return True, blob, "All community knowledge already present"
 
-    return _insert_knowledge_keys(blob, orig_blob, know_obj, know_field, to_insert, len(existing_keys))
+    ok, out, msg = _insert_knowledge_keys(
+        blob, orig_blob, know_obj, know_field, to_insert, len(existing_keys)
+    )
+    if ok and relearn:
+        msg = f"{msg} (+{len(relearn)} re-learned in place)"
+    return ok, out, msg
 
 
 def inject_knowledge_locations_only(
@@ -2620,10 +2625,19 @@ def inject_knowledge_fast(
         return False, blob, "KnowledgeSaveData._list not found"
 
     existing_keys = set()
+    level_offsets = {}
     for elem in know_field.list_elements:
+        key = level_off = level_val = None
         for cf in (elem.child_fields or []):
             if cf.name == '_key' and cf.present:
-                existing_keys.add(struct.unpack_from('<I', orig_blob, cf.start_offset)[0])
+                key = struct.unpack_from('<I', orig_blob, cf.start_offset)[0]
+            elif cf.name == '_level' and cf.present:
+                level_off = cf.start_offset
+                level_val = struct.unpack_from('<I', orig_blob, cf.start_offset)[0]
+        if key is not None:
+            existing_keys.add(key)
+            if level_off is not None and level_val == 0:
+                level_offsets[key] = level_off
 
     if keys_filter is not None:
         target_keys = set(keys_filter)
@@ -2633,8 +2647,17 @@ def inject_knowledge_fast(
             return False, blob, "knowledge_keys_all.json not found"
         target_keys = set(all_keys)
 
+    # An entry can exist at level 0 - that is exactly what Unlearn leaves
+    # behind - and the game treats it as unlearned. Treating key-presence as
+    # "already learned" made re-learning those a silent no-op.
+    relearn = sorted(k for k in target_keys if k in level_offsets)
+    for key in relearn:
+        struct.pack_into('<I', blob, level_offsets[key], 1)
+
     to_insert = sorted(target_keys - existing_keys)
     if not to_insert:
+        if relearn:
+            return True, blob, f"Re-learned {len(relearn)} existing entries"
         return True, blob, "All requested knowledge already present"
 
     t1 = time.time()
