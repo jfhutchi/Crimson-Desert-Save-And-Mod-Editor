@@ -88,3 +88,6 @@ dist/
 
 # Claude Code local state
 .claude/
+
+# Rust build artifacts
+rust/crimson_parser/target/
