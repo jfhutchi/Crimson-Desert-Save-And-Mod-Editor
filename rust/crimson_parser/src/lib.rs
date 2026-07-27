@@ -350,7 +350,7 @@ fn parse(py: Python<'_>, raw: &[u8]) -> PyResult<views::NativeParse> {
             .collect();
         Ok::<_, PyErr>((raw.to_vec(), schema, entries, headers))
     })?;
-    let cells = (0..entries.len()).map(|_| std::cell::OnceCell::new()).collect();
+    let cells = (0..entries.len()).map(|_| std::sync::OnceLock::new()).collect();
     let parsed = views::Parsed {
         raw: raw_vec,
         schema,

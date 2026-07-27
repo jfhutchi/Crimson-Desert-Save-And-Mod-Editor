@@ -55,6 +55,7 @@ except Exception:
     insert_item_to_inventory = insert_item_to_store = clone_block_section = insert_items_batch = None
 from crimson.save_editor.updater import APP_VERSION, check_for_update, download_update, apply_update_and_restart
 from crimson.common.icon_cache import IconCache, ICON_SIZE
+from crimson.save_editor.native_parse import parse_any as _parse_any
 from crimson.save_editor.localization import tr, set_language, get_language, get_available_languages
 
 
@@ -8426,7 +8427,7 @@ QCheckBox::indicator {{
                 sys_path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor import save_parser as sp
             raw = bytes(self._save_data.decompressed_blob)
-            result = sp.build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
             blob = bytearray(raw)
             cleared = 0
             for obj in result['objects']:
@@ -8577,7 +8578,7 @@ QCheckBox::indicator {{
 
             raw = bytes(self._save_data.decompressed_blob)
             parc = ps.parse_parc_blob(raw)
-            result = sp.build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
 
             for obj in result['objects']:
                 if 'MercenaryClan' in obj.class_name:
@@ -9557,7 +9558,7 @@ QCheckBox::indicator {{
             self._update_status("Dragon: parsing save structure...")
             QApplication.processEvents()
             parc = ps.parse_parc_blob(raw)
-            result = sp.build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
 
             for obj in result['objects']:
                 if 'MercenaryClan' in obj.class_name:
@@ -11390,7 +11391,7 @@ QCheckBox::indicator {{
             QApplication.processEvents()
 
             raw = self._save_data.decompressed_blob
-            result = _sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
 
             stage_count = 0
             faction_count = 0
@@ -11463,7 +11464,7 @@ QCheckBox::indicator {{
 
         try:
             raw = self._save_data.decompressed_blob
-            result = _sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
             data = parse_quest_deep(bytes(raw), result)
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to parse save: {e}")
@@ -11556,7 +11557,7 @@ QCheckBox::indicator {{
             import sys as _sys
             'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor import save_parser as _sp
-            _result = _sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
+            _result = self._get_parse_result()
 
             stage_reset = 0
             for obj in _result['objects']:
@@ -11837,7 +11838,7 @@ QCheckBox::indicator {{
                     try:
                         sd = load_save_file(slot_path)
                         raw = bytes(sd.decompressed_blob)
-                        result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+                        result = _parse_any(raw, {'input_kind': 'raw_blob'})
 
                         found = []
                         for obj in result['objects']:
@@ -12065,7 +12066,7 @@ QCheckBox::indicator {{
                 if os.path.isdir(p) and p not in sys.path:
                     sys.path.insert(0, p)
             from crimson.save_editor.save_parser import build_result_from_raw
-            result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
         except Exception as e:
             QMessageBox.critical(self, "Advanced Edit", f"Parse error: {e}")
             return
@@ -13010,7 +13011,7 @@ QCheckBox::indicator {{
             from crimson.save_editor.save_parser import build_result_from_raw
 
             raw = bytes(blob)
-            result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
 
             target_keys = {e['key'] for e in entries}
             completed = 0
@@ -13114,7 +13115,7 @@ QCheckBox::indicator {{
             from crimson.save_editor.save_parser import build_result_from_raw
 
             raw = bytes(blob)
-            result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
 
             target_keys = {e['key'] for e in entries}
             set_count = 0
@@ -14714,7 +14715,7 @@ QCheckBox::indicator {{
                 QApplication.processEvents()
 
                 raw = bytes(self._save_data.decompressed_blob)
-                result = _sp.build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+                result = self._get_parse_result()
                 deep = parse_quest_deep(raw, result,
                                         quest_names=getattr(self, '_quest_names', {}),
                                         mission_names=getattr(self, '_mission_names', {}))
@@ -15634,7 +15635,7 @@ QCheckBox::indicator {{
                 import sys as _sys
                 'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
                 from crimson.save_editor.save_parser import build_result_from_raw
-                result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+                result = _parse_any(raw, {'input_kind': 'raw_blob'})
             report("Extracting faction entries...", 80)
             names = MainWindow._load_game_map_names()
             elem_entries, node_entries = MainWindow._extract_faction_entries(raw, result)
@@ -31556,7 +31557,7 @@ QCheckBox::indicator {{
             from crimson.save_editor.save_parser import build_result_from_raw
 
             raw = bytes(blob)
-            result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
+            result = self._get_parse_result()
             completed = 0
             for obj in result['objects']:
                 if obj.class_name in ('QuestSaveData', 'MissionSaveData'):
@@ -31876,7 +31877,7 @@ QCheckBox::indicator {{
             import sys as _sys
             'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor.save_parser import build_result_from_raw
-            parse_result = build_result_from_raw(
+            parse_result = _parse_any(
                 bytes(save_data.decompressed_blob), {'input_kind': 'raw_blob'}
             )
             report("Scanning items...", 55)

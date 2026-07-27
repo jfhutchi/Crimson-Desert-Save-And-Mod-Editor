@@ -63,3 +63,15 @@ def build_result_native(raw: bytes, load_meta: dict[str, Any]) -> dict[str, Any]
         # Keeps the lazy cells alive for the result's lifetime.
         "_native": parsed,
     }
+
+
+def parse_any(raw: bytes, load_meta: dict[str, Any]) -> dict[str, Any]:
+    """Native parse when available, Python otherwise - for any blob."""
+    if native_available():
+        try:
+            return build_result_native(raw, load_meta)
+        except Exception:
+            log.exception("native parse failed; falling back to Python")
+    from crimson.save_editor.save_parser import build_result_from_raw
+
+    return build_result_from_raw(raw, load_meta)

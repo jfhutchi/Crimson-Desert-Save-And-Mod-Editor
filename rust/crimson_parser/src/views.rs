@@ -6,9 +6,7 @@
 //! cached; blocks the application never inspects never cost more than their
 //! header. Steady-state memory therefore tracks what the app actually uses.
 
-use std::cell::OnceCell;
-use std::rc::Rc;
-use std::sync::Arc;
+use std::sync::{Arc, OnceLock};
 
 use pyo3::prelude::*;
 use pyo3::types::PyBytes;
@@ -28,7 +26,7 @@ pub struct Parsed {
     /// One per TOC entry; None where Python's decoder skips the entry.
     pub headers: Vec<Option<BlockHeader>>,
     /// Lazily decoded bodies, same indexing as `entries`.
-    pub cells: Vec<OnceCell<Rc<BlockBody>>>,
+    pub cells: Vec<OnceLock<Arc<BlockBody>>>,
 }
 
 impl Parsed {
@@ -39,7 +37,7 @@ impl Parsed {
         }
     }
 
-    fn body(&self, index: usize) -> Rc<BlockBody> {
+    fn body(&self, index: usize) -> Arc<BlockBody> {
         self.cells[index]
             .get_or_init(|| {
                 let header = self.headers[index]
@@ -47,13 +45,13 @@ impl Parsed {
                     .expect("bodies are only requested for decodable entries");
                 let (fields, undecoded) =
                     decode_block_body(&self.raw, &self.schema, &self.entries[index], header);
-                Rc::new(BlockBody { fields, undecoded })
+                Arc::new(BlockBody { fields, undecoded })
             })
             .clone()
     }
 }
 
-#[pyclass(unsendable, name = "NativeParse")]
+#[pyclass(name = "NativeParse")]
 pub struct NativeParse {
     pub inner: Arc<Parsed>,
 }
@@ -92,7 +90,7 @@ impl NativeParse {
     }
 }
 
-#[pyclass(unsendable, name = "ObjectBlock")]
+#[pyclass(name = "ObjectBlock")]
 pub struct BlockView {
     inner: Arc<Parsed>,
     index: usize,
@@ -155,7 +153,7 @@ impl BlockView {
             .map(|node| NodeView {
                 inner: self.inner.clone(),
                 body: body.clone(),
-                node: node as *const Node,
+                node: NodePtr(node as *const Node),
             })
             .collect()
     }
@@ -165,25 +163,32 @@ impl BlockView {
     }
 }
 
-#[pyclass(unsendable, name = "GenericFieldValue")]
+/// A raw pointer into the Arc-owned immutable tree. Safe to send between
+/// threads: the pointee is never mutated after construction and both owning
+/// Arcs travel with the view.
+struct NodePtr(*const Node);
+unsafe impl Send for NodePtr {}
+unsafe impl Sync for NodePtr {}
+
+#[pyclass(name = "GenericFieldValue")]
 pub struct NodeView {
     inner: Arc<Parsed>,
-    body: Rc<BlockBody>,
-    node: *const Node,
+    body: Arc<BlockBody>,
+    node: NodePtr,
 }
 
 impl NodeView {
     fn get(&self) -> &Node {
-        // Safety: `body` owns the subtree the pointer targets, the tree is
-        // never mutated after construction, and views are unsendable.
-        unsafe { &*self.node }
+        // Safety: `body` owns the subtree the pointer targets and the tree
+        // is never mutated after construction.
+        unsafe { &*self.node.0 }
     }
 
     fn wrap(&self, node: &Node) -> NodeView {
         NodeView {
             inner: self.inner.clone(),
             body: self.body.clone(),
-            node: node as *const Node,
+            node: NodePtr(node as *const Node),
         }
     }
 }
