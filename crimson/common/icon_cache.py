@@ -89,6 +89,9 @@ class IconCache(QObject):
         super().__init__()
         self._pixmaps: Dict[object, QPixmap] = {}
         self._pending: set = set()
+        # Keys whose download already failed; without this every table
+        # repopulate re-spawns a thread and an HTTP attempt per missing icon.
+        self._missing: set = set()
         self._lock = threading.Lock()
         self._warming = False
         self._bulk_running = False
@@ -230,7 +233,7 @@ class IconCache(QObject):
             return
 
         with self._lock:
-            if item_key in self._pending:
+            if item_key in self._pending or item_key in self._missing:
                 return
             self._pending.add(item_key)
 
@@ -276,6 +279,8 @@ class IconCache(QObject):
                     img_data = resp.read()
 
                 if not img_data or len(img_data) < 100:
+                    with self._lock:
+                        self._missing.add(item_key)
                     return
 
                 with open(local_path, 'wb') as f:
@@ -291,6 +296,8 @@ class IconCache(QObject):
 
         except Exception as e:
             log.debug("Icon download failed for key %d: %s", item_key, e)
+            with self._lock:
+                self._missing.add(item_key)
         finally:
             with self._lock:
                 self._pending.discard(item_key)

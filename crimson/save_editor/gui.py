@@ -11383,7 +11383,7 @@ QCheckBox::indicator {{
 
         try:
             import sys as _sys
-            _sys.path.insert(0, 'Communitydump/desktopeditor')
+            'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor import save_parser as _sp
 
             self._qe_status.setText("Resetting encounters...")
@@ -11457,7 +11457,7 @@ QCheckBox::indicator {{
             return
 
         import sys as _sys
-        _sys.path.insert(0, 'Communitydump/desktopeditor')
+        'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
         from crimson.save_editor import save_parser as _sp
         from crimson.save_editor.quest_deep_parser import parse_quest_deep
 
@@ -11554,7 +11554,7 @@ QCheckBox::indicator {{
 
         try:
             import sys as _sys
-            _sys.path.insert(0, 'Communitydump/desktopeditor')
+            'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor import save_parser as _sp
             _result = _sp.build_result_from_raw(bytes(raw), {'input_kind': 'raw_blob'})
 
@@ -15459,7 +15459,7 @@ QCheckBox::indicator {{
         if cached is not None:
             return cached
         import sys as _sys
-        _sys.path.insert(0, 'Communitydump/desktopeditor')
+        'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
         from crimson.save_editor.save_parser import build_result_from_raw
         result = build_result_from_raw(
             bytes(self._save_data.decompressed_blob), {'input_kind': 'raw_blob'}
@@ -15618,7 +15618,7 @@ QCheckBox::indicator {{
                 result = cached_result
             else:
                 import sys as _sys
-                _sys.path.insert(0, 'Communitydump/desktopeditor')
+                'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
                 from crimson.save_editor.save_parser import build_result_from_raw
                 result = build_result_from_raw(raw, {'input_kind': 'raw_blob'})
             report("Extracting faction entries...", 80)
@@ -31860,7 +31860,7 @@ QCheckBox::indicator {{
             save_data = load_save_file(path)
             report("Parsing save structure...", 35)
             import sys as _sys
-            _sys.path.insert(0, 'Communitydump/desktopeditor')
+            'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
             from crimson.save_editor.save_parser import build_result_from_raw
             parse_result = build_result_from_raw(
                 bytes(save_data.decompressed_blob), {'input_kind': 'raw_blob'}
