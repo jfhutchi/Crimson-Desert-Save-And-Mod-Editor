@@ -9,6 +9,8 @@
 use pyo3::prelude::*;
 use pyo3::types::{PyDict, PyList};
 
+mod decode;
+
 /// Read a little-endian u16, erroring instead of panicking on truncation.
 fn u16_at(raw: &[u8], pos: usize) -> PyResult<u16> {
     raw.get(pos..pos + 2)
@@ -35,30 +37,30 @@ fn truncated(pos: usize) -> PyErr {
     ))
 }
 
-struct FieldDef {
-    name: String,
-    type_name: String,
-    meta_kind: u16,
-    meta_size: u16,
-    meta_aux: u32,
-    start_offset: usize,
-    end_offset: usize,
+pub(crate) struct FieldDef {
+    pub(crate) name: String,
+    pub(crate) type_name: String,
+    pub(crate) meta_kind: u16,
+    pub(crate) meta_size: u16,
+    pub(crate) meta_aux: u32,
+    pub(crate) start_offset: usize,
+    pub(crate) end_offset: usize,
 }
 
-struct TypeDef {
-    index: usize,
-    name: String,
-    fields: Vec<FieldDef>,
-    start_offset: usize,
-    end_offset: usize,
+pub(crate) struct TypeDef {
+    pub(crate) index: usize,
+    pub(crate) name: String,
+    pub(crate) fields: Vec<FieldDef>,
+    pub(crate) start_offset: usize,
+    pub(crate) end_offset: usize,
 }
 
-struct Schema {
-    header_tag: u16,
-    header_zero: u16,
-    types: Vec<TypeDef>,
-    root_type: String,
-    schema_end: usize,
+pub(crate) struct Schema {
+    pub(crate) header_tag: u16,
+    pub(crate) header_zero: u16,
+    pub(crate) types: Vec<TypeDef>,
+    pub(crate) root_type: String,
+    pub(crate) schema_end: usize,
 }
 
 /// Mirror of save_parser.parse_schema.
@@ -136,15 +138,15 @@ fn parse_schema_impl(raw: &[u8]) -> PyResult<Schema> {
     })
 }
 
-struct TocEntry {
-    index: usize,
-    class_index: u32,
-    class_name: String,
-    sentinel1: u32,
-    sentinel2: u32,
-    data_offset: u32,
-    data_size: u32,
-    entry_offset: usize,
+pub(crate) struct TocEntry {
+    pub(crate) index: usize,
+    pub(crate) class_index: u32,
+    pub(crate) class_name: String,
+    pub(crate) sentinel1: u32,
+    pub(crate) sentinel2: u32,
+    pub(crate) data_offset: u32,
+    pub(crate) data_size: u32,
+    pub(crate) entry_offset: usize,
 }
 
 /// Mirror of save_parser.parse_toc.
@@ -248,10 +250,92 @@ fn parse_toc(py: Python<'_>, raw: &[u8]) -> PyResult<Py<PyDict>> {
     Ok(out.into())
 }
 
+/// Full object-tree decode; returns (digest_hex, node_count, block_count).
+#[pyfunction]
+fn decode_digest(py: Python<'_>, raw: &[u8]) -> PyResult<(String, u64, usize)> {
+    let (digest, nodes, blocks) = py.allow_threads(|| {
+        let schema = parse_schema_impl(raw)?;
+        let (_, _, _, entries) = parse_toc_impl(raw, &schema);
+        let blocks = decode::decode_blocks(raw, &schema, &entries);
+        let mut digest = decode::Digest::new();
+        for block in &blocks {
+            digest.block(block);
+        }
+        Ok::<_, PyErr>((digest.hex(), digest.nodes, blocks.len()))
+    })?;
+    Ok((digest, nodes, blocks))
+}
+
+/// Per-block digests for localizing a parity mismatch.
+#[pyfunction]
+fn decode_block_digests(py: Python<'_>, raw: &[u8]) -> PyResult<Vec<(String, String)>> {
+    py.allow_threads(|| {
+        let schema = parse_schema_impl(raw)?;
+        let (_, _, _, entries) = parse_toc_impl(raw, &schema);
+        let blocks = decode::decode_blocks(raw, &schema, &entries);
+        Ok(blocks
+            .iter()
+            .map(|b| {
+                let mut d = decode::Digest::new();
+                d.block(b);
+                (b.class_name.clone(), d.hex())
+            })
+            .collect())
+    })
+}
+
+/// Canonical text dump of one block's nodes, for diffing a mismatch.
+#[pyfunction]
+fn dump_block(py: Python<'_>, raw: &[u8], block_index: usize) -> PyResult<Vec<String>> {
+    py.allow_threads(|| {
+        let schema = parse_schema_impl(raw)?;
+        let (_, _, _, entries) = parse_toc_impl(raw, &schema);
+        let blocks = decode::decode_blocks(raw, &schema, &entries);
+        let block = blocks
+            .get(block_index)
+            .ok_or_else(|| pyo3::exceptions::PyIndexError::new_err("block index"))?;
+        Ok(decode::dump_block_lines(block))
+    })
+}
+
+/// Tree build only - the production cost, without the parity digest.
+#[pyfunction]
+fn decode_stats(py: Python<'_>, raw: &[u8]) -> PyResult<(usize, u64)> {
+    py.allow_threads(|| {
+        let schema = parse_schema_impl(raw)?;
+        let (_, _, _, entries) = parse_toc_impl(raw, &schema);
+        let blocks = decode::decode_blocks(raw, &schema, &entries);
+        let mut nodes = 0u64;
+        fn count(n: &decode::Node, total: &mut u64) {
+            *total += 1;
+            if let Some(children) = &n.child_fields {
+                for c in children {
+                    count(c, total);
+                }
+            }
+            if let Some(elements) = &n.list_elements {
+                for e in elements {
+                    count(e, total);
+                }
+            }
+        }
+        for b in &blocks {
+            for f in &b.fields {
+                count(f, &mut nodes);
+            }
+        }
+        Ok((blocks.len(), nodes))
+    })
+}
+
 #[pymodule]
 fn crimson_parser(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(parse_schema, m)?)?;
     m.add_function(wrap_pyfunction!(parse_toc, m)?)?;
-    m.add("STAGE", 1)?;
+    m.add_function(wrap_pyfunction!(decode_digest, m)?)?;
+    m.add_function(wrap_pyfunction!(decode_block_digests, m)?)?;
+    m.add_function(wrap_pyfunction!(dump_block, m)?)?;
+    m.add_function(wrap_pyfunction!(decode_stats, m)?)?;
+    m.add("STAGE", 2)?;
     Ok(())
 }
