@@ -15460,10 +15460,24 @@ QCheckBox::indicator {{
             return cached
         import sys as _sys
         'Communitydump/desktopeditor' in _sys.path or _sys.path.insert(0, 'Communitydump/desktopeditor')
-        from crimson.save_editor.save_parser import build_result_from_raw
-        result = build_result_from_raw(
-            bytes(self._save_data.decompressed_blob), {'input_kind': 'raw_blob'}
-        )
+        result = None
+        try:
+            from crimson.save_editor.native_parse import (
+                build_result_native, native_available,
+            )
+            if native_available():
+                result = build_result_native(
+                    bytes(self._save_data.decompressed_blob),
+                    {'input_kind': 'raw_blob'},
+                )
+        except Exception:
+            log.exception("native parse failed; falling back to Python")
+            result = None
+        if result is None:
+            from crimson.save_editor.save_parser import build_result_from_raw
+            result = build_result_from_raw(
+                bytes(self._save_data.decompressed_blob), {'input_kind': 'raw_blob'}
+            )
         self._parse_cache.store(self._save_data, result)
         return result
 

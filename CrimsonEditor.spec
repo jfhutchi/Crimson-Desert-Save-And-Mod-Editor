@@ -27,6 +27,7 @@ hiddenimports = (
     + ["lz4", "lz4.block", "cryptography",
        "cryptography.hazmat.primitives.ciphers",
        "cryptography.hazmat.primitives.ciphers.algorithms",
+       "crimson_parser",
        "crimson_rs", "crimson_rs.enums", "crimson_rs.create_pack",
        "crimson_rs.pack_mod", "crimson_rs.validate_game_dir"]
 )
