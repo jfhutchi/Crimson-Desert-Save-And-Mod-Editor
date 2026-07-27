@@ -114,6 +114,23 @@ def release_window(qt_app, win) -> None:
 
     win.close()
     for source in getattr(win, "_sources", []):
+        # Qt teardown alone leaves the heavyweight Python state alive - the
+        # ~3.4GB parse tree above all. One leak per save-loading test ran the
+        # suite process to 19GB.
+        for attr in ("_save_data", "_items", "_know_all_entries",
+                     "_qe_entries", "_qe_window"):
+            if hasattr(source, attr):
+                try:
+                    setattr(source, attr, None)
+                except Exception:
+                    pass
+        cache = getattr(source, "_parse_cache", None)
+        if cache is not None:
+            cache._save_ref = None
+            cache._result = None
+        stack = getattr(source, "_undo_stack", None)
+        if stack is not None:
+            stack.clear()
         source.deleteLater()
     win.deleteLater()
     for _ in range(5):
