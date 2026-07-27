@@ -10,6 +10,7 @@ use pyo3::prelude::*;
 use pyo3::types::{PyDict, PyList};
 
 mod decode;
+mod views;
 
 /// Read a little-endian u16, erroring instead of panicking on truncation.
 fn u16_at(raw: &[u8], pos: usize) -> PyResult<u16> {
@@ -253,17 +254,17 @@ fn parse_toc(py: Python<'_>, raw: &[u8]) -> PyResult<Py<PyDict>> {
 /// Full object-tree decode; returns (digest_hex, node_count, block_count).
 #[pyfunction]
 fn decode_digest(py: Python<'_>, raw: &[u8]) -> PyResult<(String, u64, usize)> {
-    let (digest, nodes, blocks) = py.allow_threads(|| {
+    py.allow_threads(|| {
         let schema = parse_schema_impl(raw)?;
         let (_, _, _, entries) = parse_toc_impl(raw, &schema);
         let blocks = decode::decode_blocks(raw, &schema, &entries);
+        let ctx = decode::Ctx { raw, schema: &schema };
         let mut digest = decode::Digest::new();
         for block in &blocks {
-            digest.block(block);
+            digest.block(&ctx, block);
         }
-        Ok::<_, PyErr>((digest.hex(), digest.nodes, blocks.len()))
-    })?;
-    Ok((digest, nodes, blocks))
+        Ok((digest.hex(), digest.nodes, blocks.len()))
+    })
 }
 
 /// Per-block digests for localizing a parity mismatch.
@@ -273,12 +274,18 @@ fn decode_block_digests(py: Python<'_>, raw: &[u8]) -> PyResult<Vec<(String, Str
         let schema = parse_schema_impl(raw)?;
         let (_, _, _, entries) = parse_toc_impl(raw, &schema);
         let blocks = decode::decode_blocks(raw, &schema, &entries);
+        let ctx = decode::Ctx { raw, schema: &schema };
         Ok(blocks
             .iter()
             .map(|b| {
                 let mut d = decode::Digest::new();
-                d.block(b);
-                (b.class_name.clone(), d.hex())
+                d.block(&ctx, b);
+                let name = schema
+                    .types
+                    .get(b.class_index as usize)
+                    .map(|t| t.name.clone())
+                    .unwrap_or_else(|| format!("<class_{}>", b.class_index));
+                (name, d.hex())
             })
             .collect())
     })
@@ -294,7 +301,8 @@ fn dump_block(py: Python<'_>, raw: &[u8], block_index: usize) -> PyResult<Vec<St
         let block = blocks
             .get(block_index)
             .ok_or_else(|| pyo3::exceptions::PyIndexError::new_err("block index"))?;
-        Ok(decode::dump_block_lines(block))
+        let ctx = decode::Ctx { raw, schema: &schema };
+        Ok(decode::dump_block_lines(&ctx, block))
     })
 }
 
@@ -328,6 +336,24 @@ fn decode_stats(py: Python<'_>, raw: &[u8]) -> PyResult<(usize, u64)> {
     })
 }
 
+/// Full native parse returning lazy views over the Rust-owned tree.
+#[pyfunction]
+fn parse(py: Python<'_>, raw: &[u8]) -> PyResult<views::NativeParse> {
+    let parsed = py.allow_threads(|| {
+        let schema = parse_schema_impl(raw)?;
+        let (_, _, _, entries) = parse_toc_impl(raw, &schema);
+        let blocks = decode::decode_blocks(raw, &schema, &entries);
+        Ok::<_, PyErr>(views::Parsed {
+            raw: raw.to_vec(),
+            schema,
+            blocks,
+        })
+    })?;
+    Ok(views::NativeParse {
+        inner: std::sync::Arc::new(parsed),
+    })
+}
+
 #[pymodule]
 fn crimson_parser(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(parse_schema, m)?)?;
@@ -336,6 +362,8 @@ fn crimson_parser(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(decode_block_digests, m)?)?;
     m.add_function(wrap_pyfunction!(dump_block, m)?)?;
     m.add_function(wrap_pyfunction!(decode_stats, m)?)?;
-    m.add("STAGE", 2)?;
+    m.add_function(wrap_pyfunction!(parse, m)?)?;
+    m.add_class::<views::NativeParse>()?;
+    m.add("STAGE", 3)?;
     Ok(())
 }

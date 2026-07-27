@@ -1,17 +1,20 @@
-//! Stage 2: object-tree decode, a faithful port of save_parser.py.
+//! Stage 2/3: object-tree decode, a faithful port of save_parser.py.
 //!
-//! Every heuristic - suffix-first fixed fields, list header probing, the
-//! trailing-size search - is reproduced exactly, including Python's value
-//! formatting, because parity is proven by hashing both trees into the same
-//! canonical stream.
+//! Nodes are plain data - every derived string (names, value_repr, notes)
+//! renders on demand from the raw bytes and the schema, which is what keeps
+//! the native tree small. Parity with the Python parser is proven by hashing
+//! both trees through an identical canonical walk.
 
-use crate::{Schema, TocEntry, TypeDef};
+use crate::{FieldDef, Schema, TocEntry, TypeDef};
 
 #[derive(Default)]
 pub struct Node {
     pub field_index: usize,
-    pub name: String,
-    pub type_name: String,
+    // owner_type/name_kind resolve the display name through the schema:
+    // ordinary fields read fields[field_index], elements are "[i]",
+    // anonymous locators are "".
+    pub owner_type: i32,
+    pub name_kind: NameKind,
     pub meta_kind: u16,
     pub meta_size: u16,
     pub meta_aux: u32,
@@ -19,16 +22,15 @@ pub struct Node {
     pub decode_kind: &'static str,
     pub start_offset: usize,
     pub end_offset: usize,
-    pub value_repr: String,
-    pub edit_format: String,
+    pub edit_format: &'static str,
     pub editable: bool,
-    pub note: String,
+    pub note: NoteKind,
     pub child_prefix_u16: u16,
     pub child_prefix_u8: u8,
     pub child_mask_byte_count: usize,
-    pub child_mask_bytes: Vec<u8>,
+    pub child_mask_span: (u32, u32),
     pub child_type_index: i64,
-    pub child_type_name: String,
+    pub child_type_known: bool,
     pub child_reserved_u8: u8,
     pub child_sentinel1_u32: u32,
     pub child_sentinel2_u32: u32,
@@ -48,18 +50,66 @@ pub struct Node {
     pub list_elements: Option<Vec<Node>>,
 }
 
+#[derive(Default, Clone, Copy, PartialEq)]
+pub enum NameKind {
+    #[default]
+    Field,
+    Element,
+    Anonymous,
+}
+
+#[derive(Default, Clone)]
+pub enum NoteKind {
+    #[default]
+    Empty,
+    Count(u32),
+    DynPlain,
+    DynPrefix(u8),
+    DynCompact,
+    DynMarker(u32),
+    DynZeros,
+    CompactElement,
+    HeaderOffset(usize),
+    ExpectedMask(usize),
+}
+
+impl NoteKind {
+    pub fn render(&self) -> String {
+        match self {
+            NoteKind::Empty => String::new(),
+            NoteKind::Count(n) => format!("count={n}"),
+            NoteKind::DynPlain => "dynamic primitive array".into(),
+            NoteKind::DynPrefix(p) => format!("dynamic primitive array prefix=0x{p:02X}"),
+            NoteKind::DynCompact => "dynamic primitive array (compact header)".into(),
+            NoteKind::DynMarker(len) => {
+                format!("dynamic primitive array (marker prefix len={len})")
+            }
+            NoteKind::DynZeros => "dynamic primitive array (prefix 0000060100)".into(),
+            NoteKind::CompactElement => "compact_list_element".into(),
+            NoteKind::HeaderOffset(delta) => format!("header_offset=+{delta}"),
+            NoteKind::ExpectedMask(n) => format!("expected_mask_bytes={n}"),
+        }
+    }
+}
+
 impl Node {
-    fn from_field(index: usize, f: &crate::FieldDef, present: bool, note: &str) -> Node {
+    fn from_field(
+        owner_type: usize,
+        index: usize,
+        f: &FieldDef,
+        present: bool,
+        note: NoteKind,
+    ) -> Node {
         Node {
             field_index: index,
-            name: f.name.clone(),
-            type_name: f.type_name.clone(),
+            owner_type: owner_type as i32,
+            name_kind: NameKind::Field,
             meta_kind: f.meta_kind,
             meta_size: f.meta_size,
             meta_aux: f.meta_aux,
             present,
             decode_kind: if present { "unknown" } else { "absent" },
-            note: note.to_string(),
+            note,
             child_type_index: -1,
             ..Default::default()
         }
@@ -69,14 +119,157 @@ impl Node {
 pub struct Block {
     pub entry_index: usize,
     pub class_index: u32,
-    pub class_name: String,
     pub data_offset: usize,
     pub data_size: usize,
     pub mask_byte_count: usize,
-    pub header_mask_bytes: Vec<u8>,
+    pub mask_span: (u32, u32),
     pub reserved_u32: u32,
     pub fields: Vec<Node>,
     pub undecoded: Vec<(usize, usize)>,
+}
+
+/// Rendering context: raw save bytes plus the schema.
+pub struct Ctx<'a> {
+    pub raw: &'a [u8],
+    pub schema: &'a Schema,
+}
+
+impl<'a> Ctx<'a> {
+    fn type_def(&self, index: i64) -> Option<&'a TypeDef> {
+        if index < 0 {
+            return None;
+        }
+        self.schema.types.get(index as usize)
+    }
+
+    pub fn node_name(&self, n: &Node) -> String {
+        match n.name_kind {
+            NameKind::Anonymous => String::new(),
+            NameKind::Element => format!("[{}]", n.field_index),
+            NameKind::Field => self
+                .type_def(n.owner_type as i64)
+                .and_then(|t| t.fields.get(n.field_index))
+                .map(|f| f.name.clone())
+                .unwrap_or_default(),
+        }
+    }
+
+    pub fn node_type_name(&self, n: &Node) -> String {
+        match n.name_kind {
+            NameKind::Anonymous => String::new(),
+            NameKind::Element => self.child_type_name(n),
+            NameKind::Field => self
+                .type_def(n.owner_type as i64)
+                .and_then(|t| t.fields.get(n.field_index))
+                .map(|f| f.type_name.clone())
+                .unwrap_or_default(),
+        }
+    }
+
+    pub fn child_type_name(&self, n: &Node) -> String {
+        if n.child_type_index < 0 {
+            return String::new();
+        }
+        if n.child_type_known {
+            if let Some(t) = self.type_def(n.child_type_index) {
+                return t.name.clone();
+            }
+        }
+        format!("<type {}>", n.child_type_index)
+    }
+
+    pub fn mask_bytes(&self, span: (u32, u32)) -> &'a [u8] {
+        &self.raw[span.0 as usize..span.1 as usize]
+    }
+
+    pub fn value_repr(&self, n: &Node) -> String {
+        match n.decode_kind {
+            "fixed_prefix" | "fixed_suffix" => {
+                fixed_value_repr(self.raw, n.start_offset, n.meta_size, n.edit_format)
+            }
+            "inline_bytes" => {
+                let data = &self.raw[n.start_offset + 4..n.end_offset];
+                let type_name = self.node_type_name(n);
+                let lower = type_name.to_ascii_lowercase();
+                if n.meta_size == 1 && (lower.contains("string") || lower.ends_with('a')) {
+                    let mut trimmed = data;
+                    while let Some((&0, rest)) = trimmed.split_last() {
+                        trimmed = rest;
+                    }
+                    py_str_repr(&ascii_replace(trimmed))
+                } else if n.meta_size == 1 {
+                    hex(data)
+                } else {
+                    let preview = hex(&data[..data.len().min(32)]);
+                    format!("bytes={} preview={preview}", data.len())
+                }
+            }
+            "dynamic_array" => {
+                let meta = n.meta_size as usize;
+                let (count, data_start, data_end) = match n.note {
+                    NoteKind::DynZeros => {
+                        let count = u32le(self.raw, n.start_offset + 5) as usize;
+                        (
+                            count,
+                            n.start_offset + 9,
+                            n.start_offset + 9 + count * meta,
+                        )
+                    }
+                    NoteKind::DynMarker(len) => {
+                        let marker_end = n.start_offset + len as usize;
+                        let count = u32le(self.raw, marker_end + 1) as usize;
+                        (count, marker_end + 5, marker_end + 5 + count * meta)
+                    }
+                    NoteKind::DynCompact => {
+                        let count = u16le(self.raw, n.start_offset + 2) as usize;
+                        (count, n.start_offset + 6, n.end_offset)
+                    }
+                    _ => {
+                        let count = u32le(self.raw, n.start_offset + 1) as usize;
+                        (count, n.start_offset + 5, n.end_offset)
+                    }
+                };
+                let data = &self.raw[data_start..data_end];
+                let preview = hex(&data[..data.len().min(16)]);
+                format!("count={count} bytes={} preview={preview}", data.len())
+            }
+            "object_locator" | "list_element" => {
+                if matches!(n.note, NoteKind::CompactElement) {
+                    format!(
+                        "type={} target=0x{:X}",
+                        self.child_type_name(n),
+                        n.child_payload_offset
+                    )
+                } else {
+                    format!(
+                        "type={} mask={} target=0x{:X}",
+                        self.child_type_name(n),
+                        hex(self.mask_bytes(n.child_mask_span)),
+                        n.child_payload_offset
+                    )
+                }
+            }
+            "object_list" => format!("prefix={} count={}", n.list_prefix_u8, n.list_count),
+            _ => String::new(),
+        }
+    }
+
+    pub fn note_repr(&self, n: &Node) -> String {
+        self.note_string(&n.note)
+    }
+
+    fn note_string(&self, note: &NoteKind) -> String {
+        note.render()
+    }
+
+    /// The digest hashes child_type_name exactly as the node carries it -
+    /// empty for plain nodes, name or `<type N>` for locators.
+    fn child_type_name_for_digest(&self, n: &Node) -> String {
+        if n.child_type_index < 0 {
+            return String::new();
+        }
+        self.child_type_name(n)
+    }
 }
 
 type DecodeResult<T> = Result<T, ()>;
@@ -109,8 +302,7 @@ fn hex(data: &[u8]) -> String {
 
 /// Python float repr: David Gay style - the smallest number of significant
 /// digits that round-trips, correctly rounded, then CPython's fixed-or-
-/// scientific presentation. Rust's {:?} uses Ryu, which can pick a different
-/// final digit when two shortest strings both round-trip.
+/// scientific presentation.
 fn py_float_repr(v: f64) -> String {
     if v.is_nan() {
         return "nan".into();
@@ -119,7 +311,11 @@ fn py_float_repr(v: f64) -> String {
         return if v > 0.0 { "inf".into() } else { "-inf".into() };
     }
     if v == 0.0 {
-        return if v.is_sign_negative() { "-0.0".into() } else { "0.0".into() };
+        return if v.is_sign_negative() {
+            "-0.0".into()
+        } else {
+            "0.0".into()
+        };
     }
 
     let mut sci = String::new();
@@ -129,7 +325,6 @@ fn py_float_repr(v: f64) -> String {
             break;
         }
     }
-    // sci looks like -2.7945938110351562e0
     let negative = sci.starts_with('-');
     let body = sci.trim_start_matches('-');
     let (mantissa, exp) = body.split_once('e').unwrap();
@@ -239,102 +434,61 @@ fn field_present(mask: &[u8], index: usize) -> bool {
     (mask[byte] & (1 << (index % 8))) != 0
 }
 
-/// Mirror of _decode_fixed_value. Returns (end, value_repr, edit_format, editable).
-fn decode_fixed_value(
-    raw: &[u8],
-    offset: usize,
-    f: &crate::FieldDef,
-) -> (usize, String, String, bool) {
-    let size = f.meta_size as usize;
-    let end = offset + size;
+fn fixed_value_repr(raw: &[u8], offset: usize, size: u16, edit_format: &str) -> String {
+    let end = offset + size as usize;
     let data = &raw[offset..end];
-    let edit_format = type_to_edit_format(&f.type_name, f.meta_size);
-    let editable = !edit_format.is_empty();
-    let lower = f.type_name.to_ascii_lowercase();
-
-    if lower == "bool" && size == 1 {
-        let repr = if data[0] != 0 { "true" } else { "false" };
-        return (end, repr.into(), "bool".into(), true);
-    }
     match edit_format {
-        "<f" => {
-            let v = f32::from_le_bytes(data.try_into().unwrap()) as f64;
-            (end, py_float_repr(v), "<f".into(), true)
-        }
-        "<d" => {
-            let v = f64::from_le_bytes(data.try_into().unwrap());
-            (end, py_float_repr(v), "<d".into(), true)
-        }
-        "<b" => (end, (data[0] as i8).to_string(), "<b".into(), editable),
-        "<h" => (
-            end,
-            i16::from_le_bytes(data.try_into().unwrap()).to_string(),
-            "<h".into(),
-            editable,
-        ),
-        "<i" => (
-            end,
-            i32::from_le_bytes(data.try_into().unwrap()).to_string(),
-            "<i".into(),
-            editable,
-        ),
-        "<q" => (
-            end,
-            i64::from_le_bytes(data.try_into().unwrap()).to_string(),
-            "<q".into(),
-            editable,
-        ),
-        "<B" => (end, data[0].to_string(), "<B".into(), editable),
-        "<H" => (end, u16le(raw, offset).to_string(), "<H".into(), editable),
-        "<I" => (end, u32le(raw, offset).to_string(), "<I".into(), editable),
-        "<Q" => (end, u64le(raw, offset).to_string(), "<Q".into(), editable),
-        _ => (end, hex(data), String::new(), false),
+        "bool" => (if data[0] != 0 { "true" } else { "false" }).into(),
+        "<f" => py_float_repr(f32::from_le_bytes(data.try_into().unwrap()) as f64),
+        "<d" => py_float_repr(f64::from_le_bytes(data.try_into().unwrap())),
+        "<b" => (data[0] as i8).to_string(),
+        "<h" => i16::from_le_bytes(data.try_into().unwrap()).to_string(),
+        "<i" => i32::from_le_bytes(data.try_into().unwrap()).to_string(),
+        "<q" => i64::from_le_bytes(data.try_into().unwrap()).to_string(),
+        "<B" => data[0].to_string(),
+        "<H" => u16le(raw, offset).to_string(),
+        "<I" => u32le(raw, offset).to_string(),
+        "<Q" => u64le(raw, offset).to_string(),
+        _ => hex(data),
     }
 }
 
-/// Mirror of _decode_inline_bytes. Returns (end, value_repr, note).
+/// Mirror of _decode_fixed_value's cursor movement; formatting is deferred.
+/// Python marks bool and float fields editable unconditionally; everything
+/// else follows the edit format.
+fn decode_fixed(_raw: &[u8], offset: usize, f: &FieldDef) -> (usize, &'static str, bool) {
+    let edit_format = type_to_edit_format(&f.type_name, f.meta_size);
+    let is_bool = f.type_name.eq_ignore_ascii_case("bool") && f.meta_size == 1;
+    let editable = is_bool || matches!(edit_format, "<f" | "<d") || !edit_format.is_empty();
+    (offset + f.meta_size as usize, edit_format, editable)
+}
+
+/// Mirror of _decode_inline_bytes; only the extent and count are kept.
 fn decode_inline_bytes(
     raw: &[u8],
     offset: usize,
-    f: &crate::FieldDef,
+    f: &FieldDef,
     tail: usize,
-) -> DecodeResult<(usize, String, String)> {
+) -> DecodeResult<(usize, u32)> {
     if offset + 4 > tail {
         return Err(());
     }
-    let count = u32le(raw, offset) as usize;
-    let total = 4 + count * f.meta_size as usize;
+    let count = u32le(raw, offset);
+    let total = 4 + count as usize * f.meta_size as usize;
     let end = offset + total;
     if end > tail {
         return Err(());
     }
-    let data = &raw[offset + 4..end];
-    let lower = f.type_name.to_ascii_lowercase();
-    let value_repr = if f.meta_size == 1 && (lower.contains("string") || lower.ends_with('a')) {
-        let trimmed: &[u8] = {
-            let mut t = data;
-            while let Some((&0, rest)) = t.split_last() {
-                t = rest;
-            }
-            t
-        };
-        py_str_repr(&ascii_replace(trimmed))
-    } else if f.meta_size == 1 {
-        hex(data)
-    } else {
-        let preview = hex(&data[..data.len().min(32)]);
-        format!("bytes={} preview={preview}", data.len())
-    };
-    Ok((end, value_repr, format!("count={count}")))
+    Ok((end, count))
 }
 
-/// Mirror of _decode_dynamic_array. Returns (end, value_repr, note).
+/// Mirror of _decode_dynamic_array; extent plus which layout matched.
 fn decode_dynamic_array(
     raw: &[u8],
     offset: usize,
-    f: &crate::FieldDef,
+    f: &FieldDef,
     tail: usize,
-) -> DecodeResult<(usize, String, String)> {
+) -> DecodeResult<(usize, NoteKind)> {
     let meta = f.meta_size as usize;
     if offset + 5 > tail {
         return Err(());
@@ -344,13 +498,7 @@ fn decode_dynamic_array(
         let total = 9 + count * meta + 5;
         let end = offset + total;
         if count < 0x10000 && end <= tail && raw[end - 5..end] == [1, 1, 1, 1, 1] {
-            let data = &raw[offset + 9..offset + 9 + count * meta];
-            let preview = hex(&data[..data.len().min(16)]);
-            return Ok((
-                end,
-                format!("count={count} bytes={} preview={preview}", data.len()),
-                "dynamic primitive array (prefix 0000060100)".into(),
-            ));
+            return Ok((end, NoteKind::DynZeros));
         }
     }
     if raw[offset] == 1 && offset + 7 <= tail {
@@ -370,62 +518,36 @@ fn decode_dynamic_array(
                 if end < tail && raw[end] == 1 {
                     end += 1;
                 }
-                let data_offset = marker_end + 5;
-                let data = &raw[data_offset..data_offset + count * meta];
-                let preview = hex(&data[..data.len().min(16)]);
-                return Ok((
-                    end,
-                    format!("count={count} bytes={} preview={preview}", data.len()),
-                    format!(
-                        "dynamic primitive array (marker prefix len={})",
-                        marker_end - offset
-                    ),
-                ));
+                return Ok((end, NoteKind::DynMarker((marker_end - offset) as u32)));
             }
         }
     }
-    let (count, total, note, compact) = if offset + 6 <= tail
+    let (total, note) = if offset + 6 <= tail
         && raw[offset] == 0
         && raw[offset + 1] == 0
         && raw[offset + 4] == 0
         && raw[offset + 5] == 0
     {
         let count = u16le(raw, offset + 2) as usize;
-        (
-            count,
-            6 + count * meta,
-            "dynamic primitive array (compact header)".to_string(),
-            true,
-        )
+        (6 + count * meta, NoteKind::DynCompact)
     } else {
         let prefix = raw[offset];
         let count = u32le(raw, offset + 1) as usize;
-        let mut note = "dynamic primitive array".to_string();
-        if prefix != 0 {
-            note.push_str(&format!(" prefix=0x{prefix:02X}"));
-        }
-        (count, 1 + 4 + count * meta, note, false)
+        let note = if prefix != 0 {
+            NoteKind::DynPrefix(prefix)
+        } else {
+            NoteKind::DynPlain
+        };
+        (1 + 4 + count * meta, note)
     };
     let end = offset + total;
     if end > tail {
         return Err(());
     }
-    let data_offset = offset + if compact { 6 } else { 5 };
-    let data = &raw[data_offset..end];
-    let preview = hex(&data[..data.len().min(16)]);
-    Ok((
-        end,
-        format!("count={count} bytes={} preview={preview}", data.len()),
-        note,
-    ))
+    Ok((end, note))
 }
 
-fn compute_undecoded(
-    _block_start: usize,
-    block_end: usize,
-    header_end: usize,
-    fields: &[Node],
-) -> Vec<(usize, usize)> {
+fn compute_undecoded(block_end: usize, header_end: usize, fields: &[Node]) -> Vec<(usize, usize)> {
     let mut decoded: Vec<(usize, usize)> = fields
         .iter()
         .filter(|f| f.start_offset < f.end_offset)
@@ -447,13 +569,15 @@ fn compute_undecoded(
 }
 
 /// Mirror of _decode_inline_object_payload.
+#[allow(clippy::too_many_arguments)]
 fn decode_inline_object_payload(
     raw: &[u8],
+    schema: &Schema,
     type_def: &TypeDef,
+    owner_type: usize,
     mask: &[u8],
     payload_start: usize,
     tail: usize,
-    schema: &Schema,
     use_types: bool,
 ) -> DecodeResult<(usize, u32, u32, Vec<Node>)> {
     if payload_start + 8 > tail {
@@ -465,7 +589,7 @@ fn decode_inline_object_payload(
 
     for (index, f) in type_def.fields.iter().enumerate() {
         let present = field_present(mask, index);
-        let mut target = Node::from_field(index, f, present, "");
+        let mut target = Node::from_field(owner_type, index, f, present, NoteKind::Empty);
         if !present {
             target.decode_kind = "absent";
             fields.push(target);
@@ -475,11 +599,10 @@ fn decode_inline_object_payload(
             if cursor + f.meta_size as usize > tail {
                 return Err(());
             }
-            let (end, repr, fmt, editable) = decode_fixed_value(raw, cursor, f);
+            let (end, fmt, editable) = decode_fixed(raw, cursor, f);
             target.decode_kind = "fixed_prefix";
             target.start_offset = cursor;
             target.end_offset = end;
-            target.value_repr = repr;
             target.edit_format = fmt;
             target.editable = editable;
             cursor = end;
@@ -487,22 +610,20 @@ fn decode_inline_object_payload(
             continue;
         }
         if f.meta_kind == 1 && f.meta_size > 0 {
-            let (end, repr, note) = decode_inline_bytes(raw, cursor, f, tail)?;
+            let (end, count) = decode_inline_bytes(raw, cursor, f, tail)?;
             target.decode_kind = "inline_bytes";
             target.start_offset = cursor;
             target.end_offset = end;
-            target.value_repr = repr;
-            target.note = note;
+            target.note = NoteKind::Count(count);
             cursor = end;
             fields.push(target);
             continue;
         }
         if f.meta_kind == 3 && f.meta_size > 0 {
-            let (end, repr, note) = decode_dynamic_array(raw, cursor, f, tail)?;
+            let (end, note) = decode_dynamic_array(raw, cursor, f, tail)?;
             target.decode_kind = "dynamic_array";
             target.start_offset = cursor;
             target.end_offset = end;
-            target.value_repr = repr;
             target.note = note;
             cursor = end;
             fields.push(target);
@@ -510,10 +631,10 @@ fn decode_inline_object_payload(
         }
         if f.meta_kind == 4 || f.meta_kind == 5 {
             let (end, mut locator) =
-                decode_inline_object_locator(raw, cursor, tail, schema, use_types, f.meta_kind)?;
+                decode_inline_object_locator(raw, schema, cursor, tail, use_types, f.meta_kind)?;
             locator.field_index = index;
-            locator.name = f.name.clone();
-            locator.type_name = f.type_name.clone();
+            locator.owner_type = owner_type as i32;
+            locator.name_kind = NameKind::Field;
             locator.meta_kind = f.meta_kind;
             locator.meta_size = f.meta_size;
             locator.meta_aux = f.meta_aux;
@@ -522,10 +643,10 @@ fn decode_inline_object_payload(
             continue;
         }
         if f.meta_kind == 6 || f.meta_kind == 7 {
-            let (end, mut list_field) = decode_object_list(raw, cursor, tail, schema)?;
+            let (end, mut list_field) = decode_object_list(raw, schema, cursor, tail)?;
             list_field.field_index = index;
-            list_field.name = f.name.clone();
-            list_field.type_name = f.type_name.clone();
+            list_field.owner_type = owner_type as i32;
+            list_field.name_kind = NameKind::Field;
             list_field.meta_kind = f.meta_kind;
             list_field.meta_size = f.meta_size;
             list_field.meta_aux = f.meta_aux;
@@ -545,23 +666,20 @@ fn decode_inline_object_payload(
         }
     }
     let size_field_offset = size_field_offset.ok_or(())?;
-    let size_u32 = u32le(raw, size_field_offset);
-    Ok((size_field_offset + 4, reserved_u32, size_u32, fields))
-}
-
-fn lookup_type<'a>(schema: &'a Schema, index: usize, use_types: bool) -> Option<&'a TypeDef> {
-    if !use_types {
-        return None;
-    }
-    schema.types.get(index)
+    Ok((
+        size_field_offset + 4,
+        reserved_u32,
+        u32le(raw, size_field_offset),
+        fields,
+    ))
 }
 
 /// Mirror of _decode_inline_object_locator.
 fn decode_inline_object_locator(
     raw: &[u8],
+    schema: &Schema,
     cursor: usize,
     tail: usize,
-    schema: &Schema,
     use_types: bool,
     locator_kind: u16,
 ) -> DecodeResult<(usize, Node)> {
@@ -606,34 +724,36 @@ fn decode_inline_object_locator(
     if wrapper_end > tail {
         return Err(());
     }
-    let mask_bytes = raw[body_cursor + 2..body_cursor + 2 + mask_count].to_vec();
+    let mask_span = (
+        (body_cursor + 2) as u32,
+        (body_cursor + 2 + mask_count) as u32,
+    );
     let child_type_index = u16le(raw, body_cursor + 2 + mask_count) as usize;
     let child_reserved_u8 = raw[body_cursor + 2 + mask_count + 2];
     let sentinel1 = u32le(raw, body_cursor + 2 + mask_count + 3);
     let sentinel2 = u32le(raw, body_cursor + 2 + mask_count + 7);
     let payload_offset = u32le(raw, body_cursor + 2 + mask_count + 11) as usize;
-    let child_type_def = lookup_type(schema, child_type_index, use_types);
-    let child_type_name = child_type_def
-        .map(|t| t.name.clone())
-        .unwrap_or_else(|| format!("<type {child_type_index}>"));
+    let child_type_def = if use_types {
+        schema.types.get(child_type_index)
+    } else {
+        None
+    };
 
     let mut end = wrapper_end;
     let mut node = Node {
+        name_kind: NameKind::Anonymous,
+        owner_type: -1,
         meta_kind: locator_kind,
         present: true,
         decode_kind: "object_locator",
         start_offset: cursor,
         end_offset: end,
-        value_repr: format!(
-            "type={child_type_name} mask={} target=0x{payload_offset:X}",
-            hex(&mask_bytes)
-        ),
         child_prefix_u16: prefix_u16,
         child_prefix_u8: prefix_u8,
         child_mask_byte_count: mask_count,
-        child_mask_bytes: mask_bytes.clone(),
+        child_mask_span: mask_span,
         child_type_index: child_type_index as i64,
-        child_type_name,
+        child_type_known: child_type_def.is_some(),
         child_reserved_u8,
         child_sentinel1_u32: sentinel1,
         child_sentinel2_u32: sentinel2,
@@ -643,13 +763,15 @@ fn decode_inline_object_locator(
 
     if payload_offset == wrapper_end {
         if let Some(td) = child_type_def {
+            let mask = raw[mask_span.0 as usize..mask_span.1 as usize].to_vec();
             let (child_end, reserved, size, children) = decode_inline_object_payload(
                 raw,
+                schema,
                 td,
-                &mask_bytes,
+                child_type_index,
+                &mask,
                 payload_offset,
                 tail,
-                schema,
                 use_types,
             )?;
             node.child_reserved_u32 = reserved;
@@ -677,9 +799,9 @@ fn decode_inline_object_locator(
 /// Mirror of _decode_compact_list_element (post NameError fix).
 fn decode_compact_list_element(
     raw: &[u8],
+    schema: &Schema,
     cursor: usize,
     tail: usize,
-    schema: &Schema,
     use_types: bool,
 ) -> DecodeResult<(usize, Node)> {
     if cursor + 18 > tail {
@@ -693,7 +815,7 @@ fn decode_compact_list_element(
     if cursor + header_size > tail {
         return Err(());
     }
-    let mask_bytes = raw[cursor + 2..cursor + 2 + mask_count].to_vec();
+    let mask_span = ((cursor + 2) as u32, (cursor + 2 + mask_count) as u32);
     let child_type_index = u16le(raw, cursor + 2 + mask_count) as usize;
     let child_reserved_u8 = raw[cursor + 2 + mask_count + 2];
     let sentinel_offset = cursor + 2 + mask_count + 3;
@@ -701,25 +823,40 @@ fn decode_compact_list_element(
         return Err(());
     }
     let payload_offset = u32le(raw, sentinel_offset + 8) as usize;
-    let td = lookup_type(schema, child_type_index, use_types).ok_or(())?;
+    let td = if use_types {
+        schema.types.get(child_type_index)
+    } else {
+        None
+    }
+    .ok_or(())?;
     if payload_offset != cursor + header_size {
         return Err(());
     }
-    let (child_end, reserved, size, children) =
-        decode_inline_object_payload(raw, td, &mask_bytes, payload_offset, tail, schema, use_types)?;
+    let mask = raw[mask_span.0 as usize..mask_span.1 as usize].to_vec();
+    let (child_end, reserved, size, children) = decode_inline_object_payload(
+        raw,
+        schema,
+        td,
+        child_type_index,
+        &mask,
+        payload_offset,
+        tail,
+        use_types,
+    )?;
     let node = Node {
+        name_kind: NameKind::Anonymous,
+        owner_type: -1,
         meta_kind: 6,
         present: true,
         decode_kind: "object_locator",
         start_offset: cursor,
         end_offset: child_end,
-        value_repr: format!("type={} target=0x{payload_offset:X}", td.name),
         child_prefix_u16: 0,
         child_prefix_u8: 0,
         child_mask_byte_count: mask_count,
-        child_mask_bytes: mask_bytes,
+        child_mask_span: mask_span,
         child_type_index: child_type_index as i64,
-        child_type_name: td.name.clone(),
+        child_type_known: true,
         child_reserved_u8,
         child_sentinel1_u32: 0xFFFF_FFFF,
         child_sentinel2_u32: 0xFFFF_FFFF,
@@ -728,7 +865,7 @@ fn decode_compact_list_element(
         child_size_u32: size,
         child_fields: Some(children),
         child_undecoded: Some(Vec::new()),
-        note: "compact_list_element".into(),
+        note: NoteKind::CompactElement,
         ..Default::default()
     };
     Ok((child_end, node))
@@ -736,23 +873,23 @@ fn decode_compact_list_element(
 
 fn decode_object_list_element(
     raw: &[u8],
+    schema: &Schema,
     cursor: usize,
     tail: usize,
-    schema: &Schema,
     use_types: bool,
 ) -> DecodeResult<(usize, Node)> {
-    if let Ok(hit) = decode_inline_object_locator(raw, cursor, tail, schema, use_types, 4) {
+    if let Ok(hit) = decode_inline_object_locator(raw, schema, cursor, tail, use_types, 4) {
         return Ok(hit);
     }
-    decode_compact_list_element(raw, cursor, tail, schema, use_types)
+    decode_compact_list_element(raw, schema, cursor, tail, use_types)
 }
 
 /// Mirror of _decode_object_list.
 fn decode_object_list(
     raw: &[u8],
+    schema: &Schema,
     cursor: usize,
     tail: usize,
-    schema: &Schema,
 ) -> DecodeResult<(usize, Node)> {
     if cursor + 18 > tail {
         return Err(());
@@ -833,28 +970,29 @@ fn decode_object_list(
             let mut element_cursor = body_cursor + header_size;
             let mut elements = Vec::new();
             for index in 0..count as usize {
-                let hit = decode_object_list_element(raw, element_cursor, tail, schema, true)
+                let hit = decode_object_list_element(raw, schema, element_cursor, tail, true)
                     .or_else(|_| {
-                        decode_object_list_element(raw, element_cursor, tail, schema, false)
+                        decode_object_list_element(raw, schema, element_cursor, tail, false)
                     });
                 let (end, mut element) = match hit {
                     Ok(v) => v,
                     Err(()) => break,
                 };
                 element.field_index = index;
-                element.name = format!("[{index}]");
-                element.type_name = element.child_type_name.clone();
+                element.name_kind = NameKind::Element;
                 element.decode_kind = "list_element";
                 elements.push(element);
                 element_cursor = end;
             }
             let node = Node {
+                name_kind: NameKind::Anonymous,
+                owner_type: -1,
                 meta_kind: 6,
                 present: true,
                 decode_kind: "object_list",
                 start_offset: cursor,
                 end_offset: element_cursor,
-                value_repr: format!("prefix={prefix_u8} count={count}"),
+                child_type_index: -1,
                 list_prefix_u8: prefix_u8,
                 list_count: count,
                 list_reserved1_u32: r1,
@@ -867,13 +1005,11 @@ fn decode_object_list(
                 } else {
                     (body_cursor - cursor) + header_size
                 },
-                // GenericFieldValue defaults child_type_index to -1.
-                child_type_index: -1,
                 list_elements: Some(elements),
                 note: if body_cursor != cursor {
-                    format!("header_offset=+{}", body_cursor - cursor)
+                    NoteKind::HeaderOffset(body_cursor - cursor)
                 } else {
-                    String::new()
+                    NoteKind::Empty
                 },
                 ..Default::default()
             };
@@ -889,20 +1025,22 @@ fn decode_object_list(
 }
 
 /// Mirror of _decode_fields_in_region.
+#[allow(clippy::too_many_arguments)]
 fn decode_fields_in_region(
     raw: &[u8],
+    schema: &Schema,
     type_def: &TypeDef,
+    owner_type: usize,
     mask: &[u8],
     region_start: usize,
     region_end: usize,
-    schema: &Schema,
-    note: &str,
+    note: NoteKind,
 ) -> (Vec<Node>, Vec<(usize, usize)>) {
     let mut fields: Vec<Node> = type_def
         .fields
         .iter()
         .enumerate()
-        .map(|(i, f)| Node::from_field(i, f, field_present(mask, i), note))
+        .map(|(i, f)| Node::from_field(owner_type, i, f, field_present(mask, i), note.clone()))
         .collect();
 
     let mut tail = region_end;
@@ -920,7 +1058,7 @@ fn decode_fields_in_region(
             break;
         }
         let start = tail - size;
-        let (end, repr, fmt, editable) = decode_fixed_value(raw, start, f);
+        let (end, fmt, editable) = decode_fixed(raw, start, f);
         if end != tail {
             break;
         }
@@ -928,7 +1066,6 @@ fn decode_fields_in_region(
         target.decode_kind = "fixed_suffix";
         target.start_offset = start;
         target.end_offset = end;
-        target.value_repr = repr;
         target.edit_format = fmt;
         target.editable = editable;
         tail = start;
@@ -951,52 +1088,49 @@ fn decode_fields_in_region(
             if head + f.meta_size as usize > tail {
                 break;
             }
-            let (end, repr, fmt, editable) = decode_fixed_value(raw, head, f);
+            let (end, fmt, editable) = decode_fixed(raw, head, f);
             let target = &mut fields[index];
             target.decode_kind = "fixed_prefix";
             target.start_offset = head;
             target.end_offset = end;
-            target.value_repr = repr;
             target.edit_format = fmt;
             target.editable = editable;
             head = end;
             continue;
         }
         if f.meta_kind == 1 && f.meta_size > 0 {
-            let Ok((end, repr, note_text)) = decode_inline_bytes(raw, head, f, tail) else {
+            let Ok((end, count)) = decode_inline_bytes(raw, head, f, tail) else {
                 break;
             };
             let target = &mut fields[index];
             target.decode_kind = "inline_bytes";
             target.start_offset = head;
             target.end_offset = end;
-            target.value_repr = repr;
-            target.note = note_text;
+            target.note = NoteKind::Count(count);
             head = end;
             continue;
         }
         if f.meta_kind == 3 && f.meta_size > 0 {
-            let Ok((end, repr, note_text)) = decode_dynamic_array(raw, head, f, tail) else {
+            let Ok((end, dyn_note)) = decode_dynamic_array(raw, head, f, tail) else {
                 break;
             };
             let target = &mut fields[index];
             target.decode_kind = "dynamic_array";
             target.start_offset = head;
             target.end_offset = end;
-            target.value_repr = repr;
-            target.note = note_text;
+            target.note = dyn_note;
             head = end;
             continue;
         }
         if f.meta_kind == 4 || f.meta_kind == 5 {
             let Ok((end, mut locator)) =
-                decode_inline_object_locator(raw, head, tail, schema, true, f.meta_kind)
+                decode_inline_object_locator(raw, schema, head, tail, true, f.meta_kind)
             else {
                 break;
             };
             locator.field_index = index;
-            locator.name = f.name.clone();
-            locator.type_name = f.type_name.clone();
+            locator.owner_type = owner_type as i32;
+            locator.name_kind = NameKind::Field;
             locator.meta_kind = f.meta_kind;
             locator.meta_size = f.meta_size;
             locator.meta_aux = f.meta_aux;
@@ -1005,12 +1139,12 @@ fn decode_fields_in_region(
             continue;
         }
         if f.meta_kind == 6 || f.meta_kind == 7 {
-            let Ok((end, mut list_field)) = decode_object_list(raw, head, tail, schema) else {
+            let Ok((end, mut list_field)) = decode_object_list(raw, schema, head, tail) else {
                 break;
             };
             list_field.field_index = index;
-            list_field.name = f.name.clone();
-            list_field.type_name = f.type_name.clone();
+            list_field.owner_type = owner_type as i32;
+            list_field.name_kind = NameKind::Field;
             list_field.meta_kind = f.meta_kind;
             list_field.meta_size = f.meta_size;
             list_field.meta_aux = f.meta_aux;
@@ -1021,65 +1155,71 @@ fn decode_fields_in_region(
         break;
     }
 
-    let undecoded = compute_undecoded(region_start, region_end, region_start, &fields);
+    let undecoded = compute_undecoded(region_end, region_start, &fields);
     (fields, undecoded)
 }
 
-/// Mirror of decode_object_blocks.
-pub fn decode_blocks(raw: &[u8], schema: &Schema, entries: &[TocEntry]) -> Vec<Block> {
-    let mut blocks = Vec::new();
-    for entry in entries {
-        let Some(type_def) = schema.types.get(entry.class_index as usize) else {
-            continue;
-        };
-        let block_start = entry.data_offset as usize;
-        let block_end = raw.len().min(block_start + entry.data_size as usize);
-        if block_end <= block_start {
-            continue;
-        }
-        let expected_mask = ((type_def.fields.len() + 7) / 8).max(1);
-        if block_start + 2 > block_end {
-            continue;
-        }
-        let actual_mask = u16le(raw, block_start) as usize;
-        let mut mask_count = expected_mask;
-        if actual_mask > 0 && actual_mask <= 16 {
-            mask_count = actual_mask;
-        }
-        let note = if mask_count != expected_mask {
-            format!("expected_mask_bytes={expected_mask}")
-        } else {
-            String::new()
-        };
-        let header_end = block_start + 2 + mask_count + 4;
-        if header_end > block_end {
-            continue;
-        }
-        let mask_bytes = raw[block_start + 2..block_start + 2 + mask_count].to_vec();
-        let reserved_u32 = u32le(raw, block_start + 2 + mask_count);
-        let (fields, undecoded) = decode_fields_in_region(
-            raw,
-            type_def,
-            &mask_bytes,
-            header_end,
-            block_end,
-            schema,
-            &note,
-        );
-        blocks.push(Block {
-            entry_index: entry.index,
-            class_index: entry.class_index,
-            class_name: entry.class_name.clone(),
-            data_offset: entry.data_offset as usize,
-            data_size: entry.data_size as usize,
-            mask_byte_count: mask_count,
-            header_mask_bytes: mask_bytes,
-            reserved_u32,
-            fields,
-            undecoded,
-        });
+/// Decode one TOC entry into a Block; None mirrors Python's `continue`.
+pub fn decode_one_block(raw: &[u8], schema: &Schema, entry: &TocEntry) -> Option<Block> {
+    let type_def = schema.types.get(entry.class_index as usize)?;
+    let block_start = entry.data_offset as usize;
+    let block_end = raw.len().min(block_start + entry.data_size as usize);
+    if block_end <= block_start {
+        return None;
     }
-    blocks
+    let expected_mask = ((type_def.fields.len() + 7) / 8).max(1);
+    if block_start + 2 > block_end {
+        return None;
+    }
+    let actual_mask = u16le(raw, block_start) as usize;
+    let mut mask_count = expected_mask;
+    if actual_mask > 0 && actual_mask <= 16 {
+        mask_count = actual_mask;
+    }
+    let note = if mask_count != expected_mask {
+        NoteKind::ExpectedMask(expected_mask)
+    } else {
+        NoteKind::Empty
+    };
+    let header_end = block_start + 2 + mask_count + 4;
+    if header_end > block_end {
+        return None;
+    }
+    let mask_span = (
+        (block_start + 2) as u32,
+        (block_start + 2 + mask_count) as u32,
+    );
+    let mask = raw[mask_span.0 as usize..mask_span.1 as usize].to_vec();
+    let reserved_u32 = u32le(raw, block_start + 2 + mask_count);
+    let (fields, undecoded) = decode_fields_in_region(
+        raw,
+        schema,
+        type_def,
+        entry.class_index as usize,
+        &mask,
+        header_end,
+        block_end,
+        note,
+    );
+    Some(Block {
+        entry_index: entry.index,
+        class_index: entry.class_index,
+        data_offset: entry.data_offset as usize,
+        data_size: entry.data_size as usize,
+        mask_byte_count: mask_count,
+        mask_span,
+        reserved_u32,
+        fields,
+        undecoded,
+    })
+}
+
+/// Mirror of decode_object_blocks: every block, eagerly.
+pub fn decode_blocks(raw: &[u8], schema: &Schema, entries: &[TocEntry]) -> Vec<Block> {
+    entries
+        .iter()
+        .filter_map(|entry| decode_one_block(raw, schema, entry))
+        .collect()
 }
 
 /// FNV-1a over the canonical node stream; the Python side mirrors this walk.
@@ -1110,11 +1250,11 @@ impl Digest {
         self.push(v.to_string().as_bytes());
     }
 
-    pub fn node(&mut self, n: &Node) {
+    pub fn node(&mut self, ctx: &Ctx<'_>, n: &Node) {
         self.nodes += 1;
         self.num(n.field_index as i128);
-        self.text(&n.name);
-        self.text(&n.type_name);
+        self.text(&ctx.node_name(n));
+        self.text(&ctx.node_type_name(n));
         self.num(n.meta_kind as i128);
         self.num(n.meta_size as i128);
         self.num(n.meta_aux as i128);
@@ -1122,16 +1262,21 @@ impl Digest {
         self.text(n.decode_kind);
         self.num(n.start_offset as i128);
         self.num(n.end_offset as i128);
-        self.text(&n.value_repr);
-        self.text(&n.edit_format);
+        self.text(&ctx.value_repr(n));
+        self.text(n.edit_format);
         self.num(n.editable as i128);
-        self.text(&n.note);
+        self.text(&ctx.note_repr(n));
         self.num(n.child_prefix_u16 as i128);
         self.num(n.child_prefix_u8 as i128);
         self.num(n.child_mask_byte_count as i128);
-        self.text(&hex(&n.child_mask_bytes));
+        let mask = if n.child_mask_byte_count > 0 {
+            hex(ctx.mask_bytes(n.child_mask_span))
+        } else {
+            String::new()
+        };
+        self.text(&mask);
         self.num(n.child_type_index as i128);
-        self.text(&n.child_type_name);
+        self.text(&ctx.child_type_name_for_digest(n));
         self.num(n.child_reserved_u8 as i128);
         self.num(n.child_sentinel1_u32 as i128);
         self.num(n.child_sentinel2_u32 as i128);
@@ -1151,7 +1296,7 @@ impl Digest {
             Some(children) => {
                 self.num(children.len() as i128);
                 for child in children {
-                    self.node(child);
+                    self.node(ctx, child);
                 }
             }
         }
@@ -1169,23 +1314,29 @@ impl Digest {
             Some(elements) => {
                 self.num(elements.len() as i128);
                 for element in elements {
-                    self.node(element);
+                    self.node(ctx, element);
                 }
             }
         }
     }
 
-    pub fn block(&mut self, b: &Block) {
+    pub fn block(&mut self, ctx: &Ctx<'_>, b: &Block) {
         self.num(b.entry_index as i128);
         self.num(b.class_index as i128);
-        self.text(&b.class_name);
+        self.text(
+            &ctx.schema
+                .types
+                .get(b.class_index as usize)
+                .map(|t| t.name.clone())
+                .unwrap_or_else(|| format!("<class_{}>", b.class_index)),
+        );
         self.num(b.data_offset as i128);
         self.num(b.data_size as i128);
         self.num(b.mask_byte_count as i128);
-        self.text(&hex(&b.header_mask_bytes));
+        self.text(&hex(ctx.mask_bytes(b.mask_span)));
         self.num(b.reserved_u32 as i128);
         for f in &b.fields {
-            self.node(f);
+            self.node(ctx, f);
         }
         for (a, z) in &b.undecoded {
             self.num(*a as i128);
@@ -1198,37 +1349,70 @@ impl Digest {
     }
 }
 
-/// One line per node in walk order, canonical fields joined by 0x1f.
-pub fn dump_block_lines(block: &Block) -> Vec<String> {
-    fn walk(n: &Node, depth: usize, out: &mut Vec<String>) {
+/// One line per node in walk order, canonical fields joined for diffing.
+pub fn dump_block_lines(ctx: &Ctx<'_>, block: &Block) -> Vec<String> {
+    fn walk(ctx: &Ctx<'_>, n: &Node, depth: usize, out: &mut Vec<String>) {
+        let mask = if n.child_mask_byte_count > 0 {
+            hex(ctx.mask_bytes(n.child_mask_span))
+        } else {
+            String::new()
+        };
         out.push(format!(
             "{}|{}|{}|{}|k{}|s{}|a{}|p{}|{}|{}..{}|v={}|f={}|e{}|n={}|cp{}#{}|cm{}#{}|ct{}={}|cr{}|s1:{}|s2:{}|po{}|cru{}|cs{}|lp{}|lc{}|lr{}:{}:{}:{}:{}|lh{}",
-            depth, n.field_index, n.name, n.type_name, n.meta_kind, n.meta_size,
-            n.meta_aux, n.present as u8, n.decode_kind, n.start_offset, n.end_offset,
-            n.value_repr, n.edit_format, n.editable as u8, n.note,
-            n.child_prefix_u16, n.child_prefix_u8,
-            n.child_mask_byte_count, hex(&n.child_mask_bytes),
-            n.child_type_index, n.child_type_name, n.child_reserved_u8,
-            n.child_sentinel1_u32, n.child_sentinel2_u32, n.child_payload_offset,
-            n.child_reserved_u32, n.child_size_u32,
-            n.list_prefix_u8, n.list_count, n.list_reserved1_u32,
-            n.list_reserved2_u32, n.list_reserved3_u32, n.list_reserved4_u16,
-            n.list_reserved4_u32, n.list_header_size,
+            depth,
+            n.field_index,
+            ctx.node_name(n),
+            ctx.node_type_name(n),
+            n.meta_kind,
+            n.meta_size,
+            n.meta_aux,
+            n.present as u8,
+            n.decode_kind,
+            n.start_offset,
+            n.end_offset,
+            ctx.value_repr(n),
+            n.edit_format,
+            n.editable as u8,
+            ctx.note_repr(n),
+            n.child_prefix_u16,
+            n.child_prefix_u8,
+            n.child_mask_byte_count,
+            mask,
+            n.child_type_index,
+            if n.child_type_index < 0 {
+                String::new()
+            } else {
+                ctx.child_type_name(n)
+            },
+            n.child_reserved_u8,
+            n.child_sentinel1_u32,
+            n.child_sentinel2_u32,
+            n.child_payload_offset,
+            n.child_reserved_u32,
+            n.child_size_u32,
+            n.list_prefix_u8,
+            n.list_count,
+            n.list_reserved1_u32,
+            n.list_reserved2_u32,
+            n.list_reserved3_u32,
+            n.list_reserved4_u16,
+            n.list_reserved4_u32,
+            n.list_header_size,
         ));
         if let Some(children) = &n.child_fields {
             for child in children {
-                walk(child, depth + 1, out);
+                walk(ctx, child, depth + 1, out);
             }
         }
         if let Some(elements) = &n.list_elements {
             for element in elements {
-                walk(element, depth + 1, out);
+                walk(ctx, element, depth + 1, out);
             }
         }
     }
     let mut out = Vec::new();
     for f in &block.fields {
-        walk(f, 0, &mut out);
+        walk(ctx, f, 0, &mut out);
     }
     for (a, b) in &block.undecoded {
         out.push(format!("undecoded {a}..{b}"));
