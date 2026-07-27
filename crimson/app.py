@@ -89,7 +89,9 @@ def _splash(text: str, done: float = 0.0) -> None:
     filled = max(0, min(_BAR_CELLS, round(done * _BAR_CELLS)))
     bar = "=" * filled + "-" * (_BAR_CELLS - filled)
     try:
-        pyi_splash.update_text(f"[{bar}]  {int(done * 100):>3}%   {text}")
+        # Bar grows inside the brackets; the percentage sits hard right,
+        # after a fixed-width status field so it never wanders.
+        pyi_splash.update_text(f"[{bar}]  {text:<26.26}{int(done * 100):>4}%")
     except Exception:
         pass
 
