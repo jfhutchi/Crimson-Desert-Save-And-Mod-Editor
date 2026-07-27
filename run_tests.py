@@ -20,6 +20,9 @@ for index, group in enumerate(GROUPS, 1):
     print(f"--- half {index}: {len(group)} files ---", flush=True)
     result = subprocess.run(
         [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider",
+         # No single test may wedge the gate; the overnight run hung 10h on
+         # one test. thread-method fires even while the Qt loop is pumping.
+         "--timeout=600", "--timeout-method=thread",
          *(f"tests/{name}" for name in group)],
     )
     exit_code = exit_code or result.returncode
