@@ -32,9 +32,15 @@ def _prepare_path() -> None:
 
 _prepare_path()
 
-from PySide6.QtWidgets import QApplication, QMainWindow, QTabWidget  # noqa: E402
+from PySide6.QtWidgets import (  # noqa: E402
+    QApplication,
+    QDialog,
+    QMainWindow,
+    QTabWidget,
+    QWidget,
+)
 
-from PySide6.QtCore import Qt  # noqa: E402
+from PySide6.QtCore import QEvent, QObject, Qt  # noqa: E402
 
 from crimson.common.crimson_shell import (  # noqa: E402
     ShellCommand,
@@ -104,11 +110,35 @@ def _splash_close() -> None:
         pass
 
 
+class _StrayWindowGuard(QObject):
+    """Hide orphan widgets the moment they appear as windows.
+
+    Some pages show widgets before parenting them (the mod editor's
+    collapsible sections, for one); unparented + shown means each becomes
+    its own top-level window that steals focus at launch. Anything real -
+    the shell, dialogs, menus, tooltips - has a title or a special window
+    type and is left alone.
+    """
+
+    def eventFilter(self, obj, event) -> bool:
+        if event.type() == QEvent.Show and isinstance(obj, QWidget):
+            if (
+                obj.isWindow()
+                and obj.windowType() == Qt.Window
+                and not obj.windowTitle()
+                and not isinstance(obj, (QMainWindow, QDialog))
+            ):
+                obj.hide()
+        return False
+
+
 class CrimsonWindow(QMainWindow):
     """The unified application window."""
 
     def __init__(self) -> None:
         super().__init__()
+        self._stray_guard = _StrayWindowGuard(self)
+        QApplication.instance().installEventFilter(self._stray_guard)
         self.setWindowTitle("Crimson Desert — Save & Mod Editor")
         self.resize(1500, 900)
         self.setMinimumSize(900, 560)
