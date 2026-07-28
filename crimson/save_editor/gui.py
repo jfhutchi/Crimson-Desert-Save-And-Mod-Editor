@@ -6525,9 +6525,10 @@ QCheckBox::indicator {{
         layout.addLayout(top)
 
         self._db_table = QTableWidget()
-        self._db_table.setColumnCount(6)
+        self._db_table.setColumnCount(7)
         self._db_table.setHorizontalHeaderLabels([
-            "", "ItemKey", "Name", "Internal Name", "Category", "Max Stack"
+            "", "ItemKey", "Name", "Internal Name", "Category", "Max Stack",
+            "Owned",
         ])
         self._db_table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self._db_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.Interactive)
@@ -34067,6 +34068,27 @@ QCheckBox::indicator {{
 
         self._filter_database()
 
+    def _owned_counts(self) -> dict:
+        """item_key -> (total quantity, set of bags) for the loaded save.
+
+        Cached against the item list so a 6,000-row repopulate does not walk
+        the inventory each time.
+        """
+        items = getattr(self, "_items", None) or []
+        token = (id(items), len(items))
+        if getattr(self, "_owned_index_token", None) == token:
+            return self._owned_index
+        index: dict = {}
+        for item in items:
+            total, bags = index.get(item.item_key, (0, set()))
+            index[item.item_key] = (
+                total + max(1, getattr(item, "stack_count", 1) or 1),
+                bags | ({item.bag} if getattr(item, "bag", "") else set()),
+            )
+        self._owned_index = index
+        self._owned_index_token = token
+        return index
+
     def _filter_database(self) -> None:
         table = self._db_table
         table.setSortingEnabled(False)
@@ -34083,6 +34105,7 @@ QCheckBox::indicator {{
         if cat_filter != "All":
             items = [i for i in items if i.category == cat_filter]
 
+        owned = self._owned_counts()
         table.setRowCount(len(items))
         for row, info in enumerate(items):
             color = QColor(CATEGORY_COLORS.get(info.category, COLORS["text"]))
@@ -34112,6 +34135,20 @@ QCheckBox::indicator {{
             table.setItem(row, 4, cat_item)
 
             table.setItem(row, 5, QTableWidgetItem(str(info.max_stack)))
+
+            total, bags = owned.get(info.item_key, (0, set()))
+            owned_item = QTableWidgetItem()
+            owned_item.setData(Qt.DisplayRole, total)
+            if total:
+                owned_item.setForeground(QBrush(QColor(COLORS["success"])))
+                owned_item.setToolTip(
+                    "In: " + ", ".join(sorted(b for b in bags if b))
+                    if any(bags) else "Owned"
+                )
+            else:
+                owned_item.setForeground(QBrush(QColor(COLORS["text_dim"])))
+                owned_item.setToolTip("Not found in the loaded save")
+            table.setItem(row, 6, owned_item)
 
         table.setSortingEnabled(True)
         self._db_info_label.setText(
