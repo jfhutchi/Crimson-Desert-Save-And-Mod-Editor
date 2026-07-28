@@ -73,6 +73,10 @@ ROUTE_SECTIONS = {
     "Field & Regions": "WORLD",
 }
 
+# Routes deliberately not offered in the shell. The page still exists in
+# its editor; it is simply not reachable from the navigation.
+ROUTE_HIDDEN = {("save_editor", "Teleport")}
+
 ROUTE_RENAMES = {
     ("save_editor", "Blackstar"): "Blackstar Unlock",
     ("game_mods", "Blackstar"): "Blackstar Timers",
@@ -189,6 +193,7 @@ class CrimsonWindow(QMainWindow):
                         badge=GAME_ROUTE_BADGE if is_game else route.badge,
                     )
                     for route in group.routes
+                    if (module_attr, route.label) not in ROUTE_HIDDEN
                 )
                 for route in routes:
                     section = ROUTE_SECTIONS.get(route.label, name)
