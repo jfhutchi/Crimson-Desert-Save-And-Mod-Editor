@@ -388,6 +388,9 @@ class ItemBuffsTab(QWidget):
         toggle.setCursor(Qt.PointingHandCursor)
         toggle.setFixedHeight(22)
 
+        # Parent before showing: an unparented widget that is made visible
+        # becomes its own top-level window and appears in the taskbar.
+        content.setParent(wrapper)
         content.setVisible(start_open)
         cfg = self._config
 
