@@ -40,7 +40,7 @@ from PySide6.QtWidgets import (  # noqa: E402
     QWidget,
 )
 
-from PySide6.QtCore import QEvent, QObject, Qt  # noqa: E402
+from PySide6.QtCore import QEvent, QObject, Qt, QTimer  # noqa: E402
 
 from crimson.common.crimson_shell import (  # noqa: E402
     ShellCommand,
@@ -100,6 +100,28 @@ def _splash(text: str, done: float = 0.0) -> None:
         pyi_splash.update_text(f"[{bar}]  {text:<26.26}{int(done * 100):>4}%")
     except Exception:
         pass
+
+
+def _bring_to_front(window) -> None:
+    """Claim the foreground after a slow start.
+
+    Windows refuses to let an app that took seconds to launch steal focus,
+    so the window opens behind whatever started it - typically Explorer,
+    which pops back in front the moment the splash closes. The launching
+    process grants us foreground rights, so asking explicitly works.
+    """
+    window.setWindowState(
+        (window.windowState() & ~Qt.WindowMinimized) | Qt.WindowActive
+    )
+    window.raise_()
+    window.activateWindow()
+    if sys.platform == "win32":
+        try:
+            import ctypes
+
+            ctypes.windll.user32.SetForegroundWindow(int(window.winId()))
+        except Exception:
+            log.debug("SetForegroundWindow failed", exc_info=True)
 
 
 def _splash_close() -> None:
@@ -445,6 +467,10 @@ def main() -> int:
     _splash("Ready", 1.0)
     window.show()
     _splash_close()
+    # Once now, and once after the splash has finished tearing down - its
+    # closing hands focus back to whatever was in front before.
+    _bring_to_front(window)
+    QTimer.singleShot(250, lambda: _bring_to_front(window))
     return app.exec()
 
 
