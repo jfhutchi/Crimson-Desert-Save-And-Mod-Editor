@@ -10928,6 +10928,13 @@ QCheckBox::indicator {{
             return False
         blob = self._save_data.decompressed_blob
         _write_quest_state(blob, entry, new_state)
+        # The table renders state_name/state_raw, not state, so refreshing
+        # without these leaves the row showing its old label even though the
+        # save was written correctly.
+        entry['state_raw'] = entry['state']
+        entry['state_name'] = QuestEditorWindow.QUEST_STATE_NAMES.get(
+            entry['state'], f"0x{entry['state']:04X}"
+        )
         return True
 
     def _qe_force_state(self) -> None:
