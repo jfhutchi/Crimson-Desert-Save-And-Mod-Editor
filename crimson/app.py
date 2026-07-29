@@ -32,9 +32,15 @@ def _prepare_path() -> None:
 
 _prepare_path()
 
-from PySide6.QtWidgets import QApplication, QMainWindow, QTabWidget  # noqa: E402
+from PySide6.QtWidgets import (  # noqa: E402
+    QApplication,
+    QDialog,
+    QMainWindow,
+    QTabWidget,
+    QWidget,
+)
 
-from PySide6.QtCore import Qt  # noqa: E402
+from PySide6.QtCore import QEvent, QObject, Qt, QTimer  # noqa: E402
 
 from crimson.common.crimson_shell import (  # noqa: E402
     ShellCommand,
@@ -67,6 +73,10 @@ ROUTE_SECTIONS = {
     "Field & Regions": "WORLD",
 }
 
+# Routes deliberately not offered in the shell. The page still exists in
+# its editor; it is simply not reachable from the navigation.
+ROUTE_HIDDEN = {("save_editor", "Teleport")}
+
 ROUTE_RENAMES = {
     ("save_editor", "Blackstar"): "Blackstar Unlock",
     ("game_mods", "Blackstar"): "Blackstar Timers",
@@ -89,9 +99,33 @@ def _splash(text: str, done: float = 0.0) -> None:
     filled = max(0, min(_BAR_CELLS, round(done * _BAR_CELLS)))
     bar = "=" * filled + "-" * (_BAR_CELLS - filled)
     try:
-        pyi_splash.update_text(f"[{bar}]  {int(done * 100):>3}%   {text}")
+        # Bar grows inside the brackets; the percentage sits hard right,
+        # after a fixed-width status field so it never wanders.
+        pyi_splash.update_text(f"[{bar}]  {text:<26.26}{int(done * 100):>4}%")
     except Exception:
         pass
+
+
+def _bring_to_front(window) -> None:
+    """Claim the foreground after a slow start.
+
+    Windows refuses to let an app that took seconds to launch steal focus,
+    so the window opens behind whatever started it - typically Explorer,
+    which pops back in front the moment the splash closes. The launching
+    process grants us foreground rights, so asking explicitly works.
+    """
+    window.setWindowState(
+        (window.windowState() & ~Qt.WindowMinimized) | Qt.WindowActive
+    )
+    window.raise_()
+    window.activateWindow()
+    if sys.platform == "win32":
+        try:
+            import ctypes
+
+            ctypes.windll.user32.SetForegroundWindow(int(window.winId()))
+        except Exception:
+            log.debug("SetForegroundWindow failed", exc_info=True)
 
 
 def _splash_close() -> None:
@@ -102,11 +136,35 @@ def _splash_close() -> None:
         pass
 
 
+class _StrayWindowGuard(QObject):
+    """Hide orphan widgets the moment they appear as windows.
+
+    Some pages show widgets before parenting them (the mod editor's
+    collapsible sections, for one); unparented + shown means each becomes
+    its own top-level window that steals focus at launch. Anything real -
+    the shell, dialogs, menus, tooltips - has a title or a special window
+    type and is left alone.
+    """
+
+    def eventFilter(self, obj, event) -> bool:
+        if event.type() == QEvent.Show and isinstance(obj, QWidget):
+            if (
+                obj.isWindow()
+                and obj.windowType() == Qt.Window
+                and not obj.windowTitle()
+                and not isinstance(obj, (QMainWindow, QDialog))
+            ):
+                obj.hide()
+        return False
+
+
 class CrimsonWindow(QMainWindow):
     """The unified application window."""
 
     def __init__(self) -> None:
         super().__init__()
+        self._stray_guard = _StrayWindowGuard(self)
+        QApplication.instance().installEventFilter(self._stray_guard)
         self.setWindowTitle("Crimson Desert — Save & Mod Editor")
         self.resize(1500, 900)
         self.setMinimumSize(900, 560)
@@ -135,6 +193,7 @@ class CrimsonWindow(QMainWindow):
                         badge=GAME_ROUTE_BADGE if is_game else route.badge,
                     )
                     for route in group.routes
+                    if (module_attr, route.label) not in ROUTE_HIDDEN
                 )
                 for route in routes:
                     section = ROUTE_SECTIONS.get(route.label, name)
@@ -322,6 +381,10 @@ class CrimsonWindow(QMainWindow):
             # each workspace gets its own file instead of clobbering the other.
             MainWindow._CONFIG_FILE = f"config_{module_attr}.json"
             window = MainWindow()
+            # Both editors were standalone apps and re-show themselves from
+            # deferred startup timers, stealing focus over the shell. This
+            # makes any later show() from them render nothing.
+            window.setAttribute(Qt.WA_DontShowOnScreen, True)
         except Exception:
             log.exception("%s workspace failed to load", label)
             return None, []
@@ -409,6 +472,10 @@ def main() -> int:
     _splash("Ready", 1.0)
     window.show()
     _splash_close()
+    # Once now, and once after the splash has finished tearing down - its
+    # closing hands focus back to whatever was in front before.
+    _bring_to_front(window)
+    QTimer.singleShot(250, lambda: _bring_to_front(window))
     return app.exec()
 
 

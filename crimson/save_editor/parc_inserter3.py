@@ -813,7 +813,7 @@ def insert_item_to_inventory(
     skip_verify: bool = False,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     from crimson.save_editor import parc_serializer as _ps
 
     if bag_key < 0:
@@ -1438,7 +1438,7 @@ def insert_quest_completed(
     quest_key: int,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
 
     orig_blob = bytes(blob)
     result = _brfr(orig_blob, {'input_kind': 'raw_blob'})
@@ -1558,7 +1558,7 @@ def complete_mission_simple(
     mission_key: int,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
 
     orig_blob = bytes(blob)
     result = _brfr(orig_blob, {'input_kind': 'raw_blob'})
@@ -1595,7 +1595,7 @@ def complete_mission_entry(
     game_time: int = 0,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     from crimson.save_editor import parc_serializer as _ps
 
     orig_blob = bytes(blob)
@@ -1844,7 +1844,7 @@ def rebuild_dye_list(
     updated_entries: Optional[List[Dict]] = None,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     from crimson.save_editor.parc_inserter2 import parse_and_collect, collect_all_positions
 
     orig_blob = bytes(blob)
@@ -2050,7 +2050,7 @@ def insert_dye_to_item(
     grime: int = 0,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     from crimson.save_editor import parc_serializer as _ps
 
     orig_blob = bytes(blob)
@@ -2270,7 +2270,7 @@ def inject_community_knowledge(
     blob: bytearray,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
 
     orig_blob = bytes(blob)
     result = _brfr(orig_blob, {'input_kind': 'raw_blob'})
@@ -2322,7 +2322,7 @@ def inject_knowledge_locations_only(
     blob: bytearray,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
 
     orig_blob = bytes(blob)
     result = _brfr(orig_blob, {'input_kind': 'raw_blob'})
@@ -2602,7 +2602,7 @@ def inject_knowledge_fast(
     keys_filter: Optional[List[int]] = None,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     from crimson.save_editor import parc_serializer as _ps
     import time
 
@@ -2843,7 +2843,7 @@ def inject_all_knowledge(
     keys_filter: Optional[List[int]] = None,
 ) -> Tuple[bool, bytearray, str]:
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
 
     orig_blob = bytes(blob)
     result = _brfr(orig_blob, {'input_kind': 'raw_blob'})
@@ -2981,7 +2981,7 @@ def insert_abyss_gates(
         })
 
     _ensure_desktop_path()
-    from crimson.save_editor.save_parser import build_result_from_raw as _brfr
+    from crimson.save_editor.native_parse import parse_any as _brfr
     try:
         cdata_path = None
         for base in [_MY_DIR, getattr(sys, '_MEIPASS', _MY_DIR)]:

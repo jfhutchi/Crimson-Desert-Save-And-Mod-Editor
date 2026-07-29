@@ -1,0 +1,15 @@
+[package]
+name = "crimson_parser"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "crimson_parser"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.23", features = ["extension-module", "abi3-py312"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
