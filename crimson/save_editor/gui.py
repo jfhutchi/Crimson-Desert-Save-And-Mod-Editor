@@ -10910,7 +10910,21 @@ QCheckBox::indicator {{
         return w.data(Qt.UserRole) if w else None
 
     def _qe_set_state(self, entry: dict, new_state: int) -> bool:
-        if not self._save_data or entry.get('state_offset', -1) < 0:
+        if not self._save_data:
+            QMessageBox.warning(self, "Quest Editor", "Load a save first.")
+            return False
+        if entry.get('state_offset', -1) < 0:
+            # No state field in the save - typically a quest the character
+            # has never started. Silently returning made the buttons look
+            # broken; say what is actually wrong.
+            QMessageBox.information(
+                self, "Quest Editor",
+                f"'{entry.get('display', entry.get('name', '?'))}' has no state "
+                "field in this save, so its state cannot be changed in place.\n\n"
+                "Quests only gain a state record once the game has touched "
+                "them. Use 'Add Quest as Completed' to insert a record for a "
+                "quest the character has never started.",
+            )
             return False
         blob = self._save_data.decompressed_blob
         _write_quest_state(blob, entry, new_state)
