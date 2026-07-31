@@ -33337,6 +33337,11 @@ QCheckBox::indicator {{
         # the donor row keeps its old key/stack and the swap looks like a no-op.
         donor_item.item_key = target_key
         donor_item.stack_count = target_count
+        # name/category are derived from item_key in _scan_and_populate and are
+        # what the row actually renders - without these the row keeps the
+        # donor's old name and still reads as a failed swap.
+        donor_item.name = self._name_db.get_name(target_key)
+        donor_item.category = self._name_db.get_category(target_key)
         self._dirty = True
         self._populate_inventory()
         self._populate_equipment()
