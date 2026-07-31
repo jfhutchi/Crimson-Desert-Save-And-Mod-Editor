@@ -33307,6 +33307,19 @@ QCheckBox::indicator {{
         patches = smart_item_swap(
             self._save_data.decompressed_blob, donor_item, target_key
         )
+        if not patches:
+            # The swap declines records whose fields are not at the expected
+            # offsets. Reporting success anyway is how this looked like it
+            # worked while changing nothing.
+            QMessageBox.warning(
+                self, "Give Item",
+                f"'{donor_name}' could not be used as the donor: its record "
+                "does not have the standard item layout, so the editor "
+                "refuses to write to it.\n\n"
+                "Pick a different donor - an ordinary inventory item is "
+                "safest. Mercenary-held and vendor records are read-only.",
+            )
+            return
         old_stack_bytes = apply_stack_edit(
             self._save_data.decompressed_blob, donor_item, target_count
         )
@@ -33320,6 +33333,10 @@ QCheckBox::indicator {{
             description=f"Give {target_name} x{target_count} (donor: {donor_name})",
             patches=patches,
         ))
+        # The tables redraw from self._items, not from the blob. Without this
+        # the donor row keeps its old key/stack and the swap looks like a no-op.
+        donor_item.item_key = target_key
+        donor_item.stack_count = target_count
         self._dirty = True
         self._populate_inventory()
         self._populate_equipment()
