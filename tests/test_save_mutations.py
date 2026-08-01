@@ -93,6 +93,83 @@ def test_undo_restores_the_previous_bytes(qt_app, editor) -> None:
     )
 
 
+def blob_record(blob, offset: int) -> tuple[int, int]:
+    """(_itemKey, _stackCount) straight out of the bytes, ignoring any cache."""
+    import struct
+
+    return (
+        struct.unpack_from("<I", blob, offset + 12)[0],
+        struct.unpack_from("<q", blob, offset + 18)[0],
+    )
+
+
+def test_give_item_then_undo_leaves_the_table_agreeing_with_the_blob(
+    qt_app, editor
+) -> None:
+    """_give_item mutates the cached SaveItem; undo must not leave that behind.
+
+    The tables redraw from editor._items, not from the blob, so an undo that
+    only reverts bytes would show the given item over the restored record.
+    """
+    from PySide6.QtWidgets import QDialog
+
+    from crimson.save_editor import gui as gui_mod
+
+    donor = next(
+        i for i in editor._items
+        if i.source == "Inventory" and i.parc_parsed and i.stack_count >= 1
+    )
+    other_key = next(
+        i.item_key for i in editor._items if i.item_key != donor.item_key
+    )
+    before_blob = bytes(editor._save_data.decompressed_blob)
+    offset, before_record = donor.offset, blob_record(before_blob, donor.offset)
+
+    class StubGiveItemDialog:
+        target_key = other_key
+        target_count = donor.stack_count + 7
+        donor_item = donor
+
+        def __init__(self, *args, **kwargs) -> None:
+            pass
+
+        def exec(self):
+            return QDialog.Accepted
+
+    monkey = gui_mod.GiveItemDialog
+    gui_mod.GiveItemDialog = StubGiveItemDialog
+    try:
+        editor._give_item()
+        qt_app.processEvents()
+    finally:
+        gui_mod.GiveItemDialog = monkey
+
+    # The swap has to have actually happened, or the undo below proves nothing.
+    given = blob_record(editor._save_data.decompressed_blob, offset)
+    assert given == (StubGiveItemDialog.target_key, StubGiveItemDialog.target_count), (
+        f"give item did not reach the blob: {given}; "
+        f"dialogs shown: {conftest.DIALOGS[-4:]}"
+    )
+    row = find_at(editor._items, offset)
+    assert row is not None and (row.item_key, row.stack_count) == given, (
+        "the cached row did not follow the swap"
+    )
+
+    editor._undo()
+    for _ in range(50):
+        qt_app.processEvents()
+
+    assert bytes(editor._save_data.decompressed_blob) == before_blob, (
+        "undo did not put the original bytes back"
+    )
+    row = find_at(editor._items, offset)
+    assert row is not None, "the donor row vanished from the cache after undo"
+    assert (row.item_key, row.stack_count) == before_record, (
+        f"the table still shows the given item after undo: "
+        f"cached={(row.item_key, row.stack_count)} blob={before_record}"
+    )
+
+
 def test_saving_without_changes_preserves_the_file(qt_app, editor, save_copy) -> None:
     digest = hashlib.sha256(save_copy.read_bytes()).hexdigest()
     editor._do_save(str(save_copy))

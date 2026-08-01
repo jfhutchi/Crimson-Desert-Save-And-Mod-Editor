@@ -33307,10 +33307,11 @@ QCheckBox::indicator {{
         patches = smart_item_swap(
             self._save_data.decompressed_blob, donor_item, target_key
         )
-        if not patches:
-            # The swap declines records whose fields are not at the expected
-            # offsets. Reporting success anyway is how this looked like it
-            # worked while changing nothing.
+        if not patches and donor_item.item_key != target_key:
+            # No patches is legitimate when the key already matches (a pure
+            # stack top-up). Otherwise the swap declined the record: its
+            # fields are not at the expected offsets. Reporting success
+            # anyway is how this looked like it worked while changing nothing.
             QMessageBox.warning(
                 self, "Give Item",
                 f"'{donor_name}' could not be used as the donor: its record "
