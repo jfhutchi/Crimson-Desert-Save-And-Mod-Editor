@@ -7306,14 +7306,9 @@ class ItemBuffsTab(QWidget):
                     rust_info[gf] = new
         
         
-        if preset.get('drop_default_data') is not None:
-            ddd = preset['drop_default_data']
-            existing = rust_info.get('drop_default_data')
-            for dd in ('drop_enchant_level','add_socket_material_item_list',
-                       'socket_item_list','socket_valid_count','use_socket'):
-                if ddd.get(dd) is not None:
-                    existing[dd] = ddd[dd]
-            # rust_info['drop_default_data'] = existing
+        # (unguarded drop_default_data block removed - it was an exact
+        # duplicate of the guarded one below and raised TypeError when the
+        # item had no drop_default_data)
 
         if 'cooltime' in preset:
             _v = preset['cooltime']

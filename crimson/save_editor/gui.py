@@ -4994,25 +4994,32 @@ QCheckBox::indicator {{
                 offset += self._ITEM_FIELD_SIZES[field_idx]
 
         changes = []
+        patches = []
 
         if 7 in field_offsets:
             end_off = item.offset + field_offsets[7]
             old_end = struct.unpack_from("<H", blob, end_off)[0]
             end_low = old_end & 0xFF
             new_end = (new_count << 8) | end_low
+            old_bytes_e = bytes(blob[end_off:end_off + 2])
             struct.pack_into("<H", blob, end_off, new_end)
+            patches.append((end_off, old_bytes_e, bytes(blob[end_off:end_off + 2])))
+            # The Equipment tab renders the cached endurance.
+            item.endurance = new_end
             changes.append(f"_endurance: {old_end} (0x{old_end:04X}) → {new_end} (0x{new_end:04X})")
 
         if 11 in field_offsets:
             max_off = item.offset + field_offsets[11]
             old_max = blob[max_off]
             blob[max_off] = new_count
+            patches.append((max_off, bytes([old_max]), bytes([new_count])))
             changes.append(f"_maxSocketCount: {old_max} → {new_count}")
 
         if 12 in field_offsets:
             valid_off = item.offset + field_offsets[12]
             old_valid = blob[valid_off]
             blob[valid_off] = new_count
+            patches.append((valid_off, bytes([old_valid]), bytes([new_count])))
             changes.append(f"_validSocketCount: {old_valid} → {new_count}")
 
         if not changes:
@@ -5021,7 +5028,12 @@ QCheckBox::indicator {{
 
         name = self._name_db.get_name(item.item_key)
         detail = "\n".join(changes)
+        self._undo_stack.append(UndoEntry(
+            description=f"Socket unlock: {new_count} slots on {name}",
+            patches=patches,
+        ))
         self._dirty = True
+        self._populate_equipment()
         QMessageBox.information(
             self, "Sockets Unlocked",
             f"Set {new_count} socket slots on {name}:\n\n{detail}\n\n"
@@ -6140,12 +6152,16 @@ QCheckBox::indicator {{
                 continue
 
             target = available[0]
-            used_keys.add(target.item_key)
 
             try:
                 patches = smart_item_swap(
                     self._save_data.decompressed_blob, item, target.item_key
                 )
+                if not patches and item.item_key != target.item_key:
+                    # Swap declined this record - leave the target key in the
+                    # pool and do not count it.
+                    continue
+                used_keys.add(target.item_key)
                 patches_all.extend(patches)
                 swap_count += 1
             except Exception:
@@ -6371,8 +6387,14 @@ QCheckBox::indicator {{
 
         all_patches = []
         applied = 0
+        declined = []
         for pack_item, donor in dlg.mappings:
             patches = smart_item_swap(self._save_data.decompressed_blob, donor, pack_item.item_key)
+            if not patches and donor.item_key != pack_item.item_key:
+                # Swap declined this record - do not touch its stack either,
+                # and do not count it as applied.
+                declined.append(self._name_db.get_name(donor.item_key))
+                continue
             old_stack = apply_stack_edit(self._save_data.decompressed_blob, donor, pack_item.count)
             patches.append((
                 donor.offset + 18, old_stack,
@@ -6385,6 +6407,11 @@ QCheckBox::indicator {{
                     self._save_data.decompressed_blob[donor.offset + 26:donor.offset + 28]
                 ))
             all_patches.extend(patches)
+            # The tables render these cached fields.
+            donor.item_key = pack_item.item_key
+            donor.stack_count = pack_item.count
+            donor.name = self._name_db.get_name(pack_item.item_key)
+            donor.category = self._name_db.get_category(pack_item.item_key)
             applied += 1
 
         if all_patches:
@@ -6395,7 +6422,15 @@ QCheckBox::indicator {{
             self._dirty = True
             self._populate_inventory()
             self._populate_equipment()
-            self._update_status(f"Applied pack '{pack.name}': {applied} items transformed")
+            note = f", {len(declined)} skipped (non-standard records)" if declined else ""
+            self._update_status(f"Applied pack '{pack.name}': {applied} items transformed{note}")
+        if declined:
+            QMessageBox.warning(
+                self, "Apply Pack",
+                f"{len(declined)} donor(s) were skipped because their records "
+                "do not have the standard item layout:\n\n"
+                + "\n".join(f"  - {n}" for n in declined[:8]),
+            )
 
     def _create_pack(self) -> None:
         dlg = CreatePackDialog(self._name_db, self)
@@ -9056,10 +9091,12 @@ QCheckBox::indicator {{
                 QMessageBox.warning(self, "Template Add", "Insertion failed — no vendor with sold items found.\nSell a junk item to any vendor first.")
                 return
 
+            old_blob = bytes(self._save_data.decompressed_blob)
             self._save_data.decompressed_blob = bytearray(new_blob)
             self._undo_stack.append(UndoEntry(
                 description=f"Template Add to Vendor: {target_name} x{target_count}",
                 patches=[],
+                previous_blob=old_blob,
             ))
             self._dirty = True
             self._scan_and_populate()
@@ -9232,6 +9269,14 @@ QCheckBox::indicator {{
                 ))
             method_used = "Key swap (fallback)"
 
+        if not patches and item.item_key != new_key:
+            QMessageBox.warning(
+                self, "Vendor Template Swap",
+                f"'{old_name}' could not be swapped: its record does not "
+                "have the standard item layout, so nothing was written.",
+            )
+            return
+
         item.name = new_name
         item.category = self._name_db.get_category(new_key)
         item.item_key = new_key
@@ -9403,15 +9448,29 @@ QCheckBox::indicator {{
                 patches.append((pos, old_key_bytes, new_key_bytes))
                 blob[pos:pos + 4] = new_key_bytes
 
+        if not patches:
+            QMessageBox.warning(
+                self, "Add to Vendor",
+                f"Could not locate the record bytes for '{sacrifice.name}' - "
+                "the cached offset may be stale. Reload the save and retry.",
+            )
+            return
+
+        old_sac_name = sacrifice.name
+        # The repurchase table renders these cached fields.
+        sacrifice.item_key = new_key
+        sacrifice.name = new_name
+        sacrifice.category = self._name_db.get_category(new_key)
+
         self._undo_stack.append(UndoEntry(
-            description=f"Add to vendor: {sacrifice.name} -> {new_name}",
+            description=f"Add to vendor: {old_sac_name} -> {new_name}",
             patches=patches,
         ))
         self._dirty = True
         self._populate_repurchase()
         self._populate_inventory()
         self._update_status(
-            f"Added {new_name} to vendor (replaced {sacrifice.name}). "
+            f"Added {new_name} to vendor (replaced {old_sac_name}). "
             f"Visit the vendor in-game and buy it back!"
         )
 
@@ -9497,14 +9556,28 @@ QCheckBox::indicator {{
                 patches.append((pos, old_key_bytes, new_key_bytes))
                 blob[pos:pos + 4] = new_key_bytes
 
+        if not patches:
+            QMessageBox.warning(
+                self, "Swap",
+                f"Could not locate the record bytes for '{item.name}' - "
+                "the cached offset may be stale. Reload the save and retry.",
+            )
+            return
+
+        old_item_name = item.name
+        # The repurchase table renders these cached fields.
+        item.item_key = new_key
+        item.name = new_name
+        item.category = self._name_db.get_category(new_key)
+
         self._undo_stack.append(UndoEntry(
-            description=f"Repurchase swap: {item.name} -> {new_name}",
+            description=f"Repurchase swap: {old_item_name} -> {new_name}",
             patches=patches,
         ))
         self._dirty = True
         self._populate_repurchase()
         self._populate_inventory()
-        self._update_status(f"Vendor swap: {item.name} -> {new_name} ({len(patches)} patches). Buy it back in-game for correct icon!")
+        self._update_status(f"Vendor swap: {old_item_name} -> {new_name} ({len(patches)} patches). Buy it back in-game for correct icon!")
 
 
     def _open_quest_editor(self) -> None:
@@ -9745,6 +9818,8 @@ QCheckBox::indicator {{
             self._undo_stack.append(UndoEntry(
                 description="Dragon Mount unlock",
                 patches=[],
+                # `raw` is the pre-rebuild blob captured at the top; bytes, never mutated.
+                previous_blob=raw,
             ))
 
             self._populate_equipment()
@@ -10231,7 +10306,7 @@ QCheckBox::indicator {{
         for e in source:
             if search and search not in e['name'].lower() and search not in str(e['key']):
                 continue
-            state_name = self._QUEST_STATE_NAMES.get(e['state'], f'Unknown (0x{e["state"]:04X})')
+            state_name = QuestEditorWindow.QUEST_STATE_NAMES.get(e['state'], f'Unknown (0x{e["state"]:04X})')
             if filt == "In Progress" and 'Progress' not in state_name:
                 continue
             if filt == "Completed" and 'Completed' not in state_name:
@@ -10244,7 +10319,7 @@ QCheckBox::indicator {{
 
         table.setRowCount(len(filtered))
         for row, e in enumerate(filtered):
-            state_name = self._QUEST_STATE_NAMES.get(e['state'], f'Unknown (0x{e["state"]:04X})')
+            state_name = QuestEditorWindow.QUEST_STATE_NAMES.get(e['state'], f'Unknown (0x{e["state"]:04X})')
 
             key_item = QTableWidgetItem(str(e['key']))
             key_item.setData(Qt.UserRole, e)
@@ -10297,7 +10372,7 @@ QCheckBox::indicator {{
             return
 
         entry_type = "Mission" if entry.get('is_mission') else "Quest"
-        state_name = self._QUEST_STATE_NAMES.get(entry['state'], f'0x{entry["state"]:04X}')
+        state_name = QuestEditorWindow.QUEST_STATE_NAMES.get(entry['state'], f'0x{entry["state"]:04X}')
 
         if not entry.get('has_completed') and entry.get('is_mission'):
             reply = QMessageBox.question(
@@ -11130,7 +11205,8 @@ QCheckBox::indicator {{
 
         self._qe_stage_status.setText(f"Completed {count} stages")
         self._qe_show_stages(None)
-        self._mark_modified()
+        self._dirty = True
+        self._update_status()
 
     def _qe_reset_stages(self):
         if not self._save_data or not self._qe_deep_data:
@@ -11155,7 +11231,8 @@ QCheckBox::indicator {{
 
         self._qe_stage_status.setText(f"Reset {count} stages to Available")
         self._qe_show_stages(None)
-        self._mark_modified()
+        self._dirty = True
+        self._update_status()
 
     def _qe_get_selected_quest_key(self):
         rows = self._qe_table.selectionModel().selectedRows()
@@ -11206,7 +11283,8 @@ QCheckBox::indicator {{
             msg += f" ({missing} not found in save)"
         self._qe_stage_status.setText(msg)
         self._qe_show_stages(None)
-        self._mark_modified()
+        self._dirty = True
+        self._update_status()
 
     def _qe_reset_quest_stages(self):
         if not self._save_data or not self._qe_deep_data:
@@ -11241,7 +11319,8 @@ QCheckBox::indicator {{
 
         self._qe_stage_status.setText(f"Reset {count}/{len(stage_keys)} stages for {quest_name}")
         self._qe_show_stages(None)
-        self._mark_modified()
+        self._dirty = True
+        self._update_status()
 
     def _qe_stage_context_menu(self, pos):
         from PySide6.QtWidgets import QMenu
@@ -11453,10 +11532,8 @@ QCheckBox::indicator {{
                             struct.pack_into('<H', raw, count_off, 0)
                             faction_count = old
 
-            try:
-                self._mark_modified()
-            except AttributeError:
-                pass
+            self._dirty = True
+            self._update_status()
 
             self._qe_status.setText(
                 f"Reset: {stage_count} stages, {faction_count} faction spawns")
@@ -11538,10 +11615,8 @@ QCheckBox::indicator {{
                 raw[stage.state_offset] = 4
                 flipped += 1
 
-        try:
-            self._mark_modified()
-        except AttributeError:
-            pass
+        self._dirty = True
+        self._update_status()
 
         self._qe_status.setText(f"Boundaries disabled: {flipped} GetOut_Region stages flipped")
         QMessageBox.information(self, "Boundaries Disabled",
@@ -11612,10 +11687,8 @@ QCheckBox::indicator {{
             results.append(f"{gimmick_unbroken} gimmicks unbroken (chests, objects)")
             results.append(f"{gimmick_unlocked} gimmicks unlocked")
 
-            try:
-                self._mark_modified()
-            except AttributeError:
-                pass
+            self._dirty = True
+            self._update_status()
 
             game_path = self._config.get("game_install_path", "")
             if game_path and os.path.isdir(game_path):
@@ -13080,6 +13153,15 @@ QCheckBox::indicator {{
                     log.warning("PARC insert error: %s", ie)
 
             self._dirty = True
+            # The Quests tab renders from cached self._quest_entries (with
+            # cached state offsets); a PARC insert above also shifts every
+            # offset. Rebuild the cache or the tab shows stale states and a
+            # later state write from it lands at a shifted offset.
+            if self._quest_entries or self._mission_entries:
+                self._quest_entries = []
+                self._mission_entries = []
+                self._preparse_quests()
+                self._filter_quests()
             parts = []
             if completed:
                 parts.append(f"{completed} state-changed")
@@ -13173,6 +13255,12 @@ QCheckBox::indicator {{
             not_found = len(target_keys)
 
             self._dirty = True
+            # Keep the Quests tab cache in sync (see _qdb_mark_selected_complete).
+            if self._quest_entries or self._mission_entries:
+                self._quest_entries = []
+                self._mission_entries = []
+                self._preparse_quests()
+                self._filter_quests()
             msg = f"Set {set_count} quests to Available"
             if not_found > 0:
                 msg += f" | {not_found} not in save (PARC insertion needed — not yet implemented for Available state)"
@@ -13765,10 +13853,18 @@ QCheckBox::indicator {{
         QApplication.processEvents()
 
         try:
+            # Snapshot BEFORE the call - insert_abyss_gates receives a mutable
+            # bytearray. The confirmation dialog promises Ctrl+Z can restore.
+            old_blob = bytes(self._save_data.decompressed_blob)
             blob = bytearray(self._save_data.decompressed_blob)
             ok, new_blob, msg = insert_abyss_gates(blob)
             if ok:
                 self._save_data.decompressed_blob = bytearray(new_blob)
+                self._undo_stack.append(UndoEntry(
+                    description="Insert abyss gates",
+                    patches=[],
+                    previous_blob=old_blob,
+                ))
                 self._dirty = True
                 self._waypoint_cache_id = None
                 self._populate_waypoints()
@@ -14582,11 +14678,13 @@ QCheckBox::indicator {{
                         for k, n, c, _, d in self._know_all_entries
                     ]
                     learned_count = sum(1 for e in self._know_all_entries if e[3])
+                    # Redraw the visible rows now - they render from
+                    # _know_all_entries, which was just rebuilt.
+                    self._know_filter()
                     self._know_status.setText(
                         f"{msg} | {learned_count}/{len(self._know_all_entries)} learned")
                     QMessageBox.information(self, "Fast Inject Complete",
-                        f"{msg}\n\nSave (Ctrl+S) for changes to take effect.\n"
-                        f"Table will refresh when you switch tabs.")
+                        f"{msg}\n\nSave (Ctrl+S) for changes to take effect.")
                 else:
                     self._know_status.setText(f"Failed: {msg}")
                     QMessageBox.critical(self, "Injection Failed", msg)
@@ -31601,6 +31699,12 @@ QCheckBox::indicator {{
                                             completed += 1
 
             self._dirty = True
+            # Keep the Quests tab cache in sync (see _qdb_mark_selected_complete).
+            if self._quest_entries or self._mission_entries:
+                self._quest_entries = []
+                self._mission_entries = []
+                self._preparse_quests()
+                self._filter_quests()
             QMessageBox.information(self, "Done", f"Completed {completed}/{len(keys)} quests from '{pack_name}'.")
         except Exception as e:
             QMessageBox.critical(self, "Error", str(e))
@@ -32551,7 +32655,7 @@ QCheckBox::indicator {{
     def _apply_icon_button_labels(self) -> None:
         if not self._icons_enabled:
             label = "Show Icons"
-        elif self._icon_cache.coverage < 100:
+        elif not self._icon_cache.is_complete:
             label = "Download Icons…"
         else:
             label = "Hide Icons"
@@ -32563,7 +32667,7 @@ QCheckBox::indicator {{
     def _maybe_offer_icon_download(self) -> None:
         if not self._icons_enabled:
             return
-        if self._icon_cache.coverage >= 100:
+        if self._icon_cache.is_complete:
             return
         if getattr(self, '_icon_seed_pending', False):
             return
@@ -32624,7 +32728,7 @@ QCheckBox::indicator {{
 
         self._apply_icon_button_labels()
 
-        if self._icons_enabled and self._icon_cache.coverage < 100:
+        if self._icons_enabled and not self._icon_cache.is_complete:
             reply = QMessageBox.question(
                 self, "Download Icons",
                 f"Only {self._icon_cache.coverage} icons cached locally.\n"
@@ -33395,6 +33499,7 @@ QCheckBox::indicator {{
             self._undo_stack.append(UndoEntry(
                 description=f"Add {target_name} x{target_count} (PARC insert)",
                 patches=[],
+                previous_blob=old_blob,
             ))
             self._dirty = True
 
@@ -33421,9 +33526,19 @@ QCheckBox::indicator {{
             donor_item = dlg2.donor_item
             if not donor_item:
                 return
+            donor_name = self._name_db.get_name(donor_item.item_key)
             patches = smart_item_swap(
                 self._save_data.decompressed_blob, donor_item, target_key
             )
+            if not patches and donor_item.item_key != target_key:
+                # Same guard as _give_item: the swap declined this record.
+                QMessageBox.warning(
+                    self, "Add Item",
+                    f"'{donor_name}' could not be used as the donor: its "
+                    "record does not have the standard item layout. Pick a "
+                    "different donor.",
+                )
+                return
             old_stack_bytes = apply_stack_edit(
                 self._save_data.decompressed_blob, donor_item, target_count
             )
@@ -33432,11 +33547,15 @@ QCheckBox::indicator {{
                 old_stack_bytes,
                 self._save_data.decompressed_blob[donor_item.offset + 18:donor_item.offset + 26]
             ))
-            donor_name = self._name_db.get_name(donor_item.item_key)
             self._undo_stack.append(UndoEntry(
                 description=f"Add {target_name} x{target_count} (fallback via {donor_name})",
                 patches=patches,
             ))
+            # Same cache refresh as _give_item: the table renders these fields.
+            donor_item.item_key = target_key
+            donor_item.stack_count = target_count
+            donor_item.name = self._name_db.get_name(target_key)
+            donor_item.category = self._name_db.get_category(target_key)
             self._dirty = True
             self._populate_inventory()
             self._populate_equipment()
@@ -33713,15 +33832,27 @@ QCheckBox::indicator {{
 
         all_patches = []
 
+        # Swap first so a declined record aborts before the stack is touched.
+        patches = smart_item_swap(self._save_data.decompressed_blob, item, new_key)
+        if not patches and item.item_key != new_key:
+            QMessageBox.warning(
+                self, "Swap",
+                f"'{old_name}' could not be swapped: its record does not "
+                "have the standard item layout, so nothing was written.",
+            )
+            return
+        all_patches.extend(patches)
+
+        old_stack_count = item.stack_count
         if consume_one:
             old_stack = apply_stack_edit(self._save_data.decompressed_blob, item, 1)
             all_patches.append((
                 item.offset + 18, old_stack,
                 self._save_data.decompressed_blob[item.offset + 18:item.offset + 26]
             ))
+            item.stack_count = 1
 
-        patches = smart_item_swap(self._save_data.decompressed_blob, item, new_key)
-        all_patches.extend(patches)
+        item.item_key = new_key
         item.name = self._name_db.get_name(new_key)
         item.category = self._name_db.get_category(new_key)
 
@@ -33733,7 +33864,7 @@ QCheckBox::indicator {{
         self._populate_inventory()
         self._populate_equipment()
         mode = "PARC" if item.parc_parsed else "legacy"
-        extra = f", consumed 1 from stack of {item.stack_count}" if consume_one else ""
+        extra = f", consumed 1 from stack of {old_stack_count}" if consume_one else ""
         self._update_status(f"Swapped {old_name} -> {new_name} ({len(all_patches)} patches, {mode} mode{extra})")
 
     def _perform_swap_all(self) -> None:
@@ -33786,10 +33917,13 @@ QCheckBox::indicator {{
         if reply != QMessageBox.Yes:
             return
 
+        # apply_item_swap_all mutates item.item_key before returning; capture
+        # the old key first or the loop below never matches the other copies.
+        old_key = item.item_key
         patches = apply_item_swap_all(self._save_data.decompressed_blob, item, new_key)
 
         for it in self._items:
-            if it.item_key == item.item_key or it.item_key == new_key:
+            if it.item_key == old_key or it.item_key == new_key:
                 it.name = self._name_db.get_name(new_key)
                 it.category = self._name_db.get_category(new_key)
                 it.item_key = new_key
@@ -34005,6 +34139,14 @@ QCheckBox::indicator {{
             else:
                 method_used = "Key swap (no template in DB)"
 
+        if not patches and item.item_key != new_key:
+            QMessageBox.warning(
+                self, "Template Swap",
+                f"'{old_name}' could not be swapped: its record does not "
+                "have the standard item layout, so nothing was written.",
+            )
+            return
+
         item.name = new_name
         item.category = self._name_db.get_category(new_key)
         item.item_key = new_key
@@ -34062,7 +34204,15 @@ QCheckBox::indicator {{
             return
 
         patches = smart_item_swap(self._save_data.decompressed_blob, item, new_key)
+        if not patches and item.item_key != new_key:
+            QMessageBox.warning(
+                self, "Clean Swap",
+                f"'{old_name}' could not be swapped: its record does not "
+                "have the standard item layout, so nothing was written.",
+            )
+            return
 
+        zeroed = 0
         blob = self._save_data.decompressed_blob
         if item.parc_parsed and item.field_offsets:
             fo = item.field_offsets
@@ -34071,29 +34221,37 @@ QCheckBox::indicator {{
                 old = bytes(blob[off:off + 4])
                 struct.pack_into('<I', blob, off, 0)
                 patches.append((off, old, bytes(blob[off:off + 4])))
+                zeroed += 1
             if '_chargedUseableCount' in fo:
                 off = fo['_chargedUseableCount']
                 old = bytes(blob[off:off + 8])
                 struct.pack_into('<q', blob, off, 0)
                 patches.append((off, old, bytes(blob[off:off + 8])))
+                zeroed += 1
             if '_timeWhenPushItem' in fo:
                 off = fo['_timeWhenPushItem']
                 old = bytes(blob[off:off + 8])
                 struct.pack_into('<Q', blob, off, 0)
                 patches.append((off, old, bytes(blob[off:off + 8])))
+                zeroed += 1
+
+        clean_note = (
+            f"{zeroed} leftover fields zeroed" if zeroed
+            else "no PARC layout - swap only"
+        )
 
         item.name = new_name
         item.category = self._name_db.get_category(new_key)
         item.item_key = new_key
 
         self._undo_stack.append(UndoEntry(
-            description=f"Clean Swap: {old_name} -> {new_name} (zeroed gimmick/charged/time)",
+            description=f"Clean Swap: {old_name} -> {new_name} ({clean_note})",
             patches=patches,
         ))
         self._dirty = True
         self._populate_inventory()
         self._populate_equipment()
-        self._update_status(f"Clean Swap: {old_name} -> {new_name} [gimmick/charged/time zeroed]")
+        self._update_status(f"Clean Swap: {old_name} -> {new_name} [{clean_note}]")
 
     def _populate_database(self) -> None:
         categories = set()
@@ -35144,6 +35302,8 @@ QCheckBox::indicator {{
             self._undo_stack.append(UndoEntry(
                 description=f"Dragon Full Clone: replaced MercenaryClan {len(tgt_raw)}B -> {len(src_raw)}B",
                 patches=[],
+                # The live blob is still pre-swap at this point.
+                previous_blob=bytes(self._save_data.decompressed_blob),
             ))
 
             self._save_data.decompressed_blob = new_blob

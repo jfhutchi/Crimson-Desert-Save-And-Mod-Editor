@@ -551,9 +551,20 @@ class IconCache(QObject):
                 return px
         return None
 
+    # The full GitHub icon set is ~6,000 files. Anything comfortably above
+    # this floor counts as "fully downloaded"; a partial/aborted download or
+    # the bundled seed stays below it.
+    # ponytail: hardcoded floor - bump if the upstream icon set ever shrinks/grows past it
+    ICON_SET_MIN = 5500
+
     @property
     def coverage(self) -> int:
+        """Number of cached icon files. A COUNT, not a percentage."""
         try:
             return len([f for f in os.listdir(self._local_dir) if f.endswith('.webp')])
         except Exception:
             return 0
+
+    @property
+    def is_complete(self) -> bool:
+        return self.coverage >= self.ICON_SET_MIN

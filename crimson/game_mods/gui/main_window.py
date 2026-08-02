@@ -3823,7 +3823,7 @@ QCheckBox::indicator {{
         if hasattr(self, '_global_icons_btn'):
             self._global_icons_btn.setText(btn_text)
 
-        if self._icons_enabled and self._icon_cache.coverage < 100:
+        if self._icons_enabled and not self._icon_cache.is_complete:
             reply = QMessageBox.question(
                 self, "Download Icons",
                 f"Only {self._icon_cache.coverage} icons cached locally.\n"
