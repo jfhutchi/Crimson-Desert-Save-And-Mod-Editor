@@ -4372,7 +4372,8 @@ class ItemBuffsTab(QWidget):
             if not _isep3:
                 QMessageBox.warning(self, "Add Stat", "This item has no enchant data.")
                 return
-            edl = []
+            # See _eb_god_mode: must live in rust_info, not a bare local.
+            edl = rust_info['enchant_data_list'] = [{}]
 
         combo_idx = self._eb_stat_combo.currentData()
         if combo_idx is None or combo_idx >= len(self._ENCHANT_STAT_LIST):
@@ -4399,6 +4400,12 @@ class ItemBuffsTab(QWidget):
             sd[stat_list] = existing
             added += 1
 
+        if not added:
+            QMessageBox.warning(
+                self, "Add Stat",
+                "No enchant level matched the selected target level - "
+                "nothing was written.")
+            return
         self._buff_modified = True
         self._buff_refresh_stats()
         display_name = self._name_db.get_name(self._buff_current_item.item_key)
@@ -6610,9 +6617,11 @@ class ItemBuffsTab(QWidget):
                     "This item has no enchant data.\n"
                     "Only equippable items (weapons, armor, accessories) can have buffs.")
                 return
-            # Equippable but no enchant levels yet — create a minimal structure
-            # so downstream code can inject buffs/stats normally.
-            edl = []
+            # Equippable but no enchant levels yet — create a minimal level
+            # IN rust_info so the injection below writes somewhere real.
+            # (A bare local `edl = []` made the loop a no-op while the
+            # status still claimed success.)
+            edl = rust_info['enchant_data_list'] = [{}]
 
 
         if not skip:
@@ -9690,9 +9699,11 @@ class ItemBuffsTab(QWidget):
                     "This item has no enchant data.\n"
                     "Only equippable items (weapons, armor, accessories) can have buffs.")
                 return
-            # Equippable but no enchant levels yet — create a minimal structure
-            # so downstream code can inject buffs/stats normally.
-            edl = []
+            # Equippable but no enchant levels yet — create a minimal level
+            # IN rust_info so the injection below writes somewhere real.
+            # (A bare local `edl = []` made the loop a no-op while the
+            # status still claimed success.)
+            edl = rust_info['enchant_data_list'] = [{}]
 
         buff_key = self._eb_buff_combo.currentData()
         buff_level = self._eb_buff_level.value()

@@ -376,12 +376,11 @@ class _SubTableEditor(QWidget):
     def get_modified_data(self) -> tuple[str, bytes, bytes] | None:
         if not self._dirty or not self._items:
             return None
-        try:
-            from crimson.game_mods import dmm_parser as dmm_parser
-            pabgb = bytes(dmm_parser.serialize_table(self._dmm_name, self._items))
-            return self._stem, pabgb, self._pabgh
-        except Exception:
-            return None
+        # Let serialize failures propagate - swallowing them here made the
+        # caller report "No modifications to deploy" after a real failure.
+        from crimson.game_mods import dmm_parser as dmm_parser
+        pabgb = bytes(dmm_parser.serialize_table(self._dmm_name, self._items))
+        return self._stem, pabgb, self._pabgh
 
     def get_diff_intents(self) -> list[dict]:
         if not self._items or not self._vanilla_items:
@@ -498,11 +497,24 @@ class QuestModsTab(QWidget):
             return
 
         modified = []
+        errors = []
         for editor in (self._quest_editor, self._mission_editor, self._stage_editor):
-            data = editor.get_modified_data()
+            try:
+                data = editor.get_modified_data()
+            except Exception as e:
+                log.exception("quest_mods: serialize failed")
+                errors.append(f"{getattr(editor, '_stem', '?')}: {e}")
+                continue
             if data:
                 modified.append(data)
 
+        if errors:
+            QMessageBox.critical(
+                self, "Apply",
+                "Serialization failed - your edits were NOT deployed:\n\n"
+                + "\n".join(errors))
+            if not modified:
+                return
         if not modified:
             QMessageBox.information(self, "Apply", "No modifications to deploy.")
             return

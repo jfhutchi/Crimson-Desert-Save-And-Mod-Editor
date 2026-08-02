@@ -2313,8 +2313,9 @@ def inject_community_knowledge(
     ok, out, msg = _insert_knowledge_keys(
         blob, orig_blob, know_obj, know_field, to_insert, len(existing_keys)
     )
-    if ok and relearn:
-        msg = f"{msg} (+{len(relearn)} re-learned in place)"
+    # (removed a message decoration that referenced an undefined `relearn` -
+    # it made every REAL insertion raise NameError, so community-knowledge
+    # injection only ever "worked" when there was nothing to insert)
     return ok, out, msg
 
 

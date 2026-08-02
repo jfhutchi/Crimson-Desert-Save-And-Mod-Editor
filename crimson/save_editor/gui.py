@@ -612,7 +612,12 @@ class GiveItemDialog(QDialog):
                 name_w.setForeground(QBrush(QColor(COLORS["text_dim"])))
             table.setItem(row, 1, name_w)
             table.setItem(row, 2, QTableWidgetItem(cat))
-            table.setItem(row, 3, QTableWidgetItem(str(it.item_key)))
+            key_w = QTableWidgetItem(str(it.item_key))
+            # Store the SaveItem itself - resolving by (key, slot) text after
+            # sorting picked the FIRST matching copy in self._items, which
+            # could sacrifice a different item than the one clicked.
+            key_w.setData(Qt.UserRole, it)
+            table.setItem(row, 3, key_w)
             table.setItem(row, 4, QTableWidgetItem(str(it.stack_count)))
             table.setItem(row, 5, QTableWidgetItem(str(it.slot_no)))
         table.setSortingEnabled(True)
@@ -631,15 +636,18 @@ class GiveItemDialog(QDialog):
         if not key_w:
             return
 
-        donor_key = int(key_w.text())
-        donor_slot = int(slot_w.text()) if slot_w else -1
-
-        read_only = self._read_only
-        for it in self._items:
-            if (it.item_key == donor_key and it.slot_no == donor_slot
-                    and it.source not in read_only):
-                self.donor_item = it
-                break
+        donor = key_w.data(Qt.UserRole)
+        if donor is not None and donor.source not in self._read_only:
+            self.donor_item = donor
+        else:
+            # Fallback for rows without a stored object (should not happen).
+            donor_key = int(key_w.text())
+            donor_slot = int(slot_w.text()) if slot_w else -1
+            for it in self._items:
+                if (it.item_key == donor_key and it.slot_no == donor_slot
+                        and it.source not in self._read_only):
+                    self.donor_item = it
+                    break
 
         if not self.donor_item:
             QMessageBox.warning(self, "Give Item", "Could not resolve donor item.")
@@ -5429,11 +5437,19 @@ QCheckBox::indicator {{
             if not ok:
                 QMessageBox.warning(self, "Sockets", f"Fill failed: {msg}")
                 return
-            self._save_data.decompressed_blob[:] = new_blob
+            # Attribute reassignment (not [:]) so parse_epoch bumps and the
+            # cached parse tree - whose offsets this splice just shifted -
+            # is dropped instead of feeding later writes bad offsets.
+            self._save_data.decompressed_blob = bytearray(new_blob)
             blob = self._save_data.decompressed_blob
             delta = len(blob) - original_blob_size
             if delta:
                 self._shift_item_offsets_after_splice(sock_abs_pre, delta)
+                # Offset-bearing caches beyond self._items are now stale too.
+                self._quest_entries = []
+                self._mission_entries = []
+                self._qe_deep_data = None
+                self._know_entry_levels = {}
             socket_data = self._read_socket_gems(blob, item)
 
         if clears:
@@ -5443,11 +5459,17 @@ QCheckBox::indicator {{
             if not ok:
                 QMessageBox.warning(self, "Sockets", f"Clear failed: {msg}")
                 return
-            self._save_data.decompressed_blob[:] = new_blob
+            # Attribute reassignment so parse_epoch bumps - see fills above.
+            self._save_data.decompressed_blob = bytearray(new_blob)
             blob = self._save_data.decompressed_blob
             delta = len(blob) - original_blob_size
             if delta:
                 self._shift_item_offsets_after_splice(sock_abs_pre, delta)
+                # Offset-bearing caches beyond self._items are now stale too.
+                self._quest_entries = []
+                self._mission_entries = []
+                self._qe_deep_data = None
+                self._know_entry_levels = {}
             socket_data = self._read_socket_gems(blob, item)
 
         swap_edits = []
@@ -8156,8 +8178,19 @@ QCheckBox::indicator {{
                 QMessageBox.warning(self, "Rename", f"Could not find mercenary #{merc['merc_no']} in save.")
                 return
 
+            old_blob = bytes(self._save_data.decompressed_blob)
             patched = patch_mercenary_name(plaintext, layout, target, new_name)
             self._save_data.decompressed_blob = bytearray(patched)
+            self._undo_stack.append(UndoEntry(
+                description=f"Rename mercenary #{row} to \"{new_name}\"",
+                patches=[],
+                previous_blob=old_blob,
+            ))
+            if len(patched) != len(old_blob):
+                # The splice shifted everything after the name block; cached
+                # item offsets are stale and later edits through them would
+                # corrupt the save. Rescan.
+                self._scan_and_populate()
 
             self._dirty = True
             merc['name'] = new_name
@@ -8211,8 +8244,17 @@ QCheckBox::indicator {{
                 QMessageBox.information(self, "Mercenary", "This mercenary has no name to clear.")
                 return
 
+            old_blob = bytes(self._save_data.decompressed_blob)
             patched = clear_mercenary_name(plaintext, layout, target)
             self._save_data.decompressed_blob = bytearray(patched)
+            self._undo_stack.append(UndoEntry(
+                description=f"Clear mercenary #{row} name",
+                patches=[],
+                previous_blob=old_blob,
+            ))
+            if len(patched) != len(old_blob):
+                # Splice shifted offsets - see _merc_rename.
+                self._scan_and_populate()
             self._dirty = True
 
             merc['name'] = ''
@@ -8259,7 +8301,16 @@ QCheckBox::indicator {{
                 except Exception:
                     pass
 
+            old_blob = bytes(self._save_data.decompressed_blob)
             self._save_data.decompressed_blob = bytearray(patched)
+            self._undo_stack.append(UndoEntry(
+                description=f"Label {labeled} mercenaries",
+                patches=[],
+                previous_blob=old_blob,
+            ))
+            if len(patched) != len(old_blob):
+                # Splices shifted offsets - see _merc_rename.
+                self._scan_and_populate()
             self._dirty = True
             self._merc_refresh()
             self._merc_status.setText(f"Labeled {labeled}/{len(self._merc_entries)} mercenaries — save with Ctrl+S")
@@ -8294,18 +8345,19 @@ QCheckBox::indicator {{
         skipped = 0
         for ck in self.CONFIRMED_MOUNT_KEYS:
             try:
-                self._unlock_mount_generic(ck, silent=True)
-                unlocked += 1
-            except Exception as e:
-                if "already" in str(e).lower():
-                    skipped += 1
+                if self._unlock_mount_generic(ck, silent=True):
+                    unlocked += 1
                 else:
                     skipped += 1
+            except Exception:
+                skipped += 1
 
+        if unlocked:
+            self._scan_and_populate()
         self._merc_refresh()
         self._merc_status.setText(f"Unlocked {unlocked} mounts, {skipped} skipped — save with Ctrl+S")
         QMessageBox.information(self, "Mounts Unlocked",
-            f"Unlocked {unlocked} mounts, {skipped} already owned.\n\nSave (Ctrl+S) and reload in-game.")
+            f"Unlocked {unlocked} mounts, {skipped} skipped (already owned or failed).\n\nSave (Ctrl+S) and reload in-game.")
 
     def _unlock_all_simple_template_mounts(self) -> None:
         if not self._save_data:
@@ -8330,11 +8382,15 @@ QCheckBox::indicator {{
         skipped = 0
         for ck in keys:
             try:
-                self._unlock_mount_generic(ck, silent=True)
-                unlocked += 1
-            except Exception as e:
+                if self._unlock_mount_generic(ck, silent=True):
+                    unlocked += 1
+                else:
+                    skipped += 1
+            except Exception:
                 skipped += 1
 
+        if unlocked:
+            self._scan_and_populate()
         self._merc_refresh()
         self._merc_status.setText(f"Unlocked {unlocked} exotic mounts, {skipped} skipped")
         QMessageBox.information(self, "Exotic Mounts Unlocked",
@@ -8368,11 +8424,15 @@ QCheckBox::indicator {{
         skipped = 0
         for ck in all_keys:
             try:
-                self._unlock_mount_generic(ck, silent=True)
-                unlocked += 1
+                if self._unlock_mount_generic(ck, silent=True):
+                    unlocked += 1
+                else:
+                    skipped += 1
             except Exception:
                 skipped += 1
 
+        if unlocked:
+            self._scan_and_populate()
         self._merc_refresh()
         self._merc_status.setText(f"Dev unlock: {unlocked} mounts added, {skipped} skipped — save with Ctrl+S")
         QMessageBox.information(self, "Dev Mounts Unlocked",
@@ -8560,14 +8620,14 @@ QCheckBox::indicator {{
         QMessageBox.information(self, "Character Unlock", msg)
         self._merc_refresh()
 
-    def _unlock_mount_generic(self, char_key: int, silent: bool = False) -> None:
+    def _unlock_mount_generic(self, char_key: int, silent: bool = False) -> bool:
         if not self._save_data:
             QMessageBox.warning(self, "Mount Unlock", "Load a save file first.")
-            return
+            return False
 
         if char_key not in self.MOUNT_TEMPLATES:
             QMessageBox.warning(self, "Mount Unlock", f"No template for charKey={char_key}")
-            return
+            return False
 
         display_name, template_hex = self.MOUNT_TEMPLATES[char_key]
 
@@ -8598,7 +8658,7 @@ QCheckBox::indicator {{
                 QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
             )
             if reply != QMessageBox.Yes:
-                return
+                return False
 
         self._merc_status.setText(f"Unlocking {display_name}...")
         QApplication.processEvents()
@@ -8626,17 +8686,17 @@ QCheckBox::indicator {{
                                         if cf.name == '_characterKey' and cf.present:
                                             if struct.unpack_from('<I', raw, cf.start_offset)[0] == char_key:
                                                 if silent:
-                                                    raise RuntimeError("already exists")
+                                                    return False
                                                 QMessageBox.information(self, "Mount Unlock",
                                                     f"{display_name} is already in your mercenary list!")
-                                                return
+                                                return False
 
             name_to_idx = {parc.types[i].name: i for i in range(len(parc.types))}
             if 'MercenarySaveData' not in name_to_idx:
                 QMessageBox.critical(self, "Mount Unlock",
                     "This save doesn't have MercenarySaveData.\n"
                     "You need a save with at least one mercenary/horse.")
-                return
+                return False
 
             mount_bytes = bytearray(bytes.fromhex(template_hex))
 
@@ -8690,7 +8750,7 @@ QCheckBox::indicator {{
             if insert_pos is None:
                 QMessageBox.critical(self, "Mount Unlock",
                     "Could not find _mercenaryDataList in your save.")
-                return
+                return False
 
             for pos in range(len(mount_bytes) - 12):
                 if mount_bytes[pos:pos+8] == sentinel:
@@ -8723,6 +8783,18 @@ QCheckBox::indicator {{
             po_fixed = pi._fixup_external(blob, raw, parc, merc_toc, insert_pos, growth)
 
             self._save_data.decompressed_blob = bytearray(blob)
+            self._undo_stack.append(UndoEntry(
+                description=f"Unlock mount: {display_name}",
+                patches=[],
+                # `raw` is the pre-insert blob, captured before the splice.
+                previous_blob=raw,
+            ))
+            # The insert shifted every offset after it; refresh the item scan
+            # so cached offsets stay valid. Batch callers (silent=True)
+            # rescan once at the end instead - each call re-derives its own
+            # offsets from the fresh blob, so intermediates are safe.
+            if not silent:
+                self._scan_and_populate()
             self._dirty = True
 
             self._merc_status.setText(
@@ -8736,9 +8808,11 @@ QCheckBox::indicator {{
                     f"Save (Ctrl+S) and reload in-game.")
                 self._merc_refresh()
 
+            return True
         except Exception as e:
             import traceback; traceback.print_exc()
             QMessageBox.critical(self, "Mount Unlock Error", str(e))
+            return False
 
     def _merc_clear_all_names(self) -> None:
         if not self._save_data or not self._merc_entries:
@@ -13619,6 +13693,11 @@ QCheckBox::indicator {{
             return
 
         results = []
+        # One snapshot covers both steps. The old per-patch fog undo entry
+        # held offsets that the knowledge injection below then shifted -
+        # undoing it afterwards wrote fog bytes into the wrong place.
+        old_blob = bytes(self._save_data.decompressed_blob)
+        changed = False
 
         self._update_status("Revealing map...")
         QApplication.processEvents()
@@ -13629,14 +13708,7 @@ QCheckBox::indicator {{
                 idx, codelist_count = fog_result
                 blob = self._save_data.decompressed_blob
                 abs_data_start = entry.data_offset + idx + 4
-                old_bytes = bytes(blob[abs_data_start:abs_data_start + codelist_count])
-                new_bytes = bytes([0xFF] * codelist_count)
-                blob[abs_data_start:abs_data_start + codelist_count] = new_bytes
-                self._undo_stack.append(UndoEntry(
-                    description=f"Reveal map ({codelist_count} fog bytes)",
-                    patches=[(abs_data_start, old_bytes, new_bytes)],
-                ))
-                self._dirty = True
+                blob[abs_data_start:abs_data_start + codelist_count] = bytes([0xFF] * codelist_count)
                 results.append(f"Map revealed ({codelist_count} fog pixels)")
                 if hasattr(self, '_debug_fog_status'):
                     self._debug_fog_status.setText(f"{codelist_count}/{codelist_count} pixels revealed")
@@ -13653,21 +13725,39 @@ QCheckBox::indicator {{
             ok, new_blob, msg = inject_community_knowledge(blob)
             if ok:
                 self._save_data.decompressed_blob = bytearray(new_blob)
-                self._dirty = True
                 results.append(msg)
             else:
                 results.append(f"Knowledge: {msg}")
         except Exception as e:
             results.append(f"Knowledge error: {e}")
 
+        # "Attempted" is not "changed": re-running on an already-revealed
+        # save writes identical bytes. Compare, don't track flags.
+        changed = bytes(self._save_data.decompressed_blob) != old_blob
+        if changed:
+            self._dirty = True
+            self._undo_stack.append(UndoEntry(
+                description="Reveal map + nexus knowledge",
+                patches=[],
+                previous_blob=old_blob,
+            ))
+            if len(self._save_data.decompressed_blob) != len(old_blob):
+                # Injection shifted offsets; refresh the cached item scan.
+                self._scan_and_populate()
+
         self._waypoint_cache_id = None
         self._populate_waypoints()
         summary = "\n".join(results)
-        self._update_status("Reveal Map + Nexus: done")
-        QMessageBox.information(self, "Map Revealed + Nexus Locations",
-            f"{summary}\n\n"
-            f"Save (Ctrl+S), then reload in-game.\n"
-            f"Full map visible with all nexus gates shown as ???.")
+        if changed:
+            self._update_status("Reveal Map + Nexus: done")
+            QMessageBox.information(self, "Map Revealed + Nexus Locations",
+                f"{summary}\n\n"
+                f"Save (Ctrl+S), then reload in-game.\n"
+                f"Full map visible with all nexus gates shown as ???.")
+        else:
+            self._update_status("Reveal Map + Nexus: nothing changed")
+            QMessageBox.warning(self, "Reveal Map",
+                f"{summary}\n\nNothing was changed in the save.")
 
     def _show_nexus_locations_only(self) -> None:
         if not self._save_data:
@@ -15837,26 +15927,33 @@ QCheckBox::indicator {{
                                     exp = struct.unpack_from('<Q', raw, lcf.start_offset)[0] if sz == 8 else struct.unpack_from('<I', raw, lcf.start_offset)[0]
                     exp_offset = 0
                     level_offset = 0
+                    exp_size = 8
+                    level_size = 4
                     for cf in elem.child_fields:
                         if cf.name == '_levelData' and cf.child_fields:
                             for lcf in cf.child_fields:
                                 if lcf.present:
                                     if lcf.name == '_exp':
                                         exp_offset = lcf.start_offset
+                                        exp_size = lcf.end_offset - lcf.start_offset
                                     elif lcf.name == '_level':
                                         level_offset = lcf.start_offset
+                                        level_size = lcf.end_offset - lcf.start_offset
                     name = CHAR_NAMES.get(char_key, name_lookup(char_key))
-                    entries.append((name, char_key, level, exp, exp_offset, level_offset))
+                    entries.append((name, char_key, level, exp, exp_offset, level_offset,
+                                    exp_size, level_size))
         return entries
 
     def _apply_bond_entries(self, entries: list) -> None:
         self._bond_entries = entries
         self._bond_table.setRowCount(len(entries))
-        for r, (name, key, level, exp, exp_off, lvl_off) in enumerate(entries):
+        for r, (name, key, level, exp, exp_off, lvl_off, exp_sz, lvl_sz) in enumerate(entries):
             self._bond_table.setItem(r, 0, QTableWidgetItem(name))
             self._bond_table.setItem(r, 1, QTableWidgetItem(str(key)))
             lvl_w = QTableWidgetItem(f"Lv {level}, XP {exp}")
-            lvl_w.setData(Qt.UserRole, {'exp_offset': exp_off, 'level_offset': lvl_off, 'exp': exp, 'level': level})
+            lvl_w.setData(Qt.UserRole, {'exp_offset': exp_off, 'level_offset': lvl_off,
+                                        'exp': exp, 'level': level,
+                                        'exp_size': exp_sz, 'level_size': lvl_sz})
             if level > 0:
                 lvl_w.setForeground(QBrush(QColor(COLORS['success'])))
             self._bond_table.setItem(r, 2, lvl_w)
@@ -15907,21 +16004,23 @@ QCheckBox::indicator {{
                                 elif sz == 2:
                                     exp = struct.unpack_from('<H', raw, cf.start_offset)[0]
                     exp_offset = 0
+                    exp_size = 8
                     for cf in elem.child_fields:
                         if cf.present and cf.name in ('_experience', '_currentExp'):
                             exp_offset = cf.start_offset
+                            exp_size = cf.end_offset - cf.start_offset
                     name = sublevel_names.get(key, f"SubLevel_{key}")
-                    entries.append((key, name, exp, exp_offset))
+                    entries.append((key, name, exp, exp_offset, exp_size))
         return entries
 
     def _apply_sublevel_entries(self, entries: list) -> None:
         self._sublevel_entries = entries
         self._sublevel_table.setRowCount(len(entries))
-        for r, (key, name, exp, exp_off) in enumerate(entries):
+        for r, (key, name, exp, exp_off, exp_sz) in enumerate(entries):
             self._sublevel_table.setItem(r, 0, QTableWidgetItem(str(key)))
             self._sublevel_table.setItem(r, 1, QTableWidgetItem(name))
             exp_w = QTableWidgetItem(str(exp))
-            exp_w.setData(Qt.UserRole, {'exp_offset': exp_off, 'exp': exp})
+            exp_w.setData(Qt.UserRole, {'exp_offset': exp_off, 'exp': exp, 'exp_size': exp_sz})
             if exp > 0:
                 exp_w.setForeground(QBrush(QColor(COLORS['success'])))
             self._sublevel_table.setItem(r, 2, exp_w)
@@ -16055,12 +16154,23 @@ QCheckBox::indicator {{
             return
 
         blob = self._save_data.decompressed_blob
+        # Pack exactly the field's size - the read path handles 1/2/4/8-byte
+        # layouts, and packing '<Q' into a 4-byte field clobbers its neighbor.
+        fmts = {1: '<B', 2: '<H', 4: '<I', 8: '<Q'}
         if action.data() == 'exp':
             new_val, ok = QInputDialog.getInt(self, "Set Bond XP",
                 f"Set XP for {name}:\n(Current: {data['exp']})", data['exp'], 0, 999999999)
             if not ok:
                 return
-            struct.pack_into('<Q', blob, data['exp_offset'], new_val)
+            sz = data.get('exp_size', 8)
+            new_val = min(new_val, (1 << (8 * sz)) - 1)
+            off = data['exp_offset']
+            old = bytes(blob[off:off + sz])
+            struct.pack_into(fmts[sz], blob, off, new_val)
+            self._undo_stack.append(UndoEntry(
+                description=f"Set bond XP for {name}",
+                patches=[(off, old, bytes(blob[off:off + sz]))],
+            ))
             self._dirty = True
             self._populate_bonds()
         elif action.data() == 'level':
@@ -16068,7 +16178,15 @@ QCheckBox::indicator {{
                 f"Set level for {name}:\n(Current: {data['level']})", data['level'], 0, 100)
             if not ok:
                 return
-            struct.pack_into('<I', blob, data['level_offset'], new_val)
+            sz = data.get('level_size', 4)
+            new_val = min(new_val, (1 << (8 * sz)) - 1)
+            off = data['level_offset']
+            old = bytes(blob[off:off + sz])
+            struct.pack_into(fmts[sz], blob, off, new_val)
+            self._undo_stack.append(UndoEntry(
+                description=f"Set bond level for {name}",
+                patches=[(off, old, bytes(blob[off:off + sz]))],
+            ))
             self._dirty = True
             self._populate_bonds()
 
@@ -16097,7 +16215,16 @@ QCheckBox::indicator {{
         if not ok:
             return
         blob = self._save_data.decompressed_blob
-        struct.pack_into('<Q', blob, data['exp_offset'], new_val)
+        # Pack exactly the field's size - see _bond_context_menu.
+        sz = data.get('exp_size', 8)
+        new_val = min(new_val, (1 << (8 * sz)) - 1)
+        off = data['exp_offset']
+        old = bytes(blob[off:off + sz])
+        struct.pack_into({1: '<B', 2: '<H', 4: '<I', 8: '<Q'}[sz], blob, off, new_val)
+        self._undo_stack.append(UndoEntry(
+            description=f"Set sublevel XP for {name}",
+            patches=[(off, old, bytes(blob[off:off + sz]))],
+        ))
         self._dirty = True
         self._populate_sublevels()
 
@@ -27861,8 +27988,15 @@ QCheckBox::indicator {{
         table.setSortingEnabled(True)
 
     def _store_get_selected_items(self):
-        rows = set(idx.row() for idx in self._store_items_table.selectedIndexes())
-        return sorted(rows)
+        """Selected store.items indices (NOT visual rows - the table sorts)."""
+        table = self._store_items_table
+        rows = set(idx.row() for idx in table.selectedIndexes())
+        out = []
+        for r in sorted(rows):
+            cell = table.item(r, 1)
+            orig = cell.data(Qt.UserRole) if cell else None
+            out.append(orig if orig is not None else r)
+        return sorted(out)
 
     def _store_swap_item(self) -> None:
         if not hasattr(self, '_store_parser_v2') or not self._store_parser_v2:
@@ -32256,8 +32390,13 @@ QCheckBox::indicator {{
         if not self._save_data:
             return
 
+        # Structural edits and undo route through here. Drop every cache
+        # that holds blob offsets so the next use re-derives them - writing
+        # through a shifted offset corrupts the save.
         self._quest_entries = []
         self._mission_entries = []
+        self._qe_deep_data = None
+        self._know_entry_levels = {}
         try:
             parse_result = self._get_parse_result()
         except Exception:
@@ -32265,6 +32404,13 @@ QCheckBox::indicator {{
         self._items = scan_items_smart(
             self._save_data.decompressed_blob, parse_result
         )
+        if getattr(self, '_know_all_entries', None):
+            # Rebuild learned flags + level offsets from the fresh parse and
+            # redraw the knowledge table (it renders from this cache).
+            try:
+                self._know_scan()
+            except Exception:
+                log.exception("knowledge rescan after structural edit failed")
 
         for item in self._items:
             item.name = self._name_db.get_name(item.item_key)
@@ -33504,6 +33650,25 @@ QCheckBox::indicator {{
             self._dirty = True
 
             self._scan_and_populate()
+            # Verify the insert against the fresh scan. The item-template DB
+            # can predate the running schema (observed on the 2026-07 patch:
+            # the template's field layout no longer matches, the inserted
+            # record misdecodes, and the scan loses Mercenary rows). Roll
+            # back rather than leave a desynced save that "said it worked".
+            inserted_visible = any(
+                it.item_key == target_key and it.item_no == new_item_no
+                for it in self._items
+            )
+            if not inserted_visible:
+                self._undo_stack.pop()
+                self._save_data.decompressed_blob = bytearray(old_blob)
+                self._dirty = bool(self._undo_stack)
+                self._scan_and_populate()
+                raise RuntimeError(
+                    "post-insert verification failed: the inserted record "
+                    "does not scan back (item template likely predates this "
+                    "game patch). The insert was rolled back."
+                )
             self._update_status(
                 f"Added {target_name} x{target_count} to inventory!"
             )

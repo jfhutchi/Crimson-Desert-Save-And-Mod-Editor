@@ -1489,6 +1489,8 @@ class SkillTreeTab(QWidget):
                 src[k] = v
             src.pop('_raw', None)
 
+            # Without this the export omits the swap entirely.
+            self._skill_dirty_keys.add(src.get('key', 0))
             count += 1
             details.append(f"{src_name} now has {tgt_name}'s data")
 
@@ -1509,6 +1511,8 @@ class SkillTreeTab(QWidget):
             if char_list:
                 e['_usableCharacterInfoList'] = []
                 e.pop('_raw', None)
+                # Without this the export omits the change entirely.
+                self._skill_dirty_keys.add(e.get('key', 0))
                 count += 1
         self._populate_skill_table()
         self._lbl_skill_status.setText(f"Unlock All: {count} skills unlocked for all characters")

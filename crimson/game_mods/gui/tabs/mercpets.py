@@ -406,7 +406,10 @@ class MercPetsTab(QWidget):
             pabgh, pabgb = self._serialize()
             return {"mercenaryinfo.pabgb": bytes(pabgb), "mercenaryinfo.pabgh": bytes(pabgh)}
         except Exception:
-            return {}
+            # Swallowing here made the Stacker report "no modifications"
+            # after a serialize failure. The consumer logs per-tab errors.
+            log.exception("mercpets: staged serialize failed")
+            raise
 
     def _apply_to_game(self) -> None:
         if not self._records:
