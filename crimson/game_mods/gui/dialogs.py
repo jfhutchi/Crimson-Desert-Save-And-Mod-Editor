@@ -1139,20 +1139,33 @@ class QuestEditorWindow(QDialog):
     def _save_file(self) -> None:
         reply = QMessageBox.question(
             self, "Save Quest Changes",
-            "PLEASE MAKE SURE YOU HAVE A BACKUP OF YOUR SAVE.\n"
-            "Quest state changes are experimental.\n\n"
+            "Quest state changes are experimental.\n"
+            "A timestamped backup is created automatically before writing.\n\n"
             f"Save to: {self._save_path}\n\n"
             "Continue?",
             QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
         )
         if reply != QMessageBox.Yes:
             return
+        from crimson.game_mods.save_crypto import (
+            create_timestamped_backup, write_save_file,
+        )
         try:
-            from crimson.game_mods.save_crypto import write_save_file
+            backup_path = create_timestamped_backup(self._save_path)
+        except Exception as e:
+            QMessageBox.critical(
+                self, "Backup Failed",
+                f"Could not create a backup before writing:\n{e}\n\n"
+                f"Aborting to protect your save.")
+            return
+        try:
             write_save_file(self._save_path, bytes(self._save_data.decompressed_blob),
                            self._save_data.raw_header)
             self._status.setText(f"Saved to {os.path.basename(self._save_path)}")
-            QMessageBox.information(self, "Saved", f"Quest changes saved to:\n{self._save_path}")
+            QMessageBox.information(
+                self, "Saved",
+                f"Quest changes saved to:\n{self._save_path}\n\n"
+                f"Backup: {backup_path or '(none - file was new)'}")
         except Exception as e:
             QMessageBox.critical(self, "Save Error", str(e))
 

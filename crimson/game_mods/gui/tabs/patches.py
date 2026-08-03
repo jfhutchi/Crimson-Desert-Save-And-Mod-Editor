@@ -28,6 +28,7 @@ from crimson.game_mods.gui.utils import make_scope_label, make_help_btn
 from crimson.game_mods.i18n import tr
 from crimson.game_mods.paz_patcher import PazPatch, PazPatchManager, VehiclePatcher
 from crimson.common.blackstar_timer_ui import BlackstarTimerPanel
+from crimson.game_mods.gui.tabs.world import _is_admin
 
 log = logging.getLogger(__name__)
 
@@ -535,7 +536,7 @@ class GamePatchesTab(QWidget):
             QMessageBox.warning(self, tr("No Game Path"), tr("Set the game install path first."))
             return
 
-        if not self._is_admin():
+        if not _is_admin():
             QMessageBox.warning(self, tr("Admin Required"),
                                 "Writing to game files requires administrator privileges.\n\n"
                                 "Right-click → Run as administrator")
@@ -585,7 +586,7 @@ class GamePatchesTab(QWidget):
         if not game_path:
             QMessageBox.warning(self, tr("No Game Path"), tr("Set the game install path first."))
             return
-        if not self._is_admin():
+        if not _is_admin():
             QMessageBox.warning(self, tr("Admin Required"),
                                 "Writing to game files requires administrator privileges.\n"
                                 "Right-click → Run as administrator")
@@ -637,7 +638,7 @@ class GamePatchesTab(QWidget):
         if not game_path:
             QMessageBox.warning(self, tr("No Game Path"), tr("Set the game install path first."))
             return
-        if not self._is_admin():
+        if not _is_admin():
             QMessageBox.warning(self, tr("Admin Required"),
                                 "Writing to game files requires administrator privileges.\n"
                                 "Right-click → Run as administrator")

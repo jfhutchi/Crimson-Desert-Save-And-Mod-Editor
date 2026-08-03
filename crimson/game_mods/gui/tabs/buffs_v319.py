@@ -7224,6 +7224,22 @@ class ItemBuffsTab(QWidget):
         dlg.exec()
 
 
+    def _set_stat(self, sd: dict, stat_list: str, stat_key: int, value: int) -> None:
+        """Set or append one stat entry in sd[stat_list].
+
+        Same semantics as _eb_add_stat's inner loop; the preset paths called
+        this before it existed, so Max DDD / Max DPV / Max HP raised
+        AttributeError instead of applying.
+        """
+        existing = sd.get(stat_list, [])
+        for i, entry in enumerate(existing):
+            if entry.get('stat') == stat_key:
+                existing[i] = {'stat': stat_key, 'change_mb': value}
+                break
+        else:
+            existing.append({'stat': stat_key, 'change_mb': value})
+        sd[stat_list] = existing
+
     def _eb_apply_preset(self, preset_key: str, skip: bool = False) -> None:
         if not hasattr(self, '_buff_rust_items') or self._buff_rust_items is None:
             QMessageBox.warning(self, "Apply Preset", "Extract with Rust parser first.")
@@ -15341,7 +15357,7 @@ class ItemBuffsTab(QWidget):
 
 
     def _set_refresh_local(self) -> None:
-        sets = self._set_mgr.scan_local()
+        sets = self._set_manager.scan_local()
         table = self._set_table
         table.setRowCount(len(sets))
         for row, es in enumerate(sets):
@@ -15357,7 +15373,7 @@ class ItemBuffsTab(QWidget):
         if not rows:
             return None
         idx = rows[0].row()
-        sets = self._set_mgr.scan_local()
+        sets = self._set_manager.scan_local()
         return sets[idx] if idx < len(sets) else None
 
 
@@ -15980,7 +15996,7 @@ class ItemBuffsTab(QWidget):
         if display_name.startswith("Unknown"):
             display_name = item.name
 
-        sets = self._set_mgr.scan_local()
+        sets = self._set_manager.scan_local()
         choices = [es.name for es in sets] + ["-- Create New Set --"]
 
         from PySide6.QtWidgets import QInputDialog
@@ -16022,7 +16038,7 @@ class ItemBuffsTab(QWidget):
         es.items = [si for si in es.items if si.item_key != item.item_key]
         es.items.append(set_item)
 
-        self._set_mgr.save_set(es, es.filename if es.filename else "")
+        self._set_manager.save_set(es, es.filename if es.filename else "")
         self._set_refresh_local()
         self._set_status.setText(f"Added {display_name} to '{es.name}' ({len(ops)} ops)")
 
@@ -16152,7 +16168,7 @@ class ItemBuffsTab(QWidget):
             description=desc.strip(),
             created=datetime.date.today().isoformat(),
         )
-        self._set_mgr.save_set(es)
+        self._set_manager.save_set(es)
         self._set_refresh_local()
         self._set_status.setText(f"Created set '{es.name}'")
 
@@ -16166,7 +16182,7 @@ class ItemBuffsTab(QWidget):
             QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
         )
         if reply == QMessageBox.Yes:
-            self._set_mgr.delete_set(es.filename)
+            self._set_manager.delete_set(es.filename)
             self._set_refresh_local()
 
 
@@ -16174,9 +16190,9 @@ class ItemBuffsTab(QWidget):
         path, _ = QFileDialog.getOpenFileName(self, "Import Equipment Set", "", "JSON (*.json)")
         if not path:
             return
-        es = self._set_mgr.load_set_file(path)
+        es = self._set_manager.load_set_file(path)
         if es:
-            self._set_mgr.save_set(es)
+            self._set_manager.save_set(es)
             self._set_refresh_local()
             self._set_status.setText(f"Imported '{es.name}'")
         else:
@@ -16192,23 +16208,23 @@ class ItemBuffsTab(QWidget):
         )
         if path:
             with open(path, "w", encoding="utf-8") as f:
-                f.write(self._set_mgr.export_set_json(es))
+                f.write(self._set_manager.export_set_json(es))
             self._set_status.setText(f"Exported '{es.name}' to {os.path.basename(path)}")
 
 
     def _set_refresh_github(self) -> None:
         self._set_status.setText("Fetching community sets...")
         QApplication.processEvents()
-        ok, msg = self._set_mgr.fetch_remote_index()
+        ok, msg = self._set_manager.fetch_remote_index()
         if not ok:
             self._set_status.setText(msg)
             return
-        remote = self._set_mgr.get_remote_index()
+        remote = self._set_manager.get_remote_index()
         downloaded = 0
         for entry in remote:
-            local_path = os.path.join(self._set_mgr.local_dir, entry.filename)
+            local_path = os.path.join(self._set_manager.local_dir, entry.filename)
             if not os.path.isfile(local_path):
-                es, dl_msg = self._set_mgr.download_set(entry.filename)
+                es, dl_msg = self._set_manager.download_set(entry.filename)
                 if es:
                     downloaded += 1
         self._set_refresh_local()

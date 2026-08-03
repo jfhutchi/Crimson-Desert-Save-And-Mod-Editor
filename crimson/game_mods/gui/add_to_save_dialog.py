@@ -8,7 +8,7 @@ and swap an existing item's key to the custom item's key (e.g. 999001).
 Game then reads the custom item's stats via the custom iteminfo entry.
 
 Doesn't touch the game's iteminfo.pabgb. Modifies only the user's
-save.save, writing a .backup sidecar first.
+save.save, writing a timestamped backup first.
 """
 from __future__ import annotations
 
@@ -329,14 +329,18 @@ class AddCustomItemToSaveDialog(QDialog):
             f"Replace this vendor item's key with your custom item key?\n\n"
             f"  Target: {old_name} (key {old_key})\n"
             f"  Becomes: {self._custom_name} (key {self._custom_key})\n\n"
-            f"A backup will be written to\n  {self._save_path}.backup\n"
+            f"A timestamped backup will be written to the backups/ folder\n"
             f"before the save is modified.",
             QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if reply != QMessageBox.Yes:
             return
 
         try:
-            shutil.copy2(self._save_path, self._save_path + ".backup")
+            # Timestamped, not a fixed ".backup": the second swap in a
+            # session used to copy the already-modified save over the only
+            # pristine copy the restore advice points at.
+            from crimson.game_mods.save_crypto import create_timestamped_backup
+            backup_path = create_timestamped_backup(self._save_path)
         except Exception as e:
             QMessageBox.critical(
                 self, "Backup Failed",
@@ -373,17 +377,17 @@ class AddCustomItemToSaveDialog(QDialog):
             QMessageBox.critical(
                 self, "Write Failed",
                 f"Failed to write save:\n{e}\n\n"
-                f"Your backup at {self._save_path}.backup is intact.")
+                f"Your backup at {backup_path} is intact.")
             return
 
         self._status.setText(
             f"✓ Swapped {old_name} (key {old_key}) → custom key {self._custom_key}. "
-            f"Save written, backup at .backup.")
+            f"Save written, backup at {backup_path}.")
         QMessageBox.information(
             self, "Swap Complete",
             f"Success. In-game, the {old_name} slot now shows as:\n"
             f"  {self._custom_name}\n\n"
             f"If the item doesn't appear immediately, exit to title and reload "
             f"your save. If something looks wrong, restore from "
-            f"{os.path.basename(self._save_path)}.backup.")
+            f"{backup_path}.")
         self.accept()

@@ -7,6 +7,7 @@ from typing import Dict, List, Optional
 from urllib.request import urlopen, Request
 from urllib.error import URLError
 from dataclasses import dataclass, field, asdict
+from crimson.common.safe_names import safe_cache_filename, safe_cache_path
 
 PACKS_REPO = "NattKh/CrimsonDesertCommunityItemMapping"
 PACKS_BRANCH = "main"
@@ -109,7 +110,7 @@ class PackManager:
         for fname in sorted(os.listdir(self.local_dir)):
             if not fname.endswith(".json") or fname == "index.json":
                 continue
-            path = os.path.join(self.local_dir, fname)
+            path = safe_cache_path(self.local_dir, fname)
             try:
                 with open(path, "r", encoding="utf-8") as f:
                     data = json.load(f)
@@ -128,7 +129,7 @@ class PackManager:
             filename = safe_name + ".json"
 
         pack.filename = filename
-        path = os.path.join(self.local_dir, filename)
+        path = safe_cache_path(self.local_dir, filename)
 
         with open(path, "w", encoding="utf-8") as f:
             json.dump(pack.to_dict(), f, indent=2, ensure_ascii=False)
@@ -136,7 +137,7 @@ class PackManager:
         return path
 
     def delete_pack(self, filename: str) -> bool:
-        path = os.path.join(self.local_dir, filename)
+        path = safe_cache_path(self.local_dir, filename)
         if os.path.isfile(path):
             os.remove(path)
             return True
@@ -176,7 +177,7 @@ class PackManager:
         return self._remote_index
 
     def download_pack(self, filename: str) -> tuple[Optional[ItemPack], str]:
-        url = PACK_BASE_URL + filename
+        url = PACK_BASE_URL + safe_cache_filename(filename)
         try:
             req = Request(url, headers={"User-Agent": "CrimsonSaveEditor/1.0"})
             with urlopen(req, timeout=15) as resp:

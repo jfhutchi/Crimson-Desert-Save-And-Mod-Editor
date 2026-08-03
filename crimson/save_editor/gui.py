@@ -25,7 +25,7 @@ from PySide6.QtWidgets import (
     QGroupBox, QSplitter, QFrame, QAbstractItemView,
     QListWidget, QListWidgetItem, QDialog, QDialogButtonBox,
     QProgressBar, QTextEdit, QCheckBox, QApplication, QDockWidget,
-    QSlider, QProgressDialog,
+    QSlider, QProgressDialog, QInputDialog,
 )
 
 from crimson.save_editor.models import SaveItem, SaveData, UndoEntry
@@ -1970,6 +1970,8 @@ class ApplyPackDialog(QDialog):
         apply_btn.setToolTip("Apply only the items with checkmarks. Unchecked items are skipped.")
         apply_btn.clicked.connect(self._on_apply)
         btn_row.addWidget(apply_btn)
+        # _pick_from_stack re-enables this after filling every donor slot.
+        self._ok_btn = apply_btn
 
         cancel_btn = QPushButton("Cancel")
         cancel_btn.clicked.connect(self.reject)
@@ -14738,11 +14740,18 @@ QCheckBox::indicator {{
             self._fast_inject_done = False
             self._fast_inject_result = (False, None, "")
 
+            # Pin the save this run belongs to. The injection takes seconds
+            # on a 7MB blob while the UI stays live, so the user can load a
+            # different save - or edit this one - before it finishes.
+            inject_save_data = self._save_data
+            inject_generation = getattr(inject_save_data, "document_generation", None)
+            source_blob = bytes(inject_save_data.decompressed_blob)
+
             def _do_fast_inject():
                 try:
                     from crimson.save_editor.parc_inserter3 import inject_knowledge_fast
-                    blob = bytearray(self._save_data.decompressed_blob)
-                    ok, new_blob, msg = inject_knowledge_fast(blob, keys_filter=self._fast_inject_keys)
+                    ok, new_blob, msg = inject_knowledge_fast(
+                        bytearray(source_blob), keys_filter=self._fast_inject_keys)
                     self._fast_inject_result = (ok, new_blob, msg)
                 except Exception as e:
                     self._fast_inject_result = (False, None, str(e))
@@ -14758,8 +14767,27 @@ QCheckBox::indicator {{
                     QTimer.singleShot(200, _check_done)
                     return
 
+                if self._save_data is not inject_save_data:
+                    # A different save is loaded now - writing this result
+                    # would overwrite it with the previous save's data.
+                    self._know_status.setText(
+                        "Fast inject discarded: a different save was loaded.")
+                    return
+
                 ok, new_blob, msg = self._fast_inject_result
                 if ok and new_blob is not None:
+                    current_gen = getattr(self._save_data, "document_generation", None)
+                    if current_gen != inject_generation or bytes(
+                            self._save_data.decompressed_blob) != source_blob:
+                        # The blob changed while we worked; applying the
+                        # wholesale result would silently revert those edits.
+                        self._know_status.setText("Fast inject discarded: the save changed while it ran.")
+                        QMessageBox.warning(
+                            self, "Fast Inject Discarded",
+                            "The save was modified while the injection was "
+                            "running, so the result was discarded rather than "
+                            "reverting those changes.\n\nRe-run the injection.")
+                        return
                     self._save_data.decompressed_blob = bytearray(new_blob)
                     self._dirty = True
                     self._know_learned_keys.update(self._fast_inject_keys)
@@ -26889,6 +26917,11 @@ QCheckBox::indicator {{
 
 
     def _set_refresh_local(self) -> None:
+        # The equipment-sets tab UI is not built in this window; the manager
+        # and its on-disk sets still work, so just skip the table refresh
+        # instead of raising inside the caller's slot.
+        if not hasattr(self, '_set_table'):
+            return
         sets = self._set_mgr.scan_local()
         table = self._set_table
         table.setRowCount(len(sets))
@@ -26897,9 +26930,11 @@ QCheckBox::indicator {{
             table.setItem(row, 1, QTableWidgetItem(es.author))
             table.setItem(row, 2, QTableWidgetItem(str(len(es.items))))
             table.setItem(row, 3, QTableWidgetItem(es.description))
-        self._set_status.setText(f"{len(sets)} local sets")
+        self._update_status(f"{len(sets)} local sets")
 
     def _set_get_selected(self) -> Optional[EquipmentSet]:
+        if not hasattr(self, '_set_table'):
+            return None
         rows = self._set_table.selectionModel().selectedRows()
         if not rows:
             return None
@@ -27049,7 +27084,7 @@ QCheckBox::indicator {{
 
         self._set_mgr.save_set(es, es.filename if es.filename else "")
         self._set_refresh_local()
-        self._set_status.setText(f"Added {display_name} to '{es.name}' ({len(ops)} ops)")
+        self._update_status(f"Added {display_name} to '{es.name}' ({len(ops)} ops)")
 
     def _set_apply(self) -> None:
         es = self._set_get_selected()
@@ -27134,7 +27169,7 @@ QCheckBox::indicator {{
         msg = f"Applied '{es.name}': {applied}/{len(es.items)} items, {total_ops} operations"
         if skipped:
             msg += f" ({skipped} items not found in iteminfo)"
-        self._set_status.setText(msg)
+        self._update_status(msg)
         self._buff_status_label.setText(msg + ". Click 'Export JSON Patch' to write.")
 
     def _set_preview(self) -> None:
@@ -27176,7 +27211,7 @@ QCheckBox::indicator {{
         )
         self._set_mgr.save_set(es)
         self._set_refresh_local()
-        self._set_status.setText(f"Created set '{es.name}'")
+        self._update_status(f"Created set '{es.name}'")
 
     def _set_delete(self) -> None:
         es = self._set_get_selected()
@@ -27198,7 +27233,7 @@ QCheckBox::indicator {{
         if es:
             self._set_mgr.save_set(es)
             self._set_refresh_local()
-            self._set_status.setText(f"Imported '{es.name}'")
+            self._update_status(f"Imported '{es.name}'")
         else:
             QMessageBox.warning(self, "Import Failed", "Could not parse set file.")
 
@@ -27212,14 +27247,14 @@ QCheckBox::indicator {{
         if path:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(self._set_mgr.export_set_json(es))
-            self._set_status.setText(f"Exported '{es.name}' to {os.path.basename(path)}")
+            self._update_status(f"Exported '{es.name}' to {os.path.basename(path)}")
 
     def _set_refresh_github(self) -> None:
-        self._set_status.setText("Fetching community sets...")
+        self._update_status("Fetching community sets...")
         QApplication.processEvents()
         ok, msg = self._set_mgr.fetch_remote_index()
         if not ok:
-            self._set_status.setText(msg)
+            self._update_status(msg)
             return
         remote = self._set_mgr.get_remote_index()
         downloaded = 0
@@ -27230,7 +27265,7 @@ QCheckBox::indicator {{
                 if es:
                     downloaded += 1
         self._set_refresh_local()
-        self._set_status.setText(f"{msg} Downloaded {downloaded} new sets.")
+        self._update_status(f"{msg} Downloaded {downloaded} new sets.")
 
 
     def _build_gamedata_tab(self) -> None:

@@ -4,6 +4,7 @@ import hashlib
 import hmac
 import os
 import struct
+import tempfile
 from typing import Tuple
 
 import lz4.block
@@ -170,6 +171,57 @@ def write_save_file(
     header[NONCE_OFFSET:NONCE_OFFSET + 16] = nonce
     header[HMAC_OFFSET:HMAC_OFFSET + 32] = hmac_digest
 
-    with open(path, "wb") as f:
-        f.write(bytes(header))
-        f.write(encrypted)
+    # Write to a sibling temp file and rename over the destination. A plain
+    # open(path, "wb") truncates the user's save before the first byte
+    # lands, so any failure mid-write (disk full, AV, crash) leaves a
+    # header-only stub and the original is gone.
+    directory = os.path.dirname(os.path.abspath(path)) or "."
+    fd, tmp_path = tempfile.mkstemp(dir=directory, suffix=".tmp")
+    try:
+        with os.fdopen(fd, "wb") as f:
+            f.write(bytes(header))
+            f.write(encrypted)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
+    except BaseException:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
+
+
+def create_timestamped_backup(save_path: str, keep: int = 10) -> str:
+    """Copy ``save_path`` into a sibling ``backups/`` dir, timestamped.
+
+    Returns the backup path ("" if the source does not exist). Callers used
+    to copy to a fixed ``<save>.backup``, which meant the second edit in a
+    session overwrote the only pristine copy with already-modified bytes.
+    """
+    if not os.path.isfile(save_path):
+        return ""
+
+    backup_dir = os.path.join(os.path.dirname(os.path.abspath(save_path)), "backups")
+    os.makedirs(backup_dir, exist_ok=True)
+
+    import datetime
+    import shutil
+
+    stamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_path = os.path.join(backup_dir, f"{os.path.basename(save_path)}.{stamp}.bak")
+    shutil.copy2(save_path, backup_path)
+
+    try:
+        existing = sorted(
+            (f for f in os.listdir(backup_dir)
+             if f.endswith(".bak") and ".PRISTINE." not in f),
+            key=lambda f: os.path.getmtime(os.path.join(backup_dir, f)),
+            reverse=True,
+        )
+        for old in existing[keep:]:
+            os.remove(os.path.join(backup_dir, old))
+    except OSError:
+        pass
+
+    return backup_path

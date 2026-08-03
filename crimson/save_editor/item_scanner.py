@@ -326,13 +326,33 @@ def apply_enchant_edit(
     return bytes(old)
 
 
+_ITEM_2BYTE_FIELD_RELS: Dict[str, int] = {"_endurance": 28, "_sharpness": 30}
+
+
+def _field_write_offset(item: SaveItem, name: str) -> int:
+    """Absolute offset of a 2-byte item field.
+
+    The parsed record carries the real offsets; the historical hardcoded
+    relative offsets were one field too high (endurance wrote _sharpness,
+    sharpness wrote _maxSocketCount/_validSocketCount, which the game
+    treats as socket counts and can crash on).
+    """
+    off = (item.field_offsets or {}).get(name)
+    if off is None:
+        off = item.offset + _ITEM_2BYTE_FIELD_RELS[name]
+    return off
+
+
 def apply_endurance_edit(
     data: bytearray,
     item: SaveItem,
     new_endurance: int,
 ) -> bytes:
-    old = data[item.offset + 30:item.offset + 32]
-    struct.pack_into("<H", data, item.offset + 30, new_endurance)
+    pos = _field_write_offset(item, "_endurance")
+    if pos + 2 > len(data):
+        raise ValueError("endurance field is outside the blob")
+    old = data[pos:pos + 2]
+    struct.pack_into("<H", data, pos, new_endurance)
     item.endurance = new_endurance
     return bytes(old)
 
@@ -342,8 +362,11 @@ def apply_sharpness_edit(
     item: SaveItem,
     new_sharpness: int,
 ) -> bytes:
-    old = data[item.offset + 32:item.offset + 34]
-    struct.pack_into("<H", data, item.offset + 32, new_sharpness)
+    pos = _field_write_offset(item, "_sharpness")
+    if pos + 2 > len(data):
+        raise ValueError("sharpness field is outside the blob")
+    old = data[pos:pos + 2]
+    struct.pack_into("<H", data, pos, new_sharpness)
     item.sharpness = new_sharpness
     return bytes(old)
 

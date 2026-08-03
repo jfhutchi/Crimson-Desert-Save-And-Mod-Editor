@@ -3058,20 +3058,19 @@ QCheckBox::indicator {{
         pack = self._pack_data[path]
         pack_name = pack.get('name', '')
 
-        if pack_type == 'knowledge':
-            entries = pack.get('entries', [])
-            keys = [e['key'] for e in entries]
-            to_inject = [k for k in keys if k not in getattr(self, '_know_learned_keys', set())]
-            if not to_inject:
-                QMessageBox.information(self, "Pack", f"All entries from '{pack_name}' already learned.")
-                return
-            reply = QMessageBox.question(self, f"Inject '{pack_name}'",
-                f"Inject {len(to_inject)} knowledge entries?\n({len(keys) - len(to_inject)} already learned)",
-                QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
-            if reply == QMessageBox.Yes:
-                self._know_inject_keys(to_inject)
-        elif pack_type == 'quest':
-            self._quest_db_tab._qdb_mark_pack_complete(pack)
+        # Neither injector exists in this window - the mod editor has no
+        # knowledge tab and never builds a _quest_db_tab, so both branches
+        # used to raise AttributeError inside the slot. Both features live
+        # in the save editor half of the app.
+        entries = len(pack.get('entries', []) or [])
+        QMessageBox.information(
+            self, "Apply Pack in the Save Editor",
+            f"'{pack_name}' ({entries} {pack_type} entries) is applied from the "
+            f"Save Editor, which owns the save-writing paths for "
+            f"{pack_type} packs.\n\n"
+            f"Switch to the Save Editor, load your save, and apply the pack "
+            f"from its {'Knowledge' if pack_type == 'knowledge' else 'Quest Database'} tab.",
+        )
 
     def _pack_browser_delete(self) -> None:
         item = self._pack_tree.currentItem()
@@ -3493,6 +3492,12 @@ QCheckBox::indicator {{
 
     def _do_save(self, path: str) -> None:
         try:
+            # The save editor refuses to write schemas it does not recognise;
+            # this writer had no such gate, so a save from a newer game patch
+            # would be rewritten from a layout we may be misreading.
+            if not self._save_schema_is_supported(path):
+                return
+
             reply = QMessageBox.question(
                 self, "Backup Save?",
                 "Create a backup of your current save before writing changes?\n\n"
@@ -3865,6 +3870,42 @@ QCheckBox::indicator {{
     def _on_icon_loaded(self, item_key: int, pixmap) -> None:
         self._icon_ready.emit(item_key)
 
+
+    def _save_schema_is_supported(self, path: str) -> bool:
+        """True if this save's schema is one we are enrolled to write.
+
+        Returns False (after telling the user) for a save from a game patch
+        the editor has not been updated for - rewriting it from a layout we
+        may be misreading is how a working save gets scrambled.
+        """
+        try:
+            from crimson.save_editor.save_compat import (
+                compute_schema_identity, load_profiles, match_profile,
+            )
+            identity = compute_schema_identity(
+                bytes(self._save_data.decompressed_blob),
+                self._save_data.raw_header or b"",
+            )
+            if match_profile(identity, load_profiles()) is not None:
+                return True
+        except Exception:
+            log.exception("schema check failed; refusing to write")
+            QMessageBox.critical(
+                self, "Unsupported Save",
+                "Could not verify this save's schema, so it was not written.",
+            )
+            return False
+
+        reply = QMessageBox.warning(
+            self, "Unrecognised Save Schema",
+            "This save does not match any schema this build knows about - "
+            "it is probably from a newer game patch.\n\n"
+            "Writing it means re-encoding a layout the editor may be "
+            "misreading, which can corrupt the save.\n\n"
+            "Write anyway?",
+            QMessageBox.Yes | QMessageBox.No, QMessageBox.No,
+        )
+        return reply == QMessageBox.Yes
 
     def _create_backup(self, save_path: str) -> str:
         if not os.path.isfile(save_path):
