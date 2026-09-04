@@ -8622,6 +8622,20 @@ QCheckBox::indicator {{
         QMessageBox.information(self, "Character Unlock", msg)
         self._merc_refresh()
 
+    def _mount_insertion_supported(self) -> bool:
+        """Whether template-based mount insertion is safe for this save."""
+        try:
+            from crimson.save_editor.save_compat import (
+                load_profiles, mount_insertion_supported,
+            )
+            identity = getattr(self._save_data, "schema_identity", None)
+            if identity is None:
+                return False
+            return mount_insertion_supported(identity, load_profiles())
+        except Exception:
+            log.exception("mount-insertion capability check failed")
+            return False
+
     def _unlock_mount_generic(self, char_key: int, silent: bool = False) -> bool:
         if not self._save_data:
             QMessageBox.warning(self, "Mount Unlock", "Load a save file first.")
@@ -8629,6 +8643,21 @@ QCheckBox::indicator {{
 
         if char_key not in self.MOUNT_TEMPLATES:
             QMessageBox.warning(self, "Mount Unlock", f"No template for charKey={char_key}")
+            return False
+
+        # Mount unlock splices in a record built from a fixed template, so
+        # unlike ordinary field edits it needs the mercenary list to use the
+        # exact encoding those templates were cut against.
+        if not self._mount_insertion_supported():
+            if not silent:
+                QMessageBox.warning(
+                    self, "Mount Unlock Unavailable",
+                    "This save's mercenary records do not use the encoding the "
+                    "mount templates were built for, so inserting one could "
+                    "produce a record the game cannot read.\n\n"
+                    "Every other edit still works - only mount insertion is "
+                    "unavailable for this save.",
+                )
             return False
 
         display_name, template_hex = self.MOUNT_TEMPLATES[char_key]
@@ -10284,18 +10313,28 @@ QCheckBox::indicator {{
             raw = self._save_data.decompressed_blob
             result = self._get_parse_result()
 
-            mission_names = {}
-            try:
-                import json as _json
-                for base in [os.path.dirname(os.path.abspath(__file__)), getattr(sys, '_MEIPASS', '')]:
-                    p = os.path.join(base, 'mission_names.json')
-                    if os.path.isfile(p):
-                        with open(p, 'r') as f:
-                            mdata = _json.load(f)
-                        mission_names = {e['key']: e.get('display', e['name']) for e in mdata}
-                        break
-            except Exception:
-                pass
+            def _load_names(filename: str) -> dict:
+                try:
+                    import json as _json
+                    for base in [os.path.dirname(os.path.abspath(__file__)),
+                                 getattr(sys, '_MEIPASS', '')]:
+                        p = os.path.join(base, filename)
+                        if os.path.isfile(p):
+                            with open(p, 'r', encoding='utf-8') as f:
+                                data = _json.load(f)
+                            return {e['key']: e.get('display', e['name']) for e in data}
+                except Exception:
+                    log.exception("could not load %s", filename)
+                return {}
+
+            mission_names = _load_names('mission_names.json')
+            # Quest names used to come from self._quest_names, which is only
+            # ever populated by _old_build_quest_tab (dead code) - so this
+            # raised AttributeError on every call and quest names never
+            # resolved. Load them the same way missions already did.
+            quest_names = _load_names('quest_names.json')
+            self._quest_names = quest_names
+            self._mission_names = mission_names
 
             for obj in result['objects']:
                 if obj.class_name != 'QuestSaveData':
@@ -10320,7 +10359,7 @@ QCheckBox::indicator {{
                                     entry['state_offset'] = cf.start_offset
                                 elif cf.name == '_completedTime' and cf.present:
                                     entry['has_completed'] = True
-                            entry['name'] = self._quest_names.get(entry['key'], f'Unknown_{entry["key"]}')
+                            entry['name'] = quest_names.get(entry['key'], f'Unknown_{entry["key"]}')
                             self._quest_entries.append(entry)
 
                     if f.name == '_missionStateList' and f.list_elements:
@@ -13618,12 +13657,15 @@ QCheckBox::indicator {{
             return
 
         pack_path = None
-        for base in [os.path.dirname(os.path.abspath(sys.executable)) if getattr(sys, 'frozen', False) else os.path.dirname(__file__)]:
+        # Beside the exe (user-added) and inside the bundle (shipped copy).
+        for base in (self._app_dir(), self._bundled_dir()):
             for sub in ['knowledge_packs', 'dist/knowledge_packs']:
                 p = os.path.join(base, sub, 'No Map Reveal Abyss Gate Unlock Only.json')
                 if os.path.isfile(p):
                     pack_path = p
                     break
+            if pack_path:
+                break
 
         if not pack_path:
             QMessageBox.warning(self, "Abyss Gates",
@@ -31705,13 +31747,34 @@ QCheckBox::indicator {{
             return os.path.dirname(sys.executable)
         return os.path.dirname(os.path.abspath(__file__))
 
+    @staticmethod
+    def _bundled_dir() -> str:
+        """Directory holding data files shipped inside the app.
+
+        When frozen, PyInstaller puts package data under ``_internal`` next
+        to this module - NOT beside the executable, which is where
+        ``_app_dir()`` points. Looking only beside the exe is why the
+        bundled knowledge packs were invisible in the shipped build.
+        """
+        return os.path.dirname(os.path.abspath(__file__))
+
     def _get_pack_dirs(self) -> list:
-        base = self._app_dir()
         dirs = []
+        # Writable, user-facing location first (packs they add or download).
         for folder in ['quest_packs', 'knowledge_packs']:
-            p = os.path.join(base, folder)
-            os.makedirs(p, exist_ok=True)
+            p = os.path.join(self._app_dir(), folder)
+            try:
+                os.makedirs(p, exist_ok=True)
+            except OSError:
+                continue
             dirs.append(p)
+        # Then the read-only copies shipped inside the app.
+        bundled = self._bundled_dir()
+        if os.path.abspath(bundled) != os.path.abspath(self._app_dir()):
+            for folder in ['quest_packs', 'knowledge_packs']:
+                p = os.path.join(bundled, folder)
+                if os.path.isdir(p):
+                    dirs.append(p)
         return dirs
 
     def _pack_browser_refresh(self) -> None:
@@ -36164,6 +36227,12 @@ QCheckBox::indicator {{
             self._update_community_status()
         elif hasattr(self, '_waypoint_tab_widget') and widget is self._waypoint_tab_widget:
             self._populate_waypoints()
+        elif hasattr(self, '_knowledge_tab') and widget is self._knowledge_tab:
+            # Fill it on first view, like every other tab. It used to open
+            # empty with no hint that "Scan Save" was the way in, which reads
+            # as "there is no way to load my knowledge".
+            if self._save_data is not None and not self._know_all_entries:
+                self._know_scan()
         elif hasattr(self, '_swap_tab_widget') and widget is self._swap_tab_widget:
             self._on_tab_changed_swap()
 
@@ -36195,4 +36264,3 @@ QCheckBox::indicator {{
         self._tabs.currentChanged.connect(self._on_tab_changed)
         for sub in [self._save_tabs, self._mods_tabs, self._items_tabs, self._world_tabs]:
             sub.currentChanged.connect(lambda idx, t=sub: self._on_sub_tab_changed(t, idx))
-# SENTINEL-TEST-LINE

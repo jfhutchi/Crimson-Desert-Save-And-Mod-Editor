@@ -104,7 +104,13 @@ class IconCache(QObject):
         self._bulk_progress.connect(self._on_bulk_progress)
         self._bulk_done.connect(self._on_bulk_done)
 
-    def _on_deliver(self, item_key: int, px: object, callback) -> None:
+    def _on_deliver(self, item_key: int, image: object, callback) -> None:
+        # GUI thread: safe to build the QPixmap here.
+        if isinstance(image, QImage):
+            px = self._bound(QPixmap.fromImage(image))
+            self._pixmaps[item_key] = px
+        else:
+            px = image
         callback(item_key, px)
 
     def _on_seeded(self, count: int, callback) -> None:
@@ -290,9 +296,12 @@ class IconCache(QObject):
             if qimg.isNull():
                 return
 
-            px = self._bound(QPixmap.fromImage(qimg))
-            self._pixmaps[item_key] = px
-            self._deliver.emit(item_key, px, callback)
+            # This runs on a worker thread. QPixmap must only be constructed
+            # on the GUI thread - doing it here corrupts painting while the
+            # UI is drawing (blank progress dialogs during a bulk download).
+            # QImage is safe off-thread, so hand that over and convert in
+            # _on_deliver, the same way the warm-batch path already does.
+            self._deliver.emit(item_key, qimg, callback)
 
         except Exception as e:
             log.debug("Icon download failed for key %d: %s", item_key, e)

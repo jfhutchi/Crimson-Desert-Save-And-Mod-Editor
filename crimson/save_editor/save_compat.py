@@ -154,25 +154,62 @@ def match_profile(
                 "KnowledgeSaveData._list.element_mask", ""
             ).split(",")
         )
+        # Element masks are per-record: which ones appear depends on what
+        # the player owns, so requiring an exact mask made saving depend on
+        # owning a particular mount. The list *prefixes* are the structural
+        # part. Mask-sensitive features gate themselves via
+        # mount_insertion_supported() below.
         if (
             mount_prefix == str(profile.mount_list_prefix)
             and knowledge_prefix == str(profile.knowledge_list_prefix)
-            and profile.mount_element_mask_hex in mount_masks
-            and profile.knowledge_element_mask_hex in knowledge_masks
+            and mount_masks
+            and knowledge_masks
         ):
             return profile
     return None
+
+
+def mount_insertion_supported(
+    identity: SaveSchemaIdentity,
+    profiles: tuple[CompatibilityProfile, ...] | CompatibilityProfile | None = None,
+) -> bool:
+    """True when this save contains a mercenary record encoded the way the
+    mount-insertion templates assume.
+
+    Inserting a mount splices in a record built from a fixed template, so
+    unlike ordinary field edits it needs that exact element encoding to be
+    present. Ordinary edits resolve their offsets per record and do not,
+    which is why this is separate from :func:`match_profile`.
+    """
+    if profiles is None:
+        profiles = load_profiles()
+    elif isinstance(profiles, CompatibilityProfile):
+        profiles = (profiles,)
+    masks = set(
+        identity.observed_encodings.get(
+            "MercenaryClanSaveData._mercenaryDataList.element_mask", ""
+        ).split(",")
+    )
+    return any(p.mount_element_mask_hex in masks for p in profiles)
 
 
 def schema_structure_matches(
     left: SaveSchemaIdentity,
     right: SaveSchemaIdentity,
 ) -> bool:
+    """True when two saves share the layout of everything we write.
+
+    Deliberately ignores ``schema_sha256`` and ``type_count``: the schema
+    section only lists the types a given save actually uses, so both vary
+    with the player's progress rather than with the game version. Comparing
+    them made a profile match exactly one save - the one it was generated
+    from - so every other save of the same patch was refused as "unknown".
+    ``required_type_signatures`` is the real structural fingerprint: it
+    hashes the field layout of each type we read and write.
+    """
     return (
         left.container_version == right.container_version
-        and left.schema_sha256 == right.schema_sha256
         and left.root_entry_count == right.root_entry_count
-        and left.type_count == right.type_count
         and left.required_type_signatures == right.required_type_signatures
         and left.observed_encodings.get(
             "MercenaryClanSaveData._mercenaryDataList.list_prefix"
