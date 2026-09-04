@@ -31,7 +31,12 @@ def test_an_unknown_layout_is_refused_rather_than_guessed() -> None:
 
     save = save_crypto.load_save_file(str(SAVE_FIXTURE))
     identity = compute_schema_identity(bytes(save.decompressed_blob), save.raw_header)
-    unknown = replace(identity, schema_sha256="0" * 64)
+    # schema_sha256 is deliberately ignored (it varies per-player, not per-patch).
+    # required_type_signatures is the real structural fingerprint — corrupt it.
+    unknown = replace(
+        identity,
+        required_type_signatures={k: "0" * 64 for k in identity.required_type_signatures},
+    )
     with pytest.raises(UnknownSaveSchemaError):
         require_supported_identity(unknown, load_profiles())
 

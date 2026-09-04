@@ -32566,6 +32566,8 @@ QCheckBox::indicator {{
         def _equipment_done() -> None:
             self._equip_table.setSortingEnabled(True)
             self._equipment_population_job = None
+            if self._items is None:
+                return
             try:
                 if progress is not None:
                     progress("Preparing sockets and editor controls...", 99)
